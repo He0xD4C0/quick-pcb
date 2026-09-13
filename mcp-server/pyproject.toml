@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boardspec-mcp"
+version = "0.2.0"
+description = "MCP server exposing BoardSpec plus compact EasyEDA Pro PCB layout tools."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "pydantic>=2.0,<3",
+    "httpx>=0.27",
+    "boardspec-core>=0.1.0",
+]
+
+[project.optional-dependencies]
+metrics = ["tiktoken>=0.7,<1"]
+
+[project.scripts]
+boardspec-mcp = "boardspec_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["boardspec_mcp*"]

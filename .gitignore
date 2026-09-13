@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Export artifacts
+out/
+
+# EDA extension build output
+eda-extension/dist/
+eda-extension/build/dist/

@@ -1,0 +1,56 @@
+{
+  "format": "board-spec-part-db/v0.1",
+  "notice": "DEMO FIXTURE ONLY. Replace every entry with owner-approved library or manufacturer data before engineering use.",
+  "parts": {
+    "Device:R": {
+      "description": "Generic two-pin resistor",
+      "category": "resistor",
+      "reference_prefix": "R",
+      "complete": true,
+      "source": "BoardSpec demo fixture",
+      "pins": [
+        {"number": "1", "name": "1", "type": "passive"},
+        {"number": "2", "name": "2", "type": "passive"}
+      ]
+    },
+    "Device:C": {
+      "description": "Generic non-polarized capacitor",
+      "category": "capacitor",
+      "reference_prefix": "C",
+      "complete": true,
+      "source": "BoardSpec demo fixture",
+      "pins": [
+        {"number": "1", "name": "1", "type": "passive"},
+        {"number": "2", "name": "2", "type": "passive"}
+      ]
+    },
+    "Device:LED": {
+      "description": "Generic light-emitting diode",
+      "category": "led",
+      "reference_prefix": "LED",
+      "complete": true,
+      "source": "BoardSpec demo fixture",
+      "pins": [
+        {"number": "2", "name": "A", "type": "passive"},
+        {"number": "1", "name": "K", "type": "passive"}
+      ]
+    },
+    "MCU:STM32F103C8T6": {
+      "description": "Partial STM32F103C8T6 entry sufficient only for the bundled example",
+      "category": "mcu",
+      "reference_prefix": "U",
+      "complete": false,
+      "source": "Unverified BoardSpec demo fixture; replace with an approved EDA library entry",
+      "footprint": "Package_QFP:LQFP-48_7x7mm_P0.5mm",
+      "pins": [
+        {"number": "15", "name": "PA5", "type": "bidirectional"},
+        {"number": "24", "name": "VDD", "type": "power_in"},
+        {"number": "36", "name": "VDD", "type": "power_in"},
+        {"number": "48", "name": "VDD", "type": "power_in"},
+        {"number": "23", "name": "VSS", "type": "power_in"},
+        {"number": "35", "name": "VSS", "type": "power_in"},
+        {"number": "47", "name": "VSS", "type": "power_in"}
+      ]
+    }
+  }
+}

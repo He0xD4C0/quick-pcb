@@ -1,0 +1,96 @@
+{
+	"name": "boardspec-eda-extension",
+	"uuid": "65c4a373ce9f4910a6bd01010b735d80",
+	"displayName": "BoardSpec",
+	"description": "把 BoardSpec 导出的网表/BOM 导入嘉立创 EDA 专业版。只处理连接关系，不生成原理图图形、坐标或走线。",
+	"version": "1.0.0",
+	"publisher": "boardspec",
+	"engines": {
+		"eda": "^3.2.0"
+	},
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "extension-store",
+		"url": ""
+	},
+	"categories": "Other",
+	"keywords": [
+		"Tool",
+		"Netlist",
+		"BOM"
+	],
+	"images": {
+		"logo": "./images/logo.png"
+	},
+	"homepage": "",
+	"bugs": "",
+	"activationEvents": {},
+	"entry": "./dist/index",
+	"dependentExtensions": {},
+	"headerMenus": {
+		"home": [
+			{
+				"id": "boardspecMenu",
+				"title": "BoardSpec",
+				"menuItems": [
+					{
+						"id": "ImportNetlist",
+						"title": "导入网表 (Protel2)...",
+						"registerFn": "importNetlist"
+					},
+					{
+						"id": "ExportBom",
+						"title": "导出 BOM",
+						"registerFn": "exportBom"
+					},
+					{
+						"id": "About",
+						"title": "关于 BoardSpec...",
+						"registerFn": "about"
+					}
+				]
+			}
+		],
+		"sch": [
+			{
+				"id": "boardspecMenuSch",
+				"title": "BoardSpec",
+				"menuItems": [
+					{
+						"id": "ImportNetlist",
+						"title": "导入网表 (Protel2)...",
+						"registerFn": "importNetlist"
+					},
+					{
+						"id": "ExportBom",
+						"title": "导出 BOM",
+						"registerFn": "exportBom"
+					},
+					{
+						"id": "About",
+						"title": "关于 BoardSpec...",
+						"registerFn": "about"
+					}
+				]
+			}
+		],
+		"pcb": [
+			{
+				"id": "boardspecMenuPcb",
+				"title": "BoardSpec",
+				"menuItems": [
+					{
+						"id": "ExportBom",
+						"title": "导出 BOM",
+						"registerFn": "exportBom"
+					},
+					{
+						"id": "About",
+						"title": "关于 BoardSpec...",
+						"registerFn": "about"
+					}
+				]
+			}
+		]
+	}
+}

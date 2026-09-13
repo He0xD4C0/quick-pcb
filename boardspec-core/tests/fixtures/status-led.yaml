@@ -1,0 +1,82 @@
+spec: board-spec/v0.1
+project:
+  name: status-led-demo
+  description: Demonstrates a reusable status LED module.
+
+libraries:
+  - id: demo
+    type: generic
+    path: parts.demo.json
+
+definitions:
+  project:StatusLED:
+    kind: module
+    description: Series resistor and green indicator LED.
+    ports:
+      VCC:
+        dir: power_in
+      GND:
+        dir: power_in
+      CTRL:
+        dir: input
+    parameters:
+      resistor:
+        default: "1k"
+        description: LED series resistance.
+    items:
+      R:
+        part: "Device:R"
+        value: "${resistor}"
+      D:
+        part: "Device:LED"
+        value: Green
+    nets:
+      - net: VCC
+        endpoints: [R.2]
+      - net: CTRL_NODE
+        endpoints: [R.1, D.A]
+      - net: GND
+        endpoints: [D.K]
+    port_map:
+      VCC: VCC
+      GND: GND
+      CTRL: CTRL_NODE
+
+instances:
+  U1:
+    part: "MCU:STM32F103C8T6"
+    footprint: "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+  C1:
+    part: "Device:C"
+    value: "100nF"
+    footprint: "Capacitor_SMD:C_0402_1005Metric"
+  LED1:
+    part: "project:StatusLED"
+    parameters:
+      resistor: "2.2k"
+
+connections:
+  - net: 3V3
+    kind: power
+    voltage: 3.3
+    endpoints: [U1.VDD, C1.1, LED1.VCC]
+  - net: GND
+    kind: ground
+    endpoints: [U1.VSS, C1.2, LED1.GND]
+  - net: LED_CTRL
+    kind: signal
+    endpoints: [U1.PA5, LED1.CTRL]
+
+constraints:
+  - kind: electrical
+    target: [3V3, GND]
+    rule: no_short
+    severity: error
+
+outputs:
+  - type: kicad_netlist
+    path: out/status-led.net
+  - type: bom_csv
+    path: out/status-led-bom.csv
+  - type: mermaid
+    path: out/status-led.mmd

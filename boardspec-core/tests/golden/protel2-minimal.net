@@ -1,0 +1,41 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+R1
+FOOTPRINT
+R0402
+PARTTYPE
+R_DEV
+DESCRIPTION
+Resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+R_SYM
+Designator
+R1
+Device
+R_DEV
+Unique ID
+R1
+Name
+1k
+Manufacturer
+Resistors Inc
+Manufacturer Part
+R-1K
+Supplier
+LCSC
+Supplier Part
+C1
+
+*
+]
+(
+N
+R1-1 R_DEV-1 PASSIVE
+)

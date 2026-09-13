@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boardspec-core"
+version = "0.1.0"
+description = "BoardSpec: EDA-neutral declarative board connectivity DSL — validate, expand, ERC, and export netlists/BOM."
+requires-python = ">=3.10"
+dependencies = [
+    "ruamel.yaml>=0.18,<0.19",
+    "jsonschema>=4.18,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+boardspec-validate = "boardspec.cli:main_validate"
+boardspec-expand = "boardspec.cli:main_expand"
+boardspec-export = "boardspec.cli:main_export"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["boardspec*"]
+
+[tool.setuptools.package-data]
+boardspec = ["schema/*.json"]

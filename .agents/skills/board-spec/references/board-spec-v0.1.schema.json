@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:board-spec:schema:v0.1",
+  "title": "BoardSpec",
+  "type": "object",
+  "required": ["spec", "project", "instances", "connections"],
+  "additionalProperties": false,
+  "properties": {
+    "spec": {"const": "board-spec/v0.1"},
+    "project": {"$ref": "#/$defs/project"},
+    "libraries": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/library"},
+      "default": []
+    },
+    "definitions": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/partRef"},
+      "additionalProperties": {"$ref": "#/$defs/definition"},
+      "default": {}
+    },
+    "instances": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/hierarchicalIdentifier"},
+      "additionalProperties": {"$ref": "#/$defs/instance"}
+    },
+    "connections": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/connection"}
+    },
+    "constraints": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/constraint"},
+      "default": []
+    },
+    "outputs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/output"},
+      "default": []
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "hierarchicalIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*(?:/[A-Za-z_][A-Za-z0-9_]*)*$"
+    },
+    "partRef": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_:.-]*$"
+    },
+    "endpoint": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*(?:/[A-Za-z_][A-Za-z0-9_]*)*\\.(?:#[A-Za-z0-9_.+/-]+|\\S(?:.*\\S)?)$"
+    },
+    "scalar": {
+      "oneOf": [
+        {"type": "string"},
+        {"type": "number"},
+        {"type": "boolean"}
+      ]
+    },
+    "project": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "version": {"type": "string"},
+        "description": {"type": "string"},
+        "authors": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "library": {
+      "type": "object",
+      "required": ["id", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "type": {"enum": ["kicad", "altium", "generic"]},
+        "path": {"type": "string"},
+        "url": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"}
+      }
+    },
+    "definition": {
+      "oneOf": [
+        {"$ref": "#/$defs/moduleDefinition"},
+        {"$ref": "#/$defs/physicalDefinition"}
+      ]
+    },
+    "moduleDefinition": {
+      "type": "object",
+      "required": ["kind", "ports", "items", "nets", "port_map"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "module"},
+        "description": {"type": "string"},
+        "ports": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/$defs/identifier"},
+          "additionalProperties": {"$ref": "#/$defs/port"}
+        },
+        "parameters": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/$defs/identifier"},
+          "additionalProperties": {
+            "type": "object",
+            "required": ["default"],
+            "additionalProperties": false,
+            "properties": {
+              "default": {"$ref": "#/$defs/scalar"},
+              "description": {"type": "string"},
+              "enum": {
+                "type": "array",
+                "items": {"$ref": "#/$defs/scalar"}
+              }
+            }
+          }
+        },
+        "items": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/$defs/identifier"},
+          "additionalProperties": {"$ref": "#/$defs/instance"}
+        },
+        "nets": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/internalNet"}
+        },
+        "port_map": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/$defs/identifier"},
+          "additionalProperties": {"type": "string"}
+        }
+      }
+    },
+    "physicalDefinition": {
+      "type": "object",
+      "required": ["kind", "pins"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "physical"},
+        "description": {"type": "string"},
+        "category": {"type": "string", "minLength": 1},
+        "reference_prefix": {"type": "string", "pattern": "^[A-Za-z]+$"},
+        "pins": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/pin"}
+        },
+        "footprint": {"type": "string"},
+        "symbol": {"type": "string"},
+        "parameters": {"type": "object"},
+        "source": {"$ref": "#/$defs/partSource"},
+        "review": {"$ref": "#/$defs/partReview"}
+      }
+    },
+    "partSource": {
+      "type": "object",
+      "required": ["provider"],
+      "additionalProperties": false,
+      "properties": {
+        "provider": {"type": "string", "minLength": 1},
+        "library_uuid": {"type": "string", "minLength": 1},
+        "device_uuid": {"type": "string", "minLength": 1},
+        "device_name": {"type": "string", "minLength": 1},
+        "symbol_uuid": {"type": "string", "minLength": 1},
+        "symbol_name": {"type": "string", "minLength": 1},
+        "footprint_uuid": {"type": "string", "minLength": 1},
+        "supplier": {"type": "string", "minLength": 1},
+        "supplier_id": {"type": "string", "minLength": 1},
+        "manufacturer": {"type": "string", "minLength": 1},
+        "manufacturer_part_number": {"type": "string", "minLength": 1},
+        "raw_pin_types": {
+          "type": "object",
+          "propertyNames": {"type": "string", "minLength": 1},
+          "additionalProperties": {"type": "string"}
+        }
+      }
+    },
+    "partReview": {
+      "type": "object",
+      "required": ["status", "pin_type_authority"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {"enum": ["unreviewed", "project_reviewed"]},
+        "pin_type_authority": {"enum": ["source_library", "project_library"]},
+        "note": {"type": "string"}
+      }
+    },
+    "port": {
+      "type": "object",
+      "required": ["dir"],
+      "additionalProperties": false,
+      "properties": {
+        "dir": {"$ref": "#/$defs/electricalType"},
+        "description": {"type": "string"}
+      }
+    },
+    "electricalType": {
+      "enum": [
+        "input",
+        "output",
+        "bidirectional",
+        "tri_state",
+        "passive",
+        "power_in",
+        "power_out",
+        "open_collector",
+        "open_emitter",
+        "no_connect",
+        "free",
+        "unspecified"
+      ]
+    },
+    "pin": {
+      "type": "object",
+      "required": ["number", "name", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "number": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "type": {"$ref": "#/$defs/electricalType"}
+      }
+    },
+    "instance": {
+      "type": "object",
+      "required": ["part"],
+      "additionalProperties": false,
+      "properties": {
+        "part": {"$ref": "#/$defs/partRef"},
+        "value": {"$ref": "#/$defs/scalar"},
+        "footprint": {"type": "string"},
+        "parameters": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/scalar"}
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/scalar"}
+        },
+        "no_connects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^#[A-Za-z0-9_.+/-]+$"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "dnp": {"type": "boolean", "default": false}
+      }
+    },
+    "internalNet": {
+      "type": "object",
+      "required": ["net", "endpoints"],
+      "additionalProperties": false,
+      "properties": {
+        "net": {"type": "string", "minLength": 1},
+        "endpoints": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/endpoint"},
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "required": ["net", "endpoints"],
+      "additionalProperties": false,
+      "properties": {
+        "net": {"type": "string", "minLength": 1},
+        "kind": {
+          "enum": [
+            "power",
+            "ground",
+            "signal",
+            "differential_pair",
+            "bus",
+            "unconnected",
+            "test"
+          ]
+        },
+        "voltage": {"type": "number"},
+        "endpoints": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/endpoint"},
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/scalar"}
+        }
+      }
+    },
+    "constraint": {
+      "type": "object",
+      "required": ["kind", "rule"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": ["electrical", "layout", "mechanical", "thermal", "emc", "other"]
+        },
+        "target": {
+          "oneOf": [
+            {"type": "string"},
+            {"type": "array", "items": {"type": "string"}}
+          ]
+        },
+        "rule": {"type": "string", "minLength": 1},
+        "value": {"$ref": "#/$defs/scalar"},
+        "severity": {
+          "enum": ["error", "warning", "info"],
+          "default": "warning"
+        },
+        "description": {"type": "string"}
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": ["kicad_netlist", "protel2_netlist", "bom_csv", "mermaid", "graphviz", "constraints", "json"]
+        },
+        "path": {"type": "string"},
+        "options": {"type": "object"}
+      }
+    }
+  }
+}

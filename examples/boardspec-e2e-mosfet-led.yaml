@@ -1,0 +1,397 @@
+spec: board-spec/v0.1
+project:
+  name: BoardSpec_E2E_MOSFET_LED
+  description: >-
+    Connectivity-only fixture for BoardSpec to EasyEDA Pro round-trip testing;
+    not a production-ready STM32 design.
+
+libraries: []
+
+definitions:
+  project:STM32F103C8T6:
+    kind: physical
+    category: mcu
+    reference_prefix: U
+    description: STM32F103C8T6, 64 KB Flash, LQFP-48
+    footprint: LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL
+    symbol: 3e713d8cedaf4a829e10ee0ae904ac12
+    pins:
+      - {number: "1", name: VBAT, type: power_in}
+      - {number: "2", name: PC13-TAMPER-RTC, type: unspecified}
+      - {number: "3", name: PC14-OSC32_IN, type: unspecified}
+      - {number: "4", name: PC15-OSC32_OUT, type: unspecified}
+      - {number: "5", name: PD0-OSC_IN, type: unspecified}
+      - {number: "6", name: PD1-OSC_OUT, type: unspecified}
+      - {number: "7", name: NRST, type: unspecified}
+      - {number: "8", name: VSSA, type: power_in}
+      - {number: "9", name: VDDA, type: power_in}
+      - {number: "10", name: PA0-WKUP, type: unspecified}
+      - {number: "11", name: PA1, type: unspecified}
+      - {number: "12", name: PA2, type: unspecified}
+      - {number: "13", name: PA3, type: unspecified}
+      - {number: "14", name: PA4, type: unspecified}
+      - {number: "15", name: PA5, type: output}
+      - {number: "16", name: PA6, type: unspecified}
+      - {number: "17", name: PA7, type: unspecified}
+      - {number: "18", name: PB0, type: unspecified}
+      - {number: "19", name: PB1, type: unspecified}
+      - {number: "20", name: PB2, type: unspecified}
+      - {number: "21", name: PB10, type: unspecified}
+      - {number: "22", name: PB11, type: unspecified}
+      - {number: "23", name: VSS_1, type: power_in}
+      - {number: "24", name: VDD_1, type: power_in}
+      - {number: "25", name: PB12, type: unspecified}
+      - {number: "26", name: PB13, type: unspecified}
+      - {number: "27", name: PB14, type: unspecified}
+      - {number: "28", name: PB15, type: unspecified}
+      - {number: "29", name: PA8, type: unspecified}
+      - {number: "30", name: PA9, type: unspecified}
+      - {number: "31", name: PA10, type: unspecified}
+      - {number: "32", name: PA11, type: unspecified}
+      - {number: "33", name: PA12, type: unspecified}
+      - {number: "34", name: PA13, type: unspecified}
+      - {number: "35", name: VSS_2, type: power_in}
+      - {number: "36", name: VDD_2, type: power_in}
+      - {number: "37", name: PA14, type: unspecified}
+      - {number: "38", name: PA15, type: unspecified}
+      - {number: "39", name: PB3, type: unspecified}
+      - {number: "40", name: PB4, type: unspecified}
+      - {number: "41", name: PB5, type: unspecified}
+      - {number: "42", name: PB6, type: unspecified}
+      - {number: "43", name: PB7, type: unspecified}
+      - {number: "44", name: BOOT0, type: unspecified}
+      - {number: "45", name: PB8, type: unspecified}
+      - {number: "46", name: PB9, type: unspecified}
+      - {number: "47", name: VSS_3, type: power_in}
+      - {number: "48", name: VDD_3, type: power_in}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: accfc2f6010745268febab2459577079
+      device_name: STM32F103C8T6
+      symbol_uuid: 3e713d8cedaf4a829e10ee0ae904ac12
+      symbol_name: STM32F103C8T6
+      footprint_uuid: db7d248fbf3949e6aaa163768e52acf8
+      supplier: LCSC
+      supplier_id: C8734
+      manufacturer: ST(意法半导体)
+      manufacturer_part_number: STM32F103C8T6
+      raw_pin_types:
+        "1": Undefined
+        "2": Undefined
+        "3": Undefined
+        "4": Undefined
+        "5": Undefined
+        "6": Undefined
+        "7": Undefined
+        "8": Undefined
+        "9": Undefined
+        "10": Undefined
+        "11": Undefined
+        "12": Undefined
+        "13": Undefined
+        "14": Undefined
+        "15": Undefined
+        "16": Undefined
+        "17": Undefined
+        "18": Undefined
+        "19": Undefined
+        "20": Undefined
+        "21": Undefined
+        "22": Undefined
+        "23": Undefined
+        "24": Undefined
+        "25": Undefined
+        "26": Undefined
+        "27": Undefined
+        "28": Undefined
+        "29": Undefined
+        "30": Undefined
+        "31": Undefined
+        "32": Undefined
+        "33": Undefined
+        "34": Undefined
+        "35": Undefined
+        "36": Undefined
+        "37": Undefined
+        "38": Undefined
+        "39": Undefined
+        "40": Undefined
+        "41": Undefined
+        "42": Undefined
+        "43": Undefined
+        "44": Undefined
+        "45": Undefined
+        "46": Undefined
+        "47": Undefined
+        "48": Undefined
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Only PA5 and supply pins are typed for this connectivity fixture.
+
+  project:PowerHeader2:
+    kind: physical
+    category: connector
+    reference_prefix: P
+    footprint: HDR-TH_2P-P2.54-V-F
+    symbol: 454b86b735ef4c9eb58937fa59491299
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 7ae76943e7ac41e999b8d2ac980cae08
+      device_name: 2.54-1*2P母
+      symbol_uuid: 454b86b735ef4c9eb58937fa59491299
+      symbol_name: Header-Female-2.54_1x2
+      footprint_uuid: b62899a8137c4e7a995565f9824cf212
+      supplier: LCSC
+      supplier_id: C49661
+      manufacturer: BOOMELE(博穆精密)
+      manufacturer_part_number: 2.54-1*2P母
+      raw_pin_types: {"1": IN, "2": IN}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:NMOS2N7002:
+    kind: physical
+    category: transistor
+    reference_prefix: Q
+    footprint: SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR
+    symbol: 65262e964a954b63a27fe858d18f82a0
+    pins:
+      - {number: "1", name: G, type: input}
+      - {number: "2", name: S, type: passive}
+      - {number: "3", name: D, type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: f8007837564a4f1fa0e6b57b81dccb0d
+      device_name: 2N7002_C8545
+      symbol_uuid: 65262e964a954b63a27fe858d18f82a0
+      symbol_name: 2N7002
+      footprint_uuid: bdad16194d454cb292a50525f39c3ffd
+      supplier: LCSC
+      supplier_id: C8545
+      manufacturer: CJ(江苏长电/长晶)
+      manufacturer_part_number: 2N7002
+      raw_pin_types: {"1": Undefined, "2": Undefined, "3": Undefined}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:R2K2:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    footprint: R0402
+    symbol: b75169e2e2c1498f874dfc4cabcaff1e
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: a5af5fd5005a45819ff0ab771881db3d
+      device_name: 0402WGF2201TCE
+      symbol_uuid: b75169e2e2c1498f874dfc4cabcaff1e
+      symbol_name: 0402WGF2201TCE
+      footprint_uuid: df9dfd54cabd403f88cae9927dcd418d
+      supplier: LCSC
+      supplier_id: C25879
+      manufacturer: UNI-ROYAL(厚声)
+      manufacturer_part_number: 0402WGF2201TCE
+      raw_pin_types: {"1": IN, "2": IN}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:R100K:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    footprint: R0402
+    symbol: 5b6d839cb6dd45f8bc4194b8b542e63d
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: acc294b6661948399f609b41c77ed19f
+      device_name: 0402WGF1003TCE
+      symbol_uuid: 5b6d839cb6dd45f8bc4194b8b542e63d
+      symbol_name: 0402WGF1003TCE
+      footprint_uuid: df9dfd54cabd403f88cae9927dcd418d
+      supplier: LCSC
+      supplier_id: C25741
+      manufacturer: UNI-ROYAL(厚声)
+      manufacturer_part_number: 0402WGF1003TCE
+      raw_pin_types: {"1": IN, "2": IN}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:C100N:
+    kind: physical
+    category: capacitor
+    reference_prefix: C
+    footprint: C0402
+    symbol: 2b5197ad461e412480ab71fd36672a36
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: a3dffd24d450471f827cab017c45fa48
+      device_name: GRM155R70J104KA01D
+      symbol_uuid: 2b5197ad461e412480ab71fd36672a36
+      symbol_name: GRM155R70J104KA01D
+      footprint_uuid: 14a08379d3874582bdd84020bde81eba
+      supplier: LCSC
+      supplier_id: C82153
+      manufacturer: muRata(村田)
+      manufacturer_part_number: GRM155R70J104KA01D
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:GreenLED:
+    kind: physical
+    category: led
+    reference_prefix: LED
+    footprint: LED0805-RD_GREEN
+    symbol: f27e3a393170428592765d36df3e60ae
+    pins:
+      - {number: "1", name: "-", type: passive}
+      - {number: "2", name: "+", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 4fe29c140a734d7fa498982f1825f005
+      device_name: 0805-LED[绿]
+      symbol_uuid: f27e3a393170428592765d36df3e60ae
+      symbol_name: 0805-LED[绿]
+      footprint_uuid: 8ed4432f9b16474d8ef6744b56521721
+      supplier: LCSC
+      supplier_id: C9900003727
+      manufacturer_part_number: 0805-LED[绿]
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:StatusLED:
+    kind: module
+    ports:
+      VCC: {dir: power_in}
+      GND: {dir: power_in}
+      CTRL: {dir: input}
+    items:
+      Q: {part: "project:NMOS2N7002", value: 2N7002}
+      R_LED: {part: "project:R2K2", value: 2.2k}
+      R_PD: {part: "project:R100K", value: 100k}
+      LED: {part: "project:GreenLED", value: Green}
+    nets:
+      - {net: VCC, endpoints: [R_LED.#1]}
+      - {net: LED_A, endpoints: [R_LED.#2, LED.#2]}
+      - {net: LED_K_SW, endpoints: [LED.#1, Q.#3]}
+      - {net: CTRL, endpoints: [Q.#1, R_PD.#1]}
+      - {net: GND, endpoints: [Q.#2, R_PD.#2]}
+    port_map:
+      VCC: VCC
+      GND: GND
+      CTRL: CTRL
+
+instances:
+  U1:
+    part: project:STM32F103C8T6
+    value: STM32F103C8T6
+    no_connects:
+      - "#2"
+      - "#3"
+      - "#4"
+      - "#5"
+      - "#6"
+      - "#7"
+      - "#10"
+      - "#11"
+      - "#12"
+      - "#13"
+      - "#14"
+      - "#16"
+      - "#17"
+      - "#18"
+      - "#19"
+      - "#20"
+      - "#21"
+      - "#22"
+      - "#25"
+      - "#26"
+      - "#27"
+      - "#28"
+      - "#29"
+      - "#30"
+      - "#31"
+      - "#32"
+      - "#33"
+      - "#34"
+      - "#37"
+      - "#38"
+      - "#39"
+      - "#40"
+      - "#41"
+      - "#42"
+      - "#43"
+      - "#44"
+      - "#45"
+      - "#46"
+  J1: {part: "project:PowerHeader2", value: 3V3_IN}
+  C1: {part: "project:C100N", value: 100nF}
+  C2: {part: "project:C100N", value: 100nF}
+  C3: {part: "project:C100N", value: 100nF}
+  C4: {part: "project:C100N", value: 100nF}
+  C5: {part: "project:C100N", value: 100nF}
+  STATUS1: {part: "project:StatusLED"}
+
+connections:
+  - net: 3V3
+    kind: power
+    voltage: 3.3
+    endpoints:
+      - J1.#1
+      - U1.#1
+      - U1.#9
+      - U1.#24
+      - U1.#36
+      - U1.#48
+      - C1.#1
+      - C2.#1
+      - C3.#1
+      - C4.#1
+      - C5.#1
+      - STATUS1.VCC
+  - net: GND
+    kind: ground
+    endpoints:
+      - J1.#2
+      - U1.#8
+      - U1.#23
+      - U1.#35
+      - U1.#47
+      - C1.#2
+      - C2.#2
+      - C3.#2
+      - C4.#2
+      - C5.#2
+      - STATUS1.GND
+  - net: LED_CTRL
+    kind: signal
+    endpoints: [U1.#15, STATUS1.CTRL]
+
+constraints:
+  - kind: layout
+    target: [C1, C2, C3, C4, C5]
+    rule: place_near_associated_supply_pin
+    severity: warning
+  - kind: other
+    rule: fixture_only_not_production_ready
+    severity: info
+
+outputs:
+  - {type: protel2_netlist, path: out/BoardSpec_E2E_MOSFET_LED.net}
+  - {type: bom_csv, path: out/BoardSpec_E2E_MOSFET_LED.csv}
+  - {type: mermaid, path: out/BoardSpec_E2E_MOSFET_LED.mmd}

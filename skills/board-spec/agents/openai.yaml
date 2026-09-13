@@ -1,4 +1,0 @@
-interface:
-  display_name: "BoardSpec"
-  short_description: "生成、校验并导出 EDA 中立的声明式电路板连接规格"
-  default_prompt: "使用 $board-spec 将这份电路需求转换为已校验的 BoardSpec YAML，并列出待工程师确认项。"
