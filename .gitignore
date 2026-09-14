@@ -6,12 +6,15 @@ __pycache__/
 *.py[cod]
 .venv/
 *.egg-info/
+boardspec-core/build/
+mcp-server/build/
 
 # Node
 node_modules/
 
 # Export artifacts
 out/
+release/
 
 # EDA extension build output
 eda-extension/dist/

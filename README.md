@@ -1,105 +1,127 @@
-# BoardSpec → 嘉立创 EDA 系统
+# Quick PCB：BoardSpec → 嘉立创 EDA Pro
 
-把电路设计意图写成**可审查、可 diff 的 EDA 中立连接规格**（BoardSpec YAML），由确定性工具校验、查库、展开、导出网表/BOM；独立的 Layout MCP 再以紧凑快照读取并精确操作嘉立创 EDA 专业版 PCB。
+Quick PCB 把电路连接意图写成可审查、可 diff 的 BoardSpec YAML，再由确定性工具完成校验、模块展开、BOM/网表导出，并通过 MCP 与嘉立创 EDA Pro 官方 Bridge 交互。
 
-**核心原则**：
-- BoardSpec 层只声明「有什么元件、连到哪、电源域/地怎么分」，不包含坐标或走线。
-- Layout 层只在模型显式调用时直接修改当前 EDA PCB，并在每次写入后回读和运行严格 DRC；它不提供布局建议、不撤销、不自动保存。
-- **引脚名必须来自真实元件库**，LLM 不凭记忆编引脚。
-- 电源和地显式声明，便于 ERC。
-- 所有文本可版本控制、可 diff、可回滚。
-- YAML 按 1.2 语义安全解析并拒绝重复键，避免网络名 `ON`/`OFF` 被误判为布尔值。
-- 连接规格仍止于**网表 + BOM**；物理布局通过独立、EasyEDA 专用的 MCP tools 完成。
+当前 Release：`v0.2.0`。
 
-## 目录结构
+## 能做什么
 
+- 用 YAML 声明元件、网络、电源域、No Connect 和工程约束。
+- 使用真实元件库引脚数据进行 Schema、引用和保守 ERC 校验。
+- 展开可复用模块，导出 Protel2、KiCad 交换网表、BOM CSV 和 Mermaid 连接图。
+- 在嘉立创 EDA Pro 中预览并应用网表，回读器件、网络和引脚进行逐项比较。
+- 通过独立 Layout MCP 读取或精确修改 PCB，并在写入后回读和运行严格 DRC。
+
+## 明确边界
+
+- BoardSpec 只描述“有什么、连到哪”，不生成原理图图形、原生 KiCad/Altium 工程、坐标或走线。
+- Layout MCP 不修改 BoardSpec 拓扑，不提供布局建议，不维护 undo，也不自动保存 EDA 文档。
+- DRC 为 0 只证明通过当前 EDA 规则，不等于固件、实物功能、EMC、热设计、可制造性或量产就绪。
+- 引脚、封装和器件参数必须来自可信库或工程审核，工具不会根据名称猜测。
+
+## Release 安装
+
+Release 目录包含两个平台无关的 Python wheel、一个嘉立创 EDA 插件、完整源码快照和 SHA-256 校验和，不包含本机虚拟环境或 `node_modules`。
+
+```text
+release/
+  quick-pcb-v0.2.0/
+    README.md
+    RELEASE-MANIFEST.txt
+    SHA256SUMS
+    extension/boardspec-eda-extension_v1.0.0.eext
+    python/boardspec_core-0.1.0-py3-none-any.whl
+    python/boardspec_mcp-0.2.0-py3-none-any.whl
+    source/quick-pcb-v0.2.0-source.tar.gz
+  quick-pcb-v0.2.0.tar.gz
+  quick-pcb-v0.2.0.tar.gz.sha256
 ```
-quick-pcb/
-  boardspec-core/   # Python 包：DSL 校验/展开/ERC/导出
-  mcp-server/       # MCP server：暴露 BoardSpec 工具 + 官方桥客户端
-  eda-extension/    # 嘉立创 EDA 插件（.eext）：网表/BOM 导入导出
-  docs/             # 文档
-```
 
-## 快速开始
-
-### 1. 安装核心包
+校验并解压完整发布包：
 
 ```bash
-cd boardspec-core
-python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
-.venv/bin/boardspec-validate tests/fixtures/status-led.yaml
-.venv/bin/boardspec-export tests/fixtures/status-led.yaml protel2_netlist
+cd release
+shasum -a 256 -c quick-pcb-v0.2.0.tar.gz.sha256
+tar -xzf quick-pcb-v0.2.0.tar.gz
+cd quick-pcb-v0.2.0
+shasum -a 256 -c SHA256SUMS
 ```
 
-### 2. 安装 MCP server
+安装 Python 组件：
 
 ```bash
-cd mcp-server
 python3 -m venv .venv
-.venv/bin/pip install -e ../boardspec-core
-.venv/bin/pip install -e .
+.venv/bin/python -m pip install python/*.whl
+.venv/bin/boardspec-mcp
 ```
 
-把 MCP server 注册到 Claude Code：
+将 `.venv/bin/boardspec-mcp` 配置为 MCP 客户端的 stdio 命令。嘉立创 EDA 插件位于 `extension/`；在嘉立创 EDA Pro 中进入“设置 → 扩展 → 扩展管理器”并导入 `.eext`。
+
+MCP 与 EDA 实时连接还需要官方 `easyeda-api-skill` Bridge 和 `run-api-gateway.eext`。HTTP 200 只代表 Bridge 服务可访问；只有 Bridge 身份正确且 `edaConnected=true` 才表示 EDA 已连接。
+
+## 开发环境
+
+要求 Python 3.10+、Node.js 20.17+、npm 和 Git。
+
+安装核心包：
 
 ```bash
-claude mcp add boardspec -- .venv/bin/boardspec-mcp
+python3 -m venv boardspec-core/.venv
+boardspec-core/.venv/bin/python -m pip install -e "./boardspec-core[dev]"
+boardspec-core/.venv/bin/boardspec-validate boardspec-core/tests/fixtures/status-led.yaml
 ```
 
-### 3. 构建嘉立创 EDA 插件
+安装 MCP 服务：
+
+```bash
+python3 -m venv mcp-server/.venv
+mcp-server/.venv/bin/python -m pip install -e "./boardspec-core[dev]"
+mcp-server/.venv/bin/python -m pip install -e "./mcp-server[dev]"
+```
+
+安装并构建 EDA 插件：
 
 ```bash
 cd eda-extension
 npm install
-npm run build   # 产出 build/dist/boardspec-eda-extension_v1.0.0.eext
+npm run build
 ```
 
-在嘉立创 EDA 专业版中导入该 `.eext`（设置 → 扩展 → 扩展管理器）。
+插件单独产出到 `eda-extension/build/dist/boardspec-eda-extension_v1.0.0.eext`。
 
-### 4. 端到端联调
+## 生成 Release
 
-详见 [docs/architecture.md](docs/architecture.md) 的「联调」一节。
-
-应用网表后，可把当前 EDA PCB 的 Protel2 回读结果与 BoardSpec 展开图逐项比较：
+先确保准备发布的修改已经提交且工作区干净，然后执行：
 
 ```bash
-BOARDSPEC_BRIDGE_URL=http://127.0.0.1:49620 \
-  boardspec-core/.venv/bin/python mcp-server/scripts/verify_roundtrip.py \
-  --spec examples/boardspec-e2e-mosfet-led.yaml \
-  --output-dir out/BoardSpec_E2E_MOSFET_LED
+./scripts/build-release.sh
 ```
 
-可直接复用的 STC51 + DS1302 电子时钟连接规格位于
-[`examples/boardspec-e2e-stc51-clock.yaml`](examples/boardspec-e2e-stc51-clock.yaml)，
-对应的真实 EasyEDA 器件映射位于
-[`examples/parts.stc51-clock.json`](examples/parts.stc51-clock.json)。实机布局闭环见
-[`docs/evidence/stc51-clock-e2e-2026-09-14.md`](docs/evidence/stc51-clock-e2e-2026-09-14.md)。
+脚本会依次运行两套 Python 测试、EDA 插件 lint/编译，构建 wheel 和 `.eext`，从当前 Git `HEAD` 生成源码快照，写入组件版本与提交信息，并为所有产物生成 SHA-256 校验和。首次构建 wheel 时，Python 构建隔离环境可能需要联网下载 `setuptools`。
 
-## MCP 工具
+开发过程中可用 `./scripts/build-release.sh --allow-dirty` 检查构建流程；这类包会在清单中标记 `dirty=true`，不应对外发布。
 
-| 工具 | 说明 | 依赖 |
-|---|---|---|
-| `bridge_status` | 探活官方桥 + EDA 客户端 | 官方桥 |
-| `search_part` | 查嘉立创真实器件库 | 官方桥 |
-| `get_part` | 按 UUID 取器件详情 | 官方桥 |
-| `get_project_component` | 回读已放置器件及引脚/No Connect | 官方桥 |
-| `get_netlist` | 回读当前原理图或 PCB 网表 | 官方桥 |
-| `set_no_connects` | 预演或应用精确 No Connect | 官方桥 |
-| `run_schematic_drc` | 运行原理图严格 DRC | 官方桥 |
-| `run_pcb_drc` | 运行 PCB 严格 DRC | 官方桥 |
-| `validate` | Schema + 引用 + ERC 校验 | 本地 |
-| `expand` | 展开 `kind: module` 模块 | 本地 |
-| `export` | 导出网表/BOM/mermaid | 本地 |
-| `load_netlist` | 暂存 PCB 网表导入预览 | 官方桥 |
-| `get_layout_summary` / `get_layout_components` | 紧凑总览与器件/焊盘几何 | 官方桥 |
-| `get_layout_routing` / `get_board_geometry` | 布线、板框、叠层、keepout、覆铜、障碍物 | 官方桥 |
-| `get_layout_rules` / `get_layout_violations` | 当前规则和可筛选严格 DRC | 官方桥 |
-| `set_component_placement` / `run_auto_layout` | 精确或 EDA 自动布局 | 官方桥 |
-| `create_route` / `edit_routing` / `run_auto_routing` | 精确及 EDA 自动布线 | 官方桥 |
-| `set_board_outline` / `edit_keepouts` / `edit_copper_pours` | 板级几何与铜皮编辑 | 官方桥 |
+`release/` 是本地构建输出并被 Git 忽略。正式发布时上传以下两个文件：
 
-详见 [docs/mcp-tools.md](docs/mcp-tools.md)。
+- `release/quick-pcb-v0.2.0.tar.gz`
+- `release/quick-pcb-v0.2.0.tar.gz.sha256`
+
+## 项目结构
+
+```text
+boardspec-core/   BoardSpec DSL、校验、展开、ERC 和导出器
+mcp-server/       BoardSpec 与 EasyEDA Pro Layout MCP 服务
+eda-extension/    嘉立创 EDA Pro 导入网表/导出 BOM 插件
+examples/         已验证的 BoardSpec 示例及真实器件映射
+docs/             协议、架构、工具契约和 E2E 证据
+scripts/          统一 Release 构建入口
+```
+
+## 验证证据
+
+- STC51 + DS1302 时钟夹具：25 个器件、21 个网络、76 个节点，最终严格 PCB DRC 为 0。
+- MOSFET LED 夹具：11 个器件、5 个网络、31 个节点，最终严格 PCB DRC 为 0。
+- 这些结果是特定测试工程和 EDA 版本的实机证据，不自动外推到其它版本或生产设计。
 
 ## 文档
 
@@ -107,4 +129,5 @@ BOARDSPEC_BRIDGE_URL=http://127.0.0.1:49620 \
 - [MCP 工具契约](docs/mcp-tools.md)
 - [Layout MCP v0.1](docs/layout-mcp-v0.1.md)
 - [系统架构](docs/architecture.md)
-- [STC51 电子时钟真实 EDA E2E 证据](docs/evidence/stc51-clock-e2e-2026-09-14.md)
+- [STC51 真实 EDA E2E](docs/evidence/stc51-clock-e2e-2026-09-14.md)
+- [Layout MCP 真实 EDA E2E](docs/evidence/layout-e2e-2026-09-14.md)
