@@ -70,6 +70,12 @@ BOARDSPEC_BRIDGE_URL=http://127.0.0.1:49620 \
   --output-dir out/BoardSpec_E2E_MOSFET_LED
 ```
 
+可直接复用的 STC51 + DS1302 电子时钟连接规格位于
+[`examples/boardspec-e2e-stc51-clock.yaml`](examples/boardspec-e2e-stc51-clock.yaml)，
+对应的真实 EasyEDA 器件映射位于
+[`examples/parts.stc51-clock.json`](examples/parts.stc51-clock.json)。实机布局闭环见
+[`docs/evidence/stc51-clock-e2e-2026-09-14.md`](docs/evidence/stc51-clock-e2e-2026-09-14.md)。
+
 ## MCP 工具
 
 | 工具 | 说明 | 依赖 |
@@ -101,3 +107,4 @@ BOARDSPEC_BRIDGE_URL=http://127.0.0.1:49620 \
 - [MCP 工具契约](docs/mcp-tools.md)
 - [Layout MCP v0.1](docs/layout-mcp-v0.1.md)
 - [系统架构](docs/architecture.md)
+- [STC51 电子时钟真实 EDA E2E 证据](docs/evidence/stc51-clock-e2e-2026-09-14.md)

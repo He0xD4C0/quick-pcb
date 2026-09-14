@@ -1,0 +1,218 @@
+{
+  "format": "board-spec-part-db/v0.1",
+  "notice": "EasyEDA Pro system-library parts resolved on 2026-09-14 for the STC51 clock E2E fixture. Electrical types are connectivity-fixture reviews; recheck ratings, footprints, and availability before production.",
+  "parts": {
+    "STC:STC89C52RC-PDIP40": {
+      "description": "STC89C52RC 8051-compatible MCU, PDIP-40",
+      "category": "mcu",
+      "reference_prefix": "U",
+      "complete": true,
+      "footprint": "DIP-40_L52.0-W13.7-P2.54-LS15.2-BL",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "2b61f565065548ce99390a2777c9652c",
+        "device_name": "STC89C52RC-40I-PDIP40",
+        "symbol_uuid": "4ce655eef62147e5b5556a75a2af3b3e",
+        "footprint_uuid": "b37eba36516b4007a8fd5afcfe508a7e",
+        "supplier_id": "C14022",
+        "raw_pin_types": {"1":"Undefined","2":"Undefined","3":"Undefined","4":"Undefined","5":"Undefined","6":"Undefined","7":"Undefined","8":"Undefined","9":"Undefined","10":"Undefined","11":"Undefined","12":"Undefined","13":"Undefined","14":"Undefined","15":"Undefined","16":"Undefined","17":"Undefined","18":"Undefined","19":"Undefined","20":"Undefined","21":"Undefined","22":"Undefined","23":"Undefined","24":"Undefined","25":"Undefined","26":"Undefined","27":"Undefined","28":"Undefined","29":"Undefined","30":"Undefined","31":"Undefined","32":"Undefined","33":"Undefined","34":"Undefined","35":"Undefined","36":"Undefined","37":"Undefined","38":"Undefined","39":"Undefined","40":"Undefined"}
+      },
+      "pins": [
+        {"number":"1","name":"T2/P1.0","type":"bidirectional"},
+        {"number":"2","name":"T2EX/P1.1","type":"bidirectional"},
+        {"number":"3","name":"P1.2","type":"bidirectional"},
+        {"number":"4","name":"P1.3","type":"bidirectional"},
+        {"number":"5","name":"P1.4","type":"bidirectional"},
+        {"number":"6","name":"P1.5","type":"bidirectional"},
+        {"number":"7","name":"P1.6","type":"bidirectional"},
+        {"number":"8","name":"P1.7","type":"bidirectional"},
+        {"number":"9","name":"RST","type":"input"},
+        {"number":"10","name":"RXD/P3.0","type":"bidirectional"},
+        {"number":"11","name":"TXD/P3.1","type":"bidirectional"},
+        {"number":"12","name":"INT0#/P3.2","type":"bidirectional"},
+        {"number":"13","name":"INT1#/P3.3","type":"bidirectional"},
+        {"number":"14","name":"T0/P3.4","type":"bidirectional"},
+        {"number":"15","name":"T1/P3.5","type":"bidirectional"},
+        {"number":"16","name":"WR#/P3.6","type":"bidirectional"},
+        {"number":"17","name":"RD#/P3.7","type":"bidirectional"},
+        {"number":"18","name":"XTAL2","type":"output"},
+        {"number":"19","name":"XTAL1","type":"input"},
+        {"number":"20","name":"GND","type":"power_in"},
+        {"number":"21","name":"P2.0","type":"bidirectional"},
+        {"number":"22","name":"P2.1","type":"bidirectional"},
+        {"number":"23","name":"P2.2","type":"bidirectional"},
+        {"number":"24","name":"P2.3","type":"bidirectional"},
+        {"number":"25","name":"P2.4","type":"bidirectional"},
+        {"number":"26","name":"P2.5","type":"bidirectional"},
+        {"number":"27","name":"P2.6","type":"bidirectional"},
+        {"number":"28","name":"P2.7","type":"bidirectional"},
+        {"number":"29","name":"PSEN#","type":"output"},
+        {"number":"30","name":"ALE","type":"output"},
+        {"number":"31","name":"EA#","type":"input"},
+        {"number":"32","name":"P0.7","type":"bidirectional"},
+        {"number":"33","name":"P0.6","type":"bidirectional"},
+        {"number":"34","name":"P0.5","type":"bidirectional"},
+        {"number":"35","name":"P0.4","type":"bidirectional"},
+        {"number":"36","name":"P0.3","type":"bidirectional"},
+        {"number":"37","name":"P0.2","type":"bidirectional"},
+        {"number":"38","name":"P0.1","type":"bidirectional"},
+        {"number":"39","name":"P0.0","type":"bidirectional"},
+        {"number":"40","name":"VCC","type":"power_in"}
+      ]
+    },
+    "Maxim:DS1302_PLUS": {
+      "description": "ADI/Maxim DS1302 real-time clock, PDIP-8",
+      "category": "rtc",
+      "reference_prefix": "U",
+      "complete": true,
+      "footprint": "DIP-8_L9.8-W6.6-P2.54-LS7.6-BL",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"0a5b7e9bdad44e2f94468807b1d13a94","device_name":"DS1302+","symbol_uuid":"c1437c96548a4291b2d43e7b8c78b82c","footprint_uuid":"8da5111c35a4466087109413ff4c3a1b","supplier_id":"C14785","raw_pin_types":{"1":"Power","2":"Undefined","3":"Undefined","4":"Power","5":"Undefined","6":"BI","7":"Undefined","8":"Power"}},
+      "pins": [
+        {"number":"1","name":"VCC2","type":"power_in"},
+        {"number":"2","name":"X1","type":"passive"},
+        {"number":"3","name":"X2","type":"passive"},
+        {"number":"4","name":"GND","type":"power_in"},
+        {"number":"5","name":"CE","type":"input"},
+        {"number":"6","name":"IO","type":"bidirectional"},
+        {"number":"7","name":"SCLK","type":"input"},
+        {"number":"8","name":"VCC1","type":"power_in"}
+      ]
+    },
+    "YXC:X49SS2-11.0592": {
+      "description": "11.0592 MHz crystal, 20 pF load",
+      "category": "crystal",
+      "reference_prefix": "X",
+      "complete": true,
+      "footprint": "CRYSTAL-SMD_L11.4-W4.7-LS12.7",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"59d83274b96c4e7d9b1523830a250a65","device_name":"X49SS2-11.0592-F20LLHP","symbol_uuid":"bc8e075c844440d28ff6fa701d9653e0","footprint_uuid":"3b2cd7583a8a4478b146d0fadeba7a36","supplier_id":"C2842301","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "MicroCrystal:CM7V-32768-6PF": {
+      "description": "32.768 kHz crystal, 6 pF load for DS1302",
+      "category": "crystal",
+      "reference_prefix": "X",
+      "complete": true,
+      "footprint": "CRYSTAL-SMD_L3.2-W1.5-FC-135R32.7680KF-A3",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"2913e50215b441e68422daab28f4d7e7","device_name":"CM7V-T1A-32.768KHZ-6PF-20PPM-TA-QC","symbol_uuid":"234c298c89564ceea39b0e1e5bccbf2b","footprint_uuid":"1786f564be324085a5abad47ce59fb1e","supplier_id":"C5366534","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Connector:Header2": {
+      "description": "2.54 mm 1x2 female through-hole header",
+      "category": "connector",
+      "reference_prefix": "P",
+      "complete": true,
+      "footprint": "HDR-TH_2P-P2.54-V-F",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"7ae76943e7ac41e999b8d2ac980cae08","device_name":"2.54-1*2P母","symbol_uuid":"454b86b735ef4c9eb58937fa59491299","footprint_uuid":"b62899a8137c4e7a995565f9824cf212","supplier_id":"C49661","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Connector:Header4": {
+      "description": "2.54 mm 1x4 female through-hole header",
+      "category": "connector",
+      "reference_prefix": "H",
+      "complete": true,
+      "footprint": "HDR-TH_4P-P2.54-V-F",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"0ba1f20ae7eb42e8bde970f71959ded8","device_name":"2.54-1*4P母","symbol_uuid":"7a44774edd4e4a2aae656fd6632cec79","footprint_uuid":"6f9579472cd14f138b4662b6f6a0cfb6","supplier_id":"C2718488","raw_pin_types":{"1":"Undefined","2":"Undefined","3":"Undefined","4":"Undefined"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"},{"number":"3","name":"3","type":"passive"},{"number":"4","name":"4","type":"passive"}]
+    },
+    "Battery:CR2032-2-1": {
+      "description": "CR2032 through-hole holder",
+      "category": "battery_holder",
+      "reference_prefix": "BAT",
+      "complete": true,
+      "footprint": "BAT-TH_CR2032-2-1",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"c5a58b0a7d3d404397eea5ae265e8a78","device_name":"CR2032-2-1","symbol_uuid":"d6da3af31d5140308e203234a6ea4360","footprint_uuid":"eca6b8240ede455bb4ad0bac117c517e","supplier_id":"C9900018737","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"+","type":"passive"},{"number":"2","name":"-","type":"passive"}]
+    },
+    "Switch:TS-1088R": {
+      "description": "Normally-open tactile switch",
+      "category": "switch",
+      "reference_prefix": "SW",
+      "complete": true,
+      "footprint": "SW-SMD_L3.9-W3.0-P4.45",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"6b9818b3aca04c158ead64b470e78cb1","device_name":"TS-1088R-02026","symbol_uuid":"55c36e6ad67e4ed6aac61065b4f3d68b","footprint_uuid":"9c6368306ce24298bf2ce130f6c4bcc6","supplier_id":"C455280","raw_pin_types":{"1":"Undefined","2":"Undefined"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Buzzer:MLT-8530-5V": {
+      "description": "5 V SMD buzzer",
+      "category": "buzzer",
+      "reference_prefix": "U",
+      "complete": true,
+      "footprint": "BUZ-SMD_4P-L8.5-W8.5-TL",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"1970442189b5416b9a351bc2f6be7770","device_name":"MLT-8530-5V","symbol_uuid":"250aad5f384e46f5a4cbc1a9a8c226a9","footprint_uuid":"a4b2dd2554c64b84bef4b76253d875cc","supplier_id":"C9900014013","raw_pin_types":{"1":"Undefined","2":"Undefined","3":"Undefined","4":"Undefined"}},
+      "pins": [{"number":"1","name":"+","type":"passive"},{"number":"2","name":"-","type":"passive"},{"number":"3","name":"NC","type":"no_connect"},{"number":"4","name":"NC","type":"no_connect"}]
+    },
+    "Transistor:SS8050": {
+      "description": "SS8050 NPN transistor, SOT-23",
+      "category": "transistor",
+      "reference_prefix": "Q",
+      "complete": true,
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"02b834e6b4e94f2c8e7614e1e1c3ef53","device_name":"SS8050(RANGE:200-350)_C2150","symbol_uuid":"2874ee46922247108793bafd6fc342e7","footprint_uuid":"bdad16194d454cb292a50525f39c3ffd","supplier_id":"C2150","raw_pin_types":{"1":"Undefined","2":"Undefined","3":"Undefined"}},
+      "pins": [{"number":"1","name":"B","type":"input"},{"number":"2","name":"E","type":"passive"},{"number":"3","name":"C","type":"passive"}]
+    },
+    "Diode:1N4148WS": {
+      "description": "1N4148WS switching diode",
+      "category": "diode",
+      "reference_prefix": "D",
+      "complete": true,
+      "footprint": "SOD-323_L1.8-W1.3-LS2.5-RD",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"b1fbc6c9168c437ab79ee93b712a902c","device_name":"1N4148WS_C2128","symbol_uuid":"e454cc26c81749b3800a2233d75afb0c","footprint_uuid":"346e4bfebbd04c04a9f80bbf27c6dd6a","supplier_id":"C2128","raw_pin_types":{"1":"Undefined","2":"Undefined"}},
+      "pins": [{"number":"1","name":"K","type":"passive"},{"number":"2","name":"A","type":"passive"}]
+    },
+    "Resistor:10K": {
+      "description": "10 kOhm 1% resistor",
+      "category": "resistor",
+      "reference_prefix": "R",
+      "complete": true,
+      "footprint": "R0402",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"c3b9baa5ef2e4070a4c0f9e9cd04fe6e","device_name":"0402WGF1002TCE","symbol_uuid":"b4bb0b94f5d04a92a4e5542845335d53","footprint_uuid":"df9dfd54cabd403f88cae9927dcd418d","supplier_id":"C25744","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Resistor:4K7": {
+      "description": "4.7 kOhm 1% resistor",
+      "category": "resistor",
+      "reference_prefix": "R",
+      "complete": true,
+      "footprint": "R0402",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"9b2474b02bb94569a00ded395421ea45","device_name":"0402WGF4701TCE","symbol_uuid":"98ec7494b4b64924a7879d6048ba7439","footprint_uuid":"df9dfd54cabd403f88cae9927dcd418d","supplier_id":"C25900","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Resistor:1K": {
+      "description": "1 kOhm 1% resistor",
+      "category": "resistor",
+      "reference_prefix": "R",
+      "complete": true,
+      "footprint": "R0402",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"65abbad5fa864933b552e0f016ece0db","device_name":"0402WGF1001TCE","symbol_uuid":"18e085fc20b941a69c01086555a38f6c","footprint_uuid":"df9dfd54cabd403f88cae9927dcd418d","supplier_id":"C11702","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Capacitor:100N": {
+      "description": "100 nF 6.3 V X7R capacitor",
+      "category": "capacitor",
+      "reference_prefix": "C",
+      "complete": true,
+      "footprint": "C0402",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"a3dffd24d450471f827cab017c45fa48","device_name":"GRM155R70J104KA01D","symbol_uuid":"2b5197ad461e412480ab71fd36672a36","footprint_uuid":"14a08379d3874582bdd84020bde81eba","supplier_id":"C82153","raw_pin_types":{"1":"Undefined","2":"Undefined"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Capacitor:22P": {
+      "description": "22 pF 50 V C0G capacitor",
+      "category": "capacitor",
+      "reference_prefix": "C",
+      "complete": true,
+      "footprint": "C0402",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"9c09c88e969f4f2b8aebe35c2860f168","device_name":"0402CG220J500NT","symbol_uuid":"3c9863df3d9c4967b9b99631e71dada7","footprint_uuid":"14a08379d3874582bdd84020bde81eba","supplier_id":"C1555","raw_pin_types":{"1":"IN","2":"IN"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    },
+    "Capacitor:10U": {
+      "description": "10 uF 25 V X5R capacitor",
+      "category": "capacitor",
+      "reference_prefix": "C",
+      "complete": true,
+      "footprint": "C0805",
+      "source": {"provider":"easyeda-pro","library_uuid":"0819f05c4eef4c71ace90d822a990e87","device_uuid":"8c1f4a9e9d204b148b36ce719c891bd1","device_name":"CL21A106KAYNNNE_C15850","symbol_uuid":"5f9529790e034d94aefbb6c46308260a","footprint_uuid":"ccb32feceadc4298b406326a506ce8e7","supplier_id":"C15850","raw_pin_types":{"1":"Undefined","2":"Undefined"}},
+      "pins": [{"number":"1","name":"1","type":"passive"},{"number":"2","name":"2","type":"passive"}]
+    }
+  }
+}

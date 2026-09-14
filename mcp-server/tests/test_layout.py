@@ -199,6 +199,14 @@ def test_drc_string_result_is_not_mistaken_for_a_pass():
     assert rows[0]["message"] == "board outline is open"
 
 
+def test_drc_leaf_metadata_strings_are_not_extra_violations():
+    item = drc_item()
+    item["list"][0]["metadata"] = ["SMD Pad"]
+    rows = flatten_drc([item])
+    assert len(rows) == 1
+    assert rows[0]["type"] == "Connection Error"
+
+
 def test_summary_is_columnar_paginated_and_reports_drc_facts():
     client = FakeClient([sample_state()], drcs=[[drc_item()]])
     result = layout_tools.get_layout_summary(client, page_size=1)

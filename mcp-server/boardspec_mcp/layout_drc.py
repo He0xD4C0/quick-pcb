@@ -26,6 +26,10 @@ def _walk(value, allow_strings: bool = True):
         )
         if (identified or value.get("name")) and described:
             yield value
+            # A complete violation may contain nested string/list metadata such
+            # as object-type labels. Those children describe this row; they are
+            # not standalone DRC violations.
+            return
         for key, child in value.items():
             if isinstance(child, (dict, list)):
                 yield from _walk(

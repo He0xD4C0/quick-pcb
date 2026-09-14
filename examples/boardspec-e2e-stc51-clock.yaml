@@ -1,0 +1,90 @@
+spec: board-spec/v0.1
+project:
+  name: BoardSpec_E2E_STC51_CLOCK
+  description: >-
+    Connectivity and layout E2E fixture for a 5 V STC89C52RC electronic
+    clock with DS1302 timekeeping, an external LCD1602 I2C module, three
+    setting buttons, UART ISP header, and transistor-driven buzzer.
+
+libraries:
+  - id: stc51_clock
+    type: generic
+    path: parts.stc51-clock.json
+
+definitions: {}
+
+instances:
+  U1:
+    part: STC:STC89C52RC-PDIP40
+    value: STC89C52RC-40I-PDIP40
+    no_connects: ["#7", "#8", "#15", "#16", "#17", "#21", "#22", "#23", "#24", "#25", "#26", "#27", "#28", "#29", "#30", "#32", "#33", "#34", "#35", "#36", "#37", "#38", "#39"]
+  U2: {part: "Maxim:DS1302_PLUS", value: "DS1302+"}
+  U3:
+    part: Buzzer:MLT-8530-5V
+    value: MLT-8530-5V
+    no_connects: ["#3", "#4"]
+  X1: {part: "YXC:X49SS2-11.0592", value: 11.0592MHz}
+  X2: {part: "MicroCrystal:CM7V-32768-6PF", value: 32.768kHz}
+  BAT1: {part: "Battery:CR2032-2-1", value: CR2032}
+  P1: {part: "Connector:Header2", value: POWER_5V}
+  H1: {part: "Connector:Header4", value: LCD1602_I2C}
+  H2: {part: "Connector:Header4", value: STC_ISP_UART}
+  SW1: {part: "Switch:TS-1088R", value: SET}
+  SW2: {part: "Switch:TS-1088R", value: UP}
+  SW3: {part: "Switch:TS-1088R", value: DOWN}
+  SW4: {part: "Switch:TS-1088R", value: RESET}
+  Q1: {part: "Transistor:SS8050", value: SS8050}
+  D1: {part: "Diode:1N4148WS", value: 1N4148WS}
+  R1: {part: "Resistor:10K", value: 10k}
+  R2: {part: "Resistor:4K7", value: 4.7k}
+  R3: {part: "Resistor:4K7", value: 4.7k}
+  R4: {part: "Resistor:1K", value: 1k}
+  C1: {part: "Capacitor:100N", value: 100nF}
+  C2: {part: "Capacitor:100N", value: 100nF}
+  C3: {part: "Capacitor:22P", value: 22pF}
+  C4: {part: "Capacitor:22P", value: 22pF}
+  C5: {part: "Capacitor:10U", value: 10uF}
+  C6: {part: "Capacitor:100N", value: 100nF}
+
+connections:
+  - net: 5V
+    kind: power
+    voltage: 5
+    endpoints: [P1.#1, U1.#40, U1.#31, U2.#1, U3.#1, H1.#1, H2.#1, D1.#1, R2.#1, R3.#1, C1.#1, C2.#1, C5.#1, SW4.#1]
+  - net: GND
+    kind: ground
+    endpoints: [P1.#2, U1.#20, U2.#4, H1.#2, H2.#2, BAT1.#2, Q1.#2, R1.#2, C1.#2, C2.#2, C3.#2, C4.#2, C6.#2, SW1.#2, SW2.#2, SW3.#2]
+  - {net: VBAT, kind: power, endpoints: [BAT1.#1, U2.#8, C6.#1]}
+  - {net: MCU_XTAL1, kind: signal, endpoints: [U1.#19, X1.#1, C3.#1]}
+  - {net: MCU_XTAL2, kind: signal, endpoints: [U1.#18, X1.#2, C4.#1]}
+  - {net: RTC_X1, kind: signal, endpoints: [U2.#2, X2.#1]}
+  - {net: RTC_X2, kind: signal, endpoints: [U2.#3, X2.#2]}
+  - {net: RESET, kind: signal, endpoints: [U1.#9, R1.#1, C5.#2, SW4.#2]}
+  - {net: RTC_CE, kind: signal, endpoints: [U1.#1, U2.#5]}
+  - {net: RTC_IO, kind: signal, endpoints: [U1.#2, U2.#6]}
+  - {net: RTC_SCLK, kind: signal, endpoints: [U1.#3, U2.#7]}
+  - {net: LCD_SDA, kind: signal, endpoints: [U1.#4, H1.#3, R2.#2]}
+  - {net: LCD_SCL, kind: signal, endpoints: [U1.#5, H1.#4, R3.#2]}
+  - {net: KEY_SET, kind: signal, endpoints: [U1.#12, SW1.#1]}
+  - {net: KEY_UP, kind: signal, endpoints: [U1.#13, SW2.#1]}
+  - {net: KEY_DOWN, kind: signal, endpoints: [U1.#14, SW3.#1]}
+  - {net: BUZZER_DRIVE, kind: signal, endpoints: [U1.#6, R4.#1]}
+  - {net: BUZZER_BASE, kind: signal, endpoints: [R4.#2, Q1.#1]}
+  - {net: BUZZER_LOW, kind: signal, endpoints: [Q1.#3, U3.#2, D1.#2]}
+  - {net: UART_RXD, kind: signal, endpoints: [U1.#10, H2.#3]}
+  - {net: UART_TXD, kind: signal, endpoints: [U1.#11, H2.#4]}
+
+constraints:
+  - {kind: electrical, target: 5V, rule: supply_voltage, value: 5, severity: error}
+  - {kind: electrical, target: [U1, U2], rule: local_decoupling_required, value: 100nF, severity: warning}
+  - {kind: electrical, target: U2, rule: do_not_enable_trickle_charge_with_primary_CR2032, severity: error}
+  - {kind: layout, target: [X1, C3, C4], rule: place_close_to_U1_XTAL_pins, severity: warning}
+  - {kind: layout, target: X2, rule: place_close_to_U2_X1_X2_pins_and_keep_away_from_fast_signals, severity: warning}
+  - {kind: other, target: H1, rule: external_LCD1602_I2C_module_pin_order_must_match_1_VCC_2_GND_3_SDA_4_SCL, severity: error}
+  - {kind: other, target: H2, rule: external_STC_ISP_adapter_pin_order_must_match_1_VCC_2_GND_3_MCU_RXD_4_MCU_TXD, severity: error}
+  - {kind: other, target: firmware, rule: verify_STC_clock_mode_DS1302_timing_LCD_I2C_address_key_debounce_and_buzzer_polarity, severity: warning}
+
+outputs:
+  - {type: protel2_netlist, path: ../out/STC51_CLOCK_E2E/netlist.net}
+  - {type: bom_csv, path: ../out/STC51_CLOCK_E2E/bom.csv}
+  - {type: mermaid, path: ../out/STC51_CLOCK_E2E/connectivity.mmd}
