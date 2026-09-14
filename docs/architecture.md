@@ -46,7 +46,7 @@
 | 原理图 DRC | `eda.sch_Drc.check(true, false, true)` |
 | PCB DRC | `eda.pcb_Drc.check(true, false, true)` |
 | Layout 读取 | `pcb_PrimitiveComponent/Line/Arc/Via/Polyline/Pour/Poured/Region`、`pcb_Layer`、`pcb_Drc`、`pcb_Net` |
-| Layout 写入 | 对应图元 `create/modify/delete`、`pcb_Document.autoLayout/autoRouting`、`pcb_PrimitivePour.rebuildCopperRegions` |
+| Layout 写入 | 对应图元 `create/modify/delete`、`pcb_Document.autoLayout/autoRouting`、`IPCB_PrimitivePour.rebuildCopperRegion` |
 | BOM 导出 | `eda.pcb_ManufactureData.getBomFile(name, 'xlsx'|'csv')` |
 | 文件对话框 | `eda.sys_FileSystem.openReadFileDialog()` / `saveFile()` |
 | 消息 | `eda.sys_Dialog.showInformationMessage()` |
@@ -64,7 +64,7 @@
 
 1. `pcb_Net.setNetlist` 的最终应用仍由 EDA “确认导入信息”界面控制；必须先检查预览，再应用并回读。`sch_Netlist.setNetlist` 不会从任意网表生成原理图导线。
 2. 工程库符号的引脚类型审核仍需在 EDA 符号编辑器完成；放置实例 API 不允许修改该属性。
-3. Layout 写工具的真实画布 E2E 需要本机 EasyEDA bridge 和活动测试 PCB；未连接时只能完成模拟桥、生成脚本与契约验证。
+3. Layout 写工具已在一次性测试 PCB 上完成真实画布 E2E；版本、revision 链、DRC 和拓扑证据见 `docs/evidence/layout-e2e-2026-09-14.md`。其它 EDA 版本和生产设计仍需分别验证。
 
 ## 分层边界
 

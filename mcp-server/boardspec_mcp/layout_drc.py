@@ -8,8 +8,14 @@ import json
 
 def _walk(value, allow_strings: bool = True):
     if isinstance(value, list):
+        # EasyEDA verbose DRC groups are shaped like ["Connection Error",
+        # [structured rows...]]. The label is not itself a violation. Preserve
+        # genuine string-only diagnostics while suppressing group labels.
+        child_strings = allow_strings and not any(
+            isinstance(item, (dict, list)) for item in value
+        )
         for item in value:
-            yield from _walk(item, allow_strings)
+            yield from _walk(item, child_strings)
     elif isinstance(value, dict):
         identified = value.get("errorType") or value.get("globalIndex")
         described = (
@@ -41,11 +47,20 @@ def _message(item: dict) -> str | None:
 def _position(item: dict) -> dict | None:
     pos = item.get("pos")
     if isinstance(pos, (list, tuple)):
-        return {
+        value = {
             "x": pos[0] if len(pos) > 0 else None,
             "y": pos[1] if len(pos) > 1 else None,
         }
-    return pos if isinstance(pos, dict) else None
+    else:
+        value = pos if isinstance(pos, dict) else None
+    if value is None:
+        return None
+    # PCB primitive geometry is returned in mil, while EasyEDA Pro 3.2.186
+    # verbose DRC positions use 0.1 mil. Normalize to the snapshot contract.
+    return {
+        "x": value.get("x") * 10 if value.get("x") is not None else None,
+        "y": value.get("y") * 10 if value.get("y") is not None else None,
+    }
 
 
 def _signature(item: dict) -> str:

@@ -36,7 +36,7 @@ Layout MCP 是 BoardSpec 连接规格之后的独立物理实现层。它读取�
 
 ### `get_layout_violations(ids?, nets?, region?)`
 
-运行严格 PCB DRC，将 EDA 嵌套结果扁平化。稳定违规 ID 由错误类型、规则、网络、对象和位置生成，不依赖易变化的 EDA `globalIndex`。
+运行严格 PCB DRC，将 EDA 嵌套结果扁平化。EDA verbose DRC 的 `0.1 mil` 位置会转换为统一的 `mil`，分组标题不会被误报成独立违规。稳定违规 ID 由错误类型、规则、网络、对象和规范化后的位置生成，不依赖易变化的 EDA `globalIndex`。
 
 ## 写工具
 
@@ -79,7 +79,7 @@ branch 的起点、终点和路标可使用精确焊盘选择器或 `{x,y,layer}
 
 ### `set_board_outline(expected_revision, contours, replace=false)`
 
-每个 contour 是至少三个 `{x,y,width?}` 点，工具闭合并创建 BoardOutline 线段。已有板框时必须显式 `replace=true`；替换不是原子操作。
+每个 contour 是至少三个 `{x,y,width?}` 点，工具闭合并创建一个 BoardOutline Polyline。未提供宽度时使用编辑器的 `5 mil` 默认值。已有板框时必须显式 `replace=true`；替换不是原子操作。
 
 ### `edit_keepouts(expected_revision, actions)`
 
@@ -87,7 +87,7 @@ branch 的起点、终点和路标可使用精确焊盘选择器或 `{x,y,layer}
 
 ### `edit_copper_pours(expected_revision, actions, rebuild=true)`
 
-创建、修改或删除 Pour；创建时要求已有网络、活动铜层和 `polygon`，修改时只需发送变化的属性。默认在修改后调用 EDA 覆铜重建，但不会选择或改变设计规则。
+创建、修改或删除 Pour；创建时要求已有网络、活动铜层和 `polygon`，修改时只需发送变化的属性。默认读取每个目标 Pour 实例并调用 `rebuildCopperRegion()`，但不会选择或改变设计规则。
 
 ## 写响应和失败语义
 

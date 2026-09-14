@@ -271,17 +271,21 @@ if (replace) {
   }
 }
 for (const contour of contours) {
-  for (let i = 0; i < contour.length; i++) {
-    try {
-      const a = contour[i];
-      const b = contour[(i + 1) %% contour.length];
-      const value = await eda.pcb_PrimitiveLine.create('', 11, a.x, a.y, b.x, b.y,
-        a.width === undefined ? undefined : a.width, false);
-      results.push(value ? {ok: true, op: 'create', type: 'line', id: value.getState_PrimitiveId()}
-        : {ok: false, op: 'create', type: 'line', message: 'create returned no object'});
-    } catch (error) {
-      results.push({ok: false, op: 'create', type: 'line', message: String(error)});
-    }
+  try {
+    // EasyEDA Pro 3.2.186 rejects PrimitiveLine.create on BoardOutline but
+    // accepts a closed PrimitivePolyline. One primitive per contour also makes
+    // replacement/readback unambiguous.
+    const source = [contour[0].x, contour[0].y, 'L'];
+    for (let i = 1; i < contour.length; i++) source.push(contour[i].x, contour[i].y);
+    source.push(contour[0].x, contour[0].y);
+    const polygon = eda.pcb_MathPolygon.createPolygon(source);
+    if (!polygon) throw new Error('invalid outline polygon source');
+    const width = contour.find(point => point.width !== undefined && point.width !== null)?.width ?? 5;
+    const value = await eda.pcb_PrimitivePolyline.create('', 11, polygon, width, false);
+    results.push(value ? {ok: true, op: 'create', type: 'polyline', id: value.getState_PrimitiveId()}
+      : {ok: false, op: 'create', type: 'polyline', message: 'create returned no object'});
+  } catch (error) {
+    results.push({ok: false, op: 'create', type: 'polyline', message: String(error)});
   }
 }
 return results;
@@ -366,12 +370,21 @@ for (const action of actions) {
   }
 }
 if (rebuild && rebuildIds.length) {
-  try {
-    const rebuilt = await eda.pcb_PrimitivePour.rebuildCopperRegions(rebuildIds);
-    results.push({ok: true, op: 'rebuild', count: rebuilt.length});
-  } catch (error) {
-    results.push({ok: false, op: 'rebuild', message: String(error)});
+  let rebuiltCount = 0;
+  for (const id of rebuildIds) {
+    try {
+      // Rebuild belongs to the individual IPCB_PrimitivePour instance in
+      // EasyEDA Pro 3.2.186, not the static primitive collection API.
+      const pour = await eda.pcb_PrimitivePour.get(id);
+      if (!pour) throw new Error('pour readback returned no object');
+      const rebuilt = await pour.rebuildCopperRegion();
+      if (!rebuilt) throw new Error('rebuild returned no poured region');
+      rebuiltCount += 1;
+    } catch (error) {
+      results.push({ok: false, op: 'rebuild', id, message: String(error)});
+    }
   }
+  if (rebuiltCount) results.push({ok: true, op: 'rebuild', count: rebuiltCount});
 }
 return results;
 """ % (

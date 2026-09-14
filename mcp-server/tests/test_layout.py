@@ -319,6 +319,32 @@ def test_existing_outline_requires_explicit_replace():
     assert result["code"] == "OUTLINE_EXISTS"
 
 
+def test_new_outline_uses_explicit_editor_default_width():
+    state = sample_state()
+    state["lines"] = [line for line in state["lines"] if line.get("layer") != 11]
+    after = copy.deepcopy(state)
+    after["polylines"].append(
+        {
+            "id": "outline-new",
+            "net": "",
+            "layer": 11,
+            "polygon": [0, 0, "L", 10, 0, 10, 10, 0, 0],
+            "width": 5,
+            "locked": False,
+            "bbox": {"minX": 0, "minY": 0, "maxX": 10, "maxY": 10},
+        }
+    )
+    client = FakeClient([state, state, after], drcs=[[], []])
+    result = layout_tools.set_board_outline(
+        client,
+        layout_revision(state),
+        [[{"x": 0, "y": 0}, {"x": 10, "y": 0}, {"x": 10, "y": 10}]],
+    )
+    assert result["ok"] is True
+    program = next(code for code in client.calls if "PrimitivePolyline.create" in code)
+    assert "?.width ?? 5" in program
+
+
 def test_routing_detail_excludes_board_outline():
     result = layout_tools.get_layout_routing(FakeClient([sample_state()]))
     assert result["ok"] is True
@@ -406,6 +432,38 @@ def test_pour_create_requires_existing_net():
     assert result["code"] == "NET_NOT_FOUND"
 
 
+def test_pour_rebuild_uses_instance_api():
+    state = sample_state()
+    after = copy.deepcopy(state)
+    after["pours"] = [
+        {
+            "id": "pour-1",
+            "net": "N1",
+            "layer": 2,
+            "polygon": ["R", 0, 0, 10, 10, 0, 0],
+        }
+    ]
+    client = FakeClient([state, state, after], drcs=[[], []])
+    result = layout_tools.edit_copper_pours(
+        client,
+        layout_revision(state),
+        [
+            {
+                "op": "create",
+                "polygon": ["R", 0, 0, 10, 10, 0, 0],
+                "layer": 2,
+                "net": "N1",
+            }
+        ],
+        rebuild=True,
+    )
+    assert result["ok"] is True
+    program = next(code for code in client.calls if "PrimitivePour.create" in code)
+    assert "pcb_PrimitivePour.get(id)" in program
+    assert "pour.rebuildCopperRegion()" in program
+    assert "rebuildCopperRegions" not in program
+
+
 def test_keepout_modify_allows_property_only_and_rejects_unavailable_layer():
     state = sample_state()
     state["regions"] = [{"id": "region-1", "layer": 1, "polygon": ["R", 1, 1, 2, 2]}]
@@ -443,9 +501,15 @@ def test_routing_modify_rejects_wrong_primitive_properties_before_write():
 def test_violation_region_uses_eda_position_object():
     result = layout_tools.get_layout_violations(
         FakeClient([sample_state()], drcs=[drc_item()]),
-        region={"left": 90, "right": 100, "bottom": 90, "top": 110},
+        region={"left": 900, "right": 1000, "bottom": 900, "top": 1100},
     )
     assert result["matched_count"] == 1
+
+
+def test_drc_positions_are_normalized_to_mil_and_group_labels_are_ignored():
+    rows = flatten_drc(["Connection Error", [drc_item()]])
+    assert len(rows) == 1
+    assert rows[0]["position"] == {"x": 950, "y": 1000}
 
 
 def test_mcp_write_tools_publish_explicit_nested_schemas():
