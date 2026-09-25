@@ -102,7 +102,7 @@ def test_profiles_publish_exact_tool_surfaces():
 )
 def test_profiles_publish_metadata_schemas_and_annotations(mcp, name):
     assert mcp.name == name
-    assert mcp.version == "0.3.0"
+    assert mcp.version == "0.3.1"
     assert mcp.instructions
     for tool in mcp._tool_manager.list_tools():
         assert tool.output_schema is not None
@@ -175,7 +175,7 @@ def test_plugin_manifests_match_runtime_and_approval_policy():
         compat_server = compat["mcpServers"][name]
         assert portable_server["command"] == compat_server["command"] == "uv"
         assert portable_server["args"] == compat_server["args"]
-        assert "@v0.3.0#subdirectory=mcp-server" in " ".join(portable_server["args"])
+        assert "@v0.3.1#subdirectory=mcp-server" in " ".join(portable_server["args"])
         assert compat_server["startup_timeout_sec"] == 300
     assert compat["mcpServers"]["boardspec-core"]["enabled"] is True
     assert compat["mcpServers"]["boardspec-layout"]["enabled"] is False

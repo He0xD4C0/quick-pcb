@@ -1,0 +1,360 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+C1
+FOOTPRINT
+C0402
+PARTTYPE
+GRM155R70J104KA01D
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+GRM155R70J104KA01D
+Designator
+C1
+Device
+GRM155R70J104KA01D
+Unique ID
+C1
+Name
+100nF
+Manufacturer
+muRata(村田)
+Manufacturer Part
+GRM155R70J104KA01D
+Supplier
+LCSC
+Supplier Part
+C82153
+
+*
+]
+[
+DESIGNATOR
+J1
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J1
+Device
+2.54-1*2P母
+Unique ID
+J1
+Name
+5V_POWER
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier
+LCSC
+Supplier Part
+C49661
+
+*
+]
+[
+DESIGNATOR
+J2
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J2
+Device
+2.54-1*2P母
+Unique ID
+J2
+Name
+CTRL_INPUT
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier
+LCSC
+Supplier Part
+C49661
+
+*
+]
+[
+DESIGNATOR
+J3
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J3
+Device
+2.54-1*2P母
+Unique ID
+J3
+Name
+SW_NODE_TEST
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier
+LCSC
+Supplier Part
+C49661
+
+*
+]
+[
+DESIGNATOR
+LED1
+FOOTPRINT
+LED0805-RD_GREEN
+PARTTYPE
+0805-LED[绿]
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0805-LED[绿]
+Designator
+LED1
+Device
+0805-LED[绿]
+Unique ID
+LED1
+Name
+GREEN
+Manufacturer Part
+0805-LED[绿]
+Supplier
+LCSC
+Supplier Part
+C9900003727
+
+*
+]
+[
+DESIGNATOR
+Q1
+FOOTPRINT
+SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR
+PARTTYPE
+2N7002_C8545
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+2N7002
+Designator
+Q1
+Device
+2N7002_C8545
+Unique ID
+Q1
+Name
+2N7002
+Manufacturer
+CJ(江苏长电/长晶)
+Manufacturer Part
+2N7002
+Supplier
+LCSC
+Supplier Part
+C8545
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+R0402
+PARTTYPE
+0402WGF2201TCE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0402WGF2201TCE
+Designator
+R1
+Device
+0402WGF2201TCE
+Unique ID
+R1
+Name
+2.2k_LED
+Manufacturer
+UNI-ROYAL(厚声)
+Manufacturer Part
+0402WGF2201TCE
+Supplier
+LCSC
+Supplier Part
+C25879
+
+*
+]
+[
+DESIGNATOR
+R2
+FOOTPRINT
+R0402
+PARTTYPE
+0402WGF2201TCE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0402WGF2201TCE
+Designator
+R2
+Device
+0402WGF2201TCE
+Unique ID
+R2
+Name
+2.2k_GATE
+Manufacturer
+UNI-ROYAL(厚声)
+Manufacturer Part
+0402WGF2201TCE
+Supplier
+LCSC
+Supplier Part
+C25879
+
+*
+]
+[
+DESIGNATOR
+R3
+FOOTPRINT
+R0402
+PARTTYPE
+0402WGF1003TCE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0402WGF1003TCE
+Designator
+R3
+Device
+0402WGF1003TCE
+Unique ID
+R3
+Name
+100k_PULLDOWN
+Manufacturer
+UNI-ROYAL(厚声)
+Manufacturer Part
+0402WGF1003TCE
+Supplier
+LCSC
+Supplier Part
+C25741
+
+*
+]
+(
+5V
+J1-1 2.54-1*2P母-1 PASSIVE
+R1-1 0402WGF2201TCE-1 PASSIVE
+C1-1 GRM155R70J104KA01D-1 PASSIVE
+)
+(
+GND
+J1-2 2.54-1*2P母-2 PASSIVE
+J2-2 2.54-1*2P母-2 PASSIVE
+J3-2 2.54-1*2P母-2 PASSIVE
+Q1-2 2N7002_C8545-S PASSIVE
+R3-2 0402WGF1003TCE-2 PASSIVE
+C1-2 GRM155R70J104KA01D-2 PASSIVE
+)
+(
+LED_A
+R1-2 0402WGF2201TCE-2 PASSIVE
+LED1-2 0805-LED[绿]-+ PASSIVE
+)
+(
+LED_K_SW
+LED1-1 0805-LED[绿]-- PASSIVE
+Q1-3 2N7002_C8545-D PASSIVE
+J3-1 2.54-1*2P母-1 PASSIVE
+)
+(
+CTRL_IN
+J2-1 2.54-1*2P母-1 PASSIVE
+R2-1 0402WGF2201TCE-1 PASSIVE
+)
+(
+GATE
+R2-2 0402WGF2201TCE-2 PASSIVE
+Q1-1 2N7002_C8545-G INPUT
+R3-1 0402WGF1003TCE-1 PASSIVE
+)

@@ -1,0 +1,698 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+C1
+FOOTPRINT
+C0402
+PARTTYPE
+GRM155R70J104KA01D
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge1
+Add into BOM
+yes
+Convert to PCB
+yes
+Name
+
+Designator
+C1
+Symbol
+GRM155R70J104KA01D
+Device
+GRM155R70J104KA01D
+LCSC Part Name
+
+Supplier Part
+C82153
+Manufacturer
+muRata(村田)
+Manufacturer Part
+GRM155R70J104KA01D
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+C0402_L1.0-W0.5-H0.5
+Value
+
+Tolerance
+
+Voltage Rating
+
+Temperature Coefficient
+
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+J1
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge2
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J1
+Device
+2.54-1*2P母
+LCSC Part Name
+
+Supplier Part
+C49661
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+HDR-TH_2P-P2.54-F-LI-1X2P
+Holes Structure
+
+Pitch
+
+Row Spacing
+
+Circular Hole / Square Hole
+
+Mounting Type
+
+Number of Rows
+
+Number of Positions
+
+Current Rating
+
+Voltage Rating (Max)
+
+Holes Direction
+
+Insulation Height
+
+Contact Material
+
+Contact Plating
+
+Operating Temperature
+
+Supplementary Features
+
+PIN Length
+
+Name
+2.54-1*2P母
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+J2
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge3
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J2
+Device
+2.54-1*2P母
+LCSC Part Name
+
+Supplier Part
+C49661
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+HDR-TH_2P-P2.54-F-LI-1X2P
+Holes Structure
+
+Pitch
+
+Row Spacing
+
+Circular Hole / Square Hole
+
+Mounting Type
+
+Number of Rows
+
+Number of Positions
+
+Current Rating
+
+Voltage Rating (Max)
+
+Holes Direction
+
+Insulation Height
+
+Contact Material
+
+Contact Plating
+
+Operating Temperature
+
+Supplementary Features
+
+PIN Length
+
+Name
+2.54-1*2P母
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+J3
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge4
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J3
+Device
+2.54-1*2P母
+LCSC Part Name
+
+Supplier Part
+C49661
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+HDR-TH_2P-P2.54-F-LI-1X2P
+Holes Structure
+
+Pitch
+
+Row Spacing
+
+Circular Hole / Square Hole
+
+Mounting Type
+
+Number of Rows
+
+Number of Positions
+
+Current Rating
+
+Voltage Rating (Max)
+
+Holes Direction
+
+Insulation Height
+
+Contact Material
+
+Contact Plating
+
+Operating Temperature
+
+Supplementary Features
+
+PIN Length
+
+Name
+2.54-1*2P母
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+LED1
+FOOTPRINT
+LED0805-RD_GREEN
+PARTTYPE
+0805-LED[绿]
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge5
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0805-LED[绿]
+Designator
+LED1
+Device
+0805-LED[绿]
+LCSC Part Name
+
+Supplier Part
+C9900003727
+Manufacturer
+
+Manufacturer Part
+0805-LED[绿]
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+LED0805-RD_GREEN
+Name
+0805-LED[绿]
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+Q1
+FOOTPRINT
+SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR
+PARTTYPE
+2N7002_C8545
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge6
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+2N7002
+Designator
+Q1
+Device
+2N7002_C8545
+LCSC Part Name
+
+Supplier Part
+C8545
+Manufacturer
+CJ(江苏长电/长晶)
+Manufacturer Part
+2N7002
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95
+Number
+
+Drain to Source Voltage
+
+Current - Continuous Drain(Id)
+
+RDS(on)
+
+Pd - Power Dissipation
+
+Gate Threshold Voltage (Vgs(th))
+
+Gate Charge(Qg)
+
+Input Capacitance(Ciss)
+
+Reverse Transfer Capacitance (Crss@Vds)
+
+Operating Temperature
+
+Configuration
+
+Type
+
+Output Capacitance(Coss)
+
+Vgs
+
+Name
+2N7002
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+R0402
+PARTTYPE
+0402WGF2201TCE
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge7
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0402WGF2201TCE
+Designator
+R1
+Device
+0402WGF2201TCE
+LCSC Part Name
+
+Supplier Part
+C25879
+Manufacturer
+UNI-ROYAL(厚声)
+Manufacturer Part
+0402WGF2201TCE
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+R0402_L1.0-W0.5-H0.4
+Type
+
+Value
+
+Tolerance
+
+Power(Watts)
+
+Voltage-Supply(Max)
+
+Temperature Coefficient
+
+Operating Temperature
+
+Name
+
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+R2
+FOOTPRINT
+R0402
+PARTTYPE
+0402WGF2201TCE
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge8
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0402WGF2201TCE
+Designator
+R2
+Device
+0402WGF2201TCE
+LCSC Part Name
+
+Supplier Part
+C25879
+Manufacturer
+UNI-ROYAL(厚声)
+Manufacturer Part
+0402WGF2201TCE
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+R0402_L1.0-W0.5-H0.4
+Type
+
+Value
+
+Tolerance
+
+Power(Watts)
+
+Voltage-Supply(Max)
+
+Temperature Coefficient
+
+Operating Temperature
+
+Name
+
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+[
+DESIGNATOR
+R3
+FOOTPRINT
+R0402
+PARTTYPE
+0402WGF1003TCE
+DESCRIPTION
+
+Component Kind
+Standard
+Unique ID
+gge9
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+0402WGF1003TCE
+Designator
+R3
+Device
+0402WGF1003TCE
+LCSC Part Name
+
+Supplier Part
+C25741
+Manufacturer
+UNI-ROYAL(厚声)
+Manufacturer Part
+0402WGF1003TCE
+Supplier Footprint
+
+JLCPCB Part Class
+
+Datasheet
+
+Supplier
+LCSC
+3D Model Title
+R0402_L1.0-W0.5-H0.4
+Type
+
+Value
+
+Tolerance
+
+Power(Watts)
+
+Voltage-Supply(Max)
+
+Temperature Coefficient
+
+Operating Temperature
+
+Name
+
+Description
+
+Reuse Block
+
+Group ID
+
+Channel ID
+
+
+*
+]
+(
+5V 
+C1-1 GRM155R70J104KA01D-1 Passive 
+J1-1 2.54-1*2P母-1 Input   
+R1-1 0402WGF2201TCE-1 Input   
+)
+(
+GND 
+C1-2 GRM155R70J104KA01D-2 Passive 
+J1-2 2.54-1*2P母-2 Input   
+J2-2 2.54-1*2P母-2 Input   
+J3-2 2.54-1*2P母-2 Input   
+Q1-2 2N7002_C8545-S Passive 
+R3-2 0402WGF1003TCE-2 Input   
+)
+(
+CTRL_IN 
+J2-1 2.54-1*2P母-1 Input   
+R2-1 0402WGF2201TCE-1 Input   
+)
+(
+LED_K_SW 
+J3-1 2.54-1*2P母-1 Input   
+LED1-1 0805-LED[绿]-- Passive 
+Q1-3 2N7002_C8545-D Passive 
+)
+(
+LED_A 
+LED1-2 0805-LED[绿]-+ Passive 
+R1-2 0402WGF2201TCE-2 Input   
+)
+(
+GATE 
+Q1-1 2N7002_C8545-G Passive 
+R2-2 0402WGF2201TCE-2 Input   
+R3-1 0402WGF1003TCE-1 Input   
+)

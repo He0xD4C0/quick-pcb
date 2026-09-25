@@ -1,0 +1,10 @@
+reference,logical_path,value,part,footprint,supplier_id,description,dnp
+C1,C1,100nF,project:C100N,C0402,C82153,,
+J1,J1,5V_POWER,project:PowerHeader2,HDR-TH_2P-P2.54-V-F,C49661,,
+J2,J2,CTRL_INPUT,project:PowerHeader2,HDR-TH_2P-P2.54-V-F,C49661,,
+J3,J3,SW_NODE_TEST,project:PowerHeader2,HDR-TH_2P-P2.54-V-F,C49661,,
+LED1,LED1,GREEN,project:GreenLED,LED0805-RD_GREEN,C9900003727,,
+Q1,Q1,2N7002,project:NMOS2N7002,SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR,C8545,,
+R1,R1,2.2k_LED,project:R2K2,R0402,C25879,,
+R2,R2,2.2k_GATE,project:R2K2,R0402,C25879,,
+R3,R3,100k_PULLDOWN,project:R100K,R0402,C25741,,

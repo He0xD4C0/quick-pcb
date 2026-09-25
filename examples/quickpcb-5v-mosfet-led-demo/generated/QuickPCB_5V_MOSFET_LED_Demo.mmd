@@ -1,0 +1,36 @@
+graph LR
+    C1["C1"]
+    J1["J1"]
+    J2["J2"]
+    J3["J3"]
+    LED1["LED1"]
+    Q1["Q1"]
+    R1["R1"]
+    R2["R2"]
+    R3["R3"]
+    C1 ---|5V| J1
+    C1 ---|5V| R1
+    J1 ---|5V| R1
+    C1 ---|GND| J1
+    C1 ---|GND| J2
+    C1 ---|GND| J3
+    C1 ---|GND| Q1
+    C1 ---|GND| R3
+    J1 ---|GND| J2
+    J1 ---|GND| J3
+    J1 ---|GND| Q1
+    J1 ---|GND| R3
+    J2 ---|GND| J3
+    J2 ---|GND| Q1
+    J2 ---|GND| R3
+    J3 ---|GND| Q1
+    J3 ---|GND| R3
+    Q1 ---|GND| R3
+    LED1 ---|LED_A| R1
+    J3 ---|LED_K_SW| LED1
+    J3 ---|LED_K_SW| Q1
+    LED1 ---|LED_K_SW| Q1
+    J2 ---|CTRL_IN| R2
+    Q1 ---|GATE| R2
+    Q1 ---|GATE| R3
+    R2 ---|GATE| R3

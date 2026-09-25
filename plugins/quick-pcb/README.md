@@ -14,7 +14,7 @@ This repository's trusted `.codex/config.toml` enables Core and disables Layout 
 - `uv` and Git available on `PATH`
 - EasyEDA Pro plus the official Bridge for Layout or Schematic tools
 
-The MCP commands install Quick PCB from the fixed `v0.3.0` Git tag into the `uv` cache. The first start needs network access and can take several minutes; later starts use the cache.
+The MCP commands install Quick PCB from the fixed `v0.3.1` Git tag into the `uv` cache. The first start needs network access and can take several minutes; later starts use the cache.
 
 ## Other MCP clients
 

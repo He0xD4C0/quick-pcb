@@ -4,8 +4,8 @@
       "command": "uv",
       "args": [
         "tool", "run", "--isolated",
-        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
-        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=boardspec-core",
         "boardspec-core-mcp"
       ],
       "enabled": true,
@@ -18,8 +18,8 @@
       "command": "uv",
       "args": [
         "tool", "run", "--isolated",
-        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
-        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=boardspec-core",
         "boardspec-layout-mcp"
       ],
       "enabled": false,
@@ -43,8 +43,8 @@
       "command": "uv",
       "args": [
         "tool", "run", "--isolated",
-        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
-        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=boardspec-core",
         "boardspec-schematic-mcp"
       ],
       "enabled": false,

@@ -9,7 +9,7 @@ from mcp.server.mcpserver.exceptions import ToolError
 from mcp.types import ToolAnnotations
 from pydantic import BaseModel, ConfigDict, Field
 
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 
 ExportTarget = Literal["protel2_netlist", "kicad_netlist", "bom_csv", "mermaid"]
 NetlistType = Literal["PROTEL2", "JLCEDA", "ALLEGRO", "PADS"]

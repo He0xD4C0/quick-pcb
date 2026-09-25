@@ -2,7 +2,7 @@
 
 Quick PCB 把电路连接意图写成可审查、可 diff 的 BoardSpec YAML，再由确定性工具完成校验、模块展开、BOM/网表导出，并通过 MCP 与嘉立创 EDA Pro 官方 Bridge 交互。
 
-当前 Release：`v0.3.0`。
+当前 Release：`v0.3.1`。
 
 ## 能做什么
 
@@ -26,17 +26,17 @@ Release 目录包含可移植 Agent Plugin、两个平台无关的 Python wheel�
 
 ```text
 release/
-  quick-pcb-v0.3.0/
+  quick-pcb-v0.3.1/
     README.md
     RELEASE-MANIFEST.txt
     SHA256SUMS
     extension/boardspec-eda-extension_v1.0.0.eext
     python/boardspec_core-0.1.0-py3-none-any.whl
     plugin/quick-pcb/
-    python/boardspec_mcp-0.3.0-py3-none-any.whl
-    source/quick-pcb-v0.3.0-source.tar.gz
-  quick-pcb-plugin-v0.3.0.zip
-  quick-pcb-v0.3.0.tar.gz
+    python/boardspec_mcp-0.3.1-py3-none-any.whl
+    source/quick-pcb-v0.3.1-source.tar.gz
+  quick-pcb-plugin-v0.3.1.zip
+  quick-pcb-v0.3.1.tar.gz
   SHA256SUMS
 ```
 
@@ -45,8 +45,8 @@ release/
 ```bash
 cd release
 shasum -a 256 -c SHA256SUMS
-tar -xzf quick-pcb-v0.3.0.tar.gz
-cd quick-pcb-v0.3.0
+tar -xzf quick-pcb-v0.3.1.tar.gz
+cd quick-pcb-v0.3.1
 shasum -a 256 -c SHA256SUMS
 ```
 
@@ -64,7 +64,7 @@ MCP 与 EDA 实时连接还需要官方 `easyeda-api-skill` Bridge 和 `run-api-
 
 ## Agent Plugin
 
-仓库内 `plugins/quick-pcb` 同时提供 Agent Plugins 1.0 清单和 Codex 兼容清单。要求 Python 3.10+、Git 和 `uv`；三个 MCP 进程通过固定的 `v0.3.0` Git 标签安装并缓存运行时。Core 默认启用，Layout 与 Schematic 按需启用，所有 EDA 写工具要求审批。
+仓库内 `plugins/quick-pcb` 同时提供 Agent Plugins 1.0 清单和 Codex 兼容清单。要求 Python 3.10+、Git 和 `uv`；三个 MCP 进程通过固定的 `v0.3.1` Git 标签安装并缓存运行时。Core 默认启用，Layout 与 Schematic 按需启用，所有 EDA 写工具要求审批。
 
 仓库 marketplace 位于 `.agents/plugins/marketplace.json`，项目默认策略位于 `.codex/config.toml`。支持 Agent Plugins 1.0 的客户端可直接加载 `plugins/quick-pcb`；其它 stdio MCP 客户端可复制 `plugins/quick-pcb/mcp.json` 中需要的服务配置。
 
@@ -112,8 +112,8 @@ npm run build
 
 `release/` 是本地构建输出并被 Git 忽略。正式发布时上传以下三个文件：
 
-- `release/quick-pcb-v0.3.0.tar.gz`
-- `release/quick-pcb-plugin-v0.3.0.zip`
+- `release/quick-pcb-v0.3.1.tar.gz`
+- `release/quick-pcb-plugin-v0.3.1.zip`
 - `release/SHA256SUMS`
 
 ## 项目结构
@@ -130,6 +130,7 @@ scripts/          统一 Release 构建入口
 
 ## 验证证据
 
+- v0.3.1 交付完整的 5 V MOSFET LED 验收工程：原生 EasyEDA 工程、可读原理图 PDF、PCB 预览、Gerber/钻孔、BOM、CPL、离线校验脚本和实物台架测试步骤。原理图与 PCB 均回读为 9 个器件、6 个网络、19 个节点；严格 DRC 为 0，EasyEDA 本机 PCB DRC 124 项为 0 问题。
 - STC51 + DS1302 时钟夹具：25 个器件、21 个网络、76 个节点，最终严格 PCB DRC 为 0。
 - MOSFET LED 夹具：11 个器件、5 个网络、31 个节点，最终严格 PCB DRC 为 0。
 - Schematic MCP 在隔离的一次性工程中绘制并显式保存以上两个单页原理图：拓扑分别为 11/5/31 与 25/21/76，均无组件重叠且严格原理图 DRC 为 0。
@@ -147,3 +148,5 @@ scripts/          统一 Release 构建入口
 - [系统架构](docs/architecture.md)
 - [STC51 真实 EDA E2E](docs/evidence/stc51-clock-e2e-2026-09-14.md)
 - [Layout MCP 真实 EDA E2E](docs/evidence/layout-e2e-2026-09-14.md)
+- [v0.3.1 验收工程与制造文件证据](docs/evidence/quickpcb-5v-demo-2026-09-25.md)
+- [v0.3.1 验收工程](examples/quickpcb-5v-mosfet-led-demo/README.md)
