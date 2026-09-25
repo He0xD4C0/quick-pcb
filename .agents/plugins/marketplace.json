@@ -1,0 +1,20 @@
+{
+  "name": "quick-pcb-local",
+  "interface": {
+    "displayName": "Quick PCB Local"
+  },
+  "plugins": [
+    {
+      "name": "quick-pcb",
+      "source": {
+        "source": "local",
+        "path": "./plugins/quick-pcb"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

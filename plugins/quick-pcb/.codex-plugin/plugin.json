@@ -1,0 +1,28 @@
+{
+  "name": "quick-pcb",
+  "version": "0.3.0",
+  "description": "Validate BoardSpec and perform checked EasyEDA Pro layout and schematic work.",
+  "author": {
+    "name": "He0xD4C0",
+    "url": "https://github.com/He0xD4C0"
+  },
+  "homepage": "https://github.com/He0xD4C0/quick-pcb",
+  "repository": "https://github.com/He0xD4C0/quick-pcb",
+  "keywords": ["pcb", "eda", "boardspec", "easyeda", "mcp"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Quick PCB",
+    "shortDescription": "BoardSpec and checked EasyEDA Pro tools.",
+    "longDescription": "Validate and export coordinate-free BoardSpec documents, then opt into revision-checked EasyEDA Pro layout or schematic tools.",
+    "developerName": "He0xD4C0",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/He0xD4C0/quick-pcb",
+    "defaultPrompt": [
+      "Validate this BoardSpec and explain every diagnostic.",
+      "Inspect the active PCB without changing it.",
+      "Plan and verify this schematic before writing it."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

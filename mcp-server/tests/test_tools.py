@@ -62,6 +62,16 @@ def test_validate_ok():
     assert any(w["code"] == "INCOMPLETE_PART_DATA" for w in res["warnings"])
 
 
+def test_validate_uses_explicit_base_dir(tmp_path):
+    parts = tmp_path / "parts.demo.json"
+    parts.write_text(open(PARTS_DB, encoding="utf-8").read(), encoding="utf-8")
+    text = open(STATUS_LED, encoding="utf-8").read()
+
+    res = tools.validate(text, str(tmp_path))
+
+    assert res["ok"] is True
+
+
 def test_validate_reports_errors():
     bad = _spec_text().replace("U1.PA5", "U1.NOPE")
     res = tools.validate(bad)
@@ -405,7 +415,9 @@ def test_load_netlist_uses_runtime_string_value():
             return {"ok": True, "result": True}
 
     client = FakeClient()
-    res = tools.load_netlist(client, "PROTEL NETLIST 2.0", "PROTEL2")
+    res = tools.load_netlist(
+        client, "PROTEL NETLIST 2.0\n[\nDESIGNATOR\nU1\n]\n", "PROTEL2"
+    )
 
     assert res["ok"] is True
     assert res["staged"] is True
@@ -415,3 +427,17 @@ def test_load_netlist_uses_runtime_string_value():
     assert "pcb_Net.setNetlist" in client.code
     assert 'setNetlist("Protel2", ' in client.code
     assert "\\r\\n" in client.code
+
+
+def test_load_netlist_rejects_empty_protel2_before_bridge():
+    class FakeClient:
+        def execute(self, code):
+            raise AssertionError("invalid netlist must not reach the bridge")
+
+    res = tools.load_netlist(FakeClient(), "PROTEL NETLIST 2.0", "PROTEL2")
+
+    assert res == {
+        "ok": False,
+        "code": "INVALID_NETLIST",
+        "message": "PROTEL2 netlist has no component records",
+    }

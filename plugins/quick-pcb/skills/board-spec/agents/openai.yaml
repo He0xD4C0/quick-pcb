@@ -1,0 +1,4 @@
+interface:
+  display_name: "BoardSpec"
+  short_description: "生成、校验并导出 EDA 中立的声明式电路板连接规格"
+  default_prompt: "使用 $board-spec 将这份电路需求转换为已校验的 BoardSpec YAML：先识别电源域、地与接口，读取 Schema 并查元件库后再声明实例与网络端点；运行 scripts/validate.py 直到无错误，必要时展开模块并导出 BOM/KiCad 网表；最后交付完整规格、校验摘要与待工程师确认的器件/封装/电气问题。"

@@ -10,8 +10,6 @@ from __future__ import annotations
 
 from typing import Literal
 
-from mcp.server.mcpserver import MCPServer
-
 from .bridge_client import BridgeClient
 from . import layout_tools, tools
 from .layout_types import (
@@ -25,190 +23,273 @@ from .layout_types import (
     RoutingAction,
     dump_model,
 )
+from .protocol import (
+    DocumentKind,
+    BridgeStatusResult,
+    DRCResult,
+    EDAResult,
+    ExpansionResult,
+    ExportResult,
+    ExportTarget,
+    LayoutResult,
+    NetlistResult,
+    NetlistType,
+    READ_ONLY,
+    WRITE_ADD,
+    WRITE_DESTRUCTIVE,
+    WRITE_SET,
+    StagedNetlistResult,
+    ValidationResult,
+    make_server,
+    structured,
+)
 from .schematic_server import register_schematic_tools
 
-mcp = MCPServer(name="boardspec")
+mcp = make_server("all")
 
 client = BridgeClient()
 register_schematic_tools(mcp, client)
 
 
-@mcp.tool()
-def bridge_status() -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def bridge_status() -> BridgeStatusResult:
     """Check whether the EasyEDA bridge and EDA client are connected."""
-    return tools.bridge_status(client)
+    return structured(tools.bridge_status(client), result_type=BridgeStatusResult)
 
 
-@mcp.tool()
-def search_part(query: str, limit: int = 10) -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def search_part(query: str, limit: int = 10) -> EDAResult:
     """Search the EasyEDA Pro device library for parts matching a keyword.
 
     Requires the EasyEDA bridge. Returns real device entries (uuid, libraryUuid,
     name, symbol, footprint) — never fabricated pins.
     """
-    return tools.search_part(client, query, limit)
+    return structured(tools.search_part(client, query, limit), raise_tool_error=True, result_type=EDAResult)
 
 
-@mcp.tool()
-def get_part(part_uuid: str, library_uuid: str = "") -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_part(part_uuid: str, library_uuid: str = "") -> EDAResult:
     """Fetch a device plus an embeddable, provenance-preserving physical definition."""
-    return tools.get_part(client, part_uuid, library_uuid)
+    return structured(tools.get_part(client, part_uuid, library_uuid), raise_tool_error=True, result_type=EDAResult)
 
 
-@mcp.tool()
-def get_project_component(designator: str) -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_project_component(designator: str) -> EDAResult:
     """Read one placed schematic component, including live pin types and NC flags."""
-    return tools.get_project_component(client, designator)
+    return structured(
+        tools.get_project_component(client, designator), raise_tool_error=True, result_type=EDAResult
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
 def get_netlist(
-    netlist_type: str = "PROTEL2", document_kind: str = "schematic"
-) -> dict:
+    netlist_type: NetlistType = "PROTEL2",
+    document_kind: DocumentKind = "schematic",
+) -> NetlistResult:
     """Read the current schematic or PCB netlist in an exchange format."""
-    return tools.get_netlist(client, netlist_type, document_kind)
+    return structured(
+        tools.get_netlist(client, netlist_type, document_kind), raise_tool_error=True, result_type=NetlistResult
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
 def set_no_connects(
     designator: str, pin_selectors: list[str], apply: bool = False
-) -> dict:
+) -> EDAResult:
     """Preview or set exact #PIN_NUMBER no-connect flags on a placed component."""
-    return tools.set_no_connects(client, designator, pin_selectors, apply)
+    return structured(
+        tools.set_no_connects(client, designator, pin_selectors, apply),
+        raise_tool_error=True, result_type=EDAResult,
+    )
 
 
-@mcp.tool()
-def run_schematic_drc() -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def run_schematic_drc() -> DRCResult:
     """Run strict schematic DRC and return detailed violations without opening UI."""
-    return tools.run_schematic_drc(client)
+    return structured(tools.run_schematic_drc(client), raise_tool_error=True, result_type=DRCResult)
 
 
-@mcp.tool()
-def run_pcb_drc() -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def run_pcb_drc() -> DRCResult:
     """Run strict PCB DRC and return detailed violations without opening UI."""
-    return tools.run_pcb_drc(client)
+    return structured(tools.run_pcb_drc(client), raise_tool_error=True, result_type=DRCResult)
 
 
-@mcp.tool()
-def validate(spec_yaml: str) -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def validate(spec_yaml: str, base_dir: str | None = None) -> ValidationResult:
     """Validate a BoardSpec YAML document (schema + part/pin/ERC resolution).
 
     Returns ``{ok, errors, warnings}``. Errors carry code, path, message, hint.
     """
-    return tools.validate(spec_yaml)
+    return structured(tools.validate(spec_yaml, base_dir), result_type=ValidationResult)
 
 
-@mcp.tool()
-def expand(spec_yaml: str) -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def expand(spec_yaml: str, base_dir: str | None = None) -> ExpansionResult:
     """Recursively flatten ``kind: module`` definitions in a BoardSpec document."""
-    return tools.expand(spec_yaml)
+    return structured(tools.expand(spec_yaml, base_dir), result_type=ExpansionResult)
 
 
-@mcp.tool()
-def export(spec_yaml: str, target: str) -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def export(
+    spec_yaml: str, target: ExportTarget, base_dir: str | None = None
+) -> ExportResult:
     """Export a validated BoardSpec to netlist/BOM/diagram text.
 
     ``target`` is one of: protel2_netlist, kicad_netlist, bom_csv, mermaid.
     """
-    return tools.export(spec_yaml, target)
+    return structured(tools.export(spec_yaml, target, base_dir), result_type=ExportResult)
 
 
-@mcp.tool()
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
 def load_netlist(
     netlist_text: str,
-    netlist_type: str = "PROTEL2",
-    document_kind: str = "pcb",
-) -> dict:
+    netlist_type: NetlistType = "PROTEL2",
+    document_kind: DocumentKind = "pcb",
+) -> StagedNetlistResult:
     """Stage a netlist import for review in the active EasyEDA PCB.
 
     ``netlist_type`` is one of PROTEL2, JLCEDA, ALLEGRO, PADS.
     EasyEDA requires the user to review and apply the staged changes.
     """
-    return tools.load_netlist(client, netlist_text, netlist_type, document_kind)
+    return structured(
+        tools.load_netlist(client, netlist_text, netlist_type, document_kind),
+        raise_tool_error=True, result_type=StagedNetlistResult,
+    )
 
 
-@mcp.tool()
-def get_layout_summary(cursor: int | None = None, page_size: int = 100) -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_layout_summary(
+    cursor: int | None = None, page_size: int = 100
+) -> LayoutResult:
     """Read a compact, columnar overview of the active PCB layout in mil."""
-    return layout_tools.get_layout_summary(client, cursor, page_size)
+    return structured(
+        layout_tools.get_layout_summary(client, cursor, page_size),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
 def get_layout_components(
     designators: list[str] | None = None,
     region: Region | None = None,
     include_pads: bool = False,
-) -> dict:
+) -> LayoutResult:
     """Read exact component placement, optionally including live pad geometry."""
-    return layout_tools.get_layout_components(
-        client, designators, dump_model(region), include_pads
+    return structured(
+        layout_tools.get_layout_components(
+            client, designators, dump_model(region), include_pads
+        ),
+        raise_tool_error=True,
+        result_type=LayoutResult,
     )
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
 def get_layout_routing(
     nets: list[str] | None = None, region: Region | None = None
-) -> dict:
+) -> LayoutResult:
     """Read exact trace, arc, via and polyline geometry by net or region."""
-    return layout_tools.get_layout_routing(client, nets, dump_model(region))
+    return structured(
+        layout_tools.get_layout_routing(client, nets, dump_model(region)),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
-def get_board_geometry() -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_board_geometry() -> LayoutResult:
     """Read board outline, layers, stack, keepouts, pours and opaque obstacles."""
-    return layout_tools.get_board_geometry(client)
+    return structured(
+        layout_tools.get_board_geometry(client),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
-def get_layout_rules() -> dict:
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_layout_rules() -> LayoutResult:
     """Read active PCB rules, net classes and differential-pair declarations."""
-    return layout_tools.get_layout_rules(client)
+    return structured(
+        layout_tools.get_layout_rules(client),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
 def get_layout_violations(
     ids: list[str] | None = None,
     nets: list[str] | None = None,
     region: Region | None = None,
-) -> dict:
+) -> LayoutResult:
     """Run strict EasyEDA PCB DRC and return compact, filterable violations."""
-    return layout_tools.get_layout_violations(client, ids, nets, dump_model(region))
-
-
-@mcp.tool()
-def set_component_placement(expected_revision: str, edits: list[PlacementEdit]) -> dict:
-    """Directly place components by absolute coordinates or a relative anchor."""
-    return layout_tools.set_component_placement(
-        client, expected_revision, dump_model(edits)
+    return structured(
+        layout_tools.get_layout_violations(client, ids, nets, dump_model(region)),
+        raise_tool_error=True,
+        result_type=LayoutResult,
     )
 
 
-@mcp.tool()
-def run_auto_layout(expected_revision: str) -> dict:
+@mcp.tool(annotations=WRITE_SET, structured_output=True)
+def set_component_placement(
+    expected_revision: str, edits: list[PlacementEdit]
+) -> LayoutResult:
+    """Directly place components by absolute coordinates or a relative anchor."""
+    return structured(
+        layout_tools.set_component_placement(
+            client, expected_revision, dump_model(edits)
+        ),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
+
+
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
+def run_auto_layout(expected_revision: str) -> LayoutResult:
     """Run EasyEDA's whole-board auto-layout, then read back and run strict DRC."""
-    return layout_tools.run_auto_layout(client, expected_revision)
+    return structured(
+        layout_tools.run_auto_layout(client, expected_revision),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=WRITE_ADD, structured_output=True)
 def create_route(
     expected_revision: str,
     net: str,
     branches: list[RouteBranch],
     rule_overrides: RouteRuleOverrides | None = None,
-) -> dict:
+) -> LayoutResult:
     """Create exact routed branches from pad selectors and coordinate waypoints."""
-    return layout_tools.create_route(
-        client, expected_revision, net, dump_model(branches), dump_model(rule_overrides)
+    return structured(
+        layout_tools.create_route(
+            client,
+            expected_revision,
+            net,
+            dump_model(branches),
+            dump_model(rule_overrides),
+        ),
+        raise_tool_error=True,
+        result_type=LayoutResult,
     )
 
 
-@mcp.tool()
-def edit_routing(expected_revision: str, actions: list[RoutingAction]) -> dict:
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
+def edit_routing(
+    expected_revision: str, actions: list[RoutingAction]
+) -> LayoutResult:
     """Modify or delete exact line, arc or via primitive IDs."""
-    return layout_tools.edit_routing(client, expected_revision, dump_model(actions))
+    return structured(
+        layout_tools.edit_routing(client, expected_revision, dump_model(actions)),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
 def run_auto_routing(
     expected_revision: str,
     nets: list[str] | None = None,
@@ -216,44 +297,62 @@ def run_auto_routing(
     corner_style: Literal["45", "90"] = "45",
     existing_mode: Literal["keep", "remove"] = "keep",
     ignore_nets: list[str] | None = None,
-) -> dict:
+) -> LayoutResult:
     """Run EasyEDA auto-routing for the requested nets and copper layers."""
-    return layout_tools.run_auto_routing(
-        client,
-        expected_revision,
-        nets,
-        layers,
-        corner_style,
-        existing_mode,
-        ignore_nets,
+    return structured(
+        layout_tools.run_auto_routing(
+            client,
+            expected_revision,
+            nets,
+            layers,
+            corner_style,
+            existing_mode,
+            ignore_nets,
+        ),
+        raise_tool_error=True,
+        result_type=LayoutResult,
     )
 
 
-@mcp.tool()
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
 def set_board_outline(
     expected_revision: str,
     contours: list[list[OutlinePoint]],
     replace: bool = False,
-) -> dict:
+) -> LayoutResult:
     """Create closed line contours on BoardOutline; replacement must be explicit."""
-    return layout_tools.set_board_outline(
-        client, expected_revision, dump_model(contours), replace
+    return structured(
+        layout_tools.set_board_outline(
+            client, expected_revision, dump_model(contours), replace
+        ),
+        raise_tool_error=True,
+        result_type=LayoutResult,
     )
 
 
-@mcp.tool()
-def edit_keepouts(expected_revision: str, actions: list[KeepoutAction]) -> dict:
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
+def edit_keepouts(
+    expected_revision: str, actions: list[KeepoutAction]
+) -> LayoutResult:
     """Create, modify or delete EasyEDA PCB rule regions."""
-    return layout_tools.edit_keepouts(client, expected_revision, dump_model(actions))
+    return structured(
+        layout_tools.edit_keepouts(client, expected_revision, dump_model(actions)),
+        raise_tool_error=True,
+        result_type=LayoutResult,
+    )
 
 
-@mcp.tool()
+@mcp.tool(annotations=WRITE_DESTRUCTIVE, structured_output=True)
 def edit_copper_pours(
     expected_revision: str, actions: list[PourAction], rebuild: bool = True
-) -> dict:
+) -> LayoutResult:
     """Create, modify or delete copper pours and optionally rebuild them."""
-    return layout_tools.edit_copper_pours(
-        client, expected_revision, dump_model(actions), rebuild
+    return structured(
+        layout_tools.edit_copper_pours(
+            client, expected_revision, dump_model(actions), rebuild
+        ),
+        raise_tool_error=True,
+        result_type=LayoutResult,
     )
 
 

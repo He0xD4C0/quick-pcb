@@ -1,10 +1,11 @@
 # MCP 工具契约
 
-MCP server `boardspec` 当前注册 53 个工具：12 个 BoardSpec/EDA 连接工具、14 个 PCB Layout 工具和 27 个 Schematic 工具。本地工具直接调用 `boardspec-core`；依赖官方桥的工具通过桥客户端把 JS 定向发送到明确的嘉立创 EDA 专业版窗口。
+兼容 MCP server `boardspec` 注册全部 53 个工具；独立入口 `boardspec-core`、`boardspec-layout`、`boardspec-schematic` 分别注册 3、20、34 个工具。Layout 与 Schematic 共享 4 个只读 Bridge/器件/网表工具。本地工具直接调用 `boardspec-core`；依赖官方桥的工具通过桥客户端把 JS 定向发送到明确的嘉立创 EDA 专业版窗口。
 
 ## 通用约定
 
-- 所有工具返回 JSON 对象。诊断对象统一含 `code`、`path`、`message`，可选 `hint`。
+- 所有工具发布结构化输入、output schema、MCP annotations 和 `structuredContent`，同时保留 JSON 文本内容。诊断对象统一含 `code`、`path`、`message`，可选 `hint`。
+- `validate`、`expand`、`export` 接受可选 `base_dir`，相对元件库从该目录解析；省略时保持以进程工作目录解析的兼容行为。
 - 依赖桥的工具在桥不可达时返回 `{ok: false, code: "BRIDGE_UNAVAILABLE", message}`；桥已启动但没有 EDA 窗口连接时，`bridge_status` 返回 `EDA_UNAVAILABLE`。**绝不回退到编造引脚**。
 - Schematic 写工具同时要求 `window_id`、`expected_context_revision` 和 `expected_revision`，不依赖隐式活动窗口；超时或写入期间 HTTP 5xx 返回 `WRITE_STATUS_UNKNOWN`，必须回读后再决定是否重试。
 

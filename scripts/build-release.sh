@@ -60,19 +60,29 @@ mcp_version=$(sed -n 's/^version = "\([^"]*\)"/\1/p' mcp-server/pyproject.toml |
 extension_version=$(
   "$core_python" -c 'import json; print(json.load(open("eda-extension/extension.json", encoding="utf-8"))["version"])'
 )
+plugin_version=$(
+  "$core_python" -c 'import json; print(json.load(open("plugins/quick-pcb/plugin.json", encoding="utf-8"))["version"])'
+)
+if [ "$mcp_version" != "$release_version" ] || [ "$plugin_version" != "$release_version" ]; then
+  printf 'Release, MCP, and plugin versions must match: release=%s mcp=%s plugin=%s\n' \
+    "$release_version" "$mcp_version" "$plugin_version" >&2
+  exit 1
+fi
 
 bundle_name="quick-pcb-v$release_version"
 release_dir="$repo_dir/release"
 bundle_dir="$release_dir/$bundle_name"
 archive_path="$release_dir/$bundle_name.tar.gz"
+plugin_archive="$release_dir/quick-pcb-plugin-v$release_version.zip"
+release_sums="$release_dir/SHA256SUMS"
 
-if [ -e "$bundle_dir" ] || [ -e "$archive_path" ] || [ -e "$archive_path.sha256" ]; then
+if [ -e "$bundle_dir" ] || [ -e "$archive_path" ] || [ -e "$plugin_archive" ] || [ -e "$release_sums" ]; then
   printf 'Release output already exists for v%s. Remove these exact outputs before rebuilding:\n' "$release_version" >&2
-  printf '  %s\n  %s\n  %s\n' "$bundle_dir" "$archive_path" "$archive_path.sha256" >&2
+  printf '  %s\n  %s\n  %s\n  %s\n' "$bundle_dir" "$archive_path" "$plugin_archive" "$release_sums" >&2
   exit 1
 fi
 
-mkdir -p "$bundle_dir/python" "$bundle_dir/extension" "$bundle_dir/source"
+mkdir -p "$bundle_dir/python" "$bundle_dir/extension" "$bundle_dir/source" "$bundle_dir/plugin"
 
 printf '%s\n' 'Running Python tests...'
 "$core_python" -m pytest boardspec-core/tests
@@ -95,6 +105,7 @@ if [ ! -f "$extension_file" ]; then
 fi
 cp "$extension_file" "$bundle_dir/extension/"
 cp README.md "$bundle_dir/README.md"
+cp -R plugins/quick-pcb "$bundle_dir/plugin/"
 
 commit=$(git rev-parse HEAD)
 source_archive="$bundle_dir/source/$bundle_name-source.tar.gz"
@@ -106,6 +117,7 @@ git archive --format=tar.gz --prefix="$bundle_name/" HEAD > "$source_archive"
   printf 'dirty=%s\n' "$dirty"
   printf 'boardspec-core=%s\n' "$core_version"
   printf 'boardspec-mcp=%s\n' "$mcp_version"
+  printf 'quick-pcb-plugin=%s\n' "$plugin_version"
   printf 'boardspec-eda-extension=%s\n' "$extension_version"
   printf 'python=%s\n' "$("$core_python" --version 2>&1)"
   printf 'node=%s\n' "$(node --version)"
@@ -121,14 +133,32 @@ for artifact in \
 done
 
 tar -czf "$archive_path" -C "$release_dir" "$bundle_name"
-(cd "$release_dir" && shasum -a 256 "$bundle_name.tar.gz") > "$archive_path.sha256"
+"$core_python" - "$bundle_dir/plugin/quick-pcb" "$plugin_archive" <<'PY'
+from pathlib import Path
+import sys
+import zipfile
+
+source = Path(sys.argv[1])
+target = Path(sys.argv[2])
+with zipfile.ZipFile(target, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+    for path in sorted(source.rglob("*")):
+        if path.is_file():
+            archive.write(path, Path("quick-pcb") / path.relative_to(source))
+PY
+
+: > "$release_sums"
+for artifact in "$archive_path" "$plugin_archive"; do
+  (cd "$release_dir" && shasum -a 256 "$(basename "$artifact")") >> "$release_sums"
+done
 
 printf '\nRelease created:\n'
 printf '  %s\n' "$archive_path"
-printf '  %s\n' "$archive_path.sha256"
+printf '  %s\n' "$plugin_archive"
+printf '  %s\n' "$release_sums"
 printf '\nComponents:\n'
 printf '  boardspec-core %s\n' "$core_version"
 printf '  boardspec-mcp %s\n' "$mcp_version"
+printf '  quick-pcb-plugin %s\n' "$plugin_version"
 printf '  boardspec-eda-extension %s\n' "$extension_version"
 printf '  source commit %s\n' "$commit"
 printf '  dirty %s\n' "$dirty"

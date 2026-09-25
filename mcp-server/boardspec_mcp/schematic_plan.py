@@ -10,7 +10,7 @@ import os
 import boardspec
 from boardspec.exporters import parse_protel2_netlist, render_protel2_netlist
 
-from . import tools
+from .core_tools import _load_spec
 from .schematic_codec import natural_key, require_grid
 
 
@@ -59,7 +59,7 @@ def _layout_origins(ordered: list[dict], columns: int, options: dict) -> tuple[l
 
 
 def _resolver(yaml_text: str, base_dir: str | None = None):
-    spec = tools._load_spec(yaml_text)
+    spec = _load_spec(yaml_text)
     if not spec:
         return None, [{"code": "SCHEMA_INVALID", "path": "/", "message": "specification is not a mapping"}]
     resolver, errors = boardspec.build_resolver(spec, base_dir or os.getcwd(), [])
@@ -85,7 +85,7 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
         "base_dir": None,
         **(options or {}),
     }
-    spec = tools._load_spec(spec_yaml)
+    spec = _load_spec(spec_yaml)
     if not spec:
         return _error("PLAN_INVALID", "BoardSpec is not a mapping")
     warnings = []
@@ -408,7 +408,7 @@ def compare_topology(expected_text: str, actual_text: str) -> dict:
 
 
 def expected_netlist(spec_yaml: str, base_dir: str | None = None) -> tuple[str | None, dict | None]:
-    spec = tools._load_spec(spec_yaml)
+    spec = _load_spec(spec_yaml)
     if not spec:
         return None, _error("PLAN_INVALID", "BoardSpec is not a mapping")
     resolver, resolver_errors = _resolver(spec_yaml, base_dir)

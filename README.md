@@ -2,7 +2,7 @@
 
 Quick PCB 把电路连接意图写成可审查、可 diff 的 BoardSpec YAML，再由确定性工具完成校验、模块展开、BOM/网表导出，并通过 MCP 与嘉立创 EDA Pro 官方 Bridge 交互。
 
-当前 Release：`v0.2.0`。本工作区新增的 Schematic MCP 已完成本地与实机验证，但尚未进入该 Release。
+当前 Release：`v0.3.0`。
 
 ## 能做什么
 
@@ -22,29 +22,31 @@ Quick PCB 把电路连接意图写成可审查、可 diff 的 BoardSpec YAML，�
 
 ## Release 安装
 
-Release 目录包含两个平台无关的 Python wheel、一个嘉立创 EDA 插件、完整源码快照和 SHA-256 校验和，不包含本机虚拟环境或 `node_modules`。
+Release 目录包含可移植 Agent Plugin、两个平台无关的 Python wheel、一个嘉立创 EDA 插件、完整源码快照和 SHA-256 校验和，不包含本机虚拟环境或 `node_modules`。
 
 ```text
 release/
-  quick-pcb-v0.2.0/
+  quick-pcb-v0.3.0/
     README.md
     RELEASE-MANIFEST.txt
     SHA256SUMS
     extension/boardspec-eda-extension_v1.0.0.eext
     python/boardspec_core-0.1.0-py3-none-any.whl
-    python/boardspec_mcp-0.2.0-py3-none-any.whl
-    source/quick-pcb-v0.2.0-source.tar.gz
-  quick-pcb-v0.2.0.tar.gz
-  quick-pcb-v0.2.0.tar.gz.sha256
+    plugin/quick-pcb/
+    python/boardspec_mcp-0.3.0-py3-none-any.whl
+    source/quick-pcb-v0.3.0-source.tar.gz
+  quick-pcb-plugin-v0.3.0.zip
+  quick-pcb-v0.3.0.tar.gz
+  SHA256SUMS
 ```
 
 校验并解压完整发布包：
 
 ```bash
 cd release
-shasum -a 256 -c quick-pcb-v0.2.0.tar.gz.sha256
-tar -xzf quick-pcb-v0.2.0.tar.gz
-cd quick-pcb-v0.2.0
+shasum -a 256 -c SHA256SUMS
+tar -xzf quick-pcb-v0.3.0.tar.gz
+cd quick-pcb-v0.3.0
 shasum -a 256 -c SHA256SUMS
 ```
 
@@ -56,9 +58,15 @@ python3 -m venv .venv
 .venv/bin/boardspec-mcp
 ```
 
-将 `.venv/bin/boardspec-mcp` 配置为 MCP 客户端的 stdio 命令。嘉立创 EDA 插件位于 `extension/`；在嘉立创 EDA Pro 中进入“设置 → 扩展 → 扩展管理器”并导入 `.eext`。
+可用的 stdio 命令为 `boardspec-core-mcp`、`boardspec-layout-mcp`、`boardspec-schematic-mcp` 和兼容的全量 `boardspec-mcp`。嘉立创 EDA 插件位于 `extension/`；在嘉立创 EDA Pro 中进入“设置 → 扩展 → 扩展管理器”并导入 `.eext`。
 
 MCP 与 EDA 实时连接还需要官方 `easyeda-api-skill` Bridge 和 `run-api-gateway.eext`。HTTP 200 只代表 Bridge 服务可访问；只有 Bridge 身份正确且 `edaConnected=true` 才表示 EDA 已连接。
+
+## Agent Plugin
+
+仓库内 `plugins/quick-pcb` 同时提供 Agent Plugins 1.0 清单和 Codex 兼容清单。要求 Python 3.10+、Git 和 `uv`；三个 MCP 进程通过固定的 `v0.3.0` Git 标签安装并缓存运行时。Core 默认启用，Layout 与 Schematic 按需启用，所有 EDA 写工具要求审批。
+
+仓库 marketplace 位于 `.agents/plugins/marketplace.json`，项目默认策略位于 `.codex/config.toml`。支持 Agent Plugins 1.0 的客户端可直接加载 `plugins/quick-pcb`；其它 stdio MCP 客户端可复制 `plugins/quick-pcb/mcp.json` 中需要的服务配置。
 
 ## 开发环境
 
@@ -102,16 +110,18 @@ npm run build
 
 开发过程中可用 `./scripts/build-release.sh --allow-dirty` 检查构建流程；这类包会在清单中标记 `dirty=true`，不应对外发布。
 
-`release/` 是本地构建输出并被 Git 忽略。正式发布时上传以下两个文件：
+`release/` 是本地构建输出并被 Git 忽略。正式发布时上传以下三个文件：
 
-- `release/quick-pcb-v0.2.0.tar.gz`
-- `release/quick-pcb-v0.2.0.tar.gz.sha256`
+- `release/quick-pcb-v0.3.0.tar.gz`
+- `release/quick-pcb-plugin-v0.3.0.zip`
+- `release/SHA256SUMS`
 
 ## 项目结构
 
 ```text
 boardspec-core/   BoardSpec DSL、校验、展开、ERC 和导出器
 mcp-server/       BoardSpec 与 EasyEDA Pro Layout/Schematic MCP 服务
+plugins/quick-pcb/ 可移植 Agent Plugin 与 Codex 兼容清单
 eda-extension/    嘉立创 EDA Pro 导入网表/导出 BOM 插件
 examples/         已验证的 BoardSpec 示例及真实器件映射
 docs/             协议、架构、工具契约和 E2E 证据

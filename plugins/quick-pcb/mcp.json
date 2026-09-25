@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "boardspec-core": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "boardspec-core-mcp"
+      ]
+    },
+    "boardspec-layout": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "boardspec-layout-mcp"
+      ]
+    },
+    "boardspec-schematic": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "boardspec-schematic-mcp"
+      ]
+    }
+  }
+}

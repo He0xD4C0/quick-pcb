@@ -1,0 +1,76 @@
+{
+  "mcpServers": {
+    "boardspec-core": {
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "boardspec-core-mcp"
+      ],
+      "enabled": true,
+      "default_tools_approval_mode": "approve",
+      "startup_timeout_sec": 300,
+      "tool_timeout_sec": 120,
+      "env_vars": ["PATH", "HOME", "USERPROFILE", "LOCALAPPDATA", "XDG_CACHE_HOME"]
+    },
+    "boardspec-layout": {
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "boardspec-layout-mcp"
+      ],
+      "enabled": false,
+      "default_tools_approval_mode": "approve",
+      "tools": {
+        "load_netlist": {"approval_mode": "prompt"},
+        "set_component_placement": {"approval_mode": "prompt"},
+        "run_auto_layout": {"approval_mode": "prompt"},
+        "create_route": {"approval_mode": "prompt"},
+        "edit_routing": {"approval_mode": "prompt"},
+        "run_auto_routing": {"approval_mode": "prompt"},
+        "set_board_outline": {"approval_mode": "prompt"},
+        "edit_keepouts": {"approval_mode": "prompt"},
+        "edit_copper_pours": {"approval_mode": "prompt"}
+      },
+      "startup_timeout_sec": 300,
+      "tool_timeout_sec": 3600,
+      "env_vars": ["PATH", "HOME", "USERPROFILE", "LOCALAPPDATA", "XDG_CACHE_HOME", "BOARDSPEC_BRIDGE_URL"]
+    },
+    "boardspec-schematic": {
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.0#subdirectory=boardspec-core",
+        "boardspec-schematic-mcp"
+      ],
+      "enabled": false,
+      "default_tools_approval_mode": "approve",
+      "tools": {
+        "set_no_connects": {"approval_mode": "prompt"},
+        "create_project": {"approval_mode": "prompt"},
+        "open_project": {"approval_mode": "prompt"},
+        "create_schematic": {"approval_mode": "prompt"},
+        "create_schematic_page": {"approval_mode": "prompt"},
+        "open_schematic_page": {"approval_mode": "prompt"},
+        "save_schematic": {"approval_mode": "prompt"},
+        "place_schematic_components": {"approval_mode": "prompt"},
+        "set_schematic_component_placement": {"approval_mode": "prompt"},
+        "remove_schematic_components": {"approval_mode": "prompt"},
+        "create_schematic_wires": {"approval_mode": "prompt"},
+        "edit_schematic_wires": {"approval_mode": "prompt"},
+        "place_schematic_net_labels": {"approval_mode": "prompt"},
+        "place_schematic_net_ports": {"approval_mode": "prompt"},
+        "place_schematic_net_flags": {"approval_mode": "prompt"},
+        "edit_schematic_net_markers": {"approval_mode": "prompt"},
+        "set_schematic_no_connects": {"approval_mode": "prompt"}
+      },
+      "startup_timeout_sec": 300,
+      "tool_timeout_sec": 3600,
+      "env_vars": ["PATH", "HOME", "USERPROFILE", "LOCALAPPDATA", "XDG_CACHE_HOME", "BOARDSPEC_BRIDGE_URL"]
+    }
+  }
+}

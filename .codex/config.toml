@@ -1,0 +1,74 @@
+[plugins."quick-pcb@quick-pcb-local"]
+enabled = true
+
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-core]
+enabled = true
+startup_timeout_sec = 300
+tool_timeout_sec = 120
+default_tools_approval_mode = "approve"
+
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout]
+enabled = false
+startup_timeout_sec = 300
+tool_timeout_sec = 3600
+default_tools_approval_mode = "approve"
+
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.load_netlist]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.set_component_placement]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.run_auto_layout]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.create_route]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.edit_routing]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.run_auto_routing]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.set_board_outline]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.edit_keepouts]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.edit_copper_pours]
+approval_mode = "prompt"
+
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic]
+enabled = false
+startup_timeout_sec = 300
+tool_timeout_sec = 3600
+default_tools_approval_mode = "approve"
+
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.set_no_connects]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.create_project]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.open_project]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.create_schematic]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.create_schematic_page]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.open_schematic_page]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.save_schematic]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.place_schematic_components]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.set_schematic_component_placement]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.remove_schematic_components]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.create_schematic_wires]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.edit_schematic_wires]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.place_schematic_net_labels]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.place_schematic_net_ports]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.place_schematic_net_flags]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.edit_schematic_net_markers]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.set_schematic_no_connects]
+approval_mode = "prompt"
