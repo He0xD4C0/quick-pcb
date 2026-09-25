@@ -2,7 +2,7 @@
 
 Quick PCB 把电路连接意图写成可审查、可 diff 的 BoardSpec YAML，再由确定性工具完成校验、模块展开、BOM/网表导出，并通过 MCP 与嘉立创 EDA Pro 官方 Bridge 交互。
 
-当前 Release：`v0.2.0`。
+当前 Release：`v0.2.0`。本工作区新增的 Schematic MCP 已完成本地与实机验证，但尚未进入该 Release。
 
 ## 能做什么
 
@@ -11,10 +11,11 @@ Quick PCB 把电路连接意图写成可审查、可 diff 的 BoardSpec YAML，�
 - 展开可复用模块，导出 Protel2、KiCad 交换网表、BOM CSV 和 Mermaid 连接图。
 - 在嘉立创 EDA Pro 中预览并应用网表，回读器件、网络和引脚进行逐项比较。
 - 通过独立 Layout MCP 读取或精确修改 PCB，并在写入后回读和运行严格 DRC。
+- 通过 Schematic MCP 生成确定性单页绘图计划；器件落位后依据真实引脚和 BBox 解析连续导线或“短引线 + 端口/电源标志”，并回读验证拓扑、可读性与严格 DRC。
 
 ## 明确边界
 
-- BoardSpec 只描述“有什么、连到哪”，不生成原理图图形、原生 KiCad/Altium 工程、坐标或走线。
+- BoardSpec 只描述“有什么、连到哪”，自身不包含原理图坐标或绘图 primitive；Schematic MCP 在独立计划中生成这些信息。
 - Layout MCP 不修改 BoardSpec 拓扑，不提供布局建议，不维护 undo，也不自动保存 EDA 文档。
 - DRC 为 0 只证明通过当前 EDA 规则，不等于固件、实物功能、EMC、热设计、可制造性或量产就绪。
 - 引脚、封装和器件参数必须来自可信库或工程审核，工具不会根据名称猜测。
@@ -110,7 +111,7 @@ npm run build
 
 ```text
 boardspec-core/   BoardSpec DSL、校验、展开、ERC 和导出器
-mcp-server/       BoardSpec 与 EasyEDA Pro Layout MCP 服务
+mcp-server/       BoardSpec 与 EasyEDA Pro Layout/Schematic MCP 服务
 eda-extension/    嘉立创 EDA Pro 导入网表/导出 BOM 插件
 examples/         已验证的 BoardSpec 示例及真实器件映射
 docs/             协议、架构、工具契约和 E2E 证据
@@ -121,6 +122,8 @@ scripts/          统一 Release 构建入口
 
 - STC51 + DS1302 时钟夹具：25 个器件、21 个网络、76 个节点，最终严格 PCB DRC 为 0。
 - MOSFET LED 夹具：11 个器件、5 个网络、31 个节点，最终严格 PCB DRC 为 0。
+- Schematic MCP 在隔离的一次性工程中绘制并显式保存以上两个单页原理图：拓扑分别为 11/5/31 与 25/21/76，均无组件重叠且严格原理图 DRC 为 0。
+- 2026-09-16 可读性修复实机复验中，两页跨区/多端网络的可见端点覆盖率均为 100%，标记与器件/标记 BBox 无重叠，重复执行差异为空。
 - 这些结果是特定测试工程和 EDA 版本的实机证据，不自动外推到其它版本或生产设计。
 
 ## 文档
@@ -128,6 +131,9 @@ scripts/          统一 Release 构建入口
 - [BoardSpec DSL 规范](docs/board-spec-v0.1.md)
 - [MCP 工具契约](docs/mcp-tools.md)
 - [Layout MCP v0.1](docs/layout-mcp-v0.1.md)
+- [Schematic MCP v0.1](docs/schematic-mcp-v0.1.md)
+- [Schematic MCP 真实 EDA E2E](docs/evidence/schematic-mcp-e2e-2026-09-15.md)
+- [Schematic 网络可读性 E2E](docs/evidence/schematic-readability-e2e-2026-09-16.md)
 - [系统架构](docs/architecture.md)
 - [STC51 真实 EDA E2E](docs/evidence/stc51-clock-e2e-2026-09-14.md)
 - [Layout MCP 真实 EDA E2E](docs/evidence/layout-e2e-2026-09-14.md)

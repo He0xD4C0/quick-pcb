@@ -148,6 +148,7 @@ def test_bridge_execute_rejects_http_error(monkeypatch):
         "ok": False,
         "code": "BRIDGE_HTTP_ERROR",
         "message": "bridge returned HTTP 500",
+        "status_code": 500,
     }
 
 

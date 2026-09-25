@@ -25,10 +25,12 @@ from .layout_types import (
     RoutingAction,
     dump_model,
 )
+from .schematic_server import register_schematic_tools
 
 mcp = MCPServer(name="boardspec")
 
 client = BridgeClient()
+register_schematic_tools(mcp, client)
 
 
 @mcp.tool()

@@ -5,7 +5,7 @@ Node server). It listens on an available port in the 49620–49629 range and
 exposes:
 
 - ``GET /health``     -> ``200`` when the EDA client is connected.
-- ``POST /execute``   -> ``{"code": "<JS>"}`` runs the JS inside EasyEDA Pro.
+- ``POST /execute``   -> ``{"code": "<JS>", "windowId": "..."}`` targets one window.
 
 This client never falls back to fabricating part/pin data: when the bridge is
 unreachable, callers must surface ``BRIDGE_UNAVAILABLE`` rather than guess.
@@ -111,7 +111,45 @@ class BridgeClient:
             "active_window_id": data.get("activeWindowId"),
         }
 
-    def execute(self, code: str) -> dict:
+    def list_windows(self) -> dict:
+        """Return connected EDA windows without changing the active window."""
+        try:
+            url = self.resolve_base_url()
+            r = httpx.get(f"{url}/eda-windows", timeout=min(self.timeout, 5.0))
+            r.raise_for_status()
+            data = r.json()
+        except BridgeError as exc:
+            return {"ok": False, "code": exc.code, "message": exc.message}
+        except httpx.TimeoutException as exc:
+            return {"ok": False, "code": "BRIDGE_TIMEOUT", "message": str(exc)}
+        except httpx.HTTPError as exc:
+            return {"ok": False, "code": "BRIDGE_HTTP_ERROR", "message": str(exc)}
+        except ValueError:
+            return {
+                "ok": False,
+                "code": "BRIDGE_BAD_RESPONSE",
+                "message": "bridge window endpoint returned non-JSON data",
+            }
+        raw_windows = data.get("windows") if isinstance(data, dict) else None
+        if not isinstance(raw_windows, list):
+            return {
+                "ok": False,
+                "code": "BRIDGE_BAD_RESPONSE",
+                "message": "bridge window endpoint returned no window list",
+            }
+        windows = [
+            {**item, "id": item.get("id") or item.get("windowId")}
+            for item in raw_windows
+            if isinstance(item, dict)
+        ]
+        return {
+            "ok": True,
+            "base_url": url,
+            "active_window_id": data.get("activeWindowId"),
+            "windows": windows,
+        }
+
+    def execute(self, code: str, window_id: str | None = None) -> dict:
         """Run JS inside EasyEDA Pro and return ``{ok, result|error}``."""
         try:
             url = self.resolve_base_url()
@@ -121,9 +159,14 @@ class BridgeClient:
         try:
             r = httpx.post(
                 f"{url}/execute",
-                json={"code": code},
+                json={
+                    "code": code,
+                    **({"windowId": window_id} if window_id else {}),
+                },
                 timeout=self.timeout,
             )
+        except httpx.TimeoutException as exc:
+            return {"ok": False, "code": "BRIDGE_TIMEOUT", "message": str(exc)}
         except httpx.HTTPError as exc:
             return {"ok": False, "code": "BRIDGE_HTTP_ERROR", "message": str(exc)}
 
@@ -132,6 +175,7 @@ class BridgeClient:
                 "ok": False,
                 "code": "BRIDGE_HTTP_ERROR",
                 "message": f"bridge returned HTTP {r.status_code}",
+                "status_code": r.status_code,
             }
 
         try:
