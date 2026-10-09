@@ -1,6 +1,6 @@
 # MCP 工具契约
 
-兼容 MCP server `boardspec` 注册全部 53 个工具；独立入口 `boardspec-core`、`boardspec-layout`、`boardspec-schematic` 分别注册 3、20、34 个工具。Layout 与 Schematic 共享 4 个只读 Bridge/器件/网表工具。本地工具直接调用 `boardspec-core`；依赖官方桥的工具通过桥客户端把 JS 定向发送到明确的嘉立创 EDA 专业版窗口。
+兼容 MCP server `boardspec` 注册全部 57 个工具；独立入口 `boardspec-core`、`boardspec-library`、`boardspec-layout`、`boardspec-schematic` 分别注册 3、4、20、36 个工具。Library 全部只读；Layout 与 Schematic 保留兼容的单件查库工具。本地工具直接调用 `boardspec-core`；依赖官方桥的工具通过桥客户端把 JS 定向发送到嘉立创 EDA 专业版窗口。
 
 ## 通用约定
 
@@ -19,15 +19,27 @@
 
 ### `search_part(query, limit=10)`
 
-查嘉立创真实器件库。
+兼容接口：查嘉立创真实器件库并原样返回搜索结果。新选型流程优先使用 `search_parts`。
 
 返回：桥执行 `eda.lib_Device.search(query)` 的 `result`（`ILIB_DeviceSearchItem[]`），含 `uuid`、`libraryUuid`、`name`、`symbol`、`footprint`。
 
+## Library MCP 工具
+
+### `search_parts(query, page=1, page_size=10)`
+
+查询嘉立创 EDA 系统库并返回 `parts/easyeda-v0.1` 候选表。`page_size` 为 1–50；结果数量等于页大小时返回下一页提示，但不伪造总数。
+
+候选表使用 `{"fields":[...],"rows":[...]}`，固定覆盖 C 编号、制造商/料号、描述、分类、供应商封装、基础/扩展库、BOM/PCB 标记、数据手册、符号/封装/3D UUID、CAD 完整度、品类原始属性和缺失项。品类参数保持嘉立创原始键值，不做单位推导。
+
+### `get_parts_by_lcsc_ids(lcsc_ids)`
+
+按最多 50 个去重后的立创 C 编号批量查询，并启用多匹配。返回全部匹配；不存在的编号列入 `missing_lcsc_ids` 和 `PARTS_NOT_FOUND` 警告，不因部分缺失丢弃其余结果。
+
 ### `get_part(part_uuid, library_uuid="")`
 
-按 UUID 取单个器件完整记录。
+按 UUID 取单个器件完整记录。除器件属性外，还下载关联 `elibz2` 符号归档、解析真实 `pins[]`（`number`、`name`、`type`、`part`）和 `pinSource`，并返回保留 UUID、C 编号、原始引脚类型和未审核状态的 `board_spec_definition`。符号归档不可用或无法解析时保留器件记录并返回 `PIN_DATA_UNAVAILABLE`；不得猜测引脚。
 
-返回：`eda.lib_Device.get(uuid, libraryUuid)` 的器件记录，并通过其关联符号归档解析 `pins[]`（`number`、`name`、`type`、`part`）及 `pinSource`。同时返回可复制到 `definitions` 的 `board_spec_definition`，其中保留 UUID、LCSC 编号、原始引脚类型和未审核状态。符号归档不可用或无法解析时保留器件记录，并返回 `PIN_DATA_UNAVAILABLE` 警告；不得猜测引脚。
+Library MCP 不返回实时价格、库存、交期或生命周期，也不内置适用性评分；LLM 必须先提取电气、额定值、极性、封装和引脚条件，使用 `search_parts` 比较真实候选，再对每个入选候选调用 `get_part`。只有查无可靠候选时才建议自建符号并明确说明例外；该顺序是强提示工作流，不是服务器执行硬门槛。
 
 ### `get_project_component(designator)`
 
@@ -95,6 +107,7 @@ Schematic 工具使用 `schematic/easyeda-v0.1` 快照和 `schematic-plan/v0.2` 
 - `get_schematic_wiring`、`get_schematic_violations`
 - `plan_schematic`、`resolve_schematic_plan`、`diff_schematic_plan`
 - `verify_schematic_topology`、`verify_schematic_readability`
+- `verify_schematic_engineering_drawing`
 
 受控写入：
 
@@ -103,6 +116,11 @@ Schematic 工具使用 `schematic/easyeda-v0.1` 快照和 `schematic-plan/v0.2` 
 - `place_schematic_net_labels`、`place_schematic_net_ports`、`place_schematic_net_flags`
 - `edit_schematic_net_markers`
 - `set_schematic_no_connects`
+- `set_schematic_page_format`
+
+默认 `engineering_basic` 规划要求 `project.name`、`project.version`、`project.drawing.title` 和 `project.drawing.number`，并在 A4/A3 横向图幅中选择可容纳内容的最小图幅。`set_schematic_page_format` 只 patch 当前图页已有的原生 `titleBlockData`：写入图名、图号、版本、可选人工字段和图页尺寸；工程名、更新日期、页码、总页数由 EDA 管理，只控制显示状态。`Symbol`、`Device`、边框、宽高及分区字段只做回读，结构未随 A4/A3 切换时返回 `PAGE_SIZE_NOT_APPLIED`，绝不查询或放置图纸模板，也不生成假图框。`every_endpoint` 策略为每个普通信号端点生成真实同名 Net Port，为每个电源/地端点生成真实同名 Flag；两端局部网络仍保留正交直连，但直连本身不计作 NET 名称可见。`verify_schematic_readability` 要求 `visible_net_endpoint_coverage=1.0`，并报告缺失、错名与碰撞。
+
+sparse_named 策略启用 continuous 布线：显式信号网络各保留一个 Net Port，电源/地各保留一个 Flag，匿名 connect 网络不放标记；两端和多端网络均由连续正交导线树表达。该策略的命名可见率只检查选中的语义标记，全部端点仍由导线、原生网表和拓扑比较共同验收。
 
 `get_schematic_wiring` 对标记回读 BBox、旋转、方向和标志类型；运行时不支持的属性以 `null` 及 `unsupported` 状态返回。`edit_schematic_net_markers` 按 primitive ID 替换或删除标记；替换先创建并验证新图元，再删除旧图元，纯删除要求 `confirm_topology_change=true`。
 

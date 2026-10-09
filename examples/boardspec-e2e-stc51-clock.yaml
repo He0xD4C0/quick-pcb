@@ -1,6 +1,10 @@
 spec: board-spec/v0.1
 project:
   name: BoardSpec_E2E_STC51_CLOCK
+  version: "1.0"
+  drawing:
+    title: STC51 Clock E2E Schematic
+    number: QPCB-E2E-002
   description: >-
     Connectivity and layout E2E fixture for a 5 V STC89C52RC electronic
     clock with DS1302 timekeeping, an external LCD1602 I2C module, three

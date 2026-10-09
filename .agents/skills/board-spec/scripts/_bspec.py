@@ -8,20 +8,25 @@ expand.py, export_bom.py, and export_kicad_netlist.py.
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 from copy import deepcopy
 
 import jsonschema
+from referencing import Registry, Resource
 from ruamel.yaml import YAML
 from ruamel.yaml.error import YAMLError
 
-SCHEMA_PATH = os.path.join(
+SCHEMA_DIR = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "..",
     "references",
-    "board-spec-v0.1.schema.json",
 )
+SCHEMA_PATHS = {
+    "board-spec/v0.1": os.path.join(SCHEMA_DIR, "board-spec-v0.1.schema.json"),
+    "board-spec/v0.2": os.path.join(SCHEMA_DIR, "board-spec-v0.2.schema.json"),
+}
 
 _ELECTRICAL_OUTPUT_TYPES = ("output", "power_out", "tri_state")
 _SIGNAL_PIN_TYPES = ("input", "bidirectional", "tri_state")
@@ -44,15 +49,23 @@ def _dedupe(seq):
     return out
 
 
-_schema = None
+_schemas = {}
 
 
-def load_schema():
-    global _schema
-    if _schema is None:
-        with open(SCHEMA_PATH, encoding="utf-8") as f:
-            _schema = json.load(f)
-    return _schema
+def load_schema(version="board-spec/v0.1"):
+    selected = version if version in SCHEMA_PATHS else "board-spec/v0.1"
+    if selected not in _schemas:
+        with open(SCHEMA_PATHS[selected], encoding="utf-8") as f:
+            _schemas[selected] = json.load(f)
+    return _schemas[selected]
+
+
+def schema_registry():
+    registry = Registry()
+    for version in SCHEMA_PATHS:
+        schema = load_schema(version)
+        registry = registry.with_resource(schema["$id"], Resource.from_contents(schema))
+    return registry
 
 
 def load_yaml(path):
@@ -76,6 +89,16 @@ _ENDPOINT_RE = re.compile(
     r"^(?P<inst>[A-Za-z_][A-Za-z0-9_]*(?:/[A-Za-z_][A-Za-z0-9_]*)*)\.(?P<pin>.*)$"
 )
 _PHYSICAL_REF_RE = re.compile(r"^[A-Za-z]+[1-9][0-9]*$")
+
+
+def _connection_endpoints(connection):
+    return connection.get("connect", connection.get("endpoints", [])) or []
+
+
+def _anonymous_net_name(endpoints):
+    canonical = "\0".join(sorted(str(endpoint) for endpoint in endpoints))
+    digest = hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:12].upper()
+    return f"N_AUTO_{digest}"
 
 
 def parse_endpoint(ep):
@@ -275,9 +298,10 @@ def _expand_endpoints(endpoints, port_bindings):
 def _validate_module_nets(part, module_key, resolver, errors):
     items = part.get("items", {}) or {}
     for i, net in enumerate(part.get("nets", []) or []):
-        for j, ep in enumerate(net.get("endpoints", []) or []):
+        field = "connect" if "connect" in net else "endpoints"
+        for j, ep in enumerate(_connection_endpoints(net)):
             parsed = parse_endpoint(ep)
-            base = f"/definitions/{module_key}/nets/{i}/endpoints/{j}"
+            base = f"/definitions/{module_key}/nets/{i}/{field}/{j}"
             if not parsed:
                 errors.append(diag("SCHEMA_INVALID", base, f"invalid endpoint '{ep}'"))
                 continue
@@ -372,11 +396,18 @@ def analyze(spec, resolver):
     errors = []
     warnings = []
 
-    validator = jsonschema.Draft202012Validator(load_schema())
+    version = spec.get("spec", "board-spec/v0.1")
+    validator = jsonschema.Draft202012Validator(
+        load_schema(version), registry=schema_registry()
+    )
     schema_errors = list(validator.iter_errors(spec))
     if schema_errors:
         for e in schema_errors:
             parts = [str(p) for p in e.absolute_path]
+            if e.validator == "required" and isinstance(e.instance, dict):
+                match = re.match(r"^'(.+)' is a required property$", e.message)
+                if match:
+                    parts.append(match.group(1))
             path = "/" + "/".join(parts) if parts else "/"
             errors.append(diag("SCHEMA_INVALID", path, e.message))
         return None, errors, warnings
@@ -429,7 +460,8 @@ def analyze(spec, resolver):
                 ports = part.get("ports", {}) or {}
                 module_ports[path] = set(ports)
                 params = _module_params(part, inst, path, warnings)
-                net_by_name = {n["net"]: n for n in (part.get("nets", []) or [])}
+                module_nets = part.get("nets", []) or []
+                net_by_name = {n["net"]: n for n in module_nets if n.get("net")}
                 pm = part.get("port_map", {}) or {}
                 for port in ports:
                     if port not in pm:
@@ -461,19 +493,19 @@ def analyze(spec, resolver):
                     net = net_by_name.get(netname)
                     if net is not None:
                         port_bindings[(path, port)] = [
-                            f"{path}/{ep}" for ep in (net.get("endpoints", []) or [])
+                            f"{path}/{ep}" for ep in _connection_endpoints(net)
                         ]
                 _validate_module_nets(part, part_ref, resolver, errors)
                 mapped = set(pm.values())
-                for net in (part.get("nets", []) or []):
-                    if net["net"] not in mapped:
+                for net in module_nets:
+                    if net.get("net") in mapped:
+                        continue
+                    prefixed = [f"{path}/{ep}" for ep in _connection_endpoints(net)]
+                    if "connect" in net:
+                        standalone_nets.append({"connect": prefixed})
+                    else:
                         standalone_nets.append(
-                            {
-                                "net": f"{path}/{net['net']}",
-                                "endpoints": [
-                                    f"{path}/{ep}" for ep in (net.get("endpoints", []) or [])
-                                ],
-                            }
+                            {"net": f"{path}/{net['net']}", "endpoints": prefixed}
                         )
                 if part_ref in visited:
                     errors.append(
@@ -492,33 +524,52 @@ def analyze(spec, resolver):
 
     walk(None, instances, {})
 
+    def normalize_connection(connection, endpoints):
+        if "connect" in connection:
+            return {
+                "net": _anonymous_net_name(endpoints),
+                "kind": "signal",
+                "endpoints": endpoints,
+                "net_origin": "generated",
+            }
+        normalized = dict(connection)
+        normalized["endpoints"] = endpoints
+        if version == "board-spec/v0.2":
+            normalized["net_origin"] = "explicit"
+        return normalized
+
     flat_connections = []
     for conn in connections:
-        new_conn = dict(conn)
-        new_conn["endpoints"] = _expand_endpoints(
-            conn.get("endpoints", []) or [], port_bindings
+        endpoints = _expand_endpoints(
+            _connection_endpoints(conn), port_bindings
         )
-        flat_connections.append(new_conn)
+        flat_connections.append(normalize_connection(conn, endpoints))
     for net in standalone_nets:
-        net["endpoints"] = _expand_endpoints(net["endpoints"], port_bindings)
-        flat_connections.append(net)
+        endpoints = _expand_endpoints(_connection_endpoints(net), port_bindings)
+        flat_connections.append(normalize_connection(net, endpoints))
 
     net_pins = {}
     pin_owner = {}
-    seen_nets = set()
+    seen_nets = {}
     original_count = len(connections)
     for idx, conn in enumerate(flat_connections):
         net = conn.get("net")
         is_original = idx < original_count
         if net in seen_nets:
+            code = (
+                "GENERATED_NET_COLLISION"
+                if conn.get("net_origin") == "generated"
+                and seen_nets[net] != sorted(conn.get("endpoints", []))
+                else "DUPLICATE_NET"
+            )
             errors.append(
                 diag(
-                    "DUPLICATE_NET",
+                    code,
                     f"/connections/{idx}" if is_original else "/definitions",
                     f"net '{net}' is defined more than once",
                 )
             )
-        seen_nets.add(net)
+        seen_nets[net] = sorted(conn.get("endpoints", []))
         for j, ep in enumerate(conn.get("endpoints", []) or []):
             base = (
                 f"/connections/{idx}/endpoints/{j}"
@@ -575,6 +626,25 @@ def analyze(spec, resolver):
     net_kind = {}
     for conn in flat_connections:
         net_kind.setdefault(conn.get("net"), conn.get("kind"))
+
+    generated_nets = {
+        conn.get("net")
+        for conn in flat_connections
+        if conn.get("net_origin") == "generated"
+    }
+    for index, constraint in enumerate(spec.get("constraints", []) or []):
+        target = constraint.get("target")
+        targets = target if isinstance(target, list) else [target]
+        for value in targets:
+            if value in generated_nets:
+                errors.append(
+                    diag(
+                        "ANONYMOUS_NET_TARGET_UNSUPPORTED",
+                        f"/constraints/{index}/target",
+                        f"anonymous net '{value}' cannot be a constraint target",
+                        "Use a named 'net' connection when a constraint must target it.",
+                    )
+                )
 
     def ptype(p):
         return p.get("type", "unspecified")
@@ -753,7 +823,7 @@ def analyze(spec, resolver):
 
     reference_map = allocate_references(flat_instances, resolver, errors)
     expanded = {
-        "spec": "board-spec/v0.1",
+        "spec": version,
         "project": spec.get("project", {}),
         "libraries": spec.get("libraries", []) or [],
         "definitions": {k: v for k, v in definitions.items() if v.get("kind") != "module"},
@@ -854,6 +924,11 @@ def build_flat(expanded, resolver):
             for p in resolve_pins(resolver.pins(kind, part), token):
                 nodes.append((reference_map.get(inst, inst), str(p.get("number"))))
         nets.append(
-            {"name": conn.get("net"), "kind": conn.get("kind"), "nodes": _dedupe(nodes)}
+            {
+                "name": conn.get("net"),
+                "kind": conn.get("kind"),
+                "net_origin": conn.get("net_origin", "explicit"),
+                "nodes": _dedupe(nodes),
+            }
         )
     return components, nets

@@ -89,6 +89,7 @@ printf '%s\n' 'Running Python tests...'
 "$mcp_python" -m pytest mcp-server/tests
 
 printf '%s\n' 'Checking and packaging the EDA extension...'
+mkdir -p "$repo_dir/eda-extension/build/dist"
 npm --prefix eda-extension run lint
 npm --prefix eda-extension run build
 

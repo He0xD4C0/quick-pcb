@@ -1,17 +1,19 @@
 """BoardSpec MCP server entry point.
 
-Exposes BoardSpec DSL tools (validate/expand/export) locally and EasyEDA Pro
-tools (search_part/get_part/load_netlist/bridge_status) through the official
-bridge. Tools that depend on the bridge return ``BRIDGE_UNAVAILABLE`` when it is
-not reachable rather than fabricating part or pin data.
+Exposes BoardSpec DSL tools locally and read-only EasyEDA system-library plus
+checked layout/schematic tools through the official bridge. Tools that depend
+on the bridge return ``BRIDGE_UNAVAILABLE`` when it is not reachable rather
+than fabricating part, pin, or document data.
 """
 
 from __future__ import annotations
 
-from typing import Literal
+from typing import Annotated, Literal
+
+from pydantic import Field
 
 from .bridge_client import BridgeClient
-from . import layout_tools, tools
+from . import layout_tools, part_library, tools
 from .layout_types import (
     KeepoutAction,
     OutlinePoint,
@@ -34,6 +36,8 @@ from .protocol import (
     LayoutResult,
     NetlistResult,
     NetlistType,
+    PartDetailResult,
+    PartTableResult,
     READ_ONLY,
     WRITE_ADD,
     WRITE_DESTRUCTIVE,
@@ -68,9 +72,49 @@ def search_part(query: str, limit: int = 10) -> EDAResult:
 
 
 @mcp.tool(annotations=READ_ONLY, structured_output=True)
-def get_part(part_uuid: str, library_uuid: str = "") -> EDAResult:
-    """Fetch a device plus an embeddable, provenance-preserving physical definition."""
-    return structured(tools.get_part(client, part_uuid, library_uuid), raise_tool_error=True, result_type=EDAResult)
+def search_parts(
+    query: Annotated[str, Field(min_length=1, max_length=200)],
+    page: Annotated[int, Field(ge=1)] = 1,
+    page_size: Annotated[int, Field(ge=1, le=50)] = 10,
+) -> PartTableResult:
+    """Compare real EasyEDA system-library candidates before defining a part.
+
+    Start with explicit electrical and package constraints. Results preserve
+    source attributes and CAD UUIDs without adding price, stock, lifecycle, or
+    a server-side suitability score. Call get_part for shortlisted candidates.
+    """
+    return structured(
+        part_library.search_parts(client, query, page, page_size),
+        raise_tool_error=True,
+        result_type=PartTableResult,
+    )
+
+
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_parts_by_lcsc_ids(
+    lcsc_ids: Annotated[list[str], Field(min_length=1)]
+) -> PartTableResult:
+    """Return all EasyEDA system-library matches for up to 50 unique C numbers."""
+    return structured(
+        part_library.get_parts_by_lcsc_ids(client, lcsc_ids),
+        raise_tool_error=True,
+        result_type=PartTableResult,
+    )
+
+
+@mcp.tool(annotations=READ_ONLY, structured_output=True)
+def get_part(part_uuid: str, library_uuid: str = "") -> PartDetailResult:
+    """Verify a shortlisted device's pins, polarity, symbol and footprint data.
+
+    The result includes an embeddable, provenance-preserving physical
+    definition. Use a custom symbol only after recording that no reliable
+    system-library candidate was found.
+    """
+    return structured(
+        tools.get_part(client, part_uuid, library_uuid),
+        raise_tool_error=True,
+        result_type=PartDetailResult,
+    )
 
 
 @mcp.tool(annotations=READ_ONLY, structured_output=True)

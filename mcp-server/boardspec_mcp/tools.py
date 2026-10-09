@@ -342,6 +342,17 @@ def get_netlist(
         f"return await eda.{api}.getNetlist(" + json.dumps(target) + ");"
     )
     if response.get("ok"):
+        value = response.get("result")
+        if not isinstance(value, str) or not value.strip():
+            return {
+                "ok": False,
+                "code": "NETLIST_UNAVAILABLE",
+                "message": "EasyEDA returned no netlist. Native export can be blocked by "
+                           "schematic DRC (including missing footprints); inspect strict DRC "
+                           "diagnostics before retrying. No empty netlist was accepted.",
+                "netlist_type": netlist_type.upper(),
+                "document_kind": document_kind.lower(),
+            }
         response["netlist_type"] = netlist_type.upper()
         response["document_kind"] = document_kind.lower()
     return response

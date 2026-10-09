@@ -1,6 +1,6 @@
 # EasyEDA Schematic MCP v0.1
 
-> 状态：已在当前工作区实现，并于 2026-09-15 完成初始真实写入，于 2026-09-16 使用 EasyEDA Pro 3.2.186 完成网络可读性修复后的回读、拓扑比较、可读性验证、严格 DRC、幂等复验和显式保存。该功能尚未进入已发布的 v0.2.0。
+> 状态：已在当前工作区实现。2026-09-15/16 的真实 EDA 证据覆盖原有写入与网络可读性闭环；A4/A3 原生图框、标题栏逐字段回读和逐端点 NET 标记的新工程模式已有自动测试覆盖，仍需单独完成本机实机验收。这里的“基础工程制图”是项目规范，不宣称完整符合国家标准。
 
 Schematic MCP 位于 BoardSpec 连接规格与嘉立创 EDA Pro 原理图画布之间。BoardSpec 继续只声明“有什么、连到哪”；Schematic MCP 负责把已校验、已展开的拓扑转换为确定性的器件位置、导线、网络端口和电源标志。
 
@@ -44,6 +44,7 @@ BoardSpec YAML
   "context_revision": "sha256:...",
   "revision": "sha256:...",
   "unit": "mil",
+  "page_format": {"show_title_block": true, "title_block_data": {}},
   "components": [],
   "wires": [],
   "labels": [],
@@ -54,13 +55,15 @@ BoardSpec YAML
 ```
 
 - `context_revision` 哈希窗口、工程、原理图、页面、文档和标签页身份。
-- `revision` 只哈希规范化的原理图内容，不随活动窗口切换而改变。
+- `revision` 哈希规范化的图幅/标题栏、器件和网络图元，不随活动窗口切换而改变。
 - 外部坐标一律为 mil；写入坐标必须位于 10 mil 网格，调用 EasyEDA API 时除以 10。
 - 器件由唯一位号选择，引脚由精确编号选择；不根据引脚名猜测物理脚。
 - 编辑和删除已有图元时必须使用回读得到的 primitive ID。
 - Pydantic 输入模型均拒绝未知字段。
 
-## 27 个 Schematic MCP 工具
+## 29 个专用 Schematic 工具
+
+独立 `boardspec-schematic` 入口另含 7 个兼容工具，共 36 个。
 
 ### 窗口、工程与文档
 
@@ -89,6 +92,7 @@ BoardSpec YAML
 - `diff_schematic_plan(plan, window_id, expected_context_revision, expected_revision)`：只读比较计划与当前图页，不自动删除额外内容。
 - `verify_schematic_topology(spec_yaml, window_id?, base_dir?)`：把当前 Protel2 网表与展开后的 BoardSpec 比较，报告缺失/多余器件和节点。
 - `verify_schematic_readability(plan, window_id?)`：验证端点覆盖、短引线、标记名称/方向/BBox、器件或标记重叠和导线穿越，返回稳定问题 ID。
+- `verify_schematic_engineering_drawing(plan, window_id?)`：验证原生图框、标题栏逐字段回读、页面范围、模块间距，以及逐端点 NET 名称可见性。
 
 规划选项：
 
@@ -96,12 +100,15 @@ BoardSpec YAML
 {
   "page_policy": "single_page",
   "wiring_policy": "hybrid",
+  "drawing_profile": "engineering_basic",
+  "sheet_size": "auto",
+  "net_annotation_policy": "every_endpoint",
   "grid_mil": 100,
   "column_gap_mil": 1000,
   "row_gap_mil": 600,
   "group_by_module": true,
   "high_fanout_primitive": "auto",
-  "readability_policy": "standard_hybrid",
+  "readability_policy": "engineering_basic",
   "stub_lengths_mil": [200, 300, 400, 500, 600],
   "marker_clearance_mil": 100,
   "cross_region_distance_mil": 2000,
@@ -114,7 +121,13 @@ BoardSpec YAML
 
 `plan_schematic` 生成 `schematic-plan/v0.2` 的逻辑计划；`resolve_schematic_plan` 在器件落位后生成 resolved 计划。旧 `schematic-plan/v0.1` 保持可读取和比较。
 
-同一区域且距离小于 2000 mil 的两端网络优先使用连续正交导线；跨区域、空间跨度较大或至少 3 个端点的网络使用短引线加同名网络端口；电源和地使用短引线加 Net Flag。短引线依次尝试 200/300/400/500/600 mil，并避让膨胀 100 mil 的器件 BBox、已规划标记、无关导线和引脚；普通候选失败时进入确定性外侧通道，仍无法安全放置则返回 `READABILITY_UNRESOLVED`，不生成重叠图元。
+计划的 `visual` 同时报告拓扑端点总数、已解析连接端点数、直接连接端点数、已有可见 NET 名称的端点数，以及缺少标记的 `{net, endpoint}` 列表。工程模式的 resolved 计划必须让可见名称端点数等于拓扑端点总数。
+
+默认 `engineering_basic` 要求 `project.name`、`project.version`、`project.drawing.title` 和 `project.drawing.number`；缺失时返回 `DRAWING_METADATA_REQUIRED`，不补写事实。日期未给出时规划器生成一次并固化在计划中，但 `drawing.date` 只是声明信息，不覆盖 EDA 自动维护的 `@Update Date`。规划器先尝试 A4 横向，再尝试 A3 横向；均容纳不下则返回 `SHEET_CAPACITY_EXCEEDED`。`legacy` 保留旧规格兼容行为。
+
+`every_endpoint` 下，同一区域且距离小于 2000 mil 的两端网络保留连续正交导线，并在两端各放一个同名 Net Port；跨区域、空间跨度较大或至少 3 个端点的网络在每个端点使用短引线加同名 Net Port；电源和地在每个端点使用短引线加同名 Net Flag。直连只证明连接可见，不证明网络名称可见。短引线依次尝试 200/300/400/500/600 mil，并避让膨胀 100 mil 的器件 BBox、已规划标记、无关导线和引脚；普通候选失败时进入确定性外侧通道，仍无法安全放置则返回 `READABILITY_UNRESOLVED`，不生成重叠图元。
+
+sparse_named 用于连续导线模拟图：所有两端和多端网络都规划为确定性的正交导线树；net_origin=generated 的匿名网络不生成标记，显式信号网络只生成一个 Net Port，显式电源和地各只生成一个 Flag。连续路由失败时直接返回 READABILITY_UNRESOLVED，不会把 N_AUTO_* 内部名称退化成图面端口。
 
 出线边由引脚相对器件 BBox 的最近边确定；左/右/上/下分别使用 `180°/0°/270°/90°`。仅可信 `IN` 映射为 `IN`，可信 `OUT/Open Collector/Open Emitter/HIZ` 映射为 `OUT`；`BI` 保持 `BI`，被动、未定义、终结器或来源冲突一律保守回退为 `BI`。网络本质仍是端点集合，不强制解释为单一“源 → 目标”。
 
@@ -122,6 +135,7 @@ BoardSpec YAML
 
 ### 受控写入
 
+- `set_schematic_page_format`：调用原生 `modifySchematicPageTitleBlock`，只 patch 当前图页已有的 `titleBlockData`。可写项为 `Name`、`Part Number`、`Version`、可选人工字段和 `Page Size`；带 `@` 的系统字段只改显示状态。`Symbol`、`Device`、边框、宽高和分区字段从不写入，只用于确认原生 A4/A3 结构确实切换；否则返回 `PAGE_SIZE_NOT_APPLIED`。API 或原生明细表不可用时明确失败，不查询、放置或手工绘制图纸模板。
 - `place_schematic_components`：按库 UUID、器件 UUID/名称和精确位号放置器件；同位号同器件可重复调用而不重复创建。
 - `set_schematic_component_placement`：按位号移动、旋转或镜像，不更换器件身份。
 - `remove_schematic_components`：按 primitive ID 删除，要求 `confirm_topology_change=true`。
@@ -154,11 +168,11 @@ BoardSpec YAML
 
 - `SCHEMATIC_CONTEXT_UNAVAILABLE`、`DOCUMENT_SWITCH_UNSAFE`
 - `CONTEXT_CHANGED`、`STALE_SCHEMATIC`
-- `PLAN_INVALID`、`DESIGNATOR_CONFLICT`
+- `PLAN_INVALID`、`DRAWING_METADATA_REQUIRED`、`SHEET_CAPACITY_EXCEEDED`、`DESIGNATOR_CONFLICT`
 - `COMPONENT_NOT_FOUND`、`PIN_NOT_FOUND`、`PRIMITIVE_NOT_FOUND`
 - `COORDINATE_OFF_GRID`、`WIRE_PATH_INVALID`、`ROUTE_BLOCKED`
-- `READABILITY_UNRESOLVED`、`READABILITY_FAILED`
-- `API_UNAVAILABLE`、`PARTIAL_APPLY`
+- `READABILITY_UNRESOLVED`、`READABILITY_FAILED`、`NET_MARKER_MISSING`、`NET_MARKER_NAME_MISMATCH`、`NET_MARKER_COLLISION`
+- `API_UNAVAILABLE`、`PAGE_TITLE_BLOCK_UNAVAILABLE`、`PAGE_SIZE_NOT_APPLIED`、`PAGE_FORMAT_MISMATCH`、`PARTIAL_APPLY`
 - `WRITE_STATUS_UNKNOWN`、`WRITE_VERIFICATION_FAILED`
 - `TOPOLOGY_MISMATCH`、`SAVE_FAILED`
 
@@ -170,6 +184,7 @@ BoardSpec YAML
 | 创建原理图/图页 | `dmt_Schematic.createSchematic/createSchematicPage` | 已验证 |
 | 打开图页 | `dmt_EditorControl.openDocument` | 已验证，显式切换 |
 | 保存 | `sch_Document.save` | 已验证 |
+| 图框/明细表 | `dmt_Schematic.modifySchematicPageTitleBlock/getSchematicPageInfo` | 仅 patch 图页原生明细表；已实现字段及 A4/A3 结构回读，待一次性工程实机验收 |
 | 器件创建/修改/删除 | `sch_PrimitiveComponent.create/modify/delete` | 已验证 |
 | 器件和引脚读取 | `sch_PrimitiveComponent.getAll/getAllPinsByPrimitiveId` | 已验证 |
 | 导线创建/修改/删除 | `sch_PrimitiveWire.create/modify/delete` | 已验证 |
@@ -194,7 +209,7 @@ BoardSpec YAML
 
 ## 自动测试
 
-- MCP 测试覆盖严格模型、单位/网格、快照与版本稳定性、窗口定向、上下文内复核、写入超时/HTTP 5xx、四边方向、可信类型映射、短引线/外侧通道、标记替换、重复调用、规划、避障、diff、拓扑、DRC 和版本差异；当前为 95 passed。
+- MCP 与 Core 测试覆盖严格模型、工程元数据、A4/A3 选择与溢出、图幅 revision、标题栏写后回读、API 不可用、逐端点 NET 标记、错名/缺失/碰撞、窗口定向、写入状态未知、规划、避障、diff、拓扑、DRC 和版本差异。
 - 测试逐个把生成的 Bridge JavaScript 包装为异步函数并运行 `node --check`。
 - 实机证据脚本：`mcp-server/scripts/capture_schematic_e2e.py`。
 - 可读性修复脚本：`mcp-server/scripts/remediate_schematic_readability.py`。

@@ -5,6 +5,8 @@ from __future__ import annotations
 import hashlib
 import json
 
+from .schematic_drc_log import diagnostic_rows
+
 
 def _walk(value, allow_strings: bool = True):
     if isinstance(value, list):
@@ -14,6 +16,19 @@ def _walk(value, allow_strings: bool = True):
         for child in value:
             yield from _walk(child, child_strings)
     elif isinstance(value, dict):
+        # EasyEDA 3.2 can return severity totals even when verbose errors were
+        # requested. Keep those totals visible; an absent detail list is not a
+        # clean DRC result. Zero totals are harmless.
+        if value.get("type") in {"fatalError", "error", "warn", "warning"} and "count" in value:
+            count = value["count"]
+            if isinstance(count, (int, float)) and not isinstance(count, bool) and count > 0:
+                yield {
+                    "errorType": "EDA_DRC_SUMMARY_ONLY",
+                    "severity": value["type"],
+                    "count": count,
+                    "message": f"EasyEDA reports {count} {value['type']} violation(s); individual details unavailable",
+                }
+            return
         described = value.get("message") or value.get("explanation") or value.get("objs")
         if (value.get("errorType") or value.get("name")) and described:
             yield value
@@ -51,17 +66,19 @@ def _position(row: dict) -> dict | None:
 
 def flatten_schematic_drc(raw, page_uuid: str | None = None) -> list[dict]:
     result = {}
-    for row in _walk(raw):
+    for row in _walk(diagnostic_rows(raw)):
         signature = {
             "severity": row.get("severity") or row.get("level"),
             "type": row.get("errorType") or row.get("name"),
             "rule": row.get("ruleName"),
             "net": row.get("net"),
-            "page": page_uuid,
+            "page": row["pages"][0] if len(row.get("pages", [])) == 1 else page_uuid,
             "objects": sorted(str(item) for item in (row.get("objs") or [])),
             "position": _position(row),
             "message": _message(row),
         }
+        if "count" in row:
+            signature["count"] = row["count"]
         token = json.dumps(signature, ensure_ascii=False, sort_keys=True)
         violation_id = "sch-drc:" + hashlib.sha256(token.encode()).hexdigest()[:16]
         result[violation_id] = {

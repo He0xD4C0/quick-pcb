@@ -1,0 +1,65 @@
+{
+  "format": "easyeda-drc-capture/v1",
+  "result": [
+    {
+      "type": "fatalError",
+      "count": 3
+    },
+    {
+      "type": "error",
+      "count": 1
+    },
+    {
+      "type": "warn",
+      "count": 1
+    }
+  ],
+  "logs": [
+    {
+      "type": "info",
+      "tabType": "schDrcLog",
+      "openTab": false,
+      "msg": [
+        "<span class=\"i18n\">Start Design Rule Checking.</span>"
+      ]
+    },
+    {
+      "type": "fatalError",
+      "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component3&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I4</span>\" i18n-params-logtype=\"schDrcLog\">Component {objectID} lacks of property \"Footprint\".</span>",
+      "openTab": true,
+      "tabType": "schDrcLog"
+    },
+    {
+      "type": "fatalError",
+      "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component4&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I5</span>\" i18n-params-logtype=\"schDrcLog\">Component {objectID} lacks of property \"Footprint\".</span>",
+      "openTab": true,
+      "tabType": "schDrcLog"
+    },
+    {
+      "type": "fatalError",
+      "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component5&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I6</span>\" i18n-params-logtype=\"schDrcLog\">Component {objectID} lacks of property \"Footprint\".</span>",
+      "openTab": true,
+      "tabType": "schDrcLog"
+    },
+    {
+      "type": "warn",
+      "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component3-pin7&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.7</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component3-pin8&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.8</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component4-pin1&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.1</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component4-pin2&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.2</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component4-pin3&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.3</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component5-pin4&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.4</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component5-pin5&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.5</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component5-pin9&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>V1.9</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component1-e7&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>J1.1</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component1-e11&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>J1.2</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component2-e0&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>RV1.2</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component2-e6&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>RV1.1</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component2-e10&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>RV1.3</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component2-e34&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>RV1.6</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component2-e38&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>RV1.4</span>,<span class=&quot;link&quot; data-log-find-id=&quot;component2-e44&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>RV1.5</span>\" i18n-params-logtype=\"schDrcLog\">Found some components&nbsp;Pins floating, suggest placing No Connect Flag on the Pins : {ObjectID}</span>",
+      "tabType": "schDrcLog"
+    },
+    {
+      "type": "error",
+      "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-component=\"QPCB_6H30Pi_EB_REVIEWED_PINS_R4\" i18n-params-pins=\"1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019\" i18n-params-pads=\"\" i18n-params-object=\"<span class=&quot;link&quot; data-log-find-id=&quot;component3&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-options=&quot;openFootPrintManager&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I4</span>\" i18n-params-logtype=\"schDrcLog\">The pin of the component {component} does not correspond to the pad (Pin has no corresponding pad : {pins}): {object}</span>",
+      "openTab": true,
+      "tabType": "schDrcLog"
+    },
+    {
+      "type": "info",
+      "tabType": "schDrcLog",
+      "openTab": false,
+      "msg": [
+        "<span class=\"i18n\">Finish Design Rule Checking.</span>",
+        "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-fatalerrornumber=\"3\" i18n-params-errornumber=\"1\" i18n-params-warningnumber=\"1\" i18n-params-infonumber=\"0\">Fatal Error: {fatalErrorNumber}, Error: {errorNumber}, Warning: {warningNumber}, Info: {infoNumber}.</span>"
+      ]
+    }
+  ]
+}

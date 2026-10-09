@@ -9,7 +9,7 @@ from mcp.server.mcpserver.exceptions import ToolError
 from mcp.types import ToolAnnotations
 from pydantic import BaseModel, ConfigDict, Field
 
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 
 ExportTarget = Literal["protel2_netlist", "kicad_netlist", "bom_csv", "mermaid"]
 NetlistType = Literal["PROTEL2", "JLCEDA", "ALLEGRO", "PADS"]
@@ -122,6 +122,35 @@ class EDAResult(RevisionedResult):
     unit: str | None = None
 
 
+class ColumnarTable(BaseModel):
+    """Compact table whose field names are emitted once."""
+
+    fields: list[str]
+    rows: list[list[Any]]
+
+
+class PartTableResult(ToolResult):
+    """Normalized EasyEDA system-library candidates for LLM selection."""
+
+    format: Literal["parts/easyeda-v0.1"]
+    source: dict[str, str]
+    query: dict[str, Any]
+    page: int
+    page_size: int
+    returned: int
+    next_page: int | None = None
+    parts: ColumnarTable
+    missing_lcsc_ids: list[str] = Field(default_factory=list)
+    warnings: list[Diagnostic] = Field(default_factory=list)
+
+
+class PartDetailResult(EDAResult):
+    """Full EasyEDA device data plus provenance-preserving BoardSpec mapping."""
+
+    board_spec_definition: dict[str, Any] | None = None
+    warnings: list[Diagnostic] = Field(default_factory=list)
+
+
 class LayoutResult(EDAResult):
     """Layout read/write result with document and PCB revision identity."""
 
@@ -184,6 +213,13 @@ _TOOL_ERROR_CODES = {
     "INVALID_OUTLINE",
     "INVALID_ROUTE",
     "INVALID_ROUTE_POINT",
+    "INVALID_PART_QUERY",
+    "LIBRARY_BAD_RESPONSE",
+    "API_UNAVAILABLE",
+    "PAGE_TITLE_BLOCK_UNAVAILABLE",
+    "PAGE_SIZE_NOT_APPLIED",
+    "PAGE_FORMAT_MISMATCH",
+    "PAGE_FORMAT_WRITE_REJECTED",
     "NET_NOT_FOUND",
 }
 
@@ -212,6 +248,13 @@ _SERVER_DETAILS = {
         "title": "Quick PCB BoardSpec",
         "description": "BoardSpec plus checked EasyEDA Pro layout and schematic tools.",
         "instructions": (
+            "Before defining schematic parts, extract electrical and package constraints, use "
+            "search_parts to compare real EasyEDA system-library candidates, and use get_part on "
+            "the shortlist to verify pin numbers, polarity, symbol, package, and provenance. Only "
+            "recommend a custom symbol when no reliable candidate exists, and state that exception. "
+            "Part lookup applies to electrical components, not drawing sheets: keep the native "
+            "EasyEDA page frame and patch its existing titleBlockData instead of placing or drawing "
+            "a template. "
             "Use BoardSpec for coordinate-free connectivity. Validate before expand or export. "
             "Before any EasyEDA write, read the current window, document, and revision. Treat "
             "netlist import as staged until the user applies it in EasyEDA. Never claim save, "
@@ -226,6 +269,21 @@ _SERVER_DETAILS = {
             "BoardSpec declares components, nets, and constraints without drawing coordinates. "
             "Validate before expand or export. Resolve relative libraries from base_dir when it "
             "is supplied, and never invent part, pin, or footprint data."
+        ),
+    },
+    "library": {
+        "name": "boardspec-library",
+        "title": "Quick PCB EasyEDA Parts Library",
+        "description": "Query normalized, read-only EasyEDA Pro system-library part data.",
+        "instructions": (
+            "Start from explicit electrical, package, voltage, current, polarity, and pin constraints. "
+            "Use search_parts to compare real system-library candidates, then use get_part for every "
+            "shortlisted device before creating BoardSpec definitions or instances. Verify pin numbers, "
+            "polarity, symbol, footprint/package, and provenance. Preserve UUIDs, source pin "
+            "types, and warnings. Do not infer missing electrical data, price, stock, lifecycle, "
+            "or suitability. A custom symbol is an explicit no-reliable-match exception, not the default. "
+            "This workflow selects electrical components only; drawing sheets use the schematic "
+            "page's existing native titleBlockData and are not library-search targets."
         ),
     },
     "layout": {
@@ -243,13 +301,22 @@ _SERVER_DETAILS = {
         "title": "Quick PCB EasyEDA Schematic",
         "description": "Plan, draw, and verify revision-checked EasyEDA Pro schematics.",
         "instructions": (
-            "Use explicit window, context, and revision identity. Follow plan, resolve, diff, "
-            "write, readback, topology, readability, and DRC. Never switch, overwrite, delete, "
+            "Before plan_schematic, resolve every physical component through search_parts and get_part; "
+            "do not invent pins or footprints. Engineering mode requires project name/version and "
+            "drawing title/number. Follow plan, resolve, diff, set native page format, write components "
+            "and connections, read back, then verify topology, engineering drawing, readability, and "
+            "strict DRC. Every endpoint must show its real NET name through a Net Port or named Flag; "
+            "a direct wire alone is insufficient. Use explicit window, context, and revision identity. "
+            "The page's existing native titleBlockData is the only drawing-frame source: never search "
+            "for, place, or assemble a drawing template, and never overwrite EDA-managed @ values. "
+            "Never switch, overwrite, delete, "
             "or save without explicit user intent and the required confirmation arguments."
         ),
     },
 }
 
 
-def make_server(profile: Literal["all", "core", "layout", "schematic"]) -> MCPServer:
+def make_server(
+    profile: Literal["all", "core", "library", "layout", "schematic"]
+) -> MCPServer:
     return MCPServer(version=VERSION, **_SERVER_DETAILS[profile])

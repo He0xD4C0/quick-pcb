@@ -1,7 +1,7 @@
 {
   "name": "quick-pcb",
-  "version": "0.3.1",
-  "description": "Validate BoardSpec and perform checked EasyEDA Pro layout and schematic work.",
+  "version": "0.4.0",
+  "description": "Validate BoardSpec, query EasyEDA parts, and perform checked layout and schematic work.",
   "author": {
     "name": "He0xD4C0",
     "url": "https://github.com/He0xD4C0"
@@ -12,16 +12,17 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Quick PCB",
-    "shortDescription": "BoardSpec and checked EasyEDA Pro tools.",
-    "longDescription": "Validate and export coordinate-free BoardSpec documents, then opt into revision-checked EasyEDA Pro layout or schematic tools.",
+    "shortDescription": "BoardSpec, EasyEDA parts, and checked EDA tools.",
+    "longDescription": "Validate and export coordinate-free BoardSpec documents, query normalized read-only EasyEDA parts, then opt into revision-checked layout or schematic tools.",
     "developerName": "He0xD4C0",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/He0xD4C0/quick-pcb",
     "defaultPrompt": [
       "Validate this BoardSpec and explain every diagnostic.",
+      "Compare EasyEDA system-library parts for these engineering constraints.",
       "Inspect the active PCB without changing it.",
-      "Plan and verify this schematic before writing it."
+      "Search the EasyEDA library first, then plan and verify an engineering-readable schematic with visible NET names."
     ]
   },
   "mcpServers": "./.mcp.json"

@@ -22,20 +22,28 @@ description: 将电路需求转换为 EDA 中立的 BoardSpec YAML，并校验�
 ## 工作流
 
 1. 从需求中识别电源域、地、接口、关键器件、额定值、约束和所需输出。把缺失或冲突的信息列为待确认项。
-2. 创建或修改规格前，读取 [BoardSpec v0.1 Schema](references/board-spec-v0.1.schema.json)。需要调用本地脚本或外部工具时，再读取 [工具与 CLI 契约](references/tools.md)。
-3. 先查库再写端点。优先使用用户给定的元件库/数据表；本 Skill 自带的 `parts.demo.json` 仅用于示例和自测。
-4. 生成完整 BoardSpec YAML。项目级复用电路优先建成 `definitions.<id>.kind: module`。
+2. 创建或修改规格前，按文档版本读取 [BoardSpec v0.1 Schema](references/board-spec-v0.1.schema.json) 或 [BoardSpec v0.2 Schema](references/board-spec-v0.2.schema.json)。需要调用本地脚本或外部工具时，再读取 [工具与 CLI 契约](references/tools.md)。
+3. 先查库再写端点。先提取电气、额定值、极性和封装条件；调用 `search_parts` 比较真实嘉立创系统库候选，再对入选候选调用 `get_part` 核对物理引脚号、极性、符号、封装和来源。只有查无可靠候选时才建议自建符号，并把该例外写入警告。用户给定的可信元件库/数据表可以优先；本 Skill 自带的 `parts.demo.json` 仅用于示例和自测。
+4. 生成完整 BoardSpec YAML。项目级复用电路优先建成 `definitions.<id>.kind: module`。若要生成工程原理图，`project` 同时填写 `version` 和 `drawing.title/number`；公司、设计、审核、说明和日期只在已有事实时填写。`drawing.date` 是声明信息，不得用来覆盖 EDA 自动维护的 `@Update Date`。
 5. 运行 `scripts/validate.py`。根据结构化错误修正后重跑，直到无错误；不要静默删除有问题的连接。
 6. 若用户要求平坦网表或 BOM，先运行 `scripts/expand.py`，再运行相应导出器。存在任何验证错误时停止导出。
 7. 进入 EDA 时先预览导入差异；只有位号、网络及引脚集合与展开图完全一致才应用。应用后回读 Protel2，按“网络名 → 物理位号 → 引脚号”逐项比较。
 8. 交付规格、实际运行的校验摘要、警告，以及需要工程师确认的器件/封装/电气问题。不要把未走线 PCB 的连接 DRC、脚本未覆盖的 ERC 或布局审查描述成已完成。
 
+查库是默认工作流引导，不是服务器硬门槛；模型仍须用查库结果和工程约束作出选择。不得因为 `plan_schematic` 已可调用就跳过 `search_parts`/`get_part`，也不得把“搜索到”表述为“已适用”。完整的查库到工程原理图调用顺序见 [工具与 CLI 契约](references/tools.md)。
+
+元件库查询只用于电气元件，不用于图纸模板。工程原理图必须保留当前图页自带的原生图框和明细表，只通过 `titleBlockData` 修改可写字段；不得查询或放置 `Drawing-Symbol_*`，也不得用线条、普通文本或图形元件拼装图框。
+
 ## 最小规格
 
 ```yaml
-spec: board-spec/v0.1
+spec: board-spec/v0.2
 project:
   name: demo
+  version: "1.0"
+  drawing:
+    title: Demo Schematic
+    number: DEMO-001
 libraries: []
 definitions: {}
 instances: {}
@@ -43,6 +51,16 @@ connections: []
 constraints: []
 outputs: []
 ```
+
+BoardSpec v0.2 保持命名网络写法兼容，并增加匿名局部连接：
+
+```yaml
+connections:
+  - {net: VCC, kind: power, endpoints: [J1.#1, C1.#1]}
+  - {connect: [C1.#2, R1.#1]}
+```
+
+匿名连接会在展开后获得稳定的 `N_AUTO_<12位哈希>` 内部名称；该名称只用于网表、校验和 EDA 连通性，不应作为图面 Net Port 显示。需要被约束、模块端口或人工审查引用的节点继续使用命名 `net`。旧 `board-spec/v0.1` 仍只接受命名网络。
 
 端点使用 `INSTANCE.PIN_OR_PORT`。`PIN_OR_PORT` 为逻辑名称时会匹配库中所有同名物理引脚；使用 `#PIN_NUMBER` 可指定单个物理脚。模块只通过声明的端口与外部网络连接；模块展开后层级实例名使用 `PARENT/CHILD`。
 
@@ -61,6 +79,7 @@ outputs: []
 
 ## 参考资源
 
-- [Schema](references/board-spec-v0.1.schema.json)：每次创建或修改规格时读取。
+- [v0.1 Schema](references/board-spec-v0.1.schema.json)：维护旧规格时读取。
+- [v0.2 Schema](references/board-spec-v0.2.schema.json)：使用匿名局部连接时读取。
 - [工具与 CLI 契约](references/tools.md)：需要查库、校验、展开或导出时读取。
 - [状态 LED 示例](examples/status-led.yaml)：仅在需要模块示例时读取；其演示元件库不是生产数据源。

@@ -11,8 +11,14 @@ from mcp.server.mcpserver.exceptions import ToolError
 
 from boardspec_mcp import server
 from boardspec_mcp.core_server import mcp as core_mcp
+from boardspec_mcp.library_server import mcp as library_mcp
 from boardspec_mcp.layout_server import mcp as layout_mcp
-from boardspec_mcp.profiles import CORE_TOOLS, LAYOUT_TOOLS, SCHEMATIC_LEGACY_TOOLS
+from boardspec_mcp.profiles import (
+    CORE_TOOLS,
+    LAYOUT_TOOLS,
+    LIBRARY_TOOLS,
+    SCHEMATIC_LEGACY_TOOLS,
+)
 from boardspec_mcp.schematic_entry import mcp as schematic_mcp
 
 REPO = Path(__file__).resolve().parents[2]
@@ -36,6 +42,7 @@ SCHEMATIC_PROFILE_TOOLS = {
     "diff_schematic_plan",
     "verify_schematic_topology",
     "verify_schematic_readability",
+    "verify_schematic_engineering_drawing",
     "place_schematic_components",
     "set_schematic_component_placement",
     "remove_schematic_components",
@@ -46,6 +53,7 @@ SCHEMATIC_PROFILE_TOOLS = {
     "place_schematic_net_flags",
     "edit_schematic_net_markers",
     "set_schematic_no_connects",
+    "set_schematic_page_format",
 }
 
 LAYOUT_WRITES = {
@@ -78,6 +86,7 @@ SCHEMATIC_WRITES = {
     "place_schematic_net_flags",
     "edit_schematic_net_markers",
     "set_schematic_no_connects",
+    "set_schematic_page_format",
 }
 
 
@@ -87,22 +96,30 @@ def _names(mcp):
 
 def test_profiles_publish_exact_tool_surfaces():
     assert _names(core_mcp) == set(CORE_TOOLS)
+    assert _names(library_mcp) == set(LIBRARY_TOOLS)
     assert _names(layout_mcp) == set(LAYOUT_TOOLS)
     assert _names(schematic_mcp) == set(SCHEMATIC_LEGACY_TOOLS) | SCHEMATIC_PROFILE_TOOLS
-    assert len(_names(server.mcp)) == 53
+    assert len(_names(server.mcp)) == 57
+
+
+def test_server_instructions_separate_part_lookup_from_native_drawing_sheets():
+    assert "electrical components only" in library_mcp.instructions
+    assert "existing native titleBlockData" in schematic_mcp.instructions
+    assert "patch its existing titleBlockData" in server.mcp.instructions
 
 
 @pytest.mark.parametrize(
     ("mcp", "name"),
     [
         (core_mcp, "boardspec-core"),
+        (library_mcp, "boardspec-library"),
         (layout_mcp, "boardspec-layout"),
         (schematic_mcp, "boardspec-schematic"),
     ],
 )
 def test_profiles_publish_metadata_schemas_and_annotations(mcp, name):
     assert mcp.name == name
-    assert mcp.version == "0.3.1"
+    assert mcp.version == "0.4.0"
     assert mcp.instructions
     for tool in mcp._tool_manager.list_tools():
         assert tool.output_schema is not None
@@ -138,6 +155,18 @@ def test_eda_output_schemas_publish_context_and_revision_fields():
     )
 
 
+def test_library_schema_is_strict_columnar_and_read_only():
+    tools = {tool.name: tool for tool in library_mcp._tool_manager.list_tools()}
+    search = tools["search_parts"]
+    assert {"query", "page", "page_size"} <= set(search.parameters["properties"])
+    assert search.parameters["properties"]["page_size"]["maximum"] == 50
+    assert {"format", "source", "query", "parts", "warnings"} <= set(
+        search.output_schema["properties"]
+    )
+    assert tools["get_part"].output_schema["properties"]["board_spec_definition"]
+    assert all(tool.annotations.read_only_hint for tool in tools.values())
+
+
 def test_bridge_status_is_structured_but_other_transport_failures_are_errors(monkeypatch):
     class Offline:
         def health(self):
@@ -167,7 +196,12 @@ def test_invalid_netlist_is_a_tool_error_before_bridge(monkeypatch):
 def test_plugin_manifests_match_runtime_and_approval_policy():
     portable = json.loads((PLUGIN / "mcp.json").read_text())
     compat = json.loads((PLUGIN / ".mcp.json").read_text())
-    expected = {"boardspec-core", "boardspec-layout", "boardspec-schematic"}
+    expected = {
+        "boardspec-core",
+        "boardspec-library",
+        "boardspec-layout",
+        "boardspec-schematic",
+    }
     assert set(portable["mcpServers"]) == expected
     assert set(compat["mcpServers"]) == expected
     for name in expected:
@@ -175,23 +209,29 @@ def test_plugin_manifests_match_runtime_and_approval_policy():
         compat_server = compat["mcpServers"][name]
         assert portable_server["command"] == compat_server["command"] == "uv"
         assert portable_server["args"] == compat_server["args"]
-        assert "@v0.3.1#subdirectory=mcp-server" in " ".join(portable_server["args"])
+        assert "@v0.4.0#subdirectory=mcp-server" in " ".join(portable_server["args"])
         assert compat_server["startup_timeout_sec"] == 300
     assert compat["mcpServers"]["boardspec-core"]["enabled"] is True
+    assert compat["mcpServers"]["boardspec-library"]["enabled"] is True
     assert compat["mcpServers"]["boardspec-layout"]["enabled"] is False
     assert compat["mcpServers"]["boardspec-schematic"]["enabled"] is False
     assert set(compat["mcpServers"]["boardspec-layout"]["tools"]) == LAYOUT_WRITES
     assert set(compat["mcpServers"]["boardspec-schematic"]["tools"]) == SCHEMATIC_WRITES
 
 
-def test_repo_plugin_config_enables_only_core():
+def test_repo_plugin_config_enables_all_profiles_with_write_prompts():
     config = tomllib.loads((REPO / ".codex" / "config.toml").read_text())
     plugin = config["plugins"]["quick-pcb@quick-pcb-local"]
     assert plugin["enabled"] is True
     services = plugin["mcp_servers"]
     assert services["boardspec-core"]["enabled"] is True
-    assert services["boardspec-layout"]["enabled"] is False
-    assert services["boardspec-schematic"]["enabled"] is False
+    assert services["boardspec-library"]["enabled"] is True
+    assert services["boardspec-layout"]["enabled"] is True
+    assert services["boardspec-schematic"]["enabled"] is True
+    for name in LAYOUT_WRITES:
+        assert services["boardspec-layout"]["tools"][name]["approval_mode"] == "prompt"
+    for name in SCHEMATIC_WRITES:
+        assert services["boardspec-schematic"]["tools"][name]["approval_mode"] == "prompt"
 
 
 def test_plugin_skill_matches_tracked_source_files():

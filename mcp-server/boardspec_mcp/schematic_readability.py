@@ -6,7 +6,9 @@ import copy
 import heapq
 import hashlib
 import json
+import math
 import re
+from boardspec.exporters import parse_protel2_netlist
 from .schematic_codec import natural_key, require_grid
 from .schematic_routing import route_orthogonal
 
@@ -121,23 +123,84 @@ def _marker_box(net: str, point: dict, rotation: float, kind: str = "port", dire
 
 
 def _segment_hits_box(a: dict, b: dict, box: dict) -> bool:
-    if a["x"] == b["x"]:
+    epsilon = 1e-6
+    if abs(a["x"] - b["x"]) <= epsilon:
         low, high = sorted((a["y"], b["y"]))
         return box["minX"] < a["x"] < box["maxX"] and max(low, box["minY"]) < min(high, box["maxY"])
-    if a["y"] == b["y"]:
+    if abs(a["y"] - b["y"]) <= epsilon:
         low, high = sorted((a["x"], b["x"]))
         return box["minY"] < a["y"] < box["maxY"] and max(low, box["minX"]) < min(high, box["maxX"])
     return True
 
 
 def _segments_cross(a: dict, b: dict, c: dict, d: dict) -> bool:
-    if a["x"] == b["x"] and c["x"] == d["x"]:
-        return a["x"] == c["x"] and max(min(a["y"], b["y"]), min(c["y"], d["y"])) <= min(max(a["y"], b["y"]), max(c["y"], d["y"]))
-    if a["y"] == b["y"] and c["y"] == d["y"]:
-        return a["y"] == c["y"] and max(min(a["x"], b["x"]), min(c["x"], d["x"])) <= min(max(a["x"], b["x"]), max(c["x"], d["x"]))
-    vertical_a = a["x"] == b["x"]
+    epsilon = 1e-6
+    vertical_a = abs(a["x"] - b["x"]) <= epsilon
+    vertical_c = abs(c["x"] - d["x"]) <= epsilon
+    horizontal_a = abs(a["y"] - b["y"]) <= epsilon
+    horizontal_c = abs(c["y"] - d["y"]) <= epsilon
+    if vertical_a and vertical_c:
+        return abs(a["x"] - c["x"]) <= epsilon and max(min(a["y"], b["y"]), min(c["y"], d["y"])) <= min(max(a["y"], b["y"]), max(c["y"], d["y"])) + epsilon
+    if horizontal_a and horizontal_c:
+        return abs(a["y"] - c["y"]) <= epsilon and max(min(a["x"], b["x"]), min(c["x"], d["x"])) <= min(max(a["x"], b["x"]), max(c["x"], d["x"])) + epsilon
+    if not ((vertical_a and horizontal_c) or (vertical_c and horizontal_a)):
+        return True
     v1, v2, h1, h2 = (a, b, c, d) if vertical_a else (c, d, a, b)
-    return min(h1["x"], h2["x"]) <= v1["x"] <= max(h1["x"], h2["x"]) and min(v1["y"], v2["y"]) <= h1["y"] <= max(v1["y"], v2["y"])
+    return min(h1["x"], h2["x"]) - epsilon <= v1["x"] <= max(h1["x"], h2["x"]) + epsilon and min(v1["y"], v2["y"]) - epsilon <= h1["y"] <= max(v1["y"], v2["y"]) + epsilon
+
+
+def _wire_paths(wire: dict) -> list[list[dict]]:
+    segments = wire.get("segments")
+    if segments:
+        return [path for path in segments if len(path) >= 2]
+    points = wire.get("points") or []
+    return [points] if len(points) >= 2 else []
+
+
+def _segment_covered(a: dict, b: dict, edges: list[tuple[dict, dict]]) -> bool:
+    epsilon = 1e-6
+    if abs(a["x"] - b["x"]) <= epsilon:
+        axis, low, high = "y", *sorted((a["y"], b["y"]))
+        spans = [
+            sorted((left["y"], right["y"]))
+            for left, right in edges
+            if abs(left["x"] - right["x"]) <= epsilon
+            and abs(left["x"] - a["x"]) <= epsilon
+        ]
+    elif abs(a["y"] - b["y"]) <= epsilon:
+        axis, low, high = "x", *sorted((a["x"], b["x"]))
+        spans = [
+            sorted((left["x"], right["x"]))
+            for left, right in edges
+            if abs(left["y"] - right["y"]) <= epsilon
+            and abs(left["y"] - a["y"]) <= epsilon
+        ]
+    else:
+        return False
+    del axis
+    cursor = low
+    for start, end in sorted(spans):
+        if end < cursor - epsilon:
+            continue
+        if start > cursor + epsilon:
+            return False
+        cursor = max(cursor, end)
+        if cursor >= high - epsilon:
+            return True
+    return high - low <= epsilon
+
+
+def _path_covered(path: list[dict], wires: list[dict]) -> bool:
+    edges = [
+        (left, right)
+        for wire in wires
+        for wire_path in _wire_paths(wire)
+        for left, right in zip(wire_path, wire_path[1:])
+    ]
+    return all(
+        _segment_covered(left, right, edges)
+        for left, right in zip(path, path[1:])
+    )
 
 
 def _compress_path(points: list[dict]) -> list[dict]:
@@ -223,11 +286,227 @@ def _find_existing_wire(state: dict, net: str, start: dict, end: dict):
     return None
 
 
-def _resolved_branch(net: str, index: int, anchor: str, start: dict, end: dict, path: list[dict], role: str) -> dict:
+def _resolved_branch(net: str, index: int, anchor: str, start: dict, end, path: list[dict], role: str) -> dict:
     return {
         "client_id": f"plan/{net}/{role}/{index}", "start": anchor, "end": end,
         "waypoints": path[1:-1], "role": role, "anchor": anchor if role == "stub" else None,
     }
+
+
+def _route_direct_tree(
+    net: str,
+    endpoints: list[dict],
+    pins: dict,
+    state: dict,
+    occupied: list[dict],
+) -> tuple[list[dict] | None, list[dict]]:
+    """Connect every endpoint with a deterministic, obstacle-aware wire tree."""
+    if len(endpoints) < 2:
+        return [], []
+    connected = {0}
+    branches = []
+    routed_wires = []
+    while len(connected) < len(endpoints):
+        candidates = []
+        for source_index in sorted(connected):
+            source_selector = endpoints[source_index]["selector"]
+            _, source_pin = pins[source_selector]
+            for target_index, target_endpoint in enumerate(endpoints):
+                if target_index in connected:
+                    continue
+                _, target_pin = pins[target_endpoint["selector"]]
+                distance = abs(source_pin["x"] - target_pin["x"]) + abs(
+                    source_pin["y"] - target_pin["y"]
+                )
+                candidates.append(
+                    (
+                        distance,
+                        natural_key(source_selector),
+                        natural_key(target_endpoint["selector"]),
+                        source_index,
+                        target_index,
+                    )
+                )
+        routed = None
+        for _, _, _, source_index, target_index in sorted(candidates):
+            source_selector = endpoints[source_index]["selector"]
+            target_selector = endpoints[target_index]["selector"]
+            source_component, source_pin = pins[source_selector]
+            target_component, target_pin = pins[target_selector]
+            start = {"x": source_pin["x"], "y": source_pin["y"]}
+            end = {"x": target_pin["x"], "y": target_pin["y"]}
+            other_wires = [item for item in occupied if item.get("net") != net]
+            path = _find_existing_wire(state, net, start, end) or route_orthogonal(
+                [start, end], state.get("components", []), other_wires
+            )
+            path = path or _grid_route(
+                start,
+                end,
+                state.get("components", []),
+                other_wires,
+                (source_component, target_component),
+            )
+            if not path:
+                continue
+            branch = _resolved_branch(
+                net,
+                len(branches),
+                source_selector,
+                start,
+                target_selector,
+                path,
+                "direct",
+            )
+            branches.append(branch)
+            wire = {"net": net, "points": path}
+            occupied.append(wire)
+            routed_wires.append(wire)
+            connected.add(target_index)
+            routed = target_index
+            break
+        if routed is None:
+            return None, routed_wires
+    return branches, routed_wires
+
+
+def _route_rail_tree(
+    net: str,
+    endpoints: list[dict],
+    pins: dict,
+    state: dict,
+    occupied: list[dict],
+    kind: str,
+) -> tuple[list[dict] | None, list[dict]]:
+    """Route power above and ground below the drawing with one shared rail."""
+    if len(endpoints) < 2:
+        return [], []
+    component_boxes = [
+        item["bbox"] for item in state.get("components", []) if item.get("bbox")
+    ]
+    occupied_y = [
+        point["y"]
+        for wire in occupied
+        for point in wire.get("points", [])
+        if point.get("y") is not None
+    ]
+    if not component_boxes:
+        return None, []
+    grid = 50
+    if kind == "ground":
+        extreme = max(
+            [box["maxY"] for box in component_boxes] + occupied_y
+        ) + 400
+        rail_y = math.ceil(extreme / grid) * grid
+    else:
+        extreme = min(
+            [box["minY"] for box in component_boxes] + occupied_y
+        ) - 400
+        rail_y = math.floor(extreme / grid) * grid
+
+    branches, routed_wires, rail_points = [], [], []
+    connected_endpoints, deferred = [], []
+    for endpoint in sorted(endpoints, key=lambda item: natural_key(item["selector"])):
+        selector = endpoint["selector"]
+        component, pin = pins[selector]
+        start = {"x": pin["x"], "y": pin["y"]}
+        target = {"x": pin["x"], "y": rail_y}
+        other_wires = [item for item in occupied if item.get("net") != net]
+        path = route_orthogonal(
+            [start, target], state.get("components", []), other_wires
+        )
+        path = path or _grid_route(
+            start,
+            target,
+            state.get("components", []),
+            other_wires,
+            component,
+        )
+        if not path:
+            deferred.append(endpoint)
+            continue
+        branch = _resolved_branch(
+            net, len(branches), selector, start, target, path, "direct"
+        )
+        branches.append(branch)
+        wire = {"net": net, "points": path}
+        occupied.append(wire)
+        routed_wires.append(wire)
+        rail_points.append(target)
+        connected_endpoints.append(endpoint)
+
+    while deferred and connected_endpoints:
+        progressed = False
+        for endpoint in list(deferred):
+            selector = endpoint["selector"]
+            source_component, source_pin = pins[selector]
+            start = {"x": source_pin["x"], "y": source_pin["y"]}
+            candidates = sorted(
+                connected_endpoints,
+                key=lambda target_endpoint: (
+                    abs(start["x"] - pins[target_endpoint["selector"]][1]["x"])
+                    + abs(start["y"] - pins[target_endpoint["selector"]][1]["y"]),
+                    natural_key(target_endpoint["selector"]),
+                ),
+            )
+            for target_endpoint in candidates:
+                target_selector = target_endpoint["selector"]
+                target_component, target_pin = pins[target_selector]
+                target = {"x": target_pin["x"], "y": target_pin["y"]}
+                other_wires = [item for item in occupied if item.get("net") != net]
+                path = route_orthogonal(
+                    [start, target], state.get("components", []), other_wires
+                )
+                path = path or _grid_route(
+                    start,
+                    target,
+                    state.get("components", []),
+                    other_wires,
+                    (source_component, target_component),
+                )
+                if not path:
+                    continue
+                branch = _resolved_branch(
+                    net,
+                    len(branches),
+                    selector,
+                    start,
+                    target_selector,
+                    path,
+                    "direct",
+                )
+                branches.append(branch)
+                wire = {"net": net, "points": path}
+                occupied.append(wire)
+                routed_wires.append(wire)
+                connected_endpoints.append(endpoint)
+                deferred.remove(endpoint)
+                progressed = True
+                break
+        if not progressed:
+            return None, routed_wires
+    if deferred:
+        return None, routed_wires
+
+    left = min(rail_points, key=lambda point: point["x"])
+    right = max(rail_points, key=lambda point: point["x"])
+    if left["x"] != right["x"]:
+        path = [left, right]
+        other_wires = [item for item in occupied if item.get("net") != net]
+        if any(
+            _segments_cross(left, right, a, b)
+            for wire in other_wires
+            for a, b in zip(wire.get("points", []), wire.get("points", [])[1:])
+        ):
+            return None, routed_wires
+        branches.append(
+            _resolved_branch(
+                net, len(branches), left, left, right, path, "rail"
+            )
+        )
+        wire = {"net": net, "points": path}
+        occupied.append(wire)
+        routed_wires.append(wire)
+    return branches, routed_wires
 
 
 def resolve_plan(plan: dict, state: dict) -> dict:
@@ -244,52 +523,127 @@ def resolve_plan(plan: dict, state: dict) -> dict:
     marker_boxes, wires, labels, ports, flags, fallbacks = [], [], [], [], [], []
     occupied = list(state.get("wires", []))
     resolved_count = marker_count = direct_count = 0
+    ground_components = {
+        match.group(1)
+        for item in plan.get("connection_intents", [])
+        if item.get("kind") == "ground"
+        for endpoint in item.get("endpoints", [])
+        if (match := PIN_SELECTOR.fullmatch(endpoint.get("selector", "")))
+    }
 
     def intent_order(item: dict):
-        if item.get("strategy") == "direct":
+        points = [
+            pins[endpoint["selector"]][1]
+            for endpoint in item.get("endpoints", [])
+            if endpoint.get("selector") in pins
+        ]
+        span = (
+            max(point["x"] for point in points)
+            - min(point["x"] for point in points)
+            + max(point["y"] for point in points)
+            - min(point["y"] for point in points)
+            if points
+            else 0
+        )
+        if (
+            item.get("strategy") == "direct"
+            and item.get("annotation_policy") == "sparse_named"
+        ):
+            endpoint_components = {
+                match.group(1)
+                for endpoint in item.get("endpoints", [])
+                if (match := PIN_SELECTOR.fullmatch(endpoint.get("selector", "")))
+            }
+            ground_adjacent = len(endpoint_components & ground_components) >= 2
+            if item.get("kind") == "power":
+                priority = 1
+            elif item.get("kind") == "ground":
+                priority = 3
+            elif ground_adjacent:
+                priority = 4
+            elif span < options.get("cross_region_distance_mil", 2000):
+                priority = 0
+            else:
+                priority = 2
+        elif item.get("strategy") == "direct":
             priority = 0
         elif item.get("strategy") == "flag":
             priority = 1 if item.get("kind") == "ground" else 2
         else:
             priority = 3
-        return priority, natural_key(item["net"])
+        origin_priority = 0 if item.get("net_origin") == "explicit" else 1
+        return priority, span, origin_priority, len(points), natural_key(item["net"])
 
     for intent in sorted(plan["connection_intents"], key=intent_order):
         net, endpoints, strategy = intent["net"], intent["endpoints"], intent["strategy"]
-        if strategy == "direct" and len(endpoints) == 2:
-            first_component, first = pins[endpoints[0]["selector"]]
-            second_component, second = pins[endpoints[1]["selector"]]
-            start = {"x": first["x"], "y": first["y"]}
-            end = {"x": second["x"], "y": second["y"]}
-            distance = abs(start["x"] - end["x"]) + abs(start["y"] - end["y"])
-            if distance >= options.get("cross_region_distance_mil", 2000):
+        annotate_every_endpoint = (
+            intent.get("annotation_policy") == "every_endpoint"
+        )
+        sparse_named = intent.get("annotation_policy") == "sparse_named"
+        connected_by_direct = False
+        if strategy == "direct" and len(endpoints) >= 2:
+            _, first = pins[endpoints[0]["selector"]]
+            _, second = pins[endpoints[1]["selector"]]
+            distance = abs(first["x"] - second["x"]) + abs(first["y"] - second["y"])
+            continuous_required = (
+                sparse_named
+                or intent.get("net_origin") == "generated"
+                or options.get("wiring_policy") == "continuous"
+            )
+            if (
+                len(endpoints) == 2
+                and distance >= options.get("cross_region_distance_mil", 2000)
+                and not continuous_required
+            ):
                 strategy = "port"
                 fallbacks.append({
                     "net": net, "from": "direct", "to": "port",
                     "reason": "spatially_cross_region", "distance_mil": distance,
                 })
             else:
-                other_wires = [item for item in occupied if item.get("net") != net]
-                path = _find_existing_wire(state, net, start, end) or route_orthogonal(
-                    [start, end], state.get("components", []), other_wires
-                )
-                path = path or _grid_route(
-                    start, end, state.get("components", []), other_wires,
-                    (first_component, second_component),
-                )
-                if not path:
+                if sparse_named and intent.get("kind") in {"power", "ground"}:
+                    direct_branches, _ = _route_rail_tree(
+                        net,
+                        endpoints,
+                        pins,
+                        state,
+                        occupied,
+                        intent["kind"],
+                    )
+                else:
+                    direct_branches, _ = _route_direct_tree(
+                        net, endpoints, pins, state, occupied
+                    )
+                if direct_branches is None:
+                    if continuous_required:
+                        return _error(
+                            "READABILITY_UNRESOLVED",
+                            f"no collision-free continuous route for {net}",
+                            net=net,
+                        )
                     strategy = "port"
                     fallbacks.append({"net": net, "from": "direct", "to": "port", "reason": "route_blocked"})
                 else:
-                    wires.append({"net": net, "branches": [_resolved_branch(net, 0, endpoints[0]["selector"], start, end, path, "direct")]})
-                    occupied.append({"net": net, "points": path})
-                    resolved_count += 2
-                    direct_count += 2
-                    continue
+                    wires.append({"net": net, "branches": direct_branches})
+                    resolved_count += len(endpoints)
+                    direct_count += len(endpoints)
+                    connected_by_direct = True
+                    if not annotate_every_endpoint and not sparse_named:
+                        continue
 
+        if sparse_named:
+            target_kind = intent.get("marker_kind") or "none"
+            wanted = set(intent.get("marker_endpoints") or [])
+            marker_endpoints = [
+                endpoint for endpoint in endpoints if endpoint["selector"] in wanted
+            ]
+            if target_kind == "none" or not marker_endpoints:
+                continue
+        else:
+            target_kind = "flag" if strategy == "flag" else "label" if strategy == "label" else "port"
+            marker_endpoints = endpoints
         branches = []
-        target_kind = "flag" if strategy == "flag" else "label" if strategy == "label" else "port"
-        for index, endpoint in enumerate(endpoints):
+        for index, endpoint in enumerate(marker_endpoints):
             anchor = endpoint["selector"]
             component, pin = pins[anchor]
             side = _side(component, pin)
@@ -385,8 +739,26 @@ def resolve_plan(plan: dict, state: dict) -> dict:
                 marker["direction"] = marker_direction
                 ports.append(marker)
             marker_count += 1
-            resolved_count += 1
+            if not connected_by_direct:
+                resolved_count += 1
         wires.append({"net": net, "branches": branches})
+
+    grouped_wires = []
+    grouped_by_net = {}
+    origin_by_net = {
+        item["net"]: item.get("net_origin", "explicit")
+        for item in plan.get("connection_intents", [])
+    }
+    for wire in wires:
+        net = wire["net"]
+        if net not in grouped_by_net:
+            grouped_by_net[net] = {
+                "net": net,
+                "net_origin": origin_by_net.get(net, "explicit"),
+                "branches": [],
+            }
+            grouped_wires.append(grouped_by_net[net])
+        grouped_by_net[net]["branches"].extend(wire.get("branches", []))
 
     result = copy.deepcopy(plan)
     if options.get("preserve_existing_placements"):
@@ -399,12 +771,15 @@ def resolve_plan(plan: dict, state: dict) -> dict:
                     for key in ("x", "y", "rotation", "mirror")
                 })
     result.update({
-        "format": "schematic-plan/v0.2", "phase": "resolved", "wires": wires,
+        "format": "schematic-plan/v0.2", "phase": "resolved", "wires": grouped_wires,
         "labels": labels, "ports": ports, "flags": flags,
         "visual": {
             "expected_endpoints": sum(len(item["endpoints"]) for item in plan["connection_intents"]),
             "resolved_endpoints": resolved_count, "marker_endpoints": marker_count,
-            "direct_endpoints": direct_count, "fallbacks": fallbacks,
+            "direct_endpoints": direct_count,
+            "visible_net_endpoints": marker_count,
+            "missing_net_markers": [],
+            "fallbacks": fallbacks,
         },
     })
     result.pop("plan_hash", None)
@@ -423,20 +798,103 @@ def _marker_rows(state: dict):
             yield kind, item
 
 
+def _net_aliases(plan: dict, state: dict) -> dict[str, set[str]]:
+    aliases = {}
+    actual_nets = (
+        parse_protel2_netlist(state["netlist"]).get("nets", {})
+        if state.get("netlist")
+        else {}
+    )
+    used_actual = set()
+    expected_nets = plan.get("topology", {}).get("nets", {})
+    for intent in plan.get("connection_intents", []):
+        net = intent["net"]
+        if intent.get("net_origin", "explicit") == "explicit":
+            aliases[net] = {net}
+            if net in actual_nets:
+                used_actual.add(net)
+            continue
+        expected_nodes = {tuple(node) for node in expected_nets.get(net, [])}
+        matches = [
+            actual_name
+            for actual_name, nodes in actual_nets.items()
+            if actual_name not in used_actual and set(nodes) == expected_nodes
+        ]
+        if matches:
+            actual_name = sorted(matches, key=natural_key)[0]
+            aliases[net] = {actual_name}
+            used_actual.add(actual_name)
+        else:
+            aliases[net] = {net}
+    return aliases
+
+
 def verify_readability(plan: dict, state: dict) -> dict:
     if plan.get("format") != "schematic-plan/v0.2" or plan.get("phase") != "resolved":
         return _error("PLAN_NOT_RESOLVED", "readability verification requires a resolved v0.2 plan")
     pins = _pin_index(state)
+    net_aliases = _net_aliases(plan, state)
+    generated_nets = {
+        intent.get("net")
+        for intent in plan.get("connection_intents", [])
+        if intent.get("net_origin") == "generated"
+    }
     issues, covered, expected = [], 0, 0
+    expected_named_endpoints = {
+        (intent["net"], endpoint)
+        for intent in plan.get("connection_intents", [])
+        for endpoint in (
+            [item["selector"] for item in intent.get("endpoints", [])]
+            if intent.get("annotation_policy") == "every_endpoint"
+            else intent.get("marker_endpoints", [])
+            if intent.get("annotation_policy") == "sparse_named"
+            else []
+        )
+    }
+    planned_named_endpoints = {
+        (marker.get("net"), marker.get("anchor"))
+        for key in ("labels", "ports", "flags")
+        for marker in plan.get(key, [])
+        if marker.get("anchor")
+    }
+    planned_nets_by_anchor = {}
+    for net, anchor in planned_named_endpoints:
+        planned_nets_by_anchor.setdefault(anchor, set()).add(net)
+    for net, anchor in sorted(expected_named_endpoints - planned_named_endpoints):
+        wrong_names = sorted(planned_nets_by_anchor.get(anchor, set()) - {net})
+        issues.append(_issue(
+            "NET_MARKER_NAME_MISMATCH" if wrong_names else "NET_MARKER_MISSING",
+            net=net, anchor=anchor, stage="plan",
+            actual_net=wrong_names[0] if wrong_names else None,
+        ))
     actual_markers = list(_marker_rows(state))
+    visible_named_endpoints = set()
 
     for kind, key in (("label", "labels"), ("port", "ports"), ("flag", "flags")):
         for marker in plan.get(key, []):
             expected += 1
             point = marker["at"]
-            matches = [item for actual_kind, item in actual_markers if actual_kind == kind and item.get("net") == marker["net"] and item.get("x") == point["x"] and item.get("y") == point["y"]]
+            matches = [
+                item
+                for actual_kind, item in actual_markers
+                if actual_kind == kind
+                and item.get("net") == marker["net"]
+                and abs(item.get("x", float("inf")) - point["x"]) <= 1e-6
+                and abs(item.get("y", float("inf")) - point["y"]) <= 1e-6
+            ]
             if not matches:
-                issues.append(_issue("VISIBLE_MARKER_MISSING", kind=kind, net=marker["net"], anchor=marker.get("anchor")))
+                wrong_name = [
+                    item for actual_kind, item in actual_markers
+                    if actual_kind == kind
+                    and abs(item.get("x", float("inf")) - point["x"]) <= 1e-6
+                    and abs(item.get("y", float("inf")) - point["y"]) <= 1e-6
+                    and item.get("net") != marker["net"]
+                ]
+                code = "NET_MARKER_NAME_MISMATCH" if wrong_name else "NET_MARKER_MISSING"
+                issues.append(_issue(
+                    code, kind=kind, net=marker["net"], anchor=marker.get("anchor"),
+                    actual_net=wrong_name[0].get("net") if wrong_name else None,
+                ))
                 continue
             actual = matches[0]
             if actual.get("rotation") != marker.get("rotation"):
@@ -444,6 +902,9 @@ def verify_readability(plan: dict, state: dict) -> dict:
             if kind == "port" and actual.get("direction_status") == "readback" and actual.get("direction") != marker.get("direction"):
                 issues.append(_issue("PORT_DIRECTION_MISMATCH", net=marker["net"], anchor=marker.get("anchor")))
             covered += 1
+            named_endpoint = (marker.get("net"), marker.get("anchor"))
+            if marker.get("anchor") and named_endpoint in expected_named_endpoints:
+                visible_named_endpoints.add(named_endpoint)
 
     actual_wires = state.get("wires", [])
     for wire in plan.get("wires", []):
@@ -452,24 +913,39 @@ def verify_readability(plan: dict, state: dict) -> dict:
             start_value, end_value = branch["start"], branch["end"]
             start = pins.get(start_value, ({}, start_value))[1] if isinstance(start_value, str) else start_value
             end = pins.get(end_value, ({}, end_value))[1] if isinstance(end_value, str) else end_value
-            endpoints = {(start["x"], start["y"]), (end["x"], end["y"])}
-            matches = [item for item in actual_wires if item.get("net") == wire["net"] and len(item.get("points") or []) >= 2 and {(item["points"][0]["x"], item["points"][0]["y"]), (item["points"][-1]["x"], item["points"][-1]["y"])} == endpoints]
-            if not matches:
+            planned_path = [start, *branch.get("waypoints", []), end]
+            net_wires = [
+                item
+                for item in actual_wires
+                if item.get("net") in net_aliases.get(wire["net"], {wire["net"]})
+            ]
+            if wire["net"] in generated_nets and not net_wires:
+                # Generated BoardSpec names deliberately are not written into
+                # EasyEDA.  In 3.2.x getState_Net() therefore returns null even
+                # though the native netlist derives the correct connectivity.
+                # Restrict the fallback to unnamed primitives; path coverage
+                # still has to match the resolved orthogonal geometry exactly.
+                net_wires = [item for item in actual_wires if not item.get("net")]
+            if not _path_covered(planned_path, net_wires):
                 issues.append(_issue("VISIBLE_WIRE_MISSING", net=wire["net"], anchor=branch.get("anchor"), role=branch.get("role")))
             else:
-                actual_path = matches[0].get("points") or []
                 endpoint_components = {
                     match.group(1)
                     for value in (branch.get("start"), branch.get("end"))
                     if isinstance(value, str) and (match := PIN_SELECTOR.fullmatch(value))
                 }
                 for component in state.get("components", []):
-                    if component.get("designator") not in endpoint_components and component.get("bbox") and any(
-                        _segment_hits_box(a, b, component["bbox"])
-                        for a, b in zip(actual_path, actual_path[1:])
+                    if (
+                        component.get("designator") not in endpoint_components
+                        and component.get("bbox")
+                        and any(
+                            _segment_hits_box(a, b, component["bbox"])
+                            for a, b in zip(planned_path, planned_path[1:])
+                        )
                     ):
                         issues.append(_issue(
-                            "WIRE_COMPONENT_CROSSING", wire_id=matches[0].get("id"),
+                            "WIRE_COMPONENT_CROSSING",
+                            wire_id=net_wires[0].get("id") if net_wires else None,
                             component=component.get("designator"), net=wire["net"],
                         ))
                 covered += 2 if branch.get("role") == "direct" else 1
@@ -485,10 +961,34 @@ def verify_readability(plan: dict, state: dict) -> dict:
         for component in components:
             if _intersects(box, component["bbox"]):
                 issues.append(_issue("MARKER_COMPONENT_OVERLAP", marker_id=marker.get("id"), component=component.get("designator")))
+                issues.append(_issue(
+                    "NET_MARKER_COLLISION", marker_id=marker.get("id"),
+                    obstacle_kind="component", obstacle_id=component.get("designator"),
+                ))
+            for pin in component.get("pins", []):
+                if (
+                    box["minX"] < pin.get("x", float("inf")) < box["maxX"]
+                    and box["minY"] < pin.get("y", float("inf")) < box["maxY"]
+                ):
+                    issues.append(_issue(
+                        "NET_MARKER_COLLISION", marker_id=marker.get("id"),
+                        obstacle_kind="pin",
+                        obstacle_id=f"{component.get('designator')}.#{pin.get('number')}",
+                    ))
+        for wire in actual_wires:
+            if wire.get("net") == marker.get("net"):
+                continue
+            points = wire.get("points") or []
+            if any(_segment_hits_box(a, b, box) for a, b in zip(points, points[1:])):
+                issues.append(_issue(
+                    "NET_MARKER_COLLISION", marker_id=marker.get("id"),
+                    obstacle_kind="wire", obstacle_id=wire.get("id"),
+                ))
     for index, (kind, marker, box) in enumerate(marker_boxes):
         for other_kind, other, other_box in marker_boxes[index + 1:]:
             if _intersects(box, other_box):
                 issues.append(_issue("MARKER_MARKER_OVERLAP", marker_id=marker.get("id"), other_id=other.get("id"), kinds=sorted((kind, other_kind))))
+                issues.append(_issue("NET_MARKER_COLLISION", marker_id=marker.get("id"), other_id=other.get("id")))
 
     unique = {item["id"]: item for item in issues}
     rows = sorted(unique.values(), key=lambda item: (item["code"], item["id"]))
@@ -496,5 +996,12 @@ def verify_readability(plan: dict, state: dict) -> dict:
         "ok": not rows, "passed": not rows, "expected_endpoint_evidence": expected,
         "covered_endpoint_evidence": covered,
         "visible_endpoint_coverage": 1.0 if not expected else covered / expected,
+        "expected_named_endpoints": len(expected_named_endpoints),
+        "visible_named_endpoints": len(visible_named_endpoints),
+        "visible_net_endpoint_coverage": (
+            1.0
+            if not expected_named_endpoints
+            else len(visible_named_endpoints) / len(expected_named_endpoints)
+        ),
         "issues": rows,
     }

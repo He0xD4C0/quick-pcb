@@ -34,6 +34,9 @@ def render_mermaid(expanded, resolver) -> str:
                 if key in edges:
                     continue
                 edges.add(key)
-                lines.append(f"    {_s(a)} ---|{_s(net['name'])}| {_s(b)}")
+                if net.get("net_origin") == "generated":
+                    lines.append(f"    {_s(a)} --- {_s(b)}")
+                else:
+                    lines.append(f"    {_s(a)} ---|{_s(net['name'])}| {_s(b)}")
 
     return "\n".join(lines) + "\n"

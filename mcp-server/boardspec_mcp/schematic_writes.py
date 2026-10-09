@@ -119,7 +119,7 @@ def create_schematic_wires(client, window_id, expected_context_revision, expecte
     state, _, error = _state(client, window_id)
     if error:
         return error
-    prepared, occupied = [], list(state["wires"])
+    prepared_by_net, occupied = {}, list(state["wires"])
     for item in wires:
         for branch in item["branches"]:
             start, error = _point(state, branch["start"])
@@ -155,9 +155,22 @@ def create_schematic_wires(client, window_id, expected_context_revision, expecte
                 for existing in state["wires"]
             )
             if not duplicate:
-                value = {"client_id": branch["client_id"], "net": item["net"], "points": routed}
-                prepared.append(value)
-                occupied.append(value)
+                value = prepared_by_net.setdefault(
+                    item["net"],
+                    {
+                        "client_id": f"plan/{item['net']}/tree",
+                        "net": item["net"],
+                        "native_net": (
+                            item["net"]
+                            if item.get("net_origin", "explicit") == "explicit"
+                            else None
+                        ),
+                        "segments": [],
+                    },
+                )
+                value["segments"].append(routed)
+                occupied.append({"net": item["net"], "points": routed})
+    prepared = list(prepared_by_net.values())
     if not prepared:
         return {
             "ok": True, "applied": False, "unchanged": True,

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "boardspec-mcp"
-version = "0.3.1"
-description = "MCP server exposing BoardSpec plus checked EasyEDA Pro layout and schematic tools."
+version = "0.4.0"
+description = "MCP server exposing BoardSpec plus read-only EasyEDA library and checked layout/schematic tools."
 requires-python = ">=3.10"
 dependencies = [
     "mcp>=2.2,<3",
@@ -21,6 +21,7 @@ metrics = ["tiktoken>=0.7,<1"]
 [project.scripts]
 boardspec-mcp = "boardspec_mcp.server:main"
 boardspec-core-mcp = "boardspec_mcp.core_server:main"
+boardspec-library-mcp = "boardspec_mcp.library_server:main"
 boardspec-layout-mcp = "boardspec_mcp.layout_server:main"
 boardspec-schematic-mcp = "boardspec_mcp.schematic_entry:main"
 

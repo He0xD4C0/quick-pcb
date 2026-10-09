@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:board-spec:schema:v0.2",
+  "title": "BoardSpec v0.2",
+  "type": "object",
+  "required": ["spec", "project", "instances", "connections"],
+  "additionalProperties": false,
+  "properties": {
+    "spec": {"const": "board-spec/v0.2"},
+    "project": {"$ref": "urn:board-spec:schema:v0.1#/$defs/project"},
+    "libraries": {
+      "type": "array",
+      "items": {"$ref": "urn:board-spec:schema:v0.1#/$defs/library"},
+      "default": []
+    },
+    "definitions": {
+      "type": "object",
+      "propertyNames": {"$ref": "urn:board-spec:schema:v0.1#/$defs/partRef"},
+      "additionalProperties": {"$ref": "urn:board-spec:schema:v0.1#/$defs/definition"},
+      "default": {}
+    },
+    "instances": {
+      "type": "object",
+      "propertyNames": {"$ref": "urn:board-spec:schema:v0.1#/$defs/hierarchicalIdentifier"},
+      "additionalProperties": {"$ref": "urn:board-spec:schema:v0.1#/$defs/instance"}
+    },
+    "connections": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {"$ref": "urn:board-spec:schema:v0.1#/$defs/connection"},
+          {"$ref": "#/$defs/anonymousConnection"}
+        ]
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {"$ref": "urn:board-spec:schema:v0.1#/$defs/constraint"},
+      "default": []
+    },
+    "outputs": {
+      "type": "array",
+      "items": {"$ref": "urn:board-spec:schema:v0.1#/$defs/output"},
+      "default": []
+    }
+  },
+  "$defs": {
+    "anonymousConnection": {
+      "type": "object",
+      "required": ["connect"],
+      "additionalProperties": false,
+      "properties": {
+        "connect": {
+          "type": "array",
+          "items": {"$ref": "urn:board-spec:schema:v0.1#/$defs/endpoint"},
+          "minItems": 2,
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

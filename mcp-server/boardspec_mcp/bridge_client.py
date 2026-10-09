@@ -1,7 +1,8 @@
 """HTTP client for the official EasyEDA WebSocket bridge.
 
 The bridge is provided by ``easyeda-api-skill`` (``run-api-gateway.eext`` +
-Node server). It listens on an available port in the 49620–49629 range and
+Node server). It listens on IPv4 loopback at an available port in the
+49620–49629 range and
 exposes:
 
 - ``GET /health``     -> ``200`` when the EDA client is connected.
@@ -48,6 +49,9 @@ class BridgeClient:
     def _candidates(self):
         if self._configured:
             return [self.base_url]
+        # The official bridge binds 127.0.0.1 only.  Do not use ``localhost``:
+        # on hosts that resolve ::1 first, that creates a false unavailable
+        # result even though the IPv4 listener is healthy.
         return [f"http://127.0.0.1:{port}" for port in self.port_range]
 
     def _probe(self, url: str) -> bool:
@@ -102,11 +106,17 @@ class BridgeClient:
                 "ok": False,
                 "code": "EDA_UNAVAILABLE",
                 "message": "EasyEDA bridge is running, but no EDA window is connected",
+                "service": data.get("service"),
                 "base_url": url,
+                "eda_connected": False,
+                "eda_window_count": data.get("edaWindowCount", 0),
+                "active_window_id": data.get("activeWindowId"),
             }
         return {
             "ok": True,
+            "service": data.get("service"),
             "base_url": url,
+            "eda_connected": True,
             "eda_window_count": data.get("edaWindowCount", 0),
             "active_window_id": data.get("activeWindowId"),
         }

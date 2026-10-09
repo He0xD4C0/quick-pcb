@@ -6,7 +6,7 @@ import os
 
 import pytest
 
-from boardspec.core import process
+from boardspec.core import _anonymous_net_name, process
 from boardspec.exporters import (
     parse_protel2_netlist,
     render_bom_csv,
@@ -32,6 +32,26 @@ def test_status_led_validates_clean():
     # Expected demo-fixture warnings, not errors.
     codes = {w["code"] for w in warnings}
     assert codes >= {"INCOMPLETE_PART_DATA", "FOOTPRINT_UNCONFIRMED"}
+
+
+def test_project_drawing_is_optional_but_reports_exact_missing_field_paths(tmp_path):
+    valid = tmp_path / "valid-old.yaml"
+    valid.write_text(
+        "spec: board-spec/v0.1\nproject: {name: legacy}\ninstances: {}\nconnections: []\n",
+        encoding="utf-8",
+    )
+    _, _, _, errors, _ = _process(str(valid))
+    assert errors == []
+
+    invalid = tmp_path / "invalid-drawing.yaml"
+    invalid.write_text(
+        "spec: board-spec/v0.1\nproject:\n  name: demo\n  drawing: {}\ninstances: {}\nconnections: []\n",
+        encoding="utf-8",
+    )
+    _, _, _, errors, _ = _process(str(invalid))
+    assert {item["path"] for item in errors} == {
+        "/project/drawing/title", "/project/drawing/number",
+    }
 
 
 def test_module_expansion_namespaces():
@@ -183,6 +203,81 @@ outputs:
     assert errors == []
     assert expanded["connections"][0]["net"] == "ON"
     assert expanded["outputs"][0]["type"] == "protel2_netlist"
+
+
+def _v02_status_led(tmp_path, *, reverse=False, target_generated=False):
+    text = open(STATUS_LED, encoding="utf-8").read()
+    text = text.replace("spec: board-spec/v0.1", "spec: board-spec/v0.2", 1)
+    text = text.replace(
+        "path: parts.demo.json",
+        f"path: {os.path.join(FIXTURES, 'parts.demo.json')}",
+        1,
+    )
+    endpoints = ["U1.PA5", "LED1.CTRL"]
+    if reverse:
+        endpoints.reverse()
+    text = text.replace(
+        "  - net: LED_CTRL\n    kind: signal\n    endpoints: [U1.PA5, LED1.CTRL]",
+        f"  - connect: [{', '.join(endpoints)}]",
+        1,
+    )
+    if target_generated:
+        generated = _anonymous_net_name(["U1.PA5", "LED1/R.1", "LED1/D.A"])
+        text = text.replace(
+            "target: [3V3, GND]",
+            f"target: [3V3, GND, {generated}]",
+            1,
+        )
+    path = tmp_path / ("status-led-v02-reversed.yaml" if reverse else "status-led-v02.yaml")
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
+def test_v02_anonymous_connection_gets_stable_generated_name_and_exports(tmp_path):
+    first_path = _v02_status_led(tmp_path)
+    second_path = _v02_status_led(tmp_path, reverse=True)
+    _, first, first_resolver, first_errors, _ = _process(str(first_path))
+    _, second, _, second_errors, _ = _process(str(second_path))
+
+    assert first_errors == second_errors == []
+    first_generated = [
+        item for item in first["connections"] if item.get("net_origin") == "generated"
+    ]
+    second_generated = [
+        item for item in second["connections"] if item.get("net_origin") == "generated"
+    ]
+    assert len(first_generated) == len(second_generated) == 1
+    assert first_generated[0]["net"] == second_generated[0]["net"]
+    assert first_generated[0]["net"].startswith("N_AUTO_")
+    assert first["spec"] == "board-spec/v0.2"
+    generated_name = first_generated[0]["net"]
+    assert generated_name in render_kicad_netlist(first, first_resolver)
+    assert generated_name in render_protel2_netlist(first, first_resolver)
+    mermaid = render_mermaid(first, first_resolver)
+    assert generated_name not in mermaid
+    assert "U1 ---" in mermaid or "--- U1" in mermaid
+
+
+def test_v01_rejects_anonymous_connection(tmp_path):
+    path = _v02_status_led(tmp_path)
+    path.write_text(
+        path.read_text(encoding="utf-8").replace(
+            "spec: board-spec/v0.2", "spec: board-spec/v0.1", 1
+        ),
+        encoding="utf-8",
+    )
+    _, expanded, _, errors, _ = _process(str(path))
+    assert expanded is None
+    assert any(error["code"] == "SCHEMA_INVALID" for error in errors)
+
+
+def test_anonymous_connection_cannot_be_constraint_target(tmp_path):
+    path = _v02_status_led(tmp_path, target_generated=True)
+    _, expanded, _, errors, _ = _process(str(path))
+    assert expanded is not None
+    assert any(
+        error["code"] == "ANONYMOUS_NET_TARGET_UNSUPPORTED" for error in errors
+    )
 
 
 def test_malformed_yaml_returns_structured_diagnostic(tmp_path):

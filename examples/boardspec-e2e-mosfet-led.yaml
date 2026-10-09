@@ -1,6 +1,10 @@
 spec: board-spec/v0.1
 project:
   name: BoardSpec_E2E_MOSFET_LED
+  version: "1.0"
+  drawing:
+    title: MOSFET LED E2E Schematic
+    number: QPCB-E2E-001
   description: >-
     Connectivity-only fixture for BoardSpec to EasyEDA Pro round-trip testing;
     not a production-ready STM32 design.

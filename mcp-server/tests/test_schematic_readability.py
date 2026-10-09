@@ -94,6 +94,89 @@ def test_resolver_uses_local_lane_without_rotating_a_blocked_marker():
     assert result["plan"]["wires"][0]["branches"][0]["role"] == "stub"
 
 
+def test_sparse_named_resolver_routes_multipoint_tree_without_anonymous_markers():
+    left = _component(
+        "U1",
+        {"minX": 900, "minY": 900, "maxX": 1100, "maxY": 1100},
+        [{"number": "1", "x": 1100, "y": 1000, "rotation": 180}],
+    )
+    middle = _component(
+        "R1",
+        {"minX": 1900, "minY": 900, "maxX": 2100, "maxY": 1100},
+        [{"number": "1", "x": 1900, "y": 1000, "rotation": 0}],
+    )
+    right = _component(
+        "C1",
+        {"minX": 2900, "minY": 900, "maxX": 3100, "maxY": 1100},
+        [{"number": "1", "x": 2900, "y": 1000, "rotation": 0}],
+    )
+    intent = [{
+        "net": "N_AUTO_0123456789AB",
+        "kind": "signal",
+        "net_origin": "generated",
+        "strategy": "direct",
+        "annotation_policy": "sparse_named",
+        "marker_kind": "none",
+        "marker_endpoints": [],
+        "endpoints": [
+            {"selector": "U1.#1", "region": "root", "pin_type_trusted": False},
+            {"selector": "R1.#1", "region": "root", "pin_type_trusted": False},
+            {"selector": "C1.#1", "region": "root", "pin_type_trusted": False},
+        ],
+    }]
+    plan = _plan(intent)
+    plan["options"].update({
+        "wiring_policy": "continuous",
+        "net_annotation_policy": "sparse_named",
+    })
+    result = resolve_plan(plan, _state([left, middle, right]))
+
+    assert result["ok"] is True
+    resolved = result["plan"]
+    assert resolved["ports"] == []
+    assert resolved["flags"] == []
+    assert len(resolved["wires"]) == 1
+    assert len(resolved["wires"][0]["branches"]) == 2
+    assert resolved["visual"]["direct_endpoints"] == 3
+
+
+def test_readability_accepts_unnamed_native_wires_for_generated_net():
+    left = _component(
+        "U1", pins=[{"number": "1", "x": 1100, "y": 1000, "rotation": 180}],
+    )
+    right = _component(
+        "R1", {"minX": 1900, "minY": 900, "maxX": 2100, "maxY": 1100},
+        [{"number": "1", "x": 1900, "y": 1000, "rotation": 0}],
+    )
+    intent = [{
+        "net": "N_AUTO_0123456789AB", "kind": "signal",
+        "net_origin": "generated", "strategy": "direct",
+        "annotation_policy": "sparse_named", "marker_kind": "none",
+        "marker_endpoints": [],
+        "endpoints": [
+            {"selector": "U1.#1", "region": "root", "pin_type_trusted": False},
+            {"selector": "R1.#1", "region": "root", "pin_type_trusted": False},
+        ],
+    }]
+    plan = _plan(intent)
+    plan["options"].update({
+        "wiring_policy": "continuous", "net_annotation_policy": "sparse_named",
+    })
+    resolved = resolve_plan(plan, _state([left, right]))["plan"]
+    branch = resolved["wires"][0]["branches"][0]
+    start = left["pins"][0]
+    end = right["pins"][0]
+    path = [start, *branch["waypoints"], end]
+    live = _state([left, right], wires=[{
+        "id": "unnamed", "net": None, "points": path, "segments": [path],
+    }])
+
+    result = verify_readability(resolved, live)
+
+    assert result["passed"] is True
+    assert result["visible_endpoint_coverage"] == 1.0
+
+
 def test_readability_requires_stub_and_rejects_actual_marker_overlap():
     component = _component(pins=[{"number": "1", "x": 900, "y": 1000, "rotation": 0}])
     intent = [{
@@ -114,7 +197,9 @@ def test_readability_requires_stub_and_rejects_actual_marker_overlap():
     )
     result = verify_readability(resolved, live)
     assert result["passed"] is False
-    assert {item["code"] for item in result["issues"]} == {"MARKER_COMPONENT_OVERLAP"}
+    assert {item["code"] for item in result["issues"]} == {
+        "MARKER_COMPONENT_OVERLAP", "NET_MARKER_COLLISION",
+    }
 
 
 def test_diff_emits_marker_replace_and_then_becomes_unchanged():

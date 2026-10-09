@@ -8,7 +8,10 @@ BoardSpec 是一种 EDA 中立的声明式连接规格。它声明「板上有�
 
 ```yaml
 spec: board-spec/v0.1
-project: {name: demo}
+project:
+  name: demo
+  version: "1.0"
+  drawing: {title: Demo Schematic, number: DEMO-001}
 libraries: []     # 元件库声明
 definitions: {}   # 项目级新元件 / 模块
 instances: {}     # 元件实例
@@ -18,6 +21,8 @@ outputs: []       # 导出目标
 ```
 
 必填字段：`spec`、`project`、`instances`、`connections`。
+
+`project.drawing` 对旧 BoardSpec 是可选字段；一旦出现，`title` 和 `number` 必填，可选 `company`、`designer`、`reviewer`、`description`、`date`。默认原理图 `engineering_basic` 规划还要求 `project.version`；这些字段用于图页自带的原生明细表，规划器不会编造缺失的标题、图号、版本、人员或公司信息。`date` 保持为声明信息，但不会覆盖 EDA 自动维护的 `@Update Date`。
 
 ## 核心语义
 

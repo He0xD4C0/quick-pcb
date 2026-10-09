@@ -180,7 +180,37 @@ def test_bridge_health_requires_connected_eda(monkeypatch):
 
     assert res["ok"] is False
     assert res["code"] == "EDA_UNAVAILABLE"
+    assert res["service"] == "easyeda-bridge"
     assert res["base_url"] == "http://bridge.test"
+    assert res["eda_connected"] is False
+    assert res["eda_window_count"] == 0
+    assert res["active_window_id"] is None
+
+
+def test_bridge_health_reports_identity_and_connected_eda(monkeypatch):
+    client = BridgeClient(base_url="http://bridge.test")
+    response = httpx.Response(
+        200,
+        request=httpx.Request("GET", "http://bridge.test/health"),
+        json={
+            "service": "easyeda-bridge",
+            "edaConnected": True,
+            "edaWindowCount": 2,
+            "activeWindowId": "window-2",
+        },
+    )
+    monkeypatch.setattr(httpx, "get", lambda *args, **kwargs: response)
+
+    res = client.health()
+
+    assert res == {
+        "ok": True,
+        "service": "easyeda-bridge",
+        "base_url": "http://bridge.test",
+        "eda_connected": True,
+        "eda_window_count": 2,
+        "active_window_id": "window-2",
+    }
 
 
 def test_bridge_rescans_after_discovered_port_stops(monkeypatch):
@@ -189,6 +219,15 @@ def test_bridge_rescans_after_discovered_port_stops(monkeypatch):
     monkeypatch.setattr(client, "_probe", lambda url: url.endswith(":49621"))
 
     assert client.resolve_base_url() == "http://127.0.0.1:49621"
+
+
+def test_bridge_discovery_uses_ipv4_loopback_literals():
+    client = BridgeClient(port_range=range(49620, 49622))
+
+    assert client._candidates() == [
+        "http://127.0.0.1:49620",
+        "http://127.0.0.1:49621",
+    ]
 
 
 def test_get_part_enriches_device_with_symbol_pins():
@@ -441,3 +480,13 @@ def test_load_netlist_rejects_empty_protel2_before_bridge():
         "code": "INVALID_NETLIST",
         "message": "PROTEL2 netlist has no component records",
     }
+
+
+@pytest.mark.parametrize('value', [None, '', '  ', [], False])
+def test_missing_native_netlist_is_error(value):
+    class FakeClient:
+        def execute(self, code):
+            return {'ok': True, 'result': value}
+    result = tools.get_netlist(FakeClient(), 'PROTEL2')
+    assert result['ok'] is False
+    assert result['code'] == 'NETLIST_UNAVAILABLE'

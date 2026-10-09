@@ -21,12 +21,12 @@
 ## 组件
 
 - **boardspec-core**：DSL 的确定性核心。Schema 校验、引用校验、模块展开、保守 ERC、四个导出器（Protel2/KiCad/BOM/mermaid）。不依赖 EDA。
-- **mcp-server**：MCP server，保留 12 个 BoardSpec/连接工具，并增加 14 个 Layout 工具。Layout 状态编码、revision 与 DRC 增量在 Python 中确定性处理；桥仍只转发 JS。
+- **mcp-server**：MCP server，提供独立 Core、Library、Layout、Schematic profile 和兼容的全量入口。Library 在 Python 中把异构器件属性规范为紧凑候选表；Layout 状态编码、revision 与 DRC 增量同样由 Python 确定性处理；桥只转发 JS。
 - **eda-extension**：嘉立创 EDA 插件（`.eext`）。菜单「导入网表 (Protel2)」读文件并 `pcb_Net.setNetlist`；「导出 BOM」调 `pcb_ManufactureData.getBomFile`。
 
 ## 数据流（闭环）
 
-1. LLM 用 `search_part` / `get_part` → 桥调 `eda.lib_Device.search/get` → 拿到**真实**器件与引脚。
+1. LLM 用 `search_parts` / `get_parts_by_lcsc_ids` 比较候选，再用 `get_part` 下钻 → 桥调 `eda.lib_Device.search/getByLcscIds/get` → 拿到**真实**器件、CAD 标识与引脚。
 2. LLM 产出 BoardSpec YAML。
 3. LLM 用 `validate` → `boardspec-core` 做 Schema + 引用 + ERC → 错误回传修正（循环直到无错误）。
 4. LLM 用 `expand`（展开模块）→ `export`（网表 + BOM）。
@@ -57,7 +57,7 @@
 
 1. **启动官方桥**：克隆 `easyeda/easyeda-api-skill`，`npm install && npm run server`（监听 49620–49629）。
 2. **连接 EDA**：在嘉立创 EDA 专业版安装 `run-api-gateway.eext`（下载：https://jlcext.com/item/oshwhub-official/run-api-gateway），加载后自动连接桥。
-3. **探活**：`curl http://localhost:49620/health` → 200。
+3. **探活**：`curl http://127.0.0.1:49620/health` → 200。官方 Bridge 仅监听 IPv4 loopback；不要使用可能优先解析到 `::1` 的 `localhost`。
 4. **跑 MCP**：注册并启动 `boardspec-mcp`，然后走查库、校验、展开、导入预览、应用、回读和 DRC。MCP 桥路径不要求安装 BoardSpec `.eext`。
 
 ## 待验证项（实现时需实测）
@@ -69,6 +69,7 @@
 ## 分层边界
 
 - BoardSpec 不生成原理图图形、坐标、走线、层叠、焊盘、符号或封装图形。
+- Library MCP 只交换嘉立创 EDA 系统库工程/CAD 数据，不提供价格、库存、交期、生命周期或内置选型评分。
 - Layout MCP 不改变 BoardSpec 或网表拓扑，不提供布局建议，不维护 undo/影子工程，也不自动保存 EDA 文档。
 - 不重写 `boardspec-core`，不引入 networkx 图模型，也不做 KiCad/Altium 原生工程导出；Layout MCP 仅用 Pydantic 声明严格的工具入参 schema。
 - 不自研桥（复用官方 `run-api-gateway` + WebSocket bridge）。

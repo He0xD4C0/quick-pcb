@@ -3,14 +3,14 @@ enabled = true
 
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-core]
 enabled = true
-startup_timeout_sec = 300
-tool_timeout_sec = 120
+default_tools_approval_mode = "approve"
+
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-library]
+enabled = true
 default_tools_approval_mode = "approve"
 
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout]
-enabled = false
-startup_timeout_sec = 300
-tool_timeout_sec = 3600
+enabled = true
 default_tools_approval_mode = "approve"
 
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-layout.tools.load_netlist]
@@ -33,9 +33,7 @@ approval_mode = "prompt"
 approval_mode = "prompt"
 
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic]
-enabled = false
-startup_timeout_sec = 300
-tool_timeout_sec = 3600
+enabled = true
 default_tools_approval_mode = "approve"
 
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.set_no_connects]
@@ -51,6 +49,8 @@ approval_mode = "prompt"
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.open_schematic_page]
 approval_mode = "prompt"
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.save_schematic]
+approval_mode = "prompt"
+[plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.set_schematic_page_format]
 approval_mode = "prompt"
 [plugins."quick-pcb@quick-pcb-local".mcp_servers.boardspec-schematic.tools.place_schematic_components]
 approval_mode = "prompt"

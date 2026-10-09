@@ -4,8 +4,8 @@
       "command": "uv",
       "args": [
         "tool", "run", "--isolated",
-        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=mcp-server",
-        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=boardspec-core",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=boardspec-core",
         "boardspec-core-mcp"
       ],
       "enabled": true,
@@ -14,12 +14,26 @@
       "tool_timeout_sec": 120,
       "env_vars": ["PATH", "HOME", "USERPROFILE", "LOCALAPPDATA", "XDG_CACHE_HOME"]
     },
+    "boardspec-library": {
+      "command": "uv",
+      "args": [
+        "tool", "run", "--isolated",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=boardspec-core",
+        "boardspec-library-mcp"
+      ],
+      "enabled": true,
+      "default_tools_approval_mode": "approve",
+      "startup_timeout_sec": 300,
+      "tool_timeout_sec": 120,
+      "env_vars": ["PATH", "HOME", "USERPROFILE", "LOCALAPPDATA", "XDG_CACHE_HOME", "BOARDSPEC_BRIDGE_URL"]
+    },
     "boardspec-layout": {
       "command": "uv",
       "args": [
         "tool", "run", "--isolated",
-        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=mcp-server",
-        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=boardspec-core",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=boardspec-core",
         "boardspec-layout-mcp"
       ],
       "enabled": false,
@@ -43,8 +57,8 @@
       "command": "uv",
       "args": [
         "tool", "run", "--isolated",
-        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=mcp-server",
-        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.3.1#subdirectory=boardspec-core",
+        "--from", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=mcp-server",
+        "--with", "git+https://github.com/He0xD4C0/quick-pcb.git@v0.4.0#subdirectory=boardspec-core",
         "boardspec-schematic-mcp"
       ],
       "enabled": false,
@@ -57,6 +71,7 @@
         "create_schematic_page": {"approval_mode": "prompt"},
         "open_schematic_page": {"approval_mode": "prompt"},
         "save_schematic": {"approval_mode": "prompt"},
+        "set_schematic_page_format": {"approval_mode": "prompt"},
         "place_schematic_components": {"approval_mode": "prompt"},
         "set_schematic_component_placement": {"approval_mode": "prompt"},
         "remove_schematic_components": {"approval_mode": "prompt"},

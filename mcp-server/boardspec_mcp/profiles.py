@@ -1,4 +1,4 @@
-"""Build the focused Core, Layout, and Schematic MCP profiles."""
+"""Build the focused Core, Library, Layout, and Schematic MCP profiles."""
 
 from __future__ import annotations
 
@@ -14,6 +14,13 @@ from .protocol import (
 from .schematic_server import register_schematic_tools
 
 CORE_TOOLS = ("validate", "expand", "export")
+
+LIBRARY_TOOLS = (
+    "bridge_status",
+    "search_parts",
+    "get_parts_by_lcsc_ids",
+    "get_part",
+)
 
 LAYOUT_TOOLS = (
     "bridge_status",
@@ -55,6 +62,8 @@ _ANNOTATIONS = {
         for name in (
             "bridge_status",
             "search_part",
+            "search_parts",
+            "get_parts_by_lcsc_ids",
             "get_part",
             "get_project_component",
             "get_netlist",
@@ -93,6 +102,12 @@ def _register_existing(target, names: tuple[str, ...]) -> None:
 def create_core_server():
     mcp = make_server("core")
     _register_existing(mcp, CORE_TOOLS)
+    return mcp
+
+
+def create_library_server():
+    mcp = make_server("library")
+    _register_existing(mcp, LIBRARY_TOOLS)
     return mcp
 
 

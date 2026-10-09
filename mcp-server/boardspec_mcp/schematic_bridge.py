@@ -46,6 +46,19 @@ const pointsOf = line => {
   return result.filter((point, index) => !index || key(point) !== key(result[index - 1]))
     .map(point => ({x: mil(point[0]), y: mil(point[1])}));
 };
+const segmentsOf = line => {
+  const flat = line || [];
+  const segments = Array.isArray(flat[0])
+    ? flat
+    : Array.from({length: Math.floor(flat.length / 4)}, (_, i) => flat.slice(i * 4, i * 4 + 4));
+  return segments.map(segment => {
+    const points = [];
+    for (let i = 0; i + 1 < segment.length; i += 2) {
+      points.push({x: mil(segment[i]), y: mil(segment[i + 1])});
+    }
+    return points;
+  }).filter(points => points.length >= 2);
+};
 const documentInfo = await attempt(() => eda.dmt_SelectControl.getCurrentDocumentInfo(), null);
 const projectInfo = await attempt(() => eda.dmt_Project.getCurrentProjectInfo(), null);
 const schematicItems = [];
@@ -58,6 +71,10 @@ for (const schematic of schematicItems) {
   const page = (schematic.page || []).find(value => value.uuid === documentInfo?.uuid);
   if (page) { schematicInfo = schematic; pageInfo = page; break; }
 }
+const activePageUuid = pageInfo?.uuid || documentInfo?.uuid || null;
+const detailedPageInfo = activePageUuid
+  ? await attempt(() => eda.dmt_Schematic.getSchematicPageInfo(activePageUuid), pageInfo)
+  : pageInfo;
 const componentRaw = await attempt(() => eda.sch_PrimitiveComponent.getAll(), []);
 const componentIds = new Set(componentRaw.map(item => item.getState_PrimitiveId()));
 const components = [], ports = [], flags = [], noConnects = [];
@@ -97,7 +114,8 @@ for (const item of componentRaw) {
 }
 const wiresRaw = await attempt(() => eda.sch_PrimitiveWire.getAll(), []);
 const wires = wiresRaw.map(item => ({id: item.getState_PrimitiveId(), net: item.getState_Net() || null,
-  points: pointsOf(item.getState_Line()), line_width: item.getState_LineWidth(), line_type: item.getState_LineType()}))
+  points: pointsOf(item.getState_Line()), segments: segmentsOf(item.getState_Line()),
+  line_width: item.getState_LineWidth(), line_type: item.getState_LineType()}))
   .filter(item => item.net || item.points.length >= 2);
 const attrs = await attempt(() => eda.sch_PrimitiveAttribute.getAll(), []);
 const labels = [];
@@ -111,14 +129,24 @@ for (const item of attrs) {
     x: mil(item.getState_X()), y: mil(item.getState_Y()), rotation: item.getState_Rotation()});
 }
 const nets = await attempt(() => eda.sch_Net.getAllNets(), []);
-const netlist = await attempt(() => eda.sch_Netlist.getNetlist('Protel2'), null);
+let netlist = null, netlist_error = null;
+try {
+  const value = await eda.sch_Netlist.getNetlist('Protel2');
+  if (typeof value === 'string' && value.trim()) netlist = value;
+  else netlist_error = {code: 'NETLIST_UNAVAILABLE', message: 'Native export returned no netlist; inspect strict DRC diagnostics'};
+} catch (error) {
+  netlist_error = {code: 'NETLIST_READ_FAILED', message: String(error)};
+}
 return {source: {project_uuid: projectInfo?.uuid || documentInfo?.parentProjectUuid || null,
   project_name: projectInfo?.name || projectInfo?.friendlyName || null,
   schematic_uuid: schematicInfo?.uuid || null, schematic_name: schematicInfo?.name || null,
   page_uuid: pageInfo?.uuid || documentInfo?.uuid || null, page_name: pageInfo?.name || null,
   document_uuid: documentInfo?.uuid || null, document_type: documentInfo?.documentType || null,
-  tab_id: documentInfo?.tabId || null}, components, wires, labels, ports, flags,
-  no_connects: noConnects, nets, netlist};
+  tab_id: documentInfo?.tabId || null},
+  page_format: {showTitleBlock: Boolean(detailedPageInfo?.showTitleBlock),
+    titleBlockData: detailedPageInfo?.titleBlockData || {}},
+  components, wires, labels, ports, flags,
+  no_connects: noConnects, nets, netlist, netlist_error};
 """
 
 WINDOW_CONTEXT_JS = r"""
@@ -150,6 +178,7 @@ return {
     create_project: typeof eda.dmt_Project?.createProject === 'function',
     create_schematic: typeof eda.dmt_Schematic?.createSchematic === 'function',
     create_page: typeof eda.dmt_Schematic?.createSchematicPage === 'function',
+    page_format: typeof eda.dmt_Schematic?.modifySchematicPageTitleBlock === 'function',
     open_document: typeof eda.dmt_EditorControl?.openDocument === 'function',
     save: typeof eda.sch_Document?.save === 'function',
     component_create: typeof eda.sch_PrimitiveComponent?.create === 'function',
@@ -196,6 +225,15 @@ def capture_window_context(client: BridgeClient, window_id: str) -> dict:
 
 def _material_guard(state: dict) -> dict:
     unit = lambda value: round(to_eda(value), 6)
+    def native_points(points):
+        # Match JavaScript JSON.stringify after conversion to native units.
+        # Mil-space string ordering (6100.0 vs 5850.0) can reverse a path
+        # differently from native-space ordering (610 vs 585).
+        encoded = [[unit(p["x"]), unit(p["y"])] for p in points]
+        encoded = [[int(v) if v == int(v) else v for v in p] for p in encoded]
+        reverse = list(reversed(encoded))
+        compact = lambda value: json.dumps(value, separators=(",", ":"))
+        return reverse if compact(reverse) < compact(encoded) else encoded
     components = [
         {
             "id": item.get("id"), "kind": "part", "designator": item.get("designator"),
@@ -217,7 +255,14 @@ def _material_guard(state: dict) -> dict:
     wires = [
         {
             "id": item.get("id"), "net": item.get("net"),
-            "points": [[unit(p["x"]), unit(p["y"])] for p in item.get("points", [])],
+            "points": native_points(item.get("points", [])),
+            "segments": [
+                native_points(segment)
+                for segment in (
+                    item.get("segments")
+                    or ([item.get("points", [])] if len(item.get("points", [])) >= 2 else [])
+                )
+            ],
         }
         for item in state.get("wires", [])
     ]
@@ -233,6 +278,10 @@ def _material_guard(state: dict) -> dict:
         "wires": sorted(wires, key=lambda item: item["id"] or ""),
         "labels": sorted(labels, key=lambda item: item["id"] or ""),
         "no_connects": sorted(state.get("no_connects", []), key=lambda item: (item.get("designator") or "", item.get("pin") or "")),
+        "page_format": state.get("page_format") or {
+            "show_title_block": False,
+            "title_block_data": {},
+        },
     }
 
 
@@ -247,8 +296,9 @@ def guarded_program(source: dict, body: str, state: dict | None = None) -> str:
     return r"""
 const expectedContext = %s;
 const expectedMaterial = %s;
-const currentDocument = await eda.dmt_SelectControl.getCurrentDocumentInfo();
-const currentProject = await eda.dmt_Project.getCurrentProjectInfo();
+const attemptGuardRead = async (fn, fallback) => { try { return await fn(); } catch (_) { return fallback; } };
+const currentDocument = await attemptGuardRead(() => eda.dmt_SelectControl.getCurrentDocumentInfo(), null);
+const currentProject = await attemptGuardRead(() => eda.dmt_Project.getCurrentProjectInfo(), null);
 const actualContext = {project_uuid: currentProject?.uuid || currentDocument?.parentProjectUuid || null,
   document_uuid: currentDocument?.uuid || null, tab_id: currentDocument?.tabId || null};
 if (JSON.stringify(expectedContext) !== JSON.stringify(actualContext)) {
@@ -285,6 +335,20 @@ if (expectedMaterial) {
     const result = JSON.stringify(reverse) < JSON.stringify(ordered) ? reverse : ordered;
     return result.filter((point, index) => !index || key(point) !== key(result[index - 1]));
   };
+  const segmentList = line => {
+    const flat = line || [];
+    const segments = Array.isArray(flat[0])
+      ? flat
+      : Array.from({length: Math.floor(flat.length / 4)}, (_, i) => flat.slice(i * 4, i * 4 + 4));
+    return segments.map(segment => {
+      const points = [];
+      for (let i = 0; i + 1 < segment.length; i += 2) {
+        points.push([number(segment[i]), number(segment[i + 1])]);
+      }
+      const reverse = [...points].reverse();
+      return JSON.stringify(reverse) < JSON.stringify(points) ? reverse : points;
+    }).filter(points => points.length >= 2);
+  };
   const rawComponents = await eda.sch_PrimitiveComponent.getAll();
   const components = [], noConnects = [];
   for (const item of rawComponents) {
@@ -300,7 +364,8 @@ if (expectedMaterial) {
     }
   }
   const wires = (await eda.sch_PrimitiveWire.getAll()).map(item => ({id: item.getState_PrimitiveId(),
-    net: item.getState_Net() || null, points: pointList(item.getState_Line())}))
+    net: item.getState_Net() || null, points: pointList(item.getState_Line()),
+    segments: segmentList(item.getState_Line())}))
     .filter(item => item.net || item.points.length >= 2);
   const componentIds = new Set(rawComponents.map(item => item.getState_PrimitiveId()));
   const labels = [];
@@ -314,6 +379,20 @@ if (expectedMaterial) {
   const actualMaterial = {components: components.sort((a,b) => a.id.localeCompare(b.id)),
     wires: wires.sort((a,b) => a.id.localeCompare(b.id)), labels: labels.sort((a,b) => a.id.localeCompare(b.id)),
     no_connects: noConnects.sort((a,b) => (a.designator + a.pin).localeCompare(b.designator + b.pin))};
+  let pageInfo = {};
+  try {
+    if (typeof eda.dmt_Schematic?.getSchematicPageInfo === 'function') {
+      pageInfo = await eda.dmt_Schematic.getSchematicPageInfo(currentDocument.uuid) || {};
+    }
+  } catch (_) { pageInfo = {}; }
+  const titleBlockData = {};
+  for (const key of Object.keys(pageInfo?.titleBlockData || {}).sort()) {
+    const item = pageInfo.titleBlockData[key] || {};
+    titleBlockData[key] = {show_title: item.showTitle ?? null,
+      show_value: item.showValue ?? null, value: item.value ?? null};
+  }
+  actualMaterial.page_format = {show_title_block: Boolean(pageInfo?.showTitleBlock),
+    title_block_data: titleBlockData};
   if (JSON.stringify(expectedMaterial) !== JSON.stringify(actualMaterial)) {
     return {__guard_error: 'STALE_SCHEMATIC'};
   }
@@ -322,8 +401,30 @@ if (expectedMaterial) {
 """ % (_js(expected), _js(material), body)
 
 
+# EasyEDA 3.2 returns only severity totals. Its own UI receives the full
+# diagnostic stream on this bus. Scope the subscription to one awaited check;
+# never clear user logs or alter DRC rules. The capability check keeps newer
+# runtimes without this private compatibility hook functional.
+STRICT_DRC_JS = r"""
+const logs = [];
+let subscription = null;
+const bus = globalThis._MSG_BUS_;
+try {
+  if (bus && typeof bus.subscribe === 'function') {
+    subscription = bus.subscribe('bottomBarLog', value => {
+      if (value?.tabType === 'schDrcLog') logs.push(value);
+    });
+  }
+  const result = await eda.sch_Drc.check(true, false, true);
+  return {format: 'easyeda-drc-capture/v1', result, logs};
+} finally {
+  if (subscription && typeof subscription.cancel === 'function') subscription.cancel();
+}
+"""
+
+
 def run_strict_drc(client: BridgeClient, window_id: str) -> dict:
-    return _execute(client, "return await eda.sch_Drc.check(true, false, true);", window_id)
+    return _execute(client, STRICT_DRC_JS, window_id)
 
 
 def _js(value) -> str:
@@ -382,6 +483,158 @@ def save_program() -> str:
     return "return {saved: Boolean(await eda.sch_Document.save())};"
 
 
+NATIVE_PAGE_SIZES = {
+    "A4": {"width": 1170.0, "height": 825.0},
+    "A3": {"width": 1650.0, "height": 1170.0},
+}
+
+STRUCTURAL_TITLE_BLOCK_FIELDS = frozenset({
+    "Symbol",
+    "Device",
+    "Border",
+    "Title Block",
+    "Title Block Position",
+    "Size",
+    "Width",
+    "Height",
+    "Region Start",
+    "X Region Count",
+    "Y Region Count",
+    "Blade Width",
+})
+
+
+def page_format_fields(sheet: dict) -> dict:
+    fields = sheet["title_block"]["fields"]
+    size = sheet["size"]
+    # EasyEDA Pro 3.2.186 treats the drawing selector and frame controls as
+    # structural state, even though it exposes them inside titleBlockData.
+    # Sending Symbol/Border/Title Block back through the beta modifier clears
+    # an already selected drawing and can create a broken drawing primitive.
+    # Select the native sheet template in the editor, then restrict this API
+    # call to fields that the editor actually supports editing in-place.
+    mapping = {
+        "Page Size": {"showTitle": False, "showValue": True, "value": size},
+        "Name": {"showTitle": True, "showValue": True, "value": fields["title"]},
+        "Part Number": {"showTitle": True, "showValue": True, "value": fields["number"]},
+        "Version": {"showTitle": True, "showValue": True, "value": fields["version"]},
+        # System-managed fields accept visibility changes, but EasyEDA ignores
+        # caller-provided values.  Omitting value makes verification check the
+        # visibility contract without rejecting the editor's authoritative
+        # project name, update date, or page counters.
+        "@Project Name": {"showTitle": True, "showValue": True},
+        "@Update Date": {"showTitle": True, "showValue": True},
+        "@Page No": {"showTitle": True, "showValue": True},
+        "@Page Count": {"showTitle": True, "showValue": True},
+    }
+    optional = {
+        "company": "Company",
+        "designer": "Drawed",
+        "reviewer": "Reviewed",
+        "description": "Description",
+    }
+    for source, target in optional.items():
+        if source in fields:
+            mapping[target] = {
+                "showTitle": True,
+                "showValue": True,
+                "value": fields[source],
+            }
+    return mapping
+
+
+def page_format_structure(sheet: dict) -> dict:
+    """Describe native sheet state to verify, never fields to write."""
+    size = sheet["size"]
+    dimensions = NATIVE_PAGE_SIZES[size]
+    return {
+        "page_size": size,
+        "size": size,
+        "symbol": f"Drawing-Symbol_{size}",
+        "width": dimensions["width"],
+        "height": dimensions["height"],
+        "dimension_tolerance": 10.0,
+        "border": "1",
+        "title_block": "1",
+        "title_block_position": "3",
+        "required_nonempty": [
+            "Device",
+            "Region Start",
+            "X Region Count",
+            "Y Region Count",
+            "Blade Width",
+        ],
+    }
+
+
+def page_format_program(sheet: dict) -> str:
+    mapping = page_format_fields(sheet)
+    structure = page_format_structure(sheet)
+    return r"""
+const requested = %s;
+const expectedStructure = %s;
+if (typeof eda.dmt_Schematic?.modifySchematicPageTitleBlock !== 'function') {
+  return [{ok: false, code: 'API_UNAVAILABLE', message: 'native schematic page title-block API is unavailable'}];
+}
+const modified = await eda.dmt_Schematic.modifySchematicPageTitleBlock(true, requested);
+await new Promise(resolve => setTimeout(resolve, 500));
+const documentInfo = await eda.dmt_SelectControl.getCurrentDocumentInfo();
+const pageInfo = await eda.dmt_Schematic.getSchematicPageInfo(documentInfo.uuid);
+const titleBlockData = pageInfo?.titleBlockData;
+const titleBlockAvailable = Boolean(titleBlockData && Object.keys(titleBlockData).length);
+const mismatches = [];
+for (const [key, expected] of Object.entries(requested)) {
+  const actual = titleBlockData?.[key];
+  const valueMatches = actual && (!Object.prototype.hasOwnProperty.call(expected, 'value') ||
+    String(actual.value ?? '') === String(expected.value ?? ''));
+  const titleMatches = actual && Boolean(actual.showTitle) === Boolean(expected.showTitle);
+  const visibilityMatches = actual && Boolean(actual.showValue) === Boolean(expected.showValue);
+  if (!valueMatches || !titleMatches || !visibilityMatches) {
+    mismatches.push({key, expected, actual: actual || null});
+  }
+}
+const structuralMismatches = [];
+const valueOf = key => titleBlockData?.[key]?.value;
+const expectValue = (key, expected) => {
+  const actual = valueOf(key);
+  if (String(actual ?? '') !== String(expected)) {
+    structuralMismatches.push({key, expected, actual: actual ?? null});
+  }
+};
+expectValue('Page Size', expectedStructure.page_size);
+expectValue('Size', expectedStructure.size);
+expectValue('Symbol', expectedStructure.symbol);
+expectValue('Border', expectedStructure.border);
+expectValue('Title Block', expectedStructure.title_block);
+expectValue('Title Block Position', expectedStructure.title_block_position);
+for (const key of expectedStructure.required_nonempty) {
+  const actual = valueOf(key);
+  if (actual === undefined || actual === null || String(actual) === '') {
+    structuralMismatches.push({key, expected: 'non-empty native value', actual: actual ?? null});
+  }
+}
+for (const [key, expected] of [['Width', expectedStructure.width], ['Height', expectedStructure.height]]) {
+  const actual = Number(valueOf(key));
+  if (!Number.isFinite(actual) || Math.abs(actual - Number(expected)) > Number(expectedStructure.dimension_tolerance)) {
+    structuralMismatches.push({key, expected, tolerance: expectedStructure.dimension_tolerance,
+      actual: Number.isFinite(actual) ? actual : valueOf(key) ?? null});
+  }
+}
+const ok = Boolean(modified) && Boolean(pageInfo?.showTitleBlock) && titleBlockAvailable &&
+  !mismatches.length && !structuralMismatches.length;
+let code = null;
+if (!titleBlockAvailable) code = 'PAGE_TITLE_BLOCK_UNAVAILABLE';
+else if (structuralMismatches.length) code = 'PAGE_SIZE_NOT_APPLIED';
+else if (mismatches.length) code = 'PAGE_FORMAT_MISMATCH';
+else if (!ok) code = 'PAGE_FORMAT_WRITE_REJECTED';
+return [{ok,
+  code,
+  modified: Boolean(modified), show_title_block: Boolean(pageInfo?.showTitleBlock),
+  title_block_available: titleBlockAvailable, mismatches, structural_mismatches: structuralMismatches,
+  page_format: titleBlockData || {}}];
+""" % (_js(mapping), _js(structure))
+
+
 def component_create_program(placements: list[dict]) -> str:
     encoded = []
     for item in placements:
@@ -428,12 +681,28 @@ def component_remove_program(ids: list[str]) -> str:
 def wire_create_program(items: list[dict]) -> str:
     encoded = []
     for item in items:
-        encoded.append({**item, "points": [[to_eda(p["x"]), to_eda(p["y"])] for p in item["points"]]})
+        value = dict(item)
+        value.setdefault("native_net", item.get("net"))
+        if item.get("segments") is not None:
+            value["segments"] = [
+                [[to_eda(p["x"]), to_eda(p["y"])] for p in segment]
+                for segment in item["segments"]
+            ]
+        else:
+            value["points"] = [
+                [to_eda(p["x"]), to_eda(p["y"])] for p in item["points"]
+            ]
+        encoded.append(value)
     return r"""
 const items = %s, results = [];
 for (const item of items) { try {
-  const line = item.points.flat();
-  const value = await eda.sch_PrimitiveWire.create(line, item.net);
+  const line = item.segments
+    ? item.segments.map(segment => segment.flat())
+    : item.points.flat();
+  const value = await eda.sch_PrimitiveWire.create(
+    line,
+    item.native_net === null ? undefined : item.native_net,
+  );
   if (!value) throw new Error('wire create returned no object');
   results.push({ok: true, client_id: item.client_id, id: value.getState_PrimitiveId(), net: value.getState_Net()});
 } catch (error) { results.push({ok: false, client_id: item.client_id, message: String(error)}); } }
@@ -471,11 +740,19 @@ def no_connect_program(edits: list[dict]) -> str:
 const edits = %s, components = await eda.sch_PrimitiveComponent.getAll(), results = [];
 for (const edit of edits) {
   const matches = components.filter(item => item.getState_Designator() === edit.designator);
-  if (matches.length !== 1) { results.push({ok: false, designator: edit.designator, message: 'component match count ' + matches.length}); continue; }
-  const pins = await matches[0].getAllPins() || [];
-  for (const selector of edit.pin_selectors) {
-    const pin = pins.find(value => '#' + value.getState_PinNumber() === selector);
-    if (!pin) { results.push({ok: false, designator: edit.designator, pin: selector, message: 'pin not found'}); continue; }
+  if (!matches.length) { results.push({ok: false, designator: edit.designator, message: 'component not found'}); continue; }
+  // Multi-part devices share a designator. Resolve a physical pin across all
+  // units, and reject duplicate pin numbers instead of guessing the unit.
+  const pins = (await Promise.all(matches.map(item => item.getAllPins()))).flat().filter(Boolean);
+  const resolved = edit.pin_selectors.map(selector => ({selector,
+    pins: pins.filter(value => '#' + value.getState_PinNumber() === selector)}));
+  const invalid = resolved.filter(item => item.pins.length !== 1);
+  if (invalid.length) {
+    for (const item of invalid) results.push({ok: false, designator: edit.designator,
+      pin: item.selector, message: 'physical pin match count ' + item.pins.length});
+    continue;
+  }
+  for (const {selector, pins: [pin]} of resolved) {
     if (!pin.getState_NoConnected()) { const pending = pin.toAsync(); pending.setState_NoConnected(true); await pending.done(); }
     results.push({ok: true, designator: edit.designator, pin: selector});
   }

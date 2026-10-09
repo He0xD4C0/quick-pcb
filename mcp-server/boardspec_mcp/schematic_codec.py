@@ -10,6 +10,7 @@ from collections.abc import Iterable
 SCHEMATIC_FORMAT = "schematic/easyeda-v0.1"
 EDA_UNIT_MIL = 10
 MATERIAL_KEYS = (
+    "page_format",
     "components",
     "wires",
     "labels",
@@ -75,7 +76,31 @@ def context_revision(source: dict) -> str:
 
 
 def schematic_revision(state: dict) -> str:
-    return _digest({key: state.get(key, []) for key in MATERIAL_KEYS})
+    return _digest({
+        key: state.get(key, {} if key == "page_format" else [])
+        for key in MATERIAL_KEYS
+    })
+
+
+def normalize_page_format(value: dict | None) -> dict:
+    source = value if isinstance(value, dict) else {}
+    raw_fields = source.get("title_block_data") or source.get("titleBlockData") or {}
+    fields = {}
+    if isinstance(raw_fields, dict):
+        for key in sorted(raw_fields):
+            item = raw_fields[key]
+            if isinstance(item, dict):
+                fields[str(key)] = {
+                    "show_title": item.get("show_title", item.get("showTitle")),
+                    "show_value": item.get("show_value", item.get("showValue")),
+                    "value": item.get("value"),
+                }
+    return {
+        "show_title_block": bool(
+            source.get("show_title_block", source.get("showTitleBlock", False))
+        ),
+        "title_block_data": fields,
+    }
 
 
 def canonical_points(points: list[dict]) -> list[dict]:
@@ -129,12 +154,19 @@ def normalize_state(raw: dict, window_id: str) -> dict:
     source = dict(state.get("source") or {})
     source["window_id"] = window_id
     state["source"] = source
+    state["page_format"] = normalize_page_format(state.get("page_format"))
     for component in state.get("components", []):
         component["pins"] = sorted(
             component.get("pins", []), key=lambda p: natural_key(p.get("number"))
         )
     for wire in state.get("wires", []):
         wire["points"] = canonical_points(wire.get("points") or [])
+        if wire.get("segments") is not None:
+            wire["segments"] = [
+                canonical_points(segment)
+                for segment in wire.get("segments") or []
+                if len(segment) >= 2
+            ]
     state["components"] = sorted(
         state.get("components", []),
         key=lambda row: (natural_key(row.get("designator")), row.get("id") or ""),

@@ -1,6 +1,10 @@
 spec: board-spec/v0.1
 project:
   name: QuickPCB_5V_MOSFET_LED_Demo
+  version: "1.0"
+  drawing:
+    title: 5 V MOSFET LED Demonstrator
+    number: QPCB-001
   description: Fabrication-ready low-current 5 V indicator and logic-input 
     MOSFET demonstrator for Quick PCB acceptance testing.
 libraries: []

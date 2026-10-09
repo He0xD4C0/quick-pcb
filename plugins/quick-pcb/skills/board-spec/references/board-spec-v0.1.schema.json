@@ -71,10 +71,25 @@
         "name": {"type": "string", "minLength": 1},
         "version": {"type": "string"},
         "description": {"type": "string"},
+        "drawing": {"$ref": "#/$defs/drawing"},
         "authors": {
           "type": "array",
           "items": {"type": "string"}
         }
+      }
+    },
+    "drawing": {
+      "type": "object",
+      "required": ["title", "number"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "number": {"type": "string", "minLength": 1},
+        "company": {"type": "string"},
+        "designer": {"type": "string"},
+        "reviewer": {"type": "string"},
+        "description": {"type": "string"},
+        "date": {"type": "string", "format": "date"}
       }
     },
     "library": {

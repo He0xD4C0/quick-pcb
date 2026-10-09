@@ -6,12 +6,25 @@ import hashlib
 import json
 import math
 import os
+from datetime import date
 
 import boardspec
 from boardspec.exporters import parse_protel2_netlist, render_protel2_netlist
 
 from .core_tools import _load_spec
 from .schematic_codec import natural_key, require_grid
+
+
+SHEET_SIZES_MIL = {
+    # EasyEDA's native landscape drawing sheets use rounded 10 mil units.
+    # These conservative planning dimensions are confirmed again from the
+    # live titleBlockData Width/Height fields after every native write.
+    "A4": (11700.0, 8250.0),
+    "A3": (16500.0, 11700.0),
+}
+SHEET_BORDER_MARGIN_MIL = 500.0
+TITLE_BLOCK_WIDTH_MIL = 3600.0
+TITLE_BLOCK_HEIGHT_MIL = 1200.0
 
 
 def _hash(value: object) -> str:
@@ -58,6 +71,141 @@ def _layout_origins(ordered: list[dict], columns: int, options: dict) -> tuple[l
             [require_grid(math.ceil(value / grid) * grid, grid) for value in y_origins])
 
 
+def _drawing_metadata(spec: dict, options: dict) -> tuple[dict | None, dict | None]:
+    if options["drawing_profile"] == "legacy":
+        return None, None
+    project = spec.get("project") if isinstance(spec.get("project"), dict) else {}
+    drawing = project.get("drawing") if isinstance(project.get("drawing"), dict) else {}
+    required = {
+        "/project/name": project.get("name"),
+        "/project/version": project.get("version"),
+        "/project/drawing/title": drawing.get("title"),
+        "/project/drawing/number": drawing.get("number"),
+    }
+    missing = [
+        {
+            "code": "DRAWING_METADATA_REQUIRED",
+            "path": path,
+            "message": f"engineering_basic schematic planning requires {path}",
+            "hint": "Add the field to BoardSpec project metadata or explicitly use drawing_profile=legacy.",
+        }
+        for path, value in required.items()
+        if not str(value or "").strip()
+    ]
+    if missing:
+        return None, _error(
+            "DRAWING_METADATA_REQUIRED",
+            "engineering drawing metadata is incomplete",
+            errors=missing,
+        )
+    return {
+        "project_name": str(project["name"]),
+        "title": str(drawing["title"]),
+        "number": str(drawing["number"]),
+        "version": str(project["version"]),
+        "date": str(drawing.get("date") or date.today().isoformat()),
+        "page_number": 1,
+        "page_count": 1,
+        **{
+            key: str(drawing[key])
+            for key in ("company", "designer", "reviewer", "description")
+            if drawing.get(key) not in (None, "")
+        },
+    }, None
+
+
+def _content_bbox(placements: list[dict], options: dict) -> dict[str, float]:
+    if not placements:
+        return {"left": 1000.0, "top": 1000.0, "right": 1000.0, "bottom": 1000.0}
+    boxes = []
+    for item in placements:
+        geometry = _geometry(options, item["designator"])
+        boxes.append({
+            "left": item["x"] + geometry["min_dx"],
+            "right": item["x"] + geometry["max_dx"],
+            "top": item["y"] + geometry["min_dy"],
+            "bottom": item["y"] + geometry["max_dy"],
+        })
+    return {
+        "left": min(item["left"] for item in boxes),
+        "top": min(item["top"] for item in boxes),
+        "right": max(item["right"] for item in boxes),
+        "bottom": max(item["bottom"] for item in boxes),
+    }
+
+
+def _sheet(spec: dict, placements: list[dict], options: dict) -> tuple[dict | None, dict | None]:
+    fields, error = _drawing_metadata(spec, options)
+    if error or fields is None:
+        return None, error
+    content = _content_bbox(placements, options)
+    requested = options["sheet_size"]
+    candidates = ("A4", "A3") if requested == "auto" else (requested,)
+    for size in candidates:
+        width, height = SHEET_SIZES_MIL[size]
+        usable = {
+            "left": SHEET_BORDER_MARGIN_MIL,
+            "top": SHEET_BORDER_MARGIN_MIL,
+            "right": width - SHEET_BORDER_MARGIN_MIL,
+            "bottom": height - SHEET_BORDER_MARGIN_MIL - TITLE_BLOCK_HEIGHT_MIL,
+        }
+        if (
+            content["left"] >= usable["left"]
+            and content["top"] >= usable["top"]
+            and content["right"] <= usable["right"]
+            and content["bottom"] <= usable["bottom"]
+        ):
+            return {
+                "size": size,
+                "orientation": "landscape",
+                "width_mil": width,
+                "height_mil": height,
+                "border_margin_mil": SHEET_BORDER_MARGIN_MIL,
+                "usable_rect": usable,
+                "title_block_rect": {
+                    "left": width - SHEET_BORDER_MARGIN_MIL - TITLE_BLOCK_WIDTH_MIL,
+                    "top": height - SHEET_BORDER_MARGIN_MIL - TITLE_BLOCK_HEIGHT_MIL,
+                    "right": width - SHEET_BORDER_MARGIN_MIL,
+                    "bottom": height - SHEET_BORDER_MARGIN_MIL,
+                },
+                "content_bbox": content,
+                "title_block": {
+                    "visible": True,
+                    "position": "bottom_right",
+                    "fields": fields,
+                    "editable_fields": [
+                        "title",
+                        "number",
+                        "version",
+                        "page_size",
+                        *[
+                            key
+                            for key in (
+                                "company",
+                                "designer",
+                                "reviewer",
+                                "description",
+                            )
+                            if key in fields
+                        ],
+                    ],
+                    "system_managed_fields": [
+                        "project_name",
+                        "date",
+                        "page_number",
+                        "page_count",
+                    ],
+                },
+            }, None
+    return None, _error(
+        "SHEET_CAPACITY_EXCEEDED",
+        f"planned content does not fit the requested {requested} landscape sheet policy",
+        content_bbox=content,
+        attempted=list(candidates),
+        hint="Use A3, split the schematic into pages, or provide measured geometry and larger spacing deliberately.",
+    )
+
+
 def _resolver(yaml_text: str, base_dir: str | None = None):
     spec = _load_spec(yaml_text)
     if not spec:
@@ -70,12 +218,15 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
     options = {
         "page_policy": "single_page",
         "wiring_policy": "hybrid",
+        "drawing_profile": "engineering_basic",
+        "sheet_size": "auto",
+        "net_annotation_policy": "every_endpoint",
         "grid_mil": 100,
         "column_gap_mil": 1000,
         "row_gap_mil": 600,
         "group_by_module": True,
         "high_fanout_primitive": "auto",
-        "readability_policy": "standard_hybrid",
+        "readability_policy": "engineering_basic",
         "stub_lengths_mil": [200, 300, 400, 500, 600],
         "marker_clearance_mil": 100,
         "cross_region_distance_mil": 2000,
@@ -85,9 +236,14 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
         "base_dir": None,
         **(options or {}),
     }
+    if options["net_annotation_policy"] == "sparse_named":
+        options["wiring_policy"] = "continuous"
     spec = _load_spec(spec_yaml)
     if not spec:
         return _error("PLAN_INVALID", "BoardSpec is not a mapping")
+    _, drawing_error = _drawing_metadata(spec, options)
+    if drawing_error:
+        return drawing_error
     warnings = []
     resolver, resolver_errors = _resolver(spec_yaml, options.get("base_dir"))
     if resolver_errors:
@@ -140,6 +296,9 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
                 "mirror": False,
             }
         )
+    sheet, sheet_error = _sheet(spec, placements, options)
+    if sheet_error:
+        return sheet_error
     instance_by_ref = {}
     for component in components:
         instance = expanded["instances"][component["logical_path"]]
@@ -177,9 +336,101 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
             }
             for ref, pin in nodes
         ]
+        annotation_policy = options["net_annotation_policy"]
+        net_origin = net.get("net_origin", "explicit")
+        marker_kind = None
+        marker_endpoints = []
         cross_region = len({item["region"] for item in endpoint_details}) > 1
-        if net.get("kind") in {"power", "ground"}:
+        if annotation_policy == "sparse_named":
+            strategy = "direct"
+            if len(endpoints) >= 2:
+                wires.append(
+                    {
+                        "net": net["name"],
+                        "branches": [
+                            {
+                                "client_id": f"plan/{net['name']}/wire/{index}",
+                                "start": endpoints[0],
+                                "end": endpoint,
+                                "waypoints": [],
+                                "role": "direct",
+                            }
+                            for index, endpoint in enumerate(endpoints[1:])
+                        ],
+                    }
+                )
+            if net_origin == "explicit" and endpoints:
+                connector_endpoints = [
+                    endpoint
+                    for endpoint in endpoints
+                    if endpoint.split(".", 1)[0].upper().startswith("J")
+                ]
+                marker_endpoints = [connector_endpoints[0] if connector_endpoints else endpoints[0]]
+                marker_kind = (
+                    "flag" if net.get("kind") in {"power", "ground"} else "port"
+                )
+                marker = {
+                    "client_id": f"plan/{net['name']}/{marker_kind}/0",
+                    "net": net["name"],
+                    "at": marker_endpoints[0],
+                    "rotation": 0,
+                    "mirror": False,
+                }
+                if marker_kind == "flag":
+                    marker["identification"] = (
+                        "Ground" if net.get("kind") == "ground" else "Power"
+                    )
+                    flags.append(marker)
+                else:
+                    marker["direction"] = "BI"
+                    ports.append(marker)
+        elif net.get("kind") in {"power", "ground"}:
             strategy = "flag"
+        elif len(endpoints) >= 3 or cross_region:
+            strategy = (
+                "label"
+                if options["net_annotation_policy"] == "legacy_selective"
+                and options["high_fanout_primitive"] == "label"
+                else "port"
+            )
+        elif len(endpoints) == 2:
+            strategy = "direct"
+            wires.append(
+                {"net": net["name"], "branches": [{"client_id": f"plan/{net['name']}/wire/0", "start": endpoints[0], "end": endpoints[1], "waypoints": [], "role": "direct"}]}
+            )
+        elif len(endpoints) == 1:
+            strategy = "port"
+        else:
+            strategy = "port"
+        if annotation_policy == "every_endpoint":
+            if net.get("kind") in {"power", "ground"}:
+                identification = "Ground" if net.get("kind") == "ground" else "Power"
+                flags.extend(
+                    {
+                        "client_id": f"plan/{net['name']}/flag/{index}",
+                        "net": net["name"],
+                        "at": endpoint,
+                        "identification": identification,
+                        "rotation": 0,
+                        "mirror": False,
+                    }
+                    for index, endpoint in enumerate(endpoints)
+                )
+            else:
+                ports.extend(
+                    {
+                        "client_id": f"plan/{net['name']}/port/{index}",
+                        "net": net["name"],
+                        "at": endpoint,
+                        "direction": "BI",
+                        "rotation": 0,
+                        "mirror": False,
+                    }
+                for index, endpoint in enumerate(endpoints)
+            )
+        elif annotation_policy == "sparse_named":
+            pass
+        elif strategy == "flag":
             identification = "Ground" if net.get("kind") == "ground" else "Power"
             flags.extend(
                 {
@@ -192,39 +443,38 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
                 }
                 for index, endpoint in enumerate(endpoints)
             )
-        elif len(endpoints) >= 3 or cross_region:
-            strategy = "port"
-            if options["high_fanout_primitive"] == "label":
-                strategy = "label"
-                labels.extend(
-                    {"client_id": f"plan/{net['name']}/label/{index}", "net": net["name"], "at": endpoint, "rotation": 0, "mirror": False}
-                    for index, endpoint in enumerate(endpoints)
-                )
-            else:
-                ports.extend(
-                    {"client_id": f"plan/{net['name']}/port/{index}", "net": net["name"], "at": endpoint,
-                     "direction": "BI", "rotation": 0, "mirror": False}
-                    for index, endpoint in enumerate(endpoints)
-                )
-        elif len(endpoints) == 2:
-            strategy = "direct"
-            wires.append(
-                {"net": net["name"], "branches": [{"client_id": f"plan/{net['name']}/wire/0", "start": endpoints[0], "end": endpoints[1], "waypoints": [], "role": "direct"}]}
+        elif strategy == "label":
+            labels.extend(
+                {
+                    "client_id": f"plan/{net['name']}/label/{index}",
+                    "net": net["name"],
+                    "at": endpoint,
+                    "rotation": 0,
+                    "mirror": False,
+                }
+                for index, endpoint in enumerate(endpoints)
             )
-        elif len(endpoints) == 1:
-            strategy = "port"
-            marker = {"client_id": f"plan/{net['name']}/label/0", "net": net["name"], "at": endpoints[0], "rotation": 0, "mirror": False}
-            if options["high_fanout_primitive"] != "label":
-                ports.append({**marker, "client_id": f"plan/{net['name']}/port/0", "direction": "BI"})
-            else:
-                labels.append(marker)
-        else:
-            strategy = "port"
+        elif strategy == "port":
+            ports.extend(
+                {
+                    "client_id": f"plan/{net['name']}/port/{index}",
+                    "net": net["name"],
+                    "at": endpoint,
+                    "direction": "BI",
+                    "rotation": 0,
+                    "mirror": False,
+                }
+                for index, endpoint in enumerate(endpoints)
+            )
         connection_intents.append(
             {
                 "net": net["name"],
                 "kind": net.get("kind"),
+                "net_origin": net_origin,
                 "strategy": strategy,
+                "annotation_policy": annotation_policy,
+                "marker_kind": marker_kind,
+                "marker_endpoints": marker_endpoints,
                 "endpoints": endpoint_details,
             }
         )
@@ -232,6 +482,31 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
         "components": sorted(component["ref"] for component in components),
         "nets": {net["name"]: [[ref, pin] for ref, pin in sorted(net["nodes"])] for net in sorted(nets, key=lambda item: item["name"])},
     }
+    topology_endpoints = sum(len(value) for value in topology["nets"].values())
+    planned_marker_pairs = {
+        (item["net"], item["at"])
+        for collection in (labels, ports, flags)
+        for item in collection
+        if isinstance(item.get("at"), str)
+    }
+    required_marker_pairs = {
+        (intent["net"], endpoint)
+        for intent in connection_intents
+        for endpoint in (
+            [item["selector"] for item in intent["endpoints"]]
+            if intent["annotation_policy"] == "every_endpoint"
+            else intent.get("marker_endpoints", [])
+            if intent["annotation_policy"] == "sparse_named"
+            else []
+        )
+    }
+    missing_markers = [
+        {"net": net, "endpoint": endpoint}
+        for net, endpoint in sorted(
+            required_marker_pairs - planned_marker_pairs,
+            key=lambda value: (natural_key(value[0]), natural_key(value[1])),
+        )
+    ]
     plan = {
         "format": "schematic-plan/v0.2",
         "phase": "logical",
@@ -247,7 +522,20 @@ def build_plan(spec_yaml: str, options: dict | None = None) -> dict:
             if instance.get("no_connects")
         ],
         "connection_intents": connection_intents,
-        "visual": None,
+        "visual": {
+            "expected_endpoints": topology_endpoints,
+            "resolved_endpoints": 0,
+            "marker_endpoints": len(planned_marker_pairs),
+            "direct_endpoints": sum(
+                len(intent["endpoints"])
+                for intent in connection_intents
+                if intent["strategy"] == "direct"
+            ),
+            "visible_net_endpoints": len(required_marker_pairs & planned_marker_pairs),
+            "missing_net_markers": missing_markers,
+            "fallbacks": [],
+        },
+        "sheet": sheet,
         "topology": topology,
         "topology_hash": _hash(topology),
     }
@@ -302,17 +590,67 @@ def diff_plan(plan: dict, state: dict) -> dict:
     }
     def point(value):
         return pins.get(value) if isinstance(value, str) else (value.get("x"), value.get("y"))
-    wanted_wires = []
-    for wire in plan.get("wires", []):
-        for branch in wire.get("branches", []):
-            wanted_wires.append((wire.get("net"), frozenset((point(branch.get("start")), point(branch.get("end")))), branch))
-    actual_wires = []
-    for wire in state.get("wires", []):
-        points = wire.get("points") or []
-        if len(points) >= 2:
-            actual_wires.append((wire.get("net"), frozenset(((points[0]["x"], points[0]["y"]), (points[-1]["x"], points[-1]["y"]))), wire))
-    missing_wires = [{"net": net, "branches": [branch]} for net, ends, branch in wanted_wires if not any(net == other_net and ends == other_ends for other_net, other_ends, _ in actual_wires)]
-    extra_wires = [wire for net, ends, wire in actual_wires if not any(net == other_net and ends == other_ends for other_net, other_ends, _ in wanted_wires)]
+    if plan.get("format") == "schematic-plan/v0.2":
+        wanted_by_net = {
+            wire.get("net"): {
+                "net": wire.get("net"),
+                "net_origin": wire.get("net_origin", "explicit"),
+                "branches": list(wire.get("branches", [])),
+            }
+            for wire in plan.get("wires", [])
+            if wire.get("branches")
+        }
+        actual_topology = (
+            parse_protel2_netlist(state["netlist"]).get("nets", {})
+            if state.get("netlist")
+            else {}
+        )
+        expected_topology = plan.get("topology", {}).get("nets", {})
+        used_actual_nets = set()
+        present_nets = set()
+        for net, wanted in wanted_by_net.items():
+            expected_nodes = {
+                tuple(node) for node in expected_topology.get(net, [])
+            }
+            if wanted["net_origin"] == "explicit":
+                if set(actual_topology.get(net, [])) == expected_nodes:
+                    present_nets.add(net)
+                    used_actual_nets.add(net)
+                continue
+            matches = [
+                actual_name
+                for actual_name, actual_nodes in actual_topology.items()
+                if actual_name not in used_actual_nets
+                and set(actual_nodes) == expected_nodes
+            ]
+            if matches:
+                actual_name = sorted(matches, key=natural_key)[0]
+                present_nets.add(net)
+                used_actual_nets.add(actual_name)
+        missing_wires = [
+            wanted_by_net[net]
+            for net in sorted(wanted_by_net, key=natural_key)
+            if net not in present_nets
+        ]
+        extra_wires = [
+            wire
+            for wire in state.get("wires", [])
+            if wire.get("net")
+            and wire.get("net") not in used_actual_nets
+            and wire.get("net") not in wanted_by_net
+        ]
+    else:
+        wanted_wires = []
+        for wire in plan.get("wires", []):
+            for branch in wire.get("branches", []):
+                wanted_wires.append((wire.get("net"), frozenset((point(branch.get("start")), point(branch.get("end")))), branch))
+        actual_wires = []
+        for wire in state.get("wires", []):
+            points = wire.get("points") or []
+            if len(points) >= 2:
+                actual_wires.append((wire.get("net"), frozenset(((points[0]["x"], points[0]["y"]), (points[-1]["x"], points[-1]["y"]))), wire))
+        missing_wires = [{"net": net, "branches": [branch]} for net, ends, branch in wanted_wires if not any(net == other_net and ends == other_ends for other_net, other_ends, _ in actual_wires)]
+        extra_wires = [wire for net, ends, wire in actual_wires if not any(net == other_net and ends == other_ends for other_net, other_ends, _ in wanted_wires)]
 
     marker_diff = {}
     for kind in ("labels", "ports", "flags"):
@@ -327,7 +665,8 @@ def diff_plan(plan: dict, state: dict) -> dict:
                 row for row in actual
                 if row.get("id") not in used
                 and row.get("net") == item.get("net")
-                and (row.get("x"), row.get("y")) == location
+                and abs(row.get("x", float("inf")) - location[0]) <= 1e-6
+                and abs(row.get("y", float("inf")) - location[1]) <= 1e-6
                 and row.get("rotation") == item.get("rotation", 0)
                 and (kind != "ports" or row.get("direction_status") != "readback" or row.get("direction") == item.get("direction"))
                 and (kind != "flags" or row.get("identification_status") != "readback" or row.get("identification") == item.get("identification"))
@@ -374,21 +713,48 @@ def diff_plan(plan: dict, state: dict) -> dict:
     }
 
 
-def compare_topology(expected_text: str, actual_text: str) -> dict:
+def compare_topology(
+    expected_text: str,
+    actual_text: str,
+    generated_nets: set[str] | None = None,
+) -> dict:
     expected = parse_protel2_netlist(expected_text)
     actual = parse_protel2_netlist(actual_text)
+    generated_nets = set(generated_nets or [])
     expected_components, actual_components = set(expected["components"]), set(actual["components"])
     missing_components = sorted(expected_components - actual_components, key=natural_key)
     extra_components = sorted(actual_components - expected_components, key=natural_key)
     missing, extra, changed = {}, {}, []
-    for name in sorted(set(expected["nets"]) | set(actual["nets"]), key=natural_key):
+    generated_net_map = {}
+    used_actual = set()
+    for name in sorted(set(expected["nets"]) - generated_nets, key=natural_key):
         left, right = set(expected["nets"].get(name, [])), set(actual["nets"].get(name, []))
+        if name in actual["nets"]:
+            used_actual.add(name)
         if left - right:
             missing[name] = [list(node) for node in sorted(left - right)]
         if right - left:
             extra[name] = [list(node) for node in sorted(right - left)]
         if left != right:
             changed.append(name)
+    for name in sorted(generated_nets & set(expected["nets"]), key=natural_key):
+        left = set(expected["nets"].get(name, []))
+        matches = [
+            actual_name
+            for actual_name, nodes in actual["nets"].items()
+            if actual_name not in used_actual and set(nodes) == left
+        ]
+        if matches:
+            actual_name = sorted(matches, key=natural_key)[0]
+            used_actual.add(actual_name)
+            generated_net_map[name] = actual_name
+        else:
+            missing[name] = [list(node) for node in sorted(left)]
+            changed.append(name)
+    for name in sorted(set(actual["nets"]) - used_actual, key=natural_key):
+        right = set(actual["nets"].get(name, []))
+        extra[name] = [list(node) for node in sorted(right)]
+        changed.append(name)
     return {
         "ok": not (missing_components or extra_components or missing or extra),
         "missing_components": missing_components,
@@ -396,6 +762,7 @@ def compare_topology(expected_text: str, actual_text: str) -> dict:
         "missing": missing,
         "extra": extra,
         "changed": changed,
+        "generated_net_map": generated_net_map,
         "counts": {
             "expected_components": len(expected_components),
             "actual_components": len(actual_components),
@@ -418,3 +785,30 @@ def expected_netlist(spec_yaml: str, base_dir: str | None = None) -> tuple[str |
     if errors:
         return None, _error("PLAN_INVALID", "BoardSpec validation failed", errors=errors, warnings=warnings)
     return render_protel2_netlist(expanded, resolver), None
+
+
+def expected_generated_nets(
+    spec_yaml: str, base_dir: str | None = None
+) -> tuple[set[str] | None, dict | None]:
+    spec = _load_spec(spec_yaml)
+    if not spec:
+        return None, _error("PLAN_INVALID", "BoardSpec is not a mapping")
+    resolver, resolver_errors = _resolver(spec_yaml, base_dir)
+    if resolver_errors:
+        return None, _error(
+            "PLAN_INVALID", "part library resolution failed", errors=resolver_errors
+        )
+    expanded, errors, warnings = boardspec.analyze(spec, resolver)
+    if errors:
+        return None, _error(
+            "PLAN_INVALID",
+            "BoardSpec validation failed",
+            errors=errors,
+            warnings=warnings,
+        )
+    _, nets = boardspec.build_flat(expanded, resolver)
+    return {
+        net["name"]
+        for net in nets
+        if net.get("net_origin", "explicit") == "generated"
+    }, None

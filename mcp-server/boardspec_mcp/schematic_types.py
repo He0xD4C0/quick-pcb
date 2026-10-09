@@ -34,13 +34,20 @@ class MeasuredGeometry(StrictModel):
 
 class PlanOptions(StrictModel):
     page_policy: Literal["single_page"] = "single_page"
-    wiring_policy: Literal["hybrid"] = "hybrid"
+    wiring_policy: Literal["hybrid", "continuous"] = "hybrid"
+    drawing_profile: Literal["engineering_basic", "legacy"] = "engineering_basic"
+    sheet_size: Literal["auto", "A4", "A3"] = "auto"
+    net_annotation_policy: Literal[
+        "every_endpoint", "legacy_selective", "sparse_named"
+    ] = "every_endpoint"
     grid_mil: int = Field(default=100, ge=10)
     column_gap_mil: int = Field(default=1000, ge=100)
     row_gap_mil: int = Field(default=600, ge=100)
     group_by_module: bool = True
     high_fanout_primitive: Literal["auto", "label", "port"] = "auto"
-    readability_policy: Literal["standard_hybrid"] = "standard_hybrid"
+    readability_policy: Literal["engineering_basic", "standard_hybrid"] = (
+        "engineering_basic"
+    )
     stub_lengths_mil: list[int] = Field(
         default_factory=lambda: [200, 300, 400, 500, 600]
     )
@@ -168,7 +175,13 @@ class SchematicConnectionEndpoint(StrictModel):
 class SchematicConnectionIntent(StrictModel):
     net: str
     kind: str | None = None
+    net_origin: Literal["explicit", "generated"] = "explicit"
     strategy: Literal["direct", "label", "port", "flag"]
+    annotation_policy: Literal[
+        "every_endpoint", "legacy_selective", "sparse_named"
+    ] = "legacy_selective"
+    marker_kind: Literal["none", "label", "port", "flag"] | None = None
+    marker_endpoints: list[str] = Field(default_factory=list)
     endpoints: list[SchematicConnectionEndpoint]
 
 
@@ -177,7 +190,36 @@ class SchematicVisualSummary(StrictModel):
     resolved_endpoints: int
     marker_endpoints: int
     direct_endpoints: int
+    visible_net_endpoints: int = 0
+    missing_net_markers: list[dict[str, str]] = Field(default_factory=list)
     fallbacks: list[dict] = Field(default_factory=list)
+
+
+class SchematicRect(StrictModel):
+    left: float
+    top: float
+    right: float
+    bottom: float
+
+
+class SchematicTitleBlock(StrictModel):
+    visible: bool = True
+    position: Literal["bottom_right"] = "bottom_right"
+    fields: dict[str, str | int]
+    editable_fields: list[str] = Field(default_factory=list)
+    system_managed_fields: list[str] = Field(default_factory=list)
+
+
+class SchematicSheet(StrictModel):
+    size: Literal["A4", "A3"]
+    orientation: Literal["landscape"] = "landscape"
+    width_mil: float
+    height_mil: float
+    border_margin_mil: float
+    usable_rect: SchematicRect
+    title_block_rect: SchematicRect
+    content_bbox: SchematicRect
+    title_block: SchematicTitleBlock
 
 
 class NetMarkerSpec(StrictModel):
@@ -241,6 +283,7 @@ class SchematicPlan(StrictModel):
     no_connects: list[NoConnectEdit]
     connection_intents: list[SchematicConnectionIntent] = Field(default_factory=list)
     visual: SchematicVisualSummary | None = None
+    sheet: SchematicSheet | None = None
     topology: SchematicTopology
     topology_hash: str
     plan_hash: str

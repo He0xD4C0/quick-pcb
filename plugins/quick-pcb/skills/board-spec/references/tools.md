@@ -57,13 +57,13 @@ The KiCad exporter emits a legacy Eeschema S-expression netlist exchange file, n
 
 Hosts may expose equivalent functions instead of the CLI. Preserve these request/response shapes.
 
-### `search_part(query, library?, limit?)`
+### `search_parts(query, page=1, page_size=10)`
 
-Return a list of candidate objects with `part_id`, `description`, logical `pins`, `power_pins`, `footprint`, `source`, and `complete`. Do not hide incomplete or unverified provenance.
+Return a compact table of real EasyEDA system-library candidates. The calling model must first state the electrical, rating, polarity, package, and pin constraints it is comparing. Do not hide incomplete or unverified provenance, and do not treat search rank as an engineering suitability score.
 
-### `get_part(part_id)`
+### `get_part(part_uuid, library_uuid="")`
 
-Return the same metadata plus detailed pins containing `number`, `name`, and electrical `type`, and an embeddable physical definition that preserves source UUIDs and raw pin types. Return `UNKNOWN_PART` rather than inventing a match.
+Fetch every shortlisted candidate before creating physical definitions or instances. Return detailed pins containing `number`, `name`, and electrical `type`, plus symbol/footprint identity and an embeddable physical definition that preserves source UUIDs and raw pin types. Return `UNKNOWN_PART` rather than inventing a match. Recommend a self-built symbol only after recording that no reliable candidate satisfied the constraints.
 
 ### `get_project_component(designator)`
 
@@ -91,9 +91,27 @@ Recursively flatten `definitions.kind: module`. Hierarchical instances use `PARE
 
 The expanded result includes `reference_map`, a deterministic logical-path to physical-reference mapping. Module leaf parts require `reference_prefix`; top-level physical instance keys must already be legal EDA references.
 
+For `board-spec/v0.2`, a top-level `{connect: [...]}` entry is normalized to an ordinary flat network with `net_origin: generated` and a stable `N_AUTO_<12位哈希>` name computed from the sorted expanded endpoints. Named networks carry `net_origin: explicit`. Anonymous generated names are exporter/internal identities and cannot be constraint or module-port targets.
+
 ### `export(spec_yaml, target)`
 
 The repository core supports `kicad_netlist`, `protel2_netlist`, `bom_csv`, and `mermaid`. The small scripts bundled directly in this Skill expose only `kicad_netlist` and `bom_csv`; never report an unimplemented target as exported.
+
+## Complete engineering-schematic workflow
+
+Do not jump directly from a prose circuit request to `plan_schematic`. Use this order:
+
+1. Extract explicit electrical and package constraints for each physical part.
+2. Call `search_parts` for each part class and compare real candidates.
+3. Call `get_part` for every shortlisted candidate; confirm pin numbers, polarity, symbol, footprint/package, and provenance.
+4. Build and validate BoardSpec. Engineering planning requires `project.name`, `project.version`, `project.drawing.title`, and `project.drawing.number`; optional title-block facts are written only when supplied.
+5. Call `get_eda_windows` and `get_schematic_context`, then `plan_schematic` with `engineering_basic` and `sheet_size=auto`. Use `net_annotation_policy=every_endpoint` when every endpoint needs an explicit named marker; use `sparse_named` for continuous-wire analog drawings where only explicit nets get one marker and anonymous nets get none.
+6. Place components, reread revisions, and call `resolve_schematic_plan` against live pin coordinates and component bounding boxes.
+7. Apply `set_schematic_page_format` from `plan.sheet`, then diff and apply the resolved wires, Net Ports, named power/ground Flags, and No Connects in revision-checked batches. The page-format write patches only the current page's existing native `titleBlockData`; it never searches for or places a drawing symbol.
+8. Reread and require `verify_schematic_topology`, `verify_schematic_readability`, `verify_schematic_engineering_drawing`, and strict schematic DRC to pass. Under `every_endpoint`, every endpoint requires a same-name marker. Under `sparse_named`, every selected named network requires its one planned marker while anonymous networks are proved by continuous wires and topology readback.
+9. Call `diff_schematic_plan` again and require no planned marker additions/replacements/deletions. Save only when the user explicitly requests it.
+
+`set_schematic_page_format` uses EasyEDA's native page title-block API. It writes `Name`, `Part Number`, `Version`, optional user-supplied fields, and `Page Size`; EDA-managed `@Project Name`, `@Update Date`, `@Page No`, and `@Page Count` receive visibility settings but no caller-provided values. Structural fields such as `Symbol`, `Device`, `Border`, `Width`, and `Height` are readback-only. If native A4/A3 structure does not follow the requested page size, return `PAGE_SIZE_NOT_APPLIED`. If the API or native title block is unavailable, stop; do not draw a fake frame from generic graphics or use plain text as NET labels. A write timeout or HTTP 5xx is `WRITE_STATUS_UNKNOWN`, so reread before any retry.
 
 ### `load_netlist(netlist_text, netlist_type="PROTEL2", document_kind="pcb")`
 

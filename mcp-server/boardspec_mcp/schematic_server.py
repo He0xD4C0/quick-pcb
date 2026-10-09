@@ -27,6 +27,7 @@ from .schematic_types import (
     PlanOptions,
     SchematicPlan,
     SchematicRegion,
+    SchematicSheet,
     SchematicWireAction,
     SchematicWireCreate,
     dump_model,
@@ -126,7 +127,11 @@ def register_schematic_tools(mcp, client) -> None:
 
     @register(READ_ONLY, raise_tool_error=False)
     def plan_schematic(spec_yaml: str, options: PlanOptions | None = None) -> dict:
-        """Validate and expand BoardSpec, then build a deterministic logical plan."""
+        """Build a logical plan after parts were verified with search_parts/get_part.
+
+        The default engineering mode requires project/drawing metadata, chooses
+        the smallest fitting A4/A3 landscape sheet, and names every endpoint.
+        """
         return schematic_tools.plan_schematic(spec_yaml, dump_model(options))
 
     @register(READ_ONLY)
@@ -146,8 +151,23 @@ def register_schematic_tools(mcp, client) -> None:
 
     @register(READ_ONLY)
     def verify_schematic_readability(plan: SchematicPlan, window_id: str | None = None) -> dict:
-        """Verify visible endpoint coverage and schematic marker collisions."""
+        """Verify every planned endpoint has a visible, correctly named NET marker."""
         return schematic_tools.verify_schematic_readability(client, dump_model(plan), window_id)
+
+    @register(READ_ONLY)
+    def verify_schematic_engineering_drawing(plan: SchematicPlan, window_id: str | None = None) -> dict:
+        """Verify native page format, title block, drawing bounds, spacing and NET visibility."""
+        return schematic_tools.verify_schematic_engineering_drawing(client, dump_model(plan), window_id)
+
+    @register(WRITE_SET)
+    def set_schematic_page_format(window_id: str, expected_context_revision: str, expected_revision: str, sheet: SchematicSheet) -> dict:
+        """Patch the page's native titleBlockData and verify fields plus A4/A3 structure.
+
+        This never places a drawing symbol or builds a frame from graphic
+        primitives. EasyEDA-managed @ fields are shown and read back without
+        attempting to overwrite their values.
+        """
+        return schematic_tools.set_schematic_page_format(client, window_id, expected_context_revision, expected_revision, dump_model(sheet))
 
     @register(WRITE_ADD)
     def place_schematic_components(window_id: str, expected_context_revision: str, expected_revision: str, placements: list[ComponentPlacement]) -> dict:
