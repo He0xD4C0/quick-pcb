@@ -1,0 +1,1422 @@
+[
+  {
+    "id": "eff8b6a428db2ab8",
+    "ref": "J1",
+    "key": "jack_trs",
+    "part": "PJ-301C.1",
+    "x": 170,
+    "y": 310,
+    "angle": 0,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "05776d6db585daf1",
+    "ref": "SW1",
+    "key": "gain_dpdt",
+    "part": "EG2208.1",
+    "x": 650,
+    "y": 360,
+    "angle": 0,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "74da75ffa8eea5fe",
+    "ref": "RAL",
+    "key": "r_8k2_025w",
+    "part": "1206W4F8201T5E.1",
+    "x": 400,
+    "y": 260,
+    "angle": 0,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "3e3069f5575ecc86",
+    "ref": "RBL",
+    "key": "r_1k_025w",
+    "part": "1206W4F1001T5E_C52199.1",
+    "x": 510,
+    "y": 350,
+    "angle": 90,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "652f634341a120d5",
+    "ref": "RAR",
+    "key": "r_8k2_025w",
+    "part": "1206W4F8201T5E.1",
+    "x": 400,
+    "y": 510,
+    "angle": 0,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "7d285696d82f6a7a",
+    "ref": "RBR",
+    "key": "r_1k_025w",
+    "part": "1206W4F1001T5E_C52199.1",
+    "x": 510,
+    "y": 600,
+    "angle": 90,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "bc06c650aa7506e4",
+    "ref": "RV1",
+    "key": "pot_dual10k_log",
+    "part": "RK09712200HA.1",
+    "x": 870,
+    "y": 360,
+    "angle": 0,
+    "section": "01 INPUT / GAIN / VOLUME"
+  },
+  {
+    "id": "437b0886d89d9937",
+    "ref": "VL",
+    "key": "tube_6h30pi_eb",
+    "part": "A",
+    "x": 1840,
+    "y": 420,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "db3ed46a89dad23a",
+    "ref": "VL",
+    "key": "tube_6h30pi_eb",
+    "part": "B",
+    "x": 1840,
+    "y": 700,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "78170a0cacc383f1",
+    "ref": "VL",
+    "key": "tube_6h30pi_eb",
+    "part": "H",
+    "x": 1840,
+    "y": 915,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "c374ee7718d16692",
+    "ref": "CIL",
+    "key": "c_signal_4u7film",
+    "part": "ECW-FD2W475J.1",
+    "x": 1360,
+    "y": 420,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "9ad534f89ceb3378",
+    "ref": "RGTL",
+    "key": "r_100_025w",
+    "part": "1206W4F1000T5E.1",
+    "x": 1620,
+    "y": 420,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "1cf6d425c323709f",
+    "ref": "RBUL",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 1290,
+    "y": 230,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "755d8c1da6c0051b",
+    "ref": "RBDL",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 1290,
+    "y": 330,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "6ab55c8d8e8887e9",
+    "ref": "CBL",
+    "key": "c_hv_220u400",
+    "part": "LLS2G221MELA.1",
+    "x": 1450,
+    "y": 285,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "615541ab2afa0126",
+    "ref": "RGBL",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 1580,
+    "y": 285,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "e56834e1e9e6bf65",
+    "ref": "RSL",
+    "key": "r_127_1w",
+    "part": "25121WF1270T4E.1",
+    "x": 1840,
+    "y": 230,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "04e5dd8596322e68",
+    "ref": "CFL",
+    "key": "c_signal_4u7film",
+    "part": "ECW-FD2W475J.1",
+    "x": 1580,
+    "y": 600,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "ce1be9037c5f6206",
+    "ref": "RGLL",
+    "key": "r_100_025w",
+    "part": "1206W4F1000T5E.1",
+    "x": 1670,
+    "y": 700,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "f79b93491de626db",
+    "ref": "RLGL",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 1500,
+    "y": 760,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "cb81a819017fb04f",
+    "ref": "RKL",
+    "key": "r_68_1w",
+    "part": "25121WF680JT4E.1",
+    "x": 1840,
+    "y": 810,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "cda4353393604b7f",
+    "ref": "CKL",
+    "key": "c_cathode_2200u25",
+    "part": "EEUFR1E222L.1",
+    "x": 1970,
+    "y": 810,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "f8cb7faaf3fc1194",
+    "ref": "COL",
+    "key": "c_output_1000u250",
+    "part": "LLS2E102MELB.1",
+    "x": 2075,
+    "y": 420,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "3b7d4bd3bc8d9a13",
+    "ref": "RDL",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 2010,
+    "y": 585,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "9e539493cbd12e90",
+    "ref": "RO1L",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 2200,
+    "y": 590,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "e86ca3d4c1682f64",
+    "ref": "RO2L",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 2300,
+    "y": 590,
+    "angle": 90,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "1a3b6d64120bdff3",
+    "ref": "KL",
+    "key": "relay_hv",
+    "part": "A",
+    "x": 2280,
+    "y": 420,
+    "angle": 0,
+    "section": "02 L WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "80b95515c11c5c6b",
+    "ref": "VR",
+    "key": "tube_6h30pi_eb",
+    "part": "A",
+    "x": 3240,
+    "y": 420,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "be9f73f2dcc4b03d",
+    "ref": "VR",
+    "key": "tube_6h30pi_eb",
+    "part": "B",
+    "x": 3240,
+    "y": 700,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "9c8027b8f344fe7e",
+    "ref": "VR",
+    "key": "tube_6h30pi_eb",
+    "part": "H",
+    "x": 3240,
+    "y": 915,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "5b8287f139dc0b13",
+    "ref": "CIR",
+    "key": "c_signal_4u7film",
+    "part": "ECW-FD2W475J.1",
+    "x": 2760,
+    "y": 420,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "e6dd2b902bd2bd0d",
+    "ref": "RGTR",
+    "key": "r_100_025w",
+    "part": "1206W4F1000T5E.1",
+    "x": 3020,
+    "y": 420,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "041f45017748799e",
+    "ref": "RBUR",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 2690,
+    "y": 230,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "1561a0ca6dec62a2",
+    "ref": "RBDR",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 2690,
+    "y": 330,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "ad8b487db5243df5",
+    "ref": "CBR",
+    "key": "c_hv_220u400",
+    "part": "LLS2G221MELA.1",
+    "x": 2850,
+    "y": 285,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "215c56b2c29a28f7",
+    "ref": "RGBR",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 2980,
+    "y": 285,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "189d0bb983948bd8",
+    "ref": "RSR",
+    "key": "r_127_1w",
+    "part": "25121WF1270T4E.1",
+    "x": 3240,
+    "y": 230,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "9086cc6110bb189b",
+    "ref": "CFR",
+    "key": "c_signal_4u7film",
+    "part": "ECW-FD2W475J.1",
+    "x": 2980,
+    "y": 600,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "bb0a40e626b6b39c",
+    "ref": "RGLR",
+    "key": "r_100_025w",
+    "part": "1206W4F1000T5E.1",
+    "x": 3070,
+    "y": 700,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "66c75ff4b45725f6",
+    "ref": "RLGR",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 2900,
+    "y": 760,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "3b8e8f0249f0b3c8",
+    "ref": "RKR",
+    "key": "r_68_1w",
+    "part": "25121WF680JT4E.1",
+    "x": 3240,
+    "y": 810,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "de03c897192b27a2",
+    "ref": "CKR",
+    "key": "c_cathode_2200u25",
+    "part": "EEUFR1E222L.1",
+    "x": 3370,
+    "y": 810,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "77e919bb165a834a",
+    "ref": "COR",
+    "key": "c_output_1000u250",
+    "part": "LLS2E102MELB.1",
+    "x": 3475,
+    "y": 420,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "8f4bf816d164fb57",
+    "ref": "RDR",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 3410,
+    "y": 585,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "a7628c1d94c2ad90",
+    "ref": "RO1R",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 3600,
+    "y": 590,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "4da4f8c150153002",
+    "ref": "RO2R",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 3700,
+    "y": 590,
+    "angle": 90,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "b8a7a914082f53cb",
+    "ref": "KR",
+    "key": "relay_hv",
+    "part": "A",
+    "x": 3680,
+    "y": 420,
+    "angle": 0,
+    "section": "02 R WHITE CATHODE FOLLOWER"
+  },
+  {
+    "id": "5e1fd148b8ed5319",
+    "ref": "J2",
+    "key": "jack_trs",
+    "part": "PJ-301C.1",
+    "x": 4200,
+    "y": 430,
+    "angle": 0,
+    "section": "03 HEADPHONE OUTPUT"
+  },
+  {
+    "id": "ca535a92f835f38e",
+    "ref": "J3",
+    "key": "mains_inlet",
+    "part": "A",
+    "x": 150,
+    "y": 1350,
+    "angle": 0,
+    "section": "04 MAINS / ISOLATION"
+  },
+  {
+    "id": "78c2d52ea1dd8a3a",
+    "ref": "F1",
+    "key": "fuse_mains_1a",
+    "part": "0215001.MXEP.1",
+    "x": 360,
+    "y": 1280,
+    "angle": 0,
+    "section": "04 MAINS / ISOLATION"
+  },
+  {
+    "id": "ab58a376365aa874",
+    "ref": "SW2",
+    "key": "mains_switch",
+    "part": "A",
+    "x": 570,
+    "y": 1340,
+    "angle": 0,
+    "section": "04 MAINS / ISOLATION"
+  },
+  {
+    "id": "7d3114660f59d6d4",
+    "ref": "T1",
+    "key": "transformer_contract",
+    "part": "A",
+    "x": 850,
+    "y": 1400,
+    "angle": 0,
+    "section": "04 MAINS / ISOLATION"
+  },
+  {
+    "id": "73d75ecd52958018",
+    "ref": "LK1",
+    "key": "terminal_2",
+    "part": "KF301-5.0-2P.1",
+    "x": 410,
+    "y": 1490,
+    "angle": 0,
+    "section": "04 MAINS / ISOLATION"
+  },
+  {
+    "id": "ba1f6d5a68b6ad6a",
+    "ref": "F2",
+    "key": "fuse_hv_500ma",
+    "part": "0215.500MXP.1",
+    "x": 1240,
+    "y": 1240,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "07df8994606aca1a",
+    "ref": "DH1",
+    "key": "d_hv_uf4007",
+    "part": "UF4007_C212802.1",
+    "x": 1420,
+    "y": 1220,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "68b0ad092c3c91c6",
+    "ref": "DH2",
+    "key": "d_hv_uf4007",
+    "part": "UF4007_C212802.1",
+    "x": 1420,
+    "y": 1390,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "217db54f47cf2157",
+    "ref": "DH3",
+    "key": "d_hv_uf4007",
+    "part": "UF4007_C212802.1",
+    "x": 1420,
+    "y": 1300,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "62b94bc1ef2fa773",
+    "ref": "DH4",
+    "key": "d_hv_uf4007",
+    "part": "UF4007_C212802.1",
+    "x": 1420,
+    "y": 1470,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "483eb42d22df8a40",
+    "ref": "CHV1",
+    "key": "c_hv_220u400",
+    "part": "LLS2G221MELA.1",
+    "x": 1590,
+    "y": 1280,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "73a100fa79d3f7cc",
+    "ref": "RCRC",
+    "key": "r_22_1w",
+    "part": "25121WF220JT4E.1",
+    "x": 1710,
+    "y": 1170,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "4e1906726fbe72a9",
+    "ref": "CHV2",
+    "key": "c_hv_220u400",
+    "part": "LLS2G221MELA.1",
+    "x": 1810,
+    "y": 1280,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "acbcce604033973b",
+    "ref": "RDISHV_RAWA",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 1610,
+    "y": 1450,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "a779d4ab6b248f1c",
+    "ref": "RDISHV_RAWB",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 1610,
+    "y": 1550,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "1fbf0747cf539433",
+    "ref": "RDISHV_INA",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 1810,
+    "y": 1450,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "3c648d162d97bac7",
+    "ref": "RDISHV_INB",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 1810,
+    "y": 1550,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "87c5eb7e7b560ef8",
+    "ref": "QHV",
+    "key": "hv_nmos",
+    "part": "IXTH30N50L2.1",
+    "x": 2110,
+    "y": 1230,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "f11c06ffcfc577db",
+    "ref": "RIL1",
+    "key": "r_10_1w",
+    "part": "25121WF100JT4E.1",
+    "x": 2240,
+    "y": 1270,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "c6f4c6a7146d25de",
+    "ref": "RIL2",
+    "key": "r_10_1w",
+    "part": "25121WF100JT4E.1",
+    "x": 2240,
+    "y": 1360,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "11d9fb0c3e842643",
+    "ref": "QIL",
+    "key": "hv_npn",
+    "part": "MPSA42_C719821.1",
+    "x": 2220,
+    "y": 1510,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "62f5879db0d7f0df",
+    "ref": "DZGS",
+    "key": "z_gate_12v",
+    "part": "1N4742A_C140853.1",
+    "x": 1980,
+    "y": 1370,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "6a3c1f8eb562c40b",
+    "ref": "RGF1",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 1930,
+    "y": 1110,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "702a34a02ed3ca74",
+    "ref": "RGF2",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 2040,
+    "y": 1110,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "4fa9725c932c4b41",
+    "ref": "RGF3",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 2150,
+    "y": 1110,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "9993ea767c589a0b",
+    "ref": "RGF4",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 2260,
+    "y": 1110,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "ace00882835ffb52",
+    "ref": "QERR",
+    "key": "hv_npn",
+    "part": "MPSA42_C719821.1",
+    "x": 2130,
+    "y": 1700,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "5a3ff71e52cc1635",
+    "ref": "RFB1",
+    "key": "r_221k_025w",
+    "part": "1206W4F2213T5E.1",
+    "x": 2240,
+    "y": 1620,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "e8d8acc6b3fb56ff",
+    "ref": "RFB2",
+    "key": "r_10k_025w",
+    "part": "1206W4F1002T5E.1",
+    "x": 2240,
+    "y": 1790,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "a7cd6ee6409d68dd",
+    "ref": "RZF1",
+    "key": "r_22k_025w",
+    "part": "1206W4F2202T5E.1",
+    "x": 1240,
+    "y": 1810,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "7b1d2ac1f82f159e",
+    "ref": "RZF2",
+    "key": "r_22k_025w",
+    "part": "1206W4F2202T5E.1",
+    "x": 1350,
+    "y": 1810,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "459b5460ff01d414",
+    "ref": "RZF3",
+    "key": "r_22k_025w",
+    "part": "1206W4F2202T5E.1",
+    "x": 1460,
+    "y": 1810,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "0a3d2108c96358a8",
+    "ref": "RZF4",
+    "key": "r_22k_025w",
+    "part": "1206W4F2202T5E.1",
+    "x": 1570,
+    "y": 1810,
+    "angle": 0,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "042d228a959eeddf",
+    "ref": "DZREF",
+    "key": "z_ref_6v2",
+    "part": "BZX79-B6V2,113.1",
+    "x": 1810,
+    "y": 1700,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "126abc500ccb7dc5",
+    "ref": "CZREF",
+    "key": "c_control_470u25",
+    "part": "EEUFR1E471.1",
+    "x": 1920,
+    "y": 1700,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "2703dc819ba62499",
+    "ref": "CGATE",
+    "key": "c_signal_4u7film",
+    "part": "ECW-FD2W475J.1",
+    "x": 1980,
+    "y": 1500,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "963e69e44260d798",
+    "ref": "CBP",
+    "key": "c_hv_220u400",
+    "part": "LLS2G221MELA.1",
+    "x": 2380,
+    "y": 1510,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "778ba66cae5efc06",
+    "ref": "RBP",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 2380,
+    "y": 1730,
+    "angle": 90,
+    "section": "05 HV RECTIFIER / DISCRETE REGULATOR"
+  },
+  {
+    "id": "cb483cb5ec986ef4",
+    "ref": "F3",
+    "key": "fuse_heater_5a",
+    "part": "0215005.MXEP.1",
+    "x": 2710,
+    "y": 1220,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "617b77c14cf65a59",
+    "ref": "DF1",
+    "key": "d_heater_sb560",
+    "part": "SB560-E3/54.1",
+    "x": 2880,
+    "y": 1190,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "4d06d87b2d7c2fd0",
+    "ref": "DF2",
+    "key": "d_heater_sb560",
+    "part": "SB560-E3/54.1",
+    "x": 2880,
+    "y": 1360,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "3d71326c1dad5294",
+    "ref": "DF3",
+    "key": "d_heater_sb560",
+    "part": "SB560-E3/54.1",
+    "x": 2880,
+    "y": 1270,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "6c42525fbb4caf51",
+    "ref": "DF4",
+    "key": "d_heater_sb560",
+    "part": "SB560-E3/54.1",
+    "x": 2880,
+    "y": 1440,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "ef27269000b0a343",
+    "ref": "CHF1",
+    "key": "c_heater_3300u25",
+    "part": "EEUFR1E332.1",
+    "x": 3070,
+    "y": 1300,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "12dc7f4631bc3c68",
+    "ref": "CHF2",
+    "key": "c_heater_3300u25",
+    "part": "EEUFR1E332.1",
+    "x": 3190,
+    "y": 1300,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "4745dadc5a1eb002",
+    "ref": "CHF3",
+    "key": "c_heater_3300u25",
+    "part": "EEUFR1E332.1",
+    "x": 3310,
+    "y": 1300,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "13326ff2ae1d3789",
+    "ref": "CHF4",
+    "key": "c_heater_3300u25",
+    "part": "EEUFR1E332.1",
+    "x": 3430,
+    "y": 1300,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "6de0b6d6ef9ae3fe",
+    "ref": "UH",
+    "key": "heater_ldo",
+    "part": "LM1084IT-ADJ/NOPB.1",
+    "x": 3640,
+    "y": 1210,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "91564d15b0ac8ffd",
+    "ref": "RH1",
+    "key": "r_121_025w",
+    "part": "1206W4F1210T5E.1",
+    "x": 3790,
+    "y": 1300,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "8ca1bca75d4dabec",
+    "ref": "RH2",
+    "key": "r_487_025w",
+    "part": "1206W4F4870T5E.1",
+    "x": 3790,
+    "y": 1420,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "82045b9b7ace235b",
+    "ref": "CHO",
+    "key": "c_control_470u25",
+    "part": "EEUFR1E471.1",
+    "x": 3950,
+    "y": 1300,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "0baf1dd1b63dbd3c",
+    "ref": "CHA",
+    "key": "c_delay_100u25",
+    "part": "EEUFR1E101.1",
+    "x": 3660,
+    "y": 1420,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "b91b230f0c8dd6ca",
+    "ref": "DHR",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3520,
+    "y": 1100,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "924183758f92c5af",
+    "ref": "DHA",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3780,
+    "y": 1110,
+    "angle": 0,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "87a76656e2223eab",
+    "ref": "RHEU",
+    "key": "r_200k_1w",
+    "part": "25121WF2003T4E.1",
+    "x": 3170,
+    "y": 1630,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "0c89c10e0121550b",
+    "ref": "RHED",
+    "key": "r_100k_1w",
+    "part": "25121WF1003T4E.1",
+    "x": 3170,
+    "y": 1760,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "75ee6f92e224c036",
+    "ref": "CHE",
+    "key": "c_hv_220u400",
+    "part": "LLS2G221MELA.1",
+    "x": 3380,
+    "y": 1700,
+    "angle": 90,
+    "section": "06 DC HEATERS / ELEVATION"
+  },
+  {
+    "id": "d47f08f5c80f5e99",
+    "ref": "DA1",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 180,
+    "y": 2210,
+    "angle": 0,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "e905cba6cd37bf7f",
+    "ref": "DA2",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 180,
+    "y": 2380,
+    "angle": 0,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "52b32fd99995226e",
+    "ref": "DA3",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 180,
+    "y": 2290,
+    "angle": 0,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "4de5a6148bdfd915",
+    "ref": "DA4",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 180,
+    "y": 2460,
+    "angle": 0,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "293e641bb64567ee",
+    "ref": "CAUX",
+    "key": "c_heater_3300u25",
+    "part": "EEUFR1E332.1",
+    "x": 380,
+    "y": 2340,
+    "angle": 90,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "6aaef2c99059cedc",
+    "ref": "RAUX",
+    "key": "r_470_025w",
+    "part": "1206W4F4700T5E.1",
+    "x": 600,
+    "y": 2180,
+    "angle": 0,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "9d8534c863b6e605",
+    "ref": "DZAX",
+    "key": "z_aux_13v",
+    "part": "BZX79-B13,113.1",
+    "x": 650,
+    "y": 2350,
+    "angle": 90,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "cd87147313d08fc3",
+    "ref": "CAXZ",
+    "key": "c_control_470u25",
+    "part": "EEUFR1E471.1",
+    "x": 810,
+    "y": 2350,
+    "angle": 90,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "8d604ec3602e2f61",
+    "ref": "QAUX",
+    "key": "aux_npn_bd139",
+    "part": "BD13910S.1",
+    "x": 970,
+    "y": 2220,
+    "angle": 0,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "aedad5fbf4b63a6a",
+    "ref": "CAXO",
+    "key": "c_control_470u25",
+    "part": "EEUFR1E471.1",
+    "x": 1120,
+    "y": 2350,
+    "angle": 90,
+    "section": "07 AUXILIARY DC"
+  },
+  {
+    "id": "a3e2d9cdf2977f35",
+    "ref": "RT",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 1540,
+    "y": 2180,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "c006d76064d71d5a",
+    "ref": "CT",
+    "key": "c_control_470u25",
+    "part": "EEUFR1E471.1",
+    "x": 1650,
+    "y": 2350,
+    "angle": 90,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "d2ccee4f4e11eccd",
+    "ref": "DZT",
+    "key": "z_timer_5v1",
+    "part": "1N4733A_C140851.1",
+    "x": 1730,
+    "y": 2180,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "05c5a9d57326e90e",
+    "ref": "RZBASE",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 1840,
+    "y": 2180,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "500054e40ffdbed1",
+    "ref": "QD1",
+    "key": "hv_npn",
+    "part": "MPSA42_C719821.1",
+    "x": 1960,
+    "y": 2190,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "e2e2c2ec74558956",
+    "ref": "QD2",
+    "key": "hv_npn",
+    "part": "MPSA42_C719821.1",
+    "x": 2110,
+    "y": 2310,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "00fd04fe14a1eb59",
+    "ref": "QD3",
+    "key": "aux_npn_bd139",
+    "part": "BD13910S.1",
+    "x": 2260,
+    "y": 2430,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "eb4b8a4395829d94",
+    "ref": "RDB",
+    "key": "r_100k_025w",
+    "part": "1206W4F1003T5E.1",
+    "x": 1830,
+    "y": 2390,
+    "angle": 90,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "caa80c185a57e7b2",
+    "ref": "RDE",
+    "key": "r_10k_025w",
+    "part": "1206W4F1002T5E.1",
+    "x": 2110,
+    "y": 2490,
+    "angle": 90,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "bee5a90d2406443f",
+    "ref": "DFLY",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 2320,
+    "y": 2190,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "c3682d757b68ca54",
+    "ref": "DZFLY",
+    "key": "z_flyback_24v",
+    "part": "1N4749ATR.1",
+    "x": 2470,
+    "y": 2190,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "e6bbb006bbdb3b68",
+    "ref": "DRESET",
+    "key": "d_small_1n4148",
+    "part": "1N4148TA.1",
+    "x": 1520,
+    "y": 2310,
+    "angle": 0,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "1defb98629ab66be",
+    "ref": "ROFF",
+    "key": "r_1k_025w",
+    "part": "1206W4F1001T5E_C52199.1",
+    "x": 1450,
+    "y": 2480,
+    "angle": 90,
+    "section": "08 DELAY / RELAY DRIVE / POWER LOSS"
+  },
+  {
+    "id": "55d47bb8cb81ca26",
+    "ref": "RSEN1L",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 2830,
+    "y": 2150,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "ce4b6f7e611f21e2",
+    "ref": "RSEN2L",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 2960,
+    "y": 2150,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "ac11c01bd3ed6e4b",
+    "ref": "DSL1",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3030,
+    "y": 2250,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "40df6eab3ad624ad",
+    "ref": "DSL2",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3030,
+    "y": 2400,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "e3c0ac17f55280ce",
+    "ref": "DSL3",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3030,
+    "y": 2320,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "abdafcf9e80f4405",
+    "ref": "DSL4",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3030,
+    "y": 2470,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "092e2f8590990207",
+    "ref": "UOL",
+    "key": "fault_opto",
+    "part": "LTV-817S-TA1-C.1",
+    "x": 3310,
+    "y": 2330,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "a1296c2bc7011787",
+    "ref": "RSEN1R",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 3630,
+    "y": 2150,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "4db10690e3c9df21",
+    "ref": "RSEN2R",
+    "key": "r_47k_025w",
+    "part": "1206W4F4702T5E.1",
+    "x": 3760,
+    "y": 2150,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "e9f6d9486abce4fc",
+    "ref": "DSR1",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3830,
+    "y": 2250,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "1307e3b4d265093b",
+    "ref": "DSR2",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3830,
+    "y": 2400,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "8e66779a9daaeea3",
+    "ref": "DSR3",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3830,
+    "y": 2320,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "6a311cba279398ee",
+    "ref": "DSR4",
+    "key": "d_aux_1n4007",
+    "part": "1N4007RLG.1",
+    "x": 3830,
+    "y": 2470,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  },
+  {
+    "id": "9d5ef26cb342ad59",
+    "ref": "UOR",
+    "key": "fault_opto",
+    "part": "LTV-817S-TA1-C.1",
+    "x": 4110,
+    "y": 2330,
+    "angle": 0,
+    "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY"
+  }
+]

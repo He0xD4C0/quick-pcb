@@ -1,0 +1,574 @@
+To learn more about onsemi™, please visit our website at 
+www.onsemi.com
+ON Semiconductor
+Is Now
+onsemi and       and other names, marks, and brands are registered and/or common law trademarks of Semiconductor Components Industries, LLC dba “onsemi” or its affiliates and/or 
+subsidiaries in the United States and/or other countries. onsemi owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of onsemi 
+product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent-Marking.pdf. onsemi reserves the right to make changes at any time to any products or information herein, without 
+notice. The information herein is provided “as-is” and onsemi makes no warranty, representation or guarantee regarding the accuracy of the information, product features, availability, functionality, 
+or suitability of its products for any particular purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all 
+liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using onsemi products, including compliance with all laws, 
+regulations and safety requirements or standards, regardless of any support or applications information provided by onsemi. “Typical” parameters which may be provided in onsemi data sheets and/
+or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application 
+by customer’s technical experts. onsemi does not convey any license under any of its intellectual property rights nor the rights of others. onsemi products are not designed, intended, or authorized 
+for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for 
+implantation in the human body. Should Buyer purchase or use onsemi products for any such unintended or unauthorized application, Buyer shall indemnify and hold onsemi and its officers, employees, 
+subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death 
+associated with such unintended or unauthorized use, even if such claim alleges that onsemi was negligent regarding the design or manufacture of the part. onsemi is an Equal Opportunity/Affirmative 
+Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner. Other names and brands may be claimed as the property of others. 
+
+© Semiconductor Components Industries, LLC, 2013
+February, 2013 − Rev. 8
+1
+Publication Order Number:
+MPSA42/D
+MPSA42, MPSA43
+High Voltage Transistors
+NPN Silicon
+Features
+• These are Pb−Free Devices*
+MAXIMUM RATINGS
+Rating
+Symbol
+Value
+Unit
+Collector−Emitter Voltage
+MPSA43
+MPSA42
+VCEO
+200
+300
+Vdc
+Collector−Base Voltage
+MPSA43
+MPSA42
+VCBO
+200
+300
+Vdc
+Emitter−Base Voltage
+VEBO
+6.0
+Vdc
+Collector Current − Continuous
+IC
+500
+mAdc
+Total Device Dissipation
+@ TA = 25°C
+Derate above 25°C
+PD
+625
+5.0
+mW
+mW/°C
+Total Device Dissipation
+@ TC = 25°C
+Derate above 25°C
+PD
+1.5
+12
+W
+mW/°C
+Operating and Storage Junction
+Temperature Range
+TJ, Tstg
+−55 to
++150
+°C
+THERMAL CHARACTERISTICS
+Characteristic
+Symbol
+Max
+Unit
+Thermal Resistance,
+Junction−to−Ambient
+RJA
+200
+°C/W
+Thermal Resistance,
+Junction−to−Case
+RJC
+83.3
+°C/W
+Stresses exceeding Maximum Ratings may damage the device. Maximum
+Ratings are stress ratings only. Functional operation above the Recommended
+Operating Conditions is not implied. Extended exposure to stresses above the
+Recommended Operating Conditions may affect device reliability.
+*For additional information on our Pb−Free strategy and soldering details, please
+download the ON Semiconductor Soldering and Mounting Techniques
+Reference Manual, SOLDERRM/D.
+http://onsemi.com
+x
+=
+2 or 3
+A
+= Assembly Location
+Y
+=
+Year
+WW
+=
+Work Week
+
+= Pb−Free Package
+(Note: Microdot may be in either location)
+See detailed ordering and shipping information in the package
+dimensions section on page 3 of this data sheet.
+ORDERING INFORMATION
+COLLECTOR
+3
+2
+BASE
+1
+EMITTER
+MARKING DIAGRAM
+MPS
+A4x
+AYWW
+
+TO−92
+(TO−226AA)
+CASE 29−11
+1 23
+1 2
+BENT LEAD
+STRAIGHT LEAD
+3
+
+MPSA42, MPSA43
+http://onsemi.com
+2
+ELECTRICAL CHARACTERISTICS (TA = 25°C unless otherwise noted)
+Characteristic
+Symbol
+Min
+Max
+Unit
+OFF CHARACTERISTICS
+Collector−Emitter Breakdown Voltage (Note 1)
+(IC = 1.0 mAdc, IB = 0)
+MPSA42
+MPSA43
+V(BR)CEO
+300
+200
+−
+−
+Vdc
+Collector−Base Breakdown Voltage
+(IC = 100 Adc, IE = 0)
+MPSA42
+MPSA43
+V(BR)CBO
+300
+200
+−
+−
+Vdc
+Emitter−Base Breakdown Voltage
+(IE = 100 Adc, IC = 0)
+V(BR)EBO
+6.0
+−
+Vdc
+Collector Cutoff Current
+(VCB = 200 Vdc, IE = 0)
+MPSA42
+(VCB = 160 Vdc, IE = 0)
+MPSA43
+ICBO
+−
+−
+0.1
+0.1
+Adc
+Emitter Cutoff Current
+(VEB = 6.0 Vdc, IC = 0)
+MPSA42
+(VEB = 4.0 Vdc, IC = 0)
+MPSA43
+IEBO
+−
+−
+0.1
+0.1
+Adc
+ON CHARACTERISTICS (Note 1)
+DC Current Gain
+(IC = 1.0 mAdc, VCE = 10 Vdc)
+(IC = 10 mAdc, VCE = 10 Vdc)
+(IC = 30 mAdc, VCE = 10 Vdc)
+hFE
+25
+40
+40
+−
+−
+−
+−
+Collector−Emitter Saturation Voltage
+(IC = 20 mAdc, IB = 2.0 mAdc)
+MPSA42
+MPSA43
+VCE(sat)
+−
+−
+0.5
+0.4
+Vdc
+Base−Emitter Saturation Voltage
+(IC = 20 mAdc, IB = 2.0 mAdc)
+VBE(sat)
+−
+0.9
+Vdc
+SMALL−SIGNAL CHARACTERISTICS
+Current−Gain − Bandwidth Product
+(IC = 10 mAdc, VCE = 20 Vdc, f = 100 MHz)
+fT
+50
+−
+MHz
+Collector−Base Capacitance
+(VCB = 20 Vdc, IE = 0, f = 1.0 MHz)
+MPSA42
+MPSA43
+Ccb
+−
+−
+3.0
+4.0
+pF
+1. Pulse Test: Pulse Width  300 s, Duty Cycle  2%.
+
+MPSA42, MPSA43
+http://onsemi.com
+3
+ORDERING INFORMATION
+Device
+Package
+Shipping†
+MPSA42G
+TO−92
+(Pb−Free)
+5000 Units / Box
+MPSA42RL1G
+TO−92
+(Pb−Free)
+2000 / Tape & Reel
+MPSA42RLRAG
+TO−92
+(Pb−Free)
+2000 / Tape & Reel
+MPSA42RLRMG
+TO−92
+(Pb−Free)
+2000 / Ammo Pack
+MPSA42RLRPG
+TO−92
+(Pb−Free)
+2000 / Ammo Pack
+MPSA42ZL1G
+TO−92
+(Pb−Free)
+2000 / Ammo Pack
+†For information on tape and reel specifications, including part orientation and tape sizes, please refer to our Tape and Reel Packaging
+Specifications Brochure, BRD8011/D.
+
+MPSA42, MPSA43
+http://onsemi.com
+4
+C, CAPACITANCE (pF)
+Figure 1. DC Current Gain
+VR, REVERSE VOLTAGE (VOLTS)
+0.1
+100
+0.1
+10
+1.0
+10
+1000
+Ceb @ 1MHz
+Figure 2. Capacitance
+IC, COLLECTOR CURRENT (mA)
+V, VOLTAGE (VOLTS)
+1.4
+0.0
+1.2
+1.0
+0.8
+0.6
+0.4
+0.2
+100
+10
+0.1
+1.0
+100
+1.0
+Ccb @ 1MHz
+VBE(on) @ 25°C, VCE = 10 V
+VCE(sat) @ 25°C, IC/IB = 10
+VBE(sat) @ 25°C, IC/IB = 10
+VCE(sat) @ 125°C, IC/IB = 10
+VCE(sat) @ -55°C, IC/IB = 10
+VBE(sat) @ 125°C, IC/IB = 10
+VBE(sat) @ -55°C, IC/IB = 10
+VBE(on) @ 125°C, VCE = 10 V
+VBE(on) @ -55°C, VCE = 10 V
+Figure 3. “ON” Voltages
+IC, COLLECTOR CURRENT (mA)
+120
+0.1
+1.0
+10
+100
+80
+60
+0
+hFE, DC CURRENT GAIN
+TJ = +125°C
+25°C
+-55°C
+VCE = 10 Vdc
+100
+20
+40
+
+MPSA42, MPSA43
+http://onsemi.com
+5
+1
+10
+100
+0.1
+1
+10
+100
+Figure 4. Current−Gain−Bandwidth Product
+fT, CURRENT−GAIN−BANDWIDTH
+PRODCUT (MHz)
+IC, COLLECTOR CURRENT (mA)
+VCE = 2 V
+TA = 25°C
+1
+10
+100
+1000
+0.01
+0.1
+1
+IC, COLLECTOR CURRENT (A)
+Figure 5. Safe Operating Area
+VCE, COLLECTOR EMITTER VOLTAGE (V)
+10 ms
+1.0 s
+
+MPSA42, MPSA43
+http://onsemi.com
+6
+PACKAGE DIMENSIONS
+TO−92 (TO−226)
+CASE 29−11
+ISSUE AN
+STYLE 1:
+PIN 1.
+EMITTER
+2.
+BASE
+3.
+COLLECTOR
+NOTES:
+1. DIMENSIONING AND TOLERANCING PER ANSI
+Y14.5M, 1982.
+2. CONTROLLING DIMENSION: INCH.
+3. CONTOUR OF PACKAGE BEYOND DIMENSION R
+IS UNCONTROLLED.
+4. LEAD DIMENSION IS UNCONTROLLED IN P AND
+BEYOND DIMENSION K MINIMUM.
+R
+A
+P
+J
+L
+B
+K
+G
+H
+SECTION X−X
+C
+V
+D
+N
+N
+X X
+SEATING
+PLANE
+DIM
+MIN
+MAX
+MIN
+MAX
+MILLIMETERS
+INCHES
+A
+0.175
+0.205
+4.45
+5.20
+B
+0.170
+0.210
+4.32
+5.33
+C
+0.125
+0.165
+3.18
+4.19
+D
+0.016
+0.021
+0.407
+0.533
+G
+0.045
+0.055
+1.15
+1.39
+H
+0.095
+0.105
+2.42
+2.66
+J
+0.015
+0.020
+0.39
+0.50
+K
+0.500
+---
+12.70
+---
+L
+0.250
+---
+6.35
+---
+N
+0.080
+0.105
+2.04
+2.66
+P
+---
+0.100
+---
+2.54
+R
+0.115
+---
+2.93
+---
+V
+0.135
+---
+3.43
+---
+1
+NOTES:
+1. DIMENSIONING AND TOLERANCING PER
+ASME Y14.5M, 1994.
+2. CONTROLLING DIMENSION: MILLIMETERS.
+3. CONTOUR OF PACKAGE BEYOND
+DIMENSION R IS UNCONTROLLED.
+4. LEAD DIMENSION IS UNCONTROLLED IN P
+AND BEYOND DIMENSION K MINIMUM.
+R
+A
+P
+J
+B
+K
+G
+SECTION X−X
+C
+V
+D
+N
+X X
+SEATING
+PLANE
+DIM
+MIN
+MAX
+MILLIMETERS
+A
+4.45
+5.20
+B
+4.32
+5.33
+C
+3.18
+4.19
+D
+0.40
+0.54
+G
+2.40
+2.80
+J
+0.39
+0.50
+K
+12.70
+---
+N
+2.04
+2.66
+P
+1.50
+4.00
+R
+2.93
+---
+V
+3.43
+---
+1
+T
+STRAIGHT LEAD
+BENT LEAD
+ON Semiconductor and          are registered trademarks of Semiconductor Components Industries, LLC (SCILLC).  SCILLC owns the rights to a number of patents, trademarks,
+copyrights, trade secrets, and other intellectual property. A listing of SCILLC’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf.  SCILLC
+reserves the right to make changes without further notice to any products herein.  SCILLC makes no warranty, representation or guarantee regarding the suitability of its products for any
+particular purpose, nor does SCILLC assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without
+limitation special, consequential or incidental damages.  “Typical” parameters which may be provided in SCILLC data sheets and/or specifications can and do vary in different applications
+and actual performance may vary over time.  All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts.  SCILLC
+does not convey any license under its patent rights nor the rights of others.  SCILLC products are not designed, intended, or authorized for use as components in systems intended for
+surgical implant into the body, or other applications intended to support or sustain life, or for any other application in which the failure of the SCILLC product could create a situation where
+personal injury or death may occur.  Should Buyer purchase or use SCILLC products for any such unintended or unauthorized application, Buyer shall indemnify and hold SCILLC and
+its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly,
+any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that SCILLC was negligent regarding the design or manufacture
+of the part.  SCILLC is an Equal Opportunity/Affirmative Action Employer.  This literature is subject to all applicable copyright laws and is not for resale in any manner.
+PUBLICATION ORDERING INFORMATION
+N. American Technical Support: 800−282−9855 Toll Free
+USA/Canada
+Europe, Middle East and Africa Technical Support:
+Phone: 421 33 790 2910
+Japan Customer Focus Center
+Phone: 81−3−5817−1050
+MPSA42/D
+LITERATURE FULFILLMENT:
+Literature Distribution Center for ON Semiconductor
+P.O. Box 5163, Denver, Colorado 80217 USA
+Phone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada
+Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada
+Email: orderlit@onsemi.com
+ON Semiconductor Website: www.onsemi.com
+Order Literature: http://www.onsemi.com/orderlit
+For additional information, please contact your local
+Sales Representative

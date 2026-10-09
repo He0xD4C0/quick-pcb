@@ -1,0 +1,166 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+8 х 36 = 288
+°
+°
+36°
+Ø1 +0.03
+- 0.07
+Ø12
+-2
+Ø(22.5  ) mm
+72.5 mm max
+Electrode -to - lead connection diagram
+Pin arrangement
+6Н30Pi -EB/6Н30П -ЕВ
+Dimensions
+Lead
+designation
+Name of electrode
+1
+2
+3
+4, 5
+6
+7
+8
+Second triode plate
+Second triode grid
+Second triode cathode
+Heater
+First triode plate
+First triode grid
+First triode cathode
+9
+Screen
+ Vacuum tube 6Н30Pi -EB/6Н30П -ЕВ  is a miniature twin triode with equipotentia
+cathodes, designed  to amplify low  freguency voltage in radio engineering devices.
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+Parameters, conditions and units
+Nominal
+min
+max
+Heater current,mA
+Grid reverse current,      , ( at: filament voltage 6.3 V,
+Plate current, mA,
+First and second  triodes plate current difference, %
+Plate current at the beginning of the characteristic,
+Slope of characteristic, mA/V
+Amplification factor
+Cathode - heater insulation resistance, M
+725
+900
+1.5
+30
+50
+ ± 20
+30
+13
+12
+6
+µA
+µA
+Ω
+resistance in grid circuit 0.15 M   )Ω
+ ( at: filament voltage 6.3 V,
+ ( at: filament voltage 6.3 V,
+plate voltage 80 V, grid voltage minus 12 V)
+ ( at: filament voltage 6.3 V,
+ ( at: filament voltage 6.3 V,
+ (at: filament voltage 6.3 V, cathode -heater voltage ± 150 V)
+ ( at: filament voltage 6.3 V,
+Electrical parameters
+Nominal
+min
+max
+Parameters, units
+  Filament voltage, V
+6
+6.6
+Plate voltage, V
+250
+Cathode - heater voltage, V
+± 400
+Cathode current of each triode (average), mA
+100
+Power dissipation at the plate of each triode, W
+4.0
+Grid circuit resistance for each of the triodes, k
+300
+Ω
+self - bias
+Limiting Values
+23
+18
+plate voltage 80 V, cathode circuit resistance 56    )
+Ω
+plate voltage 80 V, cathode circuit resistance 56    )
+Ω
+plate voltage 80 V, cathode circuit resistance 56    )
+Ω
+plate voltage 80 V, cathode circuit resistance 56    )
+Ω
+plate voltage 80 V, cathode circuit resistance 56    )
+Ω
+6Н30Pi -EB/6Н30П -ЕВ
+
+20
+40
+80
+120
+Eg= -2V
+Eg= -4V
+Eg= -6V
+Eg= -8V
+Eg= -10V
+Eg= -12V
+0
+-4
+-2
+-6
+-8
+-10
+-12
+0
+-14
+20
+40
+60
+80
+100
+120
+Ep=120V
+Ep=160V
+PLATE VOLTAGE IN VOLTS
+GRID VOLTAGE IN VOLTS
+Eg= 0V
+20
+40
+60
+80
+100
+120
+60
+100
+PlATE CURRENT IN MILLIAMPERES
+Ep=80V
+Ep=60V
+140 160 180
+Eg= -14V
+6Н30Pi -EB/6Н30П -ЕВ

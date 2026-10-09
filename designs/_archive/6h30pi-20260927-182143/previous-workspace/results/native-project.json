@@ -1,0 +1,100 @@
+{
+  "itemType": "Project",
+  "uuid": "f0fe15a3f91f88693b9415d290ddb6637fdf1a60470cc25084679b2f98b4e0c6",
+  "friendlyName": "QuickPCB_6H30Pi_OTL_IEM_v01_reviewed",
+  "name": "QuickPCB_6H30Pi_OTL_IEM_v01_reviewed",
+  "teamUuid": "/Users/he0xd4c0/Documents/LCEDA-Pro/projects",
+  "description": "",
+  "data": [
+    {
+      "itemType": "Schematic",
+      "uuid": "27047c189b37c00e",
+      "name": "6H30Pi_OTL_candidate_v01",
+      "page": [
+        {
+          "itemType": "Schematic Page",
+          "uuid": "09c893f7c9fff022",
+          "name": "01_Input_and_controls",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "5420584edad8e398",
+          "name": "02_WCF_L",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "af3c04c1748e4f3d",
+          "name": "03_WCF_R",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "97a38f23db670e3b",
+          "name": "04_Mains_and_rectifier",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "7a36a96032012d6f",
+          "name": "05_HV_regulator",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "3c3d799d4f8ba7b7",
+          "name": "06_Heater_and_aux",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "a6e8726565142cab",
+          "name": "06b_Auxiliary_supply",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "07eaffaf9d1a5cff",
+          "name": "07_Delay_and_relay_driver",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "a1a6fa4f50ad5ff6",
+          "name": "08_DC_monitor_L",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        },
+        {
+          "itemType": "Schematic Page",
+          "uuid": "4a1d197192b89b6f",
+          "name": "09_DC_monitor_R",
+          "parentSchematicUuid": "27047c189b37c00e",
+          "showTitleBlock": true,
+          "titleBlockData": {}
+        }
+      ],
+      "parentProjectUuid": "f0fe15a3f91f88693b9415d290ddb6637fdf1a60470cc25084679b2f98b4e0c6",
+      "parentBoardName": ""
+    }
+  ],
+  "window_id": "ed093755-ffca-4e6f-937c-b9fba34e86ae"
+}

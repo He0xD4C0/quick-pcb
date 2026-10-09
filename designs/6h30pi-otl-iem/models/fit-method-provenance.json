@@ -1,0 +1,6 @@
+{
+  "method_source_archive": "designs/_archive/6h30pi-20260927-182143/previous-workspace/scripts/fit_tube.py",
+  "sha256": "4a5920ac4f1106501ea1baa083309438d3b3e3c60196613b35fc3993ae7359c8",
+  "reuse_scope": "PDF vector curve extraction and mathematical fit only; no previous circuit topology reused",
+  "source_pdf_sha256": "cbc0d812df41e114221da3664eeed3359c4143153f969b9fe43bdadeb5f56e92"
+}

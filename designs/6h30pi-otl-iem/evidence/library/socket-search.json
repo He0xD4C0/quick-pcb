@@ -1,0 +1,611 @@
+{
+  "captured_at": "2026-09-27T18:55:11.696731+08:00",
+  "window_id": "69fb62cd-2bdb-4a4f-b6cc-2bc96cb91053",
+  "rows": [
+    {
+      "query": "VT9-ST",
+      "items": []
+    },
+    {
+      "query": "管座",
+      "items": [
+        {
+          "uuid": "b41368b853004aeaa8ac8205dd418cf7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3"
+          },
+          "ordinal": 0,
+          "name": "保险管座夹子5*20MM-加厚",
+          "symbolName": "保险管座夹子5*20MM-加厚",
+          "symbolUuid": "fcd953750b754b159961f33d386b6552",
+          "footprintName": "FUSE-TH_L7.9-W6.6-P6.9",
+          "footprintUuid": "e4481fc10a3f45d29da5d6614ba67a54",
+          "model3DName": "FUSE-TH_L7.9-W6.6-P6.9",
+          "model3DUuid": "109269261f6a4743b29262425a7c8289",
+          "description": "",
+          "manufacturer": "",
+          "manufacturerId": "保险管座夹子5*20MM-加厚",
+          "supplier": "LCSC",
+          "supplierId": "C9900001272",
+          "otherProperty": {
+            "LCSC Part Name": "保险管座夹子5*20MM-加厚",
+            "Supplier Part": "C9900001272",
+            "Manufacturer": "",
+            "Manufacturer Part": "保险管座夹子5*20MM-加厚",
+            "Supplier Footprint": "TH-2P",
+            "JLCPCB Part Class": "Extended Part",
+            "Datasheet": "",
+            "Supplier": "LCSC",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "fcd953750b754b159961f33d386b6552",
+            "Designator": "F?",
+            "Footprint": "e4481fc10a3f45d29da5d6614ba67a54",
+            "3D Model": "109269261f6a4743b29262425a7c8289",
+            "3D Model Title": "FUSE-TH_L7.9-W6.6-P6.9",
+            "3D Model Transform": "279.527,309.598,0,0,0,0,0,0,-118.11",
+            "Name": "={Manufacturer Part}"
+          }
+        },
+        {
+          "uuid": "fd7c9a3dad3a409486378f153caa2b1d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3"
+          },
+          "ordinal": 1,
+          "name": "保险管座(插件),AC250V/10A,脚距23mm,配φ5",
+          "symbolName": "保险管座(插件),AC250V/10A,脚距23MM,配φ5",
+          "symbolUuid": "96d71217a2e048e6abce2d175e8ab973",
+          "footprintName": "FUSE-TH_L28.8-W10.0_C9900019320",
+          "footprintUuid": "a7e4c154afeb427aa9d8570a2fe1e188",
+          "description": "",
+          "manufacturer": "",
+          "manufacturerId": "保险管座(插件),AC250V/10A,脚距23mm,配φ5",
+          "supplier": "LCSC",
+          "supplierId": "C9900019320",
+          "otherProperty": {
+            "LCSC Part Name": "保险管座(插件),AC250V/10A,脚距23mm,配φ5",
+            "Supplier Part": "C9900019320",
+            "Manufacturer": "",
+            "Manufacturer Part": "保险管座(插件),AC250V/10A,脚距23mm,配φ5",
+            "Supplier Footprint": "FUSE-TH",
+            "JLCPCB Part Class": "Extended Part",
+            "Datasheet": "",
+            "Supplier": "LCSC",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "96d71217a2e048e6abce2d175e8ab973",
+            "Designator": "F?",
+            "Footprint": "a7e4c154afeb427aa9d8570a2fe1e188",
+            "Name": "={Manufacturer Part}"
+          }
+        },
+        {
+          "uuid": "1ff6577b6e5a49259c40f4eb73ea37b3",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 2,
+          "name": "1N4148(Sim)",
+          "symbolName": "1N4148(Sim)",
+          "symbolUuid": "57f6f545790b47d48856ace57918ef58",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N4148",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "57f6f545790b47d48856ace57918ef58",
+            "Footprint": "",
+            "NGSpice Model": "204999de0cf146bea3abf4712e5bc6bc",
+            "NGSpice Model Title": "1N4148",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "ef8c9cd268894f1cb71f555bb0d70a0f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 3,
+          "name": "二极管_Diode",
+          "symbolName": "二极管_Diode",
+          "symbolUuid": "278d924e15a64731a8551d4877f0645d",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "278d924e15a64731a8551d4877f0645d",
+            "Footprint": "",
+            "Sim Model": "34948ba3d9c04b9fb73efd1819104368",
+            "Sim Model Title": "Diode",
+            "Unique ID": "",
+            "Description": "",
+            "Sim Model Path": "0819f05c4eef4c71ace90d822a990e87",
+            "NGSpice Model": "204999de0cf146bea3abf4712e5bc6bc",
+            "NGSpice Model Title": "1N4148",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "8ba45be7416f4dab85c4c75a58233f5c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 4,
+          "name": "1N3695(Sim)",
+          "symbolName": "1N3695(Sim)",
+          "symbolUuid": "426254c307884429b6c30aa3aa5e97a0",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N3695",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "426254c307884429b6c30aa3aa5e97a0",
+            "Footprint": "",
+            "NGSpice Model": "04e5e0674be04ec184d1f9297ccfe611",
+            "NGSpice Model Title": "1N3659",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "6eb23072e81c4a59bedd1a1c970b2550",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 5,
+          "name": "1N3064(Sim)",
+          "symbolName": "1N3064(Sim)",
+          "symbolUuid": "ee637a91fdc54deebf3a8ba73bee0779",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N3064",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "ee637a91fdc54deebf3a8ba73bee0779",
+            "Footprint": "",
+            "NGSpice Model": "690627518f2c403d8a21b635f4a4355d",
+            "NGSpice Model Title": "1N3064",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "59a2e073a39f4e6c9bbf08170d6422be",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 6,
+          "name": "1N4001(Sim)",
+          "symbolName": "1N4001(Sim)",
+          "symbolUuid": "889be949e03b48b69e2ad03e98102f2b",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N4001",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "889be949e03b48b69e2ad03e98102f2b",
+            "Footprint": "",
+            "NGSpice Model": "38141a7666434e4da6da31c16f3856cd",
+            "NGSpice Model Title": "1N4001",
+            "Unique ID": "",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "0cfe68c061be4e418959b50f185d5ccd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 7,
+          "name": "1N4148W(Sim)",
+          "symbolName": "1N4148W(Sim)",
+          "symbolUuid": "58972d6c646e440ab0dfa58c982e7942",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N4148W",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "58972d6c646e440ab0dfa58c982e7942",
+            "Footprint": "",
+            "NGSpice Model": "97556cdc8c12421e9f7645d65ee9b948",
+            "NGSpice Model Title": "1N4148W",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "b88187737b554d2ca034250d8b2e86b0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "11a38888e0144f85b522aeaa0298b558"
+          },
+          "ordinal": 8,
+          "name": "通用三极管(PNP)_Transistor(PNP)",
+          "symbolName": "通用三极管(PNP)_Transistor(PNP)",
+          "symbolUuid": "8519a34c4de04399a151a59558909b90",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "",
+            "Designator": "U?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "8519a34c4de04399a151a59558909b90",
+            "Footprint": "",
+            "Description": "",
+            "Sim Model": "fef7fe05bde3492dabfe90414a4fcc63",
+            "Sim Model Title": "PNP",
+            "Sim Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "8abba4171ed04025a0666177ccee6fff",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 9,
+          "name": "1N4097(Sim)",
+          "symbolName": "1N4097(Sim)",
+          "symbolUuid": "a4725605cee143a48214eb2865919693",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N4097",
+            "Designator": "X?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "a4725605cee143a48214eb2865919693",
+            "Footprint": "",
+            "NGSpice Model": "434ff540cf5b4e9aa30eb3bd409f008c",
+            "NGSpice Model Title": "1N4097",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87",
+            "Sim Model": "b6304eeadcf644f08eedc49e7cdec08c",
+            "Sim Model Title": "Zener",
+            "Sim Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "f0913922aebb41098049528057110592",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 10,
+          "name": "1N4005(Sim)",
+          "symbolName": "1N4005(Sim)",
+          "symbolUuid": "a29b1cc64e254694acb8bb4dfd6dcd06",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N4005",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "a29b1cc64e254694acb8bb4dfd6dcd06",
+            "Footprint": "",
+            "NGSpice Model": "7fbc65a220764317ab5224de3c88d331",
+            "NGSpice Model Title": "1N4005",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "454c669cb5ea4b9fb377d26a1edbc9c0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "abab198541644010ad542d74782fb132"
+          },
+          "ordinal": 11,
+          "name": "四引脚数码管_7 Segements BCD",
+          "symbolName": "四引脚数码管_7 Segements BCD",
+          "symbolUuid": "6d489026403048eeaf344e6c131358fb",
+          "imageUuid": "",
+          "description": "四引脚数码管_7 Segements BCD",
+          "otherProperty": {
+            "Name": "",
+            "Designator": "U?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "6d489026403048eeaf344e6c131358fb",
+            "Footprint": "",
+            "Sim Model": "fc06e2296e3a4aa2b81dd8637d762d6c",
+            "Sim Model Title": "7-Seg BCD",
+            "Unique ID": "",
+            "Description": "四引脚数码管_7 Segements BCD",
+            "Sim Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "1b3d533ee05e41b8882cdd8055c1c70f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "11a38888e0144f85b522aeaa0298b558"
+          },
+          "ordinal": 12,
+          "name": "2N2222(Sim)",
+          "symbolName": "2N2222(Sim)",
+          "symbolUuid": "57a9c4f29d834a239f368e4c51273b26",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "2N2222",
+            "Designator": "Q?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "57a9c4f29d834a239f368e4c51273b26",
+            "Footprint": "",
+            "NGSpice Model": "32d4af34fc0544669d1d32ea2ae7a18d",
+            "NGSpice Model Title": "2n2222",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87",
+            "Sim Model": "cd57d0d129754794a3284196a3657e52",
+            "Sim Model Title": "NPN",
+            "Sim Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "743065dc84be4abc9e239a79fc9eb5fc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "11a38888e0144f85b522aeaa0298b558"
+          },
+          "ordinal": 13,
+          "name": "SS9013(Sim)",
+          "symbolName": "SS9013(Sim)",
+          "symbolUuid": "318a695d44bb4f11aa0fe8f52132d74e",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "SS9013",
+            "Designator": "Q?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "318a695d44bb4f11aa0fe8f52132d74e",
+            "Footprint": "",
+            "NGSpice Model": "68933f9001f440b7b7951c58185d549a",
+            "NGSpice Model Title": "SS9013",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "898cba4851d34809ad803b2241ca9fb4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 14,
+          "name": "1N5617(Sim)",
+          "symbolName": "1N5617(Sim)",
+          "symbolUuid": "5c295d4b002b466cabd5e6d596352fab",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N5617",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "5c295d4b002b466cabd5e6d596352fab",
+            "Footprint": "",
+            "NGSpice Model": "0f86a0bb26934c29afc06b50bf315134",
+            "NGSpice Model Title": "1N5617",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "b63f799b28444b0d99da926e274d6982",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 15,
+          "name": "1N5059(Sim)",
+          "symbolName": "1N5059(Sim)",
+          "symbolUuid": "e354b77963a44d4988ce65c3497e5876",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N5059",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "e354b77963a44d4988ce65c3497e5876",
+            "Footprint": "",
+            "NGSpice Model": "c475581287124ef480c9a5a61bec482e",
+            "NGSpice Model Title": "1N5059",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "0b4322742ab441c3861b039f1a21922a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "abab198541644010ad542d74782fb132"
+          },
+          "ordinal": 16,
+          "name": "七引脚数码管_7 Segments",
+          "symbolName": "七引脚数码管_7 Segments",
+          "symbolUuid": "63ec06b753f74af1ac7d157710f0f1c0",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "",
+            "Designator": "U?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "63ec06b753f74af1ac7d157710f0f1c0",
+            "Footprint": "",
+            "Sim Model": "85bbf15587a44ffbaac9acf3c80e2ce9",
+            "Sim Model Title": "Seven Segment",
+            "Unique ID": "",
+            "Description": "",
+            "Sim Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "8be92076c4174b03ac5c6226f61f3478",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 17,
+          "name": "1N1200C(Sim)",
+          "symbolName": "1N1200C(Sim)",
+          "symbolUuid": "85d12b1b173746c1871128975d02f855",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "1N1200C",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "85d12b1b173746c1871128975d02f855",
+            "Footprint": "",
+            "NGSpice Model": "f3ce0283b9814a5f8fd99e43d804a16f",
+            "NGSpice Model Title": "1N1200C",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "e351e2c3e68f485b9f7bc699549d8eaf",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "96526633cbf04882acca79bd66fa7171"
+          },
+          "ordinal": 18,
+          "name": "GBJ1504(Sim)",
+          "symbolName": "GBJ1504(Sim)",
+          "symbolUuid": "8bb9c5c1b01c4522a0d13ee694953db5",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "GBJ1504",
+            "Designator": "D?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "8bb9c5c1b01c4522a0d13ee694953db5",
+            "Footprint": "",
+            "NGSpice Model": "881d54c2813c45a88b333f56630e37f7",
+            "NGSpice Model Title": "GBJ1504",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        },
+        {
+          "uuid": "99e29cf844c64c6d8e9984412ab2e885",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "0a81596be00f41a0a850cbc84db90457",
+            "secondaryClassificationUuid": "11a38888e0144f85b522aeaa0298b558"
+          },
+          "ordinal": 19,
+          "name": "SS9012(Sim)",
+          "symbolName": "SS9012(Sim)",
+          "symbolUuid": "da681ce3828246f4b663c28ca2bf329a",
+          "imageUuid": "",
+          "description": "",
+          "otherProperty": {
+            "Name": "SS9012",
+            "Designator": "Q?",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "da681ce3828246f4b663c28ca2bf329a",
+            "Footprint": "",
+            "NGSpice Model": "b4849a87a11246409c65a60238116a40",
+            "NGSpice Model Title": "SS9012",
+            "Description": "",
+            "NGspice Model Path": "0819f05c4eef4c71ace90d822a990e87"
+          }
+        }
+      ]
+    },
+    {
+      "query": "电子管",
+      "items": []
+    }
+  ]
+}

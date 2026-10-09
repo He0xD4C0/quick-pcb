@@ -1,0 +1,3584 @@
+[
+  {
+    "ref": "J1",
+    "page": "01_Input_and_controls",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "T",
+        "x": 97,
+        "y": 202.0,
+        "net": "IN_L"
+      },
+      {
+        "number": "R",
+        "x": 97,
+        "y": 218.0,
+        "net": "IN_R"
+      },
+      {
+        "number": "S",
+        "x": 193,
+        "y": 210.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "SW1",
+    "page": "01_Input_and_controls",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "LC",
+        "x": 365,
+        "y": 194.0,
+        "net": "SEL_L"
+      },
+      {
+        "number": "LH",
+        "x": 365,
+        "y": 210.0,
+        "net": "IN_L"
+      },
+      {
+        "number": "LL",
+        "x": 365,
+        "y": 226.0,
+        "net": "ATT_L"
+      },
+      {
+        "number": "RC",
+        "x": 461,
+        "y": 194.0,
+        "net": "SEL_R"
+      },
+      {
+        "number": "RH",
+        "x": 461,
+        "y": 210.0,
+        "net": "IN_R"
+      },
+      {
+        "number": "RL",
+        "x": 461,
+        "y": 226.0,
+        "net": "ATT_R"
+      }
+    ]
+  },
+  {
+    "ref": "RV1",
+    "page": "01_Input_and_controls",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "LT",
+        "x": 633,
+        "y": 194.0,
+        "net": "SEL_L"
+      },
+      {
+        "number": "LW",
+        "x": 633,
+        "y": 210.0,
+        "net": "WIP_L"
+      },
+      {
+        "number": "LB",
+        "x": 633,
+        "y": 226.0,
+        "net": "AGND"
+      },
+      {
+        "number": "RT",
+        "x": 729,
+        "y": 194.0,
+        "net": "SEL_R"
+      },
+      {
+        "number": "RW",
+        "x": 729,
+        "y": 210.0,
+        "net": "WIP_R"
+      },
+      {
+        "number": "RB",
+        "x": 729,
+        "y": 226.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "J2",
+    "page": "01_Input_and_controls",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "T",
+        "x": 97,
+        "y": 334.0,
+        "net": "HP_L"
+      },
+      {
+        "number": "R",
+        "x": 97,
+        "y": 350.0,
+        "net": "HP_R"
+      },
+      {
+        "number": "S",
+        "x": 193,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R1",
+    "page": "01_Input_and_controls",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 342.0,
+        "net": "IN_L"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 342.0,
+        "net": "ATT_L"
+      }
+    ]
+  },
+  {
+    "ref": "R2",
+    "page": "01_Input_and_controls",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 342.0,
+        "net": "ATT_L"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R3",
+    "page": "01_Input_and_controls",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 474.0,
+        "net": "HP_L"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 474.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R4",
+    "page": "01_Input_and_controls",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 474.0,
+        "net": "IN_R"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 474.0,
+        "net": "ATT_R"
+      }
+    ]
+  },
+  {
+    "ref": "R5",
+    "page": "01_Input_and_controls",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 474.0,
+        "net": "ATT_R"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 474.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R6",
+    "page": "01_Input_and_controls",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "HP_R"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "V1",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 178.0,
+        "net": "L_MID"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 194.0,
+        "net": "L_GL"
+      },
+      {
+        "number": "3",
+        "x": 97,
+        "y": 210.0,
+        "net": "L_K"
+      },
+      {
+        "number": "4",
+        "x": 97,
+        "y": 226.0,
+        "net": "HPLUS"
+      },
+      {
+        "number": "5",
+        "x": 97,
+        "y": 242.0,
+        "net": "HMINUS"
+      },
+      {
+        "number": "6",
+        "x": 193,
+        "y": 186.0,
+        "net": "L_PA"
+      },
+      {
+        "number": "7",
+        "x": 193,
+        "y": 202.0,
+        "net": "L_GU"
+      },
+      {
+        "number": "8",
+        "x": 193,
+        "y": 218.0,
+        "net": "L_MID"
+      },
+      {
+        "number": "9",
+        "x": 193,
+        "y": 234.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C1",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "WIP_L"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "L_GI"
+      }
+    ]
+  },
+  {
+    "ref": "R7",
+    "page": "02_WCF_L",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 210.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 210.0,
+        "net": "L_BIAS"
+      }
+    ]
+  },
+  {
+    "ref": "R8",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 342.0,
+        "net": "L_BIAS"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C2",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 342.0,
+        "net": "L_BIAS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R9",
+    "page": "02_WCF_L",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 342.0,
+        "net": "L_BIAS"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 342.0,
+        "net": "L_GI"
+      }
+    ]
+  },
+  {
+    "ref": "R10",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 474.0,
+        "net": "L_GI"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 474.0,
+        "net": "L_GU"
+      }
+    ]
+  },
+  {
+    "ref": "R11",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 474.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 474.0,
+        "net": "L_PA"
+      }
+    ]
+  },
+  {
+    "ref": "C3",
+    "page": "02_WCF_L",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 474.0,
+        "net": "L_PA"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 474.0,
+        "net": "L_GB"
+      }
+    ]
+  },
+  {
+    "ref": "R12",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "L_GB"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "L_GL"
+      }
+    ]
+  },
+  {
+    "ref": "R13",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "L_GB"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R14",
+    "page": "02_WCF_L",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "L_K"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C4",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "L_K"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C5",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 738.0,
+        "net": "L_MID"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 738.0,
+        "net": "L_OUT"
+      }
+    ]
+  },
+  {
+    "ref": "R15",
+    "page": "02_WCF_L",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 738.0,
+        "net": "L_MID"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R16",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 870.0,
+        "net": "L_OUT"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 870.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "K1",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 870,
+    "pins": [
+      {
+        "number": "CA",
+        "x": 365,
+        "y": 862.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "CB",
+        "x": 365,
+        "y": 878.0,
+        "net": "COIL_LO"
+      },
+      {
+        "number": "A",
+        "x": 461,
+        "y": 862.0,
+        "net": "L_OUT"
+      },
+      {
+        "number": "B",
+        "x": 461,
+        "y": 878.0,
+        "net": "HP_L"
+      }
+    ]
+  },
+  {
+    "ref": "TP1",
+    "page": "02_WCF_L",
+    "x": 681,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 870.0,
+        "net": "L_MID"
+      }
+    ]
+  },
+  {
+    "ref": "TP2",
+    "page": "02_WCF_L",
+    "x": 145,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 1002.0,
+        "net": "L_K"
+      }
+    ]
+  },
+  {
+    "ref": "TP3",
+    "page": "02_WCF_L",
+    "x": 413,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 1002.0,
+        "net": "L_OUT"
+      }
+    ]
+  },
+  {
+    "ref": "V2",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 178.0,
+        "net": "R_MID"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 194.0,
+        "net": "R_GL"
+      },
+      {
+        "number": "3",
+        "x": 97,
+        "y": 210.0,
+        "net": "R_K"
+      },
+      {
+        "number": "4",
+        "x": 97,
+        "y": 226.0,
+        "net": "HPLUS"
+      },
+      {
+        "number": "5",
+        "x": 97,
+        "y": 242.0,
+        "net": "HMINUS"
+      },
+      {
+        "number": "6",
+        "x": 193,
+        "y": 186.0,
+        "net": "R_PA"
+      },
+      {
+        "number": "7",
+        "x": 193,
+        "y": 202.0,
+        "net": "R_GU"
+      },
+      {
+        "number": "8",
+        "x": 193,
+        "y": 218.0,
+        "net": "R_MID"
+      },
+      {
+        "number": "9",
+        "x": 193,
+        "y": 234.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C6",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "WIP_R"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "R_GI"
+      }
+    ]
+  },
+  {
+    "ref": "R17",
+    "page": "03_WCF_R",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 210.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 210.0,
+        "net": "R_BIAS"
+      }
+    ]
+  },
+  {
+    "ref": "R18",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 342.0,
+        "net": "R_BIAS"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C7",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 342.0,
+        "net": "R_BIAS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R19",
+    "page": "03_WCF_R",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 342.0,
+        "net": "R_BIAS"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 342.0,
+        "net": "R_GI"
+      }
+    ]
+  },
+  {
+    "ref": "R20",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 474.0,
+        "net": "R_GI"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 474.0,
+        "net": "R_GU"
+      }
+    ]
+  },
+  {
+    "ref": "R21",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 474.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 474.0,
+        "net": "R_PA"
+      }
+    ]
+  },
+  {
+    "ref": "C8",
+    "page": "03_WCF_R",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 474.0,
+        "net": "R_PA"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 474.0,
+        "net": "R_GB"
+      }
+    ]
+  },
+  {
+    "ref": "R22",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "R_GB"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "R_GL"
+      }
+    ]
+  },
+  {
+    "ref": "R23",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "R_GB"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R24",
+    "page": "03_WCF_R",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "R_K"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C9",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "R_K"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C10",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 738.0,
+        "net": "R_MID"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 738.0,
+        "net": "R_OUT"
+      }
+    ]
+  },
+  {
+    "ref": "R25",
+    "page": "03_WCF_R",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 738.0,
+        "net": "R_MID"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R26",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 870.0,
+        "net": "R_OUT"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 870.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "K2",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 870,
+    "pins": [
+      {
+        "number": "CA",
+        "x": 365,
+        "y": 862.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "CB",
+        "x": 365,
+        "y": 878.0,
+        "net": "COIL_LO"
+      },
+      {
+        "number": "A",
+        "x": 461,
+        "y": 862.0,
+        "net": "R_OUT"
+      },
+      {
+        "number": "B",
+        "x": 461,
+        "y": 878.0,
+        "net": "HP_R"
+      }
+    ]
+  },
+  {
+    "ref": "TP4",
+    "page": "03_WCF_R",
+    "x": 681,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 870.0,
+        "net": "R_MID"
+      }
+    ]
+  },
+  {
+    "ref": "TP5",
+    "page": "03_WCF_R",
+    "x": 145,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 1002.0,
+        "net": "R_K"
+      }
+    ]
+  },
+  {
+    "ref": "TP6",
+    "page": "03_WCF_R",
+    "x": 413,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 1002.0,
+        "net": "R_OUT"
+      }
+    ]
+  },
+  {
+    "ref": "J3",
+    "page": "04_Mains_and_rectifier",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "L",
+        "x": 97,
+        "y": 202.0,
+        "net": "MAINS_L"
+      },
+      {
+        "number": "N",
+        "x": 97,
+        "y": 218.0,
+        "net": "MAINS_N"
+      },
+      {
+        "number": "PE",
+        "x": 193,
+        "y": 210.0,
+        "net": "PE"
+      }
+    ]
+  },
+  {
+    "ref": "F1",
+    "page": "04_Mains_and_rectifier",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "MAINS_L"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "FUSED_L"
+      }
+    ]
+  },
+  {
+    "ref": "SW2",
+    "page": "04_Mains_and_rectifier",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "L1",
+        "x": 633,
+        "y": 202.0,
+        "net": "FUSED_L"
+      },
+      {
+        "number": "L2",
+        "x": 633,
+        "y": 218.0,
+        "net": "PRI_L"
+      },
+      {
+        "number": "N1",
+        "x": 729,
+        "y": 202.0,
+        "net": "MAINS_N"
+      },
+      {
+        "number": "N2",
+        "x": 729,
+        "y": 218.0,
+        "net": "PRI_N"
+      }
+    ]
+  },
+  {
+    "ref": "T1",
+    "page": "04_Mains_and_rectifier",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "P1",
+        "x": 97,
+        "y": 310.0,
+        "net": "PRI_L"
+      },
+      {
+        "number": "P2",
+        "x": 97,
+        "y": 326.0,
+        "net": "PRI_N"
+      },
+      {
+        "number": "H1",
+        "x": 97,
+        "y": 342.0,
+        "net": "HV_A"
+      },
+      {
+        "number": "H2",
+        "x": 97,
+        "y": 358.0,
+        "net": "HV_B"
+      },
+      {
+        "number": "F1",
+        "x": 97,
+        "y": 374.0,
+        "net": "HTR_A"
+      },
+      {
+        "number": "F2",
+        "x": 193,
+        "y": 318.0,
+        "net": "HTR_B"
+      },
+      {
+        "number": "A1",
+        "x": 193,
+        "y": 334.0,
+        "net": "AUX_A"
+      },
+      {
+        "number": "A2",
+        "x": 193,
+        "y": 350.0,
+        "net": "AUX_B"
+      },
+      {
+        "number": "SH",
+        "x": 193,
+        "y": 366.0,
+        "net": "PE"
+      }
+    ]
+  },
+  {
+    "ref": "CH1",
+    "page": "04_Mains_and_rectifier",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 342.0,
+        "net": "PE"
+      }
+    ]
+  },
+  {
+    "ref": "LK1",
+    "page": "04_Mains_and_rectifier",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 342.0,
+        "net": "PE"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "F2",
+    "page": "04_Mains_and_rectifier",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 474.0,
+        "net": "HV_A"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 474.0,
+        "net": "HV_AF"
+      }
+    ]
+  },
+  {
+    "ref": "D1",
+    "page": "04_Mains_and_rectifier",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 474.0,
+        "net": "HV_AF"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 474.0,
+        "net": "HV_RAW"
+      }
+    ]
+  },
+  {
+    "ref": "D2",
+    "page": "04_Mains_and_rectifier",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 474.0,
+        "net": "HV_B"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 474.0,
+        "net": "HV_RAW"
+      }
+    ]
+  },
+  {
+    "ref": "D3",
+    "page": "04_Mains_and_rectifier",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 606.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 606.0,
+        "net": "HV_AF"
+      }
+    ]
+  },
+  {
+    "ref": "D4",
+    "page": "04_Mains_and_rectifier",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 606.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 606.0,
+        "net": "HV_B"
+      }
+    ]
+  },
+  {
+    "ref": "C11",
+    "page": "04_Mains_and_rectifier",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "HV_RAW"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R27",
+    "page": "04_Mains_and_rectifier",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "HV_RAW"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "HV_IN"
+      }
+    ]
+  },
+  {
+    "ref": "C12",
+    "page": "04_Mains_and_rectifier",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 738.0,
+        "net": "HV_IN"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R28",
+    "page": "04_Mains_and_rectifier",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 738.0,
+        "net": "HV_RAW"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R29",
+    "page": "04_Mains_and_rectifier",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 870.0,
+        "net": "HV_IN"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 870.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "Q1",
+    "page": "05_HV_regulator",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 202.0,
+        "net": "HV_GATE"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 218.0,
+        "net": "HV_IN"
+      },
+      {
+        "number": "3",
+        "x": 193,
+        "y": 210.0,
+        "net": "HV_SOURCE"
+      }
+    ]
+  },
+  {
+    "ref": "R30",
+    "page": "05_HV_regulator",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "HV_IN"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "HV_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "D5",
+    "page": "05_HV_regulator",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 210.0,
+        "net": "HV_SOURCE"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 210.0,
+        "net": "HV_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "R31",
+    "page": "05_HV_regulator",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 342.0,
+        "net": "HV_SOURCE"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 342.0,
+        "net": "BPLUS"
+      }
+    ]
+  },
+  {
+    "ref": "Q2",
+    "page": "05_HV_regulator",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 334.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 365,
+        "y": 350.0,
+        "net": "HV_SOURCE"
+      },
+      {
+        "number": "3",
+        "x": 461,
+        "y": 342.0,
+        "net": "HV_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "Q3",
+    "page": "05_HV_regulator",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 334.0,
+        "net": "HV_ZREF"
+      },
+      {
+        "number": "2",
+        "x": 633,
+        "y": 350.0,
+        "net": "HV_FB"
+      },
+      {
+        "number": "3",
+        "x": 729,
+        "y": 342.0,
+        "net": "HV_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "R32",
+    "page": "05_HV_regulator",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 474.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 474.0,
+        "net": "HV_FB"
+      }
+    ]
+  },
+  {
+    "ref": "R33",
+    "page": "05_HV_regulator",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 474.0,
+        "net": "HV_FB"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 474.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R34",
+    "page": "05_HV_regulator",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 474.0,
+        "net": "HV_IN"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 474.0,
+        "net": "HV_ZREF"
+      }
+    ]
+  },
+  {
+    "ref": "D6",
+    "page": "05_HV_regulator",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 606.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 606.0,
+        "net": "HV_ZREF"
+      }
+    ]
+  },
+  {
+    "ref": "C13",
+    "page": "05_HV_regulator",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "HV_ZREF"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C14",
+    "page": "05_HV_regulator",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "HV_GATE"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "HV_FB"
+      }
+    ]
+  },
+  {
+    "ref": "C15",
+    "page": "05_HV_regulator",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R35",
+    "page": "05_HV_regulator",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 738.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "TP7",
+    "page": "05_HV_regulator",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 738.0,
+        "net": "BPLUS"
+      }
+    ]
+  },
+  {
+    "ref": "F3",
+    "page": "06_Heater_and_aux",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 210.0,
+        "net": "HTR_A"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 210.0,
+        "net": "HTR_AF"
+      }
+    ]
+  },
+  {
+    "ref": "D7",
+    "page": "06_Heater_and_aux",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 210.0,
+        "net": "HTR_AF"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 210.0,
+        "net": "HRAW"
+      }
+    ]
+  },
+  {
+    "ref": "D8",
+    "page": "06_Heater_and_aux",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 210.0,
+        "net": "HTR_B"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 210.0,
+        "net": "HRAW"
+      }
+    ]
+  },
+  {
+    "ref": "D9",
+    "page": "06_Heater_and_aux",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 342.0,
+        "net": "HMINUS"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 342.0,
+        "net": "HTR_AF"
+      }
+    ]
+  },
+  {
+    "ref": "D10",
+    "page": "06_Heater_and_aux",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 342.0,
+        "net": "HMINUS"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 342.0,
+        "net": "HTR_B"
+      }
+    ]
+  },
+  {
+    "ref": "C16",
+    "page": "06_Heater_and_aux",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 342.0,
+        "net": "HRAW"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 342.0,
+        "net": "HMINUS"
+      }
+    ]
+  },
+  {
+    "ref": "U1",
+    "page": "06_Heater_and_aux",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 466.0,
+        "net": "HADJ"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 482.0,
+        "net": "HPLUS"
+      },
+      {
+        "number": "3",
+        "x": 193,
+        "y": 474.0,
+        "net": "HRAW"
+      }
+    ]
+  },
+  {
+    "ref": "R36",
+    "page": "06_Heater_and_aux",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 474.0,
+        "net": "HPLUS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 474.0,
+        "net": "HADJ"
+      }
+    ]
+  },
+  {
+    "ref": "R37",
+    "page": "06_Heater_and_aux",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 474.0,
+        "net": "HADJ"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 474.0,
+        "net": "HMINUS"
+      }
+    ]
+  },
+  {
+    "ref": "C17",
+    "page": "06_Heater_and_aux",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "HPLUS"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "HMINUS"
+      }
+    ]
+  },
+  {
+    "ref": "C18",
+    "page": "06_Heater_and_aux",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "HADJ"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "HMINUS"
+      }
+    ]
+  },
+  {
+    "ref": "D11",
+    "page": "06_Heater_and_aux",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 606.0,
+        "net": "HPLUS"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 606.0,
+        "net": "HRAW"
+      }
+    ]
+  },
+  {
+    "ref": "D12",
+    "page": "06_Heater_and_aux",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 738.0,
+        "net": "HADJ"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 738.0,
+        "net": "HPLUS"
+      }
+    ]
+  },
+  {
+    "ref": "R38",
+    "page": "06_Heater_and_aux",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 738.0,
+        "net": "BPLUS"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 738.0,
+        "net": "HMINUS"
+      }
+    ]
+  },
+  {
+    "ref": "R39",
+    "page": "06_Heater_and_aux",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 738.0,
+        "net": "HMINUS"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 738.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "C19",
+    "page": "06_Heater_and_aux",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 870.0,
+        "net": "HMINUS"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 870.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "D13",
+    "page": "06b_Auxiliary_supply",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 210.0,
+        "net": "AUX_A"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 210.0,
+        "net": "AUX_RAW"
+      }
+    ]
+  },
+  {
+    "ref": "D14",
+    "page": "06b_Auxiliary_supply",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 210.0,
+        "net": "AUX_B"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 210.0,
+        "net": "AUX_RAW"
+      }
+    ]
+  },
+  {
+    "ref": "D15",
+    "page": "06b_Auxiliary_supply",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 210.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 210.0,
+        "net": "AUX_A"
+      }
+    ]
+  },
+  {
+    "ref": "D16",
+    "page": "06b_Auxiliary_supply",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 342.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 342.0,
+        "net": "AUX_B"
+      }
+    ]
+  },
+  {
+    "ref": "C20",
+    "page": "06b_Auxiliary_supply",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 342.0,
+        "net": "AUX_RAW"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 342.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R40",
+    "page": "06b_Auxiliary_supply",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 342.0,
+        "net": "AUX_RAW"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 342.0,
+        "net": "AUX_Z"
+      }
+    ]
+  },
+  {
+    "ref": "D17",
+    "page": "06b_Auxiliary_supply",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 474.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 474.0,
+        "net": "AUX_Z"
+      }
+    ]
+  },
+  {
+    "ref": "Q4",
+    "page": "06b_Auxiliary_supply",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 466.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 365,
+        "y": 482.0,
+        "net": "AUX_Z"
+      },
+      {
+        "number": "3",
+        "x": 461,
+        "y": 474.0,
+        "net": "AUX_RAW"
+      }
+    ]
+  },
+  {
+    "ref": "C21",
+    "page": "06b_Auxiliary_supply",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 474.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 474.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R41",
+    "page": "06b_Auxiliary_supply",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R42",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 210.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 210.0,
+        "net": "TIMER"
+      }
+    ]
+  },
+  {
+    "ref": "C22",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "TIMER"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "D18",
+    "page": "07_Delay_and_relay_driver",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 210.0,
+        "net": "TBASE"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 210.0,
+        "net": "TIMER"
+      }
+    ]
+  },
+  {
+    "ref": "R43",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 342.0,
+        "net": "TBASE"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 342.0,
+        "net": "QB1"
+      }
+    ]
+  },
+  {
+    "ref": "Q5",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 334.0,
+        "net": "QB2"
+      },
+      {
+        "number": "2",
+        "x": 365,
+        "y": 350.0,
+        "net": "QB1"
+      },
+      {
+        "number": "3",
+        "x": 461,
+        "y": 342.0,
+        "net": "COIL_LO"
+      }
+    ]
+  },
+  {
+    "ref": "Q6",
+    "page": "07_Delay_and_relay_driver",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 334.0,
+        "net": "AGND"
+      },
+      {
+        "number": "2",
+        "x": 633,
+        "y": 350.0,
+        "net": "QB2"
+      },
+      {
+        "number": "3",
+        "x": 729,
+        "y": 342.0,
+        "net": "COIL_LO"
+      }
+    ]
+  },
+  {
+    "ref": "R44",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 474.0,
+        "net": "QB2"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 474.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "D19",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 474.0,
+        "net": "COIL_LO"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 474.0,
+        "net": "FLY_Z"
+      }
+    ]
+  },
+  {
+    "ref": "D20",
+    "page": "07_Delay_and_relay_driver",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 474.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 474.0,
+        "net": "FLY_Z"
+      }
+    ]
+  },
+  {
+    "ref": "D21",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 606.0,
+        "net": "AUX_A"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 606.0,
+        "net": "AC_PRESENT"
+      }
+    ]
+  },
+  {
+    "ref": "C23",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "AC_PRESENT"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R45",
+    "page": "07_Delay_and_relay_driver",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "AC_PRESENT"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R46",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "AC_PRESENT"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "AC_B"
+      }
+    ]
+  },
+  {
+    "ref": "Q7",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 730.0,
+        "net": "AGND"
+      },
+      {
+        "number": "2",
+        "x": 365,
+        "y": 746.0,
+        "net": "AC_B"
+      },
+      {
+        "number": "3",
+        "x": 461,
+        "y": 738.0,
+        "net": "KILL_B"
+      }
+    ]
+  },
+  {
+    "ref": "R47",
+    "page": "07_Delay_and_relay_driver",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 738.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 738.0,
+        "net": "KILL_B"
+      }
+    ]
+  },
+  {
+    "ref": "Q8",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 862.0,
+        "net": "AGND"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 878.0,
+        "net": "KILL_B"
+      },
+      {
+        "number": "3",
+        "x": 193,
+        "y": 870.0,
+        "net": "TIMER"
+      }
+    ]
+  },
+  {
+    "ref": "R48",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 870.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 870.0,
+        "net": "REFHI"
+      }
+    ]
+  },
+  {
+    "ref": "R49",
+    "page": "07_Delay_and_relay_driver",
+    "x": 681,
+    "y": 870,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 870.0,
+        "net": "REFHI"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 870.0,
+        "net": "REFMID"
+      }
+    ]
+  },
+  {
+    "ref": "R50",
+    "page": "07_Delay_and_relay_driver",
+    "x": 145,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 1002.0,
+        "net": "REFMID"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 1002.0,
+        "net": "REFLO"
+      }
+    ]
+  },
+  {
+    "ref": "R51",
+    "page": "07_Delay_and_relay_driver",
+    "x": 413,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 1002.0,
+        "net": "REFLO"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 1002.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R52",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 210.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 210.0,
+        "net": "L_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "R53",
+    "page": "08_DC_monitor_L",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "L_OUT"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "L_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "C24",
+    "page": "08_DC_monitor_L",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 210.0,
+        "net": "L_SENSE"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 210.0,
+        "net": "REFMID"
+      }
+    ]
+  },
+  {
+    "ref": "D22",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 342.0,
+        "net": "L_SENSE"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 342.0,
+        "net": "AUX12"
+      }
+    ]
+  },
+  {
+    "ref": "D23",
+    "page": "08_DC_monitor_L",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 342.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 342.0,
+        "net": "L_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "Q9",
+    "page": "08_DC_monitor_L",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 334.0,
+        "net": "L_TAILP"
+      },
+      {
+        "number": "2",
+        "x": 633,
+        "y": 350.0,
+        "net": "L_SENSE"
+      },
+      {
+        "number": "3",
+        "x": 729,
+        "y": 342.0,
+        "net": "L_POSC"
+      }
+    ]
+  },
+  {
+    "ref": "Q10",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 466.0,
+        "net": "L_TAILP"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 482.0,
+        "net": "REFHI"
+      },
+      {
+        "number": "3",
+        "x": 193,
+        "y": 474.0,
+        "net": "AUX12"
+      }
+    ]
+  },
+  {
+    "ref": "Q11",
+    "page": "08_DC_monitor_L",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 466.0,
+        "net": "L_TAILN"
+      },
+      {
+        "number": "2",
+        "x": 365,
+        "y": 482.0,
+        "net": "L_SENSE"
+      },
+      {
+        "number": "3",
+        "x": 461,
+        "y": 474.0,
+        "net": "AUX12"
+      }
+    ]
+  },
+  {
+    "ref": "Q12",
+    "page": "08_DC_monitor_L",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 466.0,
+        "net": "L_TAILN"
+      },
+      {
+        "number": "2",
+        "x": 633,
+        "y": 482.0,
+        "net": "REFLO"
+      },
+      {
+        "number": "3",
+        "x": 729,
+        "y": 474.0,
+        "net": "L_NEGC"
+      }
+    ]
+  },
+  {
+    "ref": "R54",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "L_TAILP"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R55",
+    "page": "08_DC_monitor_L",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "L_TAILN"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R56",
+    "page": "08_DC_monitor_L",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "L_POSC"
+      }
+    ]
+  },
+  {
+    "ref": "R57",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "L_NEGC"
+      }
+    ]
+  },
+  {
+    "ref": "D24",
+    "page": "08_DC_monitor_L",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 738.0,
+        "net": "TIMER"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 738.0,
+        "net": "L_POSC"
+      }
+    ]
+  },
+  {
+    "ref": "D25",
+    "page": "08_DC_monitor_L",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 738.0,
+        "net": "TIMER"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 738.0,
+        "net": "L_NEGC"
+      }
+    ]
+  },
+  {
+    "ref": "D26",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 870.0,
+        "net": "L_TAILP"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 870.0,
+        "net": "L_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "D27",
+    "page": "08_DC_monitor_L",
+    "x": 413,
+    "y": 870,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 870.0,
+        "net": "L_TAILP"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 870.0,
+        "net": "REFHI"
+      }
+    ]
+  },
+  {
+    "ref": "D28",
+    "page": "08_DC_monitor_L",
+    "x": 681,
+    "y": 870,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 870.0,
+        "net": "L_TAILN"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 870.0,
+        "net": "L_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "D29",
+    "page": "08_DC_monitor_L",
+    "x": 145,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 1002.0,
+        "net": "L_TAILN"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 1002.0,
+        "net": "REFLO"
+      }
+    ]
+  },
+  {
+    "ref": "R58",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 210.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 210.0,
+        "net": "R_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "R59",
+    "page": "09_DC_monitor_R",
+    "x": 413,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 210.0,
+        "net": "R_OUT"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 210.0,
+        "net": "R_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "C25",
+    "page": "09_DC_monitor_R",
+    "x": 681,
+    "y": 210,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 210.0,
+        "net": "R_SENSE"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 210.0,
+        "net": "REFMID"
+      }
+    ]
+  },
+  {
+    "ref": "D30",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 342.0,
+        "net": "R_SENSE"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 342.0,
+        "net": "AUX12"
+      }
+    ]
+  },
+  {
+    "ref": "D31",
+    "page": "09_DC_monitor_R",
+    "x": 413,
+    "y": 342,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 342.0,
+        "net": "AGND"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 342.0,
+        "net": "R_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "Q13",
+    "page": "09_DC_monitor_R",
+    "x": 681,
+    "y": 342,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 334.0,
+        "net": "R_TAILP"
+      },
+      {
+        "number": "2",
+        "x": 633,
+        "y": 350.0,
+        "net": "R_SENSE"
+      },
+      {
+        "number": "3",
+        "x": 729,
+        "y": 342.0,
+        "net": "R_POSC"
+      }
+    ]
+  },
+  {
+    "ref": "Q14",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 466.0,
+        "net": "R_TAILP"
+      },
+      {
+        "number": "2",
+        "x": 97,
+        "y": 482.0,
+        "net": "REFHI"
+      },
+      {
+        "number": "3",
+        "x": 193,
+        "y": 474.0,
+        "net": "AUX12"
+      }
+    ]
+  },
+  {
+    "ref": "Q15",
+    "page": "09_DC_monitor_R",
+    "x": 413,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 466.0,
+        "net": "R_TAILN"
+      },
+      {
+        "number": "2",
+        "x": 365,
+        "y": 482.0,
+        "net": "R_SENSE"
+      },
+      {
+        "number": "3",
+        "x": 461,
+        "y": 474.0,
+        "net": "AUX12"
+      }
+    ]
+  },
+  {
+    "ref": "Q16",
+    "page": "09_DC_monitor_R",
+    "x": 681,
+    "y": 474,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 466.0,
+        "net": "R_TAILN"
+      },
+      {
+        "number": "2",
+        "x": 633,
+        "y": 482.0,
+        "net": "REFLO"
+      },
+      {
+        "number": "3",
+        "x": 729,
+        "y": 474.0,
+        "net": "R_NEGC"
+      }
+    ]
+  },
+  {
+    "ref": "R60",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 606.0,
+        "net": "R_TAILP"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R61",
+    "page": "09_DC_monitor_R",
+    "x": 413,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 365,
+        "y": 606.0,
+        "net": "R_TAILN"
+      },
+      {
+        "number": "2",
+        "x": 461,
+        "y": 606.0,
+        "net": "AGND"
+      }
+    ]
+  },
+  {
+    "ref": "R62",
+    "page": "09_DC_monitor_R",
+    "x": 681,
+    "y": 606,
+    "pins": [
+      {
+        "number": "1",
+        "x": 633,
+        "y": 606.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 729,
+        "y": 606.0,
+        "net": "R_POSC"
+      }
+    ]
+  },
+  {
+    "ref": "R63",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 738,
+    "pins": [
+      {
+        "number": "1",
+        "x": 97,
+        "y": 738.0,
+        "net": "AUX12"
+      },
+      {
+        "number": "2",
+        "x": 193,
+        "y": 738.0,
+        "net": "R_NEGC"
+      }
+    ]
+  },
+  {
+    "ref": "D32",
+    "page": "09_DC_monitor_R",
+    "x": 413,
+    "y": 738,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 738.0,
+        "net": "TIMER"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 738.0,
+        "net": "R_POSC"
+      }
+    ]
+  },
+  {
+    "ref": "D33",
+    "page": "09_DC_monitor_R",
+    "x": 681,
+    "y": 738,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 738.0,
+        "net": "TIMER"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 738.0,
+        "net": "R_NEGC"
+      }
+    ]
+  },
+  {
+    "ref": "D34",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 870,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 870.0,
+        "net": "R_TAILP"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 870.0,
+        "net": "R_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "D35",
+    "page": "09_DC_monitor_R",
+    "x": 413,
+    "y": 870,
+    "pins": [
+      {
+        "number": "A",
+        "x": 365,
+        "y": 870.0,
+        "net": "R_TAILP"
+      },
+      {
+        "number": "K",
+        "x": 461,
+        "y": 870.0,
+        "net": "REFHI"
+      }
+    ]
+  },
+  {
+    "ref": "D36",
+    "page": "09_DC_monitor_R",
+    "x": 681,
+    "y": 870,
+    "pins": [
+      {
+        "number": "A",
+        "x": 633,
+        "y": 870.0,
+        "net": "R_TAILN"
+      },
+      {
+        "number": "K",
+        "x": 729,
+        "y": 870.0,
+        "net": "R_SENSE"
+      }
+    ]
+  },
+  {
+    "ref": "D37",
+    "page": "09_DC_monitor_R",
+    "x": 145,
+    "y": 1002,
+    "pins": [
+      {
+        "number": "A",
+        "x": 97,
+        "y": 1002.0,
+        "net": "R_TAILN"
+      },
+      {
+        "number": "K",
+        "x": 193,
+        "y": 1002.0,
+        "net": "REFLO"
+      }
+    ]
+  }
+]

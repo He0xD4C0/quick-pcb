@@ -1,0 +1,381 @@
+DATA SHEET
+www.onsemi.com
+© Semiconductor Components Industries, LLC, 2007
+April, 2026 − Rev. 3
+1
+Publication Order Number:
+BD139/D
+NPN Epitaxial Silicon
+Transistor
+BD135, 137, 139
+Features
+• Complement to BD136, BD138 and BD140 Respectively
+• These are Pb-Free Devices
+Applications
+• Medium Power Linear and Switching
+ABSOLUTE MAXIMUM RATINGS (TC = 25 °C unless otherwise noted)
+Symbol
+Parameter
+Ratings
+Units
+VCBO
+Collector-Base Voltage
+BD135
+45
+V
+BD137
+60
+BD139
+80
+VCEO
+Collector-Emitter Voltage
+BD135
+45
+V
+BD137
+60
+BD139
+80
+VEBO
+Emitter-Base Voltage
+5
+V
+IC
+Collector Current (DC)
+1.5
+A
+ICP
+Collector Current (Pulse)
+3.0
+A
+IB
+Base Current
+0.5
+A
+PC
+Device Dissipation
+TC = 25 °C
+12.5
+W
+TA = 25 °C
+1.25
+W
+TJ
+Junction Temperature
+150
+°C
+TSTG
+Storage Temperature
+−55 to +150
+°C
+Stresses exceeding those listed in the Maximum Ratings table may damage the
+device. If any of these limits are exceeded, device functionality should not be
+assumed, damage may occur and reliability may be affected.
+THERMAL CHARACTERISTICS
+Symbol
+Parameter
+Max
+Units
+RJC
+Thermal Resistance, Junction-to-Case
+10
+°C/W
+RJA
+Thermal Resistance, Junction-to-Ambient
+100
+°C/W
+MARKING DIAGRAM
+TO-126-3LD
+CASE 340AS
+&3
+XXXXX
+1. Emitter 
+2.Collector
+3.Base
+&3
+= 3-Digit Date Code
+XXXXX = Specific Device Code
+See detailed ordering, marking and shipping information on
+page 4 of this data sheet.
+NOTE: Some of the devices on this data sheet have been
+DISCONTINUED. Please refer to the table on page 4.
+ORDERING INFORMATION
+Share Feedback
+Your Opinion Matters
+
+BD135, 137, 139
+www.onsemi.com
+2
+ELECTRICAL CHARACTERISTICS (TC = 25 °C unless otherwise noted)
+Symbol
+Parameter
+Test Condition
+Min
+Typ
+Max
+Unit
+VCEO(sus)
+Collector-Emitter Sustaining
+Voltage
+BD135
+IC = 30 mA, IB = 0
+45
+V
+BD137
+60
+BD139
+80
+ICBO
+Collector Cut-off Current
+VCB = 30 V, IE = 0
+−
+0.1
+A
+IEBO
+Emitter Cut-off Current
+VEB = 5 V, IC = 0
+−
+10
+A
+hFE1
+DC Current Gain
+VCE = 2 V, IC = 5 mA
+25
+hFE2
+VCE = 2 V, IC = 0.5 A
+25
+hFE3
+VCE = 2 V, IC = 150 mA
+40
+250
+VCE(sat)
+Collector-Emitter Saturation Voltage
+IC = 500 mA, IB = 50 mA
+0.5
+V
+VBE(on)
+Base-Emitter On Voltage
+VCE = 2 V, IC = 0.5 A
+1
+V
+Product parametric performance is indicated in the Electrical Characteristics for the listed test conditions, unless otherwise noted. Product
+performance may not be indicated by the Electrical Characteristics if operated under different conditions.
+Share Feedback
+Your Opinion Matters
+
+BD135, 137, 139
+www.onsemi.com
+3
+TYPICAL PERFORMANCE CHARACTERISTICS
+Figure 1. DC Current Gain
+Figure 2. Collector-Emitter Saturation Voltage
+Figure 3. Base-Emitter Voltage
+Figure 4. Safe Operating Area
+Figure 5. Power Derating
+IC, COLLECTOR CURRENT (mA)
+IC, COLLECTOR CURRENT (A)
+IC, COLLECTOR CURRENT (A)
+VCE, COLLECTOR-EMITTER VOLTAGE (V)
+TC, CASE TEMPERATURE (°C)
+VBE, BASE-EMITTER VOLTAGE (V)
+IC, COLLECTOR CURRENT (A)
+hFE, DC CURRENT GAIN)
+VCE(sat), SATURATION VOLTAGE (mV)
+PC, POWER DISSIPATION (W)
+10
+100
+1000
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+1E−3
+0.01
+0.1
+1
+10
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+1E−3
+0.01
+0.1
+1
+10
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+10
+1
+100
+0.01
+0.1
+1
+10
+0
+25
+50
+75
+100
+125
+150
+175
+0.0
+2.5
+5.0
+7.5
+10.0
+12.5
+15.0
+17.5
+20.0
+VCE = 2 V
+IC = 20 IB
+IC =10 IB
+VBE(sat)
+IC =10 IB
+VBE(on)
+VCE = 5 V
+IC MAX. (Continuous)
+IC MAX. (Pulsed)
+DC
+1 ms
+10 s
+100 s
+BD135
+BD137
+BD139
+Share Feedback
+Your Opinion Matters
+
+BD135, 137, 139
+www.onsemi.com
+4
+ORDERING INFORMATION
+Part Number
+Marking
+Package
+Packing Method
+BD13516STU
+BD135-16
+TO-126-3LD
+(Pb-Free)
+Rail
+BD13716STU
+BD137-16
+BD13916STU
+BD139-16
+ DISCONTINUED (Note 1)
+BD13516S
+BD135-16
+TO-126-3LD
+(Pb-Free)
+Rail
+BD1356STU
+BD135-6
+BD13510STU
+BD135-10
+BD13710STU
+BD137-10
+BD13716S
+BD137-16
+Bulk
+BD13910S
+BD139-10
+BD13916S
+BD139-16
+BD1396STU
+BD139-6
+Rail
+BD13910STU
+BD139-10
+1. DISCONTINUED: These devices are not available. Please contact your onsemi representative for information. The most current information
+on these devices may be available on www.onsemi.com.
+Share Feedback
+Your Opinion Matters
+
+BD135, 137, 139
+www.onsemi.com
+5
+REVISION HISTORY  
+Revision
+Description of Changes
+Date
+3
+Document converted to onsemi format. 
+Added Thermal Characteristics, removed hFE Classification.
+BD13516S, BD1356STU, BD13510STU, BD13710STU, BD13716S, BD13910S, BD13916S,
+BD1396STU, BD13910STU OPNs marked as Discontinued.
+4/28/2026
+This document has undergone updates prior to the inclusion of this revision history table. The changes tracked here only reflect updates made
+on the noted approval dates.
+Share Feedback
+Your Opinion Matters
+
+TO−126−3LD
+CASE 340AS
+ISSUE O
+DATE 30 SEP 2016
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+onsemi and                     are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+98AON13817G
+DOCUMENT NUMBER:
+DESCRIPTION:
+Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+Printed  versions are uncontrolled  except when stamped  “CONTROLLED COPY” in red.
+PAGE 1 OF 1
+TO−126−3LD
+© Semiconductor Components Industries, LLC, 2016
+www.onsemi.com
+
+onsemi, 
+ , and other names, marks, and brands are registered and/or common law trademarks of Semiconductor Components Industries, LLC dba “onsemi” or its affiliates
+and/or subsidiaries in the United States and/or other countries. onsemi owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property.
+A listing of onsemi’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. onsemi reserves the right to make changes at any time to any
+products or information herein, without notice. The information herein is provided “as−is” and onsemi makes no warranty, representation or guarantee regarding the accuracy of the
+information, product features, availability, functionality, or suitability of its products for any particular purpose, nor does onsemi assume any liability arising out of the application or use
+of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products
+and applications using onsemi products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information
+provided by onsemi. “Typical” parameters which may be provided in onsemi data sheets and/or specifications can and do vary in different applications and actual performance may
+vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. onsemi does not convey any license
+under any of its intellectual property rights nor the rights of others. onsemi products are not designed, intended, or authorized for use as a critical component in life support systems
+or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should
+Buyer purchase or use onsemi products for any such unintended or unauthorized application, Buyer shall indemnify and hold onsemi and its officers, employees, subsidiaries, affiliates,
+and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death
+associated with such unintended or unauthorized use, even if such claim alleges that onsemi was negligent regarding the design or manufacture of the part. onsemi is an Equal
+Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+ADDITIONAL INFORMATION
+TECHNICAL PUBLICATIONS:
+Technical Library: www.onsemi.com/design/resources/technical−documentation
+onsemi Website: www.onsemi.com
+ONLINE SUPPORT: www.onsemi.com/support
+For additional information, please contact your local Sales Representative at
+www.onsemi.com/support/sales
+

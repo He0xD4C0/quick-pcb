@@ -1,0 +1,82 @@
+{
+  "captured_at": "2026-09-27T18:38:51.569070+08:00",
+  "window_id": "69fb62cd-2bdb-4a4f-b6cc-2bc96cb91053",
+  "rows": [
+    {
+      "query": "SS-22F32-G070",
+      "items": [
+        {
+          "uuid": "846c7a49ddd742b3b791e3f1e0feff90",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "16223bd3ad7b44b6995f1275efd7b1c1",
+            "secondaryClassificationUuid": "8ce1e0c2f70945a6911c88312d19cb66"
+          },
+          "ordinal": 0,
+          "name": "SS-22F32-G070",
+          "symbolName": "SS-22F32-G070",
+          "symbolUuid": "d7452238c36b476abde4f56de03dccba",
+          "footprintName": "SW-TH_SS-22F25-G050",
+          "footprintUuid": "fe33d92bca17474787c53782a34b446d",
+          "model3DName": "SW-TH_SS-22F25-G050",
+          "model3DUuid": "df8bcf122000471cb459e6d13264967f",
+          "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20260528/7D8EFA3C77011A9EFF31C2A821C10104.jpg",
+          "description": "电路结构:单刀双掷;安装方式:直插;开关颜色:黑色;额定电流:500mA;额定电压:50V;工作寿命:1万次;",
+          "manufacturer": "G-Switch(品赞)",
+          "manufacturerId": "SS-22F32-G070",
+          "supplier": "LCSC",
+          "supplierId": "C55014480",
+          "otherProperty": {
+            "LCSC Part Name": "立式拨动开关",
+            "Supplier Part": "C55014480",
+            "Manufacturer": "G-Switch(品赞)",
+            "Manufacturer Part": "SS-22F32-G070",
+            "Supplier Footprint": "插件",
+            "JLCPCB Part Class": "Extended Part",
+            "Datasheet": "https://item.szlcsc.com/datasheet/SS-22F32-G070/58601481.html",
+            "Supplier": "LCSC",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "d7452238c36b476abde4f56de03dccba",
+            "Designator": "SW?",
+            "Footprint": "fe33d92bca17474787c53782a34b446d",
+            "3D Model": "df8bcf122000471cb459e6d13264967f",
+            "3D Model Title": "SW-TH_SS-22F25-G050",
+            "3D Model Transform": "913.384,295.29862,0,0,0,0,0,0,-118.11",
+            "Circuit": "单刀双掷",
+            "Actuator Style": "矩形柱状",
+            "Termination Style": "PC引脚",
+            "Length": "23.2mm",
+            "Width": "7.5mm",
+            "Switch Height": "7mm",
+            "Mounting Type": "直插",
+            "Actuator Color": "黑色",
+            "Current Rating": "500mA",
+            "Voltage Rating": "50V",
+            "Life": "1万次",
+            "Operating Force": "250gf",
+            "Contact Material": "黄铜",
+            "Contact Finish": "银",
+            "Actuator Length": "3.2mm",
+            "Operating Temperature": "-40℃~+85℃",
+            "Name": "={Manufacturer Part}"
+          }
+        }
+      ]
+    },
+    {
+      "query": "R5ABLKBLKFF0",
+      "items": []
+    },
+    {
+      "query": "6H30Pi",
+      "items": []
+    },
+    {
+      "query": "6Н30П",
+      "items": []
+    }
+  ]
+}

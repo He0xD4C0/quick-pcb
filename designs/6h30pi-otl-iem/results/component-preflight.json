@@ -1,0 +1,68 @@
+{
+  "scope": "COMPONENT_PREFLIGHT_ONLY; no full topology generated or amplifier acceptance claimed",
+  "input_mode_network": {
+    "candidate": "8.2k series /1k shunt, selected node feeds dual10k pot; alternate position bypasses series resistor",
+    "grid_load_assumption_ohm": 110000,
+    "source_impedance_range_ohm": [
+      0,
+      100
+    ],
+    "volume_zero_excluded": "Both modes have zero output; ratio is undefined",
+    "corners": 64,
+    "minimum": {
+      "rs_ohm": 8118.0,
+      "rsh_ohm": 1010.0,
+      "pot_ohm": 12000,
+      "electrical_volume_fraction": 0.01,
+      "source_ohm": 100,
+      "high_to_low_dB": 19.67758941476769
+    },
+    "maximum": {
+      "rs_ohm": 8282.0,
+      "rsh_ohm": 990.0,
+      "pot_ohm": 8000,
+      "electrical_volume_fraction": 1,
+      "source_ohm": 0,
+      "high_to_low_dB": 20.40407352432093
+    },
+    "within_20_plusminus_0p5_db": true,
+    "limitations": [
+      "This is a loaded passive-network bound at midband, not the actual WCF gain",
+      "Switch bounce, DC across input coupling capacitor, source limits and frequency response not included"
+    ]
+  },
+  "output_electrolytic_leakage": {
+    "part": "LLS2E102MELB",
+    "datasheet_max_A": 0.0015,
+    "test_condition": "20C, rated250V, after5min; conservative allowed-current scenario, not predicted90V leakage",
+    "loads": [
+      {
+        "ohm": 16,
+        "voltage_V": 0.024,
+        "required_current_A_max": 0.000125,
+        "guarantees_2mV": false
+      },
+      {
+        "ohm": 18,
+        "voltage_V": 0.027,
+        "required_current_A_max": 0.00011111111111111112,
+        "guarantees_2mV": false
+      }
+    ],
+    "resolution": "Need a qualified lower-leakage part/network or measured binning with explicit limits; cannot assert specification compliance from a typical sample"
+  },
+  "heater_reservoir": {
+    "part": "EEUFR1E332",
+    "conservative_100Hz_ripple_A": 2.8649999999999998,
+    "note": "Ripple-current capability is not DC output current. Rectifier pulse/RMS test remains required."
+  },
+  "rejected_film": {
+    "part": "MKP1848720454Y5",
+    "reason": "Manufacturer6 pins; library4 pins/pads; not eligible for physical topology"
+  },
+  "status": {
+    "schematic_acceptance": "NOT_PERFORMED",
+    "full_simulation_acceptance": "NOT_PERFORMED",
+    "hardware": "NOT_PERFORMED"
+  }
+}

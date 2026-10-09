@@ -1,0 +1,1312 @@
+{
+  "source": "{\"type\":\"DOCHEAD\"}||{\"docType\":\"SCH_PAGE\",\"client\":\"b059dcb1b23163cc\",\"uuid\":\"a1a6fa4f50ad5ff6\",\"updateTime\":1790501438201,\"version\":\"1790501438201\",\"editVersion\":\"3.2.186\"}|\n{\"type\":\"CANVAS\",\"ticket\":1,\"id\":\"CANVAS\"}||{\"originX\":0,\"originY\":0}|\n{\"type\":\"TEXT\",\"ticket\":2,\"id\":\"title\"}||{\"x\":35,\"y\":42,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":19,\"align\":\"LEFT_BOTTOM\",\"value\":\"TWO 6H30Pi | 08 DC monitor L\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"TEXT\",\"ticket\":3,\"id\":\"status\"}||{\"x\":35,\"y\":65,\"rotation\":0,\"color\":\"#A03022\",\"fontSize\":11,\"align\":\"LEFT_BOTTOM\",\"value\":\"v0.1 CANDIDATE / NOT QUALIFIED FOR REAL HEADPHONES\",\"fillColor\":\"#A03022\",\"zIndex\":1}|\n{\"type\":\"TEXT\",\"ticket\":4,\"id\":\"note0\"}||{\"x\":35,\"y\":88,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":8,\"align\":\"LEFT_BOTTOM\",\"value\":\"DC sense = (AUX12 + L_OUT)/2; 100k/100k and 1u low-pass remove audio.\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"TEXT\",\"ticket\":5,\"id\":\"note1\"}||{\"x\":35,\"y\":101,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":8,\"align\":\"LEFT_BOTTOM\",\"value\":\"Differential pairs compare against REFHI/REFLO; reverse B-E diodes protect the transistors.\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"TEXT\",\"ticket\":6,\"id\":\"note2\"}||{\"x\":35,\"y\":114,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":8,\"align\":\"LEFT_BOTTOM\",\"value\":\"Fault path resets TIMER through diodes. Detector speed and contact stress are release-blocking tests.\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":7,\"id\":\"R52\"}||{\"partId\":\"P\",\"x\":145,\"y\":210,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":8,\"id\":\"R52_Device\"}||{\"x\":45,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"a1c155dad0911c97\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":9,\"id\":\"R52_Symbol\"}||{\"x\":45,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"ef4ec5a1440428e3\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":10,\"id\":\"R52_Designator\"}||{\"x\":45,\"y\":162,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"R52\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":11,\"id\":\"R52_Name\"}||{\"x\":45,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"100k [RDS1L]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":12,\"id\":\"R52_Footprint\"}||{\"x\":45,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":13,\"id\":\"R52_Add into BOM\"}||{\"x\":45,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":14,\"id\":\"R52_Convert to PCB\"}||{\"x\":45,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"R52\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":15,\"id\":\"R52w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":16,\"id\":\"R52w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":210,\"endX\":41,\"endY\":210,\"lineGroup\":\"R52w1\"}|\n{\"type\":\"ATTR\",\"ticket\":17,\"id\":\"R52w1net\"}||{\"x\":41,\"y\":207,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AUX12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R52w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":18,\"id\":\"R52w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":19,\"id\":\"R52w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":210,\"endX\":249,\"endY\":210,\"lineGroup\":\"R52w2\"}|\n{\"type\":\"ATTR\",\"ticket\":20,\"id\":\"R52w2net\"}||{\"x\":198,\"y\":207,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R52w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":21,\"id\":\"R52rating0\"}||{\"x\":35,\"y\":261,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\".25W, 1%, >=250V\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":22,\"id\":\"R53\"}||{\"partId\":\"P\",\"x\":413,\"y\":210,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":23,\"id\":\"R53_Device\"}||{\"x\":313,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"a1c155dad0911c97\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":24,\"id\":\"R53_Symbol\"}||{\"x\":313,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"ef4ec5a1440428e3\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":25,\"id\":\"R53_Designator\"}||{\"x\":313,\"y\":162,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"R53\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":26,\"id\":\"R53_Name\"}||{\"x\":313,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"100k [RDS2L]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":27,\"id\":\"R53_Footprint\"}||{\"x\":313,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":28,\"id\":\"R53_Add into BOM\"}||{\"x\":313,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":29,\"id\":\"R53_Convert to PCB\"}||{\"x\":313,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"R53\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":30,\"id\":\"R53w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":31,\"id\":\"R53w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":210,\"endX\":309,\"endY\":210,\"lineGroup\":\"R53w1\"}|\n{\"type\":\"ATTR\",\"ticket\":32,\"id\":\"R53w1net\"}||{\"x\":309,\"y\":207,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_OUT\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R53w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":33,\"id\":\"R53w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":34,\"id\":\"R53w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":461,\"startY\":210,\"endX\":517,\"endY\":210,\"lineGroup\":\"R53w2\"}|\n{\"type\":\"ATTR\",\"ticket\":35,\"id\":\"R53w2net\"}||{\"x\":466,\"y\":207,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R53w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":36,\"id\":\"R53rating0\"}||{\"x\":303,\"y\":261,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"0.5W >=250V\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":37,\"id\":\"C24\"}||{\"partId\":\"P\",\"x\":681,\"y\":210,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":38,\"id\":\"C24_Device\"}||{\"x\":581,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"04ba81c48c5804c4\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":39,\"id\":\"C24_Symbol\"}||{\"x\":581,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"122f475eed423f70\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":40,\"id\":\"C24_Designator\"}||{\"x\":581,\"y\":162,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"C24\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":41,\"id\":\"C24_Name\"}||{\"x\":581,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1u [CDSL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":42,\"id\":\"C24_Footprint\"}||{\"x\":581,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":43,\"id\":\"C24_Add into BOM\"}||{\"x\":581,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":44,\"id\":\"C24_Convert to PCB\"}||{\"x\":581,\"y\":175,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"C24\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":45,\"id\":\"C24w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":46,\"id\":\"C24w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":210,\"endX\":577,\"endY\":210,\"lineGroup\":\"C24w1\"}|\n{\"type\":\"ATTR\",\"ticket\":47,\"id\":\"C24w1net\"}||{\"x\":577,\"y\":207,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"C24w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":48,\"id\":\"C24w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":49,\"id\":\"C24w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":729,\"startY\":210,\"endX\":785,\"endY\":210,\"lineGroup\":\"C24w2\"}|\n{\"type\":\"ATTR\",\"ticket\":50,\"id\":\"C24w2net\"}||{\"x\":734,\"y\":207,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"REFMID\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"C24w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":51,\"id\":\"C24rating0\"}||{\"x\":571,\"y\":261,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"250V film, non-polar\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":52,\"id\":\"D22\"}||{\"partId\":\"P\",\"x\":145,\"y\":342,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":53,\"id\":\"D22_Device\"}||{\"x\":45,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":54,\"id\":\"D22_Symbol\"}||{\"x\":45,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":55,\"id\":\"D22_Designator\"}||{\"x\":45,\"y\":294,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D22\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":56,\"id\":\"D22_Name\"}||{\"x\":45,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DSPL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":57,\"id\":\"D22_Footprint\"}||{\"x\":45,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":58,\"id\":\"D22_Add into BOM\"}||{\"x\":45,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":59,\"id\":\"D22_Convert to PCB\"}||{\"x\":45,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D22\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":60,\"id\":\"D22wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":61,\"id\":\"D22wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":342,\"endX\":41,\"endY\":342,\"lineGroup\":\"D22wA\"}|\n{\"type\":\"ATTR\",\"ticket\":62,\"id\":\"D22wAnet\"}||{\"x\":41,\"y\":339,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D22wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":63,\"id\":\"D22wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":64,\"id\":\"D22wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":342,\"endX\":249,\"endY\":342,\"lineGroup\":\"D22wK\"}|\n{\"type\":\"ATTR\",\"ticket\":65,\"id\":\"D22wKnet\"}||{\"x\":198,\"y\":339,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AUX12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D22wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":66,\"id\":\"D22rating0\"}||{\"x\":35,\"y\":393,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":67,\"id\":\"D23\"}||{\"partId\":\"P\",\"x\":413,\"y\":342,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":68,\"id\":\"D23_Device\"}||{\"x\":313,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":69,\"id\":\"D23_Symbol\"}||{\"x\":313,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":70,\"id\":\"D23_Designator\"}||{\"x\":313,\"y\":294,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D23\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":71,\"id\":\"D23_Name\"}||{\"x\":313,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DSNL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":72,\"id\":\"D23_Footprint\"}||{\"x\":313,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":73,\"id\":\"D23_Add into BOM\"}||{\"x\":313,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":74,\"id\":\"D23_Convert to PCB\"}||{\"x\":313,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D23\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":75,\"id\":\"D23wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":76,\"id\":\"D23wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":342,\"endX\":309,\"endY\":342,\"lineGroup\":\"D23wA\"}|\n{\"type\":\"ATTR\",\"ticket\":77,\"id\":\"D23wAnet\"}||{\"x\":309,\"y\":339,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AGND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D23wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":78,\"id\":\"D23wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":79,\"id\":\"D23wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":461,\"startY\":342,\"endX\":517,\"endY\":342,\"lineGroup\":\"D23wK\"}|\n{\"type\":\"ATTR\",\"ticket\":80,\"id\":\"D23wKnet\"}||{\"x\":466,\"y\":339,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D23wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":81,\"id\":\"D23rating0\"}||{\"x\":303,\"y\":393,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":82,\"id\":\"Q9\"}||{\"partId\":\"P\",\"x\":681,\"y\":342,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":83,\"id\":\"Q9_Device\"}||{\"x\":581,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d5a2918005e5225f\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":84,\"id\":\"Q9_Symbol\"}||{\"x\":581,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"9079a0997d869179\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":85,\"id\":\"Q9_Designator\"}||{\"x\":581,\"y\":294,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"Q9\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":86,\"id\":\"Q9_Name\"}||{\"x\":581,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"MPSA42 [QPSL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":13}|\n{\"type\":\"ATTR\",\"ticket\":87,\"id\":\"Q9_Footprint\"}||{\"x\":581,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":14}|\n{\"type\":\"ATTR\",\"ticket\":88,\"id\":\"Q9_Add into BOM\"}||{\"x\":581,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":89,\"id\":\"Q9_Convert to PCB\"}||{\"x\":581,\"y\":307,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"Q9\",\"zIndex\":9}|\n{\"type\":\"WIRE\",\"ticket\":90,\"id\":\"Q9w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":91,\"id\":\"Q9w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":334,\"endX\":577,\"endY\":334,\"lineGroup\":\"Q9w1\"}|\n{\"type\":\"ATTR\",\"ticket\":92,\"id\":\"Q9w1net\"}||{\"x\":577,\"y\":331,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILP\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q9w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":93,\"id\":\"Q9w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":94,\"id\":\"Q9w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":350,\"endX\":577,\"endY\":350,\"lineGroup\":\"Q9w2\"}|\n{\"type\":\"ATTR\",\"ticket\":95,\"id\":\"Q9w2net\"}||{\"x\":577,\"y\":347,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q9w2\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":96,\"id\":\"Q9w3\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":97,\"id\":\"Q9w3line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":729,\"startY\":342,\"endX\":785,\"endY\":342,\"lineGroup\":\"Q9w3\"}|\n{\"type\":\"ATTR\",\"ticket\":98,\"id\":\"Q9w3net\"}||{\"x\":734,\"y\":339,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_POSC\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q9w3\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":99,\"id\":\"Q9rating0\"}||{\"x\":571,\"y\":393,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"300V VCEO, 0.5A; E/B/C=1/2/3\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":100,\"id\":\"Q10\"}||{\"partId\":\"P\",\"x\":145,\"y\":474,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":101,\"id\":\"Q10_Device\"}||{\"x\":45,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d5a2918005e5225f\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":102,\"id\":\"Q10_Symbol\"}||{\"x\":45,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"9079a0997d869179\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":103,\"id\":\"Q10_Designator\"}||{\"x\":45,\"y\":426,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"Q10\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":104,\"id\":\"Q10_Name\"}||{\"x\":45,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"MPSA42 [QPRL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":13}|\n{\"type\":\"ATTR\",\"ticket\":105,\"id\":\"Q10_Footprint\"}||{\"x\":45,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":14}|\n{\"type\":\"ATTR\",\"ticket\":106,\"id\":\"Q10_Add into BOM\"}||{\"x\":45,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":107,\"id\":\"Q10_Convert to PCB\"}||{\"x\":45,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"Q10\",\"zIndex\":9}|\n{\"type\":\"WIRE\",\"ticket\":108,\"id\":\"Q10w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":109,\"id\":\"Q10w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":466,\"endX\":41,\"endY\":466,\"lineGroup\":\"Q10w1\"}|\n{\"type\":\"ATTR\",\"ticket\":110,\"id\":\"Q10w1net\"}||{\"x\":41,\"y\":463,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILP\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q10w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":111,\"id\":\"Q10w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":112,\"id\":\"Q10w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":482,\"endX\":41,\"endY\":482,\"lineGroup\":\"Q10w2\"}|\n{\"type\":\"ATTR\",\"ticket\":113,\"id\":\"Q10w2net\"}||{\"x\":41,\"y\":479,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"REFHI\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q10w2\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":114,\"id\":\"Q10w3\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":115,\"id\":\"Q10w3line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":474,\"endX\":249,\"endY\":474,\"lineGroup\":\"Q10w3\"}|\n{\"type\":\"ATTR\",\"ticket\":116,\"id\":\"Q10w3net\"}||{\"x\":198,\"y\":471,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AUX12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q10w3\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":117,\"id\":\"Q10rating0\"}||{\"x\":35,\"y\":525,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"300V VCEO, 0.5A; E/B/C=1/2/3\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":118,\"id\":\"Q11\"}||{\"partId\":\"P\",\"x\":413,\"y\":474,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":119,\"id\":\"Q11_Device\"}||{\"x\":313,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d5a2918005e5225f\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":120,\"id\":\"Q11_Symbol\"}||{\"x\":313,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"9079a0997d869179\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":121,\"id\":\"Q11_Designator\"}||{\"x\":313,\"y\":426,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"Q11\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":122,\"id\":\"Q11_Name\"}||{\"x\":313,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"MPSA42 [QNSL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":13}|\n{\"type\":\"ATTR\",\"ticket\":123,\"id\":\"Q11_Footprint\"}||{\"x\":313,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":14}|\n{\"type\":\"ATTR\",\"ticket\":124,\"id\":\"Q11_Add into BOM\"}||{\"x\":313,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":125,\"id\":\"Q11_Convert to PCB\"}||{\"x\":313,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"Q11\",\"zIndex\":9}|\n{\"type\":\"WIRE\",\"ticket\":126,\"id\":\"Q11w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":127,\"id\":\"Q11w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":466,\"endX\":309,\"endY\":466,\"lineGroup\":\"Q11w1\"}|\n{\"type\":\"ATTR\",\"ticket\":128,\"id\":\"Q11w1net\"}||{\"x\":309,\"y\":463,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q11w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":129,\"id\":\"Q11w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":130,\"id\":\"Q11w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":482,\"endX\":309,\"endY\":482,\"lineGroup\":\"Q11w2\"}|\n{\"type\":\"ATTR\",\"ticket\":131,\"id\":\"Q11w2net\"}||{\"x\":309,\"y\":479,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q11w2\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":132,\"id\":\"Q11w3\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":133,\"id\":\"Q11w3line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":461,\"startY\":474,\"endX\":517,\"endY\":474,\"lineGroup\":\"Q11w3\"}|\n{\"type\":\"ATTR\",\"ticket\":134,\"id\":\"Q11w3net\"}||{\"x\":466,\"y\":471,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AUX12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q11w3\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":135,\"id\":\"Q11rating0\"}||{\"x\":303,\"y\":525,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"300V VCEO, 0.5A; E/B/C=1/2/3\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":136,\"id\":\"Q12\"}||{\"partId\":\"P\",\"x\":681,\"y\":474,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":137,\"id\":\"Q12_Device\"}||{\"x\":581,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d5a2918005e5225f\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":138,\"id\":\"Q12_Symbol\"}||{\"x\":581,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"9079a0997d869179\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":139,\"id\":\"Q12_Designator\"}||{\"x\":581,\"y\":426,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"Q12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":140,\"id\":\"Q12_Name\"}||{\"x\":581,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"MPSA42 [QNRL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":13}|\n{\"type\":\"ATTR\",\"ticket\":141,\"id\":\"Q12_Footprint\"}||{\"x\":581,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":14}|\n{\"type\":\"ATTR\",\"ticket\":142,\"id\":\"Q12_Add into BOM\"}||{\"x\":581,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":143,\"id\":\"Q12_Convert to PCB\"}||{\"x\":581,\"y\":439,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"Q12\",\"zIndex\":9}|\n{\"type\":\"WIRE\",\"ticket\":144,\"id\":\"Q12w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":145,\"id\":\"Q12w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":466,\"endX\":577,\"endY\":466,\"lineGroup\":\"Q12w1\"}|\n{\"type\":\"ATTR\",\"ticket\":146,\"id\":\"Q12w1net\"}||{\"x\":577,\"y\":463,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q12w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":147,\"id\":\"Q12w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":148,\"id\":\"Q12w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":482,\"endX\":577,\"endY\":482,\"lineGroup\":\"Q12w2\"}|\n{\"type\":\"ATTR\",\"ticket\":149,\"id\":\"Q12w2net\"}||{\"x\":577,\"y\":479,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"REFLO\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q12w2\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":150,\"id\":\"Q12w3\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":151,\"id\":\"Q12w3line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":729,\"startY\":474,\"endX\":785,\"endY\":474,\"lineGroup\":\"Q12w3\"}|\n{\"type\":\"ATTR\",\"ticket\":152,\"id\":\"Q12w3net\"}||{\"x\":734,\"y\":471,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_NEGC\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"Q12w3\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":153,\"id\":\"Q12rating0\"}||{\"x\":571,\"y\":525,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"300V VCEO, 0.5A; E/B/C=1/2/3\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":154,\"id\":\"R54\"}||{\"partId\":\"P\",\"x\":145,\"y\":606,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":155,\"id\":\"R54_Device\"}||{\"x\":45,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"a1c155dad0911c97\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":156,\"id\":\"R54_Symbol\"}||{\"x\":45,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"ef4ec5a1440428e3\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":157,\"id\":\"R54_Designator\"}||{\"x\":45,\"y\":558,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"R54\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":158,\"id\":\"R54_Name\"}||{\"x\":45,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"4.7k [RTPL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":159,\"id\":\"R54_Footprint\"}||{\"x\":45,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":160,\"id\":\"R54_Add into BOM\"}||{\"x\":45,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":161,\"id\":\"R54_Convert to PCB\"}||{\"x\":45,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"R54\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":162,\"id\":\"R54w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":163,\"id\":\"R54w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":606,\"endX\":41,\"endY\":606,\"lineGroup\":\"R54w1\"}|\n{\"type\":\"ATTR\",\"ticket\":164,\"id\":\"R54w1net\"}||{\"x\":41,\"y\":603,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILP\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R54w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":165,\"id\":\"R54w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":166,\"id\":\"R54w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":606,\"endX\":249,\"endY\":606,\"lineGroup\":\"R54w2\"}|\n{\"type\":\"ATTR\",\"ticket\":167,\"id\":\"R54w2net\"}||{\"x\":198,\"y\":603,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AGND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R54w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":168,\"id\":\"R54rating0\"}||{\"x\":35,\"y\":657,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\".25W, 1%, >=250V\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":169,\"id\":\"R55\"}||{\"partId\":\"P\",\"x\":413,\"y\":606,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":170,\"id\":\"R55_Device\"}||{\"x\":313,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"a1c155dad0911c97\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":171,\"id\":\"R55_Symbol\"}||{\"x\":313,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"ef4ec5a1440428e3\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":172,\"id\":\"R55_Designator\"}||{\"x\":313,\"y\":558,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"R55\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":173,\"id\":\"R55_Name\"}||{\"x\":313,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"4.7k [RTNL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":174,\"id\":\"R55_Footprint\"}||{\"x\":313,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":175,\"id\":\"R55_Add into BOM\"}||{\"x\":313,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":176,\"id\":\"R55_Convert to PCB\"}||{\"x\":313,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"R55\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":177,\"id\":\"R55w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":178,\"id\":\"R55w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":606,\"endX\":309,\"endY\":606,\"lineGroup\":\"R55w1\"}|\n{\"type\":\"ATTR\",\"ticket\":179,\"id\":\"R55w1net\"}||{\"x\":309,\"y\":603,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R55w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":180,\"id\":\"R55w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":181,\"id\":\"R55w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":461,\"startY\":606,\"endX\":517,\"endY\":606,\"lineGroup\":\"R55w2\"}|\n{\"type\":\"ATTR\",\"ticket\":182,\"id\":\"R55w2net\"}||{\"x\":466,\"y\":603,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AGND\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R55w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":183,\"id\":\"R55rating0\"}||{\"x\":303,\"y\":657,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\".25W, 1%, >=250V\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":184,\"id\":\"R56\"}||{\"partId\":\"P\",\"x\":681,\"y\":606,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":185,\"id\":\"R56_Device\"}||{\"x\":581,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"a1c155dad0911c97\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":186,\"id\":\"R56_Symbol\"}||{\"x\":581,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"ef4ec5a1440428e3\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":187,\"id\":\"R56_Designator\"}||{\"x\":581,\"y\":558,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"R56\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":188,\"id\":\"R56_Name\"}||{\"x\":581,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"10k [RCPL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":189,\"id\":\"R56_Footprint\"}||{\"x\":581,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":190,\"id\":\"R56_Add into BOM\"}||{\"x\":581,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":191,\"id\":\"R56_Convert to PCB\"}||{\"x\":581,\"y\":571,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"R56\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":192,\"id\":\"R56w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":193,\"id\":\"R56w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":606,\"endX\":577,\"endY\":606,\"lineGroup\":\"R56w1\"}|\n{\"type\":\"ATTR\",\"ticket\":194,\"id\":\"R56w1net\"}||{\"x\":577,\"y\":603,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AUX12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R56w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":195,\"id\":\"R56w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":196,\"id\":\"R56w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":729,\"startY\":606,\"endX\":785,\"endY\":606,\"lineGroup\":\"R56w2\"}|\n{\"type\":\"ATTR\",\"ticket\":197,\"id\":\"R56w2net\"}||{\"x\":734,\"y\":603,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_POSC\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R56w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":198,\"id\":\"R56rating0\"}||{\"x\":571,\"y\":657,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\".25W, 1%, >=250V\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":199,\"id\":\"R57\"}||{\"partId\":\"P\",\"x\":145,\"y\":738,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":200,\"id\":\"R57_Device\"}||{\"x\":45,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"a1c155dad0911c97\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":201,\"id\":\"R57_Symbol\"}||{\"x\":45,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"ef4ec5a1440428e3\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":202,\"id\":\"R57_Designator\"}||{\"x\":45,\"y\":690,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"R57\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":203,\"id\":\"R57_Name\"}||{\"x\":45,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"10k [RCNL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":204,\"id\":\"R57_Footprint\"}||{\"x\":45,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":12}|\n{\"type\":\"ATTR\",\"ticket\":205,\"id\":\"R57_Add into BOM\"}||{\"x\":45,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":6}|\n{\"type\":\"ATTR\",\"ticket\":206,\"id\":\"R57_Convert to PCB\"}||{\"x\":45,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"R57\",\"zIndex\":7}|\n{\"type\":\"WIRE\",\"ticket\":207,\"id\":\"R57w1\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":208,\"id\":\"R57w1line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":738,\"endX\":41,\"endY\":738,\"lineGroup\":\"R57w1\"}|\n{\"type\":\"ATTR\",\"ticket\":209,\"id\":\"R57w1net\"}||{\"x\":41,\"y\":735,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"AUX12\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R57w1\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":210,\"id\":\"R57w2\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":211,\"id\":\"R57w2line\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":738,\"endX\":249,\"endY\":738,\"lineGroup\":\"R57w2\"}|\n{\"type\":\"ATTR\",\"ticket\":212,\"id\":\"R57w2net\"}||{\"x\":198,\"y\":735,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_NEGC\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"R57w2\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":213,\"id\":\"R57rating0\"}||{\"x\":35,\"y\":789,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\".25W, 1%, >=250V\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":214,\"id\":\"D24\"}||{\"partId\":\"P\",\"x\":413,\"y\":738,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":215,\"id\":\"D24_Device\"}||{\"x\":313,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":216,\"id\":\"D24_Symbol\"}||{\"x\":313,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":217,\"id\":\"D24_Designator\"}||{\"x\":313,\"y\":690,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D24\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":218,\"id\":\"D24_Name\"}||{\"x\":313,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DTRPL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":219,\"id\":\"D24_Footprint\"}||{\"x\":313,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":220,\"id\":\"D24_Add into BOM\"}||{\"x\":313,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":221,\"id\":\"D24_Convert to PCB\"}||{\"x\":313,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D24\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":222,\"id\":\"D24wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":223,\"id\":\"D24wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":738,\"endX\":309,\"endY\":738,\"lineGroup\":\"D24wA\"}|\n{\"type\":\"ATTR\",\"ticket\":224,\"id\":\"D24wAnet\"}||{\"x\":309,\"y\":735,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"TIMER\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D24wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":225,\"id\":\"D24wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":226,\"id\":\"D24wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":461,\"startY\":738,\"endX\":517,\"endY\":738,\"lineGroup\":\"D24wK\"}|\n{\"type\":\"ATTR\",\"ticket\":227,\"id\":\"D24wKnet\"}||{\"x\":466,\"y\":735,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_POSC\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D24wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":228,\"id\":\"D24rating0\"}||{\"x\":303,\"y\":789,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":229,\"id\":\"D25\"}||{\"partId\":\"P\",\"x\":681,\"y\":738,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":230,\"id\":\"D25_Device\"}||{\"x\":581,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":231,\"id\":\"D25_Symbol\"}||{\"x\":581,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":232,\"id\":\"D25_Designator\"}||{\"x\":581,\"y\":690,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D25\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":233,\"id\":\"D25_Name\"}||{\"x\":581,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DTRNL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":234,\"id\":\"D25_Footprint\"}||{\"x\":581,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":235,\"id\":\"D25_Add into BOM\"}||{\"x\":581,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":236,\"id\":\"D25_Convert to PCB\"}||{\"x\":581,\"y\":703,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D25\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":237,\"id\":\"D25wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":238,\"id\":\"D25wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":738,\"endX\":577,\"endY\":738,\"lineGroup\":\"D25wA\"}|\n{\"type\":\"ATTR\",\"ticket\":239,\"id\":\"D25wAnet\"}||{\"x\":577,\"y\":735,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"TIMER\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D25wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":240,\"id\":\"D25wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":241,\"id\":\"D25wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":729,\"startY\":738,\"endX\":785,\"endY\":738,\"lineGroup\":\"D25wK\"}|\n{\"type\":\"ATTR\",\"ticket\":242,\"id\":\"D25wKnet\"}||{\"x\":734,\"y\":735,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_NEGC\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D25wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":243,\"id\":\"D25rating0\"}||{\"x\":571,\"y\":789,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":244,\"id\":\"D26\"}||{\"partId\":\"P\",\"x\":145,\"y\":870,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":245,\"id\":\"D26_Device\"}||{\"x\":45,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":246,\"id\":\"D26_Symbol\"}||{\"x\":45,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":247,\"id\":\"D26_Designator\"}||{\"x\":45,\"y\":822,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D26\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":248,\"id\":\"D26_Name\"}||{\"x\":45,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DBEPSL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":249,\"id\":\"D26_Footprint\"}||{\"x\":45,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":250,\"id\":\"D26_Add into BOM\"}||{\"x\":45,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":251,\"id\":\"D26_Convert to PCB\"}||{\"x\":45,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D26\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":252,\"id\":\"D26wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":253,\"id\":\"D26wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":870,\"endX\":41,\"endY\":870,\"lineGroup\":\"D26wA\"}|\n{\"type\":\"ATTR\",\"ticket\":254,\"id\":\"D26wAnet\"}||{\"x\":41,\"y\":867,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILP\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D26wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":255,\"id\":\"D26wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":256,\"id\":\"D26wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":870,\"endX\":249,\"endY\":870,\"lineGroup\":\"D26wK\"}|\n{\"type\":\"ATTR\",\"ticket\":257,\"id\":\"D26wKnet\"}||{\"x\":198,\"y\":867,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D26wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":258,\"id\":\"D26rating0\"}||{\"x\":35,\"y\":921,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":259,\"id\":\"D27\"}||{\"partId\":\"P\",\"x\":413,\"y\":870,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":260,\"id\":\"D27_Device\"}||{\"x\":313,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":261,\"id\":\"D27_Symbol\"}||{\"x\":313,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":262,\"id\":\"D27_Designator\"}||{\"x\":313,\"y\":822,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D27\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":263,\"id\":\"D27_Name\"}||{\"x\":313,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DBEPRL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":264,\"id\":\"D27_Footprint\"}||{\"x\":313,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":265,\"id\":\"D27_Add into BOM\"}||{\"x\":313,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":266,\"id\":\"D27_Convert to PCB\"}||{\"x\":313,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D27\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":267,\"id\":\"D27wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":268,\"id\":\"D27wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":365,\"startY\":870,\"endX\":309,\"endY\":870,\"lineGroup\":\"D27wA\"}|\n{\"type\":\"ATTR\",\"ticket\":269,\"id\":\"D27wAnet\"}||{\"x\":309,\"y\":867,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILP\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D27wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":270,\"id\":\"D27wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":271,\"id\":\"D27wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":461,\"startY\":870,\"endX\":517,\"endY\":870,\"lineGroup\":\"D27wK\"}|\n{\"type\":\"ATTR\",\"ticket\":272,\"id\":\"D27wKnet\"}||{\"x\":466,\"y\":867,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"REFHI\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D27wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":273,\"id\":\"D27rating0\"}||{\"x\":303,\"y\":921,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":274,\"id\":\"D28\"}||{\"partId\":\"P\",\"x\":681,\"y\":870,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":275,\"id\":\"D28_Device\"}||{\"x\":581,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":276,\"id\":\"D28_Symbol\"}||{\"x\":581,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":277,\"id\":\"D28_Designator\"}||{\"x\":581,\"y\":822,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D28\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":278,\"id\":\"D28_Name\"}||{\"x\":581,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DBENSL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":279,\"id\":\"D28_Footprint\"}||{\"x\":581,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":280,\"id\":\"D28_Add into BOM\"}||{\"x\":581,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":281,\"id\":\"D28_Convert to PCB\"}||{\"x\":581,\"y\":835,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D28\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":282,\"id\":\"D28wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":283,\"id\":\"D28wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":633,\"startY\":870,\"endX\":577,\"endY\":870,\"lineGroup\":\"D28wA\"}|\n{\"type\":\"ATTR\",\"ticket\":284,\"id\":\"D28wAnet\"}||{\"x\":577,\"y\":867,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D28wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":285,\"id\":\"D28wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":286,\"id\":\"D28wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":729,\"startY\":870,\"endX\":785,\"endY\":870,\"lineGroup\":\"D28wK\"}|\n{\"type\":\"ATTR\",\"ticket\":287,\"id\":\"D28wKnet\"}||{\"x\":734,\"y\":867,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_SENSE\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D28wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":288,\"id\":\"D28rating0\"}||{\"x\":571,\"y\":921,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"COMPONENT\",\"ticket\":289,\"id\":\"D29\"}||{\"partId\":\"P\",\"x\":145,\"y\":1002,\"rotation\":0,\"isMirror\":false,\"attrs\":{},\"zIndex\":1}|\n{\"type\":\"ATTR\",\"ticket\":290,\"id\":\"D29_Device\"}||{\"x\":45,\"y\":967,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"d228fc0a705fbc6e\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Device\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":9}|\n{\"type\":\"ATTR\",\"ticket\":291,\"id\":\"D29_Symbol\"}||{\"x\":45,\"y\":967,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"dbb056fab6715de5\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Symbol\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":8}|\n{\"type\":\"ATTR\",\"ticket\":292,\"id\":\"D29_Designator\"}||{\"x\":45,\"y\":954,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":10,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"D29\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Designator\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":7}|\n{\"type\":\"ATTR\",\"ticket\":293,\"id\":\"D29_Name\"}||{\"x\":45,\"y\":967,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"1N4148 [DBENRL]\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"Name\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":10}|\n{\"type\":\"ATTR\",\"ticket\":294,\"id\":\"D29_Footprint\"}||{\"x\":45,\"y\":967,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"align\":\"LEFT_BOTTOM\",\"value\":\"\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Footprint\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":11}|\n{\"type\":\"ATTR\",\"ticket\":295,\"id\":\"D29_Add into BOM\"}||{\"x\":45,\"y\":967,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"yes\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Add into BOM\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":5}|\n{\"type\":\"ATTR\",\"ticket\":296,\"id\":\"D29_Convert to PCB\"}||{\"x\":45,\"y\":967,\"rotation\":0,\"color\":null,\"fontFamily\":null,\"fontSize\":8,\"fontWeight\":null,\"italic\":null,\"underline\":null,\"strikeout\":false,\"align\":\"LEFT_BOTTOM\",\"value\":\"no\",\"keyVisible\":false,\"valueVisible\":false,\"key\":\"Convert to PCB\",\"fillColor\":null,\"parentId\":\"D29\",\"zIndex\":6}|\n{\"type\":\"WIRE\",\"ticket\":297,\"id\":\"D29wA\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":298,\"id\":\"D29wAline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":97,\"startY\":1002,\"endX\":41,\"endY\":1002,\"lineGroup\":\"D29wA\"}|\n{\"type\":\"ATTR\",\"ticket\":299,\"id\":\"D29wAnet\"}||{\"x\":41,\"y\":999,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"L_TAILN\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D29wA\",\"zIndex\":3}|\n{\"type\":\"WIRE\",\"ticket\":300,\"id\":\"D29wK\"}||{\"zIndex\":2}|\n{\"type\":\"LINE\",\"ticket\":301,\"id\":\"D29wKline\"}||{\"fillColor\":null,\"fillStyle\":null,\"strokeColor\":\"#15705B\",\"strokeStyle\":null,\"strokeWidth\":1,\"startX\":193,\"startY\":1002,\"endX\":249,\"endY\":1002,\"lineGroup\":\"D29wK\"}|\n{\"type\":\"ATTR\",\"ticket\":302,\"id\":\"D29wKnet\"}||{\"x\":198,\"y\":999,\"rotation\":0,\"color\":null,\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"REFLO\",\"keyVisible\":false,\"valueVisible\":true,\"key\":\"NET\",\"fillColor\":null,\"parentId\":\"D29wK\",\"zIndex\":3}|\n{\"type\":\"TEXT\",\"ticket\":303,\"id\":\"D29rating0\"}||{\"x\":35,\"y\":1053,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"100V, 150mA\",\"fillColor\":\"#152C46\",\"zIndex\":1}|\n{\"type\":\"TEXT\",\"ticket\":304,\"id\":\"footer\"}||{\"x\":35,\"y\":1155,\"rotation\":0,\"color\":\"#152C46\",\"fontSize\":7,\"align\":\"LEFT_BOTTOM\",\"value\":\"GLOBAL NET LABELS CONNECT ACROSS SHEETS | Physical pins stated; panel/relay terminals functional | NO PCB FOOTPRINTS\",\"fillColor\":\"#152C46\",\"zIndex\":1}",
+  "components": [
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "R52",
+      "componentType": "part",
+      "x": 145,
+      "y": -210,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "a1c155dad0911c97",
+        "name": "QPCB_R"
+      },
+      "symbol": {
+        "uuid": "ef4ec5a1440428e3",
+        "libraryUuid": "",
+        "name": "QPCB_R"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "R52",
+      "name": "100k [RDS1L]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "R53",
+      "componentType": "part",
+      "x": 413,
+      "y": -210,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "a1c155dad0911c97",
+        "name": "QPCB_R"
+      },
+      "symbol": {
+        "uuid": "ef4ec5a1440428e3",
+        "libraryUuid": "",
+        "name": "QPCB_R"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "R53",
+      "name": "100k [RDS2L]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "R54",
+      "componentType": "part",
+      "x": 145,
+      "y": -606,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "a1c155dad0911c97",
+        "name": "QPCB_R"
+      },
+      "symbol": {
+        "uuid": "ef4ec5a1440428e3",
+        "libraryUuid": "",
+        "name": "QPCB_R"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "R54",
+      "name": "4.7k [RTPL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "R55",
+      "componentType": "part",
+      "x": 413,
+      "y": -606,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "a1c155dad0911c97",
+        "name": "QPCB_R"
+      },
+      "symbol": {
+        "uuid": "ef4ec5a1440428e3",
+        "libraryUuid": "",
+        "name": "QPCB_R"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "R55",
+      "name": "4.7k [RTNL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "R56",
+      "componentType": "part",
+      "x": 681,
+      "y": -606,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "a1c155dad0911c97",
+        "name": "QPCB_R"
+      },
+      "symbol": {
+        "uuid": "ef4ec5a1440428e3",
+        "libraryUuid": "",
+        "name": "QPCB_R"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "R56",
+      "name": "10k [RCPL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "R57",
+      "componentType": "part",
+      "x": 145,
+      "y": -738,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "a1c155dad0911c97",
+        "name": "QPCB_R"
+      },
+      "symbol": {
+        "uuid": "ef4ec5a1440428e3",
+        "libraryUuid": "",
+        "name": "QPCB_R"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "R57",
+      "name": "10k [RCNL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "C24",
+      "componentType": "part",
+      "x": 681,
+      "y": -210,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "04ba81c48c5804c4",
+        "name": "QPCB_C"
+      },
+      "symbol": {
+        "uuid": "122f475eed423f70",
+        "libraryUuid": "",
+        "name": "QPCB_C"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "C24",
+      "name": "1u [CDSL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D22",
+      "componentType": "part",
+      "x": 145,
+      "y": -342,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D22",
+      "name": "1N4148 [DSPL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D23",
+      "componentType": "part",
+      "x": 413,
+      "y": -342,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D23",
+      "name": "1N4148 [DSNL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D24",
+      "componentType": "part",
+      "x": 413,
+      "y": -738,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D24",
+      "name": "1N4148 [DTRPL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D25",
+      "componentType": "part",
+      "x": 681,
+      "y": -738,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D25",
+      "name": "1N4148 [DTRNL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D26",
+      "componentType": "part",
+      "x": 145,
+      "y": -870,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D26",
+      "name": "1N4148 [DBEPSL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D27",
+      "componentType": "part",
+      "x": 413,
+      "y": -870,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D27",
+      "name": "1N4148 [DBEPRL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D28",
+      "componentType": "part",
+      "x": 681,
+      "y": -870,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D28",
+      "name": "1N4148 [DBENSL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "D29",
+      "componentType": "part",
+      "x": 145,
+      "y": -1002,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d228fc0a705fbc6e",
+        "name": "QPCB_D"
+      },
+      "symbol": {
+        "uuid": "dbb056fab6715de5",
+        "libraryUuid": "",
+        "name": "QPCB_D"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "D29",
+      "name": "1N4148 [DBENRL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "Q9",
+      "componentType": "part",
+      "x": 681,
+      "y": -342,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d5a2918005e5225f",
+        "name": "QPCB_NPN"
+      },
+      "symbol": {
+        "uuid": "9079a0997d869179",
+        "libraryUuid": "",
+        "name": "QPCB_NPN"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "Q9",
+      "name": "MPSA42 [QPSL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "Q10",
+      "componentType": "part",
+      "x": 145,
+      "y": -474,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d5a2918005e5225f",
+        "name": "QPCB_NPN"
+      },
+      "symbol": {
+        "uuid": "9079a0997d869179",
+        "libraryUuid": "",
+        "name": "QPCB_NPN"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "Q10",
+      "name": "MPSA42 [QPRL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "Q11",
+      "componentType": "part",
+      "x": 413,
+      "y": -474,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d5a2918005e5225f",
+        "name": "QPCB_NPN"
+      },
+      "symbol": {
+        "uuid": "9079a0997d869179",
+        "libraryUuid": "",
+        "name": "QPCB_NPN"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "Q11",
+      "name": "MPSA42 [QNSL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    },
+    {
+      "async": true,
+      "primitiveType": "Component",
+      "primitiveId": "Q12",
+      "componentType": "part",
+      "x": 681,
+      "y": -474,
+      "subPartName": "P",
+      "rotation": 0,
+      "mirror": false,
+      "addIntoBom": true,
+      "addIntoPcb": false,
+      "net": "",
+      "component": {
+        "libraryUuid": "",
+        "uuid": "d5a2918005e5225f",
+        "name": "QPCB_NPN"
+      },
+      "symbol": {
+        "uuid": "9079a0997d869179",
+        "libraryUuid": "",
+        "name": "QPCB_NPN"
+      },
+      "footprint": {
+        "uuid": ""
+      },
+      "designator": "Q12",
+      "name": "MPSA42 [QNRL]",
+      "uniqueId": "",
+      "otherProperty": {}
+    }
+  ],
+  "pins": {
+    "R52": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -210,
+        "pinNumber": "1",
+        "pinName": "1",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R52-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -210,
+        "pinNumber": "2",
+        "pinName": "2",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R52-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "R53": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -210,
+        "pinNumber": "1",
+        "pinName": "1",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R53-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 461,
+        "y": -210,
+        "pinNumber": "2",
+        "pinName": "2",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R53-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "R54": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -606,
+        "pinNumber": "1",
+        "pinName": "1",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R54-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -606,
+        "pinNumber": "2",
+        "pinName": "2",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R54-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "R55": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -606,
+        "pinNumber": "1",
+        "pinName": "1",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R55-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 461,
+        "y": -606,
+        "pinNumber": "2",
+        "pinName": "2",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R55-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "R56": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -606,
+        "pinNumber": "1",
+        "pinName": "1",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R56-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 729,
+        "y": -606,
+        "pinNumber": "2",
+        "pinName": "2",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R56-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "R57": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -738,
+        "pinNumber": "1",
+        "pinName": "1",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R57-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -738,
+        "pinNumber": "2",
+        "pinName": "2",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "R57-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "C24": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -210,
+        "pinNumber": "1",
+        "pinName": "+",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "C24-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 729,
+        "y": -210,
+        "pinNumber": "2",
+        "pinName": "-",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "C24-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D22": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -342,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D22-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -342,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D22-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D23": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -342,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D23-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 461,
+        "y": -342,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D23-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D24": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -738,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D24-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 461,
+        "y": -738,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D24-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D25": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -738,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D25-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 729,
+        "y": -738,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D25-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D26": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -870,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D26-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -870,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D26-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D27": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -870,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D27-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 461,
+        "y": -870,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D27-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D28": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -870,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D28-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 729,
+        "y": -870,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D28-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "D29": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -1002,
+        "pinNumber": "A",
+        "pinName": "A",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D29-pinA",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -1002,
+        "pinNumber": "K",
+        "pinName": "K",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "D29-pinK",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "Q9": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -334,
+        "pinNumber": "1",
+        "pinName": "E",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q9-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -350,
+        "pinNumber": "2",
+        "pinName": "B",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q9-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 729,
+        "y": -342,
+        "pinNumber": "3",
+        "pinName": "C",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q9-pin3",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "Q10": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -466,
+        "pinNumber": "1",
+        "pinName": "E",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q10-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 97,
+        "y": -482,
+        "pinNumber": "2",
+        "pinName": "B",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q10-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 193,
+        "y": -474,
+        "pinNumber": "3",
+        "pinName": "C",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q10-pin3",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "Q11": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -466,
+        "pinNumber": "1",
+        "pinName": "E",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q11-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 365,
+        "y": -482,
+        "pinNumber": "2",
+        "pinName": "B",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q11-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 461,
+        "y": -474,
+        "pinNumber": "3",
+        "pinName": "C",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q11-pin3",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ],
+    "Q12": [
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -466,
+        "pinNumber": "1",
+        "pinName": "E",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q12-pin1",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 633,
+        "y": -482,
+        "pinNumber": "2",
+        "pinName": "B",
+        "rotation": 180,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q12-pin2",
+        "otherProperty": {},
+        "noConnected": false
+      },
+      {
+        "async": true,
+        "primitiveType": "ComponentPin",
+        "x": 729,
+        "y": -474,
+        "pinNumber": "3",
+        "pinName": "C",
+        "rotation": 0,
+        "pinLength": 14,
+        "pinColor": null,
+        "pinShape": "None",
+        "pinType": "Passive",
+        "primitiveId": "Q12-pin3",
+        "otherProperty": {},
+        "noConnected": false
+      }
+    ]
+  },
+  "drc": [
+    {
+      "type": "fatalError",
+      "count": 165
+    }
+  ]
+}

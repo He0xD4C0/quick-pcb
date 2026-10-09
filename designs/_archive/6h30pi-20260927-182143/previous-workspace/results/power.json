@@ -1,0 +1,61 @@
+{
+  "model_scope": "Generic rectifiers, BJT and MOSFET; heater LDO behavioral. No validated loop/SOA/thermal or transformer inrush model.",
+  "hv": {
+    "0.9": {
+      "raw_Vmean": 172.5699910855002,
+      "raw_ripple_Vpp": 2.563770000000005,
+      "Bplus_Vmean": 157.44970159895087,
+      "Bplus_ripple_Vpp": 0.041129000000012184,
+      "secondary_Arms": 0.1770073989582568,
+      "pass_W_est": 1.051652599083889,
+      "bulk_ripple_Arms_est": 0.15588354763659087
+    },
+    "1": {
+      "raw_Vmean": 192.95421701505606,
+      "raw_ripple_Vpp": 2.6393170000000055,
+      "Bplus_Vmean": 158.81587831868524,
+      "Bplus_ripple_Vpp": 0.02308099999999058,
+      "secondary_Arms": 0.18299870519418115,
+      "pass_W_est": 2.5517316447024587,
+      "bulk_ripple_Arms_est": 0.16188849929374102
+    },
+    "1.1": {
+      "raw_Vmean": 213.39261799587985,
+      "raw_ripple_Vpp": 2.7077759999999955,
+      "Bplus_Vmean": 159.79182923642284,
+      "Bplus_ripple_Vpp": 0.019421999999991613,
+      "secondary_Arms": 0.18845877782056844,
+      "pass_W_est": 4.0872516125388545,
+      "bulk_ripple_Arms_est": 0.1673904270713925
+    }
+  },
+  "heater": {
+    "0.9": {
+      "raw_min_V": 9.13949859,
+      "raw_max_V": 9.93341771,
+      "output_min_V": 6.3,
+      "output_max_V": 6.3,
+      "regulator_W": 5.834353469821994,
+      "secondary_Arms": 3.3014327768416534,
+      "bulk_ripple_Arms_est": 2.760056804612024
+    },
+    "1": {
+      "raw_min_V": 10.4093849,
+      "raw_max_V": 11.2172454,
+      "output_min_V": 6.3,
+      "output_max_V": 6.3,
+      "regulator_W": 8.132305754115587,
+      "secondary_Arms": 3.3628095634309267,
+      "bulk_ripple_Arms_est": 2.8333431596798313
+    },
+    "1.1": {
+      "raw_min_V": 11.6845788,
+      "raw_max_V": 12.5047186,
+      "output_min_V": 6.3,
+      "output_max_V": 6.3,
+      "regulator_W": 10.438281548235548,
+      "secondary_Arms": 3.419760136576597,
+      "bulk_ripple_Arms_est": 2.9004687896203993
+    }
+  }
+}

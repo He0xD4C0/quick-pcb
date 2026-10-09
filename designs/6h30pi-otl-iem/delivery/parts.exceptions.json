@@ -1,0 +1,227 @@
+{
+  "format": "quickpcb-parts-exceptions/v1",
+  "status": "NOT_ALL_APPROVED",
+  "parts": {
+    "tube_6h30pi_eb": {
+      "manufacturer": "Electro-Harmonix",
+      "mpn": "6H30Pi-EB",
+      "lcsc": null,
+      "library_uuid": "",
+      "device_uuid": "7b2b7fdde8f87be0",
+      "symbol_uuid": "ae7f3c7166efe836",
+      "footprint_uuid": null,
+      "physical_pin_functions": {
+        "1": "second triode plate",
+        "2": "second triode grid",
+        "3": "second triode cathode",
+        "4": "heater",
+        "5": "heater",
+        "6": "first triode plate",
+        "7": "first triode grid",
+        "8": "first triode cathode",
+        "9": "internal screen"
+      },
+      "sources": [
+        "evidence/datasheets/6H30Pi-EB.pdf pp1-2"
+      ],
+      "absence_search": [
+        "evidence/library/alternatives-confirmed.json"
+      ],
+      "ratings": {
+        "heater_V_min": 6,
+        "heater_V_max": 6.6,
+        "heater_A_max": 0.9,
+        "plate_V_max": 250,
+        "plate_W_per_triode_max": 4,
+        "cathode_A_avg_max": 0.1,
+        "self_bias_grid_resistance_ohm_max": 300000,
+        "design_nominal_plate_W_max": 3.2
+      },
+      "review_status": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+      "notes": "Manufacturer numbered leads checked visually. Keep triodes6/7/8 and1/2/3 plus heater4/5 and screen9 as one physical bottle. No unverified socket footprint is assigned. 6H30Pi and6H30Pi-EB limits must not be combined to loosen constraints.",
+      "native_load_test": "DRAWN_SAVED_REOPENED; NATIVE_DRC_FAILED_MISSING_FOOTPRINT",
+      "local_source_sha256": {
+        "evidence/datasheets/6H30Pi-EB.pdf": "cbc0d812df41e114221da3664eeed3359c4143153f969b9fe43bdadeb5f56e92"
+      },
+      "native_binding_scope": {
+        "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "page_uuid": "13436f1562c42519",
+        "evidence": "delivery/native-bindings.json"
+      }
+    },
+    "relay_hv": {
+      "manufacturer": "Pickering",
+      "mpn": "67-1-A-12/1",
+      "lcsc": null,
+      "library_uuid": null,
+      "device_uuid": "444666236e0c4800",
+      "symbol_uuid": "65c3cb85dc334abf",
+      "footprint_uuid": null,
+      "physical_pin_functions": {
+        "1": "normally open contact end1",
+        "2": "coil terminal (positive in diode variant)",
+        "3": "coil terminal",
+        "4": "normally open contact end4"
+      },
+      "sources": [
+        "evidence/datasheets/pickering-67-2020.pdf p2",
+        "https://www.pickeringrelay.com/product/67-1-a-12-1/"
+      ],
+      "absence_search": [
+        "evidence/library/final-exception-review.json"
+      ],
+      "ratings": {
+        "coil_V": 12,
+        "coil_ohm": 150,
+        "contact_power_W_max": 50,
+        "switch_A_max": 3,
+        "switch_DC_V_max": 3500,
+        "release_s_max": 0.002,
+        "operate_s_max_including_bounce": 0.003,
+        "contact_initial_ohm_max": 0.12
+      },
+      "review_status": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+      "notes": "No D suffix: no internal flyback diode. Voltage,current,power limits apply simultaneously; capacitive load and fault interruption are not qualified by resistive switch voltage. Use conservative2020carry current3A, not newer3.5A to relax review.",
+      "native_load_test": "DRAWN_SAVED_REOPENED; NATIVE_DRC_FAILED_MISSING_FOOTPRINT",
+      "local_source_sha256": {
+        "evidence/datasheets/pickering-67-2020.pdf": "90dd65e97d06ef3ec8ce8b5a638c963c25aa068670eff96d46436dd2237b14b9"
+      },
+      "native_binding_scope": {
+        "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "page_uuid": "13436f1562c42519",
+        "evidence": "delivery/native-bindings.json"
+      }
+    },
+    "mains_inlet": {
+      "manufacturer": "Schurter",
+      "mpn": "6100.3100",
+      "lcsc": null,
+      "library_uuid": null,
+      "device_uuid": "07e2adee833a5a90",
+      "symbol_uuid": "8662ac4631df66b0",
+      "footprint_uuid": null,
+      "physical_pin_functions": {
+        "L": "line terminal markedL",
+        "N": "neutral terminal markedN",
+        "PE": "protective-earth terminal markedearth"
+      },
+      "sources": [
+        "evidence/datasheets/schurter-6100.pdf"
+      ],
+      "absence_search": [
+        "evidence/library/exception-search.json"
+      ],
+      "ratings": {
+        "rated_AC_V": 250,
+        "rated_A": 10
+      },
+      "review_status": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+      "notes": "Use actual terminal markings, not fictional numeric pins. C14 ClassI solder-terminal option. Do not infer L/N positions from front vs rear view; final harness drawing must repeat manufacturer view.",
+      "native_load_test": "DRAWN_SAVED_REOPENED; NATIVE_DRC_FAILED_MISSING_FOOTPRINT",
+      "local_source_sha256": {
+        "evidence/datasheets/schurter-6100.pdf": "790ed148c9759c75db31d0994850d27c75c26832a2c96cb58935ce6c5e2b74ef"
+      },
+      "native_binding_scope": {
+        "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "page_uuid": "13436f1562c42519",
+        "evidence": "delivery/native-bindings.json"
+      }
+    },
+    "mains_switch": {
+      "manufacturer": "E-Switch",
+      "mpn": "R5ABLKBLKFF0",
+      "lcsc": null,
+      "library_uuid": null,
+      "device_uuid": "a45d100264d445ef",
+      "symbol_uuid": "011420535f8e9f89",
+      "footprint_uuid": null,
+      "physical_pin_functions": {
+        "1": "poleA end1",
+        "1a": "poleA end2",
+        "2": "poleB end1",
+        "2a": "poleB end2"
+      },
+      "sources": [
+        "evidence/datasheets/R5ABLKBLKFF0.pdf"
+      ],
+      "absence_search": [
+        "evidence/library/alternatives-confirmed.json"
+      ],
+      "ratings": {
+        "rated_AC_V": 250,
+        "rated_A_at250VAC": 16,
+        "poles": 2
+      },
+      "review_status": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+      "notes": "Non-illuminated DPST. Exact manufacturer drawing contact pairs1-1a and2-2a; numbers defined by manufacturer drawing, not a claim of moulded terminal labels.",
+      "native_load_test": "DRAWN_SAVED_REOPENED; NATIVE_DRC_FAILED_MISSING_FOOTPRINT",
+      "local_source_sha256": {
+        "evidence/datasheets/R5ABLKBLKFF0.pdf": "5fdbefb39031e809ae38462d74055d52d89d9550af5ed43009972ab184df81f3"
+      },
+      "native_binding_scope": {
+        "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "page_uuid": "13436f1562c42519",
+        "evidence": "delivery/native-bindings.json"
+      }
+    },
+    "tube_socket": {
+      "manufacturer": "Belton",
+      "mpn": "VT9-ST-C",
+      "lcsc": null,
+      "library_uuid": null,
+      "device_uuid": null,
+      "symbol_uuid": null,
+      "footprint_uuid": null,
+      "physical_pin_functions": {
+        "1": "mating tube lead1",
+        "2": "mating tube lead2",
+        "3": "mating tube lead3",
+        "4": "mating tube lead4",
+        "5": "mating tube lead5",
+        "6": "mating tube lead6",
+        "7": "mating tube lead7",
+        "8": "mating tube lead8",
+        "9": "mating tube lead9"
+      },
+      "sources": [
+        "evidence/datasheets/belton-9pin.pdf p52"
+      ],
+      "absence_search": [
+        "evidence/library/exact-film-socket.json"
+      ],
+      "ratings": {},
+      "review_status": "PIN_DRAWING_REVIEWED_RATINGS_MISSING",
+      "notes": "Manufacturer9-pin socket drawing has numbered contacts and dimensions. Catalogue does not establish current/voltage/temperature rating. Tube heater requires up to0.9A per contact; obtain rated socket data before approving assembly.",
+      "native_load_test": "NOT_PERFORMED",
+      "local_source_sha256": {
+        "evidence/datasheets/belton-9pin.pdf": "1ab3c5bdd88de6009ea75d0ca057ebcccd6dcfe350ac0e80157e766eb889dc29"
+      }
+    },
+    "transformer": {
+      "manufacturer": "Custom procurement specification",
+      "mpn": "QPCB-TX-6H30-100VA-DRAFT",
+      "lcsc": null,
+      "library_uuid": null,
+      "device_uuid": null,
+      "symbol_uuid": null,
+      "footprint_uuid": null,
+      "physical_pin_functions": {},
+      "sources": [],
+      "absence_search": [],
+      "ratings": {
+        "primary_Vrms": 220,
+        "primary_Hz": 50,
+        "provisional_HV_Vrms": 150,
+        "provisional_HV_A": 0.25,
+        "provisional_heater_Vrms": 9.5,
+        "provisional_heater_A": 5,
+        "provisional_aux_Vrms": 12,
+        "provisional_aux_A": 0.3
+      },
+      "review_status": "SUPPLIER_TERMINALS_UNCONFIRMED",
+      "notes": "Winding values are requirements for a new supplier design, not verified hardware. No physical pin numbers assigned. Winding resistance, regulation, insulation, temperature rise, inrush and supplier terminal drawing are still required. This record cannot enter an approved physical topology.",
+      "native_load_test": "NOT_PERFORMED",
+      "local_source_sha256": {}
+    }
+  }
+}

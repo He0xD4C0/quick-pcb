@@ -1,0 +1,35 @@
+{
+  "method": "Linear post-processing of steady generic supply waveform through audio B+ transfer function; no heater/magnetic coupling or intrinsic device noise.",
+  "cases": {
+    "198V_16ohm": {
+      "Bplus_100Hz_Vrms": 0.014328050535081824,
+      "HP_100Hz_Vrms": 0.0017015046443566294,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0017093101115569795
+    },
+    "198V_18ohm": {
+      "Bplus_100Hz_Vrms": 0.014328050535081824,
+      "HP_100Hz_Vrms": 0.001817072150251588,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0018254062698866607
+    },
+    "220V_16ohm": {
+      "Bplus_100Hz_Vrms": 0.008050728426832203,
+      "HP_100Hz_Vrms": 0.0009560513326756428,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0009600621784161627
+    },
+    "220V_18ohm": {
+      "Bplus_100Hz_Vrms": 0.008050728426832203,
+      "HP_100Hz_Vrms": 0.0010209870755143896,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0010252695696623623
+    },
+    "242V_16ohm": {
+      "Bplus_100Hz_Vrms": 0.006772184258530292,
+      "HP_100Hz_Vrms": 0.0008042198720694521,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0008076601761380536
+    },
+    "242V_18ohm": {
+      "Bplus_100Hz_Vrms": 0.006772184258530292,
+      "HP_100Hz_Vrms": 0.0008588431051675741,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0008625164156810388
+    }
+  }
+}

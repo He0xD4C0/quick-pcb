@@ -1,0 +1,2096 @@
+{
+  "ok": true,
+  "format": "schematic/easyeda-v0.1",
+  "source": {
+    "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "project_name": "/6H30Pi-Rebuild",
+    "schematic_uuid": "cb6c26aea3154a47",
+    "schematic_name": "6H30Pi-Stereo-CANDIDATE",
+    "page_uuid": "13436f1562c42519",
+    "page_name": "Stereo-Amp-Power-Protection",
+    "document_uuid": "13436f1562c42519",
+    "document_type": 1,
+    "tab_id": "13436f1562c42519@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "window_id": "6602c0b8-81ef-4d17-ae83-c9ad104f8431"
+  },
+  "context_revision": "sha256:d4050dd23fa2625453588fd2a65a3d9e66729bec30cd4e2898b8a147d044fd07",
+  "revision": "sha256:c5d8e069973711ac7bc81eb1c53cbfd1673ef9d411e4b5fd7f0839e57dcd044d",
+  "passed": false,
+  "total_count": 148,
+  "matched_count": 148,
+  "violations": [
+    {
+      "id": "sch-drc:005ea81254d38ed2",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "a50923202bf03e3a"
+      ],
+      "position": null,
+      "message": "Wire $1N129 has multiple net names: HP_L\u3001HP_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:02ad376d4d9f3b04",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "9c8027b8f344fe7e"
+      ],
+      "position": null,
+      "message": "Component $1I30 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:03a094d2d50866d1",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "582649cb3c66da4b"
+      ],
+      "position": null,
+      "message": "Wire $1N247 has multiple net names: R_OUT\u3001R_OUT",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:05c83b3e5db7aced",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "f550f70f539bb34f"
+      ],
+      "position": null,
+      "message": "Wire $1N296 has multiple net names: OP_P_L\u3001OP_P_L\u3001OP_P_L\u3001OP_P_L\u3001OP_P_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:061443c59afcbfa4",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "238a62f968216a22"
+      ],
+      "position": null,
+      "message": "Wire $1N317 has multiple net names: HMINUS\u3001HMINUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:065cbb021a1ec93b",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "07bcd4f244559401"
+      ],
+      "position": null,
+      "message": "Wire $1N217 has multiple net names: HADJ\u3001HADJ\u3001HADJ\u3001HADJ\u3001HADJ\u3001HADJ\u3001HADJ\u3001HADJ",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:07b5e07b99574691",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "16130686b9b0e0e1"
+      ],
+      "position": null,
+      "message": "Wire $1N15 has multiple net names: R_PA\u3001R_PA\u3001R_PA\u3001R_PA\u3001R_PA",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:086c636ebfeed4fa",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "9221cd60881b533b"
+      ],
+      "position": null,
+      "message": "Wire $1N253 has multiple net names: BPLUS\u3001BPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:0ab780b56ac514a0",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "6296bcdb7cbd3375"
+      ],
+      "position": null,
+      "message": "Wire $1N299 has multiple net names: D1B\u3001D1B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:0c3dcfe94d82ca44",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4dda404bcfed69cd"
+      ],
+      "position": null,
+      "message": "Wire $1N96 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:0d57454287a3de34",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "99fdfc7f4456a365"
+      ],
+      "position": null,
+      "message": "Wire $1N185 has multiple net names: HV_RAW_BLEED\u3001HV_RAW_BLEED",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:107daeb35a51f8bf",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "bf33f3f8519a5027"
+      ],
+      "position": null,
+      "message": "Wire $1N259 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:12e289857ae6afce",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b5edefef00b99c82"
+      ],
+      "position": null,
+      "message": "Wire $1N196 has multiple net names: L_GI\u3001L_GI\u3001L_GI\u3001L_GI\u3001L_GI",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:13073a50a39940ae",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "8674156130f0cf14"
+      ],
+      "position": null,
+      "message": "Wire $1N265 has multiple net names: ZT_OUT\u3001ZT_OUT\u3001ZT_OUT",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:162f52b20d68a018",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "2b0b2f3a3739059f"
+      ],
+      "position": null,
+      "message": "Wire $1N316 has multiple net names: HPLUS\u3001HPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:1698349f1e0b1543",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "74db406dec9c2551"
+      ],
+      "position": null,
+      "message": "Wire $1N221 has multiple net names: BPLUS\u3001BPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:1752a9914772f012",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "55ec4942939e5363"
+      ],
+      "position": null,
+      "message": "Wire $1N290 has multiple net names: HTR_B\u3001HTR_B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:189b71462e062d85",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e49ac3a3eb985e48"
+      ],
+      "position": null,
+      "message": "Wire $1N201 has multiple net names: GF1\u3001GF1\u3001GF1",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:19dd2b2cd092ac55",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b454deca110d80b2"
+      ],
+      "position": null,
+      "message": "Wire $1N83 has multiple net names: AUX12\u3001AUX12\u3001AUX12\u3001AUX12\u3001AUX12\u3001AUX12",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:1ae45f5ca332b675",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0ccad65f3df52ad0"
+      ],
+      "position": null,
+      "message": "Wire $1N346 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:1b3aea3beb8ca767",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "6c218a6e60563657"
+      ],
+      "position": null,
+      "message": "Wire $1N14 has multiple net names: L_GB\u3001L_GB\u3001L_GB\u3001L_GB\u3001L_GB",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:1d08a2fa4646be1e",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "fc2151c14b596598"
+      ],
+      "position": null,
+      "message": "Wire $1N292 has multiple net names: AUX_B\u3001AUX_B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:2186bf7aac48e636",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "81403541f31e76dd"
+      ],
+      "position": null,
+      "message": "Wire $1N287 has multiple net names: HV_A\u3001HV_A",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:21b0c190ff9d6d67",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "3936bbd7bb37e35d"
+      ],
+      "position": null,
+      "message": "Wire $1N160 has multiple net names: LOW_R\u3001LOW_R\u3001LOW_R\u3001LOW_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:248745acb0eb79e4",
+      "severity": "error",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "437b0886d89d9937",
+        "80b95515c11c5c6b"
+      ],
+      "position": null,
+      "message": "The pin of the component 6H30Pi-EB does not correspond to the pad (Pin has no corresponding pad : 1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019): $1I8,$1I28",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:25ded373eecd3409",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "33935c21fe1ef22c"
+      ],
+      "position": null,
+      "message": "Wire $1N340 has multiple net names: IN_L\u3001IN_L\u3001IN_L\u3001IN_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:28659590ba91a348",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "13346704002519e1"
+      ],
+      "position": null,
+      "message": "Wire $1N142 has multiple net names: D3B\u3001D3B\u3001D3B\u3001D3B\u3001D3B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:2890100d322b9812",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "59d4d5f392e875ef"
+      ],
+      "position": null,
+      "message": "Wire $1N43 has multiple net names: R_K\u3001R_K\u3001R_K\u3001R_K\u3001R_K",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:28dc5e2765e3df95",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "8e270c3d8ba85e33"
+      ],
+      "position": null,
+      "message": "Wire $1N115 has multiple net names: HTR_A\u3001HTR_A",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:2a8c026b4700f2e4",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "004c699255436d7f"
+      ],
+      "position": null,
+      "message": "Wire $1N156 has multiple net names: HV_GATE\u3001HV_GATE",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:2d45428b88690460",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b5985b699c9ea62e"
+      ],
+      "position": null,
+      "message": "Wire $1N13 has multiple net names: L_PA\u3001L_PA\u3001L_PA\u3001L_PA\u3001L_PA",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:3078d5e46f19005f",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "7a0a9467cd6ad1dd"
+      ],
+      "position": null,
+      "message": "Wire $1N132 has multiple net names: COIL_LOW\u3001COIL_LOW",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:3501a4f935f6a5e7",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ca535a92f835f38e"
+      ],
+      "position": null,
+      "message": "Component $1I49 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:37a0305a60369a98",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "bacdd46c691d8a75"
+      ],
+      "position": null,
+      "message": "Wire $1N314 has multiple net names: R_GU\u3001R_GU\u3001R_GU",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:387c611c762cffec",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0055e862caabdbc3"
+      ],
+      "position": null,
+      "message": "Wire $1N94 has multiple net names: SEN_AC_R\u3001SEN_AC_R\u3001SEN_AC_R\u3001SEN_AC_R\u3001SEN_AC_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:3ad6a807df8d1579",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ab58a376365aa874"
+      ],
+      "position": null,
+      "message": "Component $1I51 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:3b385606d520b325",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e0dd59698af5ec8b"
+      ],
+      "position": null,
+      "message": "Wire $1N158 has multiple net names: LOW_L\u3001LOW_L\u3001LOW_L\u3001LOW_L\u3001LOW_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:3cc598350f314366",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "926a5fa222711391"
+      ],
+      "position": null,
+      "message": "Wire $1N278 has multiple net names: IN_R\u3001IN_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:3ec44ab9eded414c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "faab7782239be8e1"
+      ],
+      "position": null,
+      "message": "Wire $1N11 has multiple net names: R_BIAS\u3001R_BIAS\u3001R_BIAS\u3001R_BIAS\u3001R_BIAS\u3001R_BIAS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:40b11fc2d533240b",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b8460801c4810a8f"
+      ],
+      "position": null,
+      "message": "Wire $1N112 has multiple net names: FUSED_L\u3001FUSED_L\u3001FUSED_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:41bf4a2669240900",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e2fc2c738ea57d81"
+      ],
+      "position": null,
+      "message": "Wire $1N260 has multiple net names: WIP_L\u3001WIP_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:42d92955f8058790",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "05926ac23fe1bad8"
+      ],
+      "position": null,
+      "message": "Wire $1N263 has multiple net names: WIP_R\u3001WIP_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:44bc6b7a3fddb9af",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "28df739cafc20a61"
+      ],
+      "position": null,
+      "message": "Wire $1N4 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:4561139a6d6ea61a",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "2531b0b9a1831f25"
+      ],
+      "position": null,
+      "message": "Wire $1N5 has multiple net names: AUX_Z\u3001AUX_Z\u3001AUX_Z\u3001AUX_Z\u3001AUX_Z\u3001AUX_Z\u3001AUX_Z",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:4d1e144b9fba000c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "5946a67c7a70b7fd"
+      ],
+      "position": null,
+      "message": "Wire $1N273 has multiple net names: ZF3\u3001ZF3\u3001ZF3",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:5139bd9372df9467",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "6ba8c38a6c5ebbbd"
+      ],
+      "position": null,
+      "message": "Wire $1N284 has multiple net names: PRI_N\u3001PRI_N\u3001PRI_N",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:56c788ac9ef7fdc4",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0bc79facb5e94952"
+      ],
+      "position": null,
+      "message": "Wire $1N88 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:56fa85fc2703eca5",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "162bf01bbfafe623"
+      ],
+      "position": null,
+      "message": "Wire $1N264 has multiple net names: SEL_R\u3001SEL_R\u3001SEL_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:59b8abe5f6e0b5ca",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0ddeeda454cd281b"
+      ],
+      "position": null,
+      "message": "Wire $1N291 has multiple net names: AUX_A\u3001AUX_A",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:5aa6539201ec5db1",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ad78bf0325942e9a"
+      ],
+      "position": null,
+      "message": "Wire $1N323 has multiple net names: MAINS_L\u3001MAINS_L\u3001MAINS_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:5bc13fb2b08fc515",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "743907f62e839e9a"
+      ],
+      "position": null,
+      "message": "Wire $1N80 has multiple net names: HADJ\u3001HADJ",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:5d17a0a446a62d5b",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "563bbb600e48145a"
+      ],
+      "position": null,
+      "message": "Wire $1N7 has multiple net names: L_BIAS\u3001L_BIAS\u3001L_BIAS\u3001L_BIAS\u3001L_BIAS\u3001L_BIAS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:5e74a11786c71cde",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ad9bbc52adf65b2c"
+      ],
+      "position": null,
+      "message": "Wire $1N334 has multiple net names: OP_N_L\u3001OP_N_L\u3001OP_N_L\u3001OP_N_L\u3001OP_N_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:611887443a2e5540",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "10ef229e26b5e713"
+      ],
+      "position": null,
+      "message": "Wire $1N150 has multiple net names: HV_GATE\u3001HV_GATE",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:615b613e8d9aa128",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "5bff700e7e29c0b2"
+      ],
+      "position": null,
+      "message": "Wire $1N350 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:61e8cfd38f4975c7",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "6d542a9cbefde41f"
+      ],
+      "position": null,
+      "message": "Wire $1N182 has multiple net names: HV_IN_BLEED\u3001HV_IN_BLEED",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:62d8c60603d90a52",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "d67c2e597fd5c3e6"
+      ],
+      "position": null,
+      "message": "Wire $1N320 has multiple net names: R_GL\u3001R_GL\u3001R_GL",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:66c77ba917020d67",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "d02b8dc6ff826bb6"
+      ],
+      "position": null,
+      "message": "Wire $1N298 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:683c8c6481e77d92",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0e302899f4c732df"
+      ],
+      "position": null,
+      "message": "Wire $1N74 has multiple net names: HV_B\u3001HV_B\u3001HV_B\u3001HV_B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:6e42cb0d43fc0116",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "df4de3bc71938fad"
+      ],
+      "position": null,
+      "message": "Wire $1N128 has multiple net names: COIL_LOW\u3001COIL_LOW",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:77b83969970df92a",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "451974c928213e5c"
+      ],
+      "position": null,
+      "message": "Wire $1N348 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:7b4e7c5202cdf5af",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "07edbd5209755ad8"
+      ],
+      "position": null,
+      "message": "Wire $1N232 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:7c589c727204366d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4ecb6eeb01ea3325"
+      ],
+      "position": null,
+      "message": "Wire $1N16 has multiple net names: R_GB\u3001R_GB\u3001R_GB\u3001R_GB\u3001R_GB",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:831f8f505361d40c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "7b8628d886d219ca"
+      ],
+      "position": null,
+      "message": "Wire $1N49 has multiple net names: TIMER\u3001TIMER\u3001TIMER\u3001TIMER\u3001TIMER\u3001TIMER\u3001TIMER",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:836f272e3f5e41bd",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "db3ed46a89dad23a"
+      ],
+      "position": null,
+      "message": "Component $1I9 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:859280f9d017b1ba",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "bdffac99de47d3c9"
+      ],
+      "position": null,
+      "message": "Wire $1N51 has multiple net names: ZREF\u3001ZREF\u3001ZREF\u3001ZREF\u3001ZREF\u3001ZREF\u3001ZREF",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8a000da3b2cec25a",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "8e00c35511c44262"
+      ],
+      "position": null,
+      "message": "Wire $1N342 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8a9c8c17792c2f00",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "80b95515c11c5c6b"
+      ],
+      "position": null,
+      "message": "Component $1I28 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8a9f2836bb582647",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "7cd5e14cf4e91a7e"
+      ],
+      "position": null,
+      "message": "Wire $1N149 has multiple net names: HV_FB\u3001HV_FB\u3001HV_FB\u3001HV_FB\u3001HV_FB",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8bd7053c5040d799",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "7d3114660f59d6d4"
+      ],
+      "position": null,
+      "message": "Component $1I52 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8c78fc8bc70de379",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "adee8832586b6409"
+      ],
+      "position": null,
+      "message": "Wire $1N133 has multiple net names: HP_R\u3001HP_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8dd61b7ddc3bd823",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "13f895e589f4d74f"
+      ],
+      "position": null,
+      "message": "Wire $1N41 has multiple net names: L_K\u3001L_K\u3001L_K\u3001L_K\u3001L_K",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8e5765b0ade50dc8",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "2f27abd125bc278a"
+      ],
+      "position": null,
+      "message": "Wire $1N86 has multiple net names: SEN_AC_L\u3001SEN_AC_L\u3001SEN_AC_L\u3001SEN_AC_L\u3001SEN_AC_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8f12510f5ceff095",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "7b915806db11ff87"
+      ],
+      "position": null,
+      "message": "Wire $1N245 has multiple net names: L_OUT\u3001L_OUT",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8f6d853cb98f886d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "c49651f1a84ee7aa"
+      ],
+      "position": null,
+      "message": "Wire $1N311 has multiple net names: L_GL\u3001L_GL\u3001L_GL",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:929602794a453ef5",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "6ed824c72602bd6a"
+      ],
+      "position": null,
+      "message": "Wire $1N131 has multiple net names: AUX12\u3001AUX12",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:941df933e762799c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "6cb0f72041ca0206"
+      ],
+      "position": null,
+      "message": "Wire $1N271 has multiple net names: ZF2\u3001ZF2\u3001ZF2",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:94371dfe4585a0c2",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "be9f73f2dcc4b03d"
+      ],
+      "position": null,
+      "message": "Component $1I29 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:962fbb2f8905324c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "33f327e9c4ffacf3"
+      ],
+      "position": null,
+      "message": "Wire $1N168 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9714607daeec04a5",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e0dec8092ad76853"
+      ],
+      "position": null,
+      "message": "Wire $1N69 has multiple net names: FLY_K\u3001FLY_K\u3001FLY_K",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9754d36acb9ee340",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e268e3f692854a88"
+      ],
+      "position": null,
+      "message": "Wire $1N289 has multiple net names: HTR_A\u3001HTR_A",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9823d50b299353d5",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1328659c87c5ba97"
+      ],
+      "position": null,
+      "message": "Wire $1N347 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:98c67ef7dcb4fc8d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4cd2978a0fa600b4"
+      ],
+      "position": null,
+      "message": "Wire $1N124 has multiple net names: MAINS_N\u3001MAINS_N\u3001MAINS_N",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:98d923493f8d13ba",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "fd45129df308ab9a"
+      ],
+      "position": null,
+      "message": "Wire $1N104 has multiple net names: AUX12\u3001AUX12",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9c0ff163dd87902b",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "753842aa607c5882"
+      ],
+      "position": null,
+      "message": "Wire $1N72 has multiple net names: HV_AF\u3001HV_AF\u3001HV_AF\u3001HV_AF\u3001HV_AF",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9d5887472c0320dc",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4faecae5d9ce3157"
+      ],
+      "position": null,
+      "message": "Wire $1N173 has multiple net names: BPLUS\u3001BPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9dfffeb202321aef",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "eee2986689953b99"
+      ],
+      "position": null,
+      "message": "Wire $1N48 has multiple net names: R_OUT\u3001R_OUT\u3001R_OUT\u3001R_OUT\u3001R_OUT\u3001R_OUT\u3001R_OUT\u3001R_OUT",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9e655cd8d8b5ef3e",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1b81e5a4d68dc21f"
+      ],
+      "position": null,
+      "message": "Wire $1N335 has multiple net names: OP_N_R\u3001OP_N_R\u3001OP_N_R\u3001OP_N_R\u3001OP_N_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:9e8dbd1d57a0a08d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "539575ef41144f1b"
+      ],
+      "position": null,
+      "message": "Wire $1N24 has multiple net names: HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:a00e44ccf87da5bc",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0eafbf0d3667aa67"
+      ],
+      "position": null,
+      "message": "Wire $1N127 has multiple net names: AUX12\u3001AUX12",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:a1055005509952ca",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ec5c1554bb750f9d"
+      ],
+      "position": null,
+      "message": "Wire $1N205 has multiple net names: GF3\u3001GF3\u3001GF3",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:a22a13321da4a28d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "84f46eb9748acd32"
+      ],
+      "position": null,
+      "message": "Wire $1N343 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:a3fce6e742cb9d31",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "5f24c9005c59e09e"
+      ],
+      "position": null,
+      "message": "Wire $1N17 has multiple net names: HV_GATE\u3001HV_GATE\u3001HV_GATE\u3001HV_GATE\u3001HV_GATE\u3001HV_GATE",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:a51225d3a52afe20",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "678b5de86e265f45"
+      ],
+      "position": null,
+      "message": "Wire $1N34 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:a9e705b5d56e7132",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0b2eb13ca811da6f"
+      ],
+      "position": null,
+      "message": "Wire $1N251 has multiple net names: SEN_M_R\u3001SEN_M_R\u3001SEN_M_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:ad1db71d680bed1f",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4d9e96b33c588443"
+      ],
+      "position": null,
+      "message": "Wire $1N234 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:ada621493f5a0f4e",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "750278fb2483f75e"
+      ],
+      "position": null,
+      "message": "Wire $1N302 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:af493091c62ae78f",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "87a0679d8fe25882"
+      ],
+      "position": null,
+      "message": "Wire $1N106 has multiple net names: HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE\u3001HV_SOURCE",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b1c66e9abce2df1f",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "deb0909ccba7b77d"
+      ],
+      "position": null,
+      "message": "Wire $1N10 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b2feb9abb0637cf5",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1a3b6d64120bdff3"
+      ],
+      "position": null,
+      "message": "Component $1I27 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b33345eea8c6b6d5",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e076037cade893ae"
+      ],
+      "position": null,
+      "message": "Wire $1N349 has multiple net names: IN_R\u3001IN_R\u3001IN_R\u3001IN_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b44a08150100dfac",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "3da252c1203416bb"
+      ],
+      "position": null,
+      "message": "Wire $1N6 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b4e0097668142f07",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "a72dc1cf2bf3ccef"
+      ],
+      "position": null,
+      "message": "Wire $1N122 has multiple net names: HP_L\u3001HP_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b5750e2bfd895f3d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "c8b4de5b06270c19"
+      ],
+      "position": null,
+      "message": "Wire $1N269 has multiple net names: ZF1\u3001ZF1\u3001ZF1",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b5d8248e822ae665",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b8a7a914082f53cb"
+      ],
+      "position": null,
+      "message": "Component $1I47 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b60a98943caebfc4",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "390c683db2f74561"
+      ],
+      "position": null,
+      "message": "Wire $1N140 has multiple net names: D1B\u3001D1B\u3001D1B\u3001D1B\u3001D1B\u3001D1B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b733f14ba101c750",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "9f9fbb0382da3e17"
+      ],
+      "position": null,
+      "message": "Wire $1N47 has multiple net names: R_MID\u3001R_MID\u3001R_MID\u3001R_MID\u3001R_MID\u3001R_MID\u3001R_MID",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b780702c14ff6699",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "12802c95e639cbd7"
+      ],
+      "position": null,
+      "message": "Wire $1N46 has multiple net names: L_OUT\u3001L_OUT\u3001L_OUT\u3001L_OUT\u3001L_OUT\u3001L_OUT\u3001L_OUT\u3001L_OUT",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:b9e0200203180ead",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b8b7c45463a9727b"
+      ],
+      "position": null,
+      "message": "Wire $1N62 has multiple net names: HTR_AF\u3001HTR_AF\u3001HTR_AF\u3001HTR_AF\u3001HTR_AF",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:bc6501a019a6521a",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "df60c6ec4ae6a6a0"
+      ],
+      "position": null,
+      "message": "Wire $1N206 has multiple net names: HV_GATE\u3001HV_GATE",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:c0d9db16cb163da3",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4af7a1268c4788db"
+      ],
+      "position": null,
+      "message": "Wire $1N244 has multiple net names: AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:c444f0e3d2951da8",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1c9c37ad5f6580b7"
+      ],
+      "position": null,
+      "message": "Wire $1N113 has multiple net names: HV_A\u3001HV_A",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:c6cf8105b361a9f0",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "a95b9ed5cff99b5e"
+      ],
+      "position": null,
+      "message": "Wire $1N255 has multiple net names: BPLUS\u3001BPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:cc299754cf185c58",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "f3d79d3bedebe831"
+      ],
+      "position": null,
+      "message": "Wire $1N249 has multiple net names: SEN_M_L\u3001SEN_M_L\u3001SEN_M_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:ccadbeba88ef4f35",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1b3074db6576e3b4"
+      ],
+      "position": null,
+      "message": "Wire $1N305 has multiple net names: L_GU\u3001L_GU\u3001L_GU",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:cdc0985ac97a2970",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "78170a0cacc383f1"
+      ],
+      "position": null,
+      "message": "Component $1I10 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:cf3f6146db4cf68d",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1eead825d395c07a"
+      ],
+      "position": null,
+      "message": "Wire $1N139 has multiple net names: D2B\u3001D2B\u3001D2B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:d1025aaacb2f6591",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "7f01972ab54b75f6"
+      ],
+      "position": null,
+      "message": "Wire $1N308 has multiple net names: HMINUS\u3001HMINUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:d410184499a95938",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "209e439428ea0521"
+      ],
+      "position": null,
+      "message": "Wire $1N203 has multiple net names: GF2\u3001GF2\u3001GF2",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:d4f108f7777e7031",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "c81449e74da3518c"
+      ],
+      "position": null,
+      "message": "Wire $1N44 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:d6164152d4574c69",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ca859d15fb54109a"
+      ],
+      "position": null,
+      "message": "Wire $1N35 has multiple net names: HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN\u3001HV_IN",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:d80f990301b83241",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "4518d5443758750b"
+      ],
+      "position": null,
+      "message": "Wire $1N1 has multiple net names: AUX_RAW\u3001AUX_RAW\u3001AUX_RAW\u3001AUX_RAW\u3001AUX_RAW\u3001AUX_RAW\u3001AUX_RAW\u3001AUX_RAW\u3001AUX_RAW",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:dd1a401049a0643e",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "2ce75b467998ffa4"
+      ],
+      "position": null,
+      "message": "Wire $1N288 has multiple net names: HV_B\u3001HV_B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:de73619b84720ebe",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "aafe620d0e21b4fb"
+      ],
+      "position": null,
+      "message": "Wire $1N174 has multiple net names: BPLUS\u3001BPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:de86d3e4c9091cc8",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e6605541186fd1ad"
+      ],
+      "position": null,
+      "message": "Wire $1N261 has multiple net names: SEL_L\u3001SEL_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:df83bc0fc7cab92a",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0c854536446de7af"
+      ],
+      "position": null,
+      "message": "Wire $1N267 has multiple net names: HV_IN\u3001HV_IN",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:e3c897b1a80ad392",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "bc53d721f3624e5c"
+      ],
+      "position": null,
+      "message": "Wire $1N336 has multiple net names: HTR_B\u3001HTR_B\u3001HTR_B\u3001HTR_B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:e87c26cc807aa81b",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "8ee5c59892e4b0a2"
+      ],
+      "position": null,
+      "message": "Wire $1N300 has multiple net names: OP_P_R\u3001OP_P_R\u3001OP_P_R\u3001OP_P_R\u3001OP_P_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:e975f566c039a9cd",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "8594fb20dbf917cc"
+      ],
+      "position": null,
+      "message": "Wire $1N282 has multiple net names: PRI_L\u3001PRI_L\u3001PRI_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:e9fd52d684322081",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "d30edec975664f6a"
+      ],
+      "position": null,
+      "message": "Wire $1N331 has multiple net names: AUX12\u3001AUX12\u3001AUX12\u3001AUX12",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:eab3951e224b5918",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "30fcb88d103fa137"
+      ],
+      "position": null,
+      "message": "Wire $1N198 has multiple net names: R_GI\u3001R_GI\u3001R_GI\u3001R_GI\u3001R_GI",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:effe4891b86b754e",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "2c6c2069f7124743"
+      ],
+      "position": null,
+      "message": "Wire $1N56 has multiple net names: AUX_B\u3001AUX_B\u3001AUX_B\u3001AUX_B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f00d567132d60b3c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1e17c006e4d8585e"
+      ],
+      "position": null,
+      "message": "Wire $1N37 has multiple net names: WIP_L\u3001WIP_L",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f02d905c29b11448",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0d805edbe6ab9d84"
+      ],
+      "position": null,
+      "message": "Wire $1N20 has multiple net names: HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f03ed02a6a40a902",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b97b9f8161666999"
+      ],
+      "position": null,
+      "message": "Wire $1N23 has multiple net names: HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW\u3001HRAW",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f05e77812111f8d7",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "437b0886d89d9937"
+      ],
+      "position": null,
+      "message": "Component $1I8 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f145acaca63cb175",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "0dd540ae74993dd7"
+      ],
+      "position": null,
+      "message": "Wire $1N39 has multiple net names: WIP_R\u3001WIP_R",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f45aa6605676a2cb",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "5473fa4bbd32e80f"
+      ],
+      "position": null,
+      "message": "Wire $1N45 has multiple net names: L_MID\u3001L_MID\u3001L_MID\u3001L_MID\u3001L_MID\u3001L_MID\u3001L_MID",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f5c5d3374e18c5d9",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "76840369aa51e77e"
+      ],
+      "position": null,
+      "message": "Wire $1N303 has multiple net names: D1B\u3001D1B",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f613bdf446d28290",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "f3143abe28ba90af"
+      ],
+      "position": null,
+      "message": "Wire $1N70 has multiple net names: COIL_LOW\u3001COIL_LOW\u3001COIL_LOW\u3001COIL_LOW\u3001COIL_LOW\u3001COIL_LOW\u3001COIL_LOW\u3001COIL_LOW",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f6e1bd8c0ab0a567",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "bb33acf8e839b1ed"
+      ],
+      "position": null,
+      "message": "Wire $1N125 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f72156d67a331623",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "3899d3284b7cee2a"
+      ],
+      "position": null,
+      "message": "Wire $1N307 has multiple net names: HPLUS\u3001HPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f89b3bac88a241c6",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "1534b9da47095764"
+      ],
+      "position": null,
+      "message": "Wire $1N31 has multiple net names: HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS\u3001HPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f925882dcf7562ab",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "c17141c9f3083f7f"
+      ],
+      "position": null,
+      "message": "Wire $1N42 has multiple net names: AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND\u3001AGND",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f93298838b1d41b6",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "b550f43a57933a2d"
+      ],
+      "position": null,
+      "message": "Wire $1N54 has multiple net names: AUX_A\u3001AUX_A\u3001AUX_A\u3001AUX_A",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:f985352ed5f536b4",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "e24c4d00055e7d8e"
+      ],
+      "position": null,
+      "message": "Wire $1N33 has multiple net names: HV_RAW\u3001HV_RAW\u3001HV_RAW\u3001HV_RAW\u3001HV_RAW\u3001HV_RAW\u3001HV_RAW\u3001HV_RAW\u3001HV_RAW",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:fa498ecccc4b243c",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "61f1b469f7f8baf6"
+      ],
+      "position": null,
+      "message": "Wire $1N169 has multiple net names: BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS\u3001BPLUS",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:fbbb3eddfe639dd9",
+      "severity": "warn",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "13436f1562c42519",
+      "objects": [
+        "ef650cff10684855"
+      ],
+      "position": null,
+      "message": "Wire $1N21 has multiple net names: HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS\u3001HMINUS",
+      "source_id": null
+    }
+  ]
+}

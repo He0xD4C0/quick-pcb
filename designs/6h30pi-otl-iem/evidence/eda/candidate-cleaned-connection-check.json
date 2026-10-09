@@ -1,0 +1,3612 @@
+{
+  "kind": "native-geometry-and-pin-readback; not native Protel2 export",
+  "ok": true,
+  "page": {
+    "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "project_name": "/6H30Pi-Rebuild",
+    "schematic_uuid": "cb6c26aea3154a47",
+    "schematic_name": "6H30Pi-Stereo-CANDIDATE",
+    "page_uuid": "13436f1562c42519",
+    "page_name": "Stereo-Amp-Power-Protection",
+    "document_uuid": "13436f1562c42519",
+    "document_type": 1,
+    "tab_id": "13436f1562c42519@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "window_id": "6602c0b8-81ef-4d17-ae83-c9ad104f8431"
+  },
+  "expected_nets": 79,
+  "actual_named_nets_with_pins": 79,
+  "physical_components": 138,
+  "actual_pins": 326,
+  "native_line_segments": 658,
+  "missing": {},
+  "extra": {},
+  "unattached_pins": [],
+  "shorts": [],
+  "pins": [
+    {
+      "endpoint": "C1.#1",
+      "point": [
+        1340.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "WIP_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C1.#2",
+      "point": [
+        1380.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "L_GI"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C2.#1",
+      "point": [
+        1450.0,
+        265.0
+      ],
+      "native_geometry_net_names": [
+        "L_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C2.#2",
+      "point": [
+        1450.0,
+        305.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C3.#1",
+      "point": [
+        1560.0,
+        600.0
+      ],
+      "native_geometry_net_names": [
+        "L_PA"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C3.#2",
+      "point": [
+        1600.0,
+        600.0
+      ],
+      "native_geometry_net_names": [
+        "L_GB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C4.#1",
+      "point": [
+        1970.0,
+        790.0
+      ],
+      "native_geometry_net_names": [
+        "L_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C4.#2",
+      "point": [
+        1970.0,
+        830.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C5.#1",
+      "point": [
+        2055.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "L_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C5.#2",
+      "point": [
+        2095.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "L_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C6.#1",
+      "point": [
+        2740.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "WIP_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C6.#2",
+      "point": [
+        2780.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "R_GI"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C7.#1",
+      "point": [
+        2850.0,
+        265.0
+      ],
+      "native_geometry_net_names": [
+        "R_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C7.#2",
+      "point": [
+        2850.0,
+        305.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C8.#1",
+      "point": [
+        2960.0,
+        600.0
+      ],
+      "native_geometry_net_names": [
+        "R_PA"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C8.#2",
+      "point": [
+        3000.0,
+        600.0
+      ],
+      "native_geometry_net_names": [
+        "R_GB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C9.#1",
+      "point": [
+        3370.0,
+        790.0
+      ],
+      "native_geometry_net_names": [
+        "R_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C9.#2",
+      "point": [
+        3370.0,
+        830.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C10.#1",
+      "point": [
+        3455.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "R_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C10.#2",
+      "point": [
+        3495.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "R_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C11.#1",
+      "point": [
+        1590.0,
+        1260.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C11.#2",
+      "point": [
+        1590.0,
+        1300.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C12.#1",
+      "point": [
+        1810.0,
+        1260.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C12.#2",
+      "point": [
+        1810.0,
+        1300.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C13.#1",
+      "point": [
+        1920.0,
+        1680.0
+      ],
+      "native_geometry_net_names": [
+        "ZREF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C13.#2",
+      "point": [
+        1920.0,
+        1720.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C14.#1",
+      "point": [
+        1980.0,
+        1480.0
+      ],
+      "native_geometry_net_names": [
+        "HV_GATE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C14.#2",
+      "point": [
+        1980.0,
+        1520.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C15.#1",
+      "point": [
+        2380.0,
+        1490.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C15.#2",
+      "point": [
+        2380.0,
+        1530.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C16.#1",
+      "point": [
+        3070.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C16.#2",
+      "point": [
+        3070.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C17.#1",
+      "point": [
+        3190.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C17.#2",
+      "point": [
+        3190.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C18.#1",
+      "point": [
+        3310.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C18.#2",
+      "point": [
+        3310.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C19.#1",
+      "point": [
+        3430.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C19.#2",
+      "point": [
+        3430.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C20.#1",
+      "point": [
+        3950.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C20.#2",
+      "point": [
+        3950.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C21.#1",
+      "point": [
+        3660.0,
+        1400.0
+      ],
+      "native_geometry_net_names": [
+        "HADJ"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C21.#2",
+      "point": [
+        3660.0,
+        1440.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C22.#1",
+      "point": [
+        3380.0,
+        1680.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C22.#2",
+      "point": [
+        3380.0,
+        1720.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C23.#1",
+      "point": [
+        380.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C23.#2",
+      "point": [
+        380.0,
+        2360.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C24.#1",
+      "point": [
+        810.0,
+        2330.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_Z"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C24.#2",
+      "point": [
+        810.0,
+        2370.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C25.#1",
+      "point": [
+        1120.0,
+        2330.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C25.#2",
+      "point": [
+        1120.0,
+        2370.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C26.#1",
+      "point": [
+        1650.0,
+        2330.0
+      ],
+      "native_geometry_net_names": [
+        "TIMER"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "C26.#2",
+      "point": [
+        1650.0,
+        2370.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D1.#1",
+      "point": [
+        1400.0,
+        1220.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D1.#2",
+      "point": [
+        1440.0,
+        1220.0
+      ],
+      "native_geometry_net_names": [
+        "HV_AF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D2.#1",
+      "point": [
+        1400.0,
+        1390.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D2.#2",
+      "point": [
+        1440.0,
+        1390.0
+      ],
+      "native_geometry_net_names": [
+        "HV_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D3.#1",
+      "point": [
+        1400.0,
+        1300.0
+      ],
+      "native_geometry_net_names": [
+        "HV_AF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D3.#2",
+      "point": [
+        1440.0,
+        1300.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D4.#1",
+      "point": [
+        1400.0,
+        1470.0
+      ],
+      "native_geometry_net_names": [
+        "HV_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D4.#2",
+      "point": [
+        1440.0,
+        1470.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D5.#1",
+      "point": [
+        1960.0,
+        1370.0
+      ],
+      "native_geometry_net_names": [
+        "HV_GATE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D5.#2",
+      "point": [
+        2000.0,
+        1370.0
+      ],
+      "native_geometry_net_names": [
+        "HV_SOURCE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D6.#1",
+      "point": [
+        1810.0,
+        1680.0
+      ],
+      "native_geometry_net_names": [
+        "ZREF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D6.#2",
+      "point": [
+        1810.0,
+        1720.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D7.#1",
+      "point": [
+        2860.0,
+        1190.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D7.#2",
+      "point": [
+        2900.0,
+        1190.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_AF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D8.#1",
+      "point": [
+        2860.0,
+        1360.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D8.#2",
+      "point": [
+        2900.0,
+        1360.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D9.#1",
+      "point": [
+        2860.0,
+        1270.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_AF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D9.#2",
+      "point": [
+        2900.0,
+        1270.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D10.#1",
+      "point": [
+        2860.0,
+        1440.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D10.#2",
+      "point": [
+        2900.0,
+        1440.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D11.#1",
+      "point": [
+        3500.0,
+        1100.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D11.#2",
+      "point": [
+        3540.0,
+        1100.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D12.#1",
+      "point": [
+        3760.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D12.#2",
+      "point": [
+        3800.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "HADJ"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D13.#1",
+      "point": [
+        160.0,
+        2210.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D13.#2",
+      "point": [
+        200.0,
+        2210.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D14.#1",
+      "point": [
+        160.0,
+        2380.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D14.#2",
+      "point": [
+        200.0,
+        2380.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D15.#1",
+      "point": [
+        160.0,
+        2290.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D15.#2",
+      "point": [
+        200.0,
+        2290.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D16.#1",
+      "point": [
+        160.0,
+        2460.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D16.#2",
+      "point": [
+        200.0,
+        2460.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D17.#1",
+      "point": [
+        650.0,
+        2330.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_Z"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D17.#2",
+      "point": [
+        650.0,
+        2370.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D18.#1",
+      "point": [
+        1710.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "TIMER"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D18.#2",
+      "point": [
+        1750.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "ZT_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D19.#1",
+      "point": [
+        2300.0,
+        2190.0
+      ],
+      "native_geometry_net_names": [
+        "FLY_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D19.#2",
+      "point": [
+        2340.0,
+        2190.0
+      ],
+      "native_geometry_net_names": [
+        "COIL_LOW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D20.#1",
+      "point": [
+        2450.0,
+        2190.0
+      ],
+      "native_geometry_net_names": [
+        "FLY_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D20.#2",
+      "point": [
+        2490.0,
+        2190.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D21.#1",
+      "point": [
+        1500.0,
+        2310.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D21.#2",
+      "point": [
+        1540.0,
+        2310.0
+      ],
+      "native_geometry_net_names": [
+        "TIMER"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D22.#1",
+      "point": [
+        3010.0,
+        2250.0
+      ],
+      "native_geometry_net_names": [
+        "OP_P_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D22.#2",
+      "point": [
+        3050.0,
+        2250.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_AC_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D23.#1",
+      "point": [
+        3010.0,
+        2400.0
+      ],
+      "native_geometry_net_names": [
+        "OP_P_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D23.#2",
+      "point": [
+        3050.0,
+        2400.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D24.#1",
+      "point": [
+        3010.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_AC_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D24.#2",
+      "point": [
+        3050.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "OP_N_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D25.#1",
+      "point": [
+        3010.0,
+        2470.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D25.#2",
+      "point": [
+        3050.0,
+        2470.0
+      ],
+      "native_geometry_net_names": [
+        "OP_N_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D26.#1",
+      "point": [
+        3810.0,
+        2250.0
+      ],
+      "native_geometry_net_names": [
+        "OP_P_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D26.#2",
+      "point": [
+        3850.0,
+        2250.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_AC_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D27.#1",
+      "point": [
+        3810.0,
+        2400.0
+      ],
+      "native_geometry_net_names": [
+        "OP_P_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D27.#2",
+      "point": [
+        3850.0,
+        2400.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D28.#1",
+      "point": [
+        3810.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_AC_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D28.#2",
+      "point": [
+        3850.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "OP_N_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D29.#1",
+      "point": [
+        3810.0,
+        2470.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "D29.#2",
+      "point": [
+        3850.0,
+        2470.0
+      ],
+      "native_geometry_net_names": [
+        "OP_N_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "F1.#1",
+      "point": [
+        340.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "MAINS_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "F1.#2",
+      "point": [
+        380.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "FUSED_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "F2.#1",
+      "point": [
+        1220.0,
+        1240.0
+      ],
+      "native_geometry_net_names": [
+        "HV_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "F2.#2",
+      "point": [
+        1260.0,
+        1240.0
+      ],
+      "native_geometry_net_names": [
+        "HV_AF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "F3.#1",
+      "point": [
+        2690.0,
+        1220.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "F3.#2",
+      "point": [
+        2730.0,
+        1220.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_AF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J1.#1",
+      "point": [
+        190.0,
+        300.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J1.#2",
+      "point": [
+        190.0,
+        320.0
+      ],
+      "native_geometry_net_names": [
+        "IN_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J1.#3",
+      "point": [
+        190.0,
+        330.0
+      ],
+      "native_geometry_net_names": [
+        "IN_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J2.#1",
+      "point": [
+        4220.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J2.#2",
+      "point": [
+        4220.0,
+        440.0
+      ],
+      "native_geometry_net_names": [
+        "HP_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J2.#3",
+      "point": [
+        4220.0,
+        450.0
+      ],
+      "native_geometry_net_names": [
+        "HP_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J3.#L",
+      "point": [
+        220.0,
+        1310.0
+      ],
+      "native_geometry_net_names": [
+        "MAINS_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J3.#N",
+      "point": [
+        220.0,
+        1350.0
+      ],
+      "native_geometry_net_names": [
+        "MAINS_N"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "J3.#PE",
+      "point": [
+        220.0,
+        1390.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K1.#1",
+      "point": [
+        2200.0,
+        400.0
+      ],
+      "native_geometry_net_names": [
+        "L_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K1.#2",
+      "point": [
+        2200.0,
+        475.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K1.#3",
+      "point": [
+        2360.0,
+        475.0
+      ],
+      "native_geometry_net_names": [
+        "COIL_LOW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K1.#4",
+      "point": [
+        2360.0,
+        400.0
+      ],
+      "native_geometry_net_names": [
+        "HP_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K2.#1",
+      "point": [
+        3600.0,
+        400.0
+      ],
+      "native_geometry_net_names": [
+        "R_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K2.#2",
+      "point": [
+        3600.0,
+        475.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K2.#3",
+      "point": [
+        3760.0,
+        475.0
+      ],
+      "native_geometry_net_names": [
+        "COIL_LOW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "K2.#4",
+      "point": [
+        3760.0,
+        400.0
+      ],
+      "native_geometry_net_names": [
+        "HP_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "LK1.#1",
+      "point": [
+        390.0,
+        1485.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "LK1.#2",
+      "point": [
+        390.0,
+        1495.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q1.#1",
+      "point": [
+        2055.0,
+        1230.0
+      ],
+      "native_geometry_net_names": [
+        "HV_GATE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q1.#2",
+      "point": [
+        2110.0,
+        1210.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q1.#3",
+      "point": [
+        2110.0,
+        1250.0
+      ],
+      "native_geometry_net_names": [
+        "HV_SOURCE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q2.#1",
+      "point": [
+        2230.0,
+        1530.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q2.#2",
+      "point": [
+        2210.0,
+        1510.0
+      ],
+      "native_geometry_net_names": [
+        "HV_SOURCE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q2.#3",
+      "point": [
+        2230.0,
+        1490.0
+      ],
+      "native_geometry_net_names": [
+        "HV_GATE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q3.#1",
+      "point": [
+        2140.0,
+        1720.0
+      ],
+      "native_geometry_net_names": [
+        "ZREF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q3.#2",
+      "point": [
+        2120.0,
+        1700.0
+      ],
+      "native_geometry_net_names": [
+        "HV_FB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q3.#3",
+      "point": [
+        2140.0,
+        1680.0
+      ],
+      "native_geometry_net_names": [
+        "HV_GATE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q4.#1",
+      "point": [
+        980.0,
+        2240.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q4.#2",
+      "point": [
+        980.0,
+        2200.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q4.#3",
+      "point": [
+        960.0,
+        2220.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_Z"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q5.#1",
+      "point": [
+        1970.0,
+        2210.0
+      ],
+      "native_geometry_net_names": [
+        "D2B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q5.#2",
+      "point": [
+        1950.0,
+        2190.0
+      ],
+      "native_geometry_net_names": [
+        "D1B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q5.#3",
+      "point": [
+        1970.0,
+        2170.0
+      ],
+      "native_geometry_net_names": [
+        "COIL_LOW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q6.#1",
+      "point": [
+        2120.0,
+        2330.0
+      ],
+      "native_geometry_net_names": [
+        "D3B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q6.#2",
+      "point": [
+        2100.0,
+        2310.0
+      ],
+      "native_geometry_net_names": [
+        "D2B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q6.#3",
+      "point": [
+        2120.0,
+        2290.0
+      ],
+      "native_geometry_net_names": [
+        "COIL_LOW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q7.#1",
+      "point": [
+        2270.0,
+        2450.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q7.#2",
+      "point": [
+        2270.0,
+        2410.0
+      ],
+      "native_geometry_net_names": [
+        "COIL_LOW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "Q7.#3",
+      "point": [
+        2250.0,
+        2430.0
+      ],
+      "native_geometry_net_names": [
+        "D3B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R1.#1",
+      "point": [
+        380.0,
+        260.0
+      ],
+      "native_geometry_net_names": [
+        "IN_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R1.#2",
+      "point": [
+        420.0,
+        260.0
+      ],
+      "native_geometry_net_names": [
+        "LOW_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R2.#1",
+      "point": [
+        510.0,
+        330.0
+      ],
+      "native_geometry_net_names": [
+        "LOW_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R2.#2",
+      "point": [
+        510.0,
+        370.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R3.#1",
+      "point": [
+        380.0,
+        510.0
+      ],
+      "native_geometry_net_names": [
+        "IN_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R3.#2",
+      "point": [
+        420.0,
+        510.0
+      ],
+      "native_geometry_net_names": [
+        "LOW_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R4.#1",
+      "point": [
+        510.0,
+        580.0
+      ],
+      "native_geometry_net_names": [
+        "LOW_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R4.#2",
+      "point": [
+        510.0,
+        620.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R5.#1",
+      "point": [
+        1600.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "L_GI"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R5.#2",
+      "point": [
+        1640.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "L_GU"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R6.#1",
+      "point": [
+        1290.0,
+        210.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R6.#2",
+      "point": [
+        1290.0,
+        250.0
+      ],
+      "native_geometry_net_names": [
+        "L_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R7.#1",
+      "point": [
+        1290.0,
+        310.0
+      ],
+      "native_geometry_net_names": [
+        "L_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R7.#2",
+      "point": [
+        1290.0,
+        350.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R8.#1",
+      "point": [
+        1580.0,
+        265.0
+      ],
+      "native_geometry_net_names": [
+        "L_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R8.#2",
+      "point": [
+        1580.0,
+        305.0
+      ],
+      "native_geometry_net_names": [
+        "L_GI"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R9.#1",
+      "point": [
+        1840.0,
+        210.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R9.#2",
+      "point": [
+        1840.0,
+        250.0
+      ],
+      "native_geometry_net_names": [
+        "L_PA"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R10.#1",
+      "point": [
+        1650.0,
+        700.0
+      ],
+      "native_geometry_net_names": [
+        "L_GB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R10.#2",
+      "point": [
+        1690.0,
+        700.0
+      ],
+      "native_geometry_net_names": [
+        "L_GL"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R11.#1",
+      "point": [
+        1500.0,
+        740.0
+      ],
+      "native_geometry_net_names": [
+        "L_GB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R11.#2",
+      "point": [
+        1500.0,
+        780.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R12.#1",
+      "point": [
+        1840.0,
+        790.0
+      ],
+      "native_geometry_net_names": [
+        "L_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R12.#2",
+      "point": [
+        1840.0,
+        830.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R13.#1",
+      "point": [
+        2010.0,
+        565.0
+      ],
+      "native_geometry_net_names": [
+        "L_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R13.#2",
+      "point": [
+        2010.0,
+        605.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R14.#1",
+      "point": [
+        2200.0,
+        570.0
+      ],
+      "native_geometry_net_names": [
+        "L_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R14.#2",
+      "point": [
+        2200.0,
+        610.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R15.#1",
+      "point": [
+        2300.0,
+        570.0
+      ],
+      "native_geometry_net_names": [
+        "L_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R15.#2",
+      "point": [
+        2300.0,
+        610.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R16.#1",
+      "point": [
+        3000.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "R_GI"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R16.#2",
+      "point": [
+        3040.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "R_GU"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R17.#1",
+      "point": [
+        2690.0,
+        210.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R17.#2",
+      "point": [
+        2690.0,
+        250.0
+      ],
+      "native_geometry_net_names": [
+        "R_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R18.#1",
+      "point": [
+        2690.0,
+        310.0
+      ],
+      "native_geometry_net_names": [
+        "R_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R18.#2",
+      "point": [
+        2690.0,
+        350.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R19.#1",
+      "point": [
+        2980.0,
+        265.0
+      ],
+      "native_geometry_net_names": [
+        "R_BIAS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R19.#2",
+      "point": [
+        2980.0,
+        305.0
+      ],
+      "native_geometry_net_names": [
+        "R_GI"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R20.#1",
+      "point": [
+        3240.0,
+        210.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R20.#2",
+      "point": [
+        3240.0,
+        250.0
+      ],
+      "native_geometry_net_names": [
+        "R_PA"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R21.#1",
+      "point": [
+        3050.0,
+        700.0
+      ],
+      "native_geometry_net_names": [
+        "R_GB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R21.#2",
+      "point": [
+        3090.0,
+        700.0
+      ],
+      "native_geometry_net_names": [
+        "R_GL"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R22.#1",
+      "point": [
+        2900.0,
+        740.0
+      ],
+      "native_geometry_net_names": [
+        "R_GB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R22.#2",
+      "point": [
+        2900.0,
+        780.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R23.#1",
+      "point": [
+        3240.0,
+        790.0
+      ],
+      "native_geometry_net_names": [
+        "R_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R23.#2",
+      "point": [
+        3240.0,
+        830.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R24.#1",
+      "point": [
+        3410.0,
+        565.0
+      ],
+      "native_geometry_net_names": [
+        "R_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R24.#2",
+      "point": [
+        3410.0,
+        605.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R25.#1",
+      "point": [
+        3600.0,
+        570.0
+      ],
+      "native_geometry_net_names": [
+        "R_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R25.#2",
+      "point": [
+        3600.0,
+        610.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R26.#1",
+      "point": [
+        3700.0,
+        570.0
+      ],
+      "native_geometry_net_names": [
+        "R_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R26.#2",
+      "point": [
+        3700.0,
+        610.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R27.#1",
+      "point": [
+        1690.0,
+        1170.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R27.#2",
+      "point": [
+        1730.0,
+        1170.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R28.#1",
+      "point": [
+        1610.0,
+        1430.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R28.#2",
+      "point": [
+        1610.0,
+        1470.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW_BLEED"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R29.#1",
+      "point": [
+        1610.0,
+        1530.0
+      ],
+      "native_geometry_net_names": [
+        "HV_RAW_BLEED"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R29.#2",
+      "point": [
+        1610.0,
+        1570.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R30.#1",
+      "point": [
+        1810.0,
+        1430.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R30.#2",
+      "point": [
+        1810.0,
+        1470.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN_BLEED"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R31.#1",
+      "point": [
+        1810.0,
+        1530.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN_BLEED"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R31.#2",
+      "point": [
+        1810.0,
+        1570.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R32.#1",
+      "point": [
+        2220.0,
+        1270.0
+      ],
+      "native_geometry_net_names": [
+        "HV_SOURCE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R32.#2",
+      "point": [
+        2260.0,
+        1270.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R33.#1",
+      "point": [
+        2220.0,
+        1360.0
+      ],
+      "native_geometry_net_names": [
+        "HV_SOURCE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R33.#2",
+      "point": [
+        2260.0,
+        1360.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R34.#1",
+      "point": [
+        1910.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R34.#2",
+      "point": [
+        1950.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "GF1"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R35.#1",
+      "point": [
+        2020.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "GF1"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R35.#2",
+      "point": [
+        2060.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "GF2"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R36.#1",
+      "point": [
+        2130.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "GF2"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R36.#2",
+      "point": [
+        2170.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "GF3"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R37.#1",
+      "point": [
+        2240.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "GF3"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R37.#2",
+      "point": [
+        2280.0,
+        1110.0
+      ],
+      "native_geometry_net_names": [
+        "HV_GATE"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R38.#1",
+      "point": [
+        2240.0,
+        1600.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R38.#2",
+      "point": [
+        2240.0,
+        1640.0
+      ],
+      "native_geometry_net_names": [
+        "HV_FB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R39.#1",
+      "point": [
+        2240.0,
+        1770.0
+      ],
+      "native_geometry_net_names": [
+        "HV_FB"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R39.#2",
+      "point": [
+        2240.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R40.#1",
+      "point": [
+        1220.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "HV_IN"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R40.#2",
+      "point": [
+        1260.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZF1"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R41.#1",
+      "point": [
+        1330.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZF1"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R41.#2",
+      "point": [
+        1370.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZF2"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R42.#1",
+      "point": [
+        1440.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZF2"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R42.#2",
+      "point": [
+        1480.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZF3"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R43.#1",
+      "point": [
+        1550.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZF3"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R43.#2",
+      "point": [
+        1590.0,
+        1810.0
+      ],
+      "native_geometry_net_names": [
+        "ZREF"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R44.#1",
+      "point": [
+        2380.0,
+        1710.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R44.#2",
+      "point": [
+        2380.0,
+        1750.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R45.#1",
+      "point": [
+        3790.0,
+        1280.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R45.#2",
+      "point": [
+        3790.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HADJ"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R46.#1",
+      "point": [
+        3790.0,
+        1400.0
+      ],
+      "native_geometry_net_names": [
+        "HADJ"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R46.#2",
+      "point": [
+        3790.0,
+        1440.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R47.#1",
+      "point": [
+        3170.0,
+        1610.0
+      ],
+      "native_geometry_net_names": [
+        "BPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R47.#2",
+      "point": [
+        3170.0,
+        1650.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R48.#1",
+      "point": [
+        3170.0,
+        1740.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R48.#2",
+      "point": [
+        3170.0,
+        1780.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R49.#1",
+      "point": [
+        580.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_RAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R49.#2",
+      "point": [
+        620.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_Z"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R50.#1",
+      "point": [
+        1520.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R50.#2",
+      "point": [
+        1560.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "TIMER"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R51.#1",
+      "point": [
+        1820.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "ZT_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R51.#2",
+      "point": [
+        1860.0,
+        2180.0
+      ],
+      "native_geometry_net_names": [
+        "D1B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R52.#1",
+      "point": [
+        1830.0,
+        2370.0
+      ],
+      "native_geometry_net_names": [
+        "D1B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R52.#2",
+      "point": [
+        1830.0,
+        2410.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R53.#1",
+      "point": [
+        2110.0,
+        2470.0
+      ],
+      "native_geometry_net_names": [
+        "D3B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R53.#2",
+      "point": [
+        2110.0,
+        2510.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R54.#1",
+      "point": [
+        1450.0,
+        2460.0
+      ],
+      "native_geometry_net_names": [
+        "AUX12"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R54.#2",
+      "point": [
+        1450.0,
+        2500.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R55.#1",
+      "point": [
+        2810.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "L_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R55.#2",
+      "point": [
+        2850.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_M_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R56.#1",
+      "point": [
+        2940.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_M_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R56.#2",
+      "point": [
+        2980.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_AC_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R57.#1",
+      "point": [
+        3610.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "R_OUT"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R57.#2",
+      "point": [
+        3650.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_M_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R58.#1",
+      "point": [
+        3740.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_M_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "R58.#2",
+      "point": [
+        3780.0,
+        2150.0
+      ],
+      "native_geometry_net_names": [
+        "SEN_AC_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "RV1.#1",
+      "point": [
+        890.0,
+        360.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "RV1.#2",
+      "point": [
+        870.0,
+        340.0
+      ],
+      "native_geometry_net_names": [
+        "WIP_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "RV1.#3",
+      "point": [
+        850.0,
+        360.0
+      ],
+      "native_geometry_net_names": [
+        "SEL_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "RV1.#4",
+      "point": [
+        890.0,
+        370.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "RV1.#5",
+      "point": [
+        870.0,
+        390.0
+      ],
+      "native_geometry_net_names": [
+        "WIP_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "RV1.#6",
+      "point": [
+        850.0,
+        370.0
+      ],
+      "native_geometry_net_names": [
+        "SEL_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW1.#0",
+      "point": [
+        680.0,
+        390.0
+      ],
+      "native_geometry_net_names": [],
+      "no_connect": true
+    },
+    {
+      "endpoint": "SW1.#1",
+      "point": [
+        630.0,
+        330.0
+      ],
+      "native_geometry_net_names": [
+        "IN_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW1.#2",
+      "point": [
+        650.0,
+        330.0
+      ],
+      "native_geometry_net_names": [
+        "SEL_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW1.#3",
+      "point": [
+        670.0,
+        330.0
+      ],
+      "native_geometry_net_names": [
+        "LOW_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW1.#4",
+      "point": [
+        630.0,
+        390.0
+      ],
+      "native_geometry_net_names": [
+        "IN_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW1.#5",
+      "point": [
+        650.0,
+        390.0
+      ],
+      "native_geometry_net_names": [
+        "SEL_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW1.#6",
+      "point": [
+        670.0,
+        390.0
+      ],
+      "native_geometry_net_names": [
+        "LOW_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW2.#1",
+      "point": [
+        490.0,
+        1305.0
+      ],
+      "native_geometry_net_names": [
+        "FUSED_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW2.#1a",
+      "point": [
+        650.0,
+        1305.0
+      ],
+      "native_geometry_net_names": [
+        "PRI_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW2.#2",
+      "point": [
+        490.0,
+        1375.0
+      ],
+      "native_geometry_net_names": [
+        "MAINS_N"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "SW2.#2a",
+      "point": [
+        650.0,
+        1375.0
+      ],
+      "native_geometry_net_names": [
+        "PRI_N"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#1",
+      "point": [
+        770.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "PRI_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#2",
+      "point": [
+        770.0,
+        1480.0
+      ],
+      "native_geometry_net_names": [
+        "PRI_N"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#3",
+      "point": [
+        930.0,
+        1320.0
+      ],
+      "native_geometry_net_names": [
+        "HV_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#4",
+      "point": [
+        930.0,
+        1340.0
+      ],
+      "native_geometry_net_names": [
+        "HV_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#5",
+      "point": [
+        930.0,
+        1380.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#6",
+      "point": [
+        930.0,
+        1400.0
+      ],
+      "native_geometry_net_names": [
+        "HTR_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#7",
+      "point": [
+        930.0,
+        1440.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_A"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "T1.#8",
+      "point": [
+        930.0,
+        1460.0
+      ],
+      "native_geometry_net_names": [
+        "AUX_B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U1.#1",
+      "point": [
+        3640.0,
+        1235.0
+      ],
+      "native_geometry_net_names": [
+        "HADJ"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U1.#2",
+      "point": [
+        3690.0,
+        1195.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U1.#3",
+      "point": [
+        3590.0,
+        1195.0
+      ],
+      "native_geometry_net_names": [
+        "HRAW"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U2.#1",
+      "point": [
+        3265.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "OP_P_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U2.#2",
+      "point": [
+        3265.0,
+        2340.0
+      ],
+      "native_geometry_net_names": [
+        "OP_N_L"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U2.#3",
+      "point": [
+        3355.0,
+        2340.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U2.#4",
+      "point": [
+        3355.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "D1B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U3.#1",
+      "point": [
+        4065.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "OP_P_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U3.#2",
+      "point": [
+        4065.0,
+        2340.0
+      ],
+      "native_geometry_net_names": [
+        "OP_N_R"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U3.#3",
+      "point": [
+        4155.0,
+        2340.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "U3.#4",
+      "point": [
+        4155.0,
+        2320.0
+      ],
+      "native_geometry_net_names": [
+        "D1B"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#6",
+      "point": [
+        1840.0,
+        350.0
+      ],
+      "native_geometry_net_names": [
+        "L_PA"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#7",
+      "point": [
+        1770.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "L_GU"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#8",
+      "point": [
+        1860.0,
+        490.0
+      ],
+      "native_geometry_net_names": [
+        "L_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#4",
+      "point": [
+        1770.0,
+        915.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#5",
+      "point": [
+        1910.0,
+        915.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#9",
+      "point": [
+        1840.0,
+        975.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#1",
+      "point": [
+        1840.0,
+        630.0
+      ],
+      "native_geometry_net_names": [
+        "L_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#2",
+      "point": [
+        1770.0,
+        700.0
+      ],
+      "native_geometry_net_names": [
+        "L_GL"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V1.#3",
+      "point": [
+        1860.0,
+        770.0
+      ],
+      "native_geometry_net_names": [
+        "L_K"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#6",
+      "point": [
+        3240.0,
+        350.0
+      ],
+      "native_geometry_net_names": [
+        "R_PA"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#7",
+      "point": [
+        3170.0,
+        420.0
+      ],
+      "native_geometry_net_names": [
+        "R_GU"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#8",
+      "point": [
+        3260.0,
+        490.0
+      ],
+      "native_geometry_net_names": [
+        "R_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#4",
+      "point": [
+        3170.0,
+        915.0
+      ],
+      "native_geometry_net_names": [
+        "HPLUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#5",
+      "point": [
+        3310.0,
+        915.0
+      ],
+      "native_geometry_net_names": [
+        "HMINUS"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#9",
+      "point": [
+        3240.0,
+        975.0
+      ],
+      "native_geometry_net_names": [
+        "AGND"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#1",
+      "point": [
+        3240.0,
+        630.0
+      ],
+      "native_geometry_net_names": [
+        "R_MID"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#2",
+      "point": [
+        3170.0,
+        700.0
+      ],
+      "native_geometry_net_names": [
+        "R_GL"
+      ],
+      "no_connect": false
+    },
+    {
+      "endpoint": "V2.#3",
+      "point": [
+        3260.0,
+        770.0
+      ],
+      "native_geometry_net_names": [
+        "R_K"
+      ],
+      "no_connect": false
+    }
+  ],
+  "native_netlist_available": false
+}

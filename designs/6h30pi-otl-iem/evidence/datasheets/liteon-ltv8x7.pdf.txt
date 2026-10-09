@@ -1,0 +1,868 @@
+LITE-ON DCC
+RELEASE
+LITE-ON Technology Corp. / Optoelectronics
+No.90,Chien 1 Road, Chung Ho, New Taipei City 23585, Taiwan, R.O.C.
+Tel: 886-2-2222-6181   Fax: 886-2-2221-1948 / 886-2-2221-0660
+http://www.liteon.com/opto
+Photocoupler
+Product Data Sheet
+LTV-817/ 827/ 847 
+( M, S, S-TA, S-TA1, S-TP ) 
+Series 
+Spec No.: DS-70-96-0016
+Effective Date: 03/04/2010
+Revision: K
+BNS-OD-FC001/A4
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+  
+FEATURES                                                                                      
+* Current transfer ratio                                                                                            January 2010 
+( CTR : MIN. 50% at IF = 5mA, VCE = 5V ) 
+* High input-output isolation voltage 
+( Viso = 5,000Vrms ) 
+* Response time 
+( tr : TYP. 4s at VCE = 2V, IC = 2mA, RL = 100 ) 
+* Dual-in-line package : 
+LTV-817 : 1-channel type 
+LTV-827 : 2-channel type 
+LTV-847 : 4-channel type 
+* Wide lead spacing package : 
+LTV-817M : 1-channel type 
+LTV-827M : 2-channel type 
+LTV-847M : 4-channel type 
+* Surface mounting package : 
+LTV-817S : 1-channel type 
+LTV-827S : 2-channel type 
+LTV-847S : 4-channel type 
+* Tape and reel packaging : 
+LTV-817S-TA : 1-channel type 
+LTV-817S-TA1 : 1-channel type 
+LTV-817S-TP  : 1-channel type 
+LTV-827S-TA1 : 2-channel type 
+* Safety approval 
+UL / CSA / FIMKO / NEMKO / DEMKO / SEMKO / VDE* approved 
+*Required “V” ordering option 
+* RoHS compliance 
+* ◇ Critical characteristic 
+* ○ Safety or compliance characteristic 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 1 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+OUTLINE  DIMENSIONS 
+LTV-817 : 
+ 
+ 
+  
+ 
+LTV-827 : 
+ 
+*1.  Year date code. 
+*2.  2-digit work week. 
+*3.  Factory identification mark shall be marked.  
+(Z : Taiwan, Y : Thailand, X : China-TJ, W : China-CZ) 
+*4.  Rank shall be or shall not be marked. 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 2 of 15 
+BNS-OD-C131/A4 
+TYPE II (LASER MARK) 
+TYPE I (INK MARK) 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+OUTLINE  DIMENSIONS 
+LTV-847 :  
+ 
+LTV-817M : 
+  
+ 
+*1.  Year date code. 
+*2.  2-digit work week. 
+*3.  Factory identification mark shall be marked.  
+(Z : Taiwan, Y : Thailand, X : China-TJ, W : China-CZ) 
+*4.  Rank shall be or shall not be marked. 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 3 of 15 
+BNS-OD-C131/A4 
+TYPE I (INK MARK) 
+TYPE II (LASER MARK) 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+OUTLINE  DIMENSIONS 
+LTV-827M : 
+ 
+LTV-847M : 
+ 
+*1.  Year date code. 
+*2.  2-digit work week. 
+*3.  Factory identification mark shall be marked.  
+(Z : Taiwan, Y : Thailand, X : China-TJ, W : China-CZ) 
+*4.  Rank shall be or shall not be marked. 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 4 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+OUTLINE  DIMENSIONS 
+LTV-817S : 
+  
+ 
+LTV-827S : 
+ 
+*1.  Year date code. 
+*2.  2-digit work week. 
+*3.  Factory identification mark shall be marked.  
+(Z : Taiwan, Y : Thailand, X : China-TJ, W : China-CZ) 
+*4.  Rank shall be or shall not be marked. 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 5 of 15 
+BNS-OD-C131/A4 
+TYPE I (INK MARK) 
+TYPE II (LASER MARK) 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+OUTLINE  DIMENSIONS 
+LTV-847S : 
+ 
+*1.  Year date code. 
+*2.  2-digit work week. 
+*3.  Factory identification mark shall be marked.  
+(Z : Taiwan, Y : Thailand, X : China-TJ, W : China-CZ) 
+*4.  Rank shall be or shall not be marked. 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 6 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+TAPING  DIMENSIONS 
+LTV-817S-TA1 : 
+ 
+LTV-827S-TA1 : 
+ 
+ 
+ 
+Description 
+Symbol  
+Dimensions in mm  ( inches ) 
+ 
+Tape wide 
+W 
+16  0.3 ( .63 ) 
+Pitch of sprocket holes 
+P0 
+4  0.1 ( .15 ) 
+Distance of compartment 
+F 
+P2 
+7.5  0.1 ( .295 ) 
+2  0.1 ( .079 ) 
+Distance of compartment to compartment 
+P1 
+12  0.1 ( .472 ) 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 7 of 15 
+BNS-OD-C131/A4 
+ 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+TAPING  DIMENSIONS 
+ 
+ 
+ 
+LTV-817S-TA : 
+ 
+ 
+LTV-817S-TP : 
+ 
+ 
+ 
+ 
+Description 
+Symbol  
+Dimensions in mm  ( inches ) 
+ 
+Tape wide 
+W 
+16  0.3 ( .63 ) 
+Pitch of sprocket holes 
+P0 
+4  0.1 ( .15 ) 
+Distance of compartment 
+F 
+P2 
+7.5  0.1 ( .295 ) 
+2  0.1 ( .079 ) 
+Distance of compartment to compartment 
+P1 
+12  0.1 ( .472 ) 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 8 of 15 
+BNS-OD-C131/A4 
+ 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+ABSOLUTE  MAXIMUM  RATING 
+( Ta = 25C )
+ 
+PARAMETER 
+SYMBOL 
+RATING 
+UNIT 
+ 
+INPUT 
+ 
+Forward Current 
+IF 
+50 
+mA 
+ 
+Reverse Voltage 
+VR 
+6 
+V 
+ 
+Power Dissipation 
+P 
+70 
+mW 
+OUTPUT 
+ 
+Collector - Emitter Voltage 
+VCEO 
+35 
+V 
+ 
+Emitter - Collector Voltage 
+VECO 
+6 
+V 
+ 
+Collector Current 
+IC 
+50 
+mA 
+ 
+Collector Power Dissipation 
+PC 
+150 
+mW 
+ 
+Total Power Dissipation 
+Ptot 
+200 
+mW 
+*1 Isolation Voltage ○ 
+Viso 
+5,000 
+Vrms 
+ 
+Operating Temperature（LTV- 827 / 847） 
+Topr 
+-30 ~ +110 
+C 
+ 
+Operating Temperature （LTV-817） 
+Topr 
+-30 ~ +110 
+C 
+ 
+Storage Temperature 
+Tstg 
+-55 ~ +125 
+C 
+*2 Soldering Temperature 
+Tsol 
+260 
+C 
+*1.  AC For 1 Minute,  R.H. = 40 ~ 60% 
+Isolation voltage shall be measured using the following method. 
+(1) Short between anode and cathode on the primary side and between collector and 
+emitter on the secondary side. 
+(2) The isolation voltage tester with zero-cross circuit shall be used. 
+(3) The waveform of applied voltage shall be a sine wave. 
+*2.  For 10 Seconds 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 9 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+ELECTRICAL - OPTICAL  CHARACTERISTICS 
+( Ta = 25C )
+ 
+PARAMETER 
+SYMBOL MIN. TYP. MAX. UNIT 
+CONDITIONS 
+ 
+INPUT 
+ Forward Voltage 
+VF 
+— 
+1.2 
+1.4 
+V 
+IF=20mA 
+ Reverse Current 
+IR 
+— 
+— 
+10 
+A 
+VR=4V 
+ Terminal Capacitance 
+Ct 
+— 
+30 
+250 
+pF 
+V=0,  f=1KHz 
+OUTPUT 
+ Collector Dark Current 
+ICEO 
+— 
+— 
+100 
+nA 
+VCE=20V,  IF=0 
+ Collector-Emitter                
+Breakdown Voltage 
+BVCEO 
+35 
+— 
+— 
+V 
+IC=0.1mA                   
+IF=0 
+ Emitter-Collector 
+Breakdown Voltage 
+BVECO 
+6 
+— 
+— 
+V 
+IE=10A                     
+IF=0 
+TRANSFER 
+CHARACTERISTICS 
+ Collector Current 
+IC 
+2.5 
+— 
+30 
+mA 
+IF=5mA 
+VCE=5V 
+*1 Current Transfer Ratio ◇ 
+CTR 
+50 
+— 
+600 
+% 
+ Collector-Emitter                
+Saturation Voltage 
+VCE(sat) 
+— 
+0.1 
+0.2 
+V 
+IF=20mA                    
+IC=1mA 
+ Isolation Resistance 
+Riso 
+51010 11011 
+— 
+ 
+DC500V  
+40 ~ 60% R.H. 
+ Floating Capacitance 
+Cf 
+— 
+0.6 
+1 
+pF 
+V=0,  f=1MHz 
+ Cut-Off Frequency 
+fc 
+— 
+80 
+— 
+kHz 
+VCE=5V,  IC=2mA     
+RL=100,  -3dB 
+ Response Time (Rise) 
+tr 
+— 
+4 
+18 
+s 
+VCE=2V,  IC=2mA 
+RL=100 
+ Response Time (Fall) 
+tf 
+— 
+3 
+18 
+s 
+*1  CTR
+I
+I
+100%
+C
+F
+
+
+ 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 10 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+RANK  TABLE  OF  CURRENT  TRANSFER  RATIO  CTR 
+ 
+ 
+MODEL  NO. 
+RANK  MARK 
+CTR  ( % ) 
+ 
+ 
+LTV-817 
+L 
+50 ~ 100 
+ 
+ 
+A 
+80 ~ 160 
+ 
+ 
+B 
+130 ~ 260 
+ 
+ 
+C 
+200 ~ 400 
+ 
+ 
+D 
+300 ~ 600 
+ 
+ 
+L or A or B or C or D 
+50 ~ 600 
+ 
+ 
+LTV-827 
+No Bin 
+50~600 
+ 
+ 
+B 
+130 ~ 260 
+ 
+ 
+C 
+200 ~ 400 
+ 
+ 
+BC 
+130~400 
+ 
+ 
+CD 
+200~600 
+ 
+ 
+LTV-847 
+No Bin 
+50~600 
+ 
+ 
+BC 
+130~400 
+ 
+ 
+CD 
+200~600 
+ 
+ 
+ 
+CONDITIONS 
+IF  =  5 mA 
+VCE  =  5 V 
+Ta  =  25 C  
+ 
+ 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 11 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+CHARACTERISTICS  CURVES 
+Fig.1 Forword C urrent
+Fig.2 C ollector Pow er D issiption
+vs. Am bient Tem perature
+Fig.4 Forward C urrent vs. Forward
+Fig.5 C urrent Transfer Ratio vs.
+Forward C urrent
+Fig.6 C ollector C urrent vs.
+C ollector-em itter Voltage
+F
+F
+CE
+F
+F
+0
+-30
+Ta= 75 C
+50 C
+25 C
+0 C
+-25 C
+V    = 5V
+Ta= 25 C
+CE
+Ta= 25 C
+I  = 30m A
+Pc(MAX.)
+5m A
+F
+10m A
+20m A
+vs. Am bient Tem peratute
+Collector-em itter voltage V    (V)
+Forward voltage V  (V)
+Am bient tem perature Ta ( C)
+Am bient tem perature Ta ( C)
+Forward current I  (m A)
+Forward current I  (m A)
+Collector Power dissipation Pc (m W)
+Forward current I  (m A)
+Current transfer ratio CTR (%)
+Collector current Ic (m A)
+Fig.3 C ollector-em itter Saturation
+Voltage vs. Forward Current
+F
+CE
+Ic= 0.5m A
+1m A
+3m A
+7m A
+5m A
+Ta= 25 C
+Collecotr-em itter saturation voltage
+V    (sat) (V)
+Forward current I  (m A)
+Voltage
+o
+o
+o
+O
+o
+o
+o
+o
+o
+o
+0
+25
+50
+75
+100
+125
+0
+-30
+125
+25
+50
+75
+100
+10
+20
+30
+40
+50
+60
+0
+50
+100
+150
+200
+0
+1
+0
+0
+15
+1
+2
+3
+4
+5
+6
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+2
+5
+10
+20
+50
+100
+200
+500
+0
+1
+0
+0
+2
+5
+10
+20
+50
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+20
+30
+10
+5
+5
+15
+25
+ 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 12 of 15 
+BNS-OD-C131/A4 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+ 
+CHARACTERISTICS  CURVES 
+R = 10k
+L
+1k
+100
+tr
+tf
+td
+ts
+Fig.8 Collector-em itter Saturation Voltage
+Fig.9 Collector Dark Current vs.
+Am bient Tem perature
+Fig.10 Response Tim e vs. Load
+Fig.11 Frequency Response
+L
+CEO
+  0
+-30
+CE
+V    = 2V
+Ic= 2m A
+Ta= 25 C
+CE
+I   = 5m A
+V    = 5V
+CE
+F
+F
+Ic= 1m A
+I  = 20m A
+CE
+V    = 2V
+Ic= 2m A
+Ta= 25 C
+vs. Am bient Tem perature
+Am bient tem perature Ta ( C)
+Load resistance R  (k   )
+Am bient tem perature Ta ( C)
+Am bient tem perature Ta ( C)
+Frequency f (kHz)
+Response tim e (   s)
+Relative current transfer ratio (%)
+Collector dark current I       (A)
+Voltage gain Av (dB)
+Collector-em itter saturation voltage
+V    (sat) (V)
+-10
+o
+o
+o
+o
+o
+0
+25
+50
+75
+100
+50
+100
+150
+-25
+  0
+0
+25
+50
+75
+100
+10
+-25
+0.2
+0.05
+0
+25
+50
+75
+100
+10
+10
+10
+10
+10
+10
+-9
+-8
+-7
+-6
+-5
+-11
+0.1 0.2
+0.5
+1
+2
+5
+10
+0.5
+1
+2
+5
+10
+20
+50
+100
+200
+500
+0.5
+20
+10
+0
+2
+10
+100
+500
+Resistance
+Fig.7 Relative Current Transfer Ratio
+vs. Am bient Tem perature
+0.02
+0.04
+0.06
+0.08
+0.10
+0.12
+0.14
+0.16
+1
+5
+20
+50
+CE
+V    = 20V
+125
+125
+125
+Test Circuit for Frequency Response
+Test Circuit for Response Tim e
+ 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 13 of 15 
+BNS-OD-C131/A4 
+ 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+RECOMMENDED FOOT PRINT PATTERNS (MOUNT PAD) 
+Unit : mm 
+4 PIN                                              8 PIN 
+                             
+ 
+16 PIN 
+ 
+ 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 14 of 15 
+BNS-OD-C131/A4 
+ 
+
+ LITE-ON TECHNOLOGY  CORPORATION
+ 
+Property  of  LITE-ON Only 
+Notes: 
+- Lite-On is continually improving the quality, reliability, function or design and 
+Lite-On reserves the right to make changes without further notices. 
+- The products shown in this publication are designed for the general use in electronic 
+applications such as office automation equipment, communications devices, 
+audio/visual equipment, electrical application and instrumentation. 
+- For equipment/devices where high reliability or safety is required, such as space 
+applications, nuclear power control equipment, medical equipment, etc, please 
+contact our sales representatives. 
+- When requiring a device for any ”specific” application, please contact our sales in 
+advice. 
+- If there are any questions about the contents of this publication, please contact us at 
+your convenience. 
+- The contents described herein are subject to change without prior notice. 
+Part No. : LTV-817 / 827 / 847 (M, S, S-TA, S-TA1, S-TP) Series 
+Page : 15 of 15 
+BNS-OD-C131/A4 

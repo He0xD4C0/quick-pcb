@@ -1,0 +1,22 @@
+{
+  "115": {
+    "6h30pi_eb.lib": 0.0706071,
+    "6h30pi_eb_plate_alternative.lib": 0.111746
+  },
+  "120": {
+    "6h30pi_eb.lib": 0.0829396,
+    "6h30pi_eb_plate_alternative.lib": 0.0984617
+  },
+  "124": {
+    "6h30pi_eb.lib": 0.0922237,
+    "6h30pi_eb_plate_alternative.lib": 0.08822
+  },
+  "127": {
+    "6h30pi_eb.lib": 0.0988684,
+    "6h30pi_eb_plate_alternative.lib": 0.0807562
+  },
+  "130": {
+    "6h30pi_eb.lib": 0.105255,
+    "6h30pi_eb_plate_alternative.lib": 0.0734738
+  }
+}

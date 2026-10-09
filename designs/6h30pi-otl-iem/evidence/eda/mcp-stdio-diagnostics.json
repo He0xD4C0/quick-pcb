@@ -1,0 +1,106 @@
+{
+  "_meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"ok\": true,\n  \"format\": \"schematic/easyeda-v0.1\",\n  \"source\": {\n    \"project_uuid\": \"7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406\",\n    \"project_name\": \"/6H30Pi-Rebuild\",\n    \"schematic_uuid\": \"bc3d79272293f136\",\n    \"schematic_name\": \"6H30Pi-Library-Fixture-R4\",\n    \"page_uuid\": \"f46a303398832651\",\n    \"page_name\": \"OneSheet\",\n    \"document_uuid\": \"f46a303398832651\",\n    \"document_type\": 1,\n    \"tab_id\": \"f46a303398832651@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406\",\n    \"window_id\": \"6602c0b8-81ef-4d17-ae83-c9ad104f8431\"\n  },\n  \"document\": null,\n  \"context_revision\": \"sha256:1daed65f705110630e87992e35c863434027e390b2467f6e7a1cf738f26059c5\",\n  \"revision\": \"sha256:ba68dffc79487bf8d9a6661188b51bb8a0f4a84a58eb968a39f064dec64db6c6\",\n  \"revision_before\": null,\n  \"revision_after\": null,\n  \"code\": null,\n  \"message\": null,\n  \"result\": null,\n  \"applied\": null,\n  \"partial\": null,\n  \"readback\": null,\n  \"topology\": null,\n  \"drc\": null,\n  \"counts\": null,\n  \"range\": null,\n  \"unit\": null,\n  \"passed\": false,\n  \"total_count\": 4,\n  \"matched_count\": 4,\n  \"violations\": [\n    {\n      \"id\": \"sch-drc:579a61c5dfc7f0d7\",\n      \"severity\": \"fatalError\",\n      \"type\": \"EDA_DRC_LOG\",\n      \"rule\": null,\n      \"net\": null,\n      \"page\": \"f46a303398832651\",\n      \"objects\": [\n        \"component5\"\n      ],\n      \"position\": null,\n      \"message\": \"Component $1I6 lacks of property \\\"Footprint\\\".\",\n      \"source_id\": null\n    },\n    {\n      \"id\": \"sch-drc:84315d2dc9ceb172\",\n      \"severity\": \"fatalError\",\n      \"type\": \"EDA_DRC_LOG\",\n      \"rule\": null,\n      \"net\": null,\n      \"page\": \"f46a303398832651\",\n      \"objects\": [\n        \"component4\"\n      ],\n      \"position\": null,\n      \"message\": \"Component $1I5 lacks of property \\\"Footprint\\\".\",\n      \"source_id\": null\n    },\n    {\n      \"id\": \"sch-drc:8599e0f9a3f86b2c\",\n      \"severity\": \"error\",\n      \"type\": \"EDA_DRC_LOG\",\n      \"rule\": null,\n      \"net\": null,\n      \"page\": \"f46a303398832651\",\n      \"objects\": [\n        \"component3\"\n      ],\n      \"position\": null,\n      \"message\": \"The pin of the component QPCB_6H30Pi_EB_REVIEWED_PINS_R4 does not correspond to the pad (Pin has no corresponding pad : 1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019): $1I4\",\n      \"source_id\": null\n    },\n    {\n      \"id\": \"sch-drc:aaa6922ee4cfbbb4\",\n      \"severity\": \"fatalError\",\n      \"type\": \"EDA_DRC_LOG\",\n      \"rule\": null,\n      \"net\": null,\n      \"page\": \"f46a303398832651\",\n      \"objects\": [\n        \"component3\"\n      ],\n      \"position\": null,\n      \"message\": \"Component $1I4 lacks of property \\\"Footprint\\\".\",\n      \"source_id\": null\n    }\n  ]\n}",
+      "annotations": null,
+      "_meta": null
+    }
+  ],
+  "structuredContent": {
+    "ok": true,
+    "format": "schematic/easyeda-v0.1",
+    "source": {
+      "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "project_name": "/6H30Pi-Rebuild",
+      "schematic_uuid": "bc3d79272293f136",
+      "schematic_name": "6H30Pi-Library-Fixture-R4",
+      "page_uuid": "f46a303398832651",
+      "page_name": "OneSheet",
+      "document_uuid": "f46a303398832651",
+      "document_type": 1,
+      "tab_id": "f46a303398832651@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "window_id": "6602c0b8-81ef-4d17-ae83-c9ad104f8431"
+    },
+    "document": null,
+    "context_revision": "sha256:1daed65f705110630e87992e35c863434027e390b2467f6e7a1cf738f26059c5",
+    "revision": "sha256:ba68dffc79487bf8d9a6661188b51bb8a0f4a84a58eb968a39f064dec64db6c6",
+    "revision_before": null,
+    "revision_after": null,
+    "code": null,
+    "message": null,
+    "result": null,
+    "applied": null,
+    "partial": null,
+    "readback": null,
+    "topology": null,
+    "drc": null,
+    "counts": null,
+    "range": null,
+    "unit": null,
+    "passed": false,
+    "total_count": 4,
+    "matched_count": 4,
+    "violations": [
+      {
+        "id": "sch-drc:579a61c5dfc7f0d7",
+        "severity": "fatalError",
+        "type": "EDA_DRC_LOG",
+        "rule": null,
+        "net": null,
+        "page": "f46a303398832651",
+        "objects": [
+          "component5"
+        ],
+        "position": null,
+        "message": "Component $1I6 lacks of property \"Footprint\".",
+        "source_id": null
+      },
+      {
+        "id": "sch-drc:84315d2dc9ceb172",
+        "severity": "fatalError",
+        "type": "EDA_DRC_LOG",
+        "rule": null,
+        "net": null,
+        "page": "f46a303398832651",
+        "objects": [
+          "component4"
+        ],
+        "position": null,
+        "message": "Component $1I5 lacks of property \"Footprint\".",
+        "source_id": null
+      },
+      {
+        "id": "sch-drc:8599e0f9a3f86b2c",
+        "severity": "error",
+        "type": "EDA_DRC_LOG",
+        "rule": null,
+        "net": null,
+        "page": "f46a303398832651",
+        "objects": [
+          "component3"
+        ],
+        "position": null,
+        "message": "The pin of the component QPCB_6H30Pi_EB_REVIEWED_PINS_R4 does not correspond to the pad (Pin has no corresponding pad : 1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019): $1I4",
+        "source_id": null
+      },
+      {
+        "id": "sch-drc:aaa6922ee4cfbbb4",
+        "severity": "fatalError",
+        "type": "EDA_DRC_LOG",
+        "rule": null,
+        "net": null,
+        "page": "f46a303398832651",
+        "objects": [
+          "component3"
+        ],
+        "position": null,
+        "message": "Component $1I4 lacks of property \"Footprint\".",
+        "source_id": null
+      }
+    ]
+  },
+  "isError": false,
+  "resultType": "complete"
+}

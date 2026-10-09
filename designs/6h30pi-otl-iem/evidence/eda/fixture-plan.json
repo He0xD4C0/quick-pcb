@@ -1,0 +1,51 @@
+{
+  "purpose": "library-load-test-only",
+  "schematic_uuid": "332c72c50a79897efed86a66b54f414c",
+  "page_uuid": "9787a0a17bc66d2624cac2e9c6de1421",
+  "placements": [
+    {
+      "ref": "R1",
+      "part": "1206W4F1002T5E.1",
+      "key": "r_10k_025w",
+      "x": 150,
+      "y": 200
+    },
+    {
+      "ref": "J1",
+      "part": "PJ-301C.1",
+      "key": "jack_trs",
+      "x": 400,
+      "y": 200
+    },
+    {
+      "ref": "RV1",
+      "part": "RK09712200HA.1",
+      "key": "pot_dual10k_log",
+      "x": 700,
+      "y": 200
+    },
+    {
+      "ref": "V1",
+      "part": "A",
+      "key": "tube",
+      "x": 150,
+      "y": 500
+    },
+    {
+      "ref": "V1",
+      "part": "B",
+      "key": "tube",
+      "x": 400,
+      "y": 500
+    },
+    {
+      "ref": "V1",
+      "part": "H",
+      "key": "tube",
+      "x": 700,
+      "y": 500
+    }
+  ],
+  "custom_symbol_uuid_before_import": "88bb22ba7a139f88c094b1a22ce273a9",
+  "custom_device_uuid_before_import": "97d31a14d1b06a779366d657f160bc6c"
+}

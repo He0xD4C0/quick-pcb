@@ -1,0 +1,133 @@
+{
+  "scope": "AUDIO ONLY; ideal160V source, ideal capacitors, closed relay0.12ohm. No PSU/heater/noise/startup/fault validation. Model cross-family error46.70%; not hardware qualification.",
+  "loads": {
+    "16": {
+      "modes": {
+        "high": {
+          "gain_1k": 0.39264552030772143,
+          "gain_1k_dB": -8.119987060972521,
+          "response_dB_at_20_20k": [
+            -0.26625042118651987,
+            0.0001089568382296699
+          ],
+          "op": {
+            "plate_upper_V": 155.258992,
+            "mid_V": 82.0010944,
+            "cathode_lower_V": 2.48273189,
+            "grid_upper_V": 80.0000005,
+            "Iq_mA": 36.510763088235294,
+            "Pa_upper_W": 2.674701743615801,
+            "Pa_lower_W": 2.9032760947670213
+          },
+          "DC_output_ideal_cap_V": 0
+        },
+        "low": {
+          "gain_1k": 0.038868107118894345,
+          "gain_1k_dB": -28.208132180858673,
+          "response_dB_at_20_20k": [
+            -0.26622947071339786,
+            9.378351274965563e-05
+          ],
+          "op": {
+            "plate_upper_V": 155.258992,
+            "mid_V": 82.0010944,
+            "cathode_lower_V": 2.48273189,
+            "grid_upper_V": 80.0000005,
+            "Iq_mA": 36.510763088235294,
+            "Pa_upper_W": 2.674701743615801,
+            "Pa_lower_W": 2.9032760947670213
+          },
+          "DC_output_ideal_cap_V": 0
+        }
+      },
+      "mode_difference_dB": 20.08814511988615,
+      "THD": [
+        {
+          "target_mVrms": 50,
+          "input_Vrms": 0.1273413229337606,
+          "actual_output_mVrms": 49.99289617973593,
+          "THD_10_harmonics_pct": 0.09927095239115624,
+          "model_target_pass": true
+        },
+        {
+          "target_mVrms": 100,
+          "input_Vrms": 0.2546826458675212,
+          "actual_output_mVrms": 99.94767503428656,
+          "THD_10_harmonics_pct": 0.20026622440901432,
+          "model_target_pass": true
+        }
+      ],
+      "unloaded_output_impedance_ohm_20_1k_20k": [
+        23.116492368489833,
+        21.19658781796552,
+        21.19578971258281
+      ],
+      "output_cap_datasheet_max_leakage_DC_mV": 24.0,
+      "acceptance": "NOT_PASSED: cap leakage bound, model uncertainty, omitted PSU/fault tests"
+    },
+    "18": {
+      "modes": {
+        "high": {
+          "gain_1k": 0.41918724622613185,
+          "gain_1k_dB": -7.551838784698139,
+          "response_dB_at_20_20k": [
+            -0.24127257605294544,
+            9.842328276075928e-05
+          ],
+          "op": {
+            "plate_upper_V": 155.258992,
+            "mid_V": 82.0010944,
+            "cathode_lower_V": 2.48273189,
+            "grid_upper_V": 80.0000005,
+            "Iq_mA": 36.510763088235294,
+            "Pa_upper_W": 2.674701743615801,
+            "Pa_lower_W": 2.9032760947670213
+          },
+          "DC_output_ideal_cap_V": 0
+        },
+        "low": {
+          "gain_1k": 0.04149548029369763,
+          "gain_1k_dB": -27.639984085229056,
+          "response_dB_at_20_20k": [
+            -0.2412515990605476,
+            8.421120658424228e-05
+          ],
+          "op": {
+            "plate_upper_V": 155.258992,
+            "mid_V": 82.0010944,
+            "cathode_lower_V": 2.48273189,
+            "grid_upper_V": 80.0000005,
+            "Iq_mA": 36.510763088235294,
+            "Pa_upper_W": 2.674701743615801,
+            "Pa_lower_W": 2.9032760947670213
+          },
+          "DC_output_ideal_cap_V": 0
+        }
+      },
+      "mode_difference_dB": 20.08814530053092,
+      "THD": [
+        {
+          "target_mVrms": 50,
+          "input_Vrms": 0.11927843809691518,
+          "actual_output_mVrms": 49.99448507414171,
+          "THD_10_harmonics_pct": 0.08289149455677587,
+          "model_target_pass": true
+        },
+        {
+          "target_mVrms": 100,
+          "input_Vrms": 0.23855687619383037,
+          "actual_output_mVrms": 99.96041624491825,
+          "THD_10_harmonics_pct": 0.1669205631292123,
+          "model_target_pass": true
+        }
+      ],
+      "unloaded_output_impedance_ohm_20_1k_20k": [
+        23.116492368489833,
+        21.19658781796552,
+        21.19578971258281
+      ],
+      "output_cap_datasheet_max_leakage_DC_mV": 27.0,
+      "acceptance": "NOT_PASSED: cap leakage bound, model uncertainty, omitted PSU/fault tests"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "DSNET": {
+    "ok": true,
+    "result": {
+      "type": "undefined"
+    }
+  },
+  "EasyEDA": {
+    "ok": true,
+    "result": {
+      "error": "TypeError: i is not iterable"
+    }
+  }
+}

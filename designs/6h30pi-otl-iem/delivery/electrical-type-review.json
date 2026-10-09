@@ -1,0 +1,507 @@
+{
+  "aux_npn_bd139": {
+    "native_library_types_unchanged": {
+      "1": "IN",
+      "2": "IN",
+      "3": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_cathode_2200u25": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_control_470u25": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_delay_100u25": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_heater_3300u25": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_hv_220u400": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_output_1000u250": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "c_signal_4u7film": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "d_aux_1n4007": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "d_heater_sb560": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "d_hv_uf4007": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "d_small_1n4148": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "fault_opto": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined",
+      "3": "Undefined",
+      "4": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "fuse_heater_5a": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "fuse_hv_500ma": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "fuse_mains_1a": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "gain_dpdt": {
+    "native_library_types_unchanged": {
+      "4": "Undefined",
+      "5": "Undefined",
+      "6": "Undefined",
+      "3": "Undefined",
+      "2": "Undefined",
+      "1": "Undefined",
+      "0": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "heater_ldo": {
+    "native_library_types_unchanged": {
+      "3": "Power",
+      "2": "Power",
+      "1": "Undefined"
+    },
+    "boardspec_types": {
+      "1": "input",
+      "2": "power_out",
+      "3": "power_in"
+    },
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "hv_nmos": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined",
+      "3": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "hv_npn": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "3": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "jack_trs": {
+    "native_library_types_unchanged": {
+      "3": "Undefined",
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "mains_inlet": {
+    "native_library_types_unchanged": {},
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "mains_switch": {
+    "native_library_types_unchanged": {},
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "pot_dual10k_log": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined",
+      "3": "Undefined",
+      "6": "Undefined",
+      "4": "Undefined",
+      "5": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_100_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_100k_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_100k_1w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_10_1w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_10k_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_121_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_127_1w": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_1k_025w": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_200k_1w": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_221k_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_22_1w": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_22k_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_470_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_47k_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_487_025w": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_68_1w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "r_8k2_025w": {
+    "native_library_types_unchanged": {
+      "2": "IN",
+      "1": "IN"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "relay_hv": {
+    "native_library_types_unchanged": {},
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "terminal_2": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "transformer_contract": {
+    "native_library_types_unchanged": {},
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "tube_6h30pi_eb": {
+    "native_library_types_unchanged": {},
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_PINS_REVIEWED_NATIVE_SYMBOL_LOADED_FOOTPRINT_UNCONFIRMED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "z_aux_13v": {
+    "native_library_types_unchanged": {
+      "1": "Undefined",
+      "2": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "z_flyback_24v": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "z_gate_12v": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "z_ref_6v2": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  },
+  "z_timer_5v1": {
+    "native_library_types_unchanged": {
+      "2": "Undefined",
+      "1": "Undefined"
+    },
+    "boardspec_types": "passive analog terminals",
+    "reason": "Resistors, capacitors, contacts and discrete analog semiconductor terminals are modeled as passive connection points; LM1084 supply direction is explicit. No native library type was rewritten.",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "physical_and_application_gate": "See parts.audit.json / parts.exceptions.json; not implied by BoardSpec validation"
+  }
+}

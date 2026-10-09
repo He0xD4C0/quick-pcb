@@ -1,0 +1,1313 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "query": "Resistor",
+      "items": [
+        {
+          "uuid": "36b54ca42a524dfa9e2c2044c17b4376",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "贴片电阻CHIPRESISTORS",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074429000
+        },
+        {
+          "uuid": "a1ed684313234078bcd795b1a0d1d8b1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "RESISTOR_THT:R_AXIAL_DIN0309_L9.0MM_D3.2MM_P2.54MM_VERTICAL",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1718129591000
+        },
+        {
+          "uuid": "011ff3b07f2048d8b31daa860bb90b50",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "电阻_Resistor",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1763369043895
+        },
+        {
+          "uuid": "a4bf85da07154e11929e62587d5be81f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "9e627ffbe74d4ff9a6a55d9f25896a20"
+          },
+          "ordinal": 3,
+          "name": "CERAMIC RESISTOR 10W/ 2,2 OHM",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744303403000
+        },
+        {
+          "uuid": "6260bc0726094eb5ba0772aabb758345",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "f80938c5654a4c8b951d63c7b6bd5aa6"
+          },
+          "ordinal": 4,
+          "name": "MMUN2116LT1G",
+          "type": 2,
+          "description": "PNP Transistors with Monolithic Bias Resistor Network, -50V,-100mA",
+          "updateTimestamp": 1731664520000
+        },
+        {
+          "uuid": "e5a7d2415d9d4ccea8f2e9f9e9c271c1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 5,
+          "name": "4606X-101-472LF",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1692081348000
+        },
+        {
+          "uuid": "534fe22a2ed64fc3a51b10c52d14acb9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 6,
+          "name": "742C043102JTR",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1737082801000
+        },
+        {
+          "uuid": "657d71a9ae5146cf9b95c03efaf890a6",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 7,
+          "name": "CN24JTN100",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1673338822000
+        },
+        {
+          "uuid": "86debc11173945e3a27b800409c363ce",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 8,
+          "name": "4116R-1-625",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1736755805000
+        },
+        {
+          "uuid": "0777b39640e140e79221297be17af660",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 9,
+          "name": "MC4-1004JE",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1717333809000
+        },
+        {
+          "uuid": "8068831a25624f779f0bdfb5731ae470",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 10,
+          "name": "MC4-1005JE",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1736581205000
+        },
+        {
+          "uuid": "d75cd0ac73474838b8158db4cacaa5cf",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 11,
+          "name": "MAX5492PA01500+",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1727064702000
+        },
+        {
+          "uuid": "7218c750d5ca43d1b45eebe51569a9bc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 12,
+          "name": "EXB-D10C121J",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1725433391000
+        },
+        {
+          "uuid": "900e82c5d4f44b649e642a8fcd6ac772",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 13,
+          "name": "ORNA2001AT1",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1669358735000
+        },
+        {
+          "uuid": "af9a075b4a5f42c095f90ce9f905282d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "d10d380252f9450bb62e0585b6d0ba52"
+          },
+          "ordinal": 14,
+          "name": "742C163240JP",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1742286006000
+        }
+      ]
+    },
+    {
+      "query": "R",
+      "items": [
+        {
+          "uuid": "0d552d1f115042229c859a777b55620e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 0,
+          "name": "A/F90degree Dparagraph10Four feet without curling ironLCPVinyl6.8Reverse",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1775695183000
+        },
+        {
+          "uuid": "d659d3c0dc1b49f88ca718cff9018cfc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 1,
+          "name": "A/FPaste board Eparagraph10.6Four feet without curling ironLCPVinyl6.2Reverse-C42548",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706199838000
+        },
+        {
+          "uuid": "cdea7ef8daa246d0ab3ab35a89ee3f98",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 2,
+          "name": "A/F90degree Eparagraph10.6Four feet without curling ironPBTWhite plastic6.5",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1704942638000
+        },
+        {
+          "uuid": "1f29e123f5254e09a4e675823a7ff1a2",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 3,
+          "name": "A/FPaste board Dparagraph10.6Four feet without curling ironLCPVinyl6.8",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1700042128000
+        },
+        {
+          "uuid": "46c91eb3dfd44fb2af8ec3ddfd7a4845",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 4,
+          "name": "A/F90degree Bparagraph10After the two feet have curled ironPBTVinyl",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1704942609000
+        },
+        {
+          "uuid": "5fa52042a7e44694a50104ce21a2bdde",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 5,
+          "name": "JH-7070IRIRZRIRIR12G42-T8A-J620-975",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744303893000
+        },
+        {
+          "uuid": "5cd3cb63536a400e92ba3c18f9f081f1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "6992e02e57964a9f9bc5b79f0b924e84",
+            "secondaryClassificationUuid": "fb47a8d559ab4132bdf42129ab8a67b7"
+          },
+          "ordinal": 6,
+          "name": "XRRHRLHRR22-80A",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1767542123000
+        },
+        {
+          "uuid": "f401dcd6982f4e61a1799690ecee5e7c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 7,
+          "name": "A/FPaste board Dparagraph10.6After the two feet have curled ironLCPVinyl6.5",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1700042120000
+        },
+        {
+          "uuid": "689284f0229f4ee3979bac31e51b4718",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "aef05053d1b6474ea4a8daecae29b833",
+            "secondaryClassificationUuid": "8a1bc5bbdf394e729e12f3f8d9f42d83"
+          },
+          "ordinal": 8,
+          "name": "GR PSLR31.13-GTHP-R1R2-1-150-R18",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1724115964000
+        },
+        {
+          "uuid": "68d3106d5a604787b2a72829b15f8290",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 9,
+          "name": "A/F90degree Dparagraph10.6 PBTWhite plastic6.2Reverse_C42413",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1700042109000
+        },
+        {
+          "uuid": "fc7b420c5d97461a9bb75ab3cdc9325d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 10,
+          "name": "A/FPaste board Cparagraph10 LCPVinyl6.2Reverse-C42487",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1700042118000
+        },
+        {
+          "uuid": "55f55ace59fb4b4a88111cfa2acb18dc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 11,
+          "name": "A/F90degree Cparagraph10 PBTWhite plastic6.2Reverse",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1704942630000
+        },
+        {
+          "uuid": "713a8a31f4684d889c72d1dc05c54353",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 12,
+          "name": "A/FPaste board Cparagraph10 LCPVinyl6.8Reverse-C42491",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706199821000
+        },
+        {
+          "uuid": "afed138953704231be399c37d4da4ba5",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "d68cc21d837d46f28d4631ffdae48730"
+          },
+          "ordinal": 13,
+          "name": "micro 5PFour-legged board7.2There is a column card point0.4m",
+          "type": 2,
+          "description": "micro 5P7.20.4m",
+          "updateTimestamp": 1700042126000
+        },
+        {
+          "uuid": "6df166211b9741408540dc2acff6f425",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 14,
+          "name": "AUIRFR5505TRR-VB",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1733794506000
+        }
+      ]
+    },
+    {
+      "query": "Capacitor",
+      "items": [
+        {
+          "uuid": "417d4461e9034721a0381da76f854e80",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "电容_Capacitor",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1763368932600
+        },
+        {
+          "uuid": "54258c74f21a4883aab4aef48cac6472",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "CAPACITOR_THT:CP_RADIAL_D8.0MM_P2.50MM",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1726259352000
+        },
+        {
+          "uuid": "9fd09109a6a6454ebc83cc30af069912",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "CAPACITOR15NF100V",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1717552657000
+        },
+        {
+          "uuid": "f1d09055cc8c41c3a18b3aeaca259ad9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 3,
+          "name": "1uf/250V/CBBCapacitor",
+          "type": 2,
+          "description": "1uF (105) ±10% 250V",
+          "updateTimestamp": 1706204627000
+        },
+        {
+          "uuid": "31ad926676d0456b8c26140bf4f9c617",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 4,
+          "name": "CBBCapacitor 224J/630V",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1724033216000
+        },
+        {
+          "uuid": "9479b235af7b4ea2ba05a556b69b914d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 5,
+          "name": "CCBCapacitor 100PF100v",
+          "type": 2,
+          "description": "CCB 100PF100v",
+          "updateTimestamp": 1764658766000
+        },
+        {
+          "uuid": "79c8b4691e78444ea5410356f54e9f7c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "c292ff82fe22418cb6fb45441a14f362",
+            "secondaryClassificationUuid": "1d5ce185285f4d089219bce47e7af00f"
+          },
+          "ordinal": 6,
+          "name": "electrolytic capacitor10UF50V",
+          "type": 2,
+          "description": "10uF 50V",
+          "updateTimestamp": 1757067031000
+        },
+        {
+          "uuid": "1e4b231cc55c4ab0bffc297085fd6dfb",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 7,
+          "name": "Suppression Capacitor222M/250V",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706204711000
+        },
+        {
+          "uuid": "f8ffae61be06456d9a9285bb03d6fbef",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 8,
+          "name": "101K/1KV Capacitor",
+          "type": 2,
+          "description": "100pF (101) ±10% 1KV",
+          "updateTimestamp": 1706204665000
+        },
+        {
+          "uuid": "3be33b9ec25c4a959c58eda9a5cbb2ed",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 9,
+          "name": "Calibration capacitor100nF（104）100V,5%",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706204679000
+        },
+        {
+          "uuid": "1bdfab99df864a229bc98afd2ad3a5ea",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 10,
+          "name": "104 250v CBBCapacitor",
+          "type": 2,
+          "description": "100nF (104) ±5% 250V",
+          "updateTimestamp": 1706805466000
+        },
+        {
+          "uuid": "fdea19ab32a8403f8afc2a6b5f327803",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 11,
+          "name": "471K/1KV High-voltage Capacitors",
+          "type": 2,
+          "description": "470pF (471) ±10% 1KV",
+          "updateTimestamp": 1706204665000
+        },
+        {
+          "uuid": "495a96e5087a4540b2dc90d6b98bcac2",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 12,
+          "name": "CBBCapacitor 330PF 100V",
+          "type": 2,
+          "description": "CBB 330PF 100V",
+          "updateTimestamp": 1785050009000
+        },
+        {
+          "uuid": "814982fc160240929d66f4421b0ed501",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 13,
+          "name": "Ceramic capacitors47PF 3KV",
+          "type": 2,
+          "description": "47PF 3KV 10%",
+          "updateTimestamp": 1706805447000
+        },
+        {
+          "uuid": "95121d1b67ee4709b3c98241e8c4a78c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 14,
+          "name": "CALIBRATION CAPACITOR4.7NF 5% 100V",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706204679000
+        }
+      ]
+    },
+    {
+      "query": "C",
+      "items": [
+        {
+          "uuid": "49dfb5606cd1494da76b1a2ed588803f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "CV28D-FCC-CMVWQ1B1CBCHBB7A363",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1764092506000
+        },
+        {
+          "uuid": "ef82ae20391446d0bf7b7edca721f57f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "SG-9101CA-C02SHCBC_C1324921",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1664502666000
+        },
+        {
+          "uuid": "3c75ebce4d63448997502c293499ef53",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "SG-9101CG-C10PGCBC_C1692436",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1664502734000
+        },
+        {
+          "uuid": "37c43eae8efc4fb998fd460d5f3ab2e3",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "672970ba5a66473fb91519efaa81af95",
+            "secondaryClassificationUuid": "858e8736c1ca4a70b6810de910b6c403"
+          },
+          "ordinal": 3,
+          "name": "CY7C1357C-133AXCT_C2952914",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706206299000
+        },
+        {
+          "uuid": "7912c3630aaa46b4a5c0e726c3159b79",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 4,
+          "name": "CY7C1361C-100AXC_C2949913",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706806855000
+        },
+        {
+          "uuid": "255371c6de434e5fb78eba1210024259",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "672970ba5a66473fb91519efaa81af95",
+            "secondaryClassificationUuid": "858e8736c1ca4a70b6810de910b6c403"
+          },
+          "ordinal": 5,
+          "name": "CY7C1360C-200BGC_C2950780",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706206252000
+        },
+        {
+          "uuid": "c9610e2c7168427db6810e327f04da9f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "c292ff82fe22418cb6fb45441a14f362",
+            "secondaryClassificationUuid": "91be115efbfc4ed68d89b51a5beb7cb7"
+          },
+          "ordinal": 6,
+          "name": "C0402C0G1C1R5C020BC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1743667248000
+        },
+        {
+          "uuid": "915897cd49844637a3f05c038d84c4c7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 7,
+          "name": "SG-9101CE-C10SHCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706191312000
+        },
+        {
+          "uuid": "a9611f99a0f545e88a3d199bcadbfa8f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "c292ff82fe22418cb6fb45441a14f362",
+            "secondaryClassificationUuid": "91be115efbfc4ed68d89b51a5beb7cb7"
+          },
+          "ordinal": 8,
+          "name": "CL21C561JCCNNNC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1729786803000
+        },
+        {
+          "uuid": "89ea340061bb4ae7956498c9fefd5ed4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 9,
+          "name": "SG-9101CA-C15PGCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706191636000
+        },
+        {
+          "uuid": "4db5f605e8a0497a8ce3a067f1687fd8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 10,
+          "name": "SG-9101CE-C15PGCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1708565495000
+        },
+        {
+          "uuid": "bed7a319f7bc46f284855d26b613eb85",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 11,
+          "name": "SG-9101CA-C05PHCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1709281507000
+        },
+        {
+          "uuid": "955aeb5fc5524b4a923fdfcd779a8a91",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 12,
+          "name": "SG-9101CE-C02SGCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706191792000
+        },
+        {
+          "uuid": "e3a6aa41a901421c818c011e1d7ac791",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 13,
+          "name": "SG-9101CB-C07SHCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1701159332000
+        },
+        {
+          "uuid": "e79f47d07a394afea68d5c5306236894",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "8e857e0bb05947dfae4266702061e90d",
+            "secondaryClassificationUuid": "28c326cfcca04c6196c4504b7064a3d4"
+          },
+          "ordinal": 14,
+          "name": "SG-9101CA-C05SGCCC",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706191635000
+        }
+      ]
+    },
+    {
+      "query": "CPolar",
+      "items": []
+    },
+    {
+      "query": "Fuse",
+      "items": [
+        {
+          "uuid": "445fd9a658964814aae27cc2d15314f8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "FUSE",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300688000
+        },
+        {
+          "uuid": "57a1177b08324e1aa36cc2727d305123",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "FUSE_F1812_FUSE",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1669579826000
+        },
+        {
+          "uuid": "813e0aff296a41d5be06d9ce14ea4e0d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "FUSE5.08-16V6A",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074341000
+        },
+        {
+          "uuid": "c3a13ef9ecff41ad85f69e3b85d0d6a4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 3,
+          "name": "SMD13_FUSER_STEP",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074471000
+        },
+        {
+          "uuid": "cfaa05ce036e40c7825c8a955d3ded99",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 4,
+          "name": "FUSE_0.5A",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074431000
+        },
+        {
+          "uuid": "76fc2147bc964a33a44772a6692f43c3",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 5,
+          "name": "D22051903536_FUSE1206",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074505000
+        },
+        {
+          "uuid": "1f3440d65bf146cca3e5aa0001167b7b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "abdd48b5013747d0bce9438e560345b5",
+            "secondaryClassificationUuid": "9e627ffbe74d4ff9a6a55d9f25896a20"
+          },
+          "ordinal": 6,
+          "name": "FKN1W470RJBFUSES",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1741855205000
+        },
+        {
+          "uuid": "2c704f2a659c4c0bba86438e19fcbb33",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 7,
+          "name": "FUSE-6.5V/250V",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1726259375000
+        },
+        {
+          "uuid": "735e24d9cccf4a4c81fefc5d53db72c8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 8,
+          "name": "CARFUSEHOLDER",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074387000
+        },
+        {
+          "uuid": "c52fb27ec741492ca57799b4e7414b4f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 9,
+          "name": "CQFUSE",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300093000
+        },
+        {
+          "uuid": "a0dcbfaaa8b647c2bebcef2610be1959",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 10,
+          "name": "2A-FUSE",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074329000
+        },
+        {
+          "uuid": "7a1391c403cd4b6ea1ac18e6376716f7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 11,
+          "name": "2410FUSEHOLDER",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1750668907000
+        },
+        {
+          "uuid": "04d671824b10442085f2612159c6d3c7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "27848014c90f4c44b3554e972a836218",
+            "secondaryClassificationUuid": "1855b6e44fa64552a2e0b9ac69099ec8"
+          },
+          "ordinal": 12,
+          "name": "382FUSE_C24687",
+          "type": 2,
+          "description": "T2A/250V",
+          "updateTimestamp": 1740741347000
+        },
+        {
+          "uuid": "3f0190436add46ed8aebaa0bc2b6dd33",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "27848014c90f4c44b3554e972a836218",
+            "secondaryClassificationUuid": "1855b6e44fa64552a2e0b9ac69099ec8"
+          },
+          "ordinal": 13,
+          "name": "382FUSE_C24688",
+          "type": 2,
+          "description": "T500mA/250V",
+          "updateTimestamp": 1740741319000
+        },
+        {
+          "uuid": "d8eba08b58dd42089e987ae12dd0248c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 14,
+          "name": "FUSE_SMD1812",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300160000
+        }
+      ]
+    },
+    {
+      "query": "Netport-BI",
+      "items": [
+        {
+          "uuid": "88f801fa73a24926a78b98f126429f07",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "Netport-BI",
+          "type": 19,
+          "description": "Netport-BI",
+          "updateTimestamp": 1758699046990
+        },
+        {
+          "uuid": "886278409be54d11a143e9ce378c7103",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "Netport-OUT",
+          "type": 19,
+          "description": "Netport-OUT",
+          "updateTimestamp": 1758699056919
+        },
+        {
+          "uuid": "9efc5969ac6c4c83b5123274296715d2",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "Netport-IN",
+          "type": 19,
+          "description": "Netport-IN",
+          "updateTimestamp": 1758698978696
+        },
+        {
+          "uuid": "8f44a13ff5cb44e688f7813cea997c17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 3,
+          "name": "SLC12C",
+          "type": 2,
+          "description": "Bi-Directional ESD Protection Diode, 12V",
+          "updateTimestamp": 1735209647000
+        },
+        {
+          "uuid": "2c2612a98de54153baa727ba7cbc827d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 4,
+          "name": "SMAJ78CA_C353419",
+          "type": 2,
+          "description": "SMAJ series 400W 78V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740742814000
+        },
+        {
+          "uuid": "ef20edd15c9c429c933afccedf0b617c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 5,
+          "name": "SMBJ130CA_C353395",
+          "type": 2,
+          "description": "SMBJ series 600W 130V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740743117000
+        },
+        {
+          "uuid": "72312364b54248beb332b0e88741fc4f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 6,
+          "name": "SMAJ120CA_C353489",
+          "type": 2,
+          "description": "SMAJ series 400W 120V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740742865000
+        },
+        {
+          "uuid": "631bd982acea4f7a87834eaac42b598f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 7,
+          "name": "SMAJ8.0CA_C353417",
+          "type": 2,
+          "description": "SMAJ series 400W 8.0V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740742852000
+        },
+        {
+          "uuid": "7872d410f6e94ff08d7d314d3f8e9c5e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 8,
+          "name": "SMAJ7.0CA_C353427",
+          "type": 2,
+          "description": "SMAJ series 400W 7.0V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740742847000
+        },
+        {
+          "uuid": "ec5ea26b70744b068fa8e8a9a371667a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 9,
+          "name": "SMBJ100CA_C353407",
+          "type": 2,
+          "description": "SMBJ series 600W 100V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740743114000
+        },
+        {
+          "uuid": "3721b70a3c5942359e58a0f0517a23a4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 10,
+          "name": "SMBJ22CA_C353374",
+          "type": 2,
+          "description": "SMBJ series 600W 22V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740744060000
+        },
+        {
+          "uuid": "1db319c96d6f4f1481ed51faefdc27df",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 11,
+          "name": "SMAJ51CA_C353439",
+          "type": 2,
+          "description": "SMAJ series 400W 51V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740742815000
+        },
+        {
+          "uuid": "b438be0e428a4c14a8043448d9f4158a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 12,
+          "name": "SMAJ7.5CA_C353425",
+          "type": 2,
+          "description": "SMAJ series 400W 7.5V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1740742832000
+        },
+        {
+          "uuid": "f101f2df954b4b84b09679d529574181",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 13,
+          "name": "SMAJ60CA_C353431",
+          "type": 2,
+          "description": "SMAJ series 400W 60V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1696761983000
+        },
+        {
+          "uuid": "4723915096aa42fcb723d83474a29db4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "615c24255a7d4c54a09c584f4e14e080"
+          },
+          "ordinal": 14,
+          "name": "SMBJ43CA_C359936",
+          "type": 2,
+          "description": "SMBJ series 600W 43V Bi-directional SMD TVS Diode",
+          "updateTimestamp": 1735208740000
+        }
+      ]
+    }
+  ]
+}

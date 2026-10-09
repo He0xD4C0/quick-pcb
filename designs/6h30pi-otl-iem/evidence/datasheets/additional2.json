@@ -1,0 +1,19 @@
+{
+  "IXTH30N50L2.pdf": {
+    "url": "https://astrolkwx.com/wp-content/uploads/IXTT30N50L2_datasheet.pdf",
+    "status": "downloaded",
+    "sha256": "136e21bd3f95e135054a8f02a1ed727c6c72071c928ecd9809253d900bc9e2b7"
+  },
+  "pickering-67.pdf": {
+    "url": "https://pickeringrelay.com/pdfs/67_68.pdf",
+    "error": "Client error '403 Forbidden' for url 'https://pickeringrelay.com/pdfs/67_68.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  },
+  "MBR1045.pdf": {
+    "url": "https://www.smc-diodes.com/propdf/MBR1045%20N0615%20REV.A.pdf",
+    "error": "Client error '403 Forbidden' for url 'https://www.smc-diodes.com/propdf/MBR1045%20N0615%20REV.A.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  },
+  "panasonic-FR.pdf": {
+    "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+    "error": "[Errno 8] nodename nor servname provided, or not known"
+  }
+}

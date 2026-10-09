@@ -1,0 +1,32 @@
+{
+  "R5ABLKBLKFF0.pdf": {
+    "url": "https://configured-product-images.s3.amazonaws.com/2D/specs/R5ABLKBLKFF0.pdf",
+    "status": "downloaded",
+    "sha256": "5fdbefb39031e809ae38462d74055d52d89d9550af5ed43009972ab184df81f3"
+  },
+  "R5-series.pdf": {
+    "url": "https://configured-product-images.s3.amazonaws.com/Datasheets/R5.pdf",
+    "status": "downloaded",
+    "sha256": "3b327a38273f460ad0025029fd60a637a9592abddea295e30a2a96c623ac4e1e"
+  },
+  "littelfuse-215.pdf": {
+    "url": "https://www.littelfuse.com/assetdocs/fuse-215-datasheet?assetguid=990f7193-d9a2-48e4-b760-2b43514249cf",
+    "status": "failed",
+    "error": "Client error '403 Forbidden' for url 'https://www.littelfuse.com/assetdocs/fuse-215-datasheet?assetguid=990f7193-d9a2-48e4-b760-2b43514249cf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  },
+  "IXTH30N50L2.pdf": {
+    "url": "https://www.littelfuse.com/assetdocs/littelfuse-discrete-mosfets-ixt-30n50-datasheet?assetguid=c09539a4-39f7-4fb5-940f-2103ab4fa891",
+    "status": "failed",
+    "error": "Client error '403 Forbidden' for url 'https://www.littelfuse.com/assetdocs/littelfuse-discrete-mosfets-ixt-30n50-datasheet?assetguid=c09539a4-39f7-4fb5-940f-2103ab4fa891'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  },
+  "pickering-67.pdf": {
+    "url": "https://www.pickeringrelay.com/pdfs/67-68-high-voltage-reed-relays.pdf",
+    "status": "failed",
+    "error": "Client error '403 Forbidden' for url 'https://www.pickeringrelay.com/pdfs/67-68-high-voltage-reed-relays.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  },
+  "uniroyal-resistors.pdf": {
+    "url": "https://www.uni-royal.cn/en/images/userfile/file/1753752986c56505e6d9ab55c7.pdf",
+    "status": "downloaded",
+    "sha256": "ffeb8a25d4c2ffa490a28e0e00f70107f2cb94575d7e03365efc252d911ecf0c"
+  }
+}

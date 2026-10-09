@@ -1,0 +1,126 @@
+{
+  "captured_at": "2026-09-27T19:45:35.683073+08:00",
+  "window_id": "6602c0b8-81ef-4d17-ae83-c9ad104f8431",
+  "raw": {
+    "ok": true,
+    "result": {
+      "format": "easyeda-drc-capture/v1",
+      "result": [
+        {
+          "type": "fatalError",
+          "count": 3
+        },
+        {
+          "type": "error",
+          "count": 1
+        }
+      ],
+      "logs": [
+        {
+          "type": "info",
+          "tabType": "schDrcLog",
+          "openTab": false,
+          "msg": [
+            "<span class=\"i18n\">Start Design Rule Checking.</span>"
+          ]
+        },
+        {
+          "type": "fatalError",
+          "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component3&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I4</span>\" i18n-params-logtype=\"schDrcLog\">Component {objectID} lacks of property \"Footprint\".</span>",
+          "openTab": true,
+          "tabType": "schDrcLog"
+        },
+        {
+          "type": "fatalError",
+          "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component4&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I5</span>\" i18n-params-logtype=\"schDrcLog\">Component {objectID} lacks of property \"Footprint\".</span>",
+          "openTab": true,
+          "tabType": "schDrcLog"
+        },
+        {
+          "type": "fatalError",
+          "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-objectid=\"<span class=&quot;link&quot; data-log-find-id=&quot;component5&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I6</span>\" i18n-params-logtype=\"schDrcLog\">Component {objectID} lacks of property \"Footprint\".</span>",
+          "openTab": true,
+          "tabType": "schDrcLog"
+        },
+        {
+          "type": "error",
+          "msg": "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-component=\"QPCB_6H30Pi_EB_REVIEWED_PINS_R4\" i18n-params-pins=\"1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019\" i18n-params-pads=\"\" i18n-params-object=\"<span class=&quot;link&quot; data-log-find-id=&quot;component3&quot; data-log-find-sheet=&quot;f46a303398832651&quot; data-log-find-type=&quot;rect&quot; data-log-find-options=&quot;openFootPrintManager&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I4</span>\" i18n-params-logtype=\"schDrcLog\">The pin of the component {component} does not correspond to the pad (Pin has no corresponding pad : {pins}): {object}</span>",
+          "openTab": true,
+          "tabType": "schDrcLog"
+        },
+        {
+          "type": "info",
+          "tabType": "schDrcLog",
+          "openTab": false,
+          "msg": [
+            "<span class=\"i18n\">Finish Design Rule Checking.</span>",
+            "<span class=\"i18n\" data-i18n-context=\"designRule\" i18n-params-fatalerrornumber=\"3\" i18n-params-errornumber=\"1\" i18n-params-warningnumber=\"0\" i18n-params-infonumber=\"0\">Fatal Error: {fatalErrorNumber}, Error: {errorNumber}, Warning: {warningNumber}, Info: {infoNumber}.</span>"
+          ]
+        }
+      ]
+    }
+  },
+  "passed": false,
+  "violations": [
+    {
+      "id": "sch-drc:579a61c5dfc7f0d7",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component5"
+      ],
+      "position": null,
+      "message": "Component $1I6 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:84315d2dc9ceb172",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component4"
+      ],
+      "position": null,
+      "message": "Component $1I5 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8599e0f9a3f86b2c",
+      "severity": "error",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component3"
+      ],
+      "position": null,
+      "message": "The pin of the component QPCB_6H30Pi_EB_REVIEWED_PINS_R4 does not correspond to the pad (Pin has no corresponding pad : 1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019): $1I4",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:aaa6922ee4cfbbb4",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component3"
+      ],
+      "position": null,
+      "message": "Component $1I4 lacks of property \"Footprint\".",
+      "source_id": null
+    }
+  ],
+  "source_files": {
+    "/Applications/\u5609\u7acb\u521bEDA(\u4e13\u4e1a\u7248).app/Contents/Resources/app/assets/pro-ui/3.2.181.db96fbff/js/ui.js": "d15540db575389ceaf8e4dd67ebc188c7268c2412a638e52830083228e3c1e54",
+    "/Applications/\u5609\u7acb\u521bEDA(\u4e13\u4e1a\u7248).app/Contents/Resources/app/assets/pro-sch/3.2.181.b4201c52/js/sch.js": "94de83e7d8fbacea1bdd51bf699c17d701ddbc23689933b2dbef73b61c862799"
+  }
+}

@@ -1,0 +1,108 @@
+graph LR
+    C1["C1"]
+    C2["C2"]
+    C3["C3"]
+    C4["C4"]
+    C5["C5"]
+    C6["C6"]
+    D1["D1"]
+    D2["D2"]
+    J1["J1"]
+    J2["J2"]
+    J3["J3"]
+    Q1["Q1"]
+    Q2["Q2"]
+    Q3["Q3"]
+    R1["R1"]
+    R2["R2"]
+    R3["R3"]
+    R4["R4"]
+    R5["R5"]
+    R6["R6"]
+    R7["R7"]
+    R8["R8"]
+    C4 ---|VCC_9V| C5
+    C4 ---|VCC_9V| J1
+    C4 ---|VCC_9V| Q2
+    C4 ---|VCC_9V| R5
+    C5 ---|VCC_9V| J1
+    C5 ---|VCC_9V| Q2
+    C5 ---|VCC_9V| R5
+    J1 ---|VCC_9V| Q2
+    J1 ---|VCC_9V| R5
+    Q2 ---|VCC_9V| R5
+    C2 ---|GND| C4
+    C2 ---|GND| C5
+    C2 ---|GND| C6
+    C2 ---|GND| J1
+    C2 ---|GND| J2
+    C2 ---|GND| J3
+    C2 ---|GND| Q3
+    C2 ---|GND| R3
+    C2 ---|GND| R4
+    C4 ---|GND| C5
+    C4 ---|GND| C6
+    C4 ---|GND| J1
+    C4 ---|GND| J2
+    C4 ---|GND| J3
+    C4 ---|GND| Q3
+    C4 ---|GND| R3
+    C4 ---|GND| R4
+    C5 ---|GND| C6
+    C5 ---|GND| J1
+    C5 ---|GND| J2
+    C5 ---|GND| J3
+    C5 ---|GND| Q3
+    C5 ---|GND| R3
+    C5 ---|GND| R4
+    C6 ---|GND| J1
+    C6 ---|GND| J2
+    C6 ---|GND| J3
+    C6 ---|GND| Q3
+    C6 ---|GND| R3
+    C6 ---|GND| R4
+    J1 ---|GND| J2
+    J1 ---|GND| J3
+    J1 ---|GND| Q3
+    J1 ---|GND| R3
+    J1 ---|GND| R4
+    J2 ---|GND| J3
+    J2 ---|GND| Q3
+    J2 ---|GND| R3
+    J2 ---|GND| R4
+    J3 ---|GND| Q3
+    J3 ---|GND| R3
+    J3 ---|GND| R4
+    Q3 ---|GND| R3
+    Q3 ---|GND| R4
+    R3 ---|GND| R4
+    C1 ---|AUDIO_IN| J2
+    C1 --- R1
+    Q1 --- R1
+    Q1 --- R2
+    Q1 --- R3
+    R1 --- R2
+    R1 --- R3
+    R2 --- R3
+    C2 --- Q1
+    C2 --- R4
+    Q1 --- R4
+    D1 --- Q2
+    D1 --- R5
+    Q2 --- R5
+    D1 --- D2
+    D2 --- Q1
+    D2 --- Q3
+    Q1 --- Q3
+    Q2 --- R6
+    Q3 --- R7
+    C3 ---|OUT_INT| R2
+    C3 ---|OUT_INT| R6
+    C3 ---|OUT_INT| R7
+    R2 ---|OUT_INT| R6
+    R2 ---|OUT_INT| R7
+    R6 ---|OUT_INT| R7
+    C3 ---|SPEAKER_OUT| J3
+    C3 ---|SPEAKER_OUT| R8
+    J3 ---|SPEAKER_OUT| R8
+    C6 --- R8

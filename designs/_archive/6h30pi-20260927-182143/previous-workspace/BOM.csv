@@ -1,0 +1,166 @@
+ref,alias,value,type,rating,source,note,page
+J1,J1,3.5mm stereo INPUT,JACK,Insulated chassis jack,Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+SW1,SW1,DPDT HIGH / LOW,GAIN,Break before make; two poles mechanically linked,Project-defined functional terminals; package/purchasing verification required before build,High connects C-H; Low connects C-L. Turn volume down before switching.,01_Input_and_controls
+RV1,RV1,Dual 10k log,POT,2 gangs; >=0.1W; gang tracking must be measured,Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+J2,J2,3.5mm stereo OUTPUT,JACK,Insulated chassis jack; no balanced output,Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+R1,RATTL,8.2k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+R2,RSHL,1k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+R3,RHPL,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+R4,RATTR,8.2k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+R5,RSHR,1k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+R6,RHPR,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,01_Input_and_controls
+V1,V1,6H30Pi-EB,TUBE,Pa <=4W each; Ia <=50mA continuous; |Vhk| <=100V conservative,https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf,"Socket BOTTOM / wiring view. 4,5 heater; 9 SCREEN, never heater.",02_WCF_L
+C1,CINL,4.7u,C,"250V, film 5%",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,02_WCF_L
+R7,RB1L,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+R8,RB2L,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+C2,CBL,47u,C,"160V electrolytic, +/-20%",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,02_WCF_L
+R9,RGL,47k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+R10,RGSL,100,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+R11,RSL,127,R,"1W, 1%, metal film; nominal 0.17W",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+C3,CFL,4.7u,C,"250V, film 5%",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,02_WCF_L
+R12,RGLL,100,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+R13,RLEAKL,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+R14,RKL,68,R,"1W, 1%; nominal 0.091W",Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+C4,CKL,2200u,C,16V electrolytic +/-20%,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,02_WCF_L
+C5,COL,1000u,C,250V electrolytic +/-20%; ESR target <=0.15 ohm @1k; leakage MUST be measured,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,02_WCF_L
+R15,RDCL,100k,R,2W flameproof; defined discharge of output coupling capacitor,Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+R16,RBLL,10k,R,2W flameproof; 0.67W at 82V fault,Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+K1,K1,104-1-A-12/1,RELAY,"500VDC switching, 0.5A/10W maximum; no internal diode",https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf,FUNCTIONAL pin labels. Confirm ordered package pinout. Contact ESR budget 0.15 ohm. Hard capacitor short exceeds contact current rating: NOT qualified.,02_WCF_L
+TP1,TPLMID,MID,TP,Insulated test point >=250V,Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+TP2,TPLK,K,TP,Insulated test point >=250V,Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+TP3,TPLOUT,OUT,TP,Insulated test point >=250V,Project-defined functional terminals; package/purchasing verification required before build,,02_WCF_L
+V2,V2,6H30Pi-EB,TUBE,Pa <=4W each; Ia <=50mA continuous; |Vhk| <=100V conservative,https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf,"Socket BOTTOM / wiring view. 4,5 heater; 9 SCREEN, never heater.",03_WCF_R
+C6,CINR,4.7u,C,"250V, film 5%",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,03_WCF_R
+R17,RB1R,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+R18,RB2R,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+C7,CBR,47u,C,"160V electrolytic, +/-20%",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,03_WCF_R
+R19,RGR,47k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+R20,RGSR,100,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+R21,RSR,127,R,"1W, 1%, metal film; nominal 0.17W",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+C8,CFR,4.7u,C,"250V, film 5%",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,03_WCF_R
+R22,RGLR,100,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+R23,RLEAKR,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+R24,RKR,68,R,"1W, 1%; nominal 0.091W",Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+C9,CKR,2200u,C,16V electrolytic +/-20%,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,03_WCF_R
+C10,COR,1000u,C,250V electrolytic +/-20%; ESR target <=0.15 ohm @1k; leakage MUST be measured,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,03_WCF_R
+R25,RDCR,100k,R,2W flameproof; defined discharge of output coupling capacitor,Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+R26,RBLR,10k,R,2W flameproof; 0.67W at 82V fault,Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+K2,K2,104-1-A-12/1,RELAY,"500VDC switching, 0.5A/10W maximum; no internal diode",https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf,FUNCTIONAL pin labels. Confirm ordered package pinout. Contact ESR budget 0.15 ohm. Hard capacitor short exceeds contact current rating: NOT qualified.,03_WCF_R
+TP4,TPRMID,MID,TP,Insulated test point >=250V,Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+TP5,TPRK,K,TP,Insulated test point >=250V,Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+TP6,TPROUT,OUT,TP,Insulated test point >=250V,Project-defined functional terminals; package/purchasing verification required before build,,03_WCF_R
+J3,J3,IEC C14 fused inlet,MAINS,250VAC certified; touch-safe enclosure,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+F1,F1,T630mA H 250V,LINK,High breaking capacity; inrush validation required,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+SW2,SW2,DPST mains switch,SW,250VAC >=2A certified,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+T1,T1,220V : 150V / 9.5V / 12V,TX,>=100VA; 150VAC/0.25A + 9.5VAC/5A + 12VAC/0.3A; reinforced isolation; thermal fuse,https://www.hammfg.com/es/electronics/transformers/rectifier?referer=968,Custom transformer winding TERMINALS; no autotransformer. Ratings at load. Electrostatic screen bonded to PE.,04_Mains_and_rectifier
+CH1,CH1,Dedicated PE stud,CHASSIS,Bolted protective-earth bond; never switched/fused,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+LK1,LK1,Single star bond,LINK,Short chassis-to-signal-ground bond at single point,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+F2,F2,T315mA H 250V,LINK,HV winding fuse,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+D1,DH1,UF4007,D,"1000V, 1A",Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+D2,DH2,UF4007,D,"1000V, 1A",Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+D3,DH3,UF4007,D,"1000V, 1A",Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+D4,DH4,UF4007,D,"1000V, 1A",Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+C11,CHV1,220u,C,350V +/-20%; ripple >=0.3Arms @100Hz,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,04_Mains_and_rectifier
+R27,RHV,22,R,5W pulse-rated flameproof,Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+C12,CHV2,220u,C,350V +/-20%; ripple >=0.3Arms @100Hz,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,04_Mains_and_rectifier
+R28,RDIS1,100k,R,"2W, >=350V, flameproof",Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+R29,RDIS2,100k,R,"2W, >=350V, flameproof",Project-defined functional terminals; package/purchasing verification required before build,,04_Mains_and_rectifier
+Q1,QHV,IRF820,MOS,500V; heatsink <=8C/W; electrically insulated tab (D),https://www.vishay.com/docs/91059/91059.pdf,Linear DC SOA not signed off; transient short dissipation gate remains open.,05_HV_regulator
+R30,RHG,47k,R,"2W, >=350V",Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+D5,DGS,12V zener,D,1W,Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+R31,RIS,4.7,R,"1W; current limit ~0.13A, untrimmed",Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+Q2,QIL,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,05_HV_regulator
+Q3,QERR,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,05_HV_regulator
+R32,RHU,221k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+R33,RHL,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+R34,RHZ,82k,R,"2W, >=350V",Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+D6,DZHV,6.2V zener,D,0.5W; operating current ~2mA; tolerance 2% or better,Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+C13,CZHV,47u,C,25V electrolytic,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,05_HV_regulator
+C14,CCHV,10n,C,250V film; loop stability not qualified,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,05_HV_regulator
+C15,CBPLUS,100u,C,250V electrolytic,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,05_HV_regulator
+R35,RDIS3,100k,R,2W flameproof,Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+TP7,TPB,B+ 160V nominal,TP,Insulated HV point,Project-defined functional terminals; package/purchasing verification required before build,,05_HV_regulator
+F3,F3,T5A 250V,LINK,Heater winding fuse; inrush test required,Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+D7,DF1,MBR1045,D,"45V, 10A; insulated mounting as applicable",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+D8,DF2,MBR1045,D,"45V, 10A; insulated mounting as applicable",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+D9,DF3,MBR1045,D,"45V, 10A; insulated mounting as applicable",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+D10,DF4,MBR1045,D,"45V, 10A; insulated mounting as applicable",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+C16,CHF,15000u,C,25V +/-20%; ripple >=4Arms @100Hz,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,06_Heater_and_aux
+U1,U1,LM1084IT-ADJ,LDO,"5A; heat sink <=1.5C/W; tab=OUT, insulate from chassis",https://www.ti.com/lit/ds/symlink/lm1084.pdf,,06_Heater_and_aux
+R36,RH1,121,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+R37,RH2,487,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+C17,CHOUT,220u,C,"16V aluminum, ESR 0.2..1 ohm; regulator stability verification required",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,06_Heater_and_aux
+C18,CHADJ,10u,C,16V electrolytic,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,06_Heater_and_aux
+D11,DHREV,1N5404,D,400V 3A output-to-input reverse protection,Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+D12,DADJ,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+R38,REL1,150k,R,0.5W 1%,Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+R39,REL2,47k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,06_Heater_and_aux
+C19,CEL,47u,C,100V electrolytic,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,06_Heater_and_aux
+D13,DA1,1N4007,D,1000V 1A,Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+D14,DA2,1N4007,D,1000V 1A,Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+D15,DA3,1N4007,D,1000V 1A,Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+D16,DA4,1N4007,D,1000V 1A,Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+C20,CAUX,1000u,C,35V electrolytic,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,06b_Auxiliary_supply
+R40,RAZ,470,R,0.5W,Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+D17,DAZ,13V zener,D,0.5W 2%,Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+Q4,QAUX,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,06b_Auxiliary_supply
+C21,CA12,220u,C,25V electrolytic,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,06b_Auxiliary_supply
+R41,RA12,4.7k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,06b_Auxiliary_supply
+R42,RT,330k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+C22,CT,100u,C,25V low leakage; +/-20% directly changes delay,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,07_Delay_and_relay_driver
+D18,DZT,5.1V zener,D,0.5W,Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+R43,RTB,1k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+Q5,QT1,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,07_Delay_and_relay_driver
+Q6,QT2,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,07_Delay_and_relay_driver
+R44,RBE,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+D19,DFLY,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+D20,DZFLY,24V zener,D,1W pulse-rated; verify coil voltage and release time,Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+D21,DACS,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+C23,CACS,470n,C,50V film,Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,07_Delay_and_relay_driver
+R45,RACS,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+R46,RACB,47k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+Q7,QAC,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,07_Delay_and_relay_driver
+R47,RKILL,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+Q8,QKILL,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,07_Delay_and_relay_driver
+R48,RR1,2.3k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+R49,RR2,100,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+R50,RR3,100,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+R51,RR4,2.3k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,07_Delay_and_relay_driver
+R52,RDS1L,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+R53,RDS2L,100k,R,0.5W >=250V,Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+C24,CDSL,1u,C,"250V film, non-polar",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,08_DC_monitor_L
+D22,DSPL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D23,DSNL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+Q9,QPSL,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,08_DC_monitor_L
+Q10,QPRL,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,08_DC_monitor_L
+Q11,QNSL,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,08_DC_monitor_L
+Q12,QNRL,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,08_DC_monitor_L
+R54,RTPL,4.7k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+R55,RTNL,4.7k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+R56,RCPL,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+R57,RCNL,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D24,DTRPL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D25,DTRNL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D26,DBEPSL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D27,DBEPRL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D28,DBENSL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+D29,DBENRL,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,08_DC_monitor_L
+R58,RDS1R,100k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+R59,RDS2R,100k,R,0.5W >=250V,Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+C25,CDSR,1u,C,"250V film, non-polar",Project-defined functional terminals; package/purchasing verification required before build,Pin 1 positive for electrolytic; film non-polar,09_DC_monitor_R
+D30,DSPR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D31,DSNR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+Q13,QPSR,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,09_DC_monitor_R
+Q14,QPRR,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,09_DC_monitor_R
+Q15,QNSR,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,09_DC_monitor_R
+Q16,QNRR,MPSA42,NPN,"300V VCEO, 0.5A; E/B/C=1/2/3",https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf,,09_DC_monitor_R
+R60,RTPR,4.7k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+R61,RTNR,4.7k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+R62,RCPR,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+R63,RCNR,10k,R,".25W, 1%, >=250V",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D32,DTRPR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D33,DTRNR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D34,DBEPSR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D35,DBEPRR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D36,DBENSR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R
+D37,DBENRR,1N4148,D,"100V, 150mA",Project-defined functional terminals; package/purchasing verification required before build,,09_DC_monitor_R

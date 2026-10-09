@@ -1,0 +1,61 @@
+{
+  "captured_at": "2026-09-27T18:57:27.269170+08:00",
+  "window_id": "69fb62cd-2bdb-4a4f-b6cc-2bc96cb91053",
+  "rows": [
+    {
+      "query": "MKP1848720454Y5",
+      "items": [
+        {
+          "uuid": "60b1409da5664c1eb3a07d2a5ba654fe",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "3b62e6cdbff4454d89be00c5be874148",
+            "secondaryClassificationUuid": "1e4746dee94f4ac991733fea77f483f9"
+          },
+          "ordinal": 0,
+          "name": "MKP1848720454Y5",
+          "symbolName": "MKP1848720454Y5",
+          "symbolUuid": "35c7a6a6b0114a4cb6d6154a1ede4398",
+          "footprintName": "CAP-TH_4P-L57.5-W65.0-P52.5-S20.3-D1.20",
+          "footprintUuid": "0a433d8be74545bfa7a30ccf7173b3f5",
+          "model3DName": "CAP-TH_4P-L57.5-W65.0-P52.5-S20.3-D1.20",
+          "model3DUuid": "9bc9f8c339cb49f69b8d6a4b4814e783",
+          "description": "容值:200uF;精度:±5%;额定电压:450V;工作温度:-40℃~+105℃;",
+          "manufacturer": "VISHAY(威世)",
+          "manufacturerId": "MKP1848720454Y5",
+          "supplier": "LCSC",
+          "supplierId": "C3805461",
+          "otherProperty": {
+            "LCSC Part Name": "200uF ±5% 450V",
+            "Supplier Part": "C3805461",
+            "Manufacturer": "VISHAY(威世)",
+            "Manufacturer Part": "MKP1848720454Y5",
+            "Supplier Footprint": "插件,P=52.5mm",
+            "JLCPCB Part Class": "Extended Part",
+            "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20231214/5A200BD48D03E1D514365A4630E3BFFC.pdf",
+            "Supplier": "LCSC",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "35c7a6a6b0114a4cb6d6154a1ede4398",
+            "Designator": "C?",
+            "Footprint": "0a433d8be74545bfa7a30ccf7173b3f5",
+            "3D Model": "9bc9f8c339cb49f69b8d6a4b4814e783",
+            "3D Model Title": "CAP-TH_4P-L57.5-W65.0-P52.5-S20.3-D1.20",
+            "3D Model Transform": "2263.775,2559.05,0,0,0,0,-0.005,0.005,-236.22",
+            "Value": "200uF",
+            "Tolerance": "±5%",
+            "Voltage Rated": "450V",
+            "Operating Temperature": "-40℃~+105℃",
+            "Name": "={Value}"
+          }
+        }
+      ]
+    },
+    {
+      "query": "VT9-ST-C",
+      "items": []
+    }
+  ]
+}

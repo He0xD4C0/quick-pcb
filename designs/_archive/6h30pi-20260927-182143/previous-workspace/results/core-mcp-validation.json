@@ -1,0 +1,998 @@
+{
+  "tool": "mcp__boardspec_core__validate",
+  "date": "2026-09-27",
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C1",
+      "message": "instance 'C1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C10",
+      "message": "instance 'C10' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C11",
+      "message": "instance 'C11' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C12",
+      "message": "instance 'C12' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C13",
+      "message": "instance 'C13' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C14",
+      "message": "instance 'C14' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C15",
+      "message": "instance 'C15' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C16",
+      "message": "instance 'C16' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C17",
+      "message": "instance 'C17' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C18",
+      "message": "instance 'C18' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C19",
+      "message": "instance 'C19' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C2",
+      "message": "instance 'C2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C20",
+      "message": "instance 'C20' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C21",
+      "message": "instance 'C21' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C22",
+      "message": "instance 'C22' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C23",
+      "message": "instance 'C23' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C24",
+      "message": "instance 'C24' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C25",
+      "message": "instance 'C25' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C3",
+      "message": "instance 'C3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C4",
+      "message": "instance 'C4' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C5",
+      "message": "instance 'C5' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C6",
+      "message": "instance 'C6' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C7",
+      "message": "instance 'C7' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C8",
+      "message": "instance 'C8' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/C9",
+      "message": "instance 'C9' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/CH1",
+      "message": "instance 'CH1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D1",
+      "message": "instance 'D1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D10",
+      "message": "instance 'D10' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D11",
+      "message": "instance 'D11' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D12",
+      "message": "instance 'D12' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D13",
+      "message": "instance 'D13' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D14",
+      "message": "instance 'D14' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D15",
+      "message": "instance 'D15' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D16",
+      "message": "instance 'D16' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D17",
+      "message": "instance 'D17' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D18",
+      "message": "instance 'D18' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D19",
+      "message": "instance 'D19' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D2",
+      "message": "instance 'D2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D20",
+      "message": "instance 'D20' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D21",
+      "message": "instance 'D21' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D22",
+      "message": "instance 'D22' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D23",
+      "message": "instance 'D23' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D24",
+      "message": "instance 'D24' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D25",
+      "message": "instance 'D25' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D26",
+      "message": "instance 'D26' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D27",
+      "message": "instance 'D27' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D28",
+      "message": "instance 'D28' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D29",
+      "message": "instance 'D29' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D3",
+      "message": "instance 'D3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D30",
+      "message": "instance 'D30' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D31",
+      "message": "instance 'D31' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D32",
+      "message": "instance 'D32' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D33",
+      "message": "instance 'D33' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D34",
+      "message": "instance 'D34' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D35",
+      "message": "instance 'D35' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D36",
+      "message": "instance 'D36' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D37",
+      "message": "instance 'D37' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D4",
+      "message": "instance 'D4' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D5",
+      "message": "instance 'D5' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D6",
+      "message": "instance 'D6' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D7",
+      "message": "instance 'D7' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D8",
+      "message": "instance 'D8' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/D9",
+      "message": "instance 'D9' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/F1",
+      "message": "instance 'F1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/F2",
+      "message": "instance 'F2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/F3",
+      "message": "instance 'F3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/J1",
+      "message": "instance 'J1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/J2",
+      "message": "instance 'J2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/J3",
+      "message": "instance 'J3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/K1",
+      "message": "instance 'K1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/K2",
+      "message": "instance 'K2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/LK1",
+      "message": "instance 'LK1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q1",
+      "message": "instance 'Q1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q10",
+      "message": "instance 'Q10' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q11",
+      "message": "instance 'Q11' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q12",
+      "message": "instance 'Q12' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q13",
+      "message": "instance 'Q13' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q14",
+      "message": "instance 'Q14' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q15",
+      "message": "instance 'Q15' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q16",
+      "message": "instance 'Q16' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q2",
+      "message": "instance 'Q2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q3",
+      "message": "instance 'Q3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q4",
+      "message": "instance 'Q4' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q5",
+      "message": "instance 'Q5' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q6",
+      "message": "instance 'Q6' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q7",
+      "message": "instance 'Q7' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q8",
+      "message": "instance 'Q8' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/Q9",
+      "message": "instance 'Q9' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R1",
+      "message": "instance 'R1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R10",
+      "message": "instance 'R10' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R11",
+      "message": "instance 'R11' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R12",
+      "message": "instance 'R12' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R13",
+      "message": "instance 'R13' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R14",
+      "message": "instance 'R14' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R15",
+      "message": "instance 'R15' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R16",
+      "message": "instance 'R16' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R17",
+      "message": "instance 'R17' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R18",
+      "message": "instance 'R18' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R19",
+      "message": "instance 'R19' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R2",
+      "message": "instance 'R2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R20",
+      "message": "instance 'R20' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R21",
+      "message": "instance 'R21' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R22",
+      "message": "instance 'R22' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R23",
+      "message": "instance 'R23' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R24",
+      "message": "instance 'R24' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R25",
+      "message": "instance 'R25' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R26",
+      "message": "instance 'R26' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R27",
+      "message": "instance 'R27' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R28",
+      "message": "instance 'R28' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R29",
+      "message": "instance 'R29' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R3",
+      "message": "instance 'R3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R30",
+      "message": "instance 'R30' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R31",
+      "message": "instance 'R31' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R32",
+      "message": "instance 'R32' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R33",
+      "message": "instance 'R33' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R34",
+      "message": "instance 'R34' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R35",
+      "message": "instance 'R35' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R36",
+      "message": "instance 'R36' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R37",
+      "message": "instance 'R37' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R38",
+      "message": "instance 'R38' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R39",
+      "message": "instance 'R39' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R4",
+      "message": "instance 'R4' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R40",
+      "message": "instance 'R40' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R41",
+      "message": "instance 'R41' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R42",
+      "message": "instance 'R42' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R43",
+      "message": "instance 'R43' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R44",
+      "message": "instance 'R44' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R45",
+      "message": "instance 'R45' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R46",
+      "message": "instance 'R46' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R47",
+      "message": "instance 'R47' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R48",
+      "message": "instance 'R48' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R49",
+      "message": "instance 'R49' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R5",
+      "message": "instance 'R5' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R50",
+      "message": "instance 'R50' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R51",
+      "message": "instance 'R51' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R52",
+      "message": "instance 'R52' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R53",
+      "message": "instance 'R53' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R54",
+      "message": "instance 'R54' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R55",
+      "message": "instance 'R55' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R56",
+      "message": "instance 'R56' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R57",
+      "message": "instance 'R57' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R58",
+      "message": "instance 'R58' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R59",
+      "message": "instance 'R59' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R6",
+      "message": "instance 'R6' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R60",
+      "message": "instance 'R60' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R61",
+      "message": "instance 'R61' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R62",
+      "message": "instance 'R62' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R63",
+      "message": "instance 'R63' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R7",
+      "message": "instance 'R7' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R8",
+      "message": "instance 'R8' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/R9",
+      "message": "instance 'R9' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/RV1",
+      "message": "instance 'RV1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/SW1",
+      "message": "instance 'SW1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/SW2",
+      "message": "instance 'SW2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/T1",
+      "message": "instance 'T1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP1",
+      "message": "instance 'TP1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP2",
+      "message": "instance 'TP2' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP3",
+      "message": "instance 'TP3' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP4",
+      "message": "instance 'TP4' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP5",
+      "message": "instance 'TP5' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP6",
+      "message": "instance 'TP6' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/TP7",
+      "message": "instance 'TP7' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/U1",
+      "message": "instance 'U1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/V1",
+      "message": "instance 'V1' has no footprint",
+      "hint": null
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/V2",
+      "message": "instance 'V2' has no footprint",
+      "hint": null
+    }
+  ]
+}

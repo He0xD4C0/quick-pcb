@@ -1,0 +1,10 @@
+{
+  "architecture": "two 6H30Pi bottles; stereo pure-tube White cathode follower OTL",
+  "inputs": {"connector": "3.5mm TRS", "high_mode": "bypass", "low_mode_db": -20, "volume": "dual 10k logarithmic"},
+  "loads_ohm": [16,18],
+  "supply": {"mains_Vrms": 220, "Hz": 50, "mains_tolerance_fraction": 0.1, "target_Bplus_V": 160, "target_heater_V": 6.3, "heater_min_A": 2.5, "isolated": true},
+  "acceptance": {"mode_difference_db": [19.5,20.5], "input_max_Vrms": 1, "output_min_Vrms": 0.1, "frequency_Hz": [20,20000], "response_relative_1k_dB": [-0.5,0.5], "THD_50mV_percent_max": 0.1, "THD_100mV_percent_max": 0.5, "triode_nominal_dissipation_W_max": 3.2, "output_DC_V_max": 0.002},
+  "regressions": ["startup", "shutdown", "fast_restart", "unequal_warmup", "mode_switch", "no_load", "short", "output_cap_open", "output_cap_short", "output_cap_leakage", "mains_variation", "ripple", "component_tolerances", "triode_mismatch"],
+  "delivery": {"sheets": 1, "native": ".eprj2", "portable": ".epro2", "real_NET_ports": true, "PCB": false, "PDF_substitute": false},
+  "gates": {"topology_requires_reviewed_physical_pins": true, "full_drawing_requires_minimal_load_save_reopen_test": true, "no_real_headphones_until_fault_tests_pass": true, "hardware_test_status": "NOT_PERFORMED"}
+}

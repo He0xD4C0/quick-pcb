@@ -1,0 +1,1834 @@
+ © 2014 IXYS CORPORATION, All Rights Reserved
+N-Channel Enhancement Mode
+LinearL2TM
+Power MOSFET
+w/ Extended FBSOA
+IXTH30N50L2
+IXTQ30N50L2
+IXTT30N50L2
+DS99957B (02/14)
+VDSS
+=   500V
+ID25
+=   30A
+RDS(on)    215m
+D
+G  = Gate           D      =  Drain
+S  = Source       Tab   =  Drain
+TO-247 (IXTH)
+G
+S
+D (Tab)
+D
+TO-268 (IXTT)
+S
+G
+D (Tab)
+TO-3P (IXTQ)
+D
+G
+S
+D (Tab)
+Symbol
+Test Conditions
+Maximum Ratings
+VDSS
+TJ = 25C to 150C
+500
+ 
+V
+VDGR
+TJ = 25C to 150C, RGS = 1M
+500
+ 
+V
+VGSS
+Continuous
+ 20
+V
+VGSM
+Transient
+ 30
+V
+ID25
+TC = 25C
+                   30 
+A
+IDM
+TC = 25C, Pulse Width Limited by TJM
+60
+ 
+A
+IA
+TC = 25C
+30
+ 
+A
+EAS
+TC = 25C
+1.5
+ 
+J
+PD
+TC = 25C
+400
+ 
+W
+TJ
+-55 ... +150
+
+C
+TJM
+150
+
+C
+Tstg
+-55 ... +150
+
+C
+TL
+Maximum Lead Temperature for Soldering                    300
+°C
+TSOLD
+Plastic Body for 10s
+                                              260                    °C
+Md
+Mounting Torque  (TO-247&TO-3P)
+         1.13 / 10
+Nm/lb.in
+Weight             TO-268
+                      4.0
+ 
+g
+                          TO-3P
+                      5.5
+ 
+g
+                          TO-247                                                                                          6.0                         g
+Symbol
+Test Conditions                                             Characteristic Values
+(TJ = 25C Unless Otherwise Specified)
+      Min.       Typ.      Max.
+BVDSS
+VGS = 0V, ID = 250μA
+         500
+ 
+V
+VGS(th)
+VDS = VGS, ID = 250μA
+          2.5
+              4.5    V
+IGSS
+VGS = 20V, VDS = 0V
+100  nA
+IDSS
+VDS = VDSS, VGS = 0V
+                      50    A
+                                                                     TJ = 125C
+                          300    A
+RDS(on)
+VGS = 10V, ID = 0.5 • ID25, Note 1
+                   215   m
+Features
+Designed for Linear Operation
+International Standard Packages
+Avalanche Rated
+Guaranteed FBSOA at 75C
+Advantages
+Easy to Mount
+Space Savings
+High Power Density
+Applications
+Solid State Circuit Breakers
+Soft Start Controls
+Linear Amplifiers
+Programmable Loads
+Current Regulators
+DDD
+O
+G O
+O
+S
+w
+O
+w
+RGi
+
+IXYS Reserves the Right to Change Limits, Test Conditions, and Dimensions.
+IXTH30N50L2   IXTQ30N50L2
+IXTT30N50L2
+Note 1:  Pulse test, t  300s, duty cycle, d 2%.
+IXYS MOSFETs  and IGBTs are covered
+4,835,592
+4,931,844
+5,049,961
+5,237,481
+6,162,665
+6,404,065 B1
+6,683,344
+6,727,585
+7,005,734 B2    7,157,338B2
+by one or more of the following U.S. patents: 4,860,072
+5,017,508
+5,063,307
+5,381,025
+6,259,123 B1
+6,534,343
+6,710,405 B2
+6,759,692
+7,063,975 B2
+4,881,106
+5,034,796
+5,187,117
+5,486,715
+6,306,728 B1
+6,583,505
+6,710,463
+6,771,478 B2 7,071,537
+TO-3P Outline
+e
+P
+  TO-247 Outline
+ 1       2       3
+Terminals: 1 - Gate
+2 - Drain
+3 - Source
+Dim.
+Millimeter
+Inches
+Min.
+Max.
+Min.
+Max.
+A
+4.7
+5.3
+.185
+.209
+A1
+2.2
+2.54
+.087
+.102
+A2
+2.2
+2.6
+.059
+.098
+b
+1.0
+1.4
+.040
+.055
+b1
+1.65
+2.13
+.065
+.084
+b2
+2.87
+3.12
+.113
+.123
+C
+.4
+.8
+.016
+.031
+D
+20.80
+21.46
+.819
+.845
+E
+15.75
+16.26
+.610
+.640
+e
+5.20
+5.72
+0.205 0.225
+L
+19.81
+20.32
+.780
+.800
+L1
+4.50
+.177
+P
+3.55
+3.65
+.140
+.144
+Q
+5.89
+6.40
+0.232 0.252
+R
+4.32
+5.49
+.170
+.216
+S
+6.15 BSC
+242 BSC
+TO-268 Outline
+Terminals: 1 - Gate
+2,4  - Drain
+3 - Source
+Resistive Switching Times
+VGS = 10V, VDS = 0.5 • VDSS, ID = 0.5 • ID25
+RG  = 0 (External)
+Source-Drain Diode
+Symbol
+Test Conditions                                                 Characteristic Values
+ (TJ = 25C, Unless Otherwise Specified)
+ Min.      Typ.        Max.
+IS
+VGS = 0V
+               30     A
+ISM
+Repetitive, Pulse Width Limited by TJM
+                120      A
+VSD
+IF = IS, VGS = 0V, Note 1
+               1.5     V
+trr
+                                                                                     500
+ 
+ 
+ns
+IF = IS, -di/dt = 100A/s,
+VR = 100V, VGS = 0V
+Symbol
+Test Conditions
+Characteristic Values
+(TJ = 25°C, Unless Otherwise Specified)
+Min.        Typ.       Max.
+gfs
+VDS = 10V, ID = 0.5 • ID25, Note 1                      9                12          15
+S
+Ciss
+          8100
+pF
+Coss
+VGS = 0V, VDS = 25V, f = 1MHz
+            530
+pF
+Crss
+            115
+pF
+RGi
+Integrated Gate Input Resistor
+             3.5                    
+td(on)
+              35
+ns
+tr
+            117
+ns
+td(off)
+              94
+ns
+tf
+              40
+ns
+Qg(on)
+            240
+nC
+Qgs
+VGS = 10V, VDS = 0.5 • VDSS, ID = 0.5 • ID25
+              58
+nC
+Qgd
+            135
+nC
+RthJC
+                          0.31 °C/W
+RthCS
+(TO-247&TO-3P)
+             0.25              °C/W
+Safe Operating Area Specification
+                                                                                               Characteristic Values
+Symbol
+Test Conditions
+Min.        Typ.       Max.
+SOA
+VDS = 400V, ID = 0.5A, TC = 75°C, Tp = 2s       200
+W
+
+ © 2014 IXYS CORPORATION, All Rights Reserved
+IXTH30N50L2   IXTQ30N50L2
+IXTT30N50L2
+Fig. 1. Output Characteristics @ TJ = 25ºC
+0
+6
+12
+18
+24
+30
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+6
+VDS - Volts
+ID - Amperes
+VGS  = 20V
+          12V
+          10V
+         9V
+5V
+6V
+8V
+7V
+Fig. 2. Extended Output Characteristics @ TJ = 25ºC
+0
+10
+20
+30
+40
+50
+60
+70
+80
+0
+5
+10
+15
+20
+25
+30
+VDS - Volts
+ID - Amperes
+VGS  = 20V
+          14V
+          12V  
+7V
+6V
+8V
+9V
+10V
+Fig. 3. Output Characteristics @ TJ = 125ºC
+0
+6
+12
+18
+24
+30
+0
+2
+4
+6
+8
+10
+12
+14
+VDS - Volts
+ID - Amperes
+VGS  = 20V
+          12V
+          10V
+        9V
+5V
+7V
+6V
+8V
+Fig. 4. RDS(on) Normalized to ID = 15A Value vs. 
+Junction Temperature
+0.4
+0.8
+1.2
+1.6
+2.0
+2.4
+2.8
+-50
+-25
+0
+25
+50
+75
+100
+125
+150
+TJ - Degrees Centigrade
+RDS(on) - Normalized
+VGS  = 10V 
+I D = 30A
+I D = 15A 
+Fig. 5. RDS(on) Normalized to ID = 15A Value vs.
+ Drain Current
+0.8
+1.2
+1.6
+2.0
+2.4
+2.8
+0
+10
+20
+30
+40
+50
+60
+70
+ID - Amperes
+RDS(on) - Normalized
+VGS  = 10V
+TJ = 125ºC
+TJ = 25ºC
+Fig. 6. Maximum Drain Current vs. 
+Case Temperature
+0
+5
+10
+15
+20
+25
+30
+35
+-50
+-25
+0
+25
+50
+75
+100
+125
+150
+TC - Degrees Centigrade
+ID - Amperes
+
+IXYS Reserves the Right to Change Limits, Test Conditions, and Dimensions.
+IXTH30N50L2   IXTQ30N50L2
+IXTT30N50L2
+Fig. 7. Input Admittance
+0
+10
+20
+30
+40
+50
+3.5
+4.5
+5.5
+6.5
+7.5
+8.5
+9.5
+VGS - Volts
+ID - Amperes
+TJ  = 125ºC
+          25ºC
+        - 40ºC
+Fig. 8. Transconductance
+0
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+ID - Amperes
+g f s - Siemens
+TJ  = - 40ºC
+125ºC 
+25ºC 
+Fig. 9. Forward Voltage Drop of Intrinsic Diode
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+VSD - Volts
+IS - Amperes
+TJ  = 125ºC
+TJ  = 25ºC
+Fig. 10. Gate Charge
+0
+2
+4
+6
+8
+10
+12
+14
+16
+0
+50
+100
+150
+200
+250
+300
+350
+QG - NanoCoulombs
+VGS - Volts
+ VDS  = 250V
+ I D = 15A
+ I G = 10mA   
+Fig. 11. Capacitance
+10
+100
+1,000
+10,000
+100,000
+0
+5
+10
+15
+20
+25
+30
+35
+40
+VDS - Volts
+Capacitance - PicoFarads
+f  = 1 MHz 
+Ciss
+Crss
+Coss
+Fig. 12. Maximum Transient Thermal Impedance
+0.01
+0.1
+1
+0.0001
+0.001
+0.01
+0.1
+1
+10
+Pulse Width - Seconds
+Z(th)JC - ºC / W 
+
+ © 2014 IXYS CORPORATION, All Rights Reserved
+IXYS REF: T_30N50L2(7R)4-23-08-A
+IXTH30N50L2   IXTQ30N50L2
+IXTT30N50L2
+Fig. 13. Forward-Bias Safe Operating Area
+@ TC = 25ºC
+0.1
+1
+10
+100
+10
+100
+1000
+VDS - Volts
+ID - Amperes
+TJ = 150ºC
+Single Pulse 
+25µs
+1ms
+100µs
+RDS(on) Limit
+100ms
+DC
+10ms
+Fig. 14. Forward-Bias Safe Operating Area
+@ TC = 75ºC
+0.1
+1
+10
+100
+10
+100
+1000
+VDS - Volts
+ID - Amperes
+TJ = 150ºC
+Single Pulse 
+25µs
+1ms
+100µs
+RDS(on) Limit
+10ms
+DC
+100ms
+
+Disclaimer Notice - Information furnished is believed to be accurate and reliable. However, users should independently 
+evaluate the suitability of and test each product selected for their own applications. Littelfuse products are not designed for, 
+and may not be used in, all applications. Read complete Disclaimer Notice at www.littelfuse.com/disclaimer-electronics.
+
+白皮书
+在线性区工作模式下的耐受能力
+在有些应用中，如电子负载，需要功率 MOSFET 工作在线性区。针对这些应用，Littelfuse 开发出一新型的MOSFET，扩展了它的 
+FBSOA(正偏安全工作区)，从而更加适合此类应用。 
+ 
+音频功放
+ 
+电子负载
+ 
+线性稳压器
+有别于常见应用于开关模式的
+此文章为工程师提供使用于线性模式的
+的信息。
+有关此主题的更多信息，请联系
+功率半导体产品和应用专家团队：
+ 
+北美洲
+ 
+中美洲及南美洲
+ 
+欧洲，中东及非洲
+亚洲、澳大利亚和太平洋岛屿
+
+白皮书
+在线性区工作模式下的耐受能力
+介绍
+ 
+二次击穿
+ 
+应用示例
+ 
+参考
+ 
+图
+的结构，包括寄生双极结型晶体管
+ 
+图
+沟道
+的三种可能工作模式
+ 
+图
+为开关模式设计优化的功率
+，因热不均匀性，导致在实际的
+应用中承载能力有限。
+ 
+图
+线性功率
+通过抑制电热不稳定性的正反馈来扩展
+ 
+图
+在
+、
+、
+时具有
+功率耗散能力以及其
+工作点
+ 
+图
+使用线性
+设计可编程电阻负载以测试
+和
+电源
+ 
+表
+选用扩展
+的
+沟道功率
+ 
+
+白皮书
+在线性区工作模式下的耐受能力
+ 
+功率MOSFET 最常用于开关模式应用中，它们起到开关的作用。然而，在电子负载、线性稳压器或A 类放大器等应用中，功率MOSFET
+必须在其线性区域工作。在这种工作模式下，MOSFET 会承载较高的热应力。由于较高的漏源极电压和漏极电流同时出现，导致芯片承载
+较高的热应力。 
+当热电应力超过临界极限时，硅中会出现热点，导致器件失效。 为防止此类失效，工作在线性区域的 MOSFET 需要高功率耗散能力和扩
+展的正向偏置安全工作区 (FBSOA)。 
+Littelfuse 开发了一系列线性功率MOSFET，通过抑制电热不稳定性的正反馈，实现了扩展的FBSOA。这些新型MOSFET 的设计特点是晶体
+管晶胞具有不同阈值电压，并且根据电流的热分布效应，晶胞在晶圆上也遵循不均匀分布的设计。 
+每个晶体管的晶胞的源极都设计有一个镇流电阻，以限制其电流。 图 1 显示了 MOSFET 结构的示意图。 n 和 p 掺杂区形成了一个寄生的 
+NPN 晶体管。 
+图
+包含寄生双极结晶体管
+的
+结构
+每个晶胞的寄生双极结晶体管(BJT)被旁路掉，因此它在极端的电应力条件下不会打开。此外，每个功率MOSFET 的热响应都是单独测试
+的，以确保不会出现焊料空洞，从而避免出现局部热点。线性MOSFET 的有效性可以在为电源测试而开发的电子负载的设计中得到验证。 
+ 
+在功率 MOSFET 中，术语二次击穿是指 MOSFET 的阻断电压能力突然降低，随后 MOSFET 失去电流控制。 尽管在大多数应用中，
+MOSFET 通常不会遭受二次击穿，但这种潜在的破坏性情况可能是由于硅中的热点或“电流聚集”而发生的，而这反过来又会激活MOSFET
+的寄生BJT 的导通，从而失去门极对电流的控制。 
+通常情况下，当电流试图集中到一个局部区域时，由于正温度系数的影响，热点温度的升高会提高热点的电阻，并将电流重新分配到远离
+热点的位置。[1]这一属性有助于多个MOSFET 的并联操作。 
+然而，电子负载、A 类和AB 类放大器等应用会导致功率MOSFET 在其线性区域工作，在该区域，它们必须消耗比更常见的通断开关更高
+的功率水平。在这种情况下，电流聚集和热点的形成可能无法自我校正，这可能会导致器件失效。 
+在线性模式下，功率MOSFET 由于同时承载高电压和大电流而产生的较高热应力。当热应力超过临界极限时，芯片中就会出现热点，导
+致器件失效。
+[2] 
+图 2 描绘了 n 沟道功率 MOSFET 的典型输出特性，其中描述了不同的工作模式。 
+
+白皮书
+在线性区工作模式下的耐受能力
+图
+沟道
+的三种可能工作模式
+在截止区，栅源电压   低于阈值电压     ，器件处于关断状态。 在欧姆区，器件特性类似于电阻，具有几乎恒定的导通电阻       ，它
+等于漏极电压      除以漏极电流   。 在线性工作模式下，器件工作在电流饱和区，其中    是栅源电压      的函数，定义如下： 
+ 
+     (         )
+                 
+1 
+其中K 是一个取决于温度和器件几何形状的参数，   是电流增益或跨导。 
+当      增加时，漏极电压与栅极电压偏置相反，并降低了沟道中的表面电压。 沟道反型层电荷随着    的增加而减少，最终在漏极电压
+等于           时变为零。 该点称为通道夹断点，漏极电流在此处饱和。
+ [3] 
+ 
+
+白皮书
+在线性区工作模式下的耐受能力
+FBSOA 是定义最大允许工作点的数据表。图3 显示了n 沟道功率MOSFET 的典型FBSOA 特性。它受最大漏极到源极电压    ，最大导通
+电流   和不同工作持续时间的恒定功率耗散线的限制。 
+图
+为开关模式设计优化的功率
+，因热不均匀性，导致在实际的
+应用中承载能力有限。
+在图 3 中，这组曲线代表一条直流线和四条单脉冲工作线：10 ms、1 ms、100 µs 和 25 µs。 每条线的顶部被截断以限制最大漏极电流，
+并以由器件导通电阻定义的正斜率线为界。每条线路的右侧均终止于额定漏极到源极电压极限。 每条线都有一个负斜率，由器件   的最
+大允许功耗决定： 
+ 
+   
+           
+     
+          
+2 
+其中，      是结到壳瞬态热阻抗，       是 MOSFET 的最大允许结温。 
+这些理论恒定功率曲线是在假设结温在整个功率 MOSFET 芯片上基本均匀的情况下从计算得出的。 由于多种原因，这种假设并不总是有
+效的，尤其是对于大芯片 MOSFET。 首先，焊接到功率封装安装片的 MOSFET 芯片边缘的温度通常低于芯片中心，这是横向热流的结果。 
+其次，材料缺陷，比如芯片焊接空洞或导热硅脂气泡，可能会引起热导率局部降低，从而导致芯片上某些特定点温度升高。 第三，掺杂
+浓度和栅氧化层厚度的波动，以及存储电荷会导致局部阈值电压和 MOSFET 晶胞的电流增益 gFS 的波动，这也会影响芯片的局部温度。 
+在开关模式下，芯片温度的波动大多是无害的。 然而，这些波动可能会在线性模式中触发灾难性失效。 在图 3 中 FBSOA 图表的右下角，
+即电热不稳定性 (ETI) 边界右侧的区域，发现针对开关模式应用优化的功率 MOSFET 的承载能力有限。 
+ETI 可以理解为功率MOSFET 表面强制进入线性工作模式的正反馈机制的结果： 
+ 
+局部结温升高 
+ 
+结温升高会导致      局部降低，因为 MOSFET 的阈值电压具有负温度系数 
+ 
+降低     会导致局部电流密度的增加，使得                   
+ 
+局部电流密度的增加导致局部功耗增加，从而导致结温进一步局部升高 
+根据功率脉冲的持续时间、传热条件和 MOSFET 晶胞设计的特点，ETI 可能会导致所有 MOSFET 电流集中并形成热点。 这通常会导致受
+影响区域中的 MOSFET 晶胞失去栅极控制并开启寄生 BJT，从而导致器件损坏。 
+针对这些问题，Littelfuse 开发了一种新型的功率MOSFET 结构和工艺，通过抑制ETI 的正反馈来提供扩展的FBSOA。这些新型MOSFET 的
+设计特点是晶体管晶胞呈不均匀分布，以及调整具有不同阈值电压的晶胞布局。
+[3]这种设计已被用于开发一系列具有扩展FBSOA 的功率
+MOSFET，非常适用于线性工作模式。 
+
+白皮书
+在线性区工作模式下的耐受能力
+Littelfuse 这些 MOSFET 的规格书包含了特有的高温 FBSOA 图。 例如，图 4 展示了 Littelfuse IXTK22N100L 线性功率 MOSFET 的 FBSOA 图，
+并标记了其测试的直流工作点。 
+图
+线性功率
+通过抑制电热不稳定性的正反馈来扩展
+为了说明Littelfuse 线性功率MOSFET 设计的有效性，表1 列出了一些具有扩展FBSOA 功能的器件的主要规格。 
+表
+具有扩展
+的
+沟道功率
+产品编号
+θ
+TC = 90°C 时，SOA 规格功率
+封装类型
+IXTH24N50L
+IXTN46N50L
+IXTK22N100L
+IXTN30N100L
+根据公式 2，额定电压为 1000 V 的单个功率 MOSFET（例如 IXTK22N100L）可提供 700 W 的额定功率。此额定功率通常用于开关模式的
+电路设计，但不适用于线性模式的应用。 对于线性模式，Littelfuse 提供了高温下的FBSOA，例如 IXTK22N100L 在    等于 800 V、    等
+于 0.3 A 以及   等于 90°C 时为 240 W。 
+
+白皮书
+在线性区工作模式下的耐受能力
+ 
+电子负载，通常用于测试电源，使用Littelfuse 扩展FBSOA 的线性MOSFET，可以大幅提高可靠性。电子负载本质上是一个可编程电阻器，
+通常由多个高压功率MOSFET 并联来实现。在此应用中，由于器件几何结构和机械装配的变化，电流在每个MOSFET 中平均分配的可能
+性很小，这反过来又会导致器件参数(如击穿电压和电流增益)的变化。 
+为确保均流，通常采用反馈机制，即在每个 MOSFET 源极串联一个电阻。 该电阻检测每个 MOSFET 中的电流并反馈一个电压，其值基于
+动态范围的调整、输出端的噪声水平、最小负载电阻和系统的稳定性。 它通常设计用于 1 到 2 V 之间的最大额定值。系统的温度稳定性
+由电阻的温度系数决定。 
+[2] 
+以2 A、600 V 稳压电源为例，需要使用由多个功率MOSFET 并联组成电子负载来进行测试。该电子负载要求击穿电压至少为600 V 的功
+率MOSFET 能够消耗全部输出功率。输出功率定义为： 
+ 
+           
+ 
+ 
+其中  等于2A，  等于600 V。这使得总功耗达到：                  
+对于此应用，可以使用 IXTK22N100L 功率 MOSFET。 该器件具有 1000 V 的额定电压、22 A 的额定电流、240 W 的 FBSOA（或简称为 
+SOA）额定值和 700 W 的额定功耗。在图 5 中，FBSOA 显示其 SOA 点在      等于 800 V，   等于 0.3 A，   等于 90°C，具有 240 W 的
+能力。 其 700 W 的额定功耗仅适用于开关模式应用，因此对于线性模式，由于功耗高，必须使用 SOA 额定值。 假设此额定值有 20% 的
+安全裕度，这会将其允许的 SOA 额定值降低到 192 W。 
+图
+在
+、
+、
+°
+时具有
+功率耗散能力，以及其
+工作点
+电源的最大输出功率为 1440 W，安全裕度为 20%，额定功率为 1200 W。可以看出，单个 MOSFET（如 IXTK22N100L）无法承载此总功率。 
+因此，需要多个并联的功率 MOSFET 来承载总功率。 此应用所需的 MOSFET 数量为 1440 W 除以 192 W/器件等于 7.5 个器件，实际上需
+选用8 个器件并联。 
+ 
+电子负载电路的典型结构如图6 所示。
+[2] 
+
+白皮书
+在线性区工作模式下的耐受能力
+图
+使用线性
+设计电子负载以测试
+和
+电源
+图 6 中所示的栅极电阻器连接在每个运算放大器输出和 MOSFET 的每个栅极之间，用于限制栅极电流。 它是可调节的，其值可以在 5 Ω 
+和 50 Ω 之间选择。 源极电阻 RS1 到 RS8 检测每个 MOSFET 中的漏极电流。 电阻的容差决定了功率 MOSFET 之间的相对匹配。 源极电阻
+两端的电压施加到驱动功率 MOSFET 的每个运算放大器的反相输入端，同相输入端连接到流向运算放大器同相端的控制漏极电流。 [2] 
+Littelfuse 线性功率 MOSFET 通过扩展FBSOA，克服了线性应用中传统功率 MOSFET 的局限性。 这种特性是通过晶体管晶胞的非均匀分布
+和使用具有不同阈值电压的晶胞来实现的，这有助于抑制 ETI 的正反馈。 
+ 
+May 2000. [1]Consoli，Alfio等人著，“Thermal Instability of Low-Voltage Power MOSFETs”，IEEE电力电子学报，第15卷，第3期，2000年5月。 
+ [2] Frey、Richard、Grafham、Denis、Mackewich、Tom等人著，“New 500V Linear MOSFETs for a 120 kW Active Load”，应用说明，高级电
+源技术 (APT)，2000 年。 
+ [3]Brega，B.Jayant等著，“Power Semiconductor Devices”，PWS出版公司，1996。 
+ [4]Zommer，Nathan等著，“Monolithic Semiconductor Device and Method of Manufacturing Same”，美国专利号：US4860072, 1989年8月。 
+欲了解更多信息，请访问
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+1 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+ 
+ 
+Objectives
+The primary objective of this application note is to enhance the comprehension and analysis of power MOSFET datasheet parameters 
+and graphs. By breaking down the technical specification into digestible insights, designers can gain deeper insights into the 
+functionality and performance characteristics of MOSFETs. This application note provides a general recommendation about how to 
+read and understand a datasheet with all its parameters and diagrams. The information presented plays a pivotal role in determining 
+the operational limits and thresholds of the device. 
+Applications 
+This application note is applicable to all scenarios where power MOSFETs are utilized. 
+Target Audience 
+This document is intended for designers and developers who are utilizing Power MOSFETs within their respective applications.  
+Contact Information 
+For more information, contact the Littelfuse Power Semiconductor team of product and applications experts: 
+• 
+PowerSemiSupport@Littelfuse.com 
+ 
+ 
+Littelfuse Discrete Power MOSFET 
+Datasheet Explanation 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+2 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Table of Contents 
+1. Introduction ............................................................................................................................................................................................ 4 
+2. Essential Datasheet Insight .................................................................................................................................................................... 4 
+2.1. Key Information ............................................................................................................................................................................... 4 
+2.2. Datasheet Status ............................................................................................................................................................................. 5 
+3. MOSFET Datasheet Parameters ............................................................................................................................................................ 6 
+3.1. Maximum Ratings ........................................................................................................................................................................... 6 
+3.2. Static Electrical Characteristics - MOSFET ...................................................................................................................................... 9 
+3.3. Dynamic Characteristics ................................................................................................................................................................ 11 
+3.4. Electrical Characteristics – Body Diode ......................................................................................................................................... 14 
+3.5. Thermal Characteristics ─ Thermal Resistance (Rth) ....................................................................................................................... 15 
+3.6. Package – Mechanical Rating ........................................................................................................................................................ 16 
+3.7. Characteristics Curves ................................................................................................................................................................... 16 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+3 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+List of Figures 
+Figure 1. Part Number Designation ............................................................................................................................................................ 4 
+Figure 2. Pinout Diagram of TO-247 and Circuit Symbol of an N-channel Enhancement Mode MOSFET .................................................. 5 
+Figure 3. Gate-Source Voltage Definition.................................................................................................................................................... 6 
+Figure 4. Forward-Bias Safe Operating Curve ............................................................................................................................................ 7 
+Figure 5. Typical Avalanche Test Circuit ..................................................................................................................................................... 8 
+Figure 6. Circuit Diagram to Measure Breakdown Voltage ......................................................................................................................... 9 
+Figure 7. Circuit Diagram to Measure Gate-Source Threshold Voltage ...................................................................................................... 9 
+Figure 8. Circuit Diagram to Measure MOSFET’s Leakage Current ......................................................................................................... 10 
+Figure 9. Circuit Diagram to Measure Gate Leakage Current ................................................................................................................... 10 
+Figure 10. Circuit Diagram to Measure Gate Drain-Source On-State Resistance ..................................................................................... 10 
+Figure 11. Power MOSFET Parasitic Components ................................................................................................................................... 11 
+Figure 12. Gate Charge Waveform of Power MOSFET during Turn-on Transition with Resistive Load ................................................... 12 
+Figure 13. Correlation of Switching Time Measurement Circuit and Switching Time Definition .............................................................. 13 
+Figure 14. Circuit Diagram to Measure Diode Forward Voltage ............................................................................................................... 14 
+Figure 15. Diode Reverse Recovery ......................................................................................................................................................... 14 
+Figure 16. Lateral Thermal Resistance Chain within a Semiconductor Package ....................................................................................... 15 
+Figure 17. Circuit Diagram for Isolation Withstand Voltage Test .............................................................................................................. 16 
+Figure 18. Typical Output Characteristics ................................................................................................................................................. 16 
+Figure 19. Typical Transfer Characteristics ............................................................................................................................................... 17 
+Figure 20. Typical Drain-source On-State Resistance (Normalized to ID = 60 A) vs. Virtual junction temperature .................................... 17 
+Figure 21. Typical Drain-source On-State Resistance (Normalized to ID = 60 A) vs. Drain Current ........................................................... 18 
+Figure 22. Typical V(BR)DSS/VGS(th) (Normalized) vs. Virtual Junction Temperature ........................................................................................ 18 
+Figure 23. Drain Current vs. Case Temperature ....................................................................................................................................... 19 
+Figure 24. Typical Transconductance Curve ............................................................................................................................................. 19 
+Figure 25. Typical Gate Charge Characteristics ........................................................................................................................................ 20 
+Figure 26. Typical Junction Capacitance ................................................................................................................................................... 20 
+Figure 27. Forward Biased Safe Operating Area (FBSOA) Curve ............................................................................................................. 21 
+Figure 28. Typical Forward Characteristics of a Reverse Diode ................................................................................................................ 22 
+Figure 29. Typical Eoss vs. Drain-Source Voltage ....................................................................................................................................... 22 
+Figure 30. Typical Thermal Impedance ..................................................................................................................................................... 23 
+ 
+List of Tables 
+Table 1: Key Attributes/Product Summary .................................................................................................................................................. 5 
+Table 2: IXTH120N20X4 MOSFET Maximum Ratings ................................................................................................................................ 6 
+Table 3: MOSFET Static Electrical Characteristics ...................................................................................................................................... 9 
+Table 4: Dynamic Electrical Characteristics .............................................................................................................................................. 11 
+Table 5: Electrical Characteristics – Body Diode ....................................................................................................................................... 14 
+Table 6: Thermal Characteristics .............................................................................................................................................................. 15 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+4 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+1. Introduction 
+In the realm of modern electronics and power systems, an extensive understanding of semiconductor components, particularly the 
+Metal-Oxide-Semiconductor Field-Effect Transistor (MOSFET), is crucial for achieving optimal system-performance and -efficiency. 
+MOSFETs play a pivotal role in switching applications, offering versatile solutions. This document serves as a guide, delving into the 
+detailed parameters presented in MOSFET datasheets. It aims to empower engineers and designers to make informed decisions and 
+effectively leverage MOSFET capabilities in diverse applications. 
+Littelfuse furnishes datasheets with parameters that are essential and useful for selecting the appropriate device as well as for 
+predicting its performance in specific application. This facilitates designers in comparing products from various suppliers and gaining 
+valuable insights into the operational constraints of the device. 
+The outlined values in the datasheet describe the device’s behavior under varying virtual junction temperature and testing conditions. 
+Additionally, the dynamic characterization tests undergo execution utilizing precise configurations aimed at precise measurement of 
+switching losses. As a result, discrepancies in these metrics manifest between the intended user applications. 
+The graphs included in the datasheet represent typical performance characteristics and can be used to extrapolate from one set of 
+operating conditions to another. This application note explains parameters based on the IXTH120N20X4 datasheet which is an N-
+channel enhancement mode, power MOSFET. All the parameters mentioned in a Littelfuse datasheet are measured according to IEC 
+60747-8 standards.  
+2. Essential Datasheet Insight 
+This section serves as an overview of important information found on the first page of the datasheet, including the datasheet status.  
+2.1. Key Information 
+The first page of the datasheet includes details such as the part number, pinout diagram, features and benefits, applications, and key 
+attributes of the product. 
+• 
+Part Number indicates the manufacturer, MOSFET type, package type, current rating, channel type, voltage class, 
+technology series and a suffix for some special packages that gives extra information such as high voltage package, over 
+molded package, and w/ 4 leads. Designation of MOSFET part number is drafted in Figure 1. The detailed information about 
+this can be found as part number nomenclature - discrete Si MOSFET on Littelfuse website. 
+ 
+Figure 1. Part Number Designation 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+5 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+• 
+Pinout Diagram provides a visual representation of the device’s physical layout including circuit symbol as highlighted in 
+Figure 2. 
+ 
+Figure 2. Pinout Diagram of TO-247 and Circuit Symbol of an N-channel Enhancement Mode MOSFET 
+• 
+Features and Benefits encompasses a comprehensive list of features and their corresponding benefits offered by the 
+MOSFET device, which helps user acquire a better understanding of how the MOSFET can meet their specific application 
+requirements to deliver optimal performance and reliability. 
+• 
+Key Attributes / Product summary highlights the key specifications and performance characteristics of the MOSFET, 
+including parameters such as maximum drain-source voltage (VDSS), maximum drain current (ID) at 25°C, and on-state 
+resistance (RDS(on)) as pointed out in Table 1. 
+Table 1. Key Attributes/Product Summary 
+ 
+2.2. Datasheet Status 
+There are three distinct types of datasheets, each corresponding to a different stage of the product development or documentation 
+process, depending on the degree of completeness, correctness, or approval. 
+• 
+Target datasheet: During product development, the term target datasheet denotes a document laying out the desired 
+product specifications, characteristics, and performance attributes. The development team uses this document to guide their 
+efforts. 
+• 
+Preliminary datasheet: Created before reaching its final, approved format. It is an early or preliminary representation of a 
+product's specifications, features, and characteristics. The difference between a preliminary datasheet and a final datasheet is 
+that certain data values are still missing. The missing values in the preliminary data sheet are noted as to be defined (TBD). 
+These datasheets are made using the engineering samples that are in early phase of development.  
+• 
+Final datasheet: Detailed and authoritative document that contains all the values that were missing in the preliminary 
+datasheet. The parameters specified in the final datasheet are explained in this document. Any major change with respect to 
+a MOSFET’s characteristics in the final datasheet is associated with a Product Change Notification (PCN). 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+6 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+3. MOSFET Datasheet Parameters 
+This section serves as a thorough exploration of the various parameters detailed within a MOSFET’s datasheet. It describes the 
+MOSFET’s performance and characteristics, from maximum ratings to static and dynamic parameters, thermal properties, and 
+package-related factors. 
+3.1. Maximum Ratings  
+The maximum ratings at which the MOSFET can be operated are listed on the second page of the datasheet in a table that 
+summarizes the electrical and thermal limits of the device. The maximum ratings provided in the data sheets are absolute in nature. 
+If any of the maximum ratings are surpassed, it is to be expected that the semiconductor experiences fatal failure, regardless of 
+whether the remaining maximum ratings are utilized to their full extent. Unless otherwise noted, the values are applicable at a virtual 
+junction temperature (Tvj) of 25°C. Table 2 lists the maximum ratings designated for the IXTH120N20X4. 
+Table 2. IXTH120N20X4 MOSFET Maximum Ratings 
+ 
+Drain-source voltage (VDSS) is the crucial parameter in datasheets, representing the maximum voltage that can be applied across 
+drain and source while the gate and source are being connected or VGS = 0 V. It sets the limit to prevent breakdown and maintain 
+operational functionality. 
+ 
+Gate-source voltage (VGSS) and Transient gate-source voltage (VGSM) are visually delineated in Figure 3, offering a clear 
+understanding of their roles in MOSFET operation. The gate-source voltage (VGSS) denotes the maximum steady-state voltage that can 
+be applied across gate and source without the gate oxide being damaged. Conversely, transient gate-source voltage (VGSM) refers to 
+the peak voltage that the gate terminal of the MOSFET can endure within a specified transient period (ttransient) or temporary change in 
+voltage.  
+ 
+Figure 3. Gate-Source Voltage Definition 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+7 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Drain current (ID) acts as a pivotal metric, outlining the maximum continuous current through the drain at a given case temperature 
+Tc, of 25°C. Its calculation is based on several factors, including the maximum power dissipation Ptot, the temperature difference 
+junction to case, the thermal resistance junction to case Rth(j-c), and the maximum on-resistance RDS(on). Additionally, the temperature 
+dependence of the on-state resistance is considered, as detailed in Equation 1 and Equation 2. The drain current can be limited by 
+the current handling capacity of leads or terminals. 
+𝑷𝑷𝒕𝒕𝒕𝒕𝒕𝒕=
+𝑻𝑻𝒗𝒗𝒗𝒗(𝒎𝒎𝒎𝒎𝒎𝒎) −𝑻𝑻𝒄𝒄
+𝑹𝑹𝒕𝒕𝒕𝒕(𝒋𝒋−𝒄𝒄)
+= 𝑰𝑰𝑫𝑫
+𝟐𝟐∙𝑹𝑹𝑫𝑫𝑫𝑫(𝒐𝒐𝒐𝒐)|𝑻𝑻𝒗𝒗𝒗𝒗=𝑻𝑻𝒗𝒗𝒗𝒗(𝐦𝐦𝐦𝐦𝐦𝐦) 
+1  
+Solving for ID as 
+ 
+𝑰𝑰𝑫𝑫= ඨ
+𝑻𝑻𝒗𝒗𝒗𝒗−𝑻𝑻𝒄𝒄
+𝑹𝑹𝒕𝒕𝒕𝒕(𝒋𝒋−𝒄𝒄) ∙𝑹𝑹𝑫𝑫𝑫𝑫(𝒐𝒐𝒐𝒐) |𝑻𝑻𝒗𝒗𝒗𝒗=𝑻𝑻𝒗𝒗𝒗𝒗(𝐦𝐦𝐦𝐦𝐦𝐦)
+ 
+2 
+Peak drain current (IDM) signifies the peak current that the device can handle above the ID specification under the maximum virtual 
+junction temperature. It varies with the current pulse width and heat dissipation conditions. Figure 4 demonstrates the forward-bias 
+safe operating area (FBSOA) of a MOSFET, which indicates the maximum pulse width at which the device can handle specific current 
+without experiencing failure.  
+ 
+Figure 4. Forward-Bias Safe Operating Curve 
+Diode forward current (IS) relates to the maximum DC forward current the body diode can handle in the forward direction at 
+particular case temperature, which is typically equivalent to the MOSFET’s continuous drain current ID. 
+Diode peak current (ISM) is an indicative of the peak current the diode can handle above diode forward current specification under 
+maximum virtual junction temperature, which is typically equivalent or higher than the MOSFET’s peak drain current IDM. 
+Diode dv/dt capability corresponds to the maximum allowable rate of change of voltage across the body diode during the reverse 
+recovery period without causing undesired effects. The power MOSFET structure contains a parasitic bipolar junction transistor (BJT), 
+which could be activated by an excessive rise rate of the drain-source voltage (dv/dt), particularly after the recovery of the body diode.  
+Total power dissipation (Ptot), as expressed in Equation 1 , encompasses the maximum calculated power that the device can dissipate, 
+serving as a function influenced by both maximum virtual junction temperature Tvj(max), and the thermal resistance junction to case Rth(j-
+c) at a case temperature of 25°C. 
+Virtual junction temperature (Tvj) range is –55 to 150°C or –55 to 175°C in most cases and it is the permissible temperature range 
+in which the MOSFET may be operated continuously. The maximum virtual junction temperature Tvj(max) is 150°C or 175°C depending 
+on the technology. The negative temperature limit for Littelfuse discrete MOSFETs is typically –55 °C. The virtual junction 
+temperature influences the electrical parameters of a MOSFET. For instance, at very high temperatures, the device’s threshold 
+voltage is reduced, and the leakage current increases, which leads to thermal runaway within the device. 
+IDM limit 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+8 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Storage temperature (Tstg) range points to the range of temperatures where the device can be safely stored or transported without 
+adversely affecting its performance or reliability. The range is usually between –55°C to 150°C. 
+Soldering temperature (Tsld) enumerated in the datasheet implies the temperature at which the device can be safely soldered to the 
+Printed Circuit Board (PCB) during the assembly process. The maximum soldering temperature is typically 300°C for devices with 
+leads and 260°C for Surface Mount Devices (SMD). 
+Mounting torque (Ms) for screws to heatsink is the recommended maximum torque that can be applied during the process of 
+mounting the MOSFET to a heatsink or a PCB. Mounting torque (Mt) for screws to terminals is the suggested torque that shall be 
+applied to screwed terminals. 
+Mounting force (F) is the maximum force for pressure mounted devices, fixed by clips, that shall be applied to the isolated devices. 
+Non-repetitive single pulse avalanche current (IAS) and Non-repetitive single pulse avalanche energy (EAS) are specified only for 
+avalanche-rated devices. IAS denotes the maximum current that the MOSFET can endure during a single avalanche event without 
+sustaining damage. Whereas EAS quantifies the total energy absorbed by the device during such an event, indicating its ability to 
+withstand high-energy transient events without permanent damage. 
+In Figure 5 (a), the Unclamped Inductive Switching (UIS) test circuit, used to test the avalanche capability of a power MOSFET is 
+depicted. In Figure 5 (b), the waveforms during avalanche breakdown are presented. A gate pulse turns-on the MOSFET and allows 
+the current (ID) to ramp up according to the inductor’s value (L) and the drain supply voltage (VDD). At the end of gate pulse, the 
+MOSFET turns-off causing the voltage across the MOSFET to rise sharply. The over voltage is clamped at the breakdown voltage 
+(VDSS) until the load current reaches zero and all the energy is dissipated. The green area shaded in Figure 5 (b) is the avalanche 
+energy EAS. 
+ 
+(a) Unclamped Inductive Switching 
+(b) Waveforms during Avalanche Breakdown 
+Figure 5. Typical Avalanche Test Circuit 
+Non-repetitive single pulse avalanche energy is calculated from the Equation 3: 
+𝑬𝑬𝑨𝑨𝑨𝑨= 𝟏𝟏
+𝟐𝟐∙𝑳𝑳∙𝑰𝑰𝑨𝑨𝑨𝑨
+𝟐𝟐∙
+𝑽𝑽𝑫𝑫𝑫𝑫𝑫𝑫
+(𝑽𝑽𝑫𝑫𝑫𝑫𝑫𝑫−𝑽𝑽𝑫𝑫𝑫𝑫) 
+3  
+where VDSS is the drain-source avalanche voltage. 
+Note : When VDD is set to a smaller value compared to VDSS, then EAS is calculated by using the approximation equation of 𝑬𝑬𝑨𝑨𝑨𝑨=
+𝟏𝟏
+𝟐𝟐∙𝑳𝑳∙𝑰𝑰𝑨𝑨𝑨𝑨
+𝟐𝟐 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+9 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+3.2. Static Electrical Characteristics - MOSFET 
+Static electrical characteristics are the set of parameters and properties that describe the device behavior under steady-state 
+condition. Most of the parameters included in the datasheet, along with their typical ranges of variance is listed in Table 3. In 
+accordance with IEC 60747-8{ed3.1}, the characteristics of Power MOSFETs are provided at 25°C and, when necessary, at another 
+higher operating temperature. 
+Table 3. MOSFET Static Electrical Characteristics 
+ 
+Breakdown voltage, drain-source (V(BR)DSS) corresponds to the minimal blocking voltage between drain and source, measured 
+according to Figure 6, at a specified collector current while the gate and source are connected.  
+ 
+Figure 6. Circuit Diagram to Measure Breakdown Voltage 
+Gate-source threshold voltage (VGS(th)) is the voltage measured across gate to source at which the drain current begins to flow, and 
+the device is at on-state. It has a negative temperature coefficient. The circuit diagram illustrating the measurement of VGS(th) is 
+depicted in Figure 7. Initially, the drain pin and the gate pin are short, after which drain current is applied while observing the gate-
+source voltage (VGS(th)) reading. 
+ 
+Figure 7. Circuit Diagram to Measure Gate-Source Threshold Voltage 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+10 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Drain-source leakage current (IDSS) value indicates the drain current measured at a given drain-source voltage and with the gate to 
+source connected, as illustrated in Figure 8. The datasheets specify the value at 25°C and higher virtual junction temperature. 
+ 
+Figure 8. Circuit Diagram to Measure MOSFET’s Leakage Current 
+Gate leakage current (IGSS) refers to the small amount of current that flows between the gate and source when the MOSFET is in an 
+off state. Figure 9 demonstrates the circuit used to measure the gate leakage current. Initially, the drain-to-source terminal is 
+connected, and then a maximum allowable voltage is applied across the gate and source terminals to monitor the leakage current. 
+ 
+Figure 9. Circuit Diagram to Measure Gate Leakage Current 
+Drain-source on-state resistance (RDS(on)) describes the resistance across the drain and source when the MOSFET is in the on-state. 
+Figure 10 presents the circuit diagram for measuring the drain-source on-state resistance (RDS(on)). Initially, the gate-source voltage 
+(VGS) is set to a defined value, and then the voltage drop across the drain-source voltage VDS(on) is measured, using a given current 
+source (ID). RDS(on) is calculated using the Equation 4: 
+𝑹𝑹𝑫𝑫𝑫𝑫(𝒐𝒐𝒐𝒐) = 
+𝑽𝑽𝑫𝑫𝑫𝑫(𝒐𝒐𝒐𝒐)
+𝑰𝑰𝑫𝑫
+ 
+4 
+ 
+ 
+Figure 10. Circuit Diagram to Measure Gate Drain-Source On-State Resistance 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+11 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+3.3. Dynamic Characteristics 
+This section of the datasheet provides information on the behavior of the device in dynamic conditions, as shown in Table 4. The 
+intrinsic capacitances, gate charge and switching behavior of the MOSFET are pivotal factors influencing the dynamic performance of 
+the device. 
+Table 4. Dynamic Electrical Characteristics 
+ 
+Internal gate resistance (Rg(int)) signifies the resistance that exists within the device gate structure. The internal gate resistance 
+mentioned in Figure 11, constitutes a component of the parasitic elements within the MOSFET. Together with the MOSFET’s input 
+capacitance, the gate resistance forms an RC network that determines the voltage change at the MOSFET gate and thus the 
+switching time.  
+ 
+Figure 11. Power MOSFET Parasitic Components 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+12 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Capacitance Characteristics play a crucial role in switching characteristics of the MOSFET. 
+• 
+Input capacitance (Ciss) encompasses both gate-to-drain capacitance Cgd and gate-to-source capacitance Cgs, representing 
+the total capacitance measured between the gate and source terminals with the drain connected to the source terminal. 
+𝑪𝑪𝒊𝒊𝒊𝒊𝒊𝒊= 𝑪𝑪𝒈𝒈𝒈𝒈+ 𝑪𝑪𝒈𝒈𝒈𝒈 
+5  
+• 
+Output capacitances (Coss) consists of the drain-to-source capacitance Cds and gate to drain capacitance Cgd, indicating the 
+output capacitance which is measured between the drain and source with the gate connected to the source terminal.  
+𝑪𝑪𝒐𝒐𝒐𝒐𝒐𝒐= 𝑪𝑪𝒅𝒅𝒅𝒅+ 𝑪𝑪𝒈𝒈𝒈𝒈 
+6 
+• 
+Reverse transfer capacitance (Crss) primarily arises from Cgd, delineating the capacitance between the gate and drain with 
+the source terminal connected to ground.  
+𝑪𝑪𝒓𝒓𝒓𝒓𝒓𝒓= 𝑪𝑪𝒈𝒈𝒈𝒈 
+7  
+Effective output capacitance of the MOSFET includes both energy related and time related parameters, denoted as Coss(er) and Coss (tr) 
+respectively.  Coss(er) represents a fixed capacitance that gives the same stored energy as Coss while VDS is rising from 0 V to specified 
+voltage. Conversely, Coss(tr) signifies a fixed capacitance that gives the same charging time as a Coss while VDS is rising from 0 V to 
+specified voltage and at a constant drain current ID. 
+Total gate charge (QG) is the total amount of charge that is required during the MOSFET’s turn-on and turn-off transition.  The 
+switching speed depends on the speed at which a gate driver can charge or discharge the input gate charge. Figure 12 presents a 
+typical gate charge waveform for a power MOSFET in a resistive-load circuit. The fundamental equation for calculating the gate 
+charge is formulated in Equation 8. 
+         𝑸𝑸𝑮𝑮 = න𝒊𝒊𝑮𝑮𝑮𝑮
+𝒕𝒕𝟒𝟒
+𝒕𝒕𝟎𝟎
+(𝒕𝒕)𝒅𝒅𝒅𝒅 
+8 
+ 
+ 
+ 
+Figure 12. Gate Charge Waveform of Power MOSFET during Turn-on Transition with Resistive Load  
+As depicted in the gate charge waveform, the total gate charge encloses the Gate-Source Charge (QGS), the Gate-Drain Charge 
+(QGD), and the Gate Switch charge (QSW). QGS represents the amount of charge that is required to charge the gate-source 
+capacitance (Cgs) from its initial voltage to the miller plateau level. QGD quantifies the charge that is needed to fully charge the gate-
+drain capacitance (Cgd) during switching, ensuring full channel enhancement and sustaining the MOSFET in its conducting state. 
+Lastly, QSW encapsulates charge stored in the gate capacitance from when the gate-source voltage has reached the gate-source 
+threshold voltage, VGS(th) until the end of the miller plateau. 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+13 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Transconductance (gfs) is described as the change in drain current divided by the change in gate voltage for a constant drain voltage. 
+A large transconductance is desirable to obtain a high current handling capability with low gate drive voltage and for achieving high 
+frequency response. The transconductance is mathematically expressed as: 
+𝒈𝒈𝒇𝒇𝒇𝒇= 𝒅𝒅𝑰𝑰𝑫𝑫
+𝒅𝒅𝑽𝑽𝑮𝑮𝑮𝑮
+ฬ
+𝑽𝑽𝑫𝑫𝑫𝑫 = 𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄𝒄
+ 
+9 
+ 
+ 
+MOSFETs, due their physical structure, can change their state from on to off much faster than IGBTs. The correlations of switching 
+time measurement circuit and the switching time definitions are demonstrated Figure 13. 
+ 
+ 
+ 
+(a) Switching Time Measurement Circuit Diagram 
+(b) Switching Time Definition Waveform 
+Figure 13. Correlation of Switching Time Measurement Circuit and Switching Time Definition 
+• 
+Turn-on delay time (td(on)) is the time interval when the gate-source voltage (VGS) has reached 10% of its end value, to the 
+time when the drain-source voltage (VDS) has dropped to 90% of its initial value or rated value. 
+• 
+Rise time (tr) specifies the time interval between the drain-source voltage dropping from 90% to 10% of its initial value. The 
+drain current starts to rise, and a major part of turn-on losses is generated during this period.  
+• 
+Turn-off delay time (td(off)) denotes the time interval between the moment when the gate-source voltage (VGS) has declined 
+to 90% of its initial value and the drain-source voltage has risen to 10% of the supply voltage. 
+• 
+Fall time (tf) implies the time interval between the drain-source voltage rise from 10% to 90% of its end value. During this 
+period, the drain current starts to fall, and a major part of turn-off losses is generated during this time. 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+14 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+3.4. Electrical Characteristics – Body Diode 
+Power MOSFET generally contain a body diode, which provides freewheeling operation in the inductive load switching. Hence, the 
+MOSFET datasheet from Littelfuse also contains the electrical parameters and graphs related to the body diode. Table 5 shows the 
+electrical characteristics listed in IXTH120N20X4 datasheet. 
+Table 5. Electrical Characteristics – Body Diode 
+ 
+Diode forward voltage (VSD), measured under specified conditions including a given forward current (IS), zero gate-source voltage 
+(VGS), and a virtual junction temperature of 25°C, symbolizes the maximum forward voltage drop across the intrinsic diode, as 
+illustrated in Figure 14. 
+ 
+Figure 14. Circuit Diagram to Measure Diode Forward Voltage 
+Reverse recovery charge (Qrr) characterizes the charge that is built up in the diode during the transition from the conducting or 
+forward bias state to the non-conducting or reverse-biased state. The time that is necessary to remove the charge that persists within 
+the diode during the reverse recovery phase is called Diode Reverse Recovery Time (trr). Peak Reverse Recovery Current (Irrm) 
+denotes the maximum current flowing in the reverse direction during this period. 
+The circuit diagram and reverse recovery measurement waveforms are demonstrated in Figure 15. Mathematically, the reverse 
+recovered charge, Qrr, is defined as the integral of the reverse recovery current, Irr, during the process of current commutation, with 
+time as the variable. This relationship is expressed by Equation 10. The reverse recovery time, trr, is measured from the point of 
+reverse bias initiation to the moment when the reverse current reaches 10% of its peak value. 
+𝑸𝑸𝒓𝒓𝒓𝒓= න
+𝑰𝑰𝒓𝒓𝒓𝒓(𝒕𝒕)𝒅𝒅𝒅𝒅
+𝒕𝒕𝒓𝒓𝒓𝒓
+𝒕𝒕𝒓𝒓𝒓𝒓
+ 
+10 
+ 
+ 
+(a) Measurement Circuit 
+(b) Waveform 
+Figure 15. Diode Reverse Recovery 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+15 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+3.5. Thermal Characteristics ─ Thermal Resistance (Rth) 
+Rth signifies the thermal characteristics of the MOSFET at steady state, making it an essential parameter for thermal management of 
+the MOSFET. Table 6 outlines the Rth values presented in the datasheet. The heat generated within the silicon chip needs to be 
+dissipated by means of heat sink into the ambient. The thermal dissipation pathway for a power MOSFET in a conventional and 
+isolated discrete package with a heat sink is visually outlined in Figure 16 (a) and (b).  
+Table 6. Thermal Characteristics 
+ 
+ 
+Thermal resistance junction to case (Rth(j-c)) is the thermal resistance from the junction of the die to the outside of the device’s 
+case. It describes the passage of heat between the semiconductor chip and the case. Littelfuse specifies a maximum static Rth(j-c) at 
+Tvj = 125°C.  
+Thermal resistance case to heatsink (Rth(c-h)) characterizes the static heat dissipation of a MOSFET and depends on module size, 
+heatsink, case surfaces, thickness parameters of thermal layers between module and heatsink. 
+Thermal resistance junction to ambient (Rth(j-a))  is equal to sum of junction to case, Rth(j-c), case to heatsink Rth(c-h) and heatsink to 
+ambient thermal resistance, Rth(h-a). The Rth(j-c) is specified in the datasheet whereas Rth(c-h) and Rth(c-a) is determined by the user’s board 
+design and depends on the application. 
+ 
+(a) Conventional Discrete Package 
+ 
+(b) Isolated Discrete Package 
+Figure 16. Lateral Thermal Resistance Chain within a Semiconductor Package 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+16 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+3.6. Package – Mechanical Rating 
+This part of the datasheet covers physical characteristics of the device. 
+Package weight (G) refers to the mass of the package or housing, including the MOSFET die and the required electrical and thermal 
+connections. 
+Isolation voltage (Visol) is specified only for isolated devices and represents the isolation voltage between all terminals connected 
+against the cooling surface or base plate. The verification test circuit used to determine the isolation voltage rating between terminals 
+and baseplate is visualized in Figure 17. 
+ 
+Figure 17. Circuit Diagram for Isolation Withstand Voltage Test 
+3.7. Characteristics Curves 
+The essential curve in the datasheet provides graphical portrayal of key performance characteristics of MOSFET devices. In this 
+application note, the graphs, and parameters from the IXTH120N20X4 datasheet are used as reference. 
+Typical Output Characteristics of IXTH120N20X4, illustrating various modes of operation, are delineated in Figure 18. In the Cut-off 
+region, the gate-source voltage (VGS) is less than the gate-threshold voltage (VGS(th)) and the device is an open circuit or off. In the 
+Ohmic region, the device acts as a resistor with an almost constant on-resistance RDS(on) and which is equal to VDS /ID. In the linear-
+mode of operation, the device operates in the Current-Saturated region where the drain current (ID) is a function of the gate-source 
+voltage (VGS) and defined by the Equation 11: 
+𝑰𝑰𝑫𝑫= 𝑲𝑲∙൫𝑽𝑽𝑮𝑮𝑮𝑮−𝑽𝑽𝑮𝑮𝑮𝑮(𝒕𝒕𝒕𝒕)൯
+𝟐𝟐= 𝒈𝒈𝒇𝒇𝒇𝒇∙൫𝑽𝑽𝑮𝑮𝑮𝑮−𝑽𝑽𝑮𝑮𝑮𝑮(𝒕𝒕𝒕𝒕)൯ 
+11 
+In this equation, K is a parameter depending on temperature and device geometry and gfs is the current gain or transconductance. 
+When the drain-source voltage (VDS) is increased, the positive drain potential opposes the gate voltage bias and reduces the surface 
+potential in the channel. This reduction in surface potential continues as VDS increases until it reaches a critical point, known as the 
+Channel Pinch-off Voltage, where the drain voltage equals ൫𝑉𝑉𝐺𝐺𝐺𝐺−𝑉𝑉𝐺𝐺𝐺𝐺(𝑡𝑡ℎ)൯. At this point, the drain current becomes saturated.  
+ 
+Figure 18. Typical Output Characteristics  
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+17 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Typical Transfer Characteristics depicted in Figure 19, illustrates the relationship between drain current and gate voltage across 
+varying temperatures of –40, 25, and 150°C. The intercepts of these lines at ID = 0 A provides the threshold voltages for the 
+respective temperature. It can be concluded that the transfer characteristic depends on both temperature and drain current and the 
+threshold voltage decreases with increasing temperature.  
+In certain scenarios, a cross-over point or zero temperature coefficient point may be present. Below this point, the gate-source 
+voltage exhibits a negative temperature coefficient, implying a decrease in gate-source voltage at higher temperatures for a given 
+drain current. Conversely, above this point, the temperature coefficient for the gate-source voltage becomes positive. 
+ 
+Figure 19. Typical Transfer Characteristics  
+Typical Drain-Source On-State Resistance (Normalized) vs. Virtual Junction Temperature - The value of RDS(on) is critical in 
+power MOSFETS as it serves as an indicator of the device's capacity to handle current. An important characteristic is an increase in 
+the on-resistance with increasing temperature, as evidenced in Figure 20, which portrays a positive temperature coefficient. The 
+positive temperature coefficient of RDS(on) is a beneficial feature when paralleling power MOSFETs because it ensures thermal stability 
+and balanced current sharing. 
+ 
+Figure 20. Typical Drain-source On-State Resistance (Normalized to ID = 60 A) vs. Virtual junction temperature  
+From Figure 20, RDS(on) vs. Tvj (normalized to ID = 60 A), it is found that RDS(on) is 1 at Tvj = 25°C, and it increases to 2.25 at Tvj = 150°C. In 
+the IXTH120N20X4 datasheet, if the resistance RDS(on) at ID = 60 A (i.e., 0.5·ID25) is specified as 9.5 mΩ at Tvj = 25°C, then it is predicted 
+that it will change to 21.375 mΩ when Tvj = 150°C is applied. The normalized value is obtained from RDS(on)|Tvj / RDS(on)|Tvj = 25°C. 
+ 
+ 
+2.25 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+18 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Typical Drain-Source On-State Resistance (Normalized) vs. Drain Current presented in Figure 21  provides information about the 
+relative change in on-state resistance at different drain currents. The calculation of the on-state resistance, RDS(on) as a function of drain 
+current ID and gate-source voltage VGS can be derived from the typical output characteristic diagram depicted in Figure 18, employing 
+Ohm's Law. 
+𝑹𝑹𝑫𝑫𝑫𝑫(𝒐𝒐𝒐𝒐)(𝑰𝑰𝑫𝑫) = 𝑽𝑽𝑫𝑫𝑫𝑫
+𝑰𝑰𝑫𝑫
+ 
+12 
+ 
+Figure 21. Typical Drain-source On-State Resistance (Normalized to ID = 60 A) vs. Drain Current  
+From Figure 21, RDS(on) vs. ID (normalized to ID = 60 A), it is found that RDS(on) is 1 at ID = 60 A, and it changes to 1.2 at ID = 200 A. In the 
+IXTH120N20X4 datasheet, if the resistance RDS(on) at ID = 60 A (i.e., 0.5·ID25) is specified as 9.5 mΩ, then it is predicted that the 
+resistance RDS(on) will change to 11.4 mΩ when ID = 200 A is applied. The normalized value is obtained from RDS(on)|ID / RDS(on)|ID = 60 A. 
+Typical Breakdown Voltage and Gate Threshold Voltage (Normalized) vs. Virtual Junction Temperature - The relationship 
+between V(BR)DSS / VGS(th) and Tvj is expressed in Figure 22. The breakdown-voltage V(BR)DSS features a positive temperature coefficient, 
+whereas gate-source threshold voltage VGS(th) has a negative temperature coefficient. At 25°C, the normalized breakdown-voltage V(BR)DSS 
+is 1, growing to value of 1.14 at 150°C. This signs that breakdown-voltage V(BR)DSS at Tvj = 25°C is 200 V and is expected to be 228 V at 
+Tvj = 150°C. The value of gate-source threshold voltage VGS(th) is 1 at 25°C and 0.643 at 150°C, respectively. Assuming the device's gate-
+source threshold voltage VGS(th) is 3.5 V, then the VGS(th) remains at 3.5 V at Tvj = 25°C, but is anticipated to decrease to 2.24 V at 
+Tvj = 150°C. 
+ 
+Figure 22. Typical V(BR)DSS/VGS(th) (Normalized) vs. Virtual Junction Temperature 
+ 
+1.2 
+1.14 
+0.643 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+19 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Drain Current vs. Case temperature curve illustrated Figure 23 depicts the solution of Equation 2 across different case 
+temperatures, demonstrating that at low case-temperature Tc, the maximum drain current ID remains constant, while at high case-
+temperature Tc, it gradually decreases until reaching zero at Tc = Tvj(max). However, the actual drain current is restricted by additional 
+factors, including bond wire diameter, chip design, and assembly. It is noteworthy that, in certain instances, the continuous current is 
+constrained by the package leads, although the switched current could potentially be higher.  
+ 
+Figure 23. Drain Current vs. Case Temperature  
+Typical Transconductance - A large transconductance is desirable to obtain a high current handling capability with low gate drive 
+voltage and for achieving high frequency response. Figure 24 displays a typical variation of the transconductance with respect to drain 
+current. The reduction in the mobility with increasing temperature adversely affects the transconductance. 
+ 
+Figure 24. Typical Transconductance Curve  
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+20 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Typical Gate Charge curve depicts the typical variation of the requisite gate charge to switch on the device at a specified VGS and 
+VDD.  A typical gate charge waveform for a power MOSFET can be observed in Figure 25. The gate charge reflects the charge stored 
+on the inter-terminal capacitances and is used in designing the gate drive circuit. 
+ 
+Figure 25. Typical Gate Charge Characteristics  
+In Figure 26, the parasitic Junction Capacitances Characteristics are represented as a function of drain-source voltage. Its 
+components include input capacitance (Ciss), which consists of gate-source capacitance CGS in parallel with drain-gate capacitance CDG, 
+output capacitance (Coss), which consists of drain-gate capacitance CDG in parallel with drain-source capacitance CDS and reverse 
+transfer capacitance (Crss), which is the drain-gate capacitance CDG. 
+ 
+Figure 26. Typical Junction Capacitance  
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+21 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Forward-Bias Safe Operating Area (FBSOA) is a datasheet figure of merit that defines the maximum allowed operating points. 
+Figure 27 shows a typical FBSOA characteristic for an N-Channel Power MOSFET. It is bound by the maximum drain-to-source 
+voltage VDSS, maximum conduction current IDM, maximum drain-source on-state resistance and constant power dissipation lines for 
+various pulse durations.  
+In Figure 27, there is a series of curves that include a DC line along with four single pulse operating lines, 10 ms, 1 ms, and 100 µs. 
+The top of each line is limited by the maximum drain current and is bounded by a positive sloped line defined by the on-state 
+resistance RDS(on) of the device. The right-hand side of each line is terminated at the rated drain-source voltage limit VDSS. Each line has 
+a negative slope and is determined by the maximum power dissipation Ptot of the device: 
+𝑷𝑷𝒕𝒕𝒕𝒕𝒕𝒕=ൣ
+𝑻𝑻𝒗𝒗𝒗𝒗,𝒎𝒎𝒎𝒎𝒎𝒎−𝑻𝑻𝒄𝒄൧
+𝒁𝒁𝒕𝒕𝒕𝒕(𝒋𝒋−𝒄𝒄)
+= 𝑽𝑽𝑫𝑫𝑫𝑫∙𝑰𝑰𝑫𝑫 
+13 
+ 
+Figure 27. Forward Biased Safe Operating Area (FBSOA) Curve 
+These theoretical constant power curves are derived from calculation with assumption of essentially uniform junction temperature 
+across the Power MOSFET die. This assumption is not always valid, especially for a large die MOSFET. Firstly, the edge of a MOSFET 
+die soldered to the mounting tab of a power package has generally lower temperature compared to the center of the die, as a result 
+of lateral heat flow. Secondly, material imperfections like die attach voids and thermal grease cavities may cause local decrease of 
+thermal conductivity. Additionally, fluctuations in dopant concentrations, gate oxide thickness and fixed charge will cause fluctuations 
+of the local threshold voltage and the current gain (gfs) of individual MOSFE’s cells, which will also affect the local temperatures of the 
+die. 
+Die temperature variations are mostly harmless in case of switched mode operation; however, these can trigger catastrophic failure in 
+linear mode operation with pulse duration longer than the time required for a heat transfer from the junction to the heat sink. Modern 
+Power MOSFETs optimized for a switch-mode applications are known to have limited capability to operate in the right-side bottom 
+corner of the FBSOA graph. 
+ 
+ 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+22 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Typical Forward Characteristics of a Reverse Diode plotted against various temperatures are presented in Figure 28. This curve 
+aids in comprehending the diode’s conduction behavior and its forward voltage drop characteristics. It clearly demonstrates the 
+negative temperature coefficient of diode forward voltage VSD in the low-current region. As a result, it is anticipated that the diode 
+forward voltage will decrease as the temperature increases. In the high-current region that is above the cross-over point (Q), the 
+diode forward voltage will increase as the temperature increases. 
+ 
+Figure 28. Typical Forward Characteristics of a Reverse Diode  
+Typical Eoss vs. Drain-Source Voltage - Eoss refers to the output switching energy. Specifically, it represents the energy that is 
+required to charge or discharge output capacitance of a MOSFET during the switching operation.  
+𝑸𝑸𝒐𝒐𝒐𝒐𝒐𝒐= න
+𝑪𝑪(𝒗𝒗)
+𝑽𝑽𝑫𝑫𝑫𝑫
+𝟎𝟎
+ 𝒅𝒅𝒅𝒅 
+14 
+ 
+ 
+𝐸𝐸𝑜𝑜𝑜𝑜𝑜𝑜= 𝑄𝑄𝑜𝑜𝑜𝑜𝑜𝑜∙𝑉𝑉𝐷𝐷𝐷𝐷 
+15 
+Where in this equation, Qoss is the amount of charge required for charging the drain-source capacitance and C(v) is a function of the 
+output capacitance Coss that is dependent on drain to source voltage VDS as shown in Figure 29. 
+ 
+Figure 29. Typical Eoss vs. Drain-Source Voltage  
+ 
+ 
+Q 
+
+ 
+ 
+Application Note 
+ 
+ 
+ 
+23 
+Littelfuse.com 
+ 
+ 
+© 2024 Littelfuse, Inc. 
+Rev 24.03a 
+Typical Transient Thermal Impedance - A Power MOSFET has a virtual junction temperature, Tvj limitation. It should be operated 
+below the maximum virtual junction temperature, Tvj(max) specified in the datasheet to ensure reliability. The heat generated within the 
+silicon chip needs to be dissipated by means of a heat sink into the ambient environment. The virtual junction temperature’s rise 
+above the ambient temperature Ta and is directly proportional to this heat flow and the junction-to-ambient thermal resistance, Rth(j-a). 
+The steady-state virtual junction temperature can be calculated by:  
+𝑻𝑻𝒗𝒗𝒗𝒗= 𝑷𝑷𝒕𝒕𝒕𝒕𝒕𝒕∙𝑹𝑹𝒕𝒕𝒕𝒕(𝒋𝒋−𝒂𝒂) + 𝑻𝑻𝒂𝒂|𝑻𝑻𝒗𝒗𝒗𝒗 ≤ 𝑻𝑻𝒗𝒗𝒗𝒗(𝒎𝒎𝒎𝒎𝒎𝒎) 
+16 
+Here, Ptot is the maximum power dissipated in the junction. The total thermal resistance between junction and ambient is,  
+𝑹𝑹𝒕𝒕𝒕𝒕(𝒋𝒋−𝒂𝒂) = 𝑹𝑹𝒕𝒕𝒕𝒕(𝒋𝒋−𝒄𝒄) + 𝑹𝑹𝒕𝒕𝒕𝒕(𝒄𝒄−𝒉𝒉) + 𝑹𝑹𝒕𝒕𝒕𝒕(𝒉𝒉−𝒂𝒂) 
+17 
+The steady-state thermal resistance is not sufficient when calculating the peak virtual junction temperatures for pulsed applications. 
+When a power pulse is applied to the device, the peak virtual junction temperature varies depending on peak power and pulse width. 
+The temperature swing due to short pulses of power can be calculated using the thermal impedance Zth. 
+𝒁𝒁𝒕𝒕𝒕𝒕(𝒋𝒋−𝒄𝒄)(𝒕𝒕) = 𝒓𝒓(𝒕𝒕) ∙𝑹𝑹𝒕𝒕𝒕𝒕(𝒋𝒋−𝒄𝒄) 
+18 
+Here, r(t) is a time dependent factor that is defined by the thermal capacity of the device. For short pulses, the r(t)-value is small but 
+for long pulse, it approaches 1, which means that the thermal impedance approaches the steady-state thermal resistance. A typical 
+thermal impedance curve is shown in Figure 30, approaching the steady-state value for pulses exceeding a duration of about one 
+second. The thermal impedance can be used to estimate the peak temperature rise for square wave power pulses, which is typical in 
+power supply design circuits. 
+ 
+Figure 30. Typical Thermal Impedance  
+ 
+For additional information please visit www.Littelfuse.com/powersemi  
+Disclaimer Notice - This document is provided by Littelfuse, Inc. (“Littelfuse”) for informational and guideline purposes only. Littelfuse assumes no liability for errors or omissions in this document or for 
+any of the information contained herein. Information is provided on as “as-is” and “with all faults” basis for evaluation purposes only. Applications described are for illustrative purposes only and 
+Littelfuse makes no representation that such applications will be suitable for the customer’s specific use without further testing or modification. Littelfuse expressly disclaims all warranties, whether 
+express, implied or statutory, including but not limited to the implied warranties of merchantability and fitness for a particular purpose, and non-infringement. It is the customer’s sole responsibility to 
+determine suitability for a particular system or use based on their own performance criteria, conditions, specific application, compatibility with other components, and environmental conditions.  
+Customers must independently provide appropriate design and operating safeguards to minimize any risks associated with their applications and products.   
+Littelfuse products are not designed for, and shall not be used for, any purpose (including, without limitation, automotive, military, aerospace, medical, life-saving, life-sustaining or nuclear facility 
+applications, devices intended for surgical implant into the body, or any other application in which the failure or lack of desired operation of the product may result in personal injury, death, or property 
+damage) other than those expressly forth in applicable Littelfuse product documentation. Littelfuse shall not be liable for any claims or damages arising out of products used in applications not expressly 
+intended by Littelfuse as set forth in applicable Littelfuse documentation. 
+Read complete Disclaimer Notice at www.littelfuse.com/disclaimer-electronics  

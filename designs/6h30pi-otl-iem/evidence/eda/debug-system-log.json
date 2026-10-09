@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "type": "error",
+      "message": " <span class=\"i18n\" i18n-params-attrkey=\"Symbol\" i18n-params-components=\"<span class=&quot;link&quot; data-log-find-id=&quot;J1PJ-301C.1&quot; data-log-find-sheet=&quot;4f8b3ad8b08db887&quot; data-log-find-type=&quot;rect&quot; data-log-find-path=&quot;7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406&quot;>$1I2</span>\">Found abnormal data, The {AttrKey} property of the following element is incorrect: {components}. Please delete these components, and placing again.</span>",
+      "timestamp": 1790507103503
+    }
+  ]
+}

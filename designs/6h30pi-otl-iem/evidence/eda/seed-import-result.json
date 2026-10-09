@@ -1,0 +1,44 @@
+{
+  "time": "2026-09-27T19:01:22.108898+08:00",
+  "window_id": "69fb62cd-2bdb-4a4f-b6cc-2bc96cb91053",
+  "before": {
+    "ok": true,
+    "result": {
+      "document": {
+        "documentType": -1,
+        "uuid": "tab_page1",
+        "tabId": "tab_page1"
+      }
+    }
+  },
+  "import_result": {
+    "ok": true,
+    "result": {
+      "itemType": "Project",
+      "uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "friendlyName": "6H30Pi-Rebuild",
+      "teamUuid": "4bc4bd5c3d544604b75c140f26423fa5"
+    }
+  },
+  "after": {
+    "ok": true,
+    "result": {
+      "project": {
+        "itemType": "Project",
+        "uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "friendlyName": "6H30Pi-Rebuild",
+        "name": "/6H30Pi-Rebuild",
+        "teamUuid": "/Users/he0xd4c0/Documents/LCEDA-Pro/projects",
+        "description": "",
+        "data": []
+      },
+      "document": {
+        "documentType": 0,
+        "uuid": "0",
+        "tabId": "0"
+      }
+    }
+  },
+  "seed_schematic_uuid": "7ee135dbeb644024aa2846585bcb3526",
+  "seed_page_uuid": "4adcb1231dfd4721aacd4c40e282ac85"
+}

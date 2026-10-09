@@ -1,0 +1,38 @@
+{
+  "0.1": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.003974431206382898,
+    "output_peak_V": 0.00581197861,
+    "upper_Imax_A": 0.0581838647,
+    "lower_Imax_A": 0.077153123,
+    "upper_grid_max_V": -0.616201198,
+    "lower_grid_max_V": -0.276989978
+  },
+  "16": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.3786772008435943,
+    "output_peak_V": 0.542547679,
+    "upper_Imax_A": 0.0492656025,
+    "lower_Imax_A": 0.0597621212,
+    "upper_grid_max_V": -1.15238855,
+    "lower_grid_max_V": -1.12387437
+  },
+  "18": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.40482244464311046,
+    "output_peak_V": 0.579393484,
+    "upper_Imax_A": 0.0486545692,
+    "lower_Imax_A": 0.0585402538,
+    "upper_grid_max_V": -1.18999086,
+    "lower_grid_max_V": -1.18619813
+  },
+  "1000000000.0": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.890421365096212,
+    "output_peak_V": 1.26010756,
+    "upper_Imax_A": 0.0378420794,
+    "lower_Imax_A": 0.0368584877,
+    "upper_grid_max_V": -1.8778955,
+    "lower_grid_max_V": -2.41780432
+  }
+}

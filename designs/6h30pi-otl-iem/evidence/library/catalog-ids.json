@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "uuid": "dd0d9c0b18cf47ef920d9c9276147278",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3"
+      },
+      "ordinal": 0,
+      "footprintName": "FUSE-TH_L8.5-W4.0-P5.08-D0.6",
+      "footprintUuid": "0f82dbd79e7f401897f9aef89eedfc1a",
+      "model3DName": "FUSE-TH_L8.5-W4.0-H8.5-P5.08",
+      "model3DUuid": "5a8d29c76fd94237a0cd71c8d291b28c",
+      "manufacturer": "WALTER(华德)",
+      "manufacturerId": "2010T2.5A250V",
+      "supplier": "LCSC",
+      "supplierId": "C354903",
+      "otherProperty": {
+        "LCSC Part Name": "插件式保险丝",
+        "Supplier Part": "C354903",
+        "Manufacturer": "WALTER(华德)",
+        "Manufacturer Part": "2010T2.5A250V",
+        "Supplier Footprint": "插件,P=5.08mm",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/2010T2.5A250V/330428.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "4b24b4c807ce4c6cab1cdcf7fe0856ea",
+        "Designator": "F?",
+        "Footprint": "0f82dbd79e7f401897f9aef89eedfc1a",
+        "3D Model": "5a8d29c76fd94237a0cd71c8d291b28c",
+        "3D Model Title": "FUSE-TH_L8.5-W4.0-H8.5-P5.08",
+        "3D Model Transform": "334.645,157.48,0,0,0,0,0,0,-137.795",
+        "Type": "方形保险丝",
+        "Current Rating": "2.5A",
+        "Voltage Rating (DC)": "300V",
+        "Operating Temperature": "-55℃~+125℃",
+        "Melting I2t": "-",
+        "Interrupt Rating": "50A@300V；100A@250V；100A@300V；130A@250V",
+        "Diameter (φD)": "-",
+        "Length": "8.5mm",
+        "Width": "4mm",
+        "Height": "8.5mm",
+        "Pitch": "5.08mm",
+        "Name": "={Manufacturer Part}"
+      }
+    }
+  ]
+}

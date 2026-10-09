@@ -1,0 +1,2928 @@
+● Endurance : 105 °C 5000 h to 10000 h
+● Malaysia
+● Low ESR (Same as FM Series)
+● RoHS compliant
+   
+Unit：mm
+ 20 °C *CV = (Capacitance in μF) x (Rated voltage in V)
+Leakage current
+―
+12.5 to 25
+30 to 35
+―
+0.09
+25
+35
+Category temp. range
+16.0
+―
+―
+―
+0.75
+0.80
+0.95
+ Dimensions
+øD
+5.0
+6.3
+8.0
+10.0
+0.75
+ ø8×11.5, ø10×12.5 : 6000 h (✽ Only EEUFR1V331U (ø10×12.5) 5000 h)
+ ø8×15, ø10×16 : 8000 h, ø8×20 : 9000 h
+7.5
+2.0
+2.5
+3.5
+5.0
+5.0
+5.0
+F
+ød
+0.5
+0.5
+0.6
+0.6
+0.6
+0.8
+0.8
+Aluminum Electrolytic Capacitors
+FR-A series
+ Features
+ Country of origin
+  Specifications
+ Frequency correction factor for ripple current
+0.85
+100 k
+0.98
+1.00
+0.45
+1.00
+47 to 330
+390 to 1000
+0.90
+0.75
+0.90
+1.00
+63
+0.16
+0.14
+0.12
+0.10
+0.55
+ ø10×20 to ø10×25, ø12.5×20 to ø12.5×35, ø16×20 to ø16×25 : 10000 h
+60
+120
+1 k
+10 k
+12.5
+0.60
+1.00
+1.00
+0.70
+0.95
+0.65
+–40 °C to +105 °C
+6.3 V to 100 V
+Design and specifications are each subject to change without notice. Ask factory for the current technical specifications before purchase and/or use.
+ (Capacitors are left at room temperature and humidity for 2 hours after the test. Then, apply the rated voltage for 30min with a series protection
+ resistance of 1000 Ω ± 10 Ω.  Measure electrical characteristics after discharging the capacitor.)
+4.7 to 33
+Cap. (μF)
+Capacitance change
+Freq. (Hz)
+ After following life test with DC voltage and +105 °C±2 °C ripple current value applied
+DC leakage current
+ Within the initial limit
+Rated voltage (V)
+Dissipation factor (tan δ)
+ For capacitance value ≥ 1000 μF, add 0.02 per every 1000 μF.
+ (The sum of DC and ripple peak voltage shall not exceed the rated working voltage) when the capacitors are
+Dissipation factor (tan δ)
+16
+100
+0.08
+ (120 Hz /
++20°C)
+ Duration
+ ø5×11, ø6.3×11.2 : 5000 h
+50
+L
+Radial Lead Type
+Should a safety concern arise regarding this product, please be sure to contact us immediately.
+01-Sep-25
+1200 to 8200
+I ≤ 0.01 CV (μA), whichever is greater, 2 minutes after reaching rated voltage, 
+Rated voltage range
+Capacitance tolerance
+±20 % (120 Hz / +20°C)
+10
+0.19
+6.3
+0.22
+ Within ±25 % of the initial value (6.3 V to 10 V : ±30 %)
+Dissipation factor (tan δ)
+ ≤ 200 % of the initial limit
+Endurance
+ restored to 20 °C, the capacitors shall meet the limits specified bellow.
+ capacitors shall meet the limits specified in endurance. 
+Shelf life
+ After storage for 1000 h at +105 °C±2 °C with no voltage applied and then being stabilized at +20 °C,
+Capacitance range
+4.7 μF to 8200 μF
+ød±0.05
+Pressure relief
+ø6.3≤
+14min.
+F±0.5
+L*
+Sleeve
+3min.
+øD±0.5
+øD±0.5
+* L ≤ 16：L±1.5
+L ≥ 20：L±2.0
+ø8
+ø10 ≤
+
+FR-A series
+*1: 100 kHz
+ Case size / Impedance / Ripple current
+0.024
+0.093
+2153
+16 × 25
+0.074
+2988
+12.5 × 30
+0.021
+0.082
+2528
+12.5 × 35
+0.029
+0.071
+2780
+16 × 20
+12.5 × 20
+0.027
+0.125
+1582
+12.5 × 25
+0.024
+0.092
+1995
+10 × 20
+0.035
+0.140
+1229
+10 × 25
+0.033
+0.132
+1500
+10 × 20
+0.084
+0.336
+1500
+R. voltage
+100 V
+Impedance*1
+(Ω)
+Ripple current*1
+(mA rms)
++20 °C
+-10 °C
++105 °C
+Case size
+(mm)
+(øD×L)
+6.3 × 11.2
+0.210
+0.840
+284
+8 × 11.5
+0.092
+0.368
+566
+Design and specifications are each subject to change without notice. Ask factory for the current technical specifications before purchase and/or use.
+10 × 12.5
+0.063
+0.252
+761
+10 × 16
+0.045
+0.180
+1073
+0.272
+741
+8 × 20
+0.050
+0.200
+930
+0.033
+Should a safety concern arise regarding this product, please be sure to contact us immediately.
+01-Sep-25
+R. voltage
+63 V
+Impedance*1
+(Ω)
+Ripple current*1
+(mA rms)
+16 × 25
+0.014
+0.035
+3820
+0.016
+0.040
++20 °C
+-10 °C
++105 °C
+5 × 11
+0.510
+2.040
+175
+3320
+8 × 15
+0.068
+Case size
+(mm)
+(øD×L)
+3270
+16 × 20
+0.017
+0.043
+3300
+0.019
+0.048
+2870
+12.5 × 35
+0.012
+0.030
+3750
+0.014
+0.035
+2660
+12.5 × 30
+0.013
+0.033
+3630
+0.016
+0.040
+3160
+12.5 × 25
+0.015
+0.038
+3190
+0.018
+0.045
+2150
+12.5 × 20
+0.018
+0.045
+2600
+0.022
+0.055
+2260
+10 × 25
+0.018
+0.054
+2470
+0.022
+0.066
+1650
+10 × 20
+0.020
+0.057
+2180
+0.023
+0.069
+1890
+10 × 16
+0.028
+0.078
+1790
+0.030
+0.090
+1430
+10 × 12.5
+0.043
+0.114
+1290
+0.042
+0.126
+1170
+8 × 20
+0.030
+0.090
+1560
+0.033
+0.099
+405
+5 × 11
+0.300
+1.000
+280
+0.340
+1.130
+870
+8 × 15
+0.041
+0.123
+1240
+0.045
+0.135
+1140
+8 × 11.5
+0.056
+0.168
+950
+0.061
+0.183
+250
+6.3 × 11.2
+0.130
++105 °C
+R. voltage
+6.3 V to 35 V
+50 V
+Impedance*1
+(Ω)
+Ripple current*1
+(mA rms)
+Impedance*1
+(Ω)
+Ripple current*1
+(mA rms)
+Case size
+(mm)
+(øD×L)
+0.430
+455
+0.140
+0.460
++20 °C
+-10 °C
++105 °C
++20 °C
+-10 °C
+
+FR-A series
+◇ Part number system
+e.g.: EEUFR0J122L
+*1: Ripple current (100 kHz / +105 °C)
+*2: Impedance  (100 kHz / +20 °C)
+・ When requesting taped product, please put the letter "B" or "H" be tween the "( )".
+ Lead wire pitch　✽B=5 mm, 7.5 mm, H=2.5 mm.
+・ Please refer to the page of “Taping dimensions”.
+L, S, U
+  Characteristics list
+0.056
+0.041
+820
+25.0
+25.0
+25.0
+20.0
+25.0
+30.0
+35.0
+11.5
+15.0
+12.5
+20.0
+8200
+6800
+2700
+3300
+3900
+4700
+5600
+1000
+1500
+1800
+Capacitance
+(±20 %)
+(μF)
+Case size
+(ｍｍ)
+Specification
+øD
+L
+11.0
+11.2
+11.2
+11.2
+0.300
+0.130
+0.130
+0.130
+150
+220
+330
+470
+5.0
+280
+8.0
+6000
+8.0
+6000
+12.5
+10000
+0.6
+16.0
+10000
+0.8
+7.5
+20.0
+10000
+0.8
+5.0
+0.013
+0.012
+0.017
+0.018
+0.015
+0.6
+11.5
+0.056
+10.0
+5.0
+8.0
+9000
+3.5
+10.0
+6000
+0.6
+8.0
+8000
+0.6
+0.043
+0.6
+3.5
+5.0
+0.030
+7.5
+ EEUFR0J822(  )
+100
+250 
+3820
+Design and specifications are each subject to change without notice. Ask factory for the current technical specifications before purchase and/or use.
+Should a safety concern arise regarding this product, please be sure to contact us immediately.
+01-Sep-25
+10000
+0.8
+7.5
+―
+16.0
+0.014
+6.3
+2200
+1200
+ EEUFR0J682S(  )
+100
+250 
+3300
+12.5
+―
+―
+ EEUFR0J682L
+100
+―
+3750
+10000
+0.8
+5.0
+7.5
+―
+ EEUFR0J562L
+100
+―
+3630
+12.5
+5.0
+ EEUFR0J472(  )
+200
+500 
+0.6
+5.0
+―
+12.5
+10000
+―
+―
+ EEUFR0J392(  )
+200
+500 
+3190
+500 
+2600
+5.0
+5.0
+ EEUFR0J332L(  )
+200
+2470
+10000
+0.6
+5.0
+―
+5.0
+―
+0.018
+5.0
+ EEUFR0J272L(  )
+200
+500 
+2470
+10.0
+5.0
+ EEUFR0J222(  )
+200
+500 
+2180
+10.0
+10000
+0.6
+5.0
+―
+10000
+0.6
+5.0
+―
+0.020
+0.018
+20.0
+ EEUFR0J182(  )
+200
+500 
+1790
+10.0
+5.0
+ EEUFR0J152L(  )
+200
+1000 
+8000
+0.6
+5.0
+―
+―
+5.0
+0.028
+16.0
+ EEUFR0J122(  )
+200
+500 
+1560
+1000 
+1290
+5.0
+5.0
+ EEUFR0J122L(  )
+200
+―
+―
+ EEUFR0J102(  )
+200
+1000 
+1240
+ EEUFR0J821(  )
+200
+1000 
+950
+2000 
+950
+5.0
+5.0
+ EEUFR0J471(  )
+200
+455
+0.6
+3.5
+―
+3.5
+―
+5000
+0.5
+2.5
+2.5
+6.3
+5.0
+ EEUFR0J331(  )
+200
+2000 
+ EEUFR0J221(  )
+200
+2000 
+455
+6.3
+5000
+6.3
+5000
+0.5
+0.5
+2.5
+2.5
+2.5
+2.5
+Rated
+voltage
+(V)
+Lead length (mm)
+Part No.
+Min. Packaging
+ Q'ty（PCS)
+2000 
+455
+5.0
+5.0
+ EEUFR0J151(  )
+200
+Taping
+Straight
+Taping
+✽B
+Taping
+✽H
+Lead
+dia.
+(ød)
+Lead space
+Straight
+leads
+Ripple
+current*1
+(mA rms)
+Impe-
+dance*2
+(Ω)
+Endu-
+rance
+(h)
+5000
+0.5
+2.0
+2.5
+　Explanation of part numbers
+Product
+classification
+Series
+Code
+Rated
+voltage
+ (V)
+Code
+Code
+Code
+Code
+Capacitance
+(μF)
+Capacitance
+(μF)
+Capacitance
+(μF)
+suiffix
+50
+63
+10
+18
+22
+33
+47
+56
+100
+1C
+1E
+1V
+1H
+1J
+2A
+16
+25
+FR
+FR
+6.3
+0J
+4R7
+10
+1A
+100
+35
+82
+100
+120
+150
+180
+220
+270
+330
+390
+470
+330
+560
+680
+820
+4.7
+122
+152
+4700
+5600
+6800
+8200
+181
+221
+271
+332
+392
+472
+182
+222
+272
+562
+682
+68
+331
+391
+180
+470
+220
+822
+561
+681
+821
+102
+2200
+151
+820
+101
+121
+471
+680
+1800
+560
+1000
+1200
+1500
+2700
+3300
+3900
+EEU
+FR
+0J
+122
+L
+
+FR-A series
+*1: Ripple current (100 kHz / +105 °C)
+*2: Impedance  (100 kHz / +20 °C)
+・ When requesting taped product, please put the letter "B" or "H" be tween the "( )".
+ Lead wire pitch　✽B=5 mm, 7.5 mm, H=2.5 mm.
+・ Please refer to the page of “Taping dimensions”.
+16
+5600
+2200
+4700
+3900
+3300
+16.0
+10.0
+5.0
+10.0
+8.0
+5.0
+5.0
+2470 
+20.0
+10000
+0.6
+5.0
+2180 
+16.0
+68
+100
+220
+25.0
+5.0
+1000
+3300 
+950 
+12.5
+16.0
+3820 
+―
+16.0
+3300 
+―
+12.5
+3750 0.012
+0.017
+35.0
+7.5
+12.5
+7.5
+―
+0.012
+0.014
+12.5
+3630 
+0.017
+30.0
+―
+12.5
+3190 
+―
+12.5
+2600 
+20.0
+0.018
+0.015
+0.013
+5.0
+20.0
+―
+0.130
+0.056
+0.041
+0.043
+11.2
+15.0
+Design and specifications are each subject to change without notice. Ask factory for the current technical specifications before purchase and/or use.
+25.0
+10000
+0.8
+―
+10000
+0.8
+7.5
+―
+ EEUFR1C472L
+100
+35.0
+10000
+0.8
+5.0
+3750 
+Should a safety concern arise regarding this product, please be sure to contact us immediately.
+01-Sep-25
+―
+10.0
+1290 
+―
+8.0
+1240 
+680
+ EEUFR1C472(  )
+10.0
+1790 
+―
+8.0
+1560 
+0.028
+5.0
+0.030
+20.0
+25.0
+5.0
+16.0
+100
+250 
+100
+250 
+7.5
+ EEUFR1C562(  )
+3820 
+―
+ EEUFR1C392S(  )
+100
+250 
+―
+7.5
+0.014
+ EEUFR1C392L
+100
+―
+20.0
+10000
+0.8
+7.5
+250 
+10000
+0.8
+5.0
+―
+7.5
+ EEUFR1C332S(  )
+100
+―
+ EEUFR1C332L
+100
+―
+10000
+0.8
+7.5
+―
+10000
+0.8
+5.0
+―
+500 
+500 
+ EEUFR1C272(  )
+200
+ EEUFR1C222(  )
+200
+2700
+25.0
+10000
+0.6
+5.0
+10000
+0.6
+5.0
+5.0
+―
+0.018
+ EEUFR1C152L(  )
+200
+500 
+1800
+25.0
+10000
+0.6
+5.0
+500 
+10.0
+2470 
+5.0
+ EEUFR1C182L(  )
+200
+1500
+500 
+10000
+0.6
+5.0
+5.0
+ EEUFR1C152(  )
+200
+―
+―
+0.020
+0.018
+ EEUFR1C102(  )
+200
+500 
+ EEUFR1C102L(  )
+200
+1000 
+8000
+0.6
+5.0
+9000
+0.6
+3.5
+5.0
+―
+ EEUFR1C471(  )
+200
+500 
+1000 
+ EEUFR1C221(  )
+200
+2000 
+470
+11.5
+6000
+0.6
+3.5
+1000 
+ EEUFR1C681(  )
+200
+ EEUFR1C681L(  )
+200
+6000
+0.6
+5.0
+8000
+0.6
+3.5
+5.0
+2000 
+5000
+0.5
+2.5
+5.0
+5.0
+ EEUFR1C121(  )
+200
+120
+11.2
+5000
+0.5
+2.5
+6.3
+455 
+2.5
+6.3
+455 
+0.130
+2.5
+ EEUFR1C101(  )
+200
+2000 
+ EEUFR1C680(  )
+200
+2000 
+11.0
+5000
+0.5
+2.0
+0.5
+2.0
+5.0
+2.5
+280 
+5000
+0.300
+0.300
+5.0
+11.0
+280 
+2.5
+  Characteristics list
+Rated
+voltage
+(V)
+Capacitance
+(±20 %)
+(μF)
+Case size
+(ｍｍ)
+Specification
+Lead length (mm)
+Part No.
+Min. Packaging
+ Q'ty（PCS)
+øD
+Straight
+leads
+Taping
+Straight
+Taping
+✽B
+Taping
+✽H
+L
+Ripple
+current*1
+(mA rms)
+Impe-
+dance*2
+(Ω)
+Endu-
+rance
+(h)
+Lead
+dia.
+(ød)
+Lead space
+200
+2000 
+2.5
+280
+0.5
+2.0
+5.0
+ EEUFR1A221(  )
+200
+2000 
+455
+5.0
+ EEUFR1A101(  )
+280
+5000
+0.5
+2.0
+0.300
+5000
+0.5
+2.5
+2.5
+5.0
+5000
+5.0
+0.300
+0.130
+0.6
+3.5
+―
+1000 
+8.0
+950
+6000
+2000 
+11.0
+11.0
+11.2
+ EEUFR1A271(  )
+ EEUFR1A471(  )
+6.3
+5.0
+ EEUFR1A151(  )
+200
+2000 
+2.5
+0.5
+2.5
+2.5
+6.3
+455
+5000
+0.130
+0.056
+5.0
+5.0
+11.2
+11.5
+0.6
+3.5
+―
+1000 
+8.0
+950
+6000
+11.5
+680
+0.056
+5.0
+ EEUFR1A681(  )
+0.6
+5.0
+―
+500 
+10.0
+1290
+6000
+12.5
+820
+0.043
+5.0
+ EEUFR1A821(  )
+―
+0.6
+5.0
+―
+500 
+10.0
+1790
+8000
+8.0
+1240
+0.028
+5.0
+5.0
+0.041
+16.0
+15.0
+ EEUFR1A102(  )
+ EEUFR1A102L(  )
+8.0
+1560
+9000
+0.6
+3.5
+5.0
+0.030
+20.0
+8000
+0.6
+3.5
+10.0
+2180
+10000
+0.020
+0.028
+16.0
+20.0
+25.0
+10.0
+10.0
+1790
+8000
+12.5
+3630
+10000
+16.0
+3300
+0.013
+0.017
+3900
+0.6
+12.5
+2600
+10000
+20.0
+3300
+12.5
+3190
+10000
+0.015
+25.0
+10000
+0.018
+16.0
+3820
+10000
+―
+12.5
+3750
+10000
+0.8
+12.5
+3750
+10000
+0.8
+5.0
+―
+―
+250 
+200
+200
+200
+200
+200
+200
+1000 
+1000 
+500 
+500 
+500 
+500 
+500 
+―
+100
+250 
+200
+200
+200
+200
+200
+200
+ EEUFR1A472L
+ EEUFR1A472S(  )
+ EEUFR1A562L
+ EEUFR1A392(  )
+0.6
+ EEUFR1A152(  )
+ EEUFR1A182(  )
+ EEUFR1A222L(  )
+ EEUFR1A332(  )
+100
+100
+5.0
+―
+5.0
+―
+0.6
+5.0
+―
+5.0
+5.0
+5.0
+5.0
+5.0
+100
+100
+ EEUFR1A682L
+ EEUFR1A682(  )
+―
+7.5
+0.8
+5.0
+―
+―
+7.5
+0.8
+7.5
+0.8
+7.5
+―
+5.0
+―
+5600
+1800
+2200
+100
+150
+220
+270
+10
+6800
+4700
+1500
+1000
+470
+ EEUFR1A152L(  )
+30.0
+20.0
+35.0
+35.0
+25.0
+―
+―
+0.012
+0.012
+0.014
+0.018
+2470
+10000
+0.6
+5.0
+―
+―
+―
+0.6
+5.0
+
+FR-A series
+*1: Ripple current (100 kHz / +105 °C)
+*2: Impedance  (100 kHz / +20 °C)
+・ When requesting taped product, please put the letter "B" or "H" be tween the "( )".
+ Lead wire pitch　✽B=5 mm, 7.5 mm, H=2.5 mm.
+・ Please refer to the page of “Taping dimensions”.
+35
+820
+1000
+1200
+680
+470
+33
+2200
+1800
+1500
+68
+180
+330
+390
+16.0
+12.5
+16.0
+16.0
+12.5
+12.5
+10.0
+10.0
+10.0
+30.0
+0.030
+0.030
+0.020
+0.018
+1330 
+0.014
+6.3
+12.5
+25.0
+12.5
+12.5
+10.0
+25.0
+3820 
+8.0
+8.0
+25.0
+1560 
+25.0
+0.015
+0.013
+20.0
+3630 
+3190 
+2470 
+11.0
+11.2
+11.5
+15.0
+20.0
+20.0
+20.0
+455 
+2600 
+5.0
+280 
+ EEUFR1V222(  )
+10000
+10000
+10000
+10000
+10000
+10000
+10000
+10000
+5.0
+5000
+5000
+6000
+6000
+6000
+8000
+0.043
+9000
+0.300
+0.130
+0.056
+0.056
+Design and specifications are each subject to change without notice. Ask factory for the current technical specifications before purchase and/or use.
+Should a safety concern arise regarding this product, please be sure to contact us immediately.
+01-Sep-25
+270
+―
+8.0
+950 
+―
+8.0
+950 
+220
+11.5
+10.0
+6000
+0.043
+5.0
+―
+0.056
+0.041
+8.0
+10000
+5000
+3750 
+100
+250 
+7.5
+―
+ EEUFR1V222L
+100
+―
+0.8
+7.5
+―
+―
+250 
+0.8
+5.0
+7.5
+ EEUFR1V182(  )
+100
+25.0
+0.8
+7.5
+35.0
+0.014
+0.012
+―
+3820 
+ EEUFR1V182L
+100
+―
+35.0
+0.8
+5.0
+ EEUFR1V152S(  )
+100
+250 
+―
+―
+0.017
+0.012
+7.5
+―
+3300 
+3750 
+ EEUFR1V152L
+100
+―
+0.8
+7.5
+500 
+0.8
+5.0
+―
+5.0
+ EEUFR1V122(  )
+200
+0.6
+5.0
+―
+―
+ EEUFR1V102(  )
+200
+500 
+ EEUFR1V821L(  )
+200
+500 
+20.0
+0.6
+5.0
+10000
+5.0
+0.018
+0.018
+―
+―
+2470 
+500 
+0.6
+5.0
+5.0
+5.0
+ EEUFR1V681L(  )
+200
+ EEUFR1V681(  )
+200
+500 
+0.6
+5.0
+―
+―
+500 
+0.6
+5.0
+5.0
+5.0
+ EEUFR1V561(  )
+200
+560
+20.0
+0.6
+5.0
+10.0
+2180 
+―
+10.0
+2180 
+10000
+0.020
+10000
+ EEUFR1V471(  )
+200
+500 
+16.0
+0.6
+5.0
+5.0
+―
+ EEUFR1V471L(  )
+200
+1000 
+―
+9000
+8000
+5.0
+0.028
+1560 
+1790 
+ EEUFR1V391L(  )
+200
+1000 
+0.6
+3.5
+500 
+0.6
+3.5
+5.0
+5.0
+ EEUFR1V331U(  )
+200
+0.6
+5.0
+―
+―
+ EEUFR1V271(  )
+200
+500 
+ EEUFR1V271L(  )
+200
+1000 
+12.5
+0.6
+5.0
+1290 
+―
+1240 
+1000 
+0.6
+3.5
+5.0
+5.0
+―
+ EEUFR1V221(  )
+200
+ EEUFR1V181(  )
+200
+1000 
+0.6
+3.5
+1000 
+0.6
+3.5
+5.0
+5.0
+ EEUFR1V101(  )
+200
+100
+11.5
+0.6
+3.5
+8.0
+950 
+ EEUFR1V680(  )
+200
+2000 
+2.5
+ EEUFR1V330(  )
+200
+2000 
+0.5
+2.5
+0.5
+2.0
+5.0
+2.5
+  Characteristics list
+Rated
+voltage
+(V)
+Capacitance
+(±20 %)
+(μF)
+Case size
+(ｍｍ)
+Specification
+Lead length (mm)
+Part No.
+Min. Packaging
+ Q'ty（PCS)
+øD
+Straight
+leads
+Taping
+Straight
+Taping
+✽B
+Taping
+✽H
+L
+Ripple
+current*1
+(mA rms)
+Impe-
+dance*2
+(Ω)
+Endu-
+rance
+(h)
+Lead
+dia.
+(ød)
+Lead space
+2000 
+11.0
+5000
+0.5
+5000
+0.5
+2.0
+ EEUFR1E470(  )
+200
+2.5
+2000 
+11.2
+5000
+0.5
+200
+2000 
+5000
+0.5
+2.5
+2.0
+5.0
+2.5
+ EEUFR1E680(  )
+ EEUFR1E101(  )
+200
+2.5
+1000 
+11.5
+6000
+0.6
+200
+2000 
+6000
+0.6
+3.5
+2.5
+5.0
+2.5
+ EEUFR1E151(  )
+ EEUFR1E221(  )
+200
+0.130
+0.056
+―
+1000 
+15.0
+8000
+0.6
+3.5
+200
+1000 
+8000
+0.6
+3.5
+5.0
+3.5
+ EEUFR1E331(  )
+ EEUFR1E391L(  )
+200
+―
+5.0
+0.056
+500 
+ EEUFR1E471L(  )
+200
+1000 
+12.5
+6000
+0.6
+5.0
+1000 
+9000
+0.6
+3.5
+5.0
+5.0
+ EEUFR1E471Y(  )
+200
+200
+0.041
+0.030
+1560 
+―
+20.0
+0.030
+20.0
+9000
+0.6
+3.5
+8.0
+1560 
+5.0
+ EEUFR1E471(  )
+10.0
+1290 
+―
+0.043
+1000 
+9000
+0.6
+3.5
+5.0
+5.0
+ EEUFR1E561L(  )
+200
+ EEUFR1E681L(  )
+200
+―
+―
+200
+5.0
+―
+0.018
+0.020
+1000 
+16.0
+8000
+0.6
+5.0
+ EEUFR1E102(  )
+200
+2180 
+500 
+ EEUFR1E821(  )
+200
+500 
+500 
+ EEUFR1E681(  )
+2180 
+―
+20.0
+10000
+0.6
+5.0
+0.6
+5.0
+25.0
+10000
+0.6
+5.0
+2470 
+5.0
+1240 
+―
+8.0
+1240 0.041
+8.0
+950 
+―
+15.0
+5.0
+280 
+6.3
+455 
+5.0
+5.0
+5.0
+0.300
+0.300
+0.130
+11.0
+11.2
+11.5
+8.0
+950 
+6.3
+455 
+5.0
+280 
+1790 
+―
+8.0
+1560 
+10000
+0.6
+5.0
+5.0
+5.0
+―
+0.030
+0.028
+0.020
+3190 
+10000
+16.0
+3300 
+―
+12.5
+2600 
+―
+10.0
+2470 
+5.0
+5.0
+5.0
+―
+0.6
+5.0
+0.018
+0.018
+0.015
+10000
+0.6
+5.0
+20.0
+10000
+7.5
+16.0
+3750 
+10000
+3300 
+10000
+0.017
+20.0
+35.0
+0.017
+200
+500 
+10000
+0.8
+7.5
+―
+7.5
+―
+3820 
+3300 
+10000
+0.8
+7.5
+7.5
+0.017
+0.014
+0.012
+0.013
+3630 
+10000
+0.8
+5.0
+10000
+0.8
+―
+7.5
+ EEUFR1E332(  )
+ EEUFR1E182(  )
+ EEUFR1E182S(  )
+ EEUFR1E222L
+ EEUFR1E222S(  )
+ EEUFR1E102L(  )
+―
+250 
+250 
+200
+100
+100
+100
+100
+100
+100
+500 
+250 
+―
+250 
+500 
+ EEUFR1E152(  )
+―
+7.5
+200
+ EEUFR1E122L(  )
+200
+500 
+20.0
+25.0
+20.0
+20.0
+25.0
+25.0
+20.0
+30.0
+ EEUFR1E272L
+ EEUFR1E272S(  )
+0.8
+5.0
+―
+―
+―
+0.8
+―
+7.5
+16.0
+16.0
+12.5
+2700
+2200
+1800
+1000
+680
+470
+12.5
+10.0
+8.0
+12.5
+820
+10.0
+10.0
+10.0
+8.0
+25
+3300
+1200
+1500
+330
+390
+47
+68
+100
+150
+220
+560
+
+FR-A series
+*1: Ripple current (100 kHz / +105 °C)
+*2: Impedance  (100 kHz / +20 °C)
+・ When requesting taped product, please put the letter "B" or "H" be tween the "( )".
+ Lead wire pitch　✽B=5 mm, 7.5 mm, H=2.5 mm.
+・ Please refer to the page of “Taping dimensions”.
+  Characteristics list
+Rated
+voltage
+(V)
+Capacitance
+(±20 %)
+(μF)
+Case size
+(ｍｍ)
+Specification
+Lead length (mm)
+Part No.
+Min. Packaging
+ Q'ty（PCS)
+øD
+L
+Taping
+Straight
+Taping
+✽B
+Taping
+✽H
+Ripple
+current*1
+(mA rms)
+Impe-
+dance*2
+(Ω)
+Endu-
+rance
+(h)
+Lead
+dia.
+(ød)
+Lead space
+Straight
+leads
+2000 
+10
+5.0
+11.0
+250 0.340
+5000
+0.5
+2.0
+5.0
+0.5
+2.0
+5.0
+2.5
+ EEUFR1H4R7( )
+200
+4.7
+5.0
+11.0
+185 0.620
+5000
+2.5
+ EEUFR1H100(  )
+2.5
+5.0
+200
+2000 
+22
+5.0
+11.0
+250 0.340
+5000
+2000 
+0.5
+2.0
+5.0
+2.5
+ EEUFR1H220(  )
+200
+―
+ EEUFR1H470(  )
+200
+2000 
+47
+6.3
+11.2
+56
+6.3
+11.2
+405 0.140
+5000
+2000 
+0.5
+2.5
+5.0
+2.5
+ EEUFR1H560(  )
+200
+405 0.140
+5000
+0.5
+1000 
+120
+8.0
+15.0
+1140 0.045
+8000
+1000 
+0.6
+3.5
+5.0
+―
+ EEUFR1H121L(  )
+200
+100
+8.0
+11.5
+870 0.061
+6000
+―
+ EEUFR1H101(  )
+200
+8000
+0.6
+5.0
+5.0
+―
+ EEUFR1H151(  )
+200
+0.6
+3.5
+5.0
+6000
+0.6
+5.0
+5.0
+500 
+180
+8.0
+20.0
+1430 0.033
+9000
+1000 
+0.6
+3.5
+5.0
+―
+ EEUFR1H181L(  )
+200
+150
+10.0
+12.5
+1170 0.042
+5.0
+5.0
+―
+ EEUFR1H221(  )
+200
+500 
+270
+10.0
+20.0
+1890 0.023
+10000
+500 
+0.6
+5.0
+5.0
+―
+ EEUFR1H271(  )
+200
+220
+10.0
+16.0
+1650 0.030
+―
+ EEUFR1H331L(  )
+200
+500 
+470
+12.5
+20.0
+2260 0.022
+10000
+500 
+0.6
+5.0
+5.0
+―
+ EEUFR1H471(  )
+200
+330
+10.0
+25.0
+2150 0.022
+10000
+0.6
+―
+ EEUFR1H561(  )
+200
+500 
+680
+12.5
+30.0
+3160 0.016
+10000
+560
+12.5
+25.0
+2660 0.018
+10000
+0.6
+5.0
+5.0
+―
+0.8
+5.0
+―
+―
+820
+12.5
+35.0
+3270 0.014
+10000
+0.8
+5.0
+―
+ EEUFR1H681L
+100
+7.5
+7.5
+100
+250 
+―
+ EEUFR1H821L
+100
+―
+250 
+16.0
+20.0
+2870 0.019
+10000
+0.8
+150
+8.0
+20.0
+930 0.050
+9000
+0.6
+―
+ EEUFR1H821S(  )
+100
+1000
+16.0
+25.0
+3320 0.016
+10000
+5.0
+63
+18
+5.0
+11.0
+175 0.510
+5000
+0.5
+2.0
+82
+8.0
+11.5
+566 0.092
+6000
+0.6
+3.5
+5.0
+270
+10.0
+20.0
+1229 0.035
+10000
+50
+5.0
+2.5
+ EEUFR1J180(  )
+200
+2000 
+47
+6.3
+11.2
+284 0.210
+200
+2000 
+5000
+0.5
+2.5
+5.0
+2.5
+ EEUFR1J470(  )
+0.8
+7.5
+7.5
+―
+ EEUFR1H102(  )
+―
+ EEUFR1J820(  )
+200
+1000 
+100
+8.0
+15.0
+741 0.068
+200
+1000 
+10.0
+12.5
+761 0.063
+6000
+0.6
+5.0
+5.0
+8000
+0.6
+3.5
+5.0
+―
+ EEUFR1J101L(  )
+―
+ EEUFR1J101(  )
+200
+500 
+120
+8.0
+20.0
+930 0.050
+9000
+1000 
+10.0
+16.0
+1073 0.045
+8000
+0.6
+5.0
+5.0
+―
+0.6
+3.5
+5.0
+―
+ EEUFR1J121L(  )
+200
+3.5
+5.0
+―
+ EEUFR1J151L(  )
+200
+1000 
+ EEUFR1J121(  )
+200
+500 
+5.0
+―
+ EEUFR1J151(  )
+200
+500 
+10.0
+16.0
+1073 0.045
+8000
+0.6
+500 
+220
+10.0
+25.0
+1500 0.033
+10000
+0.6
+5.0
+5.0
+0.6
+5.0
+5.0
+―
+ EEUFR1J181(  )
+200
+180
+10.0
+20.0
+1229 0.035
+10000
+―
+ EEUFR1J221L(  )
+10.0
+25.0
+1500 0.033
+10000
+0.6
+5.0
+5.0
+―
+5.0
+5.0
+200
+500 
+―
+0.6
+5.0
+5.0
+―
+ EEUFR1J271U(  )
+200
+ EEUFR1J271L(  )
+200
+500 
+500 
+0.6
+5.0
+10000
+0.6
+5.0
+ EEUFR1J271(  )
+200
+500 
+330
+12.5
+20.0
+1582 0.033
+200
+500 
+5.0
+―
+ EEUFR1J331(  )
+12.5
+20.0
+1582 0.033
+10000
+0.6
+10000
+0.6
+5.0
+5.0
+―
+ EEUFR1J391(  )
+200
+500 
+470
+12.5
+25.0
+1995 0.027
+200
+500 
+5.0
+―
+ EEUFR1J471(  )
+390
+12.5
+25.0
+1995 0.027
+10000
+―
+560
+12.5
+30.0
+2528 0.024
+10000
+0.8
+5.0
+―
+―
+ EEUFR1J561L
+100
+―
+16.0
+20.0
+2153 0.029
+10000
+250 
+0.8
+7.5
+7.5
+―
+ EEUFR1J561S(  )
+100
+Should a safety concern arise regarding this product, please be sure to contact us immediately.
+01-Sep-25
+5.0
+―
+ EEUFR2A101(  )
+200
+500 
+100
+100
+10.0
+20.0
+1500 0.084
+10000
+0.6
+5.0
+680
+12.5
+35.0
+2780 0.021
+10000
+0.8
+Design and specifications are each subject to change without notice. Ask factory for the current technical specifications before purchase and/or use.
+820
+16.0
+25.0
+2988 0.024
+10000
+250 
+0.8
+7.5
+7.5
+―
+ EEUFR1J821(  )
+100
+5.0
+―
+―
+ EEUFR1J681L
+100
+
+Safety and Legal Matters to Be Observed
+■ Please be advised that this product and product specifications are subject to change without notice for
+improvement purposes. Therefore, please request and confirm the latest delivery specifications that explain 
+the specifications in detail before the final design, or purchase or use of the product, regardless of the 
+application. In addition, do not use this product in any way that deviates from the contents of the company's 
+delivery specifications.
+■ Unless otherwise specified in this catalog or the product specifications, this product is intended for use in
+general electronic equipment (AV products, home appliances, commercial equipment, office equipment, 
+information and communication equipment, etc.).
+When this product is used for the following special cases, the specification document suited to each application 
+shall be signed/sealed (with Panasonic Industry and the user) in advance..These include applications requiring 
+special quality and reliability, wherein their failures or malfunctions may directly threaten human life or cause harm 
+to the human body (e.g.: space/aircraft equipment, transportation/traffic equipment, combustion equipment, 
+medical equipment, disaster prevention/crime prevention equipment, safety equipment, etc.).
+　
+■ Please ensure safety through protection circuits, redundant circuits, etc., in the customer's system design so
+that a defect in our company's product will not endanger human life or cause other serious damage.
+■ This catalog shows the quality and performance of individual parts. The durability of parts varies depending on
+the usage environment and conditions. Therefore, please ensure to evaluate and confirm the state of each part 
+after it has been mounted in your product in the actual operating environment before use.
+If you have any doubts about the safety of this product, then please notify us immediately, and be sure to conduct 
+a technical review including the above protection circuits and redundant circuits at your company.
+■ The transportation of dangerous goods as designated by UN numbers, UN classifications, etc., does not apply
+to this product. In addition, when exporting products, product specifications, and technical information described 
+in this catalog, please comply with the laws and regulations of the countries to which the products are exported, 
+especially those concerning security export control.
+■ Each model of this product complies with the RoHS Directive (Restriction of the use of hazardous substances in
+electrical and electronic equipment) (2011/65/EU and (EU) 2015/863). The date of compliance with the RoHS 
+Directive and REACH Regulation varies depending on the product model.
+Further, if you are using product models in stock and are not sure whether or not they comply with the RoHS 
+Directive or REACH Regulation, please contact us by selecting "Sales Inquiry" from the inquiry form.
+■ During the manufacturing process of this product and any of its components and materials to be used,
+Panasonic Industry does not intentionally use ozone-depleting substances stipulated in the Montreal Protocol 
+and specific bromine-based flame retardants such as PBBs (Poly-Brominated Biphenyls) / PBDEs 
+(Poly-Brominated Diphenyl Ethers). In addition, the materials used in this product are all listed as existing 
+chemical substances based on the Act on the Regulation of Manufacture and Evaluation of Chemical Substances.
+■ With regard to the disposal of this product, please confirm the disposal method in each country and region
+where it is incorporated into your company's product and used.
+■ The technical information contained in this catalog is intended to show only typical operation and application
+circuit examples of this product. This catalog does not guarantee that such information does not infringe upon 
+the intellectual property rights of Panasonic Industry or any third party, nor imply that the license of such rights 
+has been granted.
+■ Design, materials, or process related to technical owned by Panasonic Industry are subject to change without
+notice.
+Panasonic Industry will assume no liability whatsoever if the use of our company's 
+products deviates from the contents of this catalog or does not comply with the 
+precautions. Please be advised of these restrictions.
+　Laws / Regulations / Intellectual property
+10-May-24
+Safety and Legal Matters to Be Observed
+　Product specifications and applications
+　Safety design and product evaluation
+
+Matters to Be Observed When Using This Product
+■ This product (capacitor) is intended for standard general-purpose use in electronic equipment, and is not designed for
+use in the specific environments described below. Using the product in such specific environments or service conditions, 
+therefore, may affect the performance of the product. 
+Check with us about the performance and reliability of the product first before using the product.
+(1) Used at a temperature higher than the upper limit category temperature or lower than the lower limit category 
+temperature.
+(2) Used in an environment where the product is directly exposed to water, salt water, oil, etc., or in a liquid, such as water,
+oil, chemicals, and organic solvents.
+(3) Used in an outdoor environment where the product is exposed to direct sunlight, ozone, radiation, UV-rays, etc., or in
+a dusty place.
+(4) Used in a wet place (dew concentration on a resistor, water leakage, etc.), a place exposed to sea breeze, or a place 
+filled with a corrosive gas, such as Cl2, H2S, NH3, SO2, or NOX.
+(5) Used in an environment filled with a toxic gas (hydrogen sulfide, sulfurous acid, nitrous acid, chlorine and chlorine
+compound, bromine and bromine compound, ammonia, etc.)
+(6) Used in an environment where static electricity and electromagnetic waves are strong.
+(7) Located close to  heating component or a flammable material, such as a vinyl cable. 
+(8) Sealed with a resin, etc.
+(9) Cleansed with a solvent, water, or a water-soluble cleaner, to remove solder flux after soldering.
+(10) Used in an environment where an acidic or alkali atmosphere is present.
+(11) Used in an environment where excessive vibration or mechanical shocks exceeding a specified range is applied to the 
+product (even if the applied vibration or mechanical shocks is within the specified range, it may cause the product to 
+resonate, in which a large vibration acceleration may be generated. Make sure to evaluate/check such vibrations or 
+mechanical shocks applied to the product in an actual condition).
+Panasonic Industry's conditions for vibration test are shown in the table below. Random waveform is not guaranteed. 
+For radial type, datasheet is also available if requested.
+(12) Used under a low atmospheric pressure condition or depressurized condition.
+■ The capacitor withstands an immersion cleaning process where the board carrying the product is immersed in a cleaning
+solution of 60 °C or lower for less than 5 minutes and withstands an ultrasonic cleaning process as well. However, ensure 
+to thoroughly rinse and dry it. Some cleaning methods erase or blur notes on the capacitor in some cases. 
+Some types of capacitors are not washable and some cleaning solutions cannot be used to clean a capacitor. 
+The following water-base solvents have been validated for cleaning. Contact a sales representative for more information.  
+Pine Alpha ST-100S, Cleanthrough 750H/750L/710M
+■ Keep the cleaning solution under strict contamination control (conductivity, pH, specific gravity, water content, etc.).
+A contaminated cleaning solution will show a high chlorine concentration, thereby corroding the interior of the capacitor 
+in some cases. Keep the flux concentration in the cleaning solution at a 2% mass or less.
+■ Unless otherwise specified in the specifications, avoid cleaning the capacitor with a halogen-based solvent, an alkaline
+solvent, a petroleum-based solvent, xylene, or acetone. Using a halogen-based solvent may result in a case where the 
+solvent infiltrates (leaks) into the capacitor and break-down releasing chlorine, which reacts with aluminum which can 
+corrode the capacitor interior. 1-1-1 trichloroethane is particularly harmful to a capacitor. Never use it to clean a capacitor.
+A alkaline solvent may corrode (dissolve) an aluminum case, a petroleum-based solvent and xylene may damage the 
+sealing rubber and accelerate its deterioration, and acetone may erase notes on the capacitor. 
+To protect the global environment, refrain from using an ozone depleting substance as the cleaning solution.
+■ Right after the board cleaning, subject the capacitor to a forced drying process so that no cleaning solution remains
+between the sealing part of the capacitor and the printed board.
+Set a drying temperature equal to or lower than the upper limit category temperature.
+Max p-p amplitube
+1.5ｍｍPP
+5ｍｍPP
+Max acceleration
+90 m/s2 (9.1 G)
+294 m/s2 (30 G)
+Direction
+X, Y, Z axis
+X, Y, Z axis
+Duration
+2 hours each direction
+2 hours each direction
+1-Sep-25
+　Use environments and cleaning conditions
+Matters to Be Observed When Using This Product
+(Conductive polymer hybrid aluminum electrolytic capacitor / Aluminum electrolytic capacitor)
+Item
+Standard
+Vibration-proof
+Waveform
+Sine
+Sine
+Frequency
+10 - 55 Hz
+5 - 2000 Hz
+
+Matters to Be Observed When Using This Product
+■ When an adhesive or coating agent is used to fix the capacitor and prevent dampening of the board, specific types of
+solvents included in some adhesives or coating agents may corrode the capacitor. Select a non-halogen solvent for the 
+material making up the adhesive or coating agent. Do not use a chloroprene-based polymer.
+Solidify and dry the adhesive or coating agent sufficiently to prevent its solvent component from remaining on the capacitor.
+Leave at least 1/3 of the sealing part unsealed on the surface to which the adhesive or coating agent is applied.
+■ Do not use the product in a structure sealed by potting or molding. The pressure of a molding resin on a capacitor may
+deform the capacitor. In addition, the resin covering the capacitor may affect its heat dissipation performance or may leak  
+into the product. These factors lead to the significant degradation of the capacitor’s characteristics and reliability.  
+There is also a concern that an electrolytic solution permeating the sealing rubber may agglomerate and cause a short 
+circuit.
+■ When the capacitor is used in a circuit where an impact voltage is applied or a high voltage is applied in a short period
+(transient phenomenon) or a high pulse voltage is applied, make sure to use the capacitor at a voltage equal to or 
+lower than its rated voltage.
+■ The product contains an electrolytic. Improper use of the capacitor leads not only to the rapid degradation of its
+characteristics but also to electrolytic leakage. These problems damage the circuit board and may lead to destruction 
+of the entire circuit set.
+■ When you see gas coming out of an activated pressure relief valve of a capacitor during use of a circuit set, turn off the
+main power supply of the circuit set or pull the power cord plug out of the wall-outlet. If you leave the power supply on and 
+the capacitor short-circuits, it will damage the circuit, or the gas can turn into a liquid, which will cause the circuit to short. 
+In the worst case scenarios, these events may develop into a more serious incident, such as burnout of the circuit set.
+The gas coming out of the pressure relief valve of a capacitor is not smoke, but is the electrolytic solution in its gaseous 
+state.
+■ When the pressure valve of the capacitor is activated, it emits a high-temperature gas of over 100 °C. Do not bring your 
+face near the valve. In case the gas jetting out of the valve gets in your eyes or comes into your mouth, wash your eyes 
+with water or rinse your mouth immediately. If the gas hits your skin, wash it away with soap.
+■ If you touch a terminal of the product during use of the circuit set, you will get an electric shock. The aluminum case of
+the product has an exposed part with no insulation. Do not touch the exposed part because it is as dangerous as the 
+terminal.
+■ Do not create a short circuit between terminals of the product by inserting a conductor therebetween. Do not splash a
+conductive solution, such as an acidic or alkali solution, on the capacitor. It puts the capacitor in a shorted state, 
+which causes the circuit to fail and destroys the capacitor as well.
+■ When a silicone material containing a relatively large amount of a low-molecular-weight siloxane is located close to the
+product, it may cause the capacitor problems with its electrical performance.
+■ When electronic equipment having the capacitor built therein is exported to overseas markets, wooden packaging
+materials are fumigated with a halogen compound, such as methyl bromide. In such cases, if the packaging material 
+subjected to the fumigation treatment is not dried sufficiently, halogen remaining on the packaging material may leach 
+into the capacitor during transportation and trigger a corrosive reaction in the capacitor. When carrying out the fumigation 
+treatment, carefully examine the dried packaging material to confirm that no halogen remains on the packaging material. 
+Never fumigate the entire electronic equipment in its packaged state.
+■ The product life is affected by temperatures. In general, a 10 °C drop in the temperature will double the life. 
+Use the capacitor at a temperature as low as possible from the upper limit category temperature.
+■ Using a capacitor under a temperature condition outside a specified temperature range causes heavy degradation of the
+capacitor characteristics, which may result in breakage of the capacitor. You need to confirm not only the ambient 
+temperature and internal temperature of the capacitor but also the temperature of the capacitor’s top surface, which is 
+given by radiant heat from built-in heating elements (a power transistor, IC, resistance, etc.) and heat generated by 
+self-heating induced by ripple current. Do not place a heating element on the back of the capacitor.
+1-Sep-25
+　Response to anomalies and handling conditions
+　Reliability and product life
+
+Matters to Be Observed When Using This Product
+■ The product life is given by the following equation.
+L2 = L1 x 2
+L1
+: Guaranteed life (h) at temperature T1 (°C)
+L2
+: Expected life (h) at temperature T2 (°C)
+* In the case of a hybrid type, category temperature (°C) 
+T1
+: Upper category temperature (°C)   
+ + temperature increase caused by rated ripple current (°C) 
+T2
+: Ambient temperature of capacitor (°C)
+⊿T
+: Temperature increase caused by ripple current (°C)
+■ Do not use the product for a period longer than its specified service life. A capacitor with its service life ended may
+cause the following problems: rapid degradation of the product characteristics, short circuit, unnecessary activation of 
+the pressure valve, electrolytic solution leakage, etc. Note that the estimated service life is not longer than 15 years due 
+to the limited environment-resistant property of the sealing rubber.
+■ When the capacitor is used under a high-temperature condition for a long period, minute cracks develop on the surface
+of the sealing rubber or the case surface turns brown in some cases. These phenomena, however, have no effects on 
+the reliability of the capacitor.
+■ A capacitor conforming to "AEC-Q200" refers to a capacitor having passed some or all of evaluation test items defined
+in AEC-Q200.
+To know the detailed specifications of each capacitor or specific evaluation test scores, please contact us.
+We issue a the product specifications sheet for each product ordered. Please confirm the product specifications 
+sheet when　you place an order to us.
+■ The electrical characteristics change as a result of temperature/frequency fluctuations. Take electrical characteristic
+changes into consideration when working out a circuit design.
+(1) Temperature fluctuations
+High-temperature condition
+: increase in leak current
+Low-temperature condition
+: decrease in capacitance, increase in the tangent to the loss angle, 
+increase in impedance (the hybrid type is excluded), etc.
+(2) Frequency fluctuations
+High-frequency condition
+: decrease in capacitance, increase in the tangent to the loss angle, 
+decrease in impedance, etc.
+Low-frequency condition
+: more heat generation by ripple current as a result of an increase in 
+equivalent series resistance
+■ The group of factors described below may lead to rapid degradation of the capacitor characteristics, short circuit, or
+electrolytic solution leakage. They may give rise to sharp heat/gas generation, too, in which case the increasing internal 
+pressure actuates the pressure valve, causes the electrolytic solution to leak out of the sealing part, and, in a worst-case 
+scenario, causes an explosion or ignition incident. When a capacitor bursts, it may scatter flammable materials 
+(electrolytic solution, etc.) in its surroundings.
+(1) Reverse voltage: The capacitor has preset polarity. Do not apply a reverse voltage to the capacitor.
+Confirm the polarity indicated on the capacitor and then use it.
+(2) Charge/discharge: Avoid using the capacitor in a circuit that frequently repeats sharp charge/discharge cycles or a
+circuit that requires　relatively slow but highly frequent charge/discharge cycles. In cases where you use the capacitor
+in such circuits, make sure to inform us of the charge/discharge conditions.
+Ensure that a rush current does not exceed 100 A.
+(3) ON/OFF: Avoid using the capacitor in an on/off circuit that repeatedly switches on and off more than 10,000 times a 
+day. In cases where you use the product in such circuits, make sure to inform us of the circuit conditions, etc.
+(4) Overvoltage: Do not apply an overvoltage higher than the rated voltage (higher than the surge voltage when the
+voltage application period is short). A peak value given by superposing a ripple voltage (AC component) on a DC 
+voltage must be equal to or lower than the rated voltage.
+(5) Ripple current: Do not allow an excessively large ripple current (larger than the rated ripple current specified in the 
+specifications) to flow through the capacitor. Even if a ripple current flow in the capacitor is equal to or smaller than the 
+rated ripple current, a reverse voltage flow may be generated in the capacitor when the DC bias voltage is low flow in 
+the capacitor. Keep the ripple current flow within a range in which no reverse voltage is generated.
+Even if the ripple current flow is kept equal to or smaller than the rated ripple current, using the capacitor for a period 
+longer than its service life intensifies the degradation of the ESR characteristics, resulting in an increase in internal 
+heating caused by the ripple current. As a result, the pressure valve is actuated, the exterior case or rubber swells, 
+the electrolytic solution leaks, and, in a worst-case scenario, the capacitor short-circuits and ignites or explodes.
+1-Sep-25
+　Circuit design and circuit board design
+T1-(T2+⊿T)
+10
+Where T1 ≧T2
+
+Matters to Be Observed When Using This Product
+■ Because the impedance of the capacitor is close to the circuit impedance, capacitors connected in parallel in the circuit
+may damage the whole current balance, in which, a ripple current higher than the rated ripple current may flow in some of 
+the capacitors. To prevent concentration of ripple current on the low-impedance side, use capacitors with the same part 
+number and avoid the partiality of cable impedances. Do not use capacitors connected in series.
+■ When the capacitor is mounted on a double-side wiring board, do not place the wiring pattern directly underneath where
+the product is mounted. In case the electrolytic solution leaks out, it may short-circuit the pattern and cause tracking or 
+migration. Consider a case where the product is a radial lead capacitor and is mounted on a board with through-holes. 
+In this case, if the sealing part of the capacitor and the board surface stick close to each other, solder flows up to  the 
+capacitor during a dip soldering process, which may cause short circuit between the anode and cathode of the capacitor.
+In such a case, the outer laminate of the product may be damaged. The position of holes, therefore, must be 
+determined properly.
+■ When designing a printed board carrying radial lead capacitors, make through-holes across the gap equal to the gap
+between the leads (terminals) of the capacitor. If the gap between the through-holes is narrower or wider than the gap 
+between the leads, stress is applied to the leads when the capacitor is inserted in the holes. 
+This may result in increasing leak current, short circuit, wire breaking, or electrolytic solution leakage.
+■ A capacitor which has the pressure valve on the case must be provided with a space formed above the pressure valve
+so that the pressure valve operates without hinderance. When the product is 6.3 mm to 16 mm in diameter, form a 
+space of 2 mm or larger. When the product is 18 mm in diameter, form a space of 3 mm or larger.
+If the space is not large enough, it will impair the operability of the pressure valve and may lead to an explosion 
+incident.
+■ Design the circuit in such that the pattern, especially a line pattern carrying high voltage or large current, is not
+formed above the pressure valve. Upon its activation, the pressure valve emits a flammable high-temperature gas 
+of over 100 °C. This may cause a secondary accident, such as the gas condensing on the pattern and the wire 
+sheathing being melted and catching on fire.
+■ Be careful with resonance of the capacitor mounted on the board. When a large load is applied to the capacitor at the
+frequency close to the resonance frequency, it may cause the capacitor to come off or widely change its characteristics.
+■ Completely isolate the case of the capacitor from the cathode terminal and the circuit pattern.
+■ The laminate or outer sleeve covering of the product is for displaying information on the product and does not
+have a guaranteed insulating function.
+The laminate may turn brown under a high-temperature condition. However, that does not cause problems with 
+markings recognition on the product surface or electrical performance.
+The outer sleeve may crack when dipped in a xylene or toluene solution and exposed to high temperature.
+■ Do not reuse a capacitor that was incorporated in a circuit set and energized in the past. Do not use a capacitor that
+was dropped on the floor.
+Do not use a capacitor in its compressed form. Compressing the capacitor makes it less airtight, resulting in poor 
+performance, shorter guaranteed life, and electrolyte leakage.
+■ A re-striking voltage is generated in a capacitor in some cases. In such a case, let the capacitor discharge through
+a resistor of about 1 kΩ.
+■ When a capacitor is kept in storage for a long period, you may find the leak current from the capacitor has increased.
+In such a case, make voltage adjustment through a resistor of about 1 kΩ.
+■ Before mounting the capacitor on the board, confirm the ratings (capacitance, rated voltage, etc.) and polarity of the
+capacitor. Before mounting a surface-mounted type capacitor, confirm its terminal dimensions and land size. 
+Before mounting a radial lead type capacitor, confirm its terminal interval and hole interval. If the terminal interval is 
+not the specified one, stress is applied to internal elements, which may cause problems, such as a short circuit 
+and insufficient mounting strength.
+When the terminal interval and the hole interval of the radial lead type capacitor do not match and therefore the 
+capacitor’s leads need to be readjusted, make sure that the readjustment does not apply any stress to the capacitor’s 
+body.
+　
+1-Sep-25
+　Mounting conditions
+
+Matters to Be Observed When Using This Product
+■ Confirm the applied pressure when using an automatically mounting process for a surface-mounted type capacitor.
+Excessive pressure may result in increasing leak current, short circuit, the capacitor coming off from the board, and the 
+like. When automatically mounting the radial lead type capacitor, check the wear of a cutter for cutting the leads and 
+confirm that the angle of clinching the leads is not too acute with regards to the board. Clinching the leads at too acute 
+of an angle applies tensile stress to the leads, which may lead to destruction of the capacitor.
+■ Follow soldering conditions (preheating, soldering temperature/time, the number of soldering, etc.)  in the specification
+sheet. A high peak temperature or a long heating time causes the degradation of electrical characteristics or a reduction 
+in the guaranteed life. Note that the specified soldering conditions indicate conditions under which the degradation of 
+capacitor characteristics do not occur but do not indicate conditions under which stable soldering can be performed. 
+Check and set conditions under which stable soldering can be performed, on a case-by-case basis. Measure the 
+temperature of the capacitor, using a thermocouple bonded to the top of the capacitor with an epoxy-based adhesive. 
+This temperature measurement must be conducted in a mass-production setup.
+■ The surface-mounted type capacitor is soldered by reflow soldering only. It cannot be soldered by flow soldering or
+dip soldering. Carry out reflow soldering with an atmospheric heat transfer method using infrared hot air, etc. 
+When carrying out two rounds of reflow processes, carry out the second reflow process after the capacitor’s 
+temperature settles down to a normal temperature. In the case of VPS reflow, a sharp rise in the capacitor 
+temperature causes a change in the characteristics and appearance of the capacitor, which may give rise to a problem 
+with capacitor mounting. We therefore recommend execution of VPS flow at a temperature rise rate of 3 °C/second or 
+lower. For more information about this matter, please contact us.
+■ Reflow soldering, under the reflow conditions we recommend, might result in discoloring or swelling of the case or
+crack formation on the ink mark indicating the cathode. These minor problems, however, do not affect the reliability 
+of the capacitor at all.
+■ A 6.3-mm diameter vibration-resistant capacitor has a structure that covers the auxiliary terminals to the sides of a
+seat plate. In cases where you confirm formation of a fillet on the sides of the auxiliary terminals by an image  
+recognition means, etc., examine soldering conditions for the formation of a sufficient fillet on the auxiliary terminals 
+in advance before carrying out the soldering process.
+Even if the formation of a sufficient fillet on the auxiliary terminals is not confirmed, a solder junction between the 
+lower surface of the auxiliary terminals and the board ensures vibration-resistant performance, meaning the 
+reliability of the capacitor is not affected.
+■ The radial lead type capacitor cannot be soldered by reflow soldering. Do not dip the capacitor body, except the leads,
+in solder. Heat from the solder raises the internal pressure of the capacitor and destroys it. Solder the capacitor 
+according to the following soldering conditions: soldering temperature of 260 °C ±5 °C and soldering time of 
+10 seconds ±1 second.
+■ Ensure that other components do not come in contact with the capacitor during the soldering process. When a
+radial lead type capacitor is set in close contact with the board, check the soldered state of the capacitor well, 
+because its sealing rubber has no venting structure.
+■ When manually soldering the capacitor, follow the soldering conditions (soldering temperature/time) specified in the
+specification sheet or adopt a soldering temperature of 350 °C and a soldering time of 3 seconds or less. 
+When you need to remove a capacitor already soldered, remove it after the solder is melted sufficiently so that no 
+stress is applied to the terminals of the capacitor. Be careful not to let the solder iron tip touch the capacitor.
+The solder iron touching the capacitor may damage the capacitor.
+■ When the temperature of the capacitor becomes extremely high due to preheating, solidification of the setting resin,
+etc., may cause the outer sleeve of the capacitor to shrink or crack. When treating the capacitor in a thermosetting 
+furnace, etc., place the capacitor in an atmosphere of 150 °C for 2 minutes or less.
+■ Do not tilt or twist the capacitor soldered to a printed board or hold the capacitor to carry the board or hit the capacitor
+against something. Such actions apply a force to the internal elements through the terminals and may destroy the 
+product.
+■ Using highly active halogenous (chlorine-based or bromic) solder flux poses a concern that residual solder flux
+will have negative impact on the performance and reliability of the capacitor. Check the influence of residual solder 
+flux before using such solder flux.
+1-Sep-25
+
+Matters to Be Observed When Using This Product / Reference information
+■ A capacitor left for a long period is prone to have a greater flow of leak current. This happens because the oxide film
+deteriorates under a no-load condition. Voltage application to the capacitor reduces the leak current. 
+However, at the start of voltage application, a large flow of film recovery current increases the leak current, which may 
+cause a circuit failure, etc.
+■ The storage period of a capacitor is 42 months from the shipment inspection day. However, the storage period of
+capacitors not listed in the following table is specified as 12 months.
+Store the capacitor in a place where a normal temperature condition (5°C to 35°C) and a normal humidity condition 
+(45% to 85%) are maintained and direct sunlight is blocked.
+■ Avoid storing the capacitor in environments not specified in the delivery specification sheet or in the following
+environments or conditions.
+(1) Used at a temperature higher than the upper limit category temperature or lower than the lower limit category 
+temperature
+(2) Environments where the capacitor is exposed to water, salt water, or oil
+(3) Environments where dew concentrates on the capacitor
+(4) Environments filled with a toxic gas (hydrogen sulfide, sulfurous acid, nitrous acid, chlorine and chlorine compound, 
+bromine and bromine compound, ammonia, etc.)
+(5) Environments where the product is exposed to ozone, radiation, UV-rays, etc.
+(6) Environments where vibrations or mechanical shocks exceeding a specified range is applied to the capacitor
+Some of the product use guidelines described herein are excerpted from JEITA RCR-2367D "Safety application guide 
+for fixed aluminum electrolytic capacitors for use in electronic equipment," a technical report issued by the Japan 
+Electronics and Information Technology Industries Association on October 2017. For more detailed information, 
+please see the above technical report.
+Panasonic Group provides customers with safe products and services. We are also making great efforts to protect our 
+intellectual property rights for Panasonic Group products. Typical patents related to this product are as follows. (Hybrid type)
+[U.S. patent]
+USP Nos. 7497879, 7621970, 9208954, 9595396, 9966200, 10453618, 10559432, 10679800, 10685788, 
+10790095, 10262806, 10896783, 11348739, 11094471, 12062501, 10563318, 10865494, 10373763
+Reference information
+　Guidelines
+　Intellectual property
+1-Sep-25
+Storage period
+42 months from the
+shipment inspection day
+Product category
+Hybrid type
+Surface-mounted type
+other than the hybrid
+type
+Radial lead type other
+than the hybrid type
+Series
+All hybrid series
+S (hot lead-free reflow), HA (hot lead-free reflow)
+HB (hot lead-free reflow, 5.4 mm in height)
+HC, HD, FCA, FC, FKA, FK, FKS, FP,FT, FH, FN
+TG, TK, TP, TC, TCU, TQ
+FC-A, FK-A, HD-A, TA-A, TP-A, FP-A
+　Storage conditions

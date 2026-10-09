@@ -1,0 +1,882 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+C1
+FOOTPRINT
+CAP-TH_BD5.0-P2.00-D0.5-FD-1
+PARTTYPE
+2.2uF50V5x11KM
+DESCRIPTION
+2.2 uF 50 V radial aluminum electrolytic capacitor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+2.2UF50V5X11KM
+Designator
+C1
+Device
+2.2uF50V5x11KM
+Unique ID
+C1
+Name
+2.2uF_50V
+Manufacturer
+Econd(米朗电子)
+Manufacturer Part
+2.2uF50V5x11KM
+Supplier
+LCSC
+Supplier Part
+C49304957
+
+*
+]
+[
+DESIGNATOR
+C2
+FOOTPRINT
+CAP-TH_BD6.3-P2.50-D0.5-FD
+PARTTYPE
+470UF16VE130GF
+DESCRIPTION
+470 uF 16 V radial aluminum electrolytic capacitor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+470UF16VE130GF
+Designator
+C2
+Device
+470UF16VE130GF
+Unique ID
+C2
+Name
+470uF_16V
+Manufacturer
+Econd(米朗电子)
+Manufacturer Part
+470UF16VE130GF
+Supplier
+LCSC
+Supplier Part
+C46867064
+
+*
+]
+[
+DESIGNATOR
+C3
+FOOTPRINT
+CAP-TH_BD10.0-P5.00-D0.6-FD
+PARTTYPE
+1000uF 16V
+DESCRIPTION
+1000 uF 16 V radial aluminum electrolytic capacitor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+1000UF 16V_C439782
+Designator
+C3
+Device
+1000uF 16V
+Unique ID
+C3
+Name
+1000uF_16V
+Manufacturer
+Chengx(承兴)
+Manufacturer Part
+1000uF 16V
+Supplier
+LCSC
+Supplier Part
+C439782
+
+*
+]
+[
+DESIGNATOR
+C4
+FOOTPRINT
+CAP-TH_L5.0-W2.5-P5.08-D0.7
+PARTTYPE
+CC1H104ZC1PD3F5O30MF
+DESCRIPTION
+100 nF 50 V Y5V through-hole ceramic capacitor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+CC1H104ZC1PD3F5O30MF
+Designator
+C4
+Device
+CC1H104ZC1PD3F5O30MF
+Unique ID
+C4
+Name
+100nF_50V
+Manufacturer
+Dersonic(德尔创)
+Manufacturer Part
+CC1H104ZC1PD3F5O30MF
+Supplier
+LCSC
+Supplier Part
+C254068
+
+*
+]
+[
+DESIGNATOR
+C5
+FOOTPRINT
+CAP-TH_BD6.3-P2.50-D0.5-FD
+PARTTYPE
+470UF16VE130GF
+DESCRIPTION
+470 uF 16 V radial aluminum electrolytic capacitor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+470UF16VE130GF
+Designator
+C5
+Device
+470UF16VE130GF
+Unique ID
+C5
+Name
+470uF_16V
+Manufacturer
+Econd(米朗电子)
+Manufacturer Part
+470UF16VE130GF
+Supplier
+LCSC
+Supplier Part
+C46867064
+
+*
+]
+[
+DESIGNATOR
+C6
+FOOTPRINT
+CAP-TH_L5.0-W2.5-P5.08-D0.7
+PARTTYPE
+CC1H104ZC1PD3F5O30MF
+DESCRIPTION
+100 nF 50 V Y5V through-hole ceramic capacitor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+CC1H104ZC1PD3F5O30MF
+Designator
+C6
+Device
+CC1H104ZC1PD3F5O30MF
+Unique ID
+C6
+Name
+100nF_50V
+Manufacturer
+Dersonic(德尔创)
+Manufacturer Part
+CC1H104ZC1PD3F5O30MF
+Supplier
+LCSC
+Supplier Part
+C254068
+
+*
+]
+[
+DESIGNATOR
+D1
+FOOTPRINT
+DO-35_BD2.2-L4.0-D0.50_1N4148
+PARTTYPE
+1N4148_C7437620
+DESCRIPTION
+XCH 1N4148 switching diode, 100 V, DO-35
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+1N4148_C7437620
+Designator
+D1
+Device
+1N4148_C7437620
+Unique ID
+D1
+Name
+1N4148
+Manufacturer
+XCH(旭昌辉)
+Manufacturer Part
+1N4148
+Supplier
+LCSC
+Supplier Part
+C7437620
+
+*
+]
+[
+DESIGNATOR
+D2
+FOOTPRINT
+DO-35_BD2.2-L4.0-D0.50_1N4148
+PARTTYPE
+1N4148_C7437620
+DESCRIPTION
+XCH 1N4148 switching diode, 100 V, DO-35
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+1N4148_C7437620
+Designator
+D2
+Device
+1N4148_C7437620
+Unique ID
+D2
+Name
+1N4148
+Manufacturer
+XCH(旭昌辉)
+Manufacturer Part
+1N4148
+Supplier
+LCSC
+Supplier Part
+C7437620
+
+*
+]
+[
+DESIGNATOR
+J1
+FOOTPRINT
+CONN-TH_P5.00_KF301-5.0-2P
+PARTTYPE
+KF301-5.0-2P
+DESCRIPTION
+KEFA KF301 2-pin 5.00 mm through-hole screw terminal
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+KF301-5.0-2P
+Designator
+J1
+Device
+KF301-5.0-2P
+Unique ID
+J1
+Name
+POWER_9V
+Manufacturer
+KEFA(科发)
+Manufacturer Part
+KF301-5.0-2P
+Supplier
+LCSC
+Supplier Part
+C474881
+
+*
+]
+[
+DESIGNATOR
+J2
+FOOTPRINT
+HDR-TH_2P-P2.54-V-F
+PARTTYPE
+2.54-1*2P母
+DESCRIPTION
+BOOMELE 1x2 2.54 mm through-hole female header
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+Header-Female-2.54_1x2
+Designator
+J2
+Device
+2.54-1*2P母
+Unique ID
+J2
+Name
+LINE_IN
+Manufacturer
+BOOMELE(博穆精密)
+Manufacturer Part
+2.54-1*2P母
+Supplier
+LCSC
+Supplier Part
+C49661
+
+*
+]
+[
+DESIGNATOR
+J3
+FOOTPRINT
+CONN-TH_P5.00_KF301-5.0-2P
+PARTTYPE
+KF301-5.0-2P
+DESCRIPTION
+KEFA KF301 2-pin 5.00 mm through-hole screw terminal
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+KF301-5.0-2P
+Designator
+J3
+Device
+KF301-5.0-2P
+Unique ID
+J3
+Name
+SPEAKER_8R
+Manufacturer
+KEFA(科发)
+Manufacturer Part
+KF301-5.0-2P
+Supplier
+LCSC
+Supplier Part
+C474881
+
+*
+]
+[
+DESIGNATOR
+Q1
+FOOTPRINT
+TO-92-3_L5.1-W4.1-P1.27-L-1
+PARTTYPE
+SS8050-TO-92
+DESCRIPTION
+DDF SS8050 NPN, 25 V, 1.5 A, 1 W, TO-92
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+SS8050-TO-92
+Designator
+Q1
+Device
+SS8050-TO-92
+Unique ID
+Q1
+Name
+SS8050-TO-92
+Manufacturer
+DDF(鼎德丰)
+Manufacturer Part
+SS8050-TO-92
+Supplier
+LCSC
+Supplier Part
+C50229519
+
+*
+]
+[
+DESIGNATOR
+Q2
+FOOTPRINT
+TO-92-3_L5.1-W4.1-P1.27-L-1
+PARTTYPE
+SS8050-TO-92
+DESCRIPTION
+DDF SS8050 NPN, 25 V, 1.5 A, 1 W, TO-92
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+SS8050-TO-92
+Designator
+Q2
+Device
+SS8050-TO-92
+Unique ID
+Q2
+Name
+SS8050-TO-92
+Manufacturer
+DDF(鼎德丰)
+Manufacturer Part
+SS8050-TO-92
+Supplier
+LCSC
+Supplier Part
+C50229519
+
+*
+]
+[
+DESIGNATOR
+Q3
+FOOTPRINT
+TO-92-3_L5.1-W4.1-P1.27-L-1
+PARTTYPE
+SS8550-TO-92
+DESCRIPTION
+DDF SS8550 PNP, 25 V, 1.5 A, TO-92
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+SS8550-TO-92
+Designator
+Q3
+Device
+SS8550-TO-92
+Unique ID
+Q3
+Name
+SS8550-TO-92
+Manufacturer
+DDF(鼎德丰)
+Manufacturer Part
+SS8550-TO-92
+Supplier
+LCSC
+Supplier Part
+C50229517
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+RES-TH_BD2.3-L6.5-P10.50-D0.5
+PARTTYPE
+MF1/4W-4.7KΩ±1% T
+DESCRIPTION
+4.7 kohm 1% 250 mW through-hole metal-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+MF1/4W-4.7KΩ±1% T52
+Designator
+R1
+Device
+MF1/4W-4.7KΩ±1% T
+Unique ID
+R1
+Name
+4.7k
+Manufacturer
+CCO(千志电子)
+Manufacturer Part
+MF1/4W-4.7KΩ±1% T
+Supplier
+LCSC
+Supplier Part
+C119339
+
+*
+]
+[
+DESIGNATOR
+R2
+FOOTPRINT
+RES-TH_BD2.3-L6.5-P10.50-D0.5
+PARTTYPE
+MF1/4W-27KΩ±1%T52
+DESCRIPTION
+27 kohm 1% 250 mW through-hole metal-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+MF1/4W-27KΩ±1%T52
+Designator
+R2
+Device
+MF1/4W-27KΩ±1%T52
+Unique ID
+R2
+Name
+27k
+Manufacturer
+华星机电
+Manufacturer Part
+MF1/4W-27KΩ±1%T52
+Supplier
+LCSC
+Supplier Part
+C714024
+
+*
+]
+[
+DESIGNATOR
+R3
+FOOTPRINT
+RES-TH_BD2.3-L6.5-P10.50-D0.5
+PARTTYPE
+MF1/4W-10KΩ±1% T
+DESCRIPTION
+10 kohm 1% 250 mW through-hole metal-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+MF1/4W-10KΩ±1% T52
+Designator
+R3
+Device
+MF1/4W-10KΩ±1% T
+Unique ID
+R3
+Name
+10k
+Manufacturer
+CCO(千志电子)
+Manufacturer Part
+MF1/4W-10KΩ±1% T
+Supplier
+LCSC
+Supplier Part
+C119347
+
+*
+]
+[
+DESIGNATOR
+R4
+FOOTPRINT
+RES-TH_BD2.3-L6.5-P10.50-D0.5
+PARTTYPE
+MF1/4W-100Ω±1% T
+DESCRIPTION
+100 ohm 1% 250 mW through-hole metal-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+MF1/4W-100Ω±1% T52
+Designator
+R4
+Device
+MF1/4W-100Ω±1% T
+Unique ID
+R4
+Name
+100R
+Manufacturer
+CCO(千志电子)
+Manufacturer Part
+MF1/4W-100Ω±1% T
+Supplier
+LCSC
+Supplier Part
+C119304
+
+*
+]
+[
+DESIGNATOR
+R5
+FOOTPRINT
+RES-TH_BD2.3-L6.5-P10.50-D0.5
+PARTTYPE
+MF1/4W-1KΩ±1%T52
+DESCRIPTION
+1 kohm 1% 250 mW through-hole metal-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+MF1/4W-1KΩ±1%T52
+Designator
+R5
+Device
+MF1/4W-1KΩ±1%T52
+Unique ID
+R5
+Name
+1k
+Manufacturer
+华星机电
+Manufacturer Part
+MF1/4W-1KΩ±1%T52
+Supplier
+LCSC
+Supplier Part
+C713997
+
+*
+]
+[
+DESIGNATOR
+R6
+FOOTPRINT
+RES-TH_BD3.5-L9.0-P13.00-D0.5
+PARTTYPE
+CR1/2W-1Ω±5%-XT52
+DESCRIPTION
+1 ohm 5% 500 mW through-hole carbon-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+CR1/2W-1Ω±5%-XT52
+Designator
+R6
+Device
+CR1/2W-1Ω±5%-XT52
+Unique ID
+R6
+Name
+1R_0.5W
+Manufacturer
+VO(翔胜)
+Manufacturer Part
+CR1/2W-1Ω±5%-XT52
+Supplier
+LCSC
+Supplier Part
+C2894479
+
+*
+]
+[
+DESIGNATOR
+R7
+FOOTPRINT
+RES-TH_BD3.5-L9.0-P13.00-D0.5
+PARTTYPE
+CR1/2W-1Ω±5%-XT52
+DESCRIPTION
+1 ohm 5% 500 mW through-hole carbon-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+CR1/2W-1Ω±5%-XT52
+Designator
+R7
+Device
+CR1/2W-1Ω±5%-XT52
+Unique ID
+R7
+Name
+1R_0.5W
+Manufacturer
+VO(翔胜)
+Manufacturer Part
+CR1/2W-1Ω±5%-XT52
+Supplier
+LCSC
+Supplier Part
+C2894479
+
+*
+]
+[
+DESIGNATOR
+R8
+FOOTPRINT
+RES-TH_BD3.5-L9.0-P13.00-D0.5
+PARTTYPE
+CR1/2W-10Ω±5%-XT52
+DESCRIPTION
+10 ohm 5% 500 mW through-hole carbon-film resistor
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Symbol
+CR1/2W-10Ω±5%-XT52
+Designator
+R8
+Device
+CR1/2W-10Ω±5%-XT52
+Unique ID
+R8
+Name
+10R_0.5W
+Manufacturer
+VO(翔胜)
+Manufacturer Part
+CR1/2W-10Ω±5%-XT52
+Supplier
+LCSC
+Supplier Part
+C2894474
+
+*
+]
+(
+VCC_9V
+J1-1 KF301-5.0-2P-1 PASSIVE
+Q2-3 SS8050-TO-92-C PASSIVE
+R5-1 MF1/4W-1KΩ±1%T52-1 PASSIVE
+C4-1 CC1H104ZC1PD3F5O30MF-1 PASSIVE
+C5-1 470UF16VE130GF-+ PASSIVE
+)
+(
+GND
+J1-2 KF301-5.0-2P-2 PASSIVE
+J2-2 2.54-1*2P母-2 PASSIVE
+J3-2 KF301-5.0-2P-2 PASSIVE
+Q3-3 SS8550-TO-92-C PASSIVE
+R3-2 MF1/4W-10KΩ±1%_T-2 PASSIVE
+R4-2 MF1/4W-100Ω±1%_T-2 PASSIVE
+C2-2 470UF16VE130GF-- PASSIVE
+C4-2 CC1H104ZC1PD3F5O30MF-2 PASSIVE
+C5-2 470UF16VE130GF-- PASSIVE
+C6-2 CC1H104ZC1PD3F5O30MF-2 PASSIVE
+)
+(
+AUDIO_IN
+J2-1 2.54-1*2P母-1 PASSIVE
+C1-2 2.2uF50V5x11KM-- PASSIVE
+)
+(
+N_AUTO_CF99455FBBE5
+C1-1 2.2uF50V5x11KM-+ PASSIVE
+R1-1 MF1/4W-4.7KΩ±1%_T-1 PASSIVE
+)
+(
+N_AUTO_86852BDEE65D
+R1-2 MF1/4W-4.7KΩ±1%_T-2 PASSIVE
+R2-2 MF1/4W-27KΩ±1%T52-2 PASSIVE
+R3-1 MF1/4W-10KΩ±1%_T-1 PASSIVE
+Q1-2 SS8050-TO-92-B INPUT
+)
+(
+N_AUTO_E911D3A1A5E5
+Q1-1 SS8050-TO-92-E PASSIVE
+R4-1 MF1/4W-100Ω±1%_T-1 PASSIVE
+C2-1 470UF16VE130GF-+ PASSIVE
+)
+(
+N_AUTO_1ECB3C82819F
+R5-2 MF1/4W-1KΩ±1%T52-2 PASSIVE
+D1-1 1N4148_C7437620-A PASSIVE
+Q2-2 SS8050-TO-92-B INPUT
+)
+(
+N_AUTO_860AE4F638A4
+D1-2 1N4148_C7437620-K PASSIVE
+D2-1 1N4148_C7437620-A PASSIVE
+)
+(
+N_AUTO_3070119DC05F
+D2-2 1N4148_C7437620-K PASSIVE
+Q1-3 SS8050-TO-92-C PASSIVE
+Q3-2 SS8550-TO-92-B INPUT
+)
+(
+N_AUTO_0835FB31AEFA
+Q2-1 SS8050-TO-92-E PASSIVE
+R6-1 CR1/2W-1Ω±5%-XT52-1 PASSIVE
+)
+(
+N_AUTO_FAB28BCE7755
+Q3-1 SS8550-TO-92-E PASSIVE
+R7-1 CR1/2W-1Ω±5%-XT52-1 PASSIVE
+)
+(
+OUT_INT
+R6-2 CR1/2W-1Ω±5%-XT52-2 PASSIVE
+R7-2 CR1/2W-1Ω±5%-XT52-2 PASSIVE
+R2-1 MF1/4W-27KΩ±1%T52-1 PASSIVE
+C3-1 1000uF_16V-+ PASSIVE
+)
+(
+SPEAKER_OUT
+C3-2 1000uF_16V-- PASSIVE
+J3-1 KF301-5.0-2P-1 PASSIVE
+R8-1 CR1/2W-10Ω±5%-XT52-1 PASSIVE
+)
+(
+N_AUTO_9060B2F33CB4
+R8-2 CR1/2W-10Ω±5%-XT52-2 PASSIVE
+C6-1 CC1H104ZC1PD3F5O30MF-1 PASSIVE
+)

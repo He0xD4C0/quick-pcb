@@ -1,0 +1,3856 @@
+[
+  {
+    "reference": "C1",
+    "alias": "CIL",
+    "part": "ECW-FD2W475J.1",
+    "physical_key": "c_signal_4u7film",
+    "supplier_id": "C3797836",
+    "original_device_uuid": "ffefbe4aba6d48a8ad247385e69056a6",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "eec5284f00934088",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_symbol": {
+      "uuid": "72641dc7ecef9a28",
+      "libraryUuid": "",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_footprint": {
+      "uuid": "0d6081951ba90f2d",
+      "libraryUuid": "",
+      "name": "CAP-TH_L25.3-W11.7-P22.50-D1.2"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C2",
+    "alias": "CBL",
+    "part": "LLS2G221MELA.1",
+    "physical_key": "c_hv_220u400",
+    "supplier_id": "C1582982",
+    "original_device_uuid": "2359bc51b51141c793924f223227e52c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e60446776d7f4f9a",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_symbol": {
+      "uuid": "a37ae999cbd49d07",
+      "libraryUuid": "",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_footprint": {
+      "uuid": "7593a1130d168fdf",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD25.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C3",
+    "alias": "CFL",
+    "part": "ECW-FD2W475J.1",
+    "physical_key": "c_signal_4u7film",
+    "supplier_id": "C3797836",
+    "original_device_uuid": "ffefbe4aba6d48a8ad247385e69056a6",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "eec5284f00934088",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_symbol": {
+      "uuid": "72641dc7ecef9a28",
+      "libraryUuid": "",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_footprint": {
+      "uuid": "0d6081951ba90f2d",
+      "libraryUuid": "",
+      "name": "CAP-TH_L25.3-W11.7-P22.50-D1.2"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C4",
+    "alias": "CKL",
+    "part": "EEUFR1E222L.1",
+    "physical_key": "c_cathode_2200u25",
+    "supplier_id": "C178698",
+    "original_device_uuid": "abff43a0a9634c059a800ff2f7389f23",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "90ffe5d2011ca7dc",
+      "name": "EEUFR1E222L"
+    },
+    "actual_project_symbol": {
+      "uuid": "b241f8a7343baede",
+      "libraryUuid": "",
+      "name": "EEUFR1E222L"
+    },
+    "actual_project_footprint": {
+      "uuid": "64be91d5063f655f",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD12.5-P5.00-D0.6-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C5",
+    "alias": "COL",
+    "part": "LLS2E102MELB.1",
+    "physical_key": "c_output_1000u250",
+    "supplier_id": "C433188",
+    "original_device_uuid": "29b502e332984cc9bf4c2b2e1b661605",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "0cea2688d1952be8",
+      "name": "LLS2E102MELB"
+    },
+    "actual_project_symbol": {
+      "uuid": "5fc46a439548e858",
+      "libraryUuid": "",
+      "name": "LLS2E102MELB"
+    },
+    "actual_project_footprint": {
+      "uuid": "b4540cfe21860b02",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD30.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C6",
+    "alias": "CIR",
+    "part": "ECW-FD2W475J.1",
+    "physical_key": "c_signal_4u7film",
+    "supplier_id": "C3797836",
+    "original_device_uuid": "ffefbe4aba6d48a8ad247385e69056a6",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "eec5284f00934088",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_symbol": {
+      "uuid": "72641dc7ecef9a28",
+      "libraryUuid": "",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_footprint": {
+      "uuid": "0d6081951ba90f2d",
+      "libraryUuid": "",
+      "name": "CAP-TH_L25.3-W11.7-P22.50-D1.2"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C7",
+    "alias": "CBR",
+    "part": "LLS2G221MELA.1",
+    "physical_key": "c_hv_220u400",
+    "supplier_id": "C1582982",
+    "original_device_uuid": "2359bc51b51141c793924f223227e52c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e60446776d7f4f9a",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_symbol": {
+      "uuid": "a37ae999cbd49d07",
+      "libraryUuid": "",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_footprint": {
+      "uuid": "7593a1130d168fdf",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD25.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C8",
+    "alias": "CFR",
+    "part": "ECW-FD2W475J.1",
+    "physical_key": "c_signal_4u7film",
+    "supplier_id": "C3797836",
+    "original_device_uuid": "ffefbe4aba6d48a8ad247385e69056a6",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "eec5284f00934088",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_symbol": {
+      "uuid": "72641dc7ecef9a28",
+      "libraryUuid": "",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_footprint": {
+      "uuid": "0d6081951ba90f2d",
+      "libraryUuid": "",
+      "name": "CAP-TH_L25.3-W11.7-P22.50-D1.2"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C9",
+    "alias": "CKR",
+    "part": "EEUFR1E222L.1",
+    "physical_key": "c_cathode_2200u25",
+    "supplier_id": "C178698",
+    "original_device_uuid": "abff43a0a9634c059a800ff2f7389f23",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "90ffe5d2011ca7dc",
+      "name": "EEUFR1E222L"
+    },
+    "actual_project_symbol": {
+      "uuid": "b241f8a7343baede",
+      "libraryUuid": "",
+      "name": "EEUFR1E222L"
+    },
+    "actual_project_footprint": {
+      "uuid": "64be91d5063f655f",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD12.5-P5.00-D0.6-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C10",
+    "alias": "COR",
+    "part": "LLS2E102MELB.1",
+    "physical_key": "c_output_1000u250",
+    "supplier_id": "C433188",
+    "original_device_uuid": "29b502e332984cc9bf4c2b2e1b661605",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "0cea2688d1952be8",
+      "name": "LLS2E102MELB"
+    },
+    "actual_project_symbol": {
+      "uuid": "5fc46a439548e858",
+      "libraryUuid": "",
+      "name": "LLS2E102MELB"
+    },
+    "actual_project_footprint": {
+      "uuid": "b4540cfe21860b02",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD30.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C11",
+    "alias": "CHV1",
+    "part": "LLS2G221MELA.1",
+    "physical_key": "c_hv_220u400",
+    "supplier_id": "C1582982",
+    "original_device_uuid": "2359bc51b51141c793924f223227e52c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e60446776d7f4f9a",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_symbol": {
+      "uuid": "a37ae999cbd49d07",
+      "libraryUuid": "",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_footprint": {
+      "uuid": "7593a1130d168fdf",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD25.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C12",
+    "alias": "CHV2",
+    "part": "LLS2G221MELA.1",
+    "physical_key": "c_hv_220u400",
+    "supplier_id": "C1582982",
+    "original_device_uuid": "2359bc51b51141c793924f223227e52c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e60446776d7f4f9a",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_symbol": {
+      "uuid": "a37ae999cbd49d07",
+      "libraryUuid": "",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_footprint": {
+      "uuid": "7593a1130d168fdf",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD25.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C13",
+    "alias": "CZREF",
+    "part": "EEUFR1E471.1",
+    "physical_key": "c_control_470u25",
+    "supplier_id": "C407944",
+    "original_device_uuid": "4d7d029e59a5436d8336cc799e273d05",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e7756084f998e097",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_symbol": {
+      "uuid": "474c13ef707bd0c4",
+      "libraryUuid": "",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_footprint": {
+      "uuid": "efcb976d8cdbd84e",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD10.0-P5.00-D1.0-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C14",
+    "alias": "CGATE",
+    "part": "ECW-FD2W475J.1",
+    "physical_key": "c_signal_4u7film",
+    "supplier_id": "C3797836",
+    "original_device_uuid": "ffefbe4aba6d48a8ad247385e69056a6",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "eec5284f00934088",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_symbol": {
+      "uuid": "72641dc7ecef9a28",
+      "libraryUuid": "",
+      "name": "ECW-FD2W475J"
+    },
+    "actual_project_footprint": {
+      "uuid": "0d6081951ba90f2d",
+      "libraryUuid": "",
+      "name": "CAP-TH_L25.3-W11.7-P22.50-D1.2"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C15",
+    "alias": "CBP",
+    "part": "LLS2G221MELA.1",
+    "physical_key": "c_hv_220u400",
+    "supplier_id": "C1582982",
+    "original_device_uuid": "2359bc51b51141c793924f223227e52c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e60446776d7f4f9a",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_symbol": {
+      "uuid": "a37ae999cbd49d07",
+      "libraryUuid": "",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_footprint": {
+      "uuid": "7593a1130d168fdf",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD25.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C16",
+    "alias": "CHF1",
+    "part": "EEUFR1E332.1",
+    "physical_key": "c_heater_3300u25",
+    "supplier_id": "C407892",
+    "original_device_uuid": "78d310f42d8245e683c2664bde913fb0",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2cb7def73b0955cf",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_symbol": {
+      "uuid": "01c6f9a449bed5aa",
+      "libraryUuid": "",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_footprint": {
+      "uuid": "ff175201325425ca",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD16.0-P7.50-D1.2-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C17",
+    "alias": "CHF2",
+    "part": "EEUFR1E332.1",
+    "physical_key": "c_heater_3300u25",
+    "supplier_id": "C407892",
+    "original_device_uuid": "78d310f42d8245e683c2664bde913fb0",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2cb7def73b0955cf",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_symbol": {
+      "uuid": "01c6f9a449bed5aa",
+      "libraryUuid": "",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_footprint": {
+      "uuid": "ff175201325425ca",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD16.0-P7.50-D1.2-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C18",
+    "alias": "CHF3",
+    "part": "EEUFR1E332.1",
+    "physical_key": "c_heater_3300u25",
+    "supplier_id": "C407892",
+    "original_device_uuid": "78d310f42d8245e683c2664bde913fb0",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2cb7def73b0955cf",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_symbol": {
+      "uuid": "01c6f9a449bed5aa",
+      "libraryUuid": "",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_footprint": {
+      "uuid": "ff175201325425ca",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD16.0-P7.50-D1.2-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C19",
+    "alias": "CHF4",
+    "part": "EEUFR1E332.1",
+    "physical_key": "c_heater_3300u25",
+    "supplier_id": "C407892",
+    "original_device_uuid": "78d310f42d8245e683c2664bde913fb0",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2cb7def73b0955cf",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_symbol": {
+      "uuid": "01c6f9a449bed5aa",
+      "libraryUuid": "",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_footprint": {
+      "uuid": "ff175201325425ca",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD16.0-P7.50-D1.2-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C20",
+    "alias": "CHO",
+    "part": "EEUFR1E471.1",
+    "physical_key": "c_control_470u25",
+    "supplier_id": "C407944",
+    "original_device_uuid": "4d7d029e59a5436d8336cc799e273d05",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e7756084f998e097",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_symbol": {
+      "uuid": "474c13ef707bd0c4",
+      "libraryUuid": "",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_footprint": {
+      "uuid": "efcb976d8cdbd84e",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD10.0-P5.00-D1.0-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C21",
+    "alias": "CHA",
+    "part": "EEUFR1E101.1",
+    "physical_key": "c_delay_100u25",
+    "supplier_id": "C264049",
+    "original_device_uuid": "92d58b8c28184c8f94049ff646f545cb",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2703d4499a238804",
+      "name": "EEUFR1E101"
+    },
+    "actual_project_symbol": {
+      "uuid": "49053d887f9d99b7",
+      "libraryUuid": "",
+      "name": "EEUFR1E101"
+    },
+    "actual_project_footprint": {
+      "uuid": "a020d4ca37a90458",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD6.3-P2.50-D1.0-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C22",
+    "alias": "CHE",
+    "part": "LLS2G221MELA.1",
+    "physical_key": "c_hv_220u400",
+    "supplier_id": "C1582982",
+    "original_device_uuid": "2359bc51b51141c793924f223227e52c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e60446776d7f4f9a",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_symbol": {
+      "uuid": "a37ae999cbd49d07",
+      "libraryUuid": "",
+      "name": "LLS2G221MELA"
+    },
+    "actual_project_footprint": {
+      "uuid": "7593a1130d168fdf",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD25.0-P10.00-D2.3-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C23",
+    "alias": "CAUX",
+    "part": "EEUFR1E332.1",
+    "physical_key": "c_heater_3300u25",
+    "supplier_id": "C407892",
+    "original_device_uuid": "78d310f42d8245e683c2664bde913fb0",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2cb7def73b0955cf",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_symbol": {
+      "uuid": "01c6f9a449bed5aa",
+      "libraryUuid": "",
+      "name": "EEUFR1E332"
+    },
+    "actual_project_footprint": {
+      "uuid": "ff175201325425ca",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD16.0-P7.50-D1.2-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C24",
+    "alias": "CAXZ",
+    "part": "EEUFR1E471.1",
+    "physical_key": "c_control_470u25",
+    "supplier_id": "C407944",
+    "original_device_uuid": "4d7d029e59a5436d8336cc799e273d05",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e7756084f998e097",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_symbol": {
+      "uuid": "474c13ef707bd0c4",
+      "libraryUuid": "",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_footprint": {
+      "uuid": "efcb976d8cdbd84e",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD10.0-P5.00-D1.0-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C25",
+    "alias": "CAXO",
+    "part": "EEUFR1E471.1",
+    "physical_key": "c_control_470u25",
+    "supplier_id": "C407944",
+    "original_device_uuid": "4d7d029e59a5436d8336cc799e273d05",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e7756084f998e097",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_symbol": {
+      "uuid": "474c13ef707bd0c4",
+      "libraryUuid": "",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_footprint": {
+      "uuid": "efcb976d8cdbd84e",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD10.0-P5.00-D1.0-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "C26",
+    "alias": "CT",
+    "part": "EEUFR1E471.1",
+    "physical_key": "c_control_470u25",
+    "supplier_id": "C407944",
+    "original_device_uuid": "4d7d029e59a5436d8336cc799e273d05",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e7756084f998e097",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_symbol": {
+      "uuid": "474c13ef707bd0c4",
+      "libraryUuid": "",
+      "name": "EEUFR1E471"
+    },
+    "actual_project_footprint": {
+      "uuid": "efcb976d8cdbd84e",
+      "libraryUuid": "",
+      "name": "CAP-TH_BD10.0-P5.00-D1.0-FD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D1",
+    "alias": "DH1",
+    "part": "UF4007_C212802.1",
+    "physical_key": "d_hv_uf4007",
+    "supplier_id": "C212802",
+    "original_device_uuid": "d1b19e102e6c41ba8cd0ee2f16ec044f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "86fa3e485f376459",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_symbol": {
+      "uuid": "3de6135a8bfbc1ce",
+      "libraryUuid": "",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D2",
+    "alias": "DH2",
+    "part": "UF4007_C212802.1",
+    "physical_key": "d_hv_uf4007",
+    "supplier_id": "C212802",
+    "original_device_uuid": "d1b19e102e6c41ba8cd0ee2f16ec044f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "86fa3e485f376459",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_symbol": {
+      "uuid": "3de6135a8bfbc1ce",
+      "libraryUuid": "",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D3",
+    "alias": "DH3",
+    "part": "UF4007_C212802.1",
+    "physical_key": "d_hv_uf4007",
+    "supplier_id": "C212802",
+    "original_device_uuid": "d1b19e102e6c41ba8cd0ee2f16ec044f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "86fa3e485f376459",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_symbol": {
+      "uuid": "3de6135a8bfbc1ce",
+      "libraryUuid": "",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D4",
+    "alias": "DH4",
+    "part": "UF4007_C212802.1",
+    "physical_key": "d_hv_uf4007",
+    "supplier_id": "C212802",
+    "original_device_uuid": "d1b19e102e6c41ba8cd0ee2f16ec044f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "86fa3e485f376459",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_symbol": {
+      "uuid": "3de6135a8bfbc1ce",
+      "libraryUuid": "",
+      "name": "UF4007_C212802"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D5",
+    "alias": "DZGS",
+    "part": "1N4742A_C140853.1",
+    "physical_key": "z_gate_12v",
+    "supplier_id": "C140853",
+    "original_device_uuid": "fc1fd9cc7a7542e3b993535b76b62c28",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "4db592d462b8c660",
+      "name": "1N4742A_C140853"
+    },
+    "actual_project_symbol": {
+      "uuid": "c441d0914de6b786",
+      "libraryUuid": "",
+      "name": "1N4742A_C140853"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D6",
+    "alias": "DZREF",
+    "part": "BZX79-B6V2,113.1",
+    "physical_key": "z_ref_6v2",
+    "supplier_id": "C503457",
+    "original_device_uuid": "556f0cb9df54441f8168a0a56ce0e7b2",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "3ab9c31664eda2c0",
+      "name": "BZX79-B6V2,113"
+    },
+    "actual_project_symbol": {
+      "uuid": "b9a08c4231a44433",
+      "libraryUuid": "",
+      "name": "BZX79-B6V2,113"
+    },
+    "actual_project_footprint": {
+      "uuid": "00ec3615f603fc04",
+      "libraryUuid": "",
+      "name": "DO-35_BD2.0-L4.2-P8.20-D0.5-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D7",
+    "alias": "DF1",
+    "part": "SB560-E3/54.1",
+    "physical_key": "d_heater_sb560",
+    "supplier_id": "C506560",
+    "original_device_uuid": "71bdd48983524a1d95327c3c8ac5741b",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "d7eb809c906956be",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_symbol": {
+      "uuid": "94503ca350b8e7aa",
+      "libraryUuid": "",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_footprint": {
+      "uuid": "40a35c2d275b1c5e",
+      "libraryUuid": "",
+      "name": "DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D8",
+    "alias": "DF2",
+    "part": "SB560-E3/54.1",
+    "physical_key": "d_heater_sb560",
+    "supplier_id": "C506560",
+    "original_device_uuid": "71bdd48983524a1d95327c3c8ac5741b",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "d7eb809c906956be",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_symbol": {
+      "uuid": "94503ca350b8e7aa",
+      "libraryUuid": "",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_footprint": {
+      "uuid": "40a35c2d275b1c5e",
+      "libraryUuid": "",
+      "name": "DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D9",
+    "alias": "DF3",
+    "part": "SB560-E3/54.1",
+    "physical_key": "d_heater_sb560",
+    "supplier_id": "C506560",
+    "original_device_uuid": "71bdd48983524a1d95327c3c8ac5741b",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "d7eb809c906956be",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_symbol": {
+      "uuid": "94503ca350b8e7aa",
+      "libraryUuid": "",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_footprint": {
+      "uuid": "40a35c2d275b1c5e",
+      "libraryUuid": "",
+      "name": "DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D10",
+    "alias": "DF4",
+    "part": "SB560-E3/54.1",
+    "physical_key": "d_heater_sb560",
+    "supplier_id": "C506560",
+    "original_device_uuid": "71bdd48983524a1d95327c3c8ac5741b",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "d7eb809c906956be",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_symbol": {
+      "uuid": "94503ca350b8e7aa",
+      "libraryUuid": "",
+      "name": "SB560-E3/54"
+    },
+    "actual_project_footprint": {
+      "uuid": "40a35c2d275b1c5e",
+      "libraryUuid": "",
+      "name": "DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D11",
+    "alias": "DHR",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D12",
+    "alias": "DHA",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D13",
+    "alias": "DA1",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D14",
+    "alias": "DA2",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D15",
+    "alias": "DA3",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D16",
+    "alias": "DA4",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D17",
+    "alias": "DZAX",
+    "part": "BZX79-B13,113.1",
+    "physical_key": "z_aux_13v",
+    "supplier_id": "C550686",
+    "original_device_uuid": "10e6a59241544f3ba803e34fd5a0cae9",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "39dfdd3d81a97d42",
+      "name": "BZX79-B13,113"
+    },
+    "actual_project_symbol": {
+      "uuid": "9ff5c4e9510b3308",
+      "libraryUuid": "",
+      "name": "BZX79-B13,113"
+    },
+    "actual_project_footprint": {
+      "uuid": "b5cb3b9a900ec76a",
+      "libraryUuid": "",
+      "name": "SOD-27_BD1.9-L4.3-P8.25-D0.6-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D18",
+    "alias": "DZT",
+    "part": "1N4733A_C140851.1",
+    "physical_key": "z_timer_5v1",
+    "supplier_id": "C140851",
+    "original_device_uuid": "ea6949e100d2471ba7269881e1cdbccc",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8ead6cee278d9ae4",
+      "name": "1N4733A_C140851"
+    },
+    "actual_project_symbol": {
+      "uuid": "8a1ec8af8ae33a34",
+      "libraryUuid": "",
+      "name": "1N4733A_C140851"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D19",
+    "alias": "DFLY",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D20",
+    "alias": "DZFLY",
+    "part": "1N4749ATR.1",
+    "physical_key": "z_flyback_24v",
+    "supplier_id": "C890088",
+    "original_device_uuid": "51bd235c2ae94bdca925ecb7c567d583",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e63277b7f1e91c6f",
+      "name": "1N4749ATR"
+    },
+    "actual_project_symbol": {
+      "uuid": "f17c78a3fa6072d6",
+      "libraryUuid": "",
+      "name": "1N4749ATR"
+    },
+    "actual_project_footprint": {
+      "uuid": "924a3ce298624c7e",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.0-L4.1-P8.70-D0.8-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D21",
+    "alias": "DRESET",
+    "part": "1N4148TA.1",
+    "physical_key": "d_small_1n4148",
+    "supplier_id": "C124481",
+    "original_device_uuid": "d7705893cebc4fd8bcf8a9393e34ea94",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "6d028d40128c10e8",
+      "name": "1N4148TA"
+    },
+    "actual_project_symbol": {
+      "uuid": "043ba60038f9ee17",
+      "libraryUuid": "",
+      "name": "1N4148TA"
+    },
+    "actual_project_footprint": {
+      "uuid": "00ec3615f603fc04",
+      "libraryUuid": "",
+      "name": "DO-35_BD2.0-L4.2-P8.20-D0.5-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D22",
+    "alias": "DSL1",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D23",
+    "alias": "DSL2",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D24",
+    "alias": "DSL3",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D25",
+    "alias": "DSL4",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D26",
+    "alias": "DSR1",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D27",
+    "alias": "DSR2",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D28",
+    "alias": "DSR3",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "D29",
+    "alias": "DSR4",
+    "part": "1N4007RLG.1",
+    "physical_key": "d_aux_1n4007",
+    "supplier_id": "C53568",
+    "original_device_uuid": "254d17e128924813a27ad246f16b441c",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8223555ebf7fd1ad",
+      "name": "1N4007RLG"
+    },
+    "actual_project_symbol": {
+      "uuid": "dbe21996fe0e069f",
+      "libraryUuid": "",
+      "name": "1N4007RLG"
+    },
+    "actual_project_footprint": {
+      "uuid": "c58dfac9d58b46f9",
+      "libraryUuid": "",
+      "name": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "F1",
+    "alias": "F1",
+    "part": "0215001.MXEP.1",
+    "physical_key": "fuse_mains_1a",
+    "supplier_id": "C178837",
+    "original_device_uuid": "ea23a1080a244ce99135c0c8e3379413",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "ec5994844dd39562",
+      "name": "0215001.MXEP"
+    },
+    "actual_project_symbol": {
+      "uuid": "458b22fd37b78795",
+      "libraryUuid": "",
+      "name": "0215001.MXEP"
+    },
+    "actual_project_footprint": {
+      "uuid": "2448f813d50d9eec",
+      "libraryUuid": "",
+      "name": "FUSE-TH_BD5.8-L22.5-P26.50-D0.7"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "F2",
+    "alias": "F2",
+    "part": "0215.500MXP.1",
+    "physical_key": "fuse_hv_500ma",
+    "supplier_id": "C142839",
+    "original_device_uuid": "69a000e1f85e4d5f97db7382cc2efb49",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "caf4518dc77d50c0",
+      "name": "0215.500MXP"
+    },
+    "actual_project_symbol": {
+      "uuid": "f3a7e40fa09a8e8e",
+      "libraryUuid": "",
+      "name": "0215.500MXP"
+    },
+    "actual_project_footprint": {
+      "uuid": "922de99edbe54895",
+      "libraryUuid": "",
+      "name": "FUSE-SMD_L20.0-W5.0"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "F3",
+    "alias": "F3",
+    "part": "0215005.MXEP.1",
+    "physical_key": "fuse_heater_5a",
+    "supplier_id": "C142755",
+    "original_device_uuid": "c5216d44aa3d4abe8ac0dcc215923316",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "effe5ebd5b75a4fc",
+      "name": "0215005.MXEP"
+    },
+    "actual_project_symbol": {
+      "uuid": "c8ca6dca4a1c4a46",
+      "libraryUuid": "",
+      "name": "0215005.MXEP"
+    },
+    "actual_project_footprint": {
+      "uuid": "18a5d7381e55c8bd",
+      "libraryUuid": "",
+      "name": "FUSE-TH_BD5.5-L21.5-P25.50-D0.7"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "J1",
+    "alias": "J1",
+    "part": "PJ-301C.1",
+    "physical_key": "jack_trs",
+    "supplier_id": "C692433",
+    "original_device_uuid": "64f977ad2709433aae9b809496aa0693",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e23d6661d4331252",
+      "name": "PJ-301C"
+    },
+    "actual_project_symbol": {
+      "uuid": "5c8b7e850f1bccd6",
+      "libraryUuid": "",
+      "name": "PJ-301C"
+    },
+    "actual_project_footprint": {
+      "uuid": "7fc56ae66361f639",
+      "libraryUuid": "",
+      "name": "AUDIO-TH_PJ-301C"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "J2",
+    "alias": "J2",
+    "part": "PJ-301C.1",
+    "physical_key": "jack_trs",
+    "supplier_id": "C692433",
+    "original_device_uuid": "64f977ad2709433aae9b809496aa0693",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e23d6661d4331252",
+      "name": "PJ-301C"
+    },
+    "actual_project_symbol": {
+      "uuid": "5c8b7e850f1bccd6",
+      "libraryUuid": "",
+      "name": "PJ-301C"
+    },
+    "actual_project_footprint": {
+      "uuid": "7fc56ae66361f639",
+      "libraryUuid": "",
+      "name": "AUDIO-TH_PJ-301C"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "J3",
+    "alias": "J3",
+    "part": "A",
+    "physical_key": "mains_inlet",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "07e2adee833a5a90",
+      "name": "6100.3100"
+    },
+    "actual_project_symbol": {
+      "uuid": "8662ac4631df66b0",
+      "libraryUuid": "",
+      "name": "6100.3100"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "L",
+      "N",
+      "PE"
+    ]
+  },
+  {
+    "reference": "K1",
+    "alias": "KL",
+    "part": "A",
+    "physical_key": "relay_hv",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "444666236e0c4800",
+      "name": "67-1-A-12/1"
+    },
+    "actual_project_symbol": {
+      "uuid": "65c3cb85dc334abf",
+      "libraryUuid": "",
+      "name": "67-1-A-12/1"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "reference": "K2",
+    "alias": "KR",
+    "part": "A",
+    "physical_key": "relay_hv",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "444666236e0c4800",
+      "name": "67-1-A-12/1"
+    },
+    "actual_project_symbol": {
+      "uuid": "65c3cb85dc334abf",
+      "libraryUuid": "",
+      "name": "67-1-A-12/1"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "reference": "LK1",
+    "alias": "LK1",
+    "part": "KF301-5.0-2P.1",
+    "physical_key": "terminal_2",
+    "supplier_id": "C474881",
+    "original_device_uuid": "41ddecaaf01b4c1aa92ec4bfe22149b7",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a58ed3f507457497",
+      "name": "KF301-5.0-2P"
+    },
+    "actual_project_symbol": {
+      "uuid": "1f8fce5d9ef800e9",
+      "libraryUuid": "",
+      "name": "KF301-5.0-2P"
+    },
+    "actual_project_footprint": {
+      "uuid": "b5a6995e39211e60",
+      "libraryUuid": "",
+      "name": "CONN-TH_P5.00_KF301-5.0-2P"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "Q1",
+    "alias": "QHV",
+    "part": "IXTH30N50L2.1",
+    "physical_key": "hv_nmos",
+    "supplier_id": "C2980980",
+    "original_device_uuid": "f9844276d9594ec7b99bd5cdd33a062e",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "42d0dd02d7d3e53f",
+      "name": "IXTH30N50L2"
+    },
+    "actual_project_symbol": {
+      "uuid": "bd129bcb07bb3dd1",
+      "libraryUuid": "",
+      "name": "IXTH30N50L2"
+    },
+    "actual_project_footprint": {
+      "uuid": "308d5acd03a28108",
+      "libraryUuid": "",
+      "name": "TO-247-3_L15.9-W5.0-P5.44-L"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "Q2",
+    "alias": "QIL",
+    "part": "MPSA42_C719821.1",
+    "physical_key": "hv_npn",
+    "supplier_id": "C719821",
+    "original_device_uuid": "9ba32d5710244760b38af4356a6731ec",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "916c8e47486b0fe4",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_symbol": {
+      "uuid": "ba579d83b9425413",
+      "libraryUuid": "",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_footprint": {
+      "uuid": "3ea1d502d20bcc00",
+      "libraryUuid": "",
+      "name": "TO-92-3_L5.1-W4.1-P1.27-L"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "Q3",
+    "alias": "QERR",
+    "part": "MPSA42_C719821.1",
+    "physical_key": "hv_npn",
+    "supplier_id": "C719821",
+    "original_device_uuid": "9ba32d5710244760b38af4356a6731ec",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "916c8e47486b0fe4",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_symbol": {
+      "uuid": "ba579d83b9425413",
+      "libraryUuid": "",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_footprint": {
+      "uuid": "3ea1d502d20bcc00",
+      "libraryUuid": "",
+      "name": "TO-92-3_L5.1-W4.1-P1.27-L"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "Q4",
+    "alias": "QAUX",
+    "part": "BD13910S.1",
+    "physical_key": "aux_npn_bd139",
+    "supplier_id": "C900816",
+    "original_device_uuid": "26457a37217f4e4890c559873bd1c247",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "72ce4c84290cbe6c",
+      "name": "BD13910S"
+    },
+    "actual_project_symbol": {
+      "uuid": "8a6514dfb91c30e4",
+      "libraryUuid": "",
+      "name": "BD13910S"
+    },
+    "actual_project_footprint": {
+      "uuid": "312ad65391f28fc5",
+      "libraryUuid": "",
+      "name": "TO-126_L8.3-W3.5-P2.29-T"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "Q5",
+    "alias": "QD1",
+    "part": "MPSA42_C719821.1",
+    "physical_key": "hv_npn",
+    "supplier_id": "C719821",
+    "original_device_uuid": "9ba32d5710244760b38af4356a6731ec",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "916c8e47486b0fe4",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_symbol": {
+      "uuid": "ba579d83b9425413",
+      "libraryUuid": "",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_footprint": {
+      "uuid": "3ea1d502d20bcc00",
+      "libraryUuid": "",
+      "name": "TO-92-3_L5.1-W4.1-P1.27-L"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "Q6",
+    "alias": "QD2",
+    "part": "MPSA42_C719821.1",
+    "physical_key": "hv_npn",
+    "supplier_id": "C719821",
+    "original_device_uuid": "9ba32d5710244760b38af4356a6731ec",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "916c8e47486b0fe4",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_symbol": {
+      "uuid": "ba579d83b9425413",
+      "libraryUuid": "",
+      "name": "MPSA42_C719821"
+    },
+    "actual_project_footprint": {
+      "uuid": "3ea1d502d20bcc00",
+      "libraryUuid": "",
+      "name": "TO-92-3_L5.1-W4.1-P1.27-L"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "Q7",
+    "alias": "QD3",
+    "part": "BD13910S.1",
+    "physical_key": "aux_npn_bd139",
+    "supplier_id": "C900816",
+    "original_device_uuid": "26457a37217f4e4890c559873bd1c247",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "72ce4c84290cbe6c",
+      "name": "BD13910S"
+    },
+    "actual_project_symbol": {
+      "uuid": "8a6514dfb91c30e4",
+      "libraryUuid": "",
+      "name": "BD13910S"
+    },
+    "actual_project_footprint": {
+      "uuid": "312ad65391f28fc5",
+      "libraryUuid": "",
+      "name": "TO-126_L8.3-W3.5-P2.29-T"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "R1",
+    "alias": "RAL",
+    "part": "1206W4F8201T5E.1",
+    "physical_key": "r_8k2_025w",
+    "supplier_id": "C18027",
+    "original_device_uuid": "7906b391da4b45219e21793e3a56fdd3",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "dd58d60c1a87d517",
+      "name": "1206W4F8201T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "fc4d79749ab5b905",
+      "libraryUuid": "",
+      "name": "1206W4F8201T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R2",
+    "alias": "RBL",
+    "part": "1206W4F1001T5E_C52199.1",
+    "physical_key": "r_1k_025w",
+    "supplier_id": "C52199",
+    "original_device_uuid": "db97f5fb13b64e0c8c225e26f6025723",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "743edd9647a7a793",
+      "name": "1206W4F1001T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "576caaf6667ca1f7",
+      "libraryUuid": "",
+      "name": "1206W4F1001T5E_C52199"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R3",
+    "alias": "RAR",
+    "part": "1206W4F8201T5E.1",
+    "physical_key": "r_8k2_025w",
+    "supplier_id": "C18027",
+    "original_device_uuid": "7906b391da4b45219e21793e3a56fdd3",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "dd58d60c1a87d517",
+      "name": "1206W4F8201T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "fc4d79749ab5b905",
+      "libraryUuid": "",
+      "name": "1206W4F8201T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R4",
+    "alias": "RBR",
+    "part": "1206W4F1001T5E_C52199.1",
+    "physical_key": "r_1k_025w",
+    "supplier_id": "C52199",
+    "original_device_uuid": "db97f5fb13b64e0c8c225e26f6025723",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "743edd9647a7a793",
+      "name": "1206W4F1001T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "576caaf6667ca1f7",
+      "libraryUuid": "",
+      "name": "1206W4F1001T5E_C52199"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R5",
+    "alias": "RGTL",
+    "part": "1206W4F1000T5E.1",
+    "physical_key": "r_100_025w",
+    "supplier_id": "C17901",
+    "original_device_uuid": "5f0db0830ee04fa695d1b031750c544f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "660f8f15ea9f4f90",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "f08c4d7fea01a44a",
+      "libraryUuid": "",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R6",
+    "alias": "RBUL",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R7",
+    "alias": "RBDL",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R8",
+    "alias": "RGBL",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R9",
+    "alias": "RSL",
+    "part": "25121WF1270T4E.1",
+    "physical_key": "r_127_1w",
+    "supplier_id": "C406964",
+    "original_device_uuid": "5f792f664efa4a818c5e6465e06cdb65",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2f7b9d4814be83c8",
+      "name": "25121WF1270T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "4c89082970eb5045",
+      "libraryUuid": "",
+      "name": "25121WF1270T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R10",
+    "alias": "RGLL",
+    "part": "1206W4F1000T5E.1",
+    "physical_key": "r_100_025w",
+    "supplier_id": "C17901",
+    "original_device_uuid": "5f0db0830ee04fa695d1b031750c544f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "660f8f15ea9f4f90",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "f08c4d7fea01a44a",
+      "libraryUuid": "",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R11",
+    "alias": "RLGL",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R12",
+    "alias": "RKL",
+    "part": "25121WF680JT4E.1",
+    "physical_key": "r_68_1w",
+    "supplier_id": "C50371",
+    "original_device_uuid": "6549f8fa9dd64f8989bb2c9dc0c15e96",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8548a5cb1a656edb",
+      "name": "25121WF680JT4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "da1ca5a57767603f",
+      "libraryUuid": "",
+      "name": "25121WF680JT4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R13",
+    "alias": "RDL",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R14",
+    "alias": "RO1L",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R15",
+    "alias": "RO2L",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R16",
+    "alias": "RGTR",
+    "part": "1206W4F1000T5E.1",
+    "physical_key": "r_100_025w",
+    "supplier_id": "C17901",
+    "original_device_uuid": "5f0db0830ee04fa695d1b031750c544f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "660f8f15ea9f4f90",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "f08c4d7fea01a44a",
+      "libraryUuid": "",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R17",
+    "alias": "RBUR",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R18",
+    "alias": "RBDR",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R19",
+    "alias": "RGBR",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R20",
+    "alias": "RSR",
+    "part": "25121WF1270T4E.1",
+    "physical_key": "r_127_1w",
+    "supplier_id": "C406964",
+    "original_device_uuid": "5f792f664efa4a818c5e6465e06cdb65",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2f7b9d4814be83c8",
+      "name": "25121WF1270T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "4c89082970eb5045",
+      "libraryUuid": "",
+      "name": "25121WF1270T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R21",
+    "alias": "RGLR",
+    "part": "1206W4F1000T5E.1",
+    "physical_key": "r_100_025w",
+    "supplier_id": "C17901",
+    "original_device_uuid": "5f0db0830ee04fa695d1b031750c544f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "660f8f15ea9f4f90",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "f08c4d7fea01a44a",
+      "libraryUuid": "",
+      "name": "1206W4F1000T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R22",
+    "alias": "RLGR",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R23",
+    "alias": "RKR",
+    "part": "25121WF680JT4E.1",
+    "physical_key": "r_68_1w",
+    "supplier_id": "C50371",
+    "original_device_uuid": "6549f8fa9dd64f8989bb2c9dc0c15e96",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "8548a5cb1a656edb",
+      "name": "25121WF680JT4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "da1ca5a57767603f",
+      "libraryUuid": "",
+      "name": "25121WF680JT4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R24",
+    "alias": "RDR",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R25",
+    "alias": "RO1R",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R26",
+    "alias": "RO2R",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R27",
+    "alias": "RCRC",
+    "part": "25121WF220JT4E.1",
+    "physical_key": "r_22_1w",
+    "supplier_id": "C118189",
+    "original_device_uuid": "a4b99689a1b04b1dabb7b789d5aea018",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "f5aaddac490abdfb",
+      "name": "25121WF220JT4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "ed21d3e548b711b4",
+      "libraryUuid": "",
+      "name": "25121WF220JT4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R28",
+    "alias": "RDISHV_RAWA",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R29",
+    "alias": "RDISHV_RAWB",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R30",
+    "alias": "RDISHV_INA",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R31",
+    "alias": "RDISHV_INB",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R32",
+    "alias": "RIL1",
+    "part": "25121WF100JT4E.1",
+    "physical_key": "r_10_1w",
+    "supplier_id": "C47019",
+    "original_device_uuid": "a8f7373ec0634744a744b4f771ecfa76",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "9a2221acc16257c3",
+      "name": "25121WF100JT4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "540ec33e1f3fd08c",
+      "libraryUuid": "",
+      "name": "25121WF100JT4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R33",
+    "alias": "RIL2",
+    "part": "25121WF100JT4E.1",
+    "physical_key": "r_10_1w",
+    "supplier_id": "C47019",
+    "original_device_uuid": "a8f7373ec0634744a744b4f771ecfa76",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "9a2221acc16257c3",
+      "name": "25121WF100JT4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "540ec33e1f3fd08c",
+      "libraryUuid": "",
+      "name": "25121WF100JT4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R34",
+    "alias": "RGF1",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R35",
+    "alias": "RGF2",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R36",
+    "alias": "RGF3",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R37",
+    "alias": "RGF4",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R38",
+    "alias": "RFB1",
+    "part": "1206W4F2213T5E.1",
+    "physical_key": "r_221k_025w",
+    "supplier_id": "C73039",
+    "original_device_uuid": "0faef362c1134f049ea9561517fb604b",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "2342d0a3ead1a12d",
+      "name": "1206W4F2213T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d66d8df5bfd892cc",
+      "libraryUuid": "",
+      "name": "1206W4F2213T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R39",
+    "alias": "RFB2",
+    "part": "1206W4F1002T5E.1",
+    "physical_key": "r_10k_025w",
+    "supplier_id": "C17902",
+    "original_device_uuid": "a2507755f87a4842885451644ad145e1",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c6cdf4d3cf8eafdc",
+      "name": "1206W4F1002T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "4a92aa0c547102d1",
+      "libraryUuid": "",
+      "name": "1206W4F1002T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R40",
+    "alias": "RZF1",
+    "part": "1206W4F2202T5E.1",
+    "physical_key": "r_22k_025w",
+    "supplier_id": "C25830",
+    "original_device_uuid": "e4bcf52c9d394506b01b8375883948ee",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "ce3937edfe2e67eb",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "bdc2fcf6b8ca766b",
+      "libraryUuid": "",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R41",
+    "alias": "RZF2",
+    "part": "1206W4F2202T5E.1",
+    "physical_key": "r_22k_025w",
+    "supplier_id": "C25830",
+    "original_device_uuid": "e4bcf52c9d394506b01b8375883948ee",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "ce3937edfe2e67eb",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "bdc2fcf6b8ca766b",
+      "libraryUuid": "",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R42",
+    "alias": "RZF3",
+    "part": "1206W4F2202T5E.1",
+    "physical_key": "r_22k_025w",
+    "supplier_id": "C25830",
+    "original_device_uuid": "e4bcf52c9d394506b01b8375883948ee",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "ce3937edfe2e67eb",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "bdc2fcf6b8ca766b",
+      "libraryUuid": "",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R43",
+    "alias": "RZF4",
+    "part": "1206W4F2202T5E.1",
+    "physical_key": "r_22k_025w",
+    "supplier_id": "C25830",
+    "original_device_uuid": "e4bcf52c9d394506b01b8375883948ee",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "ce3937edfe2e67eb",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "bdc2fcf6b8ca766b",
+      "libraryUuid": "",
+      "name": "1206W4F2202T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R44",
+    "alias": "RBP",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R45",
+    "alias": "RH1",
+    "part": "1206W4F1210T5E.1",
+    "physical_key": "r_121_025w",
+    "supplier_id": "C40089",
+    "original_device_uuid": "2cba2375c7ab4ebc964eea3d8eaaff56",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "918bc4b151232915",
+      "name": "1206W4F1210T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "90df30a4fd764598",
+      "libraryUuid": "",
+      "name": "1206W4F1210T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R46",
+    "alias": "RH2",
+    "part": "1206W4F4870T5E.1",
+    "physical_key": "r_487_025w",
+    "supplier_id": "C247245",
+    "original_device_uuid": "e5cc557a6b024a4d9959e2f40aceb5d5",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "6fc97cd8dedcddae",
+      "name": "1206W4F4870T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "ef99b1f257fbf77a",
+      "libraryUuid": "",
+      "name": "1206W4F4870T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R47",
+    "alias": "RHEU",
+    "part": "25121WF2003T4E.1",
+    "physical_key": "r_200k_1w",
+    "supplier_id": "C421616",
+    "original_device_uuid": "611a4b379ee74be1a1497a10bcea6706",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "9420b3173ac76f6b",
+      "name": "25121WF2003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "9d62a29546ab9bd5",
+      "libraryUuid": "",
+      "name": "25121WF2003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R48",
+    "alias": "RHED",
+    "part": "25121WF1003T4E.1",
+    "physical_key": "r_100k_1w",
+    "supplier_id": "C52842",
+    "original_device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "59801ead8c64bae2",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_symbol": {
+      "uuid": "a8929deeead7122a",
+      "libraryUuid": "",
+      "name": "25121WF1003T4E"
+    },
+    "actual_project_footprint": {
+      "uuid": "9d8bbf6f4541b8e9",
+      "libraryUuid": "",
+      "name": "R2512"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R49",
+    "alias": "RAUX",
+    "part": "1206W4F4700T5E.1",
+    "physical_key": "r_470_025w",
+    "supplier_id": "C4502",
+    "original_device_uuid": "620ce69f148a4fdfaa7ec69843f4901a",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "e8bdbc0eb81d0832",
+      "name": "1206W4F4700T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "fb06f121922207bc",
+      "libraryUuid": "",
+      "name": "1206W4F4700T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R50",
+    "alias": "RT",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R51",
+    "alias": "RZBASE",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R52",
+    "alias": "RDB",
+    "part": "1206W4F1003T5E.1",
+    "physical_key": "r_100k_025w",
+    "supplier_id": "C17900",
+    "original_device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c50330fd099555f7",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "722449cce036bc0d",
+      "libraryUuid": "",
+      "name": "1206W4F1003T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R53",
+    "alias": "RDE",
+    "part": "1206W4F1002T5E.1",
+    "physical_key": "r_10k_025w",
+    "supplier_id": "C17902",
+    "original_device_uuid": "a2507755f87a4842885451644ad145e1",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "c6cdf4d3cf8eafdc",
+      "name": "1206W4F1002T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "4a92aa0c547102d1",
+      "libraryUuid": "",
+      "name": "1206W4F1002T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R54",
+    "alias": "ROFF",
+    "part": "1206W4F1001T5E_C52199.1",
+    "physical_key": "r_1k_025w",
+    "supplier_id": "C52199",
+    "original_device_uuid": "db97f5fb13b64e0c8c225e26f6025723",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "743edd9647a7a793",
+      "name": "1206W4F1001T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "576caaf6667ca1f7",
+      "libraryUuid": "",
+      "name": "1206W4F1001T5E_C52199"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R55",
+    "alias": "RSEN1L",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R56",
+    "alias": "RSEN2L",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R57",
+    "alias": "RSEN1R",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "R58",
+    "alias": "RSEN2R",
+    "part": "1206W4F4702T5E.1",
+    "physical_key": "r_47k_025w",
+    "supplier_id": "C25833",
+    "original_device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a001a099e4bdcc5b",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_symbol": {
+      "uuid": "d183603ddf460b3d",
+      "libraryUuid": "",
+      "name": "1206W4F4702T5E"
+    },
+    "actual_project_footprint": {
+      "uuid": "5c4b23d122c4eb19",
+      "libraryUuid": "",
+      "name": "R1206"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2"
+    ]
+  },
+  {
+    "reference": "RV1",
+    "alias": "RV1",
+    "part": "RK09712200HA.1",
+    "physical_key": "pot_dual10k_log",
+    "supplier_id": "C470545",
+    "original_device_uuid": "b7c0f922c0794c2fb9b7ed1da1299f23",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "633c081cc3d8dd8f",
+      "name": "RK09712200HA"
+    },
+    "actual_project_symbol": {
+      "uuid": "7fe5c952a8ae55b4",
+      "libraryUuid": "",
+      "name": "RK09712200HA"
+    },
+    "actual_project_footprint": {
+      "uuid": "eb01cd250598f8a1",
+      "libraryUuid": "",
+      "name": "RES-ADJ-TH_RK09712200HA"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "reference": "SW1",
+    "alias": "SW1",
+    "part": "EG2208.1",
+    "physical_key": "gain_dpdt",
+    "supplier_id": "C273399",
+    "original_device_uuid": "0660933021ad4f4ca30f913cfb6f1edb",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "54ae1c5157db5580",
+      "name": "EG2208"
+    },
+    "actual_project_symbol": {
+      "uuid": "a290a4bc5b0121a3",
+      "libraryUuid": "",
+      "name": "EG2208"
+    },
+    "actual_project_footprint": {
+      "uuid": "186403483a726f08",
+      "libraryUuid": "",
+      "name": "SW-TH_EG2208"
+    },
+    "actual_pin_numbers": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "reference": "SW2",
+    "alias": "SW2",
+    "part": "A",
+    "physical_key": "mains_switch",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a45d100264d445ef",
+      "name": "R5ABLKBLKFF0"
+    },
+    "actual_project_symbol": {
+      "uuid": "011420535f8e9f89",
+      "libraryUuid": "",
+      "name": "R5ABLKBLKFF0"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "1",
+      "1a",
+      "2",
+      "2a"
+    ]
+  },
+  {
+    "reference": "T1",
+    "alias": "T1",
+    "part": "A",
+    "physical_key": "transformer_contract",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "0117a013246c5773",
+      "name": "T1 custom / TERMINALS UNCONFIRMED"
+    },
+    "actual_project_symbol": {
+      "uuid": "1a8215f598d7b223",
+      "libraryUuid": "",
+      "name": "T1 custom / TERMINALS UNCONFIRMED"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "reference": "U1",
+    "alias": "UH",
+    "part": "LM1084IT-ADJ/NOPB.1",
+    "physical_key": "heater_ldo",
+    "supplier_id": "C9720",
+    "original_device_uuid": "714229a4a77345609f134d111cb5f8b9",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "a1c8c848ee81e718",
+      "name": "LM1084IT-ADJ/NOPB"
+    },
+    "actual_project_symbol": {
+      "uuid": "57a7434c0a3d609f",
+      "libraryUuid": "",
+      "name": "LM1084IT-ADJ/NOPB"
+    },
+    "actual_project_footprint": {
+      "uuid": "4968cadcdbb93f11",
+      "libraryUuid": "",
+      "name": "TO-220-3_L10.0-W4.5-P2.54-L"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "U2",
+    "alias": "UOL",
+    "part": "LTV-817S-TA1-C.1",
+    "physical_key": "fault_opto",
+    "supplier_id": "C109227",
+    "original_device_uuid": "94b92fd4314c44a989f28fa11fba3d03",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "b90ce309452b7820",
+      "name": "LTV-817S-TA1-C"
+    },
+    "actual_project_symbol": {
+      "uuid": "f57f4d02cd3ab681",
+      "libraryUuid": "",
+      "name": "LTV-817S-TA1-C"
+    },
+    "actual_project_footprint": {
+      "uuid": "cfb4b5aa27a55113",
+      "libraryUuid": "",
+      "name": "OPTO-SMD-4_L4.6-W6.5-P2.54-LS10.3-BL"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "reference": "U3",
+    "alias": "UOR",
+    "part": "LTV-817S-TA1-C.1",
+    "physical_key": "fault_opto",
+    "supplier_id": "C109227",
+    "original_device_uuid": "94b92fd4314c44a989f28fa11fba3d03",
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "b90ce309452b7820",
+      "name": "LTV-817S-TA1-C"
+    },
+    "actual_project_symbol": {
+      "uuid": "f57f4d02cd3ab681",
+      "libraryUuid": "",
+      "name": "LTV-817S-TA1-C"
+    },
+    "actual_project_footprint": {
+      "uuid": "cfb4b5aa27a55113",
+      "libraryUuid": "",
+      "name": "OPTO-SMD-4_L4.6-W6.5-P2.54-LS10.3-BL"
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "reference": "V1",
+    "alias": "VL",
+    "part": "A",
+    "physical_key": "tube_6h30pi_eb",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "7b2b7fdde8f87be0",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_symbol": {
+      "uuid": "ae7f3c7166efe836",
+      "libraryUuid": "",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "reference": "V1",
+    "alias": "VL",
+    "part": "H",
+    "physical_key": "tube_6h30pi_eb",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "7b2b7fdde8f87be0",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_symbol": {
+      "uuid": "ae7f3c7166efe836",
+      "libraryUuid": "",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "4",
+      "5",
+      "9"
+    ]
+  },
+  {
+    "reference": "V1",
+    "alias": "VL",
+    "part": "B",
+    "physical_key": "tube_6h30pi_eb",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "7b2b7fdde8f87be0",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_symbol": {
+      "uuid": "ae7f3c7166efe836",
+      "libraryUuid": "",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "reference": "V2",
+    "alias": "VR",
+    "part": "A",
+    "physical_key": "tube_6h30pi_eb",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "7b2b7fdde8f87be0",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_symbol": {
+      "uuid": "ae7f3c7166efe836",
+      "libraryUuid": "",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "reference": "V2",
+    "alias": "VR",
+    "part": "H",
+    "physical_key": "tube_6h30pi_eb",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "7b2b7fdde8f87be0",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_symbol": {
+      "uuid": "ae7f3c7166efe836",
+      "libraryUuid": "",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "4",
+      "5",
+      "9"
+    ]
+  },
+  {
+    "reference": "V2",
+    "alias": "VR",
+    "part": "B",
+    "physical_key": "tube_6h30pi_eb",
+    "supplier_id": null,
+    "original_device_uuid": null,
+    "actual_project_device": {
+      "libraryUuid": "",
+      "uuid": "7b2b7fdde8f87be0",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_symbol": {
+      "uuid": "ae7f3c7166efe836",
+      "libraryUuid": "",
+      "name": "6H30Pi-EB"
+    },
+    "actual_project_footprint": {
+      "uuid": ""
+    },
+    "actual_pin_numbers": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
+]

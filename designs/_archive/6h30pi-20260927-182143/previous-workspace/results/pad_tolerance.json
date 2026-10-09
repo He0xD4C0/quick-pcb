@@ -1,0 +1,50 @@
+[
+  {
+    "Ratt_scale": 0.99,
+    "Rsh_scale": 0.99,
+    "pot_scale": 0.8,
+    "difference_dB": 20.206735959965645
+  },
+  {
+    "Ratt_scale": 0.99,
+    "Rsh_scale": 0.99,
+    "pot_scale": 1.2,
+    "difference_dB": 19.95420464648308
+  },
+  {
+    "Ratt_scale": 0.99,
+    "Rsh_scale": 1.01,
+    "pot_scale": 0.8,
+    "difference_dB": 20.069928235743685
+  },
+  {
+    "Ratt_scale": 0.99,
+    "Rsh_scale": 1.01,
+    "pot_scale": 1.2,
+    "difference_dB": 19.812742591060374
+  },
+  {
+    "Ratt_scale": 1.01,
+    "Rsh_scale": 0.99,
+    "pot_scale": 0.8,
+    "difference_dB": 20.363815580460557
+  },
+  {
+    "Ratt_scale": 1.01,
+    "Rsh_scale": 0.99,
+    "pot_scale": 1.2,
+    "difference_dB": 20.110744632124987
+  },
+  {
+    "Ratt_scale": 1.01,
+    "Rsh_scale": 1.01,
+    "pot_scale": 0.8,
+    "difference_dB": 20.22674300356754
+  },
+  {
+    "Ratt_scale": 1.01,
+    "Rsh_scale": 1.01,
+    "pot_scale": 1.2,
+    "difference_dB": 19.968999881818227
+  }
+]

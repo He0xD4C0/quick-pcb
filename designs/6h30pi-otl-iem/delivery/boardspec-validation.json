@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/J3",
+      "message": "instance 'J3' has no footprint"
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/K1",
+      "message": "instance 'K1' has no footprint"
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/K2",
+      "message": "instance 'K2' has no footprint"
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/SW2",
+      "message": "instance 'SW2' has no footprint"
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/T1",
+      "message": "instance 'T1' has no footprint"
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/V1",
+      "message": "instance 'V1' has no footprint"
+    },
+    {
+      "code": "FOOTPRINT_UNCONFIRMED",
+      "path": "/instances/V2",
+      "message": "instance 'V2' has no footprint"
+    }
+  ]
+}

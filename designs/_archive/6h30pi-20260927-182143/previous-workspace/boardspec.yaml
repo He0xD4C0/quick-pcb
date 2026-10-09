@@ -1,0 +1,2384 @@
+spec: board-spec/v0.1
+project:
+  name: QuickPCB_6H30Pi_OTL_IEM_v01_review2
+  version: '0.1'
+  description: NOT QUALIFIED FOR REAL HEADPHONES
+definitions:
+  project:R:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: '1'
+      type: passive
+    - number: '2'
+      name: '2'
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:C:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: +
+      type: passive
+    - number: '2'
+      name: '-'
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:D:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: A
+      name: A
+      type: passive
+    - number: K
+      name: K
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:NPN:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: E
+      type: passive
+    - number: '2'
+      name: B
+      type: passive
+    - number: '3'
+      name: C
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:MOS:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: G
+      type: passive
+    - number: '2'
+      name: D
+      type: passive
+    - number: '3'
+      name: S
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:LDO:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: ADJ
+      type: passive
+    - number: '2'
+      name: OUT
+      type: passive
+    - number: '3'
+      name: IN
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:TUBE:
+    kind: physical
+    description: Project-authored schematic symbol; official electrode pinout
+    pins:
+    - number: '1'
+      name: P2
+      type: passive
+    - number: '2'
+      name: G2
+      type: passive
+    - number: '3'
+      name: K2
+      type: passive
+    - number: '4'
+      name: H
+      type: passive
+    - number: '5'
+      name: H
+      type: passive
+    - number: '6'
+      name: P1
+      type: passive
+    - number: '7'
+      name: G1
+      type: passive
+    - number: '8'
+      name: K1
+      type: passive
+    - number: '9'
+      name: SCREEN
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:JACK:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: T
+      name: TIP_L
+      type: passive
+    - number: R
+      name: RING_R
+      type: passive
+    - number: S
+      name: SLEEVE
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:GAIN:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: LC
+      name: L_COMMON
+      type: passive
+    - number: LH
+      name: L_HIGH
+      type: passive
+    - number: LL
+      name: L_LOW
+      type: passive
+    - number: RC
+      name: R_COMMON
+      type: passive
+    - number: RH
+      name: R_HIGH
+      type: passive
+    - number: RL
+      name: R_LOW
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:POT:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: LT
+      name: L_TOP
+      type: passive
+    - number: LW
+      name: L_WIPER
+      type: passive
+    - number: LB
+      name: L_BOTTOM
+      type: passive
+    - number: RT
+      name: R_TOP
+      type: passive
+    - number: RW
+      name: R_WIPER
+      type: passive
+    - number: RB
+      name: R_BOTTOM
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:RELAY:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: CA
+      name: COIL_A
+      type: passive
+    - number: CB
+      name: COIL_B
+      type: passive
+    - number: A
+      name: CONTACT_A
+      type: passive
+    - number: B
+      name: CONTACT_B
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:TX:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: P1
+      name: PRI_L
+      type: passive
+    - number: P2
+      name: PRI_N
+      type: passive
+    - number: H1
+      name: HV_A
+      type: passive
+    - number: H2
+      name: HV_B
+      type: passive
+    - number: F1
+      name: HTR_A
+      type: passive
+    - number: F2
+      name: HTR_B
+      type: passive
+    - number: A1
+      name: AUX_A
+      type: passive
+    - number: A2
+      name: AUX_B
+      type: passive
+    - number: SH
+      name: SCREEN
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:MAINS:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: L
+      name: LINE
+      type: passive
+    - number: N
+      name: NEUTRAL
+      type: passive
+    - number: PE
+      name: PE
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:SW:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: L1
+      name: L_IN
+      type: passive
+    - number: L2
+      name: L_OUT
+      type: passive
+    - number: N1
+      name: N_IN
+      type: passive
+    - number: N2
+      name: N_OUT
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:LINK:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: '1'
+      type: passive
+    - number: '2'
+      name: '2'
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:TP:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: TEST
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+  project:CHASSIS:
+    kind: physical
+    description: Project-authored schematic symbol; see circuit.json/BOM for terminal
+      authority
+    pins:
+    - number: '1'
+      name: PE_STUD
+      type: passive
+    source:
+      provider: project
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Functional terminals for panel items; no PCB footprint claimed.
+instances:
+  J1:
+    part: project:JACK
+    value: 3.5mm stereo INPUT
+    properties:
+      rating: Insulated chassis jack
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: J1
+  SW1:
+    part: project:GAIN
+    value: DPDT HIGH / LOW
+    properties:
+      rating: Break before make; two poles mechanically linked
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: SW1
+  RV1:
+    part: project:POT
+    value: Dual 10k log
+    properties:
+      rating: 2 gangs; >=0.1W; gang tracking must be measured
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RV1
+  J2:
+    part: project:JACK
+    value: 3.5mm stereo OUTPUT
+    properties:
+      rating: Insulated chassis jack; no balanced output
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: J2
+  R1:
+    part: project:R
+    value: 8.2k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RATTL
+  R2:
+    part: project:R
+    value: 1k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RSHL
+  R3:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RHPL
+  R4:
+    part: project:R
+    value: 8.2k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RATTR
+  R5:
+    part: project:R
+    value: 1k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RSHR
+  R6:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 01_Input_and_controls
+      role: RHPR
+  V1:
+    part: project:TUBE
+    value: 6H30Pi-EB
+    properties:
+      rating: Pa <=4W each; Ia <=50mA continuous; |Vhk| <=100V conservative
+      source: https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf
+      sheet: 02_WCF_L
+      role: V1
+  C1:
+    part: project:C
+    value: 4.7u
+    properties:
+      rating: 250V, film 5%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: CINL
+  R7:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RB1L
+  R8:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RB2L
+  C2:
+    part: project:C
+    value: 47u
+    properties:
+      rating: 160V electrolytic, +/-20%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: CBL
+  R9:
+    part: project:R
+    value: 47k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RGL
+  R10:
+    part: project:R
+    value: '100'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RGSL
+  R11:
+    part: project:R
+    value: '127'
+    properties:
+      rating: 1W, 1%, metal film; nominal 0.17W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RSL
+  C3:
+    part: project:C
+    value: 4.7u
+    properties:
+      rating: 250V, film 5%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: CFL
+  R12:
+    part: project:R
+    value: '100'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RGLL
+  R13:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RLEAKL
+  R14:
+    part: project:R
+    value: '68'
+    properties:
+      rating: 1W, 1%; nominal 0.091W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RKL
+  C4:
+    part: project:C
+    value: 2200u
+    properties:
+      rating: 16V electrolytic +/-20%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: CKL
+  C5:
+    part: project:C
+    value: 1000u
+    properties:
+      rating: 250V electrolytic +/-20%; ESR target <=0.15 ohm @1k; leakage MUST be
+        measured
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: COL
+  R15:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 2W flameproof; defined discharge of output coupling capacitor
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RDCL
+  R16:
+    part: project:R
+    value: 10k
+    properties:
+      rating: 2W flameproof; 0.67W at 82V fault
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: RBLL
+  K1:
+    part: project:RELAY
+    value: 104-1-A-12/1
+    properties:
+      rating: 500VDC switching, 0.5A/10W maximum; no internal diode
+      source: https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf
+      sheet: 02_WCF_L
+      role: K1
+  TP1:
+    part: project:TP
+    value: MID
+    properties:
+      rating: Insulated test point >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: TPLMID
+  TP2:
+    part: project:TP
+    value: K
+    properties:
+      rating: Insulated test point >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: TPLK
+  TP3:
+    part: project:TP
+    value: OUT
+    properties:
+      rating: Insulated test point >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 02_WCF_L
+      role: TPLOUT
+  V2:
+    part: project:TUBE
+    value: 6H30Pi-EB
+    properties:
+      rating: Pa <=4W each; Ia <=50mA continuous; |Vhk| <=100V conservative
+      source: https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf
+      sheet: 03_WCF_R
+      role: V2
+  C6:
+    part: project:C
+    value: 4.7u
+    properties:
+      rating: 250V, film 5%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: CINR
+  R17:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RB1R
+  R18:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RB2R
+  C7:
+    part: project:C
+    value: 47u
+    properties:
+      rating: 160V electrolytic, +/-20%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: CBR
+  R19:
+    part: project:R
+    value: 47k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RGR
+  R20:
+    part: project:R
+    value: '100'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RGSR
+  R21:
+    part: project:R
+    value: '127'
+    properties:
+      rating: 1W, 1%, metal film; nominal 0.17W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RSR
+  C8:
+    part: project:C
+    value: 4.7u
+    properties:
+      rating: 250V, film 5%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: CFR
+  R22:
+    part: project:R
+    value: '100'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RGLR
+  R23:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RLEAKR
+  R24:
+    part: project:R
+    value: '68'
+    properties:
+      rating: 1W, 1%; nominal 0.091W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RKR
+  C9:
+    part: project:C
+    value: 2200u
+    properties:
+      rating: 16V electrolytic +/-20%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: CKR
+  C10:
+    part: project:C
+    value: 1000u
+    properties:
+      rating: 250V electrolytic +/-20%; ESR target <=0.15 ohm @1k; leakage MUST be
+        measured
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: COR
+  R25:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 2W flameproof; defined discharge of output coupling capacitor
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RDCR
+  R26:
+    part: project:R
+    value: 10k
+    properties:
+      rating: 2W flameproof; 0.67W at 82V fault
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: RBLR
+  K2:
+    part: project:RELAY
+    value: 104-1-A-12/1
+    properties:
+      rating: 500VDC switching, 0.5A/10W maximum; no internal diode
+      source: https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf
+      sheet: 03_WCF_R
+      role: K2
+  TP4:
+    part: project:TP
+    value: MID
+    properties:
+      rating: Insulated test point >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: TPRMID
+  TP5:
+    part: project:TP
+    value: K
+    properties:
+      rating: Insulated test point >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: TPRK
+  TP6:
+    part: project:TP
+    value: OUT
+    properties:
+      rating: Insulated test point >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 03_WCF_R
+      role: TPROUT
+  J3:
+    part: project:MAINS
+    value: IEC C14 fused inlet
+    properties:
+      rating: 250VAC certified; touch-safe enclosure
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: J3
+  F1:
+    part: project:LINK
+    value: T630mA H 250V
+    properties:
+      rating: High breaking capacity; inrush validation required
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: F1
+  SW2:
+    part: project:SW
+    value: DPST mains switch
+    properties:
+      rating: 250VAC >=2A certified
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: SW2
+  T1:
+    part: project:TX
+    value: '220V : 150V / 9.5V / 12V'
+    properties:
+      rating: '>=100VA; 150VAC/0.25A + 9.5VAC/5A + 12VAC/0.3A; reinforced isolation;
+        thermal fuse'
+      source: https://www.hammfg.com/es/electronics/transformers/rectifier?referer=968
+      sheet: 04_Mains_and_rectifier
+      role: T1
+  CH1:
+    part: project:CHASSIS
+    value: Dedicated PE stud
+    properties:
+      rating: Bolted protective-earth bond; never switched/fused
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: CH1
+  LK1:
+    part: project:LINK
+    value: Single star bond
+    properties:
+      rating: Short chassis-to-signal-ground bond at single point
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: LK1
+  F2:
+    part: project:LINK
+    value: T315mA H 250V
+    properties:
+      rating: HV winding fuse
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: F2
+  D1:
+    part: project:D
+    value: UF4007
+    properties:
+      rating: 1000V, 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: DH1
+  D2:
+    part: project:D
+    value: UF4007
+    properties:
+      rating: 1000V, 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: DH2
+  D3:
+    part: project:D
+    value: UF4007
+    properties:
+      rating: 1000V, 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: DH3
+  D4:
+    part: project:D
+    value: UF4007
+    properties:
+      rating: 1000V, 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: DH4
+  C11:
+    part: project:C
+    value: 220u
+    properties:
+      rating: 350V +/-20%; ripple >=0.3Arms @100Hz
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: CHV1
+  R27:
+    part: project:R
+    value: '22'
+    properties:
+      rating: 5W pulse-rated flameproof
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: RHV
+  C12:
+    part: project:C
+    value: 220u
+    properties:
+      rating: 350V +/-20%; ripple >=0.3Arms @100Hz
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: CHV2
+  R28:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 2W, >=350V, flameproof
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: RDIS1
+  R29:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 2W, >=350V, flameproof
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 04_Mains_and_rectifier
+      role: RDIS2
+  Q1:
+    part: project:MOS
+    value: IRF820
+    properties:
+      rating: 500V; heatsink <=8C/W; electrically insulated tab (D)
+      source: https://www.vishay.com/docs/91059/91059.pdf
+      sheet: 05_HV_regulator
+      role: QHV
+  R30:
+    part: project:R
+    value: 47k
+    properties:
+      rating: 2W, >=350V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: RHG
+  D5:
+    part: project:D
+    value: 12V zener
+    properties:
+      rating: 1W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: DGS
+  R31:
+    part: project:R
+    value: '4.7'
+    properties:
+      rating: 1W; current limit ~0.13A, untrimmed
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: RIS
+  Q2:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 05_HV_regulator
+      role: QIL
+  Q3:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 05_HV_regulator
+      role: QERR
+  R32:
+    part: project:R
+    value: 221k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: RHU
+  R33:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: RHL
+  R34:
+    part: project:R
+    value: 82k
+    properties:
+      rating: 2W, >=350V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: RHZ
+  D6:
+    part: project:D
+    value: 6.2V zener
+    properties:
+      rating: 0.5W; operating current ~2mA; tolerance 2% or better
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: DZHV
+  C13:
+    part: project:C
+    value: 47u
+    properties:
+      rating: 25V electrolytic
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: CZHV
+  C14:
+    part: project:C
+    value: 10n
+    properties:
+      rating: 250V film; loop stability not qualified
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: CCHV
+  C15:
+    part: project:C
+    value: 100u
+    properties:
+      rating: 250V electrolytic
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: CBPLUS
+  R35:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 2W flameproof
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: RDIS3
+  TP7:
+    part: project:TP
+    value: B+ 160V nominal
+    properties:
+      rating: Insulated HV point
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 05_HV_regulator
+      role: TPB
+  F3:
+    part: project:LINK
+    value: T5A 250V
+    properties:
+      rating: Heater winding fuse; inrush test required
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: F3
+  D7:
+    part: project:D
+    value: MBR1045
+    properties:
+      rating: 45V, 10A; insulated mounting as applicable
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: DF1
+  D8:
+    part: project:D
+    value: MBR1045
+    properties:
+      rating: 45V, 10A; insulated mounting as applicable
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: DF2
+  D9:
+    part: project:D
+    value: MBR1045
+    properties:
+      rating: 45V, 10A; insulated mounting as applicable
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: DF3
+  D10:
+    part: project:D
+    value: MBR1045
+    properties:
+      rating: 45V, 10A; insulated mounting as applicable
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: DF4
+  C16:
+    part: project:C
+    value: 15000u
+    properties:
+      rating: 25V +/-20%; ripple >=4Arms @100Hz
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: CHF
+  U1:
+    part: project:LDO
+    value: LM1084IT-ADJ
+    properties:
+      rating: 5A; heat sink <=1.5C/W; tab=OUT, insulate from chassis
+      source: https://www.ti.com/lit/ds/symlink/lm1084.pdf
+      sheet: 06_Heater_and_aux
+      role: U1
+  R36:
+    part: project:R
+    value: '121'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: RH1
+  R37:
+    part: project:R
+    value: '487'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: RH2
+  C17:
+    part: project:C
+    value: 220u
+    properties:
+      rating: 16V aluminum, ESR 0.2..1 ohm; regulator stability verification required
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: CHOUT
+  C18:
+    part: project:C
+    value: 10u
+    properties:
+      rating: 16V electrolytic
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: CHADJ
+  D11:
+    part: project:D
+    value: 1N5404
+    properties:
+      rating: 400V 3A output-to-input reverse protection
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: DHREV
+  D12:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: DADJ
+  R38:
+    part: project:R
+    value: 150k
+    properties:
+      rating: 0.5W 1%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: REL1
+  R39:
+    part: project:R
+    value: 47k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: REL2
+  C19:
+    part: project:C
+    value: 47u
+    properties:
+      rating: 100V electrolytic
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06_Heater_and_aux
+      role: CEL
+  D13:
+    part: project:D
+    value: 1N4007
+    properties:
+      rating: 1000V 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: DA1
+  D14:
+    part: project:D
+    value: 1N4007
+    properties:
+      rating: 1000V 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: DA2
+  D15:
+    part: project:D
+    value: 1N4007
+    properties:
+      rating: 1000V 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: DA3
+  D16:
+    part: project:D
+    value: 1N4007
+    properties:
+      rating: 1000V 1A
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: DA4
+  C20:
+    part: project:C
+    value: 1000u
+    properties:
+      rating: 35V electrolytic
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: CAUX
+  R40:
+    part: project:R
+    value: '470'
+    properties:
+      rating: 0.5W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: RAZ
+  D17:
+    part: project:D
+    value: 13V zener
+    properties:
+      rating: 0.5W 2%
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: DAZ
+  Q4:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 06b_Auxiliary_supply
+      role: QAUX
+  C21:
+    part: project:C
+    value: 220u
+    properties:
+      rating: 25V electrolytic
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: CA12
+  R41:
+    part: project:R
+    value: 4.7k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 06b_Auxiliary_supply
+      role: RA12
+  R42:
+    part: project:R
+    value: 330k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RT
+  C22:
+    part: project:C
+    value: 100u
+    properties:
+      rating: 25V low leakage; +/-20% directly changes delay
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: CT
+  D18:
+    part: project:D
+    value: 5.1V zener
+    properties:
+      rating: 0.5W
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: DZT
+  R43:
+    part: project:R
+    value: 1k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RTB
+  Q5:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 07_Delay_and_relay_driver
+      role: QT1
+  Q6:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 07_Delay_and_relay_driver
+      role: QT2
+  R44:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RBE
+  D19:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: DFLY
+  D20:
+    part: project:D
+    value: 24V zener
+    properties:
+      rating: 1W pulse-rated; verify coil voltage and release time
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: DZFLY
+  D21:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: DACS
+  C23:
+    part: project:C
+    value: 470n
+    properties:
+      rating: 50V film
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: CACS
+  R45:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RACS
+  R46:
+    part: project:R
+    value: 47k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RACB
+  Q7:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 07_Delay_and_relay_driver
+      role: QAC
+  R47:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RKILL
+  Q8:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 07_Delay_and_relay_driver
+      role: QKILL
+  R48:
+    part: project:R
+    value: 2.3k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RR1
+  R49:
+    part: project:R
+    value: '100'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RR2
+  R50:
+    part: project:R
+    value: '100'
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RR3
+  R51:
+    part: project:R
+    value: 2.3k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 07_Delay_and_relay_driver
+      role: RR4
+  R52:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: RDS1L
+  R53:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 0.5W >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: RDS2L
+  C24:
+    part: project:C
+    value: 1u
+    properties:
+      rating: 250V film, non-polar
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: CDSL
+  D22:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DSPL
+  D23:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DSNL
+  Q9:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 08_DC_monitor_L
+      role: QPSL
+  Q10:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 08_DC_monitor_L
+      role: QPRL
+  Q11:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 08_DC_monitor_L
+      role: QNSL
+  Q12:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 08_DC_monitor_L
+      role: QNRL
+  R54:
+    part: project:R
+    value: 4.7k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: RTPL
+  R55:
+    part: project:R
+    value: 4.7k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: RTNL
+  R56:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: RCPL
+  R57:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: RCNL
+  D24:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DTRPL
+  D25:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DTRNL
+  D26:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DBEPSL
+  D27:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DBEPRL
+  D28:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DBENSL
+  D29:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 08_DC_monitor_L
+      role: DBENRL
+  R58:
+    part: project:R
+    value: 100k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: RDS1R
+  R59:
+    part: project:R
+    value: 100k
+    properties:
+      rating: 0.5W >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: RDS2R
+  C25:
+    part: project:C
+    value: 1u
+    properties:
+      rating: 250V film, non-polar
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: CDSR
+  D30:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DSPR
+  D31:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DSNR
+  Q13:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 09_DC_monitor_R
+      role: QPSR
+  Q14:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 09_DC_monitor_R
+      role: QPRR
+  Q15:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 09_DC_monitor_R
+      role: QNSR
+  Q16:
+    part: project:NPN
+    value: MPSA42
+    properties:
+      rating: 300V VCEO, 0.5A; E/B/C=1/2/3
+      source: https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf
+      sheet: 09_DC_monitor_R
+      role: QNRR
+  R60:
+    part: project:R
+    value: 4.7k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: RTPR
+  R61:
+    part: project:R
+    value: 4.7k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: RTNR
+  R62:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: RCPR
+  R63:
+    part: project:R
+    value: 10k
+    properties:
+      rating: .25W, 1%, >=250V
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: RCNR
+  D32:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DTRPR
+  D33:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DTRNR
+  D34:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DBEPSR
+  D35:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DBEPRR
+  D36:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DBENSR
+  D37:
+    part: project:D
+    value: 1N4148
+    properties:
+      rating: 100V, 150mA
+      source: Project-defined functional terminals; package/purchasing verification
+        required before build
+      sheet: 09_DC_monitor_R
+      role: DBENRR
+connections:
+- net: IN_L
+  endpoints:
+  - J1.#T
+  - SW1.#LH
+  - R1.#1
+- net: IN_R
+  endpoints:
+  - J1.#R
+  - SW1.#RH
+  - R4.#1
+- net: AGND
+  endpoints:
+  - J1.#S
+  - RV1.#LB
+  - RV1.#RB
+  - J2.#S
+  - R2.#2
+  - R3.#2
+  - R5.#2
+  - R6.#2
+  - V1.#9
+  - R8.#2
+  - C2.#2
+  - R13.#2
+  - R14.#2
+  - C4.#2
+  - R15.#2
+  - R16.#2
+  - V2.#9
+  - R18.#2
+  - C7.#2
+  - R23.#2
+  - R24.#2
+  - C9.#2
+  - R25.#2
+  - R26.#2
+  - LK1.#2
+  - D3.#A
+  - D4.#A
+  - C11.#2
+  - C12.#2
+  - R28.#2
+  - R29.#2
+  - R33.#2
+  - D6.#A
+  - C13.#2
+  - C15.#2
+  - R35.#2
+  - R39.#2
+  - C19.#2
+  - D15.#A
+  - D16.#A
+  - C20.#2
+  - D17.#A
+  - C21.#2
+  - R41.#2
+  - C22.#2
+  - Q6.#1
+  - R44.#2
+  - C23.#2
+  - R45.#2
+  - Q7.#1
+  - Q8.#1
+  - R51.#2
+  - D23.#A
+  - R54.#2
+  - R55.#2
+  - D31.#A
+  - R60.#2
+  - R61.#2
+- net: SEL_L
+  endpoints:
+  - SW1.#LC
+  - RV1.#LT
+- net: ATT_L
+  endpoints:
+  - SW1.#LL
+  - R1.#2
+  - R2.#1
+- net: SEL_R
+  endpoints:
+  - SW1.#RC
+  - RV1.#RT
+- net: ATT_R
+  endpoints:
+  - SW1.#RL
+  - R4.#2
+  - R5.#1
+- net: WIP_L
+  endpoints:
+  - RV1.#LW
+  - C1.#1
+- net: WIP_R
+  endpoints:
+  - RV1.#RW
+  - C6.#1
+- net: HP_L
+  endpoints:
+  - J2.#T
+  - R3.#1
+  - K1.#B
+- net: HP_R
+  endpoints:
+  - J2.#R
+  - R6.#1
+  - K2.#B
+- net: L_MID
+  endpoints:
+  - V1.#1
+  - V1.#8
+  - C5.#1
+  - R15.#1
+  - TP1.#1
+- net: L_GL
+  endpoints:
+  - V1.#2
+  - R12.#2
+- net: L_K
+  endpoints:
+  - V1.#3
+  - R14.#1
+  - C4.#1
+  - TP2.#1
+- net: HPLUS
+  endpoints:
+  - V1.#4
+  - V2.#4
+  - U1.#2
+  - R36.#1
+  - C17.#1
+  - D11.#A
+  - D12.#K
+- net: HMINUS
+  endpoints:
+  - V1.#5
+  - V2.#5
+  - D9.#A
+  - D10.#A
+  - C16.#2
+  - R37.#2
+  - C17.#2
+  - C18.#2
+  - R38.#2
+  - R39.#1
+  - C19.#1
+- net: L_PA
+  endpoints:
+  - V1.#6
+  - R11.#2
+  - C3.#1
+- net: L_GU
+  endpoints:
+  - V1.#7
+  - R10.#2
+- net: L_GI
+  endpoints:
+  - C1.#2
+  - R9.#2
+  - R10.#1
+- net: BPLUS
+  endpoints:
+  - R7.#1
+  - R11.#1
+  - R17.#1
+  - R21.#1
+  - R31.#2
+  - Q2.#1
+  - R32.#1
+  - C15.#1
+  - R35.#1
+  - TP7.#1
+  - R38.#1
+- net: L_BIAS
+  endpoints:
+  - R7.#2
+  - R8.#1
+  - C2.#1
+  - R9.#1
+- net: L_GB
+  endpoints:
+  - C3.#2
+  - R12.#1
+  - R13.#1
+- net: L_OUT
+  endpoints:
+  - C5.#2
+  - R16.#1
+  - K1.#A
+  - TP3.#1
+  - R53.#1
+- net: AUX12
+  endpoints:
+  - K1.#CA
+  - K2.#CA
+  - Q4.#1
+  - C21.#1
+  - R41.#1
+  - R42.#1
+  - D20.#A
+  - R47.#1
+  - R48.#1
+  - R52.#1
+  - D22.#K
+  - Q10.#3
+  - Q11.#3
+  - R56.#1
+  - R57.#1
+  - R58.#1
+  - D30.#K
+  - Q14.#3
+  - Q15.#3
+  - R62.#1
+  - R63.#1
+- net: COIL_LO
+  endpoints:
+  - K1.#CB
+  - K2.#CB
+  - Q5.#3
+  - Q6.#3
+  - D19.#A
+- net: R_MID
+  endpoints:
+  - V2.#1
+  - V2.#8
+  - C10.#1
+  - R25.#1
+  - TP4.#1
+- net: R_GL
+  endpoints:
+  - V2.#2
+  - R22.#2
+- net: R_K
+  endpoints:
+  - V2.#3
+  - R24.#1
+  - C9.#1
+  - TP5.#1
+- net: R_PA
+  endpoints:
+  - V2.#6
+  - R21.#2
+  - C8.#1
+- net: R_GU
+  endpoints:
+  - V2.#7
+  - R20.#2
+- net: R_GI
+  endpoints:
+  - C6.#2
+  - R19.#2
+  - R20.#1
+- net: R_BIAS
+  endpoints:
+  - R17.#2
+  - R18.#1
+  - C7.#1
+  - R19.#1
+- net: R_GB
+  endpoints:
+  - C8.#2
+  - R22.#1
+  - R23.#1
+- net: R_OUT
+  endpoints:
+  - C10.#2
+  - R26.#1
+  - K2.#A
+  - TP6.#1
+  - R59.#1
+- net: MAINS_L
+  endpoints:
+  - J3.#L
+  - F1.#1
+- net: MAINS_N
+  endpoints:
+  - J3.#N
+  - SW2.#N1
+- net: PE
+  endpoints:
+  - J3.#PE
+  - T1.#SH
+  - CH1.#1
+  - LK1.#1
+- net: FUSED_L
+  endpoints:
+  - F1.#2
+  - SW2.#L1
+- net: PRI_L
+  endpoints:
+  - SW2.#L2
+  - T1.#P1
+- net: PRI_N
+  endpoints:
+  - SW2.#N2
+  - T1.#P2
+- net: HV_A
+  endpoints:
+  - T1.#H1
+  - F2.#1
+- net: HV_B
+  endpoints:
+  - T1.#H2
+  - D2.#A
+  - D4.#K
+- net: HTR_A
+  endpoints:
+  - T1.#F1
+  - F3.#1
+- net: HTR_B
+  endpoints:
+  - T1.#F2
+  - D8.#A
+  - D10.#K
+- net: AUX_A
+  endpoints:
+  - T1.#A1
+  - D13.#A
+  - D15.#K
+  - D21.#A
+- net: AUX_B
+  endpoints:
+  - T1.#A2
+  - D14.#A
+  - D16.#K
+- net: HV_AF
+  endpoints:
+  - F2.#2
+  - D1.#A
+  - D3.#K
+- net: HV_RAW
+  endpoints:
+  - D1.#K
+  - D2.#K
+  - C11.#1
+  - R27.#1
+  - R28.#1
+- net: HV_IN
+  endpoints:
+  - R27.#2
+  - C12.#1
+  - R29.#1
+  - Q1.#2
+  - R30.#1
+  - R34.#1
+- net: HV_GATE
+  endpoints:
+  - Q1.#1
+  - R30.#2
+  - D5.#K
+  - Q2.#3
+  - Q3.#3
+  - C14.#1
+- net: HV_SOURCE
+  endpoints:
+  - Q1.#3
+  - D5.#A
+  - R31.#1
+  - Q2.#2
+- net: HV_ZREF
+  endpoints:
+  - Q3.#1
+  - R34.#2
+  - D6.#K
+  - C13.#1
+- net: HV_FB
+  endpoints:
+  - Q3.#2
+  - R32.#2
+  - R33.#1
+  - C14.#2
+- net: HTR_AF
+  endpoints:
+  - F3.#2
+  - D7.#A
+  - D9.#K
+- net: HRAW
+  endpoints:
+  - D7.#K
+  - D8.#K
+  - C16.#1
+  - U1.#3
+  - D11.#K
+- net: HADJ
+  endpoints:
+  - U1.#1
+  - R36.#2
+  - R37.#1
+  - C18.#1
+  - D12.#A
+- net: AUX_RAW
+  endpoints:
+  - D13.#K
+  - D14.#K
+  - C20.#1
+  - R40.#1
+  - Q4.#3
+- net: AUX_Z
+  endpoints:
+  - R40.#2
+  - D17.#K
+  - Q4.#2
+- net: TIMER
+  endpoints:
+  - R42.#2
+  - C22.#1
+  - D18.#K
+  - Q8.#3
+  - D24.#A
+  - D25.#A
+  - D32.#A
+  - D33.#A
+- net: TBASE
+  endpoints:
+  - D18.#A
+  - R43.#1
+- net: QB1
+  endpoints:
+  - R43.#2
+  - Q5.#2
+- net: QB2
+  endpoints:
+  - Q5.#1
+  - Q6.#2
+  - R44.#1
+- net: FLY_Z
+  endpoints:
+  - D19.#K
+  - D20.#K
+- net: AC_PRESENT
+  endpoints:
+  - D21.#K
+  - C23.#1
+  - R45.#1
+  - R46.#1
+- net: AC_B
+  endpoints:
+  - R46.#2
+  - Q7.#2
+- net: KILL_B
+  endpoints:
+  - Q7.#3
+  - R47.#2
+  - Q8.#2
+- net: REFHI
+  endpoints:
+  - R48.#2
+  - R49.#1
+  - Q10.#2
+  - D27.#K
+  - Q14.#2
+  - D35.#K
+- net: REFMID
+  endpoints:
+  - R49.#2
+  - R50.#1
+  - C24.#2
+  - C25.#2
+- net: REFLO
+  endpoints:
+  - R50.#2
+  - R51.#1
+  - Q12.#2
+  - D29.#K
+  - Q16.#2
+  - D37.#K
+- net: L_SENSE
+  endpoints:
+  - R52.#2
+  - R53.#2
+  - C24.#1
+  - D22.#A
+  - D23.#K
+  - Q9.#2
+  - Q11.#2
+  - D26.#K
+  - D28.#K
+- net: L_TAILP
+  endpoints:
+  - Q9.#1
+  - Q10.#1
+  - R54.#1
+  - D26.#A
+  - D27.#A
+- net: L_POSC
+  endpoints:
+  - Q9.#3
+  - R56.#2
+  - D24.#K
+- net: L_TAILN
+  endpoints:
+  - Q11.#1
+  - Q12.#1
+  - R55.#1
+  - D28.#A
+  - D29.#A
+- net: L_NEGC
+  endpoints:
+  - Q12.#3
+  - R57.#2
+  - D25.#K
+- net: R_SENSE
+  endpoints:
+  - R58.#2
+  - R59.#2
+  - C25.#1
+  - D30.#A
+  - D31.#K
+  - Q13.#2
+  - Q15.#2
+  - D34.#K
+  - D36.#K
+- net: R_TAILP
+  endpoints:
+  - Q13.#1
+  - Q14.#1
+  - R60.#1
+  - D34.#A
+  - D35.#A
+- net: R_POSC
+  endpoints:
+  - Q13.#3
+  - R62.#2
+  - D32.#K
+- net: R_TAILN
+  endpoints:
+  - Q15.#1
+  - Q16.#1
+  - R61.#1
+  - D36.#A
+  - D37.#A
+- net: R_NEGC
+  endpoints:
+  - Q16.#3
+  - R63.#2
+  - D33.#K

@@ -1,0 +1,51 @@
+* S8050/S8550 simple 9 V class-AB audio amplifier
+* Generic models are used only for topology and operating-point sanity checks.
+
+VCC VCC 0 9
+VIN SRC 0 SIN(0 0.35 1k)
+
+CIN SRC IN_AC 2.2u
+RIN IN_AC BASE_Q1 4.7k
+RFB OUT_INT BASE_Q1 27k
+RGB BASE_Q1 0 10k
+
+Q1 B_LO BASE_Q1 E_Q1 N8050
+RE1 E_Q1 0 100
+CE1 E_Q1 0 470u
+
+RBIAS VCC B_HI 1k
+D1 B_HI B_MID D4148
+D2 B_MID B_LO D4148
+
+Q2 VCC B_HI E_Q2 N8050
+RE2 E_Q2 OUT_INT 1
+Q3 0 B_LO E_Q3 P8550
+RE3 E_Q3 OUT_INT 1
+
+COUT OUT_INT OUT_AC 1000u
+RLOAD OUT_AC 0 8
+
+CDECB VCC 0 100n
+CDECE VCC 0 470u
+
+.model N8050 NPN(IS=1e-14 BF=150 VAF=80 IKF=0.7 CJE=25p CJC=12p TF=1.5n)
+.model P8550 PNP(IS=1e-14 BF=150 VAF=80 IKF=0.7 CJE=30p CJC=15p TF=1.5n)
+.model D4148 D(IS=4n N=1.9 RS=0.6 CJO=2p TT=4n)
+
+.op
+.tran 2u 30m 20m
+.four 1k V(OUT_AC)
+.meas tran VOUT_RMS RMS V(OUT_AC) FROM=20m TO=30m
+.meas tran VOUT_MAX MAX V(OUT_AC) FROM=20m TO=30m
+.meas tran VOUT_MIN MIN V(OUT_AC) FROM=20m TO=30m
+.meas tran PLOAD PARAM='VOUT_RMS*VOUT_RMS/8'
+.meas tran IAVG AVG I(VCC) FROM=20m TO=30m
+
+.control
+set noaskquit
+run
+fourier 1k v(OUT_AC)
+quit
+.endc
+
+.end

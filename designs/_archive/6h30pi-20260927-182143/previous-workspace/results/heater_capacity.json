@@ -1,0 +1,83 @@
+{
+  "heater_capacity_0.9_0.8": {
+    "line_ratio": 0.9,
+    "cap_scale": 0.8,
+    "raw_min_V": 8.39554961,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.332015388833459,
+    "regulator_W": 6.895822113486622,
+    "bulk_ripple_Arms": 3.529772710864309
+  },
+  "heater_capacity_0.9_1": {
+    "line_ratio": 0.9,
+    "cap_scale": 1,
+    "raw_min_V": 8.55340828,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.339499277688716,
+    "regulator_W": 6.956852706757805,
+    "bulk_ripple_Arms": 3.5386539545001954
+  },
+  "heater_capacity_0.9_1.2": {
+    "line_ratio": 0.9,
+    "cap_scale": 1.2,
+    "raw_min_V": 8.65565994,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.3432864889442415,
+    "regulator_W": 6.9903786163158745,
+    "bulk_ripple_Arms": 3.5433829941563673
+  },
+  "heater_capacity_1_0.8": {
+    "line_ratio": 1,
+    "cap_scale": 0.8,
+    "raw_min_V": 9.6431984,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.413895783582712,
+    "regulator_W": 10.046788642658404,
+    "bulk_ripple_Arms": 3.6294650108829174
+  },
+  "heater_capacity_1_1": {
+    "line_ratio": 1,
+    "cap_scale": 1,
+    "raw_min_V": 9.80376392,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.420156144648969,
+    "regulator_W": 10.108179807461598,
+    "bulk_ripple_Arms": 3.637446064297313
+  },
+  "heater_capacity_1_1.2": {
+    "line_ratio": 1,
+    "cap_scale": 1.2,
+    "raw_min_V": 9.90777926,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.42405883028431,
+    "regulator_W": 10.141944229098108,
+    "bulk_ripple_Arms": 3.6420095487300785
+  },
+  "heater_capacity_1.1_0.8": {
+    "line_ratio": 1.1,
+    "cap_scale": 0.8,
+    "raw_min_V": 10.8980369,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.4884725967020165,
+    "regulator_W": 13.21173924153002,
+    "bulk_ripple_Arms": 3.7199581294108097
+  },
+  "heater_capacity_1.1_1": {
+    "line_ratio": 1.1,
+    "cap_scale": 1,
+    "raw_min_V": 11.060946,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.494985265707033,
+    "regulator_W": 13.273450717782577,
+    "bulk_ripple_Arms": 3.727725962330989
+  },
+  "heater_capacity_1.1_1.2": {
+    "line_ratio": 1.1,
+    "cap_scale": 1.2,
+    "raw_min_V": 11.1664829,
+    "output_min_V": 6.3,
+    "secondary_Arms": 4.498277839196064,
+    "regulator_W": 13.307302218848394,
+    "bulk_ripple_Arms": 3.731845479964708
+  }
+}

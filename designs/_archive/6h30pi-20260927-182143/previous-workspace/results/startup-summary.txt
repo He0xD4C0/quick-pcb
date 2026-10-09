@@ -1,0 +1,29 @@
+{
+  "scope": "No measured heater model. Ramps vary emission in the fitted current equation; protective relay forced OPEN in these raw node tests.",
+  "cases": {
+    "both_cold": {
+      "raw_out_peak_V": 50.9244077,
+      "upper_cathode_to_heater_abs_max_V": 43.8809799,
+      "lower_cathode_to_heater_abs_max_V": 36.50917361,
+      "minimum_output_cap_voltage_V": -2.1820533704540002e-20,
+      "upper_plate_to_cathode_min_V": 2.1820131766013406e-20,
+      "raw_out_at_60s_V": 0.24333601566100002
+    },
+    "lower_late": {
+      "raw_out_peak_V": 52.9510552,
+      "upper_cathode_to_heater_abs_max_V": 47.35568200000001,
+      "lower_cathode_to_heater_abs_max_V": 38.17254508466377,
+      "minimum_output_cap_voltage_V": -2.1820533704540002e-20,
+      "upper_plate_to_cathode_min_V": 2.1820131766013406e-20,
+      "raw_out_at_60s_V": -0.17003155932640004
+    },
+    "upper_late": {
+      "raw_out_peak_V": 31.2092504,
+      "upper_cathode_to_heater_abs_max_V": 43.88046490000001,
+      "lower_cathode_to_heater_abs_max_V": 38.119782740800005,
+      "minimum_output_cap_voltage_V": -2.1820533704540002e-20,
+      "upper_plate_to_cathode_min_V": 2.1820131766013406e-20,
+      "raw_out_at_60s_V": 4.728674212960001
+    }
+  }
+}

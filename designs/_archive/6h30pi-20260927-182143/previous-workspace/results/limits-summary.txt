@@ -1,0 +1,93 @@
+{
+  "random_seed": 630,
+  "mode_vs_volume": [
+    {
+      "volume_fraction": 0.1,
+      "source_ohm": 0.01,
+      "difference_dB": 20.01882893654154
+    },
+    {
+      "volume_fraction": 0.1,
+      "source_ohm": 100,
+      "difference_dB": 19.934091130221326
+    },
+    {
+      "volume_fraction": 0.1,
+      "source_ohm": 1000,
+      "difference_dB": 19.2757565414118
+    },
+    {
+      "volume_fraction": 0.5,
+      "source_ohm": 0.01,
+      "difference_dB": 20.05317013224055
+    },
+    {
+      "volume_fraction": 0.5,
+      "source_ohm": 100,
+      "difference_dB": 19.96435570459402
+    },
+    {
+      "volume_fraction": 0.5,
+      "source_ohm": 1000,
+      "difference_dB": 19.275756540064375
+    },
+    {
+      "volume_fraction": 1,
+      "source_ohm": 0.01,
+      "difference_dB": 20.167277277471563
+    },
+    {
+      "volume_fraction": 1,
+      "source_ohm": 100,
+      "difference_dB": 20.064812468522884
+    },
+    {
+      "volume_fraction": 1,
+      "source_ohm": 1000,
+      "difference_dB": 19.275756548008932
+    }
+  ],
+  "model_alternative_50mV": {
+    "16": {
+      "target_Vrms": 0.05,
+      "input_Vrms": 0.24244567652009835,
+      "thd_percent": 0.0916541
+    },
+    "18": {
+      "target_Vrms": 0.05,
+      "input_Vrms": 0.22191644607768235,
+      "thd_percent": 0.0801262
+    }
+  },
+  "noise": {
+    "16": {
+      "onoise_total": 1.139942e-07,
+      "inoise_total": 2.996451e-07
+    },
+    "18": {
+      "onoise_total": 1.208342e-07,
+      "inoise_total": 2.974094e-07
+    }
+  },
+  "psrr": {
+    "16": {
+      "50": 0.11881899565177373,
+      "100": 0.11927541121780318,
+      "200": 0.11939027562997812,
+      "1000": 0.11942711372253699
+    },
+    "18": {
+      "50": 0.12695488997181817,
+      "100": 0.12739747580427604,
+      "200": 0.12750878625588224,
+      "1000": 0.12754447842905886
+    }
+  },
+  "scope": [
+    "Random cases are sensitivities, not a statistical tube production model.",
+    "Resistor thermal noise only; tube intrinsic, microphonic, heater and LDO/zener noise omitted.",
+    "THD uses generic curve-derived models; tiny computed values near 0.003% numerical floor are not precision claims.",
+    "Short/open and switching fixtures in protection script are simplified scenarios."
+  ]
+}
+maxTHD 0.131592

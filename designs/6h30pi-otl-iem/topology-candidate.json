@@ -1,0 +1,2742 @@
+{
+  "parts": [
+    {
+      "ref": "J1",
+      "key": "jack_trs",
+      "pins": {
+        "1": "AGND",
+        "2": "IN_R",
+        "3": "IN_L"
+      },
+      "x": 170,
+      "y": 310,
+      "angle": 0,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "J1"
+    },
+    {
+      "ref": "SW1",
+      "key": "gain_dpdt",
+      "pins": {
+        "1": "IN_L",
+        "2": "SEL_L",
+        "3": "LOW_L",
+        "4": "IN_R",
+        "5": "SEL_R",
+        "6": "LOW_R",
+        "0": null
+      },
+      "x": 650,
+      "y": 360,
+      "angle": 0,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "SW1"
+    },
+    {
+      "ref": "R1",
+      "key": "r_8k2_025w",
+      "pins": {
+        "1": "IN_L",
+        "2": "LOW_L"
+      },
+      "x": 400,
+      "y": 260,
+      "angle": 0,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "RAL"
+    },
+    {
+      "ref": "R2",
+      "key": "r_1k_025w",
+      "pins": {
+        "1": "LOW_L",
+        "2": "AGND"
+      },
+      "x": 510,
+      "y": 350,
+      "angle": 90,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "RBL"
+    },
+    {
+      "ref": "R3",
+      "key": "r_8k2_025w",
+      "pins": {
+        "1": "IN_R",
+        "2": "LOW_R"
+      },
+      "x": 400,
+      "y": 510,
+      "angle": 0,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "RAR"
+    },
+    {
+      "ref": "R4",
+      "key": "r_1k_025w",
+      "pins": {
+        "1": "LOW_R",
+        "2": "AGND"
+      },
+      "x": 510,
+      "y": 600,
+      "angle": 90,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "RBR"
+    },
+    {
+      "ref": "RV1",
+      "key": "pot_dual10k_log",
+      "pins": {
+        "1": "AGND",
+        "2": "WIP_L",
+        "3": "SEL_L",
+        "4": "AGND",
+        "5": "WIP_R",
+        "6": "SEL_R"
+      },
+      "x": 870,
+      "y": 360,
+      "angle": 0,
+      "section": "01 INPUT / GAIN / VOLUME",
+      "value": null,
+      "note": "",
+      "alias": "RV1"
+    },
+    {
+      "ref": "V1",
+      "key": "tube_6h30pi_eb",
+      "pins": {
+        "1": "L_MID",
+        "2": "L_GL",
+        "3": "L_K",
+        "4": "HPLUS",
+        "5": "HMINUS",
+        "6": "L_PA",
+        "7": "L_GU",
+        "8": "L_MID",
+        "9": "AGND"
+      },
+      "x": 1840,
+      "y": 420,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "VL"
+    },
+    {
+      "ref": "C1",
+      "key": "c_signal_4u7film",
+      "pins": {
+        "1": "WIP_L",
+        "2": "L_GI"
+      },
+      "x": 1360,
+      "y": 420,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CIL"
+    },
+    {
+      "ref": "R5",
+      "key": "r_100_025w",
+      "pins": {
+        "1": "L_GI",
+        "2": "L_GU"
+      },
+      "x": 1620,
+      "y": 420,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RGTL"
+    },
+    {
+      "ref": "R6",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "L_BIAS"
+      },
+      "x": 1290,
+      "y": 230,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RBUL"
+    },
+    {
+      "ref": "R7",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "L_BIAS",
+        "2": "AGND"
+      },
+      "x": 1290,
+      "y": 330,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RBDL"
+    },
+    {
+      "ref": "C2",
+      "key": "c_hv_220u400",
+      "pins": {
+        "1": "L_BIAS",
+        "2": "AGND"
+      },
+      "x": 1450,
+      "y": 285,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CBL"
+    },
+    {
+      "ref": "R8",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "L_BIAS",
+        "2": "L_GI"
+      },
+      "x": 1580,
+      "y": 285,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RGBL"
+    },
+    {
+      "ref": "R9",
+      "key": "r_127_1w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "L_PA"
+      },
+      "x": 1840,
+      "y": 230,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RSL"
+    },
+    {
+      "ref": "C3",
+      "key": "c_signal_4u7film",
+      "pins": {
+        "1": "L_PA",
+        "2": "L_GB"
+      },
+      "x": 1580,
+      "y": 600,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CFL"
+    },
+    {
+      "ref": "R10",
+      "key": "r_100_025w",
+      "pins": {
+        "1": "L_GB",
+        "2": "L_GL"
+      },
+      "x": 1670,
+      "y": 700,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RGLL"
+    },
+    {
+      "ref": "R11",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "L_GB",
+        "2": "AGND"
+      },
+      "x": 1500,
+      "y": 760,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RLGL"
+    },
+    {
+      "ref": "R12",
+      "key": "r_68_1w",
+      "pins": {
+        "1": "L_K",
+        "2": "AGND"
+      },
+      "x": 1840,
+      "y": 810,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RKL"
+    },
+    {
+      "ref": "C4",
+      "key": "c_cathode_2200u25",
+      "pins": {
+        "1": "L_K",
+        "2": "AGND"
+      },
+      "x": 1970,
+      "y": 810,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CKL"
+    },
+    {
+      "ref": "C5",
+      "key": "c_output_1000u250",
+      "pins": {
+        "1": "L_MID",
+        "2": "L_OUT"
+      },
+      "x": 2075,
+      "y": 420,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "COL"
+    },
+    {
+      "ref": "R13",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "L_MID",
+        "2": "AGND"
+      },
+      "x": 2010,
+      "y": 585,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RDL"
+    },
+    {
+      "ref": "R14",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "L_OUT",
+        "2": "AGND"
+      },
+      "x": 2200,
+      "y": 590,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RO1L"
+    },
+    {
+      "ref": "R15",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "L_OUT",
+        "2": "AGND"
+      },
+      "x": 2300,
+      "y": 590,
+      "angle": 90,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RO2L"
+    },
+    {
+      "ref": "K1",
+      "key": "relay_hv",
+      "pins": {
+        "1": "L_OUT",
+        "4": "HP_L",
+        "2": "AUX12",
+        "3": "COIL_LOW"
+      },
+      "x": 2280,
+      "y": 420,
+      "angle": 0,
+      "section": "02 L WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "KL"
+    },
+    {
+      "ref": "V2",
+      "key": "tube_6h30pi_eb",
+      "pins": {
+        "1": "R_MID",
+        "2": "R_GL",
+        "3": "R_K",
+        "4": "HPLUS",
+        "5": "HMINUS",
+        "6": "R_PA",
+        "7": "R_GU",
+        "8": "R_MID",
+        "9": "AGND"
+      },
+      "x": 3240,
+      "y": 420,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "VR"
+    },
+    {
+      "ref": "C6",
+      "key": "c_signal_4u7film",
+      "pins": {
+        "1": "WIP_R",
+        "2": "R_GI"
+      },
+      "x": 2760,
+      "y": 420,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CIR"
+    },
+    {
+      "ref": "R16",
+      "key": "r_100_025w",
+      "pins": {
+        "1": "R_GI",
+        "2": "R_GU"
+      },
+      "x": 3020,
+      "y": 420,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RGTR"
+    },
+    {
+      "ref": "R17",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "R_BIAS"
+      },
+      "x": 2690,
+      "y": 230,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RBUR"
+    },
+    {
+      "ref": "R18",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "R_BIAS",
+        "2": "AGND"
+      },
+      "x": 2690,
+      "y": 330,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RBDR"
+    },
+    {
+      "ref": "C7",
+      "key": "c_hv_220u400",
+      "pins": {
+        "1": "R_BIAS",
+        "2": "AGND"
+      },
+      "x": 2850,
+      "y": 285,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CBR"
+    },
+    {
+      "ref": "R19",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "R_BIAS",
+        "2": "R_GI"
+      },
+      "x": 2980,
+      "y": 285,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RGBR"
+    },
+    {
+      "ref": "R20",
+      "key": "r_127_1w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "R_PA"
+      },
+      "x": 3240,
+      "y": 230,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RSR"
+    },
+    {
+      "ref": "C8",
+      "key": "c_signal_4u7film",
+      "pins": {
+        "1": "R_PA",
+        "2": "R_GB"
+      },
+      "x": 2980,
+      "y": 600,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CFR"
+    },
+    {
+      "ref": "R21",
+      "key": "r_100_025w",
+      "pins": {
+        "1": "R_GB",
+        "2": "R_GL"
+      },
+      "x": 3070,
+      "y": 700,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RGLR"
+    },
+    {
+      "ref": "R22",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "R_GB",
+        "2": "AGND"
+      },
+      "x": 2900,
+      "y": 760,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RLGR"
+    },
+    {
+      "ref": "R23",
+      "key": "r_68_1w",
+      "pins": {
+        "1": "R_K",
+        "2": "AGND"
+      },
+      "x": 3240,
+      "y": 810,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RKR"
+    },
+    {
+      "ref": "C9",
+      "key": "c_cathode_2200u25",
+      "pins": {
+        "1": "R_K",
+        "2": "AGND"
+      },
+      "x": 3370,
+      "y": 810,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "CKR"
+    },
+    {
+      "ref": "C10",
+      "key": "c_output_1000u250",
+      "pins": {
+        "1": "R_MID",
+        "2": "R_OUT"
+      },
+      "x": 3475,
+      "y": 420,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "COR"
+    },
+    {
+      "ref": "R24",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "R_MID",
+        "2": "AGND"
+      },
+      "x": 3410,
+      "y": 585,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RDR"
+    },
+    {
+      "ref": "R25",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "R_OUT",
+        "2": "AGND"
+      },
+      "x": 3600,
+      "y": 590,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RO1R"
+    },
+    {
+      "ref": "R26",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "R_OUT",
+        "2": "AGND"
+      },
+      "x": 3700,
+      "y": 590,
+      "angle": 90,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "RO2R"
+    },
+    {
+      "ref": "K2",
+      "key": "relay_hv",
+      "pins": {
+        "1": "R_OUT",
+        "4": "HP_R",
+        "2": "AUX12",
+        "3": "COIL_LOW"
+      },
+      "x": 3680,
+      "y": 420,
+      "angle": 0,
+      "section": "02 R WHITE CATHODE FOLLOWER",
+      "value": null,
+      "note": "",
+      "alias": "KR"
+    },
+    {
+      "ref": "J2",
+      "key": "jack_trs",
+      "pins": {
+        "1": "AGND",
+        "2": "HP_R",
+        "3": "HP_L"
+      },
+      "x": 4200,
+      "y": 430,
+      "angle": 0,
+      "section": "03 HEADPHONE OUTPUT",
+      "value": null,
+      "note": "",
+      "alias": "J2"
+    },
+    {
+      "ref": "J3",
+      "key": "mains_inlet",
+      "pins": {
+        "L": "MAINS_L",
+        "N": "MAINS_N",
+        "PE": "AGND"
+      },
+      "x": 150,
+      "y": 1350,
+      "angle": 0,
+      "section": "04 MAINS / ISOLATION",
+      "value": null,
+      "note": "",
+      "alias": "J3"
+    },
+    {
+      "ref": "F1",
+      "key": "fuse_mains_1a",
+      "pins": {
+        "1": "MAINS_L",
+        "2": "FUSED_L"
+      },
+      "x": 360,
+      "y": 1280,
+      "angle": 0,
+      "section": "04 MAINS / ISOLATION",
+      "value": null,
+      "note": "",
+      "alias": "F1"
+    },
+    {
+      "ref": "SW2",
+      "key": "mains_switch",
+      "pins": {
+        "1": "FUSED_L",
+        "1a": "PRI_L",
+        "2": "MAINS_N",
+        "2a": "PRI_N"
+      },
+      "x": 570,
+      "y": 1340,
+      "angle": 0,
+      "section": "04 MAINS / ISOLATION",
+      "value": null,
+      "note": "",
+      "alias": "SW2"
+    },
+    {
+      "ref": "T1",
+      "key": "transformer_contract",
+      "pins": {
+        "1": "PRI_L",
+        "2": "PRI_N",
+        "3": "HV_A",
+        "4": "HV_B",
+        "5": "HTR_A",
+        "6": "HTR_B",
+        "7": "AUX_A",
+        "8": "AUX_B"
+      },
+      "x": 850,
+      "y": 1400,
+      "angle": 0,
+      "section": "04 MAINS / ISOLATION",
+      "value": null,
+      "note": "",
+      "alias": "T1"
+    },
+    {
+      "ref": "LK1",
+      "key": "terminal_2",
+      "pins": {
+        "1": "AGND",
+        "2": "AGND"
+      },
+      "x": 410,
+      "y": 1490,
+      "angle": 0,
+      "section": "04 MAINS / ISOLATION",
+      "value": null,
+      "note": "Install short bolted bonding strap between terminals1/2; never rely on PCB tracks for PE",
+      "alias": "LK1"
+    },
+    {
+      "ref": "F2",
+      "key": "fuse_hv_500ma",
+      "pins": {
+        "1": "HV_A",
+        "2": "HV_AF"
+      },
+      "x": 1240,
+      "y": 1240,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "F2"
+    },
+    {
+      "ref": "D1",
+      "key": "d_hv_uf4007",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "HV_AF"
+      },
+      "x": 1420,
+      "y": 1220,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "DH1"
+    },
+    {
+      "ref": "D2",
+      "key": "d_hv_uf4007",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "HV_B"
+      },
+      "x": 1420,
+      "y": 1390,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "DH2"
+    },
+    {
+      "ref": "D3",
+      "key": "d_hv_uf4007",
+      "pins": {
+        "1": "HV_AF",
+        "2": "AGND"
+      },
+      "x": 1420,
+      "y": 1300,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "DH3"
+    },
+    {
+      "ref": "D4",
+      "key": "d_hv_uf4007",
+      "pins": {
+        "1": "HV_B",
+        "2": "AGND"
+      },
+      "x": 1420,
+      "y": 1470,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "DH4"
+    },
+    {
+      "ref": "C11",
+      "key": "c_hv_220u400",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "AGND"
+      },
+      "x": 1590,
+      "y": 1280,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "CHV1"
+    },
+    {
+      "ref": "R27",
+      "key": "r_22_1w",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "HV_IN"
+      },
+      "x": 1710,
+      "y": 1170,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RCRC"
+    },
+    {
+      "ref": "C12",
+      "key": "c_hv_220u400",
+      "pins": {
+        "1": "HV_IN",
+        "2": "AGND"
+      },
+      "x": 1810,
+      "y": 1280,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "CHV2"
+    },
+    {
+      "ref": "R28",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "HV_RAW_BLEED"
+      },
+      "x": 1610,
+      "y": 1450,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RDISHV_RAWA"
+    },
+    {
+      "ref": "R29",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "HV_RAW_BLEED",
+        "2": "AGND"
+      },
+      "x": 1610,
+      "y": 1550,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RDISHV_RAWB"
+    },
+    {
+      "ref": "R30",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "HV_IN",
+        "2": "HV_IN_BLEED"
+      },
+      "x": 1810,
+      "y": 1450,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RDISHV_INA"
+    },
+    {
+      "ref": "R31",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "HV_IN_BLEED",
+        "2": "AGND"
+      },
+      "x": 1810,
+      "y": 1550,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RDISHV_INB"
+    },
+    {
+      "ref": "Q1",
+      "key": "hv_nmos",
+      "pins": {
+        "1": "HV_GATE",
+        "2": "HV_IN",
+        "3": "HV_SOURCE"
+      },
+      "x": 2110,
+      "y": 1230,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "QHV"
+    },
+    {
+      "ref": "R32",
+      "key": "r_10_1w",
+      "pins": {
+        "1": "HV_SOURCE",
+        "2": "BPLUS"
+      },
+      "x": 2240,
+      "y": 1270,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RIL1"
+    },
+    {
+      "ref": "R33",
+      "key": "r_10_1w",
+      "pins": {
+        "1": "HV_SOURCE",
+        "2": "BPLUS"
+      },
+      "x": 2240,
+      "y": 1360,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RIL2"
+    },
+    {
+      "ref": "Q2",
+      "key": "hv_npn",
+      "pins": {
+        "1": "BPLUS",
+        "2": "HV_SOURCE",
+        "3": "HV_GATE"
+      },
+      "x": 2220,
+      "y": 1510,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "QIL"
+    },
+    {
+      "ref": "D5",
+      "key": "z_gate_12v",
+      "pins": {
+        "1": "HV_GATE",
+        "2": "HV_SOURCE"
+      },
+      "x": 1980,
+      "y": 1370,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "DZGS"
+    },
+    {
+      "ref": "R34",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "HV_IN",
+        "2": "GF1"
+      },
+      "x": 1930,
+      "y": 1110,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RGF1"
+    },
+    {
+      "ref": "R35",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "GF1",
+        "2": "GF2"
+      },
+      "x": 2040,
+      "y": 1110,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RGF2"
+    },
+    {
+      "ref": "R36",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "GF2",
+        "2": "GF3"
+      },
+      "x": 2150,
+      "y": 1110,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RGF3"
+    },
+    {
+      "ref": "R37",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "GF3",
+        "2": "HV_GATE"
+      },
+      "x": 2260,
+      "y": 1110,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RGF4"
+    },
+    {
+      "ref": "Q3",
+      "key": "hv_npn",
+      "pins": {
+        "1": "ZREF",
+        "2": "HV_FB",
+        "3": "HV_GATE"
+      },
+      "x": 2130,
+      "y": 1700,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "QERR"
+    },
+    {
+      "ref": "R38",
+      "key": "r_221k_025w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "HV_FB"
+      },
+      "x": 2240,
+      "y": 1620,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RFB1"
+    },
+    {
+      "ref": "R39",
+      "key": "r_10k_025w",
+      "pins": {
+        "1": "HV_FB",
+        "2": "AGND"
+      },
+      "x": 2240,
+      "y": 1790,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RFB2"
+    },
+    {
+      "ref": "R40",
+      "key": "r_22k_025w",
+      "pins": {
+        "1": "HV_IN",
+        "2": "ZF1"
+      },
+      "x": 1240,
+      "y": 1810,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RZF1"
+    },
+    {
+      "ref": "R41",
+      "key": "r_22k_025w",
+      "pins": {
+        "1": "ZF1",
+        "2": "ZF2"
+      },
+      "x": 1350,
+      "y": 1810,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RZF2"
+    },
+    {
+      "ref": "R42",
+      "key": "r_22k_025w",
+      "pins": {
+        "1": "ZF2",
+        "2": "ZF3"
+      },
+      "x": 1460,
+      "y": 1810,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RZF3"
+    },
+    {
+      "ref": "R43",
+      "key": "r_22k_025w",
+      "pins": {
+        "1": "ZF3",
+        "2": "ZREF"
+      },
+      "x": 1570,
+      "y": 1810,
+      "angle": 0,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RZF4"
+    },
+    {
+      "ref": "D6",
+      "key": "z_ref_6v2",
+      "pins": {
+        "1": "ZREF",
+        "2": "AGND"
+      },
+      "x": 1810,
+      "y": 1700,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "DZREF"
+    },
+    {
+      "ref": "C13",
+      "key": "c_control_470u25",
+      "pins": {
+        "1": "ZREF",
+        "2": "AGND"
+      },
+      "x": 1920,
+      "y": 1700,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "CZREF"
+    },
+    {
+      "ref": "C14",
+      "key": "c_signal_4u7film",
+      "pins": {
+        "1": "HV_GATE",
+        "2": "AGND"
+      },
+      "x": 1980,
+      "y": 1500,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "CGATE"
+    },
+    {
+      "ref": "C15",
+      "key": "c_hv_220u400",
+      "pins": {
+        "1": "BPLUS",
+        "2": "AGND"
+      },
+      "x": 2380,
+      "y": 1510,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "CBP"
+    },
+    {
+      "ref": "R44",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "AGND"
+      },
+      "x": 2380,
+      "y": 1730,
+      "angle": 90,
+      "section": "05 HV RECTIFIER / DISCRETE REGULATOR",
+      "value": null,
+      "note": "",
+      "alias": "RBP"
+    },
+    {
+      "ref": "F3",
+      "key": "fuse_heater_5a",
+      "pins": {
+        "1": "HTR_A",
+        "2": "HTR_AF"
+      },
+      "x": 2710,
+      "y": 1220,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "F3"
+    },
+    {
+      "ref": "D7",
+      "key": "d_heater_sb560",
+      "pins": {
+        "1": "HRAW",
+        "2": "HTR_AF"
+      },
+      "x": 2880,
+      "y": 1190,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "DF1"
+    },
+    {
+      "ref": "D8",
+      "key": "d_heater_sb560",
+      "pins": {
+        "1": "HRAW",
+        "2": "HTR_B"
+      },
+      "x": 2880,
+      "y": 1360,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "DF2"
+    },
+    {
+      "ref": "D9",
+      "key": "d_heater_sb560",
+      "pins": {
+        "1": "HTR_AF",
+        "2": "HMINUS"
+      },
+      "x": 2880,
+      "y": 1270,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "DF3"
+    },
+    {
+      "ref": "D10",
+      "key": "d_heater_sb560",
+      "pins": {
+        "1": "HTR_B",
+        "2": "HMINUS"
+      },
+      "x": 2880,
+      "y": 1440,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "DF4"
+    },
+    {
+      "ref": "C16",
+      "key": "c_heater_3300u25",
+      "pins": {
+        "1": "HRAW",
+        "2": "HMINUS"
+      },
+      "x": 3070,
+      "y": 1300,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHF1"
+    },
+    {
+      "ref": "C17",
+      "key": "c_heater_3300u25",
+      "pins": {
+        "1": "HRAW",
+        "2": "HMINUS"
+      },
+      "x": 3190,
+      "y": 1300,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHF2"
+    },
+    {
+      "ref": "C18",
+      "key": "c_heater_3300u25",
+      "pins": {
+        "1": "HRAW",
+        "2": "HMINUS"
+      },
+      "x": 3310,
+      "y": 1300,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHF3"
+    },
+    {
+      "ref": "C19",
+      "key": "c_heater_3300u25",
+      "pins": {
+        "1": "HRAW",
+        "2": "HMINUS"
+      },
+      "x": 3430,
+      "y": 1300,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHF4"
+    },
+    {
+      "ref": "U1",
+      "key": "heater_ldo",
+      "pins": {
+        "1": "HADJ",
+        "2": "HPLUS",
+        "3": "HRAW"
+      },
+      "x": 3640,
+      "y": 1210,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "UH"
+    },
+    {
+      "ref": "R45",
+      "key": "r_121_025w",
+      "pins": {
+        "1": "HPLUS",
+        "2": "HADJ"
+      },
+      "x": 3790,
+      "y": 1300,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "RH1"
+    },
+    {
+      "ref": "R46",
+      "key": "r_487_025w",
+      "pins": {
+        "1": "HADJ",
+        "2": "HMINUS"
+      },
+      "x": 3790,
+      "y": 1420,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "RH2"
+    },
+    {
+      "ref": "C20",
+      "key": "c_control_470u25",
+      "pins": {
+        "1": "HPLUS",
+        "2": "HMINUS"
+      },
+      "x": 3950,
+      "y": 1300,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHO"
+    },
+    {
+      "ref": "C21",
+      "key": "c_delay_100u25",
+      "pins": {
+        "1": "HADJ",
+        "2": "HMINUS"
+      },
+      "x": 3660,
+      "y": 1420,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHA"
+    },
+    {
+      "ref": "D11",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "HRAW",
+        "2": "HPLUS"
+      },
+      "x": 3520,
+      "y": 1100,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "DHR"
+    },
+    {
+      "ref": "D12",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "HPLUS",
+        "2": "HADJ"
+      },
+      "x": 3780,
+      "y": 1110,
+      "angle": 0,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "DHA"
+    },
+    {
+      "ref": "R47",
+      "key": "r_200k_1w",
+      "pins": {
+        "1": "BPLUS",
+        "2": "HMINUS"
+      },
+      "x": 3170,
+      "y": 1630,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "RHEU"
+    },
+    {
+      "ref": "R48",
+      "key": "r_100k_1w",
+      "pins": {
+        "1": "HMINUS",
+        "2": "AGND"
+      },
+      "x": 3170,
+      "y": 1760,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "RHED"
+    },
+    {
+      "ref": "C22",
+      "key": "c_hv_220u400",
+      "pins": {
+        "1": "HMINUS",
+        "2": "AGND"
+      },
+      "x": 3380,
+      "y": 1700,
+      "angle": 90,
+      "section": "06 DC HEATERS / ELEVATION",
+      "value": null,
+      "note": "",
+      "alias": "CHE"
+    },
+    {
+      "ref": "D13",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "AUX_RAW",
+        "2": "AUX_A"
+      },
+      "x": 180,
+      "y": 2210,
+      "angle": 0,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "DA1"
+    },
+    {
+      "ref": "D14",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "AUX_RAW",
+        "2": "AUX_B"
+      },
+      "x": 180,
+      "y": 2380,
+      "angle": 0,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "DA2"
+    },
+    {
+      "ref": "D15",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "AUX_A",
+        "2": "AGND"
+      },
+      "x": 180,
+      "y": 2290,
+      "angle": 0,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "DA3"
+    },
+    {
+      "ref": "D16",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "AUX_B",
+        "2": "AGND"
+      },
+      "x": 180,
+      "y": 2460,
+      "angle": 0,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "DA4"
+    },
+    {
+      "ref": "C23",
+      "key": "c_heater_3300u25",
+      "pins": {
+        "1": "AUX_RAW",
+        "2": "AGND"
+      },
+      "x": 380,
+      "y": 2340,
+      "angle": 90,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "CAUX"
+    },
+    {
+      "ref": "R49",
+      "key": "r_470_025w",
+      "pins": {
+        "1": "AUX_RAW",
+        "2": "AUX_Z"
+      },
+      "x": 600,
+      "y": 2180,
+      "angle": 0,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "RAUX"
+    },
+    {
+      "ref": "D17",
+      "key": "z_aux_13v",
+      "pins": {
+        "1": "AUX_Z",
+        "2": "AGND"
+      },
+      "x": 650,
+      "y": 2350,
+      "angle": 90,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "DZAX"
+    },
+    {
+      "ref": "C24",
+      "key": "c_control_470u25",
+      "pins": {
+        "1": "AUX_Z",
+        "2": "AGND"
+      },
+      "x": 810,
+      "y": 2350,
+      "angle": 90,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "CAXZ"
+    },
+    {
+      "ref": "Q4",
+      "key": "aux_npn_bd139",
+      "pins": {
+        "1": "AUX12",
+        "2": "AUX_RAW",
+        "3": "AUX_Z"
+      },
+      "x": 970,
+      "y": 2220,
+      "angle": 0,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "QAUX"
+    },
+    {
+      "ref": "C25",
+      "key": "c_control_470u25",
+      "pins": {
+        "1": "AUX12",
+        "2": "AGND"
+      },
+      "x": 1120,
+      "y": 2350,
+      "angle": 90,
+      "section": "07 AUXILIARY DC",
+      "value": null,
+      "note": "",
+      "alias": "CAXO"
+    },
+    {
+      "ref": "R50",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "AUX12",
+        "2": "TIMER"
+      },
+      "x": 1540,
+      "y": 2180,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "RT"
+    },
+    {
+      "ref": "C26",
+      "key": "c_control_470u25",
+      "pins": {
+        "1": "TIMER",
+        "2": "AGND"
+      },
+      "x": 1650,
+      "y": 2350,
+      "angle": 90,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "CT"
+    },
+    {
+      "ref": "D18",
+      "key": "z_timer_5v1",
+      "pins": {
+        "1": "TIMER",
+        "2": "ZT_OUT"
+      },
+      "x": 1730,
+      "y": 2180,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "DZT"
+    },
+    {
+      "ref": "R51",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "ZT_OUT",
+        "2": "D1B"
+      },
+      "x": 1840,
+      "y": 2180,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "RZBASE"
+    },
+    {
+      "ref": "Q5",
+      "key": "hv_npn",
+      "pins": {
+        "1": "D2B",
+        "2": "D1B",
+        "3": "COIL_LOW"
+      },
+      "x": 1960,
+      "y": 2190,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "QD1"
+    },
+    {
+      "ref": "Q6",
+      "key": "hv_npn",
+      "pins": {
+        "1": "D3B",
+        "2": "D2B",
+        "3": "COIL_LOW"
+      },
+      "x": 2110,
+      "y": 2310,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "QD2"
+    },
+    {
+      "ref": "Q7",
+      "key": "aux_npn_bd139",
+      "pins": {
+        "1": "AGND",
+        "2": "COIL_LOW",
+        "3": "D3B"
+      },
+      "x": 2260,
+      "y": 2430,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "QD3"
+    },
+    {
+      "ref": "R52",
+      "key": "r_100k_025w",
+      "pins": {
+        "1": "D1B",
+        "2": "AGND"
+      },
+      "x": 1830,
+      "y": 2390,
+      "angle": 90,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "RDB"
+    },
+    {
+      "ref": "R53",
+      "key": "r_10k_025w",
+      "pins": {
+        "1": "D3B",
+        "2": "AGND"
+      },
+      "x": 2110,
+      "y": 2490,
+      "angle": 90,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "RDE"
+    },
+    {
+      "ref": "D19",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "FLY_K",
+        "2": "COIL_LOW"
+      },
+      "x": 2320,
+      "y": 2190,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "DFLY"
+    },
+    {
+      "ref": "D20",
+      "key": "z_flyback_24v",
+      "pins": {
+        "1": "FLY_K",
+        "2": "AUX12"
+      },
+      "x": 2470,
+      "y": 2190,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "DZFLY"
+    },
+    {
+      "ref": "D21",
+      "key": "d_small_1n4148",
+      "pins": {
+        "1": "AUX12",
+        "2": "TIMER"
+      },
+      "x": 1520,
+      "y": 2310,
+      "angle": 0,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "DRESET"
+    },
+    {
+      "ref": "R54",
+      "key": "r_1k_025w",
+      "pins": {
+        "1": "AUX12",
+        "2": "AGND"
+      },
+      "x": 1450,
+      "y": 2480,
+      "angle": 90,
+      "section": "08 DELAY / RELAY DRIVE / POWER LOSS",
+      "value": null,
+      "note": "",
+      "alias": "ROFF"
+    },
+    {
+      "ref": "R55",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "L_OUT",
+        "2": "SEN_M_L"
+      },
+      "x": 2830,
+      "y": 2150,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "RSEN1L"
+    },
+    {
+      "ref": "R56",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "SEN_M_L",
+        "2": "SEN_AC_L"
+      },
+      "x": 2960,
+      "y": 2150,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "RSEN2L"
+    },
+    {
+      "ref": "D22",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "OP_P_L",
+        "2": "SEN_AC_L"
+      },
+      "x": 3030,
+      "y": 2250,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSL1"
+    },
+    {
+      "ref": "D23",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "OP_P_L",
+        "2": "AGND"
+      },
+      "x": 3030,
+      "y": 2400,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSL2"
+    },
+    {
+      "ref": "D24",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "SEN_AC_L",
+        "2": "OP_N_L"
+      },
+      "x": 3030,
+      "y": 2320,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSL3"
+    },
+    {
+      "ref": "D25",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "AGND",
+        "2": "OP_N_L"
+      },
+      "x": 3030,
+      "y": 2470,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSL4"
+    },
+    {
+      "ref": "U2",
+      "key": "fault_opto",
+      "pins": {
+        "1": "OP_P_L",
+        "2": "OP_N_L",
+        "3": "AGND",
+        "4": "D1B"
+      },
+      "x": 3310,
+      "y": 2330,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "UOL"
+    },
+    {
+      "ref": "R57",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "R_OUT",
+        "2": "SEN_M_R"
+      },
+      "x": 3630,
+      "y": 2150,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "RSEN1R"
+    },
+    {
+      "ref": "R58",
+      "key": "r_47k_025w",
+      "pins": {
+        "1": "SEN_M_R",
+        "2": "SEN_AC_R"
+      },
+      "x": 3760,
+      "y": 2150,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "RSEN2R"
+    },
+    {
+      "ref": "D26",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "OP_P_R",
+        "2": "SEN_AC_R"
+      },
+      "x": 3830,
+      "y": 2250,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSR1"
+    },
+    {
+      "ref": "D27",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "OP_P_R",
+        "2": "AGND"
+      },
+      "x": 3830,
+      "y": 2400,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSR2"
+    },
+    {
+      "ref": "D28",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "SEN_AC_R",
+        "2": "OP_N_R"
+      },
+      "x": 3830,
+      "y": 2320,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSR3"
+    },
+    {
+      "ref": "D29",
+      "key": "d_aux_1n4007",
+      "pins": {
+        "1": "AGND",
+        "2": "OP_N_R"
+      },
+      "x": 3830,
+      "y": 2470,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "DSR4"
+    },
+    {
+      "ref": "U3",
+      "key": "fault_opto",
+      "pins": {
+        "1": "OP_P_R",
+        "2": "OP_N_R",
+        "3": "AGND",
+        "4": "D1B"
+      },
+      "x": 4110,
+      "y": 2330,
+      "angle": 0,
+      "section": "09 BIPOLAR DC FAULT / TEST BOUNDARY",
+      "value": null,
+      "note": "",
+      "alias": "UOR"
+    }
+  ],
+  "notes": [
+    {
+      "x": 130,
+      "y": 610,
+      "text": "HIGH: direct / LOW: 8.2k + (1k || 10k pot), nominal -20dB"
+    },
+    {
+      "x": 130,
+      "y": 640,
+      "text": "RV1 dual 10k log, 1/4=CCW, 2/5=wiper, 3/6=CW"
+    },
+    {
+      "x": 1220,
+      "y": 860,
+      "text": "TP L_MID: ~80V; L_K: ~2.4V; target Iq~35mA (verify)"
+    },
+    {
+      "x": 1220,
+      "y": 890,
+      "text": "RS 127R / RK 68R 1W; CO 1000u/250V (+ toward tube)"
+    },
+    {
+      "x": 1220,
+      "y": 990,
+      "text": "6H30Pi bottom-view pinout: 4/5 heater, 9 internal screen. Socket unresolved."
+    },
+    {
+      "x": 2620,
+      "y": 860,
+      "text": "TP R_MID: ~80V; R_K: ~2.4V; target Iq~35mA (verify)"
+    },
+    {
+      "x": 2620,
+      "y": 890,
+      "text": "RS 127R / RK 68R 1W; CO 1000u/250V (+ toward tube)"
+    },
+    {
+      "x": 2620,
+      "y": 990,
+      "text": "6H30Pi bottom-view pinout: 4/5 heater, 9 internal screen. Socket unresolved."
+    },
+    {
+      "x": 4000,
+      "y": 530,
+      "text": "3.5mm TRS: tip=L, ring=R, sleeve=AGND"
+    },
+    {
+      "x": 4000,
+      "y": 570,
+      "text": "NO REAL HEADPHONES: candidate fault protection not qualified"
+    },
+    {
+      "x": 100,
+      "y": 1590,
+      "text": "T1: ISOLATED custom 100VA / 220V50Hz -> 150V0.25A + 9.5V5A + 12V0.3A"
+    },
+    {
+      "x": 100,
+      "y": 1620,
+      "text": "T1 1..8 = PROPOSED terminal contract; manufacturer pin drawing REQUIRED"
+    },
+    {
+      "x": 100,
+      "y": 1650,
+      "text": "PE: dedicated bolted chassis bond, unswitched, unfused; T1 screen/chassis to PE"
+    },
+    {
+      "x": 100,
+      "y": 1680,
+      "text": "AGND / HV return / AUX return meet at one star; PE bond shown by LK1"
+    },
+    {
+      "x": 100,
+      "y": 1730,
+      "text": "LK1: bolt PE and audio star together with dedicated chassis bonding strap; verify continuity"
+    },
+    {
+      "x": 1240,
+      "y": 1880,
+      "text": "B+ target~160V; current limit~0.65V/5R=130mA. Loop/SOA NOT qualified."
+    },
+    {
+      "x": 1240,
+      "y": 1910,
+      "text": "Q1 IXTH30N50L2: G1 D2 S3; tab=D. Insulated heatsink required."
+    },
+    {
+      "x": 2660,
+      "y": 1840,
+      "text": "HPLUS-HMINUS ~6.3V; HMINUS elevation~53V. NEVER bond HMINUS to chassis."
+    },
+    {
+      "x": 2660,
+      "y": 1870,
+      "text": "LM1084 ADJ1 OUT2 IN3; tab=OUT. >=2.5A thermal design; insulated sink <=1.5C/W candidate."
+    },
+    {
+      "x": 120,
+      "y": 2570,
+      "text": "AUX12 ~12.3V; Q4 BD13910S E1 C2 B3 / tab C; small heatsink required"
+    },
+    {
+      "x": 1430,
+      "y": 2620,
+      "text": "Turn-on delay ~40s (RC/beta/temp dependent); 24V flyback clamp, dropout must be measured"
+    },
+    {
+      "x": 2810,
+      "y": 2600,
+      "text": "Full-wave sensing trips either polarity; LTV-817 phototransistor pulls Q5 base low."
+    },
+    {
+      "x": 2810,
+      "y": 2630,
+      "text": "94k input limits HV fault current; CTR-dependent trip threshold and relay cutoff UNQUALIFIED."
+    },
+    {
+      "x": 2810,
+      "y": 2660,
+      "text": "CO worst-case leakage can exceed 2mV at16/18R. NO REAL HEADPHONES pending faults/noise tests."
+    },
+    {
+      "x": 2810,
+      "y": 2690,
+      "text": "Relay67-1-A-12/1: contact1/4, coil2/3. 3A AND50W limits; arc interruption not qualified."
+    }
+  ],
+  "nets": {
+    "AGND": [
+      "J1.#1",
+      "R2.#2",
+      "R4.#2",
+      "RV1.#1",
+      "RV1.#4",
+      "V1.#9",
+      "R7.#2",
+      "C2.#2",
+      "R11.#2",
+      "R12.#2",
+      "C4.#2",
+      "R13.#2",
+      "R14.#2",
+      "R15.#2",
+      "V2.#9",
+      "R18.#2",
+      "C7.#2",
+      "R22.#2",
+      "R23.#2",
+      "C9.#2",
+      "R24.#2",
+      "R25.#2",
+      "R26.#2",
+      "J2.#1",
+      "J3.#PE",
+      "LK1.#1",
+      "LK1.#2",
+      "D3.#2",
+      "D4.#2",
+      "C11.#2",
+      "C12.#2",
+      "R29.#2",
+      "R31.#2",
+      "R39.#2",
+      "D6.#2",
+      "C13.#2",
+      "C14.#2",
+      "C15.#2",
+      "R44.#2",
+      "R48.#2",
+      "C22.#2",
+      "D15.#2",
+      "D16.#2",
+      "C23.#2",
+      "D17.#2",
+      "C24.#2",
+      "C25.#2",
+      "C26.#2",
+      "Q7.#1",
+      "R52.#2",
+      "R53.#2",
+      "R54.#2",
+      "D23.#2",
+      "D25.#1",
+      "U2.#3",
+      "D27.#2",
+      "D29.#1",
+      "U3.#3"
+    ],
+    "IN_R": [
+      "J1.#2",
+      "SW1.#4",
+      "R3.#1"
+    ],
+    "IN_L": [
+      "J1.#3",
+      "SW1.#1",
+      "R1.#1"
+    ],
+    "SEL_L": [
+      "SW1.#2",
+      "RV1.#3"
+    ],
+    "LOW_L": [
+      "SW1.#3",
+      "R1.#2",
+      "R2.#1"
+    ],
+    "SEL_R": [
+      "SW1.#5",
+      "RV1.#6"
+    ],
+    "LOW_R": [
+      "SW1.#6",
+      "R3.#2",
+      "R4.#1"
+    ],
+    "WIP_L": [
+      "RV1.#2",
+      "C1.#1"
+    ],
+    "WIP_R": [
+      "RV1.#5",
+      "C6.#1"
+    ],
+    "L_MID": [
+      "V1.#1",
+      "V1.#8",
+      "C5.#1",
+      "R13.#1"
+    ],
+    "L_GL": [
+      "V1.#2",
+      "R10.#2"
+    ],
+    "L_K": [
+      "V1.#3",
+      "R12.#1",
+      "C4.#1"
+    ],
+    "HPLUS": [
+      "V1.#4",
+      "V2.#4",
+      "U1.#2",
+      "R45.#1",
+      "C20.#1",
+      "D11.#2",
+      "D12.#1"
+    ],
+    "HMINUS": [
+      "V1.#5",
+      "V2.#5",
+      "D9.#2",
+      "D10.#2",
+      "C16.#2",
+      "C17.#2",
+      "C18.#2",
+      "C19.#2",
+      "R46.#2",
+      "C20.#2",
+      "C21.#2",
+      "R47.#2",
+      "R48.#1",
+      "C22.#1"
+    ],
+    "L_PA": [
+      "V1.#6",
+      "R9.#2",
+      "C3.#1"
+    ],
+    "L_GU": [
+      "V1.#7",
+      "R5.#2"
+    ],
+    "L_GI": [
+      "C1.#2",
+      "R5.#1",
+      "R8.#2"
+    ],
+    "BPLUS": [
+      "R6.#1",
+      "R9.#1",
+      "R17.#1",
+      "R20.#1",
+      "R32.#2",
+      "R33.#2",
+      "Q2.#1",
+      "R38.#1",
+      "C15.#1",
+      "R44.#1",
+      "R47.#1"
+    ],
+    "L_BIAS": [
+      "R6.#2",
+      "R7.#1",
+      "C2.#1",
+      "R8.#1"
+    ],
+    "L_GB": [
+      "C3.#2",
+      "R10.#1",
+      "R11.#1"
+    ],
+    "L_OUT": [
+      "C5.#2",
+      "R14.#1",
+      "R15.#1",
+      "K1.#1",
+      "R55.#1"
+    ],
+    "HP_L": [
+      "K1.#4",
+      "J2.#3"
+    ],
+    "AUX12": [
+      "K1.#2",
+      "K2.#2",
+      "Q4.#1",
+      "C25.#1",
+      "R50.#1",
+      "D20.#2",
+      "D21.#1",
+      "R54.#1"
+    ],
+    "COIL_LOW": [
+      "K1.#3",
+      "K2.#3",
+      "Q5.#3",
+      "Q6.#3",
+      "Q7.#2",
+      "D19.#2"
+    ],
+    "R_MID": [
+      "V2.#1",
+      "V2.#8",
+      "C10.#1",
+      "R24.#1"
+    ],
+    "R_GL": [
+      "V2.#2",
+      "R21.#2"
+    ],
+    "R_K": [
+      "V2.#3",
+      "R23.#1",
+      "C9.#1"
+    ],
+    "R_PA": [
+      "V2.#6",
+      "R20.#2",
+      "C8.#1"
+    ],
+    "R_GU": [
+      "V2.#7",
+      "R16.#2"
+    ],
+    "R_GI": [
+      "C6.#2",
+      "R16.#1",
+      "R19.#2"
+    ],
+    "R_BIAS": [
+      "R17.#2",
+      "R18.#1",
+      "C7.#1",
+      "R19.#1"
+    ],
+    "R_GB": [
+      "C8.#2",
+      "R21.#1",
+      "R22.#1"
+    ],
+    "R_OUT": [
+      "C10.#2",
+      "R25.#1",
+      "R26.#1",
+      "K2.#1",
+      "R57.#1"
+    ],
+    "HP_R": [
+      "K2.#4",
+      "J2.#2"
+    ],
+    "MAINS_L": [
+      "J3.#L",
+      "F1.#1"
+    ],
+    "MAINS_N": [
+      "J3.#N",
+      "SW2.#2"
+    ],
+    "FUSED_L": [
+      "F1.#2",
+      "SW2.#1"
+    ],
+    "PRI_L": [
+      "SW2.#1a",
+      "T1.#1"
+    ],
+    "PRI_N": [
+      "SW2.#2a",
+      "T1.#2"
+    ],
+    "HV_A": [
+      "T1.#3",
+      "F2.#1"
+    ],
+    "HV_B": [
+      "T1.#4",
+      "D2.#2",
+      "D4.#1"
+    ],
+    "HTR_A": [
+      "T1.#5",
+      "F3.#1"
+    ],
+    "HTR_B": [
+      "T1.#6",
+      "D8.#2",
+      "D10.#1"
+    ],
+    "AUX_A": [
+      "T1.#7",
+      "D13.#2",
+      "D15.#1"
+    ],
+    "AUX_B": [
+      "T1.#8",
+      "D14.#2",
+      "D16.#1"
+    ],
+    "HV_AF": [
+      "F2.#2",
+      "D1.#2",
+      "D3.#1"
+    ],
+    "HV_RAW": [
+      "D1.#1",
+      "D2.#1",
+      "C11.#1",
+      "R27.#1",
+      "R28.#1"
+    ],
+    "HV_IN": [
+      "R27.#2",
+      "C12.#1",
+      "R30.#1",
+      "Q1.#2",
+      "R34.#1",
+      "R40.#1"
+    ],
+    "HV_RAW_BLEED": [
+      "R28.#2",
+      "R29.#1"
+    ],
+    "HV_IN_BLEED": [
+      "R30.#2",
+      "R31.#1"
+    ],
+    "HV_GATE": [
+      "Q1.#1",
+      "Q2.#3",
+      "D5.#1",
+      "R37.#2",
+      "Q3.#3",
+      "C14.#1"
+    ],
+    "HV_SOURCE": [
+      "Q1.#3",
+      "R32.#1",
+      "R33.#1",
+      "Q2.#2",
+      "D5.#2"
+    ],
+    "GF1": [
+      "R34.#2",
+      "R35.#1"
+    ],
+    "GF2": [
+      "R35.#2",
+      "R36.#1"
+    ],
+    "GF3": [
+      "R36.#2",
+      "R37.#1"
+    ],
+    "ZREF": [
+      "Q3.#1",
+      "R43.#2",
+      "D6.#1",
+      "C13.#1"
+    ],
+    "HV_FB": [
+      "Q3.#2",
+      "R38.#2",
+      "R39.#1"
+    ],
+    "ZF1": [
+      "R40.#2",
+      "R41.#1"
+    ],
+    "ZF2": [
+      "R41.#2",
+      "R42.#1"
+    ],
+    "ZF3": [
+      "R42.#2",
+      "R43.#1"
+    ],
+    "HTR_AF": [
+      "F3.#2",
+      "D7.#2",
+      "D9.#1"
+    ],
+    "HRAW": [
+      "D7.#1",
+      "D8.#1",
+      "C16.#1",
+      "C17.#1",
+      "C18.#1",
+      "C19.#1",
+      "U1.#3",
+      "D11.#1"
+    ],
+    "HADJ": [
+      "U1.#1",
+      "R45.#2",
+      "R46.#1",
+      "C21.#1",
+      "D12.#2"
+    ],
+    "AUX_RAW": [
+      "D13.#1",
+      "D14.#1",
+      "C23.#1",
+      "R49.#1",
+      "Q4.#2"
+    ],
+    "AUX_Z": [
+      "R49.#2",
+      "D17.#1",
+      "C24.#1",
+      "Q4.#3"
+    ],
+    "TIMER": [
+      "R50.#2",
+      "C26.#1",
+      "D18.#1",
+      "D21.#2"
+    ],
+    "ZT_OUT": [
+      "D18.#2",
+      "R51.#1"
+    ],
+    "D1B": [
+      "R51.#2",
+      "Q5.#2",
+      "R52.#1",
+      "U2.#4",
+      "U3.#4"
+    ],
+    "D2B": [
+      "Q5.#1",
+      "Q6.#2"
+    ],
+    "D3B": [
+      "Q6.#1",
+      "Q7.#3",
+      "R53.#1"
+    ],
+    "FLY_K": [
+      "D19.#1",
+      "D20.#1"
+    ],
+    "SEN_M_L": [
+      "R55.#2",
+      "R56.#1"
+    ],
+    "SEN_AC_L": [
+      "R56.#2",
+      "D22.#2",
+      "D24.#1"
+    ],
+    "OP_P_L": [
+      "D22.#1",
+      "D23.#1",
+      "U2.#1"
+    ],
+    "OP_N_L": [
+      "D24.#2",
+      "D25.#2",
+      "U2.#2"
+    ],
+    "SEN_M_R": [
+      "R57.#2",
+      "R58.#1"
+    ],
+    "SEN_AC_R": [
+      "R58.#2",
+      "D26.#2",
+      "D28.#1"
+    ],
+    "OP_P_R": [
+      "D26.#1",
+      "D27.#1",
+      "U3.#1"
+    ],
+    "OP_N_R": [
+      "D28.#2",
+      "D29.#2",
+      "U3.#2"
+    ]
+  },
+  "known_failures": [
+    "bipolar DC detector threshold and cutoff time not qualified",
+    "output capacitor worst-case leakage above target",
+    "transformer terminal contract not confirmed",
+    "custom part footprints unresolved"
+  ]
+}

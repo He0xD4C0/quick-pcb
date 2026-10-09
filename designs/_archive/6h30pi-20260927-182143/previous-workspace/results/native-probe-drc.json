@@ -1,0 +1,247 @@
+{
+  "ok": true,
+  "result": {
+    "project": {
+      "itemType": "Project",
+      "uuid": "91f845410fe325c131cbf5dcf2fb7448db4edcba8560223808dabe0b2023cdb8",
+      "friendlyName": "QuickPCB_6H30Pi_OTL_IEM_20260927",
+      "name": "/QuickPCB_6H30Pi_OTL_IEM_20260927",
+      "teamUuid": "/Users/he0xd4c0/Documents/LCEDA-Pro/projects",
+      "description": "",
+      "data": [
+        {
+          "itemType": "Board",
+          "name": "Board1",
+          "schematic": {
+            "itemType": "Schematic",
+            "uuid": "4dc81b7b1fc213d8",
+            "name": "Schematic1",
+            "page": [
+              {
+                "itemType": "Schematic Page",
+                "uuid": "4f455aa37781d3a0",
+                "name": "P1",
+                "parentSchematicUuid": "4dc81b7b1fc213d8",
+                "showTitleBlock": true,
+                "titleBlockData": {
+                  "Symbol": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "Drawing-Symbol_A4"
+                  },
+                  "Company": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "\u5609\u7acb\u521bEDA"
+                  },
+                  "Drawed": {
+                    "showTitle": false,
+                    "showValue": true,
+                    "value": ""
+                  },
+                  "Reviewed": {
+                    "showTitle": false,
+                    "showValue": true,
+                    "value": ""
+                  },
+                  "Part Number": {
+                    "showTitle": false,
+                    "showValue": true,
+                    "value": ""
+                  },
+                  "Version": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "V1.0"
+                  },
+                  "Page Size": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "A4"
+                  },
+                  "@Project Name": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "QuickPCB_6H30Pi_OTL_IEM_20260927"
+                  },
+                  "@Update Date": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "2026-09-27"
+                  },
+                  "@Create Date": {
+                    "showTitle": false,
+                    "showValue": false,
+                    "value": "2026-09-27"
+                  },
+                  "Device": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "Drawing-Symbol_A4"
+                  },
+                  "@Board Name": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "Board1"
+                  },
+                  "@Page Name": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "P1"
+                  },
+                  "@Create Time": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "16:14:41"
+                  },
+                  "@Page Count": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": 1
+                  },
+                  "@Page No": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": 1
+                  },
+                  "@Schematic Name": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "Schematic1"
+                  },
+                  "@Update Time": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "16:14:42"
+                  },
+                  "@Assembly Variant": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "Basic"
+                  },
+                  "Border": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "1"
+                  },
+                  "Title Block Position": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "3"
+                  },
+                  "Size": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "A4"
+                  },
+                  "Width": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "1170"
+                  },
+                  "Height": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "825"
+                  },
+                  "Region Start": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "1"
+                  },
+                  "X Region Count": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "6"
+                  },
+                  "Y Region Count": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "4"
+                  },
+                  "Blade Width": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "10"
+                  },
+                  "Color": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": ""
+                  },
+                  "Title Block": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": "1"
+                  },
+                  "Name": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": ""
+                  },
+                  "Description": {
+                    "showTitle": null,
+                    "showValue": null,
+                    "value": ""
+                  },
+                  "ID": {}
+                }
+              }
+            ],
+            "parentProjectUuid": "91f845410fe325c131cbf5dcf2fb7448db4edcba8560223808dabe0b2023cdb8",
+            "parentBoardName": "Board1"
+          },
+          "pcb": {
+            "itemType": "PCB",
+            "name": "PCB1",
+            "uuid": "ecd516f0a1823e39",
+            "parentBoardName": "Board1",
+            "parentProjectUuid": "91f845410fe325c131cbf5dcf2fb7448db4edcba8560223808dabe0b2023cdb8"
+          },
+          "parentProjectUuid": "91f845410fe325c131cbf5dcf2fb7448db4edcba8560223808dabe0b2023cdb8"
+        },
+        {
+          "itemType": "Schematic",
+          "uuid": "7f75b23332f6c184",
+          "name": "Native_format_probe",
+          "page": [
+            {
+              "itemType": "Schematic Page",
+              "uuid": "9ec1a75b3530b5d1",
+              "name": "PROBE",
+              "parentSchematicUuid": "7f75b23332f6c184",
+              "showTitleBlock": true,
+              "titleBlockData": {}
+            }
+          ],
+          "parentProjectUuid": "91f845410fe325c131cbf5dcf2fb7448db4edcba8560223808dabe0b2023cdb8",
+          "parentBoardName": ""
+        },
+        {
+          "itemType": "Panel",
+          "uuid": "73af521d603ee7d9",
+          "name": "Panel1",
+          "parentProjectUuid": "91f845410fe325c131cbf5dcf2fb7448db4edcba8560223808dabe0b2023cdb8"
+        }
+      ]
+    },
+    "document": {
+      "docType": "SCH_PAGE",
+      "client": "90d0635a0b13bbef",
+      "uuid": "9ec1a75b3530b5d1",
+      "updateTime": 1790499597509,
+      "version": "1790499597509",
+      "editVersion": "3.2.186"
+    },
+    "drc": [
+      {
+        "type": "fatalError",
+        "count": 2
+      },
+      {
+        "type": "warn",
+        "count": 1
+      }
+    ]
+  }
+}

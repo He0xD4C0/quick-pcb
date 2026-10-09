@@ -1,0 +1,467 @@
+{
+  "before": {
+    "source": {
+      "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "project_name": "/6H30Pi-Rebuild",
+      "schematic_uuid": "a0fcf983b189bba3",
+      "schematic_name": "6H30Pi-Library-Fixture_1",
+      "page_uuid": "21b1b9155caa55b7",
+      "page_name": "OneSheet",
+      "document_uuid": "21b1b9155caa55b7",
+      "document_type": 1,
+      "tab_id": "21b1b9155caa55b7@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "window_id": "03f9f58c-0ba1-45f1-863e-90fb14e9d9b3"
+    },
+    "components": [
+      {
+        "id": "component1",
+        "designator": "J1",
+        "name": "={Manufacturer Part}",
+        "component": {
+          "libraryUuid": "",
+          "uuid": "ab9f30c71860e1ae",
+          "name": "1206W4F1002T5E"
+        },
+        "symbol": {
+          "uuid": "f841bbe8bcf500a0",
+          "libraryUuid": "",
+          "name": "PJ-301C"
+        },
+        "footprint": {
+          "uuid": "a99f590db4b9308f",
+          "libraryUuid": "",
+          "name": "AUDIO-TH_PJ-301C"
+        },
+        "sub_part_name": "PJ-301C.1",
+        "x": 4000,
+        "y": -2000,
+        "rotation": 0,
+        "mirror": false,
+        "bbox": {
+          "minX": 3665,
+          "minY": -2215,
+          "maxX": 4055,
+          "maxY": -1895
+        },
+        "pins": [
+          {
+            "id": "component1-e7",
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 4200,
+            "y": -1900,
+            "rotation": 0,
+            "sub_part_name": null
+          },
+          {
+            "id": "component1-e11",
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 4200,
+            "y": -2100,
+            "rotation": 0,
+            "sub_part_name": null
+          },
+          {
+            "id": "component1-e3",
+            "number": "3",
+            "name": "3",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 4200,
+            "y": -2200,
+            "rotation": 0,
+            "sub_part_name": null
+          }
+        ]
+      },
+      {
+        "id": "component0",
+        "designator": "R1",
+        "name": "={Value}",
+        "component": {
+          "libraryUuid": "",
+          "uuid": "ab9f30c71860e1ae",
+          "name": "1206W4F1002T5E"
+        },
+        "symbol": {
+          "uuid": "81e15dcb80d78d01",
+          "libraryUuid": "",
+          "name": "1206W4F1002T5E"
+        },
+        "footprint": {
+          "uuid": "05cd3efb2157474c",
+          "libraryUuid": "",
+          "name": "R1206"
+        },
+        "sub_part_name": "1206W4F1002T5E.1",
+        "x": 1500,
+        "y": -2000,
+        "rotation": 0,
+        "mirror": false,
+        "bbox": {
+          "minX": 1395,
+          "minY": -2045,
+          "maxX": 1605,
+          "maxY": -1955
+        },
+        "pins": [
+          {
+            "id": "component0-e7",
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "no_connected": false,
+            "x": 1300,
+            "y": -2000,
+            "rotation": 180,
+            "sub_part_name": null
+          },
+          {
+            "id": "component0-e3",
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "no_connected": false,
+            "x": 1700,
+            "y": -2000,
+            "rotation": 0,
+            "sub_part_name": null
+          }
+        ]
+      },
+      {
+        "id": "component2",
+        "designator": "RV1",
+        "name": "={Value}",
+        "component": {
+          "libraryUuid": "",
+          "uuid": "ab9f30c71860e1ae",
+          "name": "1206W4F1002T5E"
+        },
+        "symbol": {
+          "uuid": "c39452f6d01235bd",
+          "libraryUuid": "",
+          "name": "RK09712200HA"
+        },
+        "footprint": {
+          "uuid": "aa968e492f9d1a51",
+          "libraryUuid": "",
+          "name": "RES-ADJ-TH_RK09712200HA"
+        },
+        "sub_part_name": "RK09712200HA.1",
+        "x": 7000,
+        "y": -2000,
+        "rotation": 0,
+        "mirror": false,
+        "bbox": {
+          "minX": 6895,
+          "minY": -2205,
+          "maxX": 7125,
+          "maxY": -1895
+        },
+        "pins": [
+          {
+            "id": "component2-e6",
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 7200,
+            "y": -2000,
+            "rotation": 0,
+            "sub_part_name": null
+          },
+          {
+            "id": "component2-e0",
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 7000,
+            "y": -1800,
+            "rotation": 90,
+            "sub_part_name": null
+          },
+          {
+            "id": "component2-e10",
+            "number": "3",
+            "name": "3",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 6800,
+            "y": -2000,
+            "rotation": 180,
+            "sub_part_name": null
+          },
+          {
+            "id": "component2-e38",
+            "number": "4",
+            "name": "4",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 7200,
+            "y": -2100,
+            "rotation": 0,
+            "sub_part_name": null
+          },
+          {
+            "id": "component2-e44",
+            "number": "5",
+            "name": "5",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 7000,
+            "y": -2300,
+            "rotation": 270,
+            "sub_part_name": null
+          },
+          {
+            "id": "component2-e34",
+            "number": "6",
+            "name": "6",
+            "type": "Undefined",
+            "no_connected": false,
+            "x": 6800,
+            "y": -2100,
+            "rotation": 180,
+            "sub_part_name": null
+          }
+        ]
+      },
+      {
+        "id": "component3",
+        "designator": "V1",
+        "name": "6H30Pi-EB",
+        "component": {
+          "libraryUuid": "",
+          "uuid": "00efd4350ce8b4d8",
+          "name": "QPCB_6H30Pi_EB_REVIEWED_PINS"
+        },
+        "symbol": {
+          "uuid": "e95d14709cc686c4",
+          "libraryUuid": "",
+          "name": "QPCB_6H30Pi_EB_REVIEWED_PINS"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "sub_part_name": "A",
+        "x": 1500,
+        "y": -5000,
+        "rotation": 0,
+        "mirror": false,
+        "bbox": {
+          "minX": 850,
+          "minY": -5650,
+          "maxX": 1905,
+          "maxY": -4170
+        },
+        "pins": [
+          {
+            "id": "component3-pin6",
+            "number": "6",
+            "name": "P",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 1500,
+            "y": -4300,
+            "rotation": 270,
+            "sub_part_name": null
+          },
+          {
+            "id": "component3-pin7",
+            "number": "7",
+            "name": "G",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 800,
+            "y": -5000,
+            "rotation": 180,
+            "sub_part_name": null
+          },
+          {
+            "id": "component3-pin8",
+            "number": "8",
+            "name": "K",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 1700,
+            "y": -5700,
+            "rotation": 90,
+            "sub_part_name": null
+          }
+        ]
+      },
+      {
+        "id": "component4",
+        "designator": "V1",
+        "name": "6H30Pi-EB",
+        "component": {
+          "libraryUuid": "",
+          "uuid": "00efd4350ce8b4d8",
+          "name": "QPCB_6H30Pi_EB_REVIEWED_PINS"
+        },
+        "symbol": {
+          "uuid": "e95d14709cc686c4",
+          "libraryUuid": "",
+          "name": "QPCB_6H30Pi_EB_REVIEWED_PINS"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "sub_part_name": "B",
+        "x": 4000,
+        "y": -5000,
+        "rotation": 0,
+        "mirror": false,
+        "bbox": {
+          "minX": 3350,
+          "minY": -5650,
+          "maxX": 4405,
+          "maxY": -4170
+        },
+        "pins": [
+          {
+            "id": "component4-pin1",
+            "number": "1",
+            "name": "P",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 4000,
+            "y": -4300,
+            "rotation": 270,
+            "sub_part_name": null
+          },
+          {
+            "id": "component4-pin2",
+            "number": "2",
+            "name": "G",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 3300,
+            "y": -5000,
+            "rotation": 180,
+            "sub_part_name": null
+          },
+          {
+            "id": "component4-pin3",
+            "number": "3",
+            "name": "K",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 4200,
+            "y": -5700,
+            "rotation": 90,
+            "sub_part_name": null
+          }
+        ]
+      },
+      {
+        "id": "component5",
+        "designator": "V1",
+        "name": "6H30Pi-EB",
+        "component": {
+          "libraryUuid": "",
+          "uuid": "00efd4350ce8b4d8",
+          "name": "QPCB_6H30Pi_EB_REVIEWED_PINS"
+        },
+        "symbol": {
+          "uuid": "e95d14709cc686c4",
+          "libraryUuid": "",
+          "name": "QPCB_6H30Pi_EB_REVIEWED_PINS"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "sub_part_name": "H",
+        "x": 7000,
+        "y": -5000,
+        "rotation": 0,
+        "mirror": false,
+        "bbox": {
+          "minX": 6350,
+          "minY": -5405,
+          "maxX": 7505,
+          "maxY": -4670
+        },
+        "pins": [
+          {
+            "id": "component5-pin4",
+            "number": "4",
+            "name": "H",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 6300,
+            "y": -5000,
+            "rotation": 180,
+            "sub_part_name": null
+          },
+          {
+            "id": "component5-pin5",
+            "number": "5",
+            "name": "H",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 7700,
+            "y": -5000,
+            "rotation": 0,
+            "sub_part_name": null
+          },
+          {
+            "id": "component5-pin9",
+            "number": "9",
+            "name": "SCREEN",
+            "type": "Passive",
+            "no_connected": false,
+            "x": 7000,
+            "y": -5600,
+            "rotation": 90,
+            "sub_part_name": null
+          }
+        ]
+      }
+    ],
+    "wires": [],
+    "labels": [],
+    "ports": [],
+    "flags": [],
+    "no_connects": [],
+    "nets": [],
+    "format": "schematic/easyeda-v0.1",
+    "unit": "mil",
+    "context_revision": "sha256:4819d0e41b8300d6b5bbd32118799d7805b718788115a5cc36b1f16761120725",
+    "revision": "sha256:1c8559feba4eef1574491ca00d9acfc18888f45b15d2d2a4f55dcc2adb855725"
+  },
+  "result": {
+    "ok": true,
+    "code": null,
+    "applied": true,
+    "partial": false,
+    "context_revision": "sha256:4819d0e41b8300d6b5bbd32118799d7805b718788115a5cc36b1f16761120725",
+    "revision_before": "sha256:1c8559feba4eef1574491ca00d9acfc18888f45b15d2d2a4f55dcc2adb855725",
+    "revision_after": "sha256:1c8559feba4eef1574491ca00d9acfc18888f45b15d2d2a4f55dcc2adb855725",
+    "results": [
+      {
+        "itemType": "Project",
+        "uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "friendlyName": "6H30Pi-Rebuild",
+        "teamUuid": "4bc4bd5c3d544604b75c140f26423fa5"
+      }
+    ],
+    "readback": {},
+    "topology": {
+      "available": false
+    },
+    "drc": {
+      "before_count": 0,
+      "new": [],
+      "resolved": [],
+      "remaining_count": 0
+    }
+  }
+}

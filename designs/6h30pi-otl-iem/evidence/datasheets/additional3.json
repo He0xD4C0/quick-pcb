@@ -1,0 +1,10 @@
+{
+  "EG2208.pdf": {
+    "url": "https://configured-product-images.s3.amazonaws.com/2D/specs/EG2208.pdf",
+    "sha256": "1de201a4e0e66130f31c3aadb8c3925d31b8a5b95c35fa0918f1eb5bdac24539"
+  },
+  "pickering-67-2020.pdf": {
+    "url": "https://www.vigven.com/s/5a8d617f1b2c123877c8de7d/600eb29cae4e823e8eb65a7a/67-68-high-voltage-reed-relays.pdf",
+    "sha256": "90dd65e97d06ef3ec8ce8b5a638c963c25aa068670eff96d46436dd2237b14b9"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "B9A": {
+    "ok": true,
+    "result": []
+  },
+  "NOVAL": {
+    "ok": true,
+    "result": []
+  },
+  "6H30": {
+    "ok": true,
+    "result": []
+  },
+  "TUBE-9": {
+    "ok": true,
+    "result": [
+      {
+        "uuid": "ea7d633d5e6a4d10b4bcfa338d66af06",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "2acd34c21b98437f965cb7cdc340c910"
+        },
+        "ordinal": 190,
+        "name": "WLCSP-9_L1.4-W1.4-R2-C2-P0.50-BL-1",
+        "type": 4,
+        "description": "",
+        "updateTimestamp": 1742372611000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "66274dd01e244f01b7b6bed4723c4059",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "2acd34c21b98437f965cb7cdc340c910"
+        },
+        "ordinal": 191,
+        "name": "WLCSP-9_L1.6-W1.8-R3-C3-P0.50-BL",
+        "type": 4,
+        "description": ";WLCSP9(1.60x1.76);WLCSP-9",
+        "updateTimestamp": 1645666650000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "33713730e62045508b5ac290f651addd",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "d6de4e164e7941c39976e797cd9cbd6c"
+        },
+        "ordinal": 192,
+        "name": "DFN-9_L1.7-W1.2-P0.4-EP1.1",
+        "type": 4,
+        "description": ";LLP1713-9L;DFN-9(1.2x1.7)",
+        "updateTimestamp": 1681182002000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "f814baf6f5d949c7b7b68613cddd9ae9",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "3a7846af962c40928a3568e82fb41931"
+        },
+        "ordinal": 193,
+        "name": "QFN-9_L2.8-W2.6-P0.95_BL",
+        "type": 4,
+        "description": ";-",
+        "updateTimestamp": 1677076543000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "7703000c51a3435f844bd041b7ef5450",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "c42e99d00289441b9083a034b1486c38"
+        },
+        "ordinal": 194,
+        "name": "LGA-9_L2.5-W2.0_QMP6988",
+        "type": 4,
+        "description": ";SMD-9_L2.5-W2.0-P0.65",
+        "updateTimestamp": 1641963937000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "a11f8d47f9cd41de94b6853bb10a9c97",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "2acd34c21b98437f965cb7cdc340c910"
+        },
+        "ordinal": 195,
+        "name": "WLCSP-9_L1.7-W1.5-R3-C3-P0.50-BL",
+        "type": 4,
+        "description": ";WLCSP-9;WLCSP-9(1.5x1.7)",
+        "updateTimestamp": 1686902510000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "212b9b96bcd6417894ba050b3f4dd316",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "10c19e4f7f8b4185a5802945c5838e85"
+        },
+        "ordinal": 196,
+        "name": "UBUMP-9_L1.5-W1.5-R3-C3-P0.40-TL-1",
+        "type": 4,
+        "description": "",
+        "updateTimestamp": 1723173588000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "674e18fd80ce4da987676fee51b79b5b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "cbb6a14e3fcc4827964647586ac86969"
+        },
+        "ordinal": 197,
+        "name": "WLP-9_L2.0-W1.8-TL_DS2482X-101",
+        "type": 4,
+        "description": ";WLP-9;WLP-9(1.53x1.53)",
+        "updateTimestamp": 1721744501000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "b5a937c381a04b9a930d92c0461ef13a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "e31b2fbd0d4e46fa87a7f1c4ee0233e1"
+        },
+        "ordinal": 198,
+        "name": "VQFN-9_L2.6-W1.6-P0.50-BL",
+        "type": 4,
+        "description": ";VQFN-9(1.6x2.6);VQFN-9_L2.5-W1.5-P0.50-EP;VQFN-HR-9;VQFN-HR(RQY)-9;VQFN-9-HR(1.5x2.5)",
+        "updateTimestamp": 1652343653000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      },
+      {
+        "uuid": "7a44b456a43941c29ac77b41d022a794",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "classification": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "libraryType": "4",
+          "primaryClassificationUuid": "ea98b003ac8a42e0bc4251c56af5f8d8"
+        },
+        "ordinal": 199,
+        "name": "TSNP-9_L1.1-W1.1-P0.40-BL",
+        "type": 4,
+        "description": ";TSNP-9-3;DFN-9(1.1x1.1);XFLGA-9;TSNP-9",
+        "updateTimestamp": 1672963676000,
+        "ascription": "LCSC",
+        "lastModifiedBy": "LCSC"
+      }
+    ]
+  },
+  "\u7535\u5b50\u7ba1\u5ea7": {
+    "ok": true,
+    "result": []
+  }
+}

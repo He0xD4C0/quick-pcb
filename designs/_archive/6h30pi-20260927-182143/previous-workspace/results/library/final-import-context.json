@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "result": {
+    "itemType": "Project",
+    "uuid": "4e0b753a2f5436054227339b0f7995f8461ac26b8a62392a3b010f7209f6383e",
+    "friendlyName": "QuickPCB_6H30Pi_Library_OneSheet",
+    "name": "/QuickPCB_6H30Pi_Library_OneSheet",
+    "teamUuid": "/Users/he0xd4c0/Documents/LCEDA-Pro/projects",
+    "description": "",
+    "data": [
+      {
+        "itemType": "Schematic",
+        "uuid": "51a831d02612660f",
+        "name": "6H30Pi_COMPLETE",
+        "page": [],
+        "parentProjectUuid": "4e0b753a2f5436054227339b0f7995f8461ac26b8a62392a3b010f7209f6383e",
+        "parentBoardName": ""
+      }
+    ]
+  }
+}

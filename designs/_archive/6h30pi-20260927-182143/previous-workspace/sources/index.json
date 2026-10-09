@@ -1,0 +1,37 @@
+[
+  {
+    "file": "6h30pi-sovtek.pdf",
+    "sha256": "e55e8ca96f8db450b97d6d2719bdf16ecbf750723ccf4689e36d2e64273e6985",
+    "pages": 1,
+    "url": "https://shop.ehx.com/catalog/addimages/6h30pi-sovtek.pdf",
+    "access_date": "2026-09-27"
+  },
+  {
+    "file": "mpsa42.pdf",
+    "sha256": "83c386f606d306060d0fd7399a83de1416961cebb17881d6d9efddfd94e35df2",
+    "pages": 7,
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+    "access_date": "2026-09-27"
+  },
+  {
+    "file": "irf820.pdf",
+    "sha256": "23d6f1ff0595f7557ed49aaa61a7cfd2a745f6116c88f2dfa18972d0ad713e3e",
+    "pages": 7,
+    "url": "https://www.vishay.com/docs/91059/91059.pdf",
+    "access_date": "2026-09-27"
+  },
+  {
+    "file": "lm1084.pdf",
+    "sha256": "081bc80a03c56253985a585da3aad85362f41f6df1d6a6158a61d879d3d43166",
+    "pages": 33,
+    "url": "https://www.ti.com/lit/ds/symlink/lm1084.pdf",
+    "access_date": "2026-09-27"
+  },
+  {
+    "file": "6H30Pi-EB.pdf",
+    "sha256": "cbc0d812df41e114221da3664eeed3359c4143153f969b9fe43bdadeb5f56e92",
+    "pages": 3,
+    "url": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+    "access_date": "2026-09-27"
+  }
+]

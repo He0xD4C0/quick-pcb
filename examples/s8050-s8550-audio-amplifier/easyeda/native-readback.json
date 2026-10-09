@@ -1,0 +1,2325 @@
+{
+  "source": {
+    "project_uuid": "b86670ccc7f1377832ce3be0dae93ddeebe7375f9a03ddf53c5983a6aa831dca",
+    "project_name": "/S8050-S8550-Audio-Amplifier",
+    "schematic_uuid": "c5d13afd5e07149a",
+    "schematic_name": "S8050_S8550_Audio_Amplifier",
+    "page_uuid": "8a99692c56d721d3",
+    "page_name": "01_Audio_Amplifier",
+    "document_uuid": "8a99692c56d721d3",
+    "document_type": 1,
+    "tab_id": "8a99692c56d721d3@b86670ccc7f1377832ce3be0dae93ddeebe7375f9a03ddf53c5983a6aa831dca",
+    "window_id": "95e18243-21cb-449a-953a-fe8463ef575e"
+  },
+  "page_format": {
+    "show_title_block": true,
+    "title_block_data": {
+      "@Assembly Variant": {
+        "show_title": null,
+        "show_value": null,
+        "value": "Basic"
+      },
+      "@Board Name": {
+        "show_title": null,
+        "show_value": null,
+        "value": ""
+      },
+      "@Create Date": {
+        "show_title": false,
+        "show_value": false,
+        "value": "2026-09-29"
+      },
+      "@Create Time": {
+        "show_title": null,
+        "show_value": null,
+        "value": "08:04:49"
+      },
+      "@Page Count": {
+        "show_title": false,
+        "show_value": false,
+        "value": 1
+      },
+      "@Page Name": {
+        "show_title": null,
+        "show_value": null,
+        "value": "01_Audio_Amplifier"
+      },
+      "@Page No": {
+        "show_title": false,
+        "show_value": false,
+        "value": 1
+      },
+      "@Project Name": {
+        "show_title": false,
+        "show_value": false,
+        "value": "S8050-S8550-Audio-Amplifier"
+      },
+      "@Schematic Name": {
+        "show_title": null,
+        "show_value": null,
+        "value": "S8050_S8550_Audio_Amplifier"
+      },
+      "@Update Date": {
+        "show_title": false,
+        "show_value": false,
+        "value": "2026-09-30"
+      },
+      "@Update Time": {
+        "show_title": null,
+        "show_value": null,
+        "value": "22:26:06"
+      },
+      "Blade Width": {
+        "show_title": null,
+        "show_value": null,
+        "value": "10"
+      },
+      "Border": {
+        "show_title": null,
+        "show_value": null,
+        "value": "1"
+      },
+      "Color": {
+        "show_title": null,
+        "show_value": null,
+        "value": ""
+      },
+      "Company": {
+        "show_title": false,
+        "show_value": false,
+        "value": "嘉立创EDA"
+      },
+      "Description": {
+        "show_title": false,
+        "show_value": false,
+        "value": "Single-page hybrid wire and NET engineering schematic"
+      },
+      "Device": {
+        "show_title": null,
+        "show_value": null,
+        "value": "Drawing-Symbol_A4"
+      },
+      "Drawed": {
+        "show_title": false,
+        "show_value": false,
+        "value": ""
+      },
+      "Height": {
+        "show_title": null,
+        "show_value": null,
+        "value": "825"
+      },
+      "ID": {
+        "show_title": null,
+        "show_value": null,
+        "value": null
+      },
+      "Name": {
+        "show_title": false,
+        "show_value": false,
+        "value": "S8050 / S8550 Simple Audio Amplifier"
+      },
+      "Page Size": {
+        "show_title": false,
+        "show_value": false,
+        "value": "A4"
+      },
+      "Part Number": {
+        "show_title": false,
+        "show_value": false,
+        "value": "QPCB-AMP-001"
+      },
+      "Region Start": {
+        "show_title": null,
+        "show_value": null,
+        "value": "1"
+      },
+      "Reviewed": {
+        "show_title": false,
+        "show_value": false,
+        "value": ""
+      },
+      "Size": {
+        "show_title": null,
+        "show_value": null,
+        "value": "A4"
+      },
+      "Symbol": {
+        "show_title": false,
+        "show_value": false,
+        "value": "Drawing-Symbol_A4"
+      },
+      "Title Block": {
+        "show_title": null,
+        "show_value": null,
+        "value": "1"
+      },
+      "Title Block Position": {
+        "show_title": null,
+        "show_value": null,
+        "value": "3"
+      },
+      "Version": {
+        "show_title": false,
+        "show_value": false,
+        "value": "0.4"
+      },
+      "Width": {
+        "show_title": null,
+        "show_value": null,
+        "value": "1170"
+      },
+      "X Region Count": {
+        "show_title": null,
+        "show_value": null,
+        "value": "6"
+      },
+      "Y Region Count": {
+        "show_title": null,
+        "show_value": null,
+        "value": "4"
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "2e6038b3fcd16c36",
+      "designator": "C1",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "fe128746923bba99",
+        "name": "2.2uF50V5x11KM"
+      },
+      "symbol": {
+        "uuid": "c5d99357eb4360ee",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "2.2UF50V5X11KM"
+      },
+      "footprint": {
+        "uuid": "7049d72c08b25b4a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CAP-TH_BD5.0-P2.00-D0.5-FD-1"
+      },
+      "sub_part_name": "2.2UF50V5X11KM.1",
+      "x": 4700,
+      "y": 5400,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 4594.999999999999,
+        "minY": 5325.000000000001,
+        "maxX": 4804.999999999999,
+        "maxY": 5475.000000000001
+      },
+      "pins": [
+        {
+          "id": "2e6038b3fcd16c36-e1",
+          "number": "1",
+          "name": "1",
+          "type": "IN",
+          "no_connected": false,
+          "x": 4899.999999999999,
+          "y": 5400.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "2e6038b3fcd16c36-e5",
+          "number": "2",
+          "name": "2",
+          "type": "IN",
+          "no_connected": false,
+          "x": 4499.999999999999,
+          "y": 5400.000000000001,
+          "rotation": 180,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "28b4b2fcc4252406",
+      "designator": "C2",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "a65783e7901694f5",
+        "name": "470UF16VE130GF"
+      },
+      "symbol": {
+        "uuid": "4bda00640f37cb20",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "470UF16VE130GF"
+      },
+      "footprint": {
+        "uuid": "1f9a8a05fa1d7574",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CAP-TH_BD6.3-P2.50-D0.5-FD"
+      },
+      "sub_part_name": "470UF16VE130GF.1",
+      "x": 5650,
+      "y": 6100,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 5544.999999999999,
+        "minY": 6025.000000000001,
+        "maxX": 5754.999999999999,
+        "maxY": 6175.000000000001
+      },
+      "pins": [
+        {
+          "id": "28b4b2fcc4252406-e4",
+          "number": "1",
+          "name": "1",
+          "type": "IN",
+          "no_connected": false,
+          "x": 5849.999999999999,
+          "y": 6100.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "28b4b2fcc4252406-e8",
+          "number": "2",
+          "name": "2",
+          "type": "IN",
+          "no_connected": false,
+          "x": 5449.999999999999,
+          "y": 6100.000000000001,
+          "rotation": 180,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "21f5a71db46d54a3",
+      "designator": "C3",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "ad047c7f0ac2d483",
+        "name": "1000uF 16V"
+      },
+      "symbol": {
+        "uuid": "8211ccbda66092e5",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "1000UF 16V_C439782"
+      },
+      "footprint": {
+        "uuid": "e8ea40d6a981ac4e",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CAP-TH_BD10.0-P5.00-D0.6-FD"
+      },
+      "sub_part_name": "1000UF 16V_C439782.1",
+      "x": 7650,
+      "y": 5000,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 7545,
+        "minY": 4925,
+        "maxX": 7755,
+        "maxY": 5075
+      },
+      "pins": [
+        {
+          "id": "21f5a71db46d54a3-e4",
+          "number": "1",
+          "name": "1",
+          "type": "IN",
+          "no_connected": false,
+          "x": 7450,
+          "y": 5000,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "21f5a71db46d54a3-e8",
+          "number": "2",
+          "name": "2",
+          "type": "IN",
+          "no_connected": false,
+          "x": 7850,
+          "y": 5000,
+          "rotation": 0,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "69b2289c2f4beaf6",
+      "designator": "C4",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "60f9d666e7584e2d",
+        "name": "CC1H104ZC1PD3F5O30MF"
+      },
+      "symbol": {
+        "uuid": "1840e04f113c1e31",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CC1H104ZC1PD3F5O30MF"
+      },
+      "footprint": {
+        "uuid": "4f8a52c3ad6dfe6b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CAP-TH_L5.0-W2.5-P5.08-D0.7"
+      },
+      "sub_part_name": "CC1H104ZC1PD3F5O30MF.1",
+      "x": 4600,
+      "y": 4900,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 4515,
+        "minY": 4795,
+        "maxX": 4685,
+        "maxY": 5005
+      },
+      "pins": [
+        {
+          "id": "69b2289c2f4beaf6-e4",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 4600,
+          "y": 4700,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "69b2289c2f4beaf6-e10",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 4600,
+          "y": 5100,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "20824588eb273ddd",
+      "designator": "C5",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "a65783e7901694f5",
+        "name": "470UF16VE130GF"
+      },
+      "symbol": {
+        "uuid": "4bda00640f37cb20",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "470UF16VE130GF"
+      },
+      "footprint": {
+        "uuid": "1f9a8a05fa1d7574",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CAP-TH_BD6.3-P2.50-D0.5-FD"
+      },
+      "sub_part_name": "470UF16VE130GF.1",
+      "x": 8500,
+      "y": 4700,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 8425,
+        "minY": 4595,
+        "maxX": 8575,
+        "maxY": 4805
+      },
+      "pins": [
+        {
+          "id": "20824588eb273ddd-e4",
+          "number": "1",
+          "name": "1",
+          "type": "IN",
+          "no_connected": false,
+          "x": 8500,
+          "y": 4500,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "20824588eb273ddd-e8",
+          "number": "2",
+          "name": "2",
+          "type": "IN",
+          "no_connected": false,
+          "x": 8500,
+          "y": 4900,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "fe532d49ac320b9c",
+      "designator": "C6",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "60f9d666e7584e2d",
+        "name": "CC1H104ZC1PD3F5O30MF"
+      },
+      "symbol": {
+        "uuid": "1840e04f113c1e31",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CC1H104ZC1PD3F5O30MF"
+      },
+      "footprint": {
+        "uuid": "4f8a52c3ad6dfe6b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CAP-TH_L5.0-W2.5-P5.08-D0.7"
+      },
+      "sub_part_name": "CC1H104ZC1PD3F5O30MF.1",
+      "x": 7850,
+      "y": 5650,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 7765,
+        "minY": 5545,
+        "maxX": 7935,
+        "maxY": 5755
+      },
+      "pins": [
+        {
+          "id": "fe532d49ac320b9c-e4",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 7850,
+          "y": 5450,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "fe532d49ac320b9c-e10",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 7850,
+          "y": 5850,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "224f07b7b761bb06",
+      "designator": "D1",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "51569d5ddeb73079",
+        "name": "1N4148_C7437620"
+      },
+      "symbol": {
+        "uuid": "0b7c3c35bad09ff2",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "1N4148_C7437620"
+      },
+      "footprint": {
+        "uuid": "9575a523701eaed5",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "DO-35_BD2.2-L4.0-D0.50_1N4148"
+      },
+      "sub_part_name": "pid8a0e77bacb214e",
+      "x": 5850,
+      "y": 4600,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 5775,
+        "minY": 4495,
+        "maxX": 5925,
+        "maxY": 4705
+      },
+      "pins": [
+        {
+          "id": "224f07b7b761bb06-e0",
+          "number": "1",
+          "name": "A",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5850,
+          "y": 4400,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "224f07b7b761bb06-e4",
+          "number": "2",
+          "name": "C",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5850,
+          "y": 4800,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "921528c50c642143",
+      "designator": "D2",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "51569d5ddeb73079",
+        "name": "1N4148_C7437620"
+      },
+      "symbol": {
+        "uuid": "0b7c3c35bad09ff2",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "1N4148_C7437620"
+      },
+      "footprint": {
+        "uuid": "9575a523701eaed5",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "DO-35_BD2.2-L4.0-D0.50_1N4148"
+      },
+      "sub_part_name": "pid8a0e77bacb214e",
+      "x": 5850,
+      "y": 5000,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 5775,
+        "minY": 4895,
+        "maxX": 5925,
+        "maxY": 5105
+      },
+      "pins": [
+        {
+          "id": "921528c50c642143-e0",
+          "number": "1",
+          "name": "A",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5850,
+          "y": 4800,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "921528c50c642143-e4",
+          "number": "2",
+          "name": "C",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5850,
+          "y": 5200,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "fe23e12e274b940c",
+      "designator": "J1",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "e167c14f0335547e",
+        "name": "KF301-5.0-2P"
+      },
+      "symbol": {
+        "uuid": "ded228e280f8528a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "KF301-5.0-2P"
+      },
+      "footprint": {
+        "uuid": "11947b89f4213082",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CONN-TH_P5.00_KF301-5.0-2P"
+      },
+      "sub_part_name": "KF301-5.0-2P.1",
+      "x": 4100,
+      "y": 4900,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 3994.9999999999995,
+        "minY": 4745.000000000001,
+        "maxX": 4204.999999999999,
+        "maxY": 5055.000000000001
+      },
+      "pins": [
+        {
+          "id": "fe23e12e274b940c-e5",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 4299.999999999999,
+          "y": 4850.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "fe23e12e274b940c-e9",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 4299.999999999999,
+          "y": 4950.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "135e3ad40edbd7b5",
+      "designator": "J2",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "55f5358fd4687bf0",
+        "name": "2.54-1*2P母"
+      },
+      "symbol": {
+        "uuid": "a18588844a51ed35",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "Header-Female-2.54_1x2"
+      },
+      "footprint": {
+        "uuid": "0ac8b9df4891f27f",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "HDR-TH_2P-P2.54-V-F"
+      },
+      "sub_part_name": "Header-Female-2.54_1x2.1",
+      "x": 4150,
+      "y": 5450,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 3994.9999999999995,
+        "minY": 5295,
+        "maxX": 4204.999999999999,
+        "maxY": 5605
+      },
+      "pins": [
+        {
+          "id": "135e3ad40edbd7b5-e4",
+          "number": "1",
+          "name": "1",
+          "type": "IN",
+          "no_connected": false,
+          "x": 4299.999999999999,
+          "y": 5400,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "135e3ad40edbd7b5-e8",
+          "number": "2",
+          "name": "2",
+          "type": "IN",
+          "no_connected": false,
+          "x": 4299.999999999999,
+          "y": 5500,
+          "rotation": 0,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "7f3cd844bc736c0a",
+      "designator": "J3",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "e167c14f0335547e",
+        "name": "KF301-5.0-2P"
+      },
+      "symbol": {
+        "uuid": "ded228e280f8528a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "KF301-5.0-2P"
+      },
+      "footprint": {
+        "uuid": "11947b89f4213082",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CONN-TH_P5.00_KF301-5.0-2P"
+      },
+      "sub_part_name": "KF301-5.0-2P.1",
+      "x": 8950,
+      "y": 4950,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 8845,
+        "minY": 4795,
+        "maxX": 9055,
+        "maxY": 5105
+      },
+      "pins": [
+        {
+          "id": "7f3cd844bc736c0a-e5",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 8750,
+          "y": 5000,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "7f3cd844bc736c0a-e9",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 8750,
+          "y": 4900,
+          "rotation": 180,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "b32aa3874590b6f7",
+      "designator": "Q1",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "faf8b4e31c030a3c",
+        "name": "SS8050-TO-92"
+      },
+      "symbol": {
+        "uuid": "78989961a67d186f",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SS8050-TO-92"
+      },
+      "footprint": {
+        "uuid": "8b2a320de3db6adf",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TO-92-3_L5.1-W4.1-P1.27-L-1"
+      },
+      "sub_part_name": "SS8050-TO-92.1",
+      "x": 5850,
+      "y": 5400,
+      "rotation": 180,
+      "mirror": true,
+      "bbox": {
+        "minX": 5745.000000000001,
+        "minY": 5295.000000000001,
+        "maxX": 5855.000000000001,
+        "maxY": 5505.000000000001
+      },
+      "pins": [
+        {
+          "id": "b32aa3874590b6f7-e7",
+          "number": "1",
+          "name": "E",
+          "type": "IN",
+          "no_connected": false,
+          "x": 5850.000000000001,
+          "y": 5600.000000000001,
+          "rotation": 90,
+          "sub_part_name": null
+        },
+        {
+          "id": "b32aa3874590b6f7-e15",
+          "number": "2",
+          "name": "B",
+          "type": "IN",
+          "no_connected": false,
+          "x": 5650.000000000001,
+          "y": 5400.000000000001,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "b32aa3874590b6f7-e11",
+          "number": "3",
+          "name": "C",
+          "type": "IN",
+          "no_connected": false,
+          "x": 5850.000000000001,
+          "y": 5200.000000000001,
+          "rotation": 270,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "d3695430609cd78b",
+      "designator": "Q2",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "faf8b4e31c030a3c",
+        "name": "SS8050-TO-92"
+      },
+      "symbol": {
+        "uuid": "78989961a67d186f",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SS8050-TO-92"
+      },
+      "footprint": {
+        "uuid": "8b2a320de3db6adf",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TO-92-3_L5.1-W4.1-P1.27-L-1"
+      },
+      "sub_part_name": "SS8050-TO-92.1",
+      "x": 7150,
+      "y": 4350,
+      "rotation": 180,
+      "mirror": true,
+      "bbox": {
+        "minX": 7045,
+        "minY": 4245,
+        "maxX": 7155,
+        "maxY": 4455
+      },
+      "pins": [
+        {
+          "id": "d3695430609cd78b-e7",
+          "number": "1",
+          "name": "E",
+          "type": "IN",
+          "no_connected": false,
+          "x": 7150,
+          "y": 4550,
+          "rotation": 90,
+          "sub_part_name": null
+        },
+        {
+          "id": "d3695430609cd78b-e15",
+          "number": "2",
+          "name": "B",
+          "type": "IN",
+          "no_connected": false,
+          "x": 6950,
+          "y": 4350,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "d3695430609cd78b-e11",
+          "number": "3",
+          "name": "C",
+          "type": "IN",
+          "no_connected": false,
+          "x": 7150,
+          "y": 4150,
+          "rotation": 270,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "f09bcc2b17b4216a",
+      "designator": "Q3",
+      "name": "={Manufacturer Part}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "5b7c8fb0745ba5c4",
+        "name": "SS8550-TO-92"
+      },
+      "symbol": {
+        "uuid": "b64bb05211ddf4a5",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SS8550-TO-92"
+      },
+      "footprint": {
+        "uuid": "8b2a320de3db6adf",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TO-92-3_L5.1-W4.1-P1.27-L-1"
+      },
+      "sub_part_name": "SS8550-TO-92.1",
+      "x": 6400,
+      "y": 5200,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 6395,
+        "minY": 5095,
+        "maxX": 6505,
+        "maxY": 5305
+      },
+      "pins": [
+        {
+          "id": "f09bcc2b17b4216a-e7",
+          "number": "1",
+          "name": "E",
+          "type": "IN",
+          "no_connected": false,
+          "x": 6500,
+          "y": 5000,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "f09bcc2b17b4216a-e15",
+          "number": "2",
+          "name": "B",
+          "type": "IN",
+          "no_connected": false,
+          "x": 6300,
+          "y": 5200,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "f09bcc2b17b4216a-e11",
+          "number": "3",
+          "name": "C",
+          "type": "IN",
+          "no_connected": false,
+          "x": 6500,
+          "y": 5400,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "c267beff98845031",
+      "designator": "R1",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "0ab92ac2cbd7b616",
+        "name": "MF1/4W-4.7KΩ±1% T"
+      },
+      "symbol": {
+        "uuid": "9bc0d42045e70f6b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF1/4W-4.7KΩ±1% T52"
+      },
+      "footprint": {
+        "uuid": "d9364a353d0264e3",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD2.3-L6.5-P10.50-D0.5"
+      },
+      "sub_part_name": "MF1/4W-4.7KΩ±1% T52.1",
+      "x": 5100,
+      "y": 5400,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 4995,
+        "minY": 5355,
+        "maxX": 5205,
+        "maxY": 5445
+      },
+      "pins": [
+        {
+          "id": "c267beff98845031-e8",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 4900,
+          "y": 5400,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "c267beff98845031-e4",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5300,
+          "y": 5400,
+          "rotation": 0,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "b8a1f4a1d6fe8be2",
+      "designator": "R2",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "fe636950e12c2913",
+        "name": "MF1/4W-27KΩ±1%T52"
+      },
+      "symbol": {
+        "uuid": "f684bd99bc23f9a4",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF1/4W-27KΩ±1%T52"
+      },
+      "footprint": {
+        "uuid": "d9364a353d0264e3",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD2.3-L6.5-P10.50-D0.5"
+      },
+      "sub_part_name": "MF1/4W-27KΩ±1%T52.1",
+      "x": 5500,
+      "y": 5650,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 5394.999999999999,
+        "minY": 5595.000000000001,
+        "maxX": 5604.999999999999,
+        "maxY": 5705.000000000001
+      },
+      "pins": [
+        {
+          "id": "b8a1f4a1d6fe8be2-e8",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5699.999999999999,
+          "y": 5650.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "b8a1f4a1d6fe8be2-e4",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5299.999999999999,
+          "y": 5650.000000000001,
+          "rotation": 180,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "77bbcbd4d8abf2ad",
+      "designator": "R3",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "ea14a9119be945c8",
+        "name": "MF1/4W-10KΩ±1% T"
+      },
+      "symbol": {
+        "uuid": "290f2c160f69b0c0",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF1/4W-10KΩ±1% T52"
+      },
+      "footprint": {
+        "uuid": "d9364a353d0264e3",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD2.3-L6.5-P10.50-D0.5"
+      },
+      "sub_part_name": "MF1/4W-10KΩ±1% T52.1",
+      "x": 5000,
+      "y": 5650,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 4894.999999999999,
+        "minY": 5605.000000000001,
+        "maxX": 5104.999999999999,
+        "maxY": 5695.000000000001
+      },
+      "pins": [
+        {
+          "id": "77bbcbd4d8abf2ad-e8",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5200,
+          "y": 5650.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "77bbcbd4d8abf2ad-e4",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 4799.999999999999,
+          "y": 5650.000000000001,
+          "rotation": 180,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "cbbe2a96d471b0ca",
+      "designator": "R4",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "a1bef0181d1d5502",
+        "name": "MF1/4W-100Ω±1% T"
+      },
+      "symbol": {
+        "uuid": "4415d993aeacebae",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF1/4W-100Ω±1% T52"
+      },
+      "footprint": {
+        "uuid": "d9364a353d0264e3",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD2.3-L6.5-P10.50-D0.5"
+      },
+      "sub_part_name": "MF1/4W-100Ω±1% T52.1",
+      "x": 5650,
+      "y": 5850,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 5544.999999999999,
+        "minY": 5805.000000000001,
+        "maxX": 5754.999999999999,
+        "maxY": 5895.000000000001
+      },
+      "pins": [
+        {
+          "id": "cbbe2a96d471b0ca-e8",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5849.999999999999,
+          "y": 5850.000000000001,
+          "rotation": 0,
+          "sub_part_name": null
+        },
+        {
+          "id": "cbbe2a96d471b0ca-e4",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5449.999999999999,
+          "y": 5850.000000000001,
+          "rotation": 180,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "043b192fdb8ea1fc",
+      "designator": "R5",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "75a4de728788dbe0",
+        "name": "MF1/4W-1KΩ±1%T52"
+      },
+      "symbol": {
+        "uuid": "d986449692289714",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MF1/4W-1KΩ±1%T52"
+      },
+      "footprint": {
+        "uuid": "d9364a353d0264e3",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD2.3-L6.5-P10.50-D0.5"
+      },
+      "sub_part_name": "MF1/4W-1KΩ±1%T52.1",
+      "x": 5850,
+      "y": 4150,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 5795,
+        "minY": 4045,
+        "maxX": 5905,
+        "maxY": 4255
+      },
+      "pins": [
+        {
+          "id": "043b192fdb8ea1fc-e8",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5850,
+          "y": 3950,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "043b192fdb8ea1fc-e4",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 5850,
+          "y": 4350,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "8c525492b342d2b9",
+      "designator": "R6",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "afac2101df6b4ea4",
+        "name": "CR1/2W-1Ω±5%-XT52"
+      },
+      "symbol": {
+        "uuid": "4353aeb29458dd04",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CR1/2W-1Ω±5%-XT52"
+      },
+      "footprint": {
+        "uuid": "0a78590e57834871",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD3.5-L9.0-P13.00-D0.5"
+      },
+      "sub_part_name": "CR1/2W-1Ω±5%-XT52.1",
+      "x": 7150,
+      "y": 4750,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 7095,
+        "minY": 4645,
+        "maxX": 7205,
+        "maxY": 4855
+      },
+      "pins": [
+        {
+          "id": "8c525492b342d2b9-e3",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 7150,
+          "y": 4550,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "8c525492b342d2b9-e7",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 7150,
+          "y": 4950,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "f87a886372dc5bd3",
+      "designator": "R7",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "afac2101df6b4ea4",
+        "name": "CR1/2W-1Ω±5%-XT52"
+      },
+      "symbol": {
+        "uuid": "4353aeb29458dd04",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CR1/2W-1Ω±5%-XT52"
+      },
+      "footprint": {
+        "uuid": "0a78590e57834871",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD3.5-L9.0-P13.00-D0.5"
+      },
+      "sub_part_name": "CR1/2W-1Ω±5%-XT52.1",
+      "x": 6700,
+      "y": 5000,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 6595,
+        "minY": 4945,
+        "maxX": 6805,
+        "maxY": 5055
+      },
+      "pins": [
+        {
+          "id": "f87a886372dc5bd3-e3",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 6500,
+          "y": 5000,
+          "rotation": 180,
+          "sub_part_name": null
+        },
+        {
+          "id": "f87a886372dc5bd3-e7",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 6900,
+          "y": 5000,
+          "rotation": 0,
+          "sub_part_name": null
+        }
+      ]
+    },
+    {
+      "id": "512c18762fda30a0",
+      "designator": "R8",
+      "name": "={Value}",
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "37097ca63d336329",
+        "name": "CR1/2W-10Ω±5%-XT52"
+      },
+      "symbol": {
+        "uuid": "072ea2a9bb96eafa",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "CR1/2W-10Ω±5%-XT52"
+      },
+      "footprint": {
+        "uuid": "0a78590e57834871",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "RES-TH_BD3.5-L9.0-P13.00-D0.5"
+      },
+      "sub_part_name": "CR1/2W-10Ω±5%-XT52.1",
+      "x": 7850,
+      "y": 5250,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 7795,
+        "minY": 5145,
+        "maxX": 7905,
+        "maxY": 5355
+      },
+      "pins": [
+        {
+          "id": "512c18762fda30a0-e3",
+          "number": "1",
+          "name": "1",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 7850,
+          "y": 5050,
+          "rotation": 270,
+          "sub_part_name": null
+        },
+        {
+          "id": "512c18762fda30a0-e7",
+          "number": "2",
+          "name": "2",
+          "type": "Undefined",
+          "no_connected": false,
+          "x": 7850,
+          "y": 5450,
+          "rotation": 90,
+          "sub_part_name": null
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "37cc2625e152a037",
+      "net": null,
+      "points": [
+        {
+          "x": 5700.0,
+          "y": 5650.0
+        },
+        {
+          "x": 5700.0,
+          "y": 5550.0
+        },
+        {
+          "x": 6150.0,
+          "y": 5550.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5700.0,
+            "y": 5550.0
+          },
+          {
+            "x": 5700.0,
+            "y": 5650.0
+          }
+        ],
+        [
+          {
+            "x": 5700.0,
+            "y": 5550.0
+          },
+          {
+            "x": 6150.0,
+            "y": 5550.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "57cb167931f4d627",
+      "net": null,
+      "points": [
+        {
+          "x": 6900.0,
+          "y": 5000.0
+        },
+        {
+          "x": 7150.0,
+          "y": 5000.0
+        },
+        {
+          "x": 7150.0,
+          "y": 4950.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 7150.0,
+            "y": 4950.0
+          },
+          {
+            "x": 7150.0,
+            "y": 5000.0
+          }
+        ],
+        [
+          {
+            "x": 6900.0,
+            "y": 5000.0
+          },
+          {
+            "x": 7150.0,
+            "y": 5000.0
+          }
+        ],
+        [
+          {
+            "x": 7150.0,
+            "y": 5000.0
+          },
+          {
+            "x": 7450.0,
+            "y": 5000.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "5e4cc843edfab724",
+      "net": null,
+      "points": [
+        {
+          "x": 5850.0,
+          "y": 5600.0
+        },
+        {
+          "x": 5850.0,
+          "y": 5850.0
+        },
+        {
+          "x": 5850.0,
+          "y": 6100.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5850.0,
+            "y": 5850.0
+          },
+          {
+            "x": 5850.0,
+            "y": 6100.0
+          }
+        ],
+        [
+          {
+            "x": 5850.0,
+            "y": 5600.0
+          },
+          {
+            "x": 5850.0,
+            "y": 5850.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "75a56101ab19b083",
+      "net": null,
+      "points": [
+        {
+          "x": 5850.0,
+          "y": 4400.0
+        },
+        {
+          "x": 5850.0,
+          "y": 4350.0
+        },
+        {
+          "x": 6950.0,
+          "y": 4350.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5850.0,
+            "y": 4350.0
+          },
+          {
+            "x": 6950.0,
+            "y": 4350.0
+          }
+        ],
+        [
+          {
+            "x": 5850.0,
+            "y": 4350.0
+          },
+          {
+            "x": 5850.0,
+            "y": 4400.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "84134ca70d369a9d",
+      "net": "VCC_9V",
+      "points": [
+        {
+          "x": 4300.0,
+          "y": 4850.0
+        },
+        {
+          "x": 4400.0,
+          "y": 4850.0
+        },
+        {
+          "x": 4400.0,
+          "y": 4700.0
+        },
+        {
+          "x": 4400.0,
+          "y": 3900.0
+        },
+        {
+          "x": 5850.0,
+          "y": 3900.0
+        },
+        {
+          "x": 5850.0,
+          "y": 3950.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5850.0,
+            "y": 3900.0
+          },
+          {
+            "x": 5850.0,
+            "y": 3950.0
+          }
+        ],
+        [
+          {
+            "x": 5850.0,
+            "y": 3900.0
+          },
+          {
+            "x": 7150.0,
+            "y": 3900.0
+          }
+        ],
+        [
+          {
+            "x": 7150.0,
+            "y": 3900.0
+          },
+          {
+            "x": 7150.0,
+            "y": 4150.0
+          }
+        ],
+        [
+          {
+            "x": 7150.0,
+            "y": 3900.0
+          },
+          {
+            "x": 8500.0,
+            "y": 3900.0
+          }
+        ],
+        [
+          {
+            "x": 8500.0,
+            "y": 3900.0
+          },
+          {
+            "x": 8500.0,
+            "y": 4500.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 3900.0
+          },
+          {
+            "x": 5850.0,
+            "y": 3900.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 3900.0
+          },
+          {
+            "x": 4400.0,
+            "y": 4700.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 4700.0
+          },
+          {
+            "x": 4400.0,
+            "y": 4850.0
+          }
+        ],
+        [
+          {
+            "x": 4300.0,
+            "y": 4850.0
+          },
+          {
+            "x": 4400.0,
+            "y": 4850.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 4700.0
+          },
+          {
+            "x": 4600.0,
+            "y": 4700.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "85bbedb1e2c6bc50",
+      "net": null,
+      "points": [
+        {
+          "x": 4300.000000000001,
+          "y": 5400.0
+        },
+        {
+          "x": 4500.0,
+          "y": 5400.0
+        },
+        {
+          "x": 4500.0,
+          "y": 5200.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 4500.0,
+            "y": 5200.0
+          },
+          {
+            "x": 4500.0,
+            "y": 5400.0
+          }
+        ],
+        [
+          {
+            "x": 4300.000000000001,
+            "y": 5400.0
+          },
+          {
+            "x": 4500.0,
+            "y": 5400.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "8cad97d79a1a20b6",
+      "net": "GND",
+      "points": [
+        {
+          "x": 8500.0,
+          "y": 4900.0
+        },
+        {
+          "x": 8700.0,
+          "y": 4900.0
+        },
+        {
+          "x": 8750.0,
+          "y": 4900.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 8700.0,
+            "y": 4900.0
+          },
+          {
+            "x": 8750.0,
+            "y": 4900.0
+          }
+        ],
+        [
+          {
+            "x": 8500.0,
+            "y": 4900.0
+          },
+          {
+            "x": 8700.0,
+            "y": 4900.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "934790f341ed3f2c",
+      "net": null,
+      "points": [
+        {
+          "x": 5200.0,
+          "y": 5650.0
+        },
+        {
+          "x": 5300.0,
+          "y": 5650.0
+        },
+        {
+          "x": 5300.0,
+          "y": 5400.0
+        },
+        {
+          "x": 5650.0,
+          "y": 5400.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5300.0,
+            "y": 5400.0
+          },
+          {
+            "x": 5650.0,
+            "y": 5400.0
+          }
+        ],
+        [
+          {
+            "x": 5300.0,
+            "y": 5400.0
+          },
+          {
+            "x": 5300.0,
+            "y": 5650.0
+          }
+        ],
+        [
+          {
+            "x": 5200.0,
+            "y": 5650.0
+          },
+          {
+            "x": 5300.0,
+            "y": 5650.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "98c762f293742b04",
+      "net": null,
+      "points": [
+        {
+          "x": 4300.000000000001,
+          "y": 5500.0
+        },
+        {
+          "x": 4400.0,
+          "y": 5500.0
+        },
+        {
+          "x": 4400.0,
+          "y": 5650.0
+        },
+        {
+          "x": 4400.0,
+          "y": 6300.0
+        },
+        {
+          "x": 5450.0,
+          "y": 6300.0
+        },
+        {
+          "x": 5449.999999999999,
+          "y": 6100.000000000001
+        },
+        {
+          "x": 5450.0,
+          "y": 5850.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5449.999999999999,
+            "y": 6100.000000000001
+          },
+          {
+            "x": 5450.0,
+            "y": 5850.0
+          }
+        ],
+        [
+          {
+            "x": 5449.999999999999,
+            "y": 6100.000000000001
+          },
+          {
+            "x": 5450.0,
+            "y": 6300.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 6300.0
+          },
+          {
+            "x": 5450.0,
+            "y": 6300.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 5650.0
+          },
+          {
+            "x": 4400.0,
+            "y": 6300.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 5650.0
+          },
+          {
+            "x": 4800.0,
+            "y": 5650.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 5500.0
+          },
+          {
+            "x": 4400.0,
+            "y": 5650.0
+          }
+        ],
+        [
+          {
+            "x": 4300.000000000001,
+            "y": 5500.0
+          },
+          {
+            "x": 4400.0,
+            "y": 5500.0
+          }
+        ],
+        [
+          {
+            "x": 5450.0,
+            "y": 6300.0
+          },
+          {
+            "x": 7850.0,
+            "y": 6300.0
+          }
+        ],
+        [
+          {
+            "x": 7850.0,
+            "y": 5850.0
+          },
+          {
+            "x": 7850.0,
+            "y": 6300.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "bcb346b17b1f777d",
+      "net": "GND",
+      "points": [
+        {
+          "x": 4300.0,
+          "y": 4950.0
+        },
+        {
+          "x": 4400.0,
+          "y": 4950.0
+        },
+        {
+          "x": 4400.0,
+          "y": 5100.0
+        },
+        {
+          "x": 4600.0,
+          "y": 5100.0
+        },
+        {
+          "x": 4800.0,
+          "y": 5100.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 4300.0,
+            "y": 4950.0
+          },
+          {
+            "x": 4400.0,
+            "y": 4950.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 4950.0
+          },
+          {
+            "x": 4400.0,
+            "y": 5100.0
+          }
+        ],
+        [
+          {
+            "x": 4400.0,
+            "y": 5100.0
+          },
+          {
+            "x": 4600.0,
+            "y": 5100.0
+          }
+        ],
+        [
+          {
+            "x": 4600.0,
+            "y": 5100.0
+          },
+          {
+            "x": 4800.0,
+            "y": 5100.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "bee2127e92f75813",
+      "net": "GND",
+      "points": [
+        {
+          "x": 6500.0,
+          "y": 5400.0
+        },
+        {
+          "x": 6500.0,
+          "y": 5500.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 6500.0,
+            "y": 5400.0
+          },
+          {
+            "x": 6500.0,
+            "y": 5500.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "d90133b7d1d63ec1",
+      "net": null,
+      "points": [
+        {
+          "x": 5850.0,
+          "y": 5200.0
+        },
+        {
+          "x": 6300.0,
+          "y": 5200.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 5850.0,
+            "y": 5200.0
+          },
+          {
+            "x": 6300.0,
+            "y": 5200.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    },
+    {
+      "id": "f124bce6f0282527",
+      "net": "SPEAKER_OUT",
+      "points": [
+        {
+          "x": 7850.0,
+          "y": 5050.0
+        },
+        {
+          "x": 7850.0,
+          "y": 5000.0
+        },
+        {
+          "x": 8750.0,
+          "y": 5000.0
+        }
+      ],
+      "segments": [
+        [
+          {
+            "x": 7850.0,
+            "y": 5000.0
+          },
+          {
+            "x": 8750.0,
+            "y": 5000.0
+          }
+        ],
+        [
+          {
+            "x": 7850.0,
+            "y": 5000.0
+          },
+          {
+            "x": 7850.0,
+            "y": 5050.0
+          }
+        ]
+      ],
+      "line_width": null,
+      "line_type": null
+    }
+  ],
+  "labels": [],
+  "ports": [
+    {
+      "id": "a148c15b5e28568f",
+      "type": "netport",
+      "net": "AUDIO_IN",
+      "x": 4500,
+      "y": 5200,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 4595,
+        "minY": 5145,
+        "maxX": 4905,
+        "maxY": 5255
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    },
+    {
+      "id": "2ea1a7eceb5845d7",
+      "type": "netport",
+      "net": "OUT_INT",
+      "x": 6150,
+      "y": 5550,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 6095,
+        "minY": 5645,
+        "maxX": 6205,
+        "maxY": 5955
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    },
+    {
+      "id": "2276eece378b2462",
+      "type": "netport",
+      "net": "OUT_INT",
+      "x": 7450,
+      "y": 5000,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 7395,
+        "minY": 5095,
+        "maxX": 7505,
+        "maxY": 5405
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    }
+  ],
+  "flags": [
+    {
+      "id": "46c602f90b1d4d39",
+      "type": "netflag",
+      "net": "GND",
+      "x": 4800,
+      "y": 5100,
+      "rotation": 90,
+      "mirror": false,
+      "bbox": {
+        "minX": 4895.000000000001,
+        "minY": 4995,
+        "maxX": 4995.000000000001,
+        "maxY": 5205
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    },
+    {
+      "id": "7c82a1b8b2d5ca0d",
+      "type": "netflag",
+      "net": "GND",
+      "x": 5450,
+      "y": 6300,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 5344.999999999999,
+        "minY": 6395.000000000001,
+        "maxX": 5554.999999999999,
+        "maxY": 6495.000000000001
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    },
+    {
+      "id": "d302ba06517de790",
+      "type": "netflag",
+      "net": "GND",
+      "x": 6500,
+      "y": 5500,
+      "rotation": 180,
+      "mirror": false,
+      "bbox": {
+        "minX": 6394.999999999999,
+        "minY": 5595.000000000001,
+        "maxX": 6604.999999999999,
+        "maxY": 5695.000000000001
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    },
+    {
+      "id": "a6de7d40504c5f39",
+      "type": "netflag",
+      "net": "GND",
+      "x": 8700,
+      "y": 4900,
+      "rotation": 0,
+      "mirror": false,
+      "bbox": {
+        "minX": 8595,
+        "minY": 4705,
+        "maxX": 8805,
+        "maxY": 4805
+      },
+      "direction": null,
+      "direction_status": "unsupported",
+      "identification": null,
+      "identification_status": "unsupported"
+    }
+  ],
+  "no_connects": [],
+  "nets": [],
+  "netlist": "PROTEL NETLIST 2.0\r\n[\r\nDESIGNATOR\r\nC1\r\nFOOTPRINT\r\nCAP-TH_BD5.0-P2.00-D0.5-FD-1\r\nPARTTYPE\r\n2.2uF50V5x11KM\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nName\r\n\r\nDesignator\r\nC1\r\nSymbol\r\n2.2UF50V5X11KM\r\nDevice\r\n2.2uF50V5x11KM\r\nUnique ID\r\ngge1\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nEcond(米朗电子)\r\nManufacturer Part\r\n2.2uF50V5x11KM\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC49304957\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage Rating\r\n\r\nRipple Current\r\n\r\nPin Spacing\r\n\r\nDiameter\r\n\r\nHeight - Seated (Max)\r\n\r\nLifetime\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCAP-TH_BD5.0-P2.00-D0.5-FD-1\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nC2\r\nFOOTPRINT\r\nCAP-TH_BD6.3-P2.50-D0.5-FD\r\nPARTTYPE\r\n470UF16VE130GF\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\n470UF16VE130GF\r\nDesignator\r\nC2\r\nDevice\r\n470UF16VE130GF\r\nUnique ID\r\ngge2\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nEcond(米朗电子)\r\nManufacturer Part\r\n470UF16VE130GF\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC46867064\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage Rating\r\n\r\nRipple Current\r\n\r\nEquivalent Series Resistance(ESR)\r\n\r\nPin Spacing\r\n\r\nDiameter\r\n\r\nHeight - Seated (Max)\r\n\r\nLifetime\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCAP-TH_BD6.3-P2.50-D0.5-FD\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nC3\r\nFOOTPRINT\r\nCAP-TH_BD10.0-P5.00-D0.6-FD\r\nPARTTYPE\r\n1000uF 16V\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\n1000UF 16V_C439782\r\nDesignator\r\nC3\r\nDevice\r\n1000uF 16V\r\nUnique ID\r\ngge3\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nChengx(承兴)\r\nManufacturer Part\r\n1000uF 16V\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC439782\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nValue\r\n\r\nVoltage Rating\r\n\r\nRipple Current\r\n\r\nPin Spacing\r\n\r\nDiameter\r\n\r\nHeight - Seated (Max)\r\n\r\nLifetime\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCAP-TH_BD10.0-P5.00-D0.6-FD\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nC4\r\nFOOTPRINT\r\nCAP-TH_L5.0-W2.5-P5.08-D0.7\r\nPARTTYPE\r\nCC1H104ZC1PD3F5O30MF\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nCC1H104ZC1PD3F5O30MF\r\nDesignator\r\nC4\r\nDevice\r\nCC1H104ZC1PD3F5O30MF\r\nUnique ID\r\ngge4\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nDersonic(德尔创)\r\nManufacturer Part\r\nCC1H104ZC1PD3F5O30MF\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC254068\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage Rated\r\n\r\nLead Spacing\r\n\r\nTemperature Coefficient\r\n\r\nφD\r\n\r\nBody Thickness\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCAP-TH_L5.0-W2.5-P5.08\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nC5\r\nFOOTPRINT\r\nCAP-TH_BD6.3-P2.50-D0.5-FD\r\nPARTTYPE\r\n470UF16VE130GF\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\n470UF16VE130GF\r\nDesignator\r\nC5\r\nDevice\r\n470UF16VE130GF\r\nUnique ID\r\ngge5\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nEcond(米朗电子)\r\nManufacturer Part\r\n470UF16VE130GF\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC46867064\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage Rating\r\n\r\nRipple Current\r\n\r\nEquivalent Series Resistance(ESR)\r\n\r\nPin Spacing\r\n\r\nDiameter\r\n\r\nHeight - Seated (Max)\r\n\r\nLifetime\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCAP-TH_BD6.3-P2.50-D0.5-FD\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nC6\r\nFOOTPRINT\r\nCAP-TH_L5.0-W2.5-P5.08-D0.7\r\nPARTTYPE\r\nCC1H104ZC1PD3F5O30MF\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nCC1H104ZC1PD3F5O30MF\r\nDesignator\r\nC6\r\nDevice\r\nCC1H104ZC1PD3F5O30MF\r\nUnique ID\r\ngge6\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nDersonic(德尔创)\r\nManufacturer Part\r\nCC1H104ZC1PD3F5O30MF\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC254068\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage Rated\r\n\r\nLead Spacing\r\n\r\nTemperature Coefficient\r\n\r\nφD\r\n\r\nBody Thickness\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCAP-TH_L5.0-W2.5-P5.08\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nD1\r\nFOOTPRINT\r\nDO-35_BD2.2-L4.0-D0.50_1N4148\r\nPARTTYPE\r\n1N4148_C7437620\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nName\r\n1N4148\r\nDesignator\r\nD1\r\nSymbol\r\n1N4148_C7437620\r\nDevice\r\n1N4148_C7437620\r\nUnique ID\r\ngge7\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nXCH(旭昌辉)\r\nManufacturer Part\r\n1N4148\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC7437620\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nCurrent - Rectified\r\n\r\nVoltage - DC Reverse(Vr)\r\n\r\nVoltage - Forward(Vf@If)\r\n\r\nReverse Leakage Current (Ir)\r\n\r\nReverse Recovery Time (trr)\r\n\r\nDescription\r\n\r\n3D Model Title\r\nDO-35_BD2.2-L4.0-D0.50_1N4148\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nD2\r\nFOOTPRINT\r\nDO-35_BD2.2-L4.0-D0.50_1N4148\r\nPARTTYPE\r\n1N4148_C7437620\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nName\r\n1N4148\r\nDesignator\r\nD2\r\nSymbol\r\n1N4148_C7437620\r\nDevice\r\n1N4148_C7437620\r\nUnique ID\r\ngge8\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nXCH(旭昌辉)\r\nManufacturer Part\r\n1N4148\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC7437620\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nCurrent - Rectified\r\n\r\nVoltage - DC Reverse(Vr)\r\n\r\nVoltage - Forward(Vf@If)\r\n\r\nReverse Leakage Current (Ir)\r\n\r\nReverse Recovery Time (trr)\r\n\r\nDescription\r\n\r\n3D Model Title\r\nDO-35_BD2.2-L4.0-D0.50_1N4148\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nJ1\r\nFOOTPRINT\r\nCONN-TH_P5.00_KF301-5.0-2P\r\nPARTTYPE\r\nKF301-5.0-2P\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nKF301-5.0-2P\r\nDesignator\r\nJ1\r\nDevice\r\nKF301-5.0-2P\r\nUnique ID\r\ngge9\r\nName\r\nKF301-5.0-2P\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nKEFA(科发)\r\nManufacturer Part\r\nKF301-5.0-2P\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC474881\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nNumber of Positions or Pins\r\n\r\nPitch\r\n\r\nColor\r\n\r\nMounting Type\r\n\r\nNumber of Pins\r\n\r\nNumber of Rows\r\n\r\nNumber of PINs Per Row\r\n\r\nScrew Specification\r\n\r\nCurrent Rating\r\n\r\nVoltage Rating (Max)\r\n\r\nWire Gauge - AWG\r\n\r\nWire Gauge - mm2\r\n\r\nOperating Temperature\r\n\r\nHeight Above Board\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCONN-TH_P5.00_KF301-5.0-2P\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nJ2\r\nFOOTPRINT\r\nHDR-TH_2P-P2.54-V-F\r\nPARTTYPE\r\n2.54-1*2P母\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nHeader-Female-2.54_1x2\r\nDesignator\r\nJ2\r\nDevice\r\n2.54-1*2P母\r\nUnique ID\r\ngge10\r\nName\r\n2.54-1*2P母\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nBOOMELE(博穆精密)\r\nManufacturer Part\r\n2.54-1*2P母\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC49661\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nHoles Structure\r\n\r\nPitch\r\n\r\nRow Spacing\r\n\r\nCircular Hole / Square Hole\r\n\r\nMounting Type\r\n\r\nNumber of Rows\r\n\r\nNumber of Positions\r\n\r\nCurrent Rating\r\n\r\nVoltage Rating (Max)\r\n\r\nHoles Direction\r\n\r\nInsulation Height\r\n\r\nContact Material\r\n\r\nContact Plating\r\n\r\nOperating Temperature\r\n\r\nSupplementary Features\r\n\r\nPIN Length\r\n\r\nDescription\r\n\r\n3D Model Title\r\nHDR-TH_2P-P2.54-F-LI-1X2P\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nJ3\r\nFOOTPRINT\r\nCONN-TH_P5.00_KF301-5.0-2P\r\nPARTTYPE\r\nKF301-5.0-2P\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nKF301-5.0-2P\r\nDesignator\r\nJ3\r\nDevice\r\nKF301-5.0-2P\r\nUnique ID\r\ngge11\r\nName\r\nKF301-5.0-2P\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nKEFA(科发)\r\nManufacturer Part\r\nKF301-5.0-2P\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC474881\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nNumber of Positions or Pins\r\n\r\nPitch\r\n\r\nColor\r\n\r\nMounting Type\r\n\r\nNumber of Pins\r\n\r\nNumber of Rows\r\n\r\nNumber of PINs Per Row\r\n\r\nScrew Specification\r\n\r\nCurrent Rating\r\n\r\nVoltage Rating (Max)\r\n\r\nWire Gauge - AWG\r\n\r\nWire Gauge - mm2\r\n\r\nOperating Temperature\r\n\r\nHeight Above Board\r\n\r\nDescription\r\n\r\n3D Model Title\r\nCONN-TH_P5.00_KF301-5.0-2P\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nQ1\r\nFOOTPRINT\r\nTO-92-3_L5.1-W4.1-P1.27-L-1\r\nPARTTYPE\r\nSS8050-TO-92\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nSS8050-TO-92\r\nDesignator\r\nQ1\r\nDevice\r\nSS8050-TO-92\r\nUnique ID\r\ngge12\r\nName\r\nSS8050-TO-92\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nDDF(鼎德丰)\r\nManufacturer Part\r\nSS8050-TO-92\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC50229519\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\ntype\r\n\r\nCurrent - Collector(Ic)\r\n\r\nCollector - Emitter Voltage VCEO\r\n\r\nPd - Power Dissipation\r\n\r\nDC Current Gain\r\n\r\nTransition frequency(fT)\r\n\r\nCurrent - Collector Cutoff\r\n\r\nVce Saturation(VCE(sat))\r\n\r\nEmitter-Base Voltage(Vebo)\r\n\r\nNumber\r\n\r\nDescription\r\n\r\n3D Model Title\r\nTO-92-3_L5.1-W4.1-P1.27-L-1\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nQ2\r\nFOOTPRINT\r\nTO-92-3_L5.1-W4.1-P1.27-L-1\r\nPARTTYPE\r\nSS8050-TO-92\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nSS8050-TO-92\r\nDesignator\r\nQ2\r\nDevice\r\nSS8050-TO-92\r\nUnique ID\r\ngge13\r\nName\r\nSS8050-TO-92\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nDDF(鼎德丰)\r\nManufacturer Part\r\nSS8050-TO-92\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC50229519\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\ntype\r\n\r\nCurrent - Collector(Ic)\r\n\r\nCollector - Emitter Voltage VCEO\r\n\r\nPd - Power Dissipation\r\n\r\nDC Current Gain\r\n\r\nTransition frequency(fT)\r\n\r\nCurrent - Collector Cutoff\r\n\r\nVce Saturation(VCE(sat))\r\n\r\nEmitter-Base Voltage(Vebo)\r\n\r\nNumber\r\n\r\nDescription\r\n\r\n3D Model Title\r\nTO-92-3_L5.1-W4.1-P1.27-L-1\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nQ3\r\nFOOTPRINT\r\nTO-92-3_L5.1-W4.1-P1.27-L-1\r\nPARTTYPE\r\nSS8550-TO-92\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nSS8550-TO-92\r\nDesignator\r\nQ3\r\nDevice\r\nSS8550-TO-92\r\nUnique ID\r\ngge14\r\nName\r\nSS8550-TO-92\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nDDF(鼎德丰)\r\nManufacturer Part\r\nSS8550-TO-92\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC50229517\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nDescription\r\n\r\n3D Model Title\r\nTO-92-3_L5.1-W4.1-P1.27-L-1\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR1\r\nFOOTPRINT\r\nRES-TH_BD2.3-L6.5-P10.50-D0.5\r\nPARTTYPE\r\nMF1/4W-4.7KΩ±1% T\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nMF1/4W-4.7KΩ±1% T52\r\nDesignator\r\nR1\r\nDevice\r\nMF1/4W-4.7KΩ±1% T\r\nUnique ID\r\ngge15\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nCCO(千志电子)\r\nManufacturer Part\r\nMF1/4W-4.7KΩ±1% T\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC119339\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage-Supply(Max)\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_D2.3-L6.5-P10.50\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR2\r\nFOOTPRINT\r\nRES-TH_BD2.3-L6.5-P10.50-D0.5\r\nPARTTYPE\r\nMF1/4W-27KΩ±1%T52\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nMF1/4W-27KΩ±1%T52\r\nDesignator\r\nR2\r\nDevice\r\nMF1/4W-27KΩ±1%T52\r\nUnique ID\r\ngge16\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\n华星机电\r\nManufacturer Part\r\nMF1/4W-27KΩ±1%T52\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC714024\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_D2.3-L6.5-P10.50\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR3\r\nFOOTPRINT\r\nRES-TH_BD2.3-L6.5-P10.50-D0.5\r\nPARTTYPE\r\nMF1/4W-10KΩ±1% T\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nMF1/4W-10KΩ±1% T52\r\nDesignator\r\nR3\r\nDevice\r\nMF1/4W-10KΩ±1% T\r\nUnique ID\r\ngge17\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nCCO(千志电子)\r\nManufacturer Part\r\nMF1/4W-10KΩ±1% T\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC119347\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage-Supply(Max)\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_D2.3-L6.5-P10.50\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR4\r\nFOOTPRINT\r\nRES-TH_BD2.3-L6.5-P10.50-D0.5\r\nPARTTYPE\r\nMF1/4W-100Ω±1% T\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nMF1/4W-100Ω±1% T52\r\nDesignator\r\nR4\r\nDevice\r\nMF1/4W-100Ω±1% T\r\nUnique ID\r\ngge18\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nCCO(千志电子)\r\nManufacturer Part\r\nMF1/4W-100Ω±1% T\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC119304\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage-Supply(Max)\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_D2.3-L6.5-P10.50\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR5\r\nFOOTPRINT\r\nRES-TH_BD2.3-L6.5-P10.50-D0.5\r\nPARTTYPE\r\nMF1/4W-1KΩ±1%T52\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nMF1/4W-1KΩ±1%T52\r\nDesignator\r\nR5\r\nDevice\r\nMF1/4W-1KΩ±1%T52\r\nUnique ID\r\ngge19\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\n华星机电\r\nManufacturer Part\r\nMF1/4W-1KΩ±1%T52\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC713997\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_D2.3-L6.5-P10.50\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR6\r\nFOOTPRINT\r\nRES-TH_BD3.5-L9.0-P13.00-D0.5\r\nPARTTYPE\r\nCR1/2W-1Ω±5%-XT52\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nCR1/2W-1Ω±5%-XT52\r\nDesignator\r\nR6\r\nDevice\r\nCR1/2W-1Ω±5%-XT52\r\nUnique ID\r\ngge20\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nVO(翔胜)\r\nManufacturer Part\r\nCR1/2W-1Ω±5%-XT52\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC2894479\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage-Supply(Max)\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_BD3.5-L9.0-P13.00-D0.5\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR7\r\nFOOTPRINT\r\nRES-TH_BD3.5-L9.0-P13.00-D0.5\r\nPARTTYPE\r\nCR1/2W-1Ω±5%-XT52\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nCR1/2W-1Ω±5%-XT52\r\nDesignator\r\nR7\r\nDevice\r\nCR1/2W-1Ω±5%-XT52\r\nUnique ID\r\ngge21\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nVO(翔胜)\r\nManufacturer Part\r\nCR1/2W-1Ω±5%-XT52\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC2894479\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage-Supply(Max)\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_BD3.5-L9.0-P13.00-D0.5\r\n\r\n*\r\n]\r\n[\r\nDESIGNATOR\r\nR8\r\nFOOTPRINT\r\nRES-TH_BD3.5-L9.0-P13.00-D0.5\r\nPARTTYPE\r\nCR1/2W-10Ω±5%-XT52\r\nDESCRIPTION\r\n\r\nComponent Kind\r\nStandard\r\nAdd into BOM\r\nyes\r\nConvert to PCB\r\nyes\r\nSymbol\r\nCR1/2W-10Ω±5%-XT52\r\nDesignator\r\nR8\r\nDevice\r\nCR1/2W-10Ω±5%-XT52\r\nUnique ID\r\ngge22\r\nName\r\n\r\nReuse Block\r\n\r\nGroup ID\r\n\r\nChannel ID\r\n\r\nManufacturer\r\nVO(翔胜)\r\nManufacturer Part\r\nCR1/2W-10Ω±5%-XT52\r\nSupplier\r\nLCSC\r\nSupplier Part\r\nC2894474\r\nLCSC Part Name\r\n\r\nSupplier Footprint\r\n\r\nJLCPCB Part Class\r\n\r\nDatasheet\r\n\r\nType\r\n\r\nValue\r\n\r\nTolerance\r\n\r\nVoltage-Supply(Max)\r\n\r\nPower(Watts)\r\n\r\nTemperature Coefficient\r\n\r\nOperating Temperature\r\n\r\nDescription\r\n\r\n3D Model Title\r\nRES-TH_BD3.5-L9.0-P13.00-D0.5\r\n\r\n*\r\n]\r\n(\r\n$1N195 \r\nC1-1 2.2uF50V5x11KM-1 Input   \r\nR1-1 MF1/4W-4.7KΩ±1% T-1 Passive \r\n)\r\n(\r\nAUDIO_IN \r\nC1-2 2.2uF50V5x11KM-2 Input   \r\nJ2-1 2.54-1*2P母-1 Input   \r\n)\r\n(\r\n$1N208 \r\nC2-1 470UF16VE130GF-1 Input   \r\nQ1-1 SS8050-TO-92-E Input   \r\nR4-1 MF1/4W-100Ω±1% T-1 Passive \r\n)\r\n(\r\nGND \r\nC2-2 470UF16VE130GF-2 Input   \r\nC4-2 CC1H104ZC1PD3F5O30MF-2 Passive \r\nC5-2 470UF16VE130GF-2 Input   \r\nC6-2 CC1H104ZC1PD3F5O30MF-2 Passive \r\nJ1-2 KF301-5.0-2P-2 Passive \r\nJ2-2 2.54-1*2P母-2 Input   \r\nJ3-2 KF301-5.0-2P-2 Passive \r\nQ3-3 SS8550-TO-92-C Input   \r\nR3-2 MF1/4W-10KΩ±1% T-2 Passive \r\nR4-2 MF1/4W-100Ω±1% T-2 Passive \r\n)\r\n(\r\nOUT_INT \r\nC3-1 1000uF 16V-1 Input   \r\nR2-1 MF1/4W-27KΩ±1%T52-1 Passive \r\nR6-2 CR1/2W-1Ω±5%-XT52-2 Passive \r\nR7-2 CR1/2W-1Ω±5%-XT52-2 Passive \r\n)\r\n(\r\nSPEAKER_OUT \r\nC3-2 1000uF 16V-2 Input   \r\nJ3-1 KF301-5.0-2P-1 Passive \r\nR8-1 CR1/2W-10Ω±5%-XT52-1 Passive \r\n)\r\n(\r\nVCC_9V \r\nC4-1 CC1H104ZC1PD3F5O30MF-1 Passive \r\nC5-1 470UF16VE130GF-1 Input   \r\nJ1-1 KF301-5.0-2P-1 Passive \r\nQ2-3 SS8050-TO-92-C Input   \r\nR5-1 MF1/4W-1KΩ±1%T52-1 Passive \r\n)\r\n(\r\n$1N192 \r\nC6-1 CC1H104ZC1PD3F5O30MF-1 Passive \r\nR8-2 CR1/2W-10Ω±5%-XT52-2 Passive \r\n)\r\n(\r\n$1N189 \r\nD1-1 1N4148_C7437620-A Passive \r\nQ2-2 SS8050-TO-92-B Input   \r\nR5-2 MF1/4W-1KΩ±1%T52-2 Passive \r\n)\r\n(\r\n$1N191 \r\nD1-2 1N4148_C7437620-C Passive \r\nD2-1 1N4148_C7437620-A Passive \r\n)\r\n(\r\n$1N194 \r\nD2-2 1N4148_C7437620-C Passive \r\nQ1-3 SS8050-TO-92-C Input   \r\nQ3-2 SS8550-TO-92-B Input   \r\n)\r\n(\r\n$1N193 \r\nQ1-2 SS8050-TO-92-B Input   \r\nR1-2 MF1/4W-4.7KΩ±1% T-2 Passive \r\nR2-2 MF1/4W-27KΩ±1%T52-2 Passive \r\nR3-1 MF1/4W-10KΩ±1% T-1 Passive \r\n)\r\n(\r\n$1N209 \r\nQ2-1 SS8050-TO-92-E Input   \r\nR6-1 CR1/2W-1Ω±5%-XT52-1 Passive \r\n)\r\n(\r\n$1N197 \r\nQ3-1 SS8550-TO-92-E Input   \r\nR7-1 CR1/2W-1Ω±5%-XT52-1 Passive \r\n)\r\n",
+  "netlist_error": null,
+  "format": "schematic/easyeda-v0.1",
+  "unit": "mil",
+  "context_revision": "sha256:3d21c7eee178ccef74857f624bc974ba3d4e50257852ce35ef8855d435368021",
+  "revision": "sha256:9478343dba3362c3379a963d1750f3ebc887495253e67f8f2f7dc74a34c6096a"
+}

@@ -1,0 +1,40 @@
+52
+CAT. NO.: BVT9-1
+BeltonEngineeringCo.,Ltd.
+Unit1208,DaerungTechnotown8,
+481-11,Gasan-Dong,
+Geumcheon-Gu,Seoul,Korea
+TEL:(822)2163-0060~0065
+FAX:(822)2163-0066
+E-mail:belton@unitel.co.kr
+VACUUM TUBE SOCKET
+(VT9 SERIES)
+9 Pin Miniature Conventional Wiring and PCB Type
+Socket
+Features
+䤎With panel saddle mounting
+䤎Phosphorous bronze pin terminal with tin plating
+䤎Glassfiber filled PPS Insulating material
+䤎Easy mount with collar attached socket
+Applications
+䤎Applicable to all types of electric and electronic
+equipments using vacuum tube
+Dimensions
+VT9-ST-1
+VT9-PT
+VT9-ST-C
+VT9-ST-2
+VT9-PT-C
+P.C.B Mounting Hole
+P.C.B Mounting Hole
+REVERBERATION
+UNIT
+ROTARY
+SWITCH
+ENCODER
+SWITCH
+VACUUMTUBE
+SOCKET&SHIELD
+POWERENTRY
+JACK&XLR
+SOCKET

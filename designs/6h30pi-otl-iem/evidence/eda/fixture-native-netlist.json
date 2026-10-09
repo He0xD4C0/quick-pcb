@@ -1,0 +1,6 @@
+{
+  "ok": false,
+  "code": "BRIDGE_HTTP_ERROR",
+  "message": "bridge returned HTTP 500",
+  "status_code": 500
+}

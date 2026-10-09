@@ -1,0 +1,2662 @@
+{
+  "name": "QuickPCB_6H30Pi_OTL_IEM_v01_review2",
+  "revision": "0.1-candidate",
+  "status": "NOT QUALIFIED FOR REAL HEADPHONES",
+  "types": {
+    "R": [
+      [
+        "1",
+        "1"
+      ],
+      [
+        "2",
+        "2"
+      ]
+    ],
+    "C": [
+      [
+        "1",
+        "+"
+      ],
+      [
+        "2",
+        "-"
+      ]
+    ],
+    "D": [
+      [
+        "A",
+        "A"
+      ],
+      [
+        "K",
+        "K"
+      ]
+    ],
+    "NPN": [
+      [
+        "1",
+        "E"
+      ],
+      [
+        "2",
+        "B"
+      ],
+      [
+        "3",
+        "C"
+      ]
+    ],
+    "MOS": [
+      [
+        "1",
+        "G"
+      ],
+      [
+        "2",
+        "D"
+      ],
+      [
+        "3",
+        "S"
+      ]
+    ],
+    "LDO": [
+      [
+        "1",
+        "ADJ"
+      ],
+      [
+        "2",
+        "OUT"
+      ],
+      [
+        "3",
+        "IN"
+      ]
+    ],
+    "TUBE": [
+      [
+        "1",
+        "P2"
+      ],
+      [
+        "2",
+        "G2"
+      ],
+      [
+        "3",
+        "K2"
+      ],
+      [
+        "4",
+        "H"
+      ],
+      [
+        "5",
+        "H"
+      ],
+      [
+        "6",
+        "P1"
+      ],
+      [
+        "7",
+        "G1"
+      ],
+      [
+        "8",
+        "K1"
+      ],
+      [
+        "9",
+        "SCREEN"
+      ]
+    ],
+    "JACK": [
+      [
+        "T",
+        "TIP_L"
+      ],
+      [
+        "R",
+        "RING_R"
+      ],
+      [
+        "S",
+        "SLEEVE"
+      ]
+    ],
+    "GAIN": [
+      [
+        "LC",
+        "L_COMMON"
+      ],
+      [
+        "LH",
+        "L_HIGH"
+      ],
+      [
+        "LL",
+        "L_LOW"
+      ],
+      [
+        "RC",
+        "R_COMMON"
+      ],
+      [
+        "RH",
+        "R_HIGH"
+      ],
+      [
+        "RL",
+        "R_LOW"
+      ]
+    ],
+    "POT": [
+      [
+        "LT",
+        "L_TOP"
+      ],
+      [
+        "LW",
+        "L_WIPER"
+      ],
+      [
+        "LB",
+        "L_BOTTOM"
+      ],
+      [
+        "RT",
+        "R_TOP"
+      ],
+      [
+        "RW",
+        "R_WIPER"
+      ],
+      [
+        "RB",
+        "R_BOTTOM"
+      ]
+    ],
+    "RELAY": [
+      [
+        "CA",
+        "COIL_A"
+      ],
+      [
+        "CB",
+        "COIL_B"
+      ],
+      [
+        "A",
+        "CONTACT_A"
+      ],
+      [
+        "B",
+        "CONTACT_B"
+      ]
+    ],
+    "TX": [
+      [
+        "P1",
+        "PRI_L"
+      ],
+      [
+        "P2",
+        "PRI_N"
+      ],
+      [
+        "H1",
+        "HV_A"
+      ],
+      [
+        "H2",
+        "HV_B"
+      ],
+      [
+        "F1",
+        "HTR_A"
+      ],
+      [
+        "F2",
+        "HTR_B"
+      ],
+      [
+        "A1",
+        "AUX_A"
+      ],
+      [
+        "A2",
+        "AUX_B"
+      ],
+      [
+        "SH",
+        "SCREEN"
+      ]
+    ],
+    "MAINS": [
+      [
+        "L",
+        "LINE"
+      ],
+      [
+        "N",
+        "NEUTRAL"
+      ],
+      [
+        "PE",
+        "PE"
+      ]
+    ],
+    "SW": [
+      [
+        "L1",
+        "L_IN"
+      ],
+      [
+        "L2",
+        "L_OUT"
+      ],
+      [
+        "N1",
+        "N_IN"
+      ],
+      [
+        "N2",
+        "N_OUT"
+      ]
+    ],
+    "LINK": [
+      [
+        "1",
+        "1"
+      ],
+      [
+        "2",
+        "2"
+      ]
+    ],
+    "TP": [
+      [
+        "1",
+        "TEST"
+      ]
+    ],
+    "CHASSIS": [
+      [
+        "1",
+        "PE_STUD"
+      ]
+    ]
+  },
+  "components": [
+    {
+      "ref": "J1",
+      "type": "JACK",
+      "value": "3.5mm stereo INPUT",
+      "pins": {
+        "T": "IN_L",
+        "R": "IN_R",
+        "S": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": "Insulated chassis jack",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "J1"
+    },
+    {
+      "ref": "SW1",
+      "type": "GAIN",
+      "value": "DPDT HIGH / LOW",
+      "pins": {
+        "LC": "SEL_L",
+        "LH": "IN_L",
+        "LL": "ATT_L",
+        "RC": "SEL_R",
+        "RH": "IN_R",
+        "RL": "ATT_R"
+      },
+      "page": "01_Input_and_controls",
+      "rating": "Break before make; two poles mechanically linked",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "High connects C-H; Low connects C-L. Turn volume down before switching.",
+      "alias": "SW1"
+    },
+    {
+      "ref": "RV1",
+      "type": "POT",
+      "value": "Dual 10k log",
+      "pins": {
+        "LT": "SEL_L",
+        "LW": "WIP_L",
+        "LB": "AGND",
+        "RT": "SEL_R",
+        "RW": "WIP_R",
+        "RB": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": "2 gangs; >=0.1W; gang tracking must be measured",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RV1"
+    },
+    {
+      "ref": "J2",
+      "type": "JACK",
+      "value": "3.5mm stereo OUTPUT",
+      "pins": {
+        "T": "HP_L",
+        "R": "HP_R",
+        "S": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": "Insulated chassis jack; no balanced output",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "J2"
+    },
+    {
+      "ref": "R1",
+      "type": "R",
+      "value": "8.2k",
+      "pins": {
+        "1": "IN_L",
+        "2": "ATT_L"
+      },
+      "page": "01_Input_and_controls",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RATTL"
+    },
+    {
+      "ref": "R2",
+      "type": "R",
+      "value": "1k",
+      "pins": {
+        "1": "ATT_L",
+        "2": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RSHL"
+    },
+    {
+      "ref": "R3",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "HP_L",
+        "2": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHPL"
+    },
+    {
+      "ref": "R4",
+      "type": "R",
+      "value": "8.2k",
+      "pins": {
+        "1": "IN_R",
+        "2": "ATT_R"
+      },
+      "page": "01_Input_and_controls",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RATTR"
+    },
+    {
+      "ref": "R5",
+      "type": "R",
+      "value": "1k",
+      "pins": {
+        "1": "ATT_R",
+        "2": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RSHR"
+    },
+    {
+      "ref": "R6",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "HP_R",
+        "2": "AGND"
+      },
+      "page": "01_Input_and_controls",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHPR"
+    },
+    {
+      "ref": "V1",
+      "type": "TUBE",
+      "value": "6H30Pi-EB",
+      "pins": {
+        "1": "L_MID",
+        "2": "L_GL",
+        "3": "L_K",
+        "4": "HPLUS",
+        "5": "HMINUS",
+        "6": "L_PA",
+        "7": "L_GU",
+        "8": "L_MID",
+        "9": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": "Pa <=4W each; Ia <=50mA continuous; |Vhk| <=100V conservative",
+      "source": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+      "note": "Socket BOTTOM / wiring view. 4,5 heater; 9 SCREEN, never heater.",
+      "alias": "V1"
+    },
+    {
+      "ref": "C1",
+      "type": "C",
+      "value": "4.7u",
+      "pins": {
+        "1": "WIP_L",
+        "2": "L_GI"
+      },
+      "page": "02_WCF_L",
+      "rating": "250V, film 5%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CINL"
+    },
+    {
+      "ref": "R7",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "BPLUS",
+        "2": "L_BIAS"
+      },
+      "page": "02_WCF_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RB1L"
+    },
+    {
+      "ref": "R8",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "L_BIAS",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RB2L"
+    },
+    {
+      "ref": "C2",
+      "type": "C",
+      "value": "47u",
+      "pins": {
+        "1": "L_BIAS",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": "160V electrolytic, +/-20%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CBL"
+    },
+    {
+      "ref": "R9",
+      "type": "R",
+      "value": "47k",
+      "pins": {
+        "1": "L_BIAS",
+        "2": "L_GI"
+      },
+      "page": "02_WCF_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RGL"
+    },
+    {
+      "ref": "R10",
+      "type": "R",
+      "value": "100",
+      "pins": {
+        "1": "L_GI",
+        "2": "L_GU"
+      },
+      "page": "02_WCF_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RGSL"
+    },
+    {
+      "ref": "R11",
+      "type": "R",
+      "value": "127",
+      "pins": {
+        "1": "BPLUS",
+        "2": "L_PA"
+      },
+      "page": "02_WCF_L",
+      "rating": "1W, 1%, metal film; nominal 0.17W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RSL"
+    },
+    {
+      "ref": "C3",
+      "type": "C",
+      "value": "4.7u",
+      "pins": {
+        "1": "L_PA",
+        "2": "L_GB"
+      },
+      "page": "02_WCF_L",
+      "rating": "250V, film 5%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CFL"
+    },
+    {
+      "ref": "R12",
+      "type": "R",
+      "value": "100",
+      "pins": {
+        "1": "L_GB",
+        "2": "L_GL"
+      },
+      "page": "02_WCF_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RGLL"
+    },
+    {
+      "ref": "R13",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "L_GB",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RLEAKL"
+    },
+    {
+      "ref": "R14",
+      "type": "R",
+      "value": "68",
+      "pins": {
+        "1": "L_K",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": "1W, 1%; nominal 0.091W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RKL"
+    },
+    {
+      "ref": "C4",
+      "type": "C",
+      "value": "2200u",
+      "pins": {
+        "1": "L_K",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": "16V electrolytic +/-20%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CKL"
+    },
+    {
+      "ref": "C5",
+      "type": "C",
+      "value": "1000u",
+      "pins": {
+        "1": "L_MID",
+        "2": "L_OUT"
+      },
+      "page": "02_WCF_L",
+      "rating": "250V electrolytic +/-20%; ESR target <=0.15 ohm @1k; leakage MUST be measured",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "COL"
+    },
+    {
+      "ref": "R15",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "L_MID",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": "2W flameproof; defined discharge of output coupling capacitor",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDCL"
+    },
+    {
+      "ref": "R16",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "L_OUT",
+        "2": "AGND"
+      },
+      "page": "02_WCF_L",
+      "rating": "2W flameproof; 0.67W at 82V fault",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RBLL"
+    },
+    {
+      "ref": "K1",
+      "type": "RELAY",
+      "value": "104-1-A-12/1",
+      "pins": {
+        "CA": "AUX12",
+        "CB": "COIL_LO",
+        "A": "L_OUT",
+        "B": "HP_L"
+      },
+      "page": "02_WCF_L",
+      "rating": "500VDC switching, 0.5A/10W maximum; no internal diode",
+      "source": "https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf",
+      "note": "FUNCTIONAL pin labels. Confirm ordered package pinout. Contact ESR budget 0.15 ohm. Hard capacitor short exceeds contact current rating: NOT qualified.",
+      "alias": "K1"
+    },
+    {
+      "ref": "TP1",
+      "type": "TP",
+      "value": "MID",
+      "pins": {
+        "1": "L_MID"
+      },
+      "page": "02_WCF_L",
+      "rating": "Insulated test point >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPLMID"
+    },
+    {
+      "ref": "TP2",
+      "type": "TP",
+      "value": "K",
+      "pins": {
+        "1": "L_K"
+      },
+      "page": "02_WCF_L",
+      "rating": "Insulated test point >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPLK"
+    },
+    {
+      "ref": "TP3",
+      "type": "TP",
+      "value": "OUT",
+      "pins": {
+        "1": "L_OUT"
+      },
+      "page": "02_WCF_L",
+      "rating": "Insulated test point >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPLOUT"
+    },
+    {
+      "ref": "V2",
+      "type": "TUBE",
+      "value": "6H30Pi-EB",
+      "pins": {
+        "1": "R_MID",
+        "2": "R_GL",
+        "3": "R_K",
+        "4": "HPLUS",
+        "5": "HMINUS",
+        "6": "R_PA",
+        "7": "R_GU",
+        "8": "R_MID",
+        "9": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": "Pa <=4W each; Ia <=50mA continuous; |Vhk| <=100V conservative",
+      "source": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+      "note": "Socket BOTTOM / wiring view. 4,5 heater; 9 SCREEN, never heater.",
+      "alias": "V2"
+    },
+    {
+      "ref": "C6",
+      "type": "C",
+      "value": "4.7u",
+      "pins": {
+        "1": "WIP_R",
+        "2": "R_GI"
+      },
+      "page": "03_WCF_R",
+      "rating": "250V, film 5%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CINR"
+    },
+    {
+      "ref": "R17",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "BPLUS",
+        "2": "R_BIAS"
+      },
+      "page": "03_WCF_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RB1R"
+    },
+    {
+      "ref": "R18",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "R_BIAS",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RB2R"
+    },
+    {
+      "ref": "C7",
+      "type": "C",
+      "value": "47u",
+      "pins": {
+        "1": "R_BIAS",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": "160V electrolytic, +/-20%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CBR"
+    },
+    {
+      "ref": "R19",
+      "type": "R",
+      "value": "47k",
+      "pins": {
+        "1": "R_BIAS",
+        "2": "R_GI"
+      },
+      "page": "03_WCF_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RGR"
+    },
+    {
+      "ref": "R20",
+      "type": "R",
+      "value": "100",
+      "pins": {
+        "1": "R_GI",
+        "2": "R_GU"
+      },
+      "page": "03_WCF_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RGSR"
+    },
+    {
+      "ref": "R21",
+      "type": "R",
+      "value": "127",
+      "pins": {
+        "1": "BPLUS",
+        "2": "R_PA"
+      },
+      "page": "03_WCF_R",
+      "rating": "1W, 1%, metal film; nominal 0.17W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RSR"
+    },
+    {
+      "ref": "C8",
+      "type": "C",
+      "value": "4.7u",
+      "pins": {
+        "1": "R_PA",
+        "2": "R_GB"
+      },
+      "page": "03_WCF_R",
+      "rating": "250V, film 5%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CFR"
+    },
+    {
+      "ref": "R22",
+      "type": "R",
+      "value": "100",
+      "pins": {
+        "1": "R_GB",
+        "2": "R_GL"
+      },
+      "page": "03_WCF_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RGLR"
+    },
+    {
+      "ref": "R23",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "R_GB",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RLEAKR"
+    },
+    {
+      "ref": "R24",
+      "type": "R",
+      "value": "68",
+      "pins": {
+        "1": "R_K",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": "1W, 1%; nominal 0.091W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RKR"
+    },
+    {
+      "ref": "C9",
+      "type": "C",
+      "value": "2200u",
+      "pins": {
+        "1": "R_K",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": "16V electrolytic +/-20%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CKR"
+    },
+    {
+      "ref": "C10",
+      "type": "C",
+      "value": "1000u",
+      "pins": {
+        "1": "R_MID",
+        "2": "R_OUT"
+      },
+      "page": "03_WCF_R",
+      "rating": "250V electrolytic +/-20%; ESR target <=0.15 ohm @1k; leakage MUST be measured",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "COR"
+    },
+    {
+      "ref": "R25",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "R_MID",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": "2W flameproof; defined discharge of output coupling capacitor",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDCR"
+    },
+    {
+      "ref": "R26",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "R_OUT",
+        "2": "AGND"
+      },
+      "page": "03_WCF_R",
+      "rating": "2W flameproof; 0.67W at 82V fault",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RBLR"
+    },
+    {
+      "ref": "K2",
+      "type": "RELAY",
+      "value": "104-1-A-12/1",
+      "pins": {
+        "CA": "AUX12",
+        "CB": "COIL_LO",
+        "A": "R_OUT",
+        "B": "HP_R"
+      },
+      "page": "03_WCF_R",
+      "rating": "500VDC switching, 0.5A/10W maximum; no internal diode",
+      "source": "https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf",
+      "note": "FUNCTIONAL pin labels. Confirm ordered package pinout. Contact ESR budget 0.15 ohm. Hard capacitor short exceeds contact current rating: NOT qualified.",
+      "alias": "K2"
+    },
+    {
+      "ref": "TP4",
+      "type": "TP",
+      "value": "MID",
+      "pins": {
+        "1": "R_MID"
+      },
+      "page": "03_WCF_R",
+      "rating": "Insulated test point >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPRMID"
+    },
+    {
+      "ref": "TP5",
+      "type": "TP",
+      "value": "K",
+      "pins": {
+        "1": "R_K"
+      },
+      "page": "03_WCF_R",
+      "rating": "Insulated test point >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPRK"
+    },
+    {
+      "ref": "TP6",
+      "type": "TP",
+      "value": "OUT",
+      "pins": {
+        "1": "R_OUT"
+      },
+      "page": "03_WCF_R",
+      "rating": "Insulated test point >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPROUT"
+    },
+    {
+      "ref": "J3",
+      "type": "MAINS",
+      "value": "IEC C14 fused inlet",
+      "pins": {
+        "L": "MAINS_L",
+        "N": "MAINS_N",
+        "PE": "PE"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "250VAC certified; touch-safe enclosure",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "J3"
+    },
+    {
+      "ref": "F1",
+      "type": "LINK",
+      "value": "T630mA H 250V",
+      "pins": {
+        "1": "MAINS_L",
+        "2": "FUSED_L"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "High breaking capacity; inrush validation required",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "F1"
+    },
+    {
+      "ref": "SW2",
+      "type": "SW",
+      "value": "DPST mains switch",
+      "pins": {
+        "L1": "FUSED_L",
+        "L2": "PRI_L",
+        "N1": "MAINS_N",
+        "N2": "PRI_N"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "250VAC >=2A certified",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "SW2"
+    },
+    {
+      "ref": "T1",
+      "type": "TX",
+      "value": "220V : 150V / 9.5V / 12V",
+      "pins": {
+        "P1": "PRI_L",
+        "P2": "PRI_N",
+        "H1": "HV_A",
+        "H2": "HV_B",
+        "F1": "HTR_A",
+        "F2": "HTR_B",
+        "A1": "AUX_A",
+        "A2": "AUX_B",
+        "SH": "PE"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": ">=100VA; 150VAC/0.25A + 9.5VAC/5A + 12VAC/0.3A; reinforced isolation; thermal fuse",
+      "source": "https://www.hammfg.com/es/electronics/transformers/rectifier?referer=968",
+      "note": "Custom transformer winding TERMINALS; no autotransformer. Ratings at load. Electrostatic screen bonded to PE.",
+      "alias": "T1"
+    },
+    {
+      "ref": "CH1",
+      "type": "CHASSIS",
+      "value": "Dedicated PE stud",
+      "pins": {
+        "1": "PE"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "Bolted protective-earth bond; never switched/fused",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "CH1"
+    },
+    {
+      "ref": "LK1",
+      "type": "LINK",
+      "value": "Single star bond",
+      "pins": {
+        "1": "PE",
+        "2": "AGND"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "Short chassis-to-signal-ground bond at single point",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "LK1"
+    },
+    {
+      "ref": "F2",
+      "type": "LINK",
+      "value": "T315mA H 250V",
+      "pins": {
+        "1": "HV_A",
+        "2": "HV_AF"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "HV winding fuse",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "F2"
+    },
+    {
+      "ref": "D1",
+      "type": "D",
+      "value": "UF4007",
+      "pins": {
+        "A": "HV_AF",
+        "K": "HV_RAW"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "1000V, 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DH1"
+    },
+    {
+      "ref": "D2",
+      "type": "D",
+      "value": "UF4007",
+      "pins": {
+        "A": "HV_B",
+        "K": "HV_RAW"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "1000V, 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DH2"
+    },
+    {
+      "ref": "D3",
+      "type": "D",
+      "value": "UF4007",
+      "pins": {
+        "A": "AGND",
+        "K": "HV_AF"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "1000V, 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DH3"
+    },
+    {
+      "ref": "D4",
+      "type": "D",
+      "value": "UF4007",
+      "pins": {
+        "A": "AGND",
+        "K": "HV_B"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "1000V, 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DH4"
+    },
+    {
+      "ref": "C11",
+      "type": "C",
+      "value": "220u",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "AGND"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "350V +/-20%; ripple >=0.3Arms @100Hz",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CHV1"
+    },
+    {
+      "ref": "R27",
+      "type": "R",
+      "value": "22",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "HV_IN"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "5W pulse-rated flameproof",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHV"
+    },
+    {
+      "ref": "C12",
+      "type": "C",
+      "value": "220u",
+      "pins": {
+        "1": "HV_IN",
+        "2": "AGND"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "350V +/-20%; ripple >=0.3Arms @100Hz",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CHV2"
+    },
+    {
+      "ref": "R28",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "HV_RAW",
+        "2": "AGND"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "2W, >=350V, flameproof",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDIS1"
+    },
+    {
+      "ref": "R29",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "HV_IN",
+        "2": "AGND"
+      },
+      "page": "04_Mains_and_rectifier",
+      "rating": "2W, >=350V, flameproof",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDIS2"
+    },
+    {
+      "ref": "Q1",
+      "type": "MOS",
+      "value": "IRF820",
+      "pins": {
+        "1": "HV_GATE",
+        "2": "HV_IN",
+        "3": "HV_SOURCE"
+      },
+      "page": "05_HV_regulator",
+      "rating": "500V; heatsink <=8C/W; electrically insulated tab (D)",
+      "source": "https://www.vishay.com/docs/91059/91059.pdf",
+      "note": "Linear DC SOA not signed off; transient short dissipation gate remains open.",
+      "alias": "QHV"
+    },
+    {
+      "ref": "R30",
+      "type": "R",
+      "value": "47k",
+      "pins": {
+        "1": "HV_IN",
+        "2": "HV_GATE"
+      },
+      "page": "05_HV_regulator",
+      "rating": "2W, >=350V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHG"
+    },
+    {
+      "ref": "D5",
+      "type": "D",
+      "value": "12V zener",
+      "pins": {
+        "A": "HV_SOURCE",
+        "K": "HV_GATE"
+      },
+      "page": "05_HV_regulator",
+      "rating": "1W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DGS"
+    },
+    {
+      "ref": "R31",
+      "type": "R",
+      "value": "4.7",
+      "pins": {
+        "1": "HV_SOURCE",
+        "2": "BPLUS"
+      },
+      "page": "05_HV_regulator",
+      "rating": "1W; current limit ~0.13A, untrimmed",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RIS"
+    },
+    {
+      "ref": "Q2",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "BPLUS",
+        "2": "HV_SOURCE",
+        "3": "HV_GATE"
+      },
+      "page": "05_HV_regulator",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QIL"
+    },
+    {
+      "ref": "Q3",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "HV_ZREF",
+        "2": "HV_FB",
+        "3": "HV_GATE"
+      },
+      "page": "05_HV_regulator",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QERR"
+    },
+    {
+      "ref": "R32",
+      "type": "R",
+      "value": "221k",
+      "pins": {
+        "1": "BPLUS",
+        "2": "HV_FB"
+      },
+      "page": "05_HV_regulator",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHU"
+    },
+    {
+      "ref": "R33",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "HV_FB",
+        "2": "AGND"
+      },
+      "page": "05_HV_regulator",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHL"
+    },
+    {
+      "ref": "R34",
+      "type": "R",
+      "value": "82k",
+      "pins": {
+        "1": "HV_IN",
+        "2": "HV_ZREF"
+      },
+      "page": "05_HV_regulator",
+      "rating": "2W, >=350V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RHZ"
+    },
+    {
+      "ref": "D6",
+      "type": "D",
+      "value": "6.2V zener",
+      "pins": {
+        "A": "AGND",
+        "K": "HV_ZREF"
+      },
+      "page": "05_HV_regulator",
+      "rating": "0.5W; operating current ~2mA; tolerance 2% or better",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DZHV"
+    },
+    {
+      "ref": "C13",
+      "type": "C",
+      "value": "47u",
+      "pins": {
+        "1": "HV_ZREF",
+        "2": "AGND"
+      },
+      "page": "05_HV_regulator",
+      "rating": "25V electrolytic",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CZHV"
+    },
+    {
+      "ref": "C14",
+      "type": "C",
+      "value": "10n",
+      "pins": {
+        "1": "HV_GATE",
+        "2": "HV_FB"
+      },
+      "page": "05_HV_regulator",
+      "rating": "250V film; loop stability not qualified",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CCHV"
+    },
+    {
+      "ref": "C15",
+      "type": "C",
+      "value": "100u",
+      "pins": {
+        "1": "BPLUS",
+        "2": "AGND"
+      },
+      "page": "05_HV_regulator",
+      "rating": "250V electrolytic",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CBPLUS"
+    },
+    {
+      "ref": "R35",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "BPLUS",
+        "2": "AGND"
+      },
+      "page": "05_HV_regulator",
+      "rating": "2W flameproof",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDIS3"
+    },
+    {
+      "ref": "TP7",
+      "type": "TP",
+      "value": "B+ 160V nominal",
+      "pins": {
+        "1": "BPLUS"
+      },
+      "page": "05_HV_regulator",
+      "rating": "Insulated HV point",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "TPB"
+    },
+    {
+      "ref": "F3",
+      "type": "LINK",
+      "value": "T5A 250V",
+      "pins": {
+        "1": "HTR_A",
+        "2": "HTR_AF"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "Heater winding fuse; inrush test required",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "F3"
+    },
+    {
+      "ref": "D7",
+      "type": "D",
+      "value": "MBR1045",
+      "pins": {
+        "A": "HTR_AF",
+        "K": "HRAW"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "45V, 10A; insulated mounting as applicable",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DF1"
+    },
+    {
+      "ref": "D8",
+      "type": "D",
+      "value": "MBR1045",
+      "pins": {
+        "A": "HTR_B",
+        "K": "HRAW"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "45V, 10A; insulated mounting as applicable",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DF2"
+    },
+    {
+      "ref": "D9",
+      "type": "D",
+      "value": "MBR1045",
+      "pins": {
+        "A": "HMINUS",
+        "K": "HTR_AF"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "45V, 10A; insulated mounting as applicable",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DF3"
+    },
+    {
+      "ref": "D10",
+      "type": "D",
+      "value": "MBR1045",
+      "pins": {
+        "A": "HMINUS",
+        "K": "HTR_B"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "45V, 10A; insulated mounting as applicable",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DF4"
+    },
+    {
+      "ref": "C16",
+      "type": "C",
+      "value": "15000u",
+      "pins": {
+        "1": "HRAW",
+        "2": "HMINUS"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "25V +/-20%; ripple >=4Arms @100Hz",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CHF"
+    },
+    {
+      "ref": "U1",
+      "type": "LDO",
+      "value": "LM1084IT-ADJ",
+      "pins": {
+        "1": "HADJ",
+        "2": "HPLUS",
+        "3": "HRAW"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "5A; heat sink <=1.5C/W; tab=OUT, insulate from chassis",
+      "source": "https://www.ti.com/lit/ds/symlink/lm1084.pdf",
+      "note": "",
+      "alias": "U1"
+    },
+    {
+      "ref": "R36",
+      "type": "R",
+      "value": "121",
+      "pins": {
+        "1": "HPLUS",
+        "2": "HADJ"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RH1"
+    },
+    {
+      "ref": "R37",
+      "type": "R",
+      "value": "487",
+      "pins": {
+        "1": "HADJ",
+        "2": "HMINUS"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RH2"
+    },
+    {
+      "ref": "C17",
+      "type": "C",
+      "value": "220u",
+      "pins": {
+        "1": "HPLUS",
+        "2": "HMINUS"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "16V aluminum, ESR 0.2..1 ohm; regulator stability verification required",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CHOUT"
+    },
+    {
+      "ref": "C18",
+      "type": "C",
+      "value": "10u",
+      "pins": {
+        "1": "HADJ",
+        "2": "HMINUS"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "16V electrolytic",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CHADJ"
+    },
+    {
+      "ref": "D11",
+      "type": "D",
+      "value": "1N5404",
+      "pins": {
+        "A": "HPLUS",
+        "K": "HRAW"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "400V 3A output-to-input reverse protection",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DHREV"
+    },
+    {
+      "ref": "D12",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "HADJ",
+        "K": "HPLUS"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DADJ"
+    },
+    {
+      "ref": "R38",
+      "type": "R",
+      "value": "150k",
+      "pins": {
+        "1": "BPLUS",
+        "2": "HMINUS"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "0.5W 1%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "REL1"
+    },
+    {
+      "ref": "R39",
+      "type": "R",
+      "value": "47k",
+      "pins": {
+        "1": "HMINUS",
+        "2": "AGND"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "REL2"
+    },
+    {
+      "ref": "C19",
+      "type": "C",
+      "value": "47u",
+      "pins": {
+        "1": "HMINUS",
+        "2": "AGND"
+      },
+      "page": "06_Heater_and_aux",
+      "rating": "100V electrolytic",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CEL"
+    },
+    {
+      "ref": "D13",
+      "type": "D",
+      "value": "1N4007",
+      "pins": {
+        "A": "AUX_A",
+        "K": "AUX_RAW"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "1000V 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DA1"
+    },
+    {
+      "ref": "D14",
+      "type": "D",
+      "value": "1N4007",
+      "pins": {
+        "A": "AUX_B",
+        "K": "AUX_RAW"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "1000V 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DA2"
+    },
+    {
+      "ref": "D15",
+      "type": "D",
+      "value": "1N4007",
+      "pins": {
+        "A": "AGND",
+        "K": "AUX_A"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "1000V 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DA3"
+    },
+    {
+      "ref": "D16",
+      "type": "D",
+      "value": "1N4007",
+      "pins": {
+        "A": "AGND",
+        "K": "AUX_B"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "1000V 1A",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DA4"
+    },
+    {
+      "ref": "C20",
+      "type": "C",
+      "value": "1000u",
+      "pins": {
+        "1": "AUX_RAW",
+        "2": "AGND"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "35V electrolytic",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CAUX"
+    },
+    {
+      "ref": "R40",
+      "type": "R",
+      "value": "470",
+      "pins": {
+        "1": "AUX_RAW",
+        "2": "AUX_Z"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "0.5W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RAZ"
+    },
+    {
+      "ref": "D17",
+      "type": "D",
+      "value": "13V zener",
+      "pins": {
+        "A": "AGND",
+        "K": "AUX_Z"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "0.5W 2%",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DAZ"
+    },
+    {
+      "ref": "Q4",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "AUX12",
+        "2": "AUX_Z",
+        "3": "AUX_RAW"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QAUX"
+    },
+    {
+      "ref": "C21",
+      "type": "C",
+      "value": "220u",
+      "pins": {
+        "1": "AUX12",
+        "2": "AGND"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": "25V electrolytic",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CA12"
+    },
+    {
+      "ref": "R41",
+      "type": "R",
+      "value": "4.7k",
+      "pins": {
+        "1": "AUX12",
+        "2": "AGND"
+      },
+      "page": "06b_Auxiliary_supply",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RA12"
+    },
+    {
+      "ref": "R42",
+      "type": "R",
+      "value": "330k",
+      "pins": {
+        "1": "AUX12",
+        "2": "TIMER"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RT"
+    },
+    {
+      "ref": "C22",
+      "type": "C",
+      "value": "100u",
+      "pins": {
+        "1": "TIMER",
+        "2": "AGND"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "25V low leakage; +/-20% directly changes delay",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CT"
+    },
+    {
+      "ref": "D18",
+      "type": "D",
+      "value": "5.1V zener",
+      "pins": {
+        "A": "TBASE",
+        "K": "TIMER"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "0.5W",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DZT"
+    },
+    {
+      "ref": "R43",
+      "type": "R",
+      "value": "1k",
+      "pins": {
+        "1": "TBASE",
+        "2": "QB1"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RTB"
+    },
+    {
+      "ref": "Q5",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "QB2",
+        "2": "QB1",
+        "3": "COIL_LO"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QT1"
+    },
+    {
+      "ref": "Q6",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "AGND",
+        "2": "QB2",
+        "3": "COIL_LO"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QT2"
+    },
+    {
+      "ref": "R44",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "QB2",
+        "2": "AGND"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RBE"
+    },
+    {
+      "ref": "D19",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "COIL_LO",
+        "K": "FLY_Z"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DFLY"
+    },
+    {
+      "ref": "D20",
+      "type": "D",
+      "value": "24V zener",
+      "pins": {
+        "A": "AUX12",
+        "K": "FLY_Z"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "1W pulse-rated; verify coil voltage and release time",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DZFLY"
+    },
+    {
+      "ref": "D21",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "AUX_A",
+        "K": "AC_PRESENT"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DACS"
+    },
+    {
+      "ref": "C23",
+      "type": "C",
+      "value": "470n",
+      "pins": {
+        "1": "AC_PRESENT",
+        "2": "AGND"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "50V film",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CACS"
+    },
+    {
+      "ref": "R45",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "AC_PRESENT",
+        "2": "AGND"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RACS"
+    },
+    {
+      "ref": "R46",
+      "type": "R",
+      "value": "47k",
+      "pins": {
+        "1": "AC_PRESENT",
+        "2": "AC_B"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RACB"
+    },
+    {
+      "ref": "Q7",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "AGND",
+        "2": "AC_B",
+        "3": "KILL_B"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QAC"
+    },
+    {
+      "ref": "R47",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "AUX12",
+        "2": "KILL_B"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RKILL"
+    },
+    {
+      "ref": "Q8",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "AGND",
+        "2": "KILL_B",
+        "3": "TIMER"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QKILL"
+    },
+    {
+      "ref": "R48",
+      "type": "R",
+      "value": "2.3k",
+      "pins": {
+        "1": "AUX12",
+        "2": "REFHI"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RR1"
+    },
+    {
+      "ref": "R49",
+      "type": "R",
+      "value": "100",
+      "pins": {
+        "1": "REFHI",
+        "2": "REFMID"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RR2"
+    },
+    {
+      "ref": "R50",
+      "type": "R",
+      "value": "100",
+      "pins": {
+        "1": "REFMID",
+        "2": "REFLO"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RR3"
+    },
+    {
+      "ref": "R51",
+      "type": "R",
+      "value": "2.3k",
+      "pins": {
+        "1": "REFLO",
+        "2": "AGND"
+      },
+      "page": "07_Delay_and_relay_driver",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RR4"
+    },
+    {
+      "ref": "R52",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "AUX12",
+        "2": "L_SENSE"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDS1L"
+    },
+    {
+      "ref": "R53",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "L_OUT",
+        "2": "L_SENSE"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "0.5W >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDS2L"
+    },
+    {
+      "ref": "C24",
+      "type": "C",
+      "value": "1u",
+      "pins": {
+        "1": "L_SENSE",
+        "2": "REFMID"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "250V film, non-polar",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CDSL"
+    },
+    {
+      "ref": "D22",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "L_SENSE",
+        "K": "AUX12"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DSPL"
+    },
+    {
+      "ref": "D23",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "AGND",
+        "K": "L_SENSE"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DSNL"
+    },
+    {
+      "ref": "Q9",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "L_TAILP",
+        "2": "L_SENSE",
+        "3": "L_POSC"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QPSL"
+    },
+    {
+      "ref": "Q10",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "L_TAILP",
+        "2": "REFHI",
+        "3": "AUX12"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QPRL"
+    },
+    {
+      "ref": "Q11",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "L_TAILN",
+        "2": "L_SENSE",
+        "3": "AUX12"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QNSL"
+    },
+    {
+      "ref": "Q12",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "L_TAILN",
+        "2": "REFLO",
+        "3": "L_NEGC"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QNRL"
+    },
+    {
+      "ref": "R54",
+      "type": "R",
+      "value": "4.7k",
+      "pins": {
+        "1": "L_TAILP",
+        "2": "AGND"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RTPL"
+    },
+    {
+      "ref": "R55",
+      "type": "R",
+      "value": "4.7k",
+      "pins": {
+        "1": "L_TAILN",
+        "2": "AGND"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RTNL"
+    },
+    {
+      "ref": "R56",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "AUX12",
+        "2": "L_POSC"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RCPL"
+    },
+    {
+      "ref": "R57",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "AUX12",
+        "2": "L_NEGC"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RCNL"
+    },
+    {
+      "ref": "D24",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "TIMER",
+        "K": "L_POSC"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DTRPL"
+    },
+    {
+      "ref": "D25",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "TIMER",
+        "K": "L_NEGC"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DTRNL"
+    },
+    {
+      "ref": "D26",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "L_TAILP",
+        "K": "L_SENSE"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBEPSL"
+    },
+    {
+      "ref": "D27",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "L_TAILP",
+        "K": "REFHI"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBEPRL"
+    },
+    {
+      "ref": "D28",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "L_TAILN",
+        "K": "L_SENSE"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBENSL"
+    },
+    {
+      "ref": "D29",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "L_TAILN",
+        "K": "REFLO"
+      },
+      "page": "08_DC_monitor_L",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBENRL"
+    },
+    {
+      "ref": "R58",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "AUX12",
+        "2": "R_SENSE"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDS1R"
+    },
+    {
+      "ref": "R59",
+      "type": "R",
+      "value": "100k",
+      "pins": {
+        "1": "R_OUT",
+        "2": "R_SENSE"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "0.5W >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RDS2R"
+    },
+    {
+      "ref": "C25",
+      "type": "C",
+      "value": "1u",
+      "pins": {
+        "1": "R_SENSE",
+        "2": "REFMID"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "250V film, non-polar",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "Pin 1 positive for electrolytic; film non-polar",
+      "alias": "CDSR"
+    },
+    {
+      "ref": "D30",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "R_SENSE",
+        "K": "AUX12"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DSPR"
+    },
+    {
+      "ref": "D31",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "AGND",
+        "K": "R_SENSE"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DSNR"
+    },
+    {
+      "ref": "Q13",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "R_TAILP",
+        "2": "R_SENSE",
+        "3": "R_POSC"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QPSR"
+    },
+    {
+      "ref": "Q14",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "R_TAILP",
+        "2": "REFHI",
+        "3": "AUX12"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QPRR"
+    },
+    {
+      "ref": "Q15",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "R_TAILN",
+        "2": "R_SENSE",
+        "3": "AUX12"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QNSR"
+    },
+    {
+      "ref": "Q16",
+      "type": "NPN",
+      "value": "MPSA42",
+      "pins": {
+        "1": "R_TAILN",
+        "2": "REFLO",
+        "3": "R_NEGC"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "300V VCEO, 0.5A; E/B/C=1/2/3",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+      "note": "",
+      "alias": "QNRR"
+    },
+    {
+      "ref": "R60",
+      "type": "R",
+      "value": "4.7k",
+      "pins": {
+        "1": "R_TAILP",
+        "2": "AGND"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RTPR"
+    },
+    {
+      "ref": "R61",
+      "type": "R",
+      "value": "4.7k",
+      "pins": {
+        "1": "R_TAILN",
+        "2": "AGND"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RTNR"
+    },
+    {
+      "ref": "R62",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "AUX12",
+        "2": "R_POSC"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RCPR"
+    },
+    {
+      "ref": "R63",
+      "type": "R",
+      "value": "10k",
+      "pins": {
+        "1": "AUX12",
+        "2": "R_NEGC"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": ".25W, 1%, >=250V",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "RCNR"
+    },
+    {
+      "ref": "D32",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "TIMER",
+        "K": "R_POSC"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DTRPR"
+    },
+    {
+      "ref": "D33",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "TIMER",
+        "K": "R_NEGC"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DTRNR"
+    },
+    {
+      "ref": "D34",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "R_TAILP",
+        "K": "R_SENSE"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBEPSR"
+    },
+    {
+      "ref": "D35",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "R_TAILP",
+        "K": "REFHI"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBEPRR"
+    },
+    {
+      "ref": "D36",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "R_TAILN",
+        "K": "R_SENSE"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBENSR"
+    },
+    {
+      "ref": "D37",
+      "type": "D",
+      "value": "1N4148",
+      "pins": {
+        "A": "R_TAILN",
+        "K": "REFLO"
+      },
+      "page": "09_DC_monitor_R",
+      "rating": "100V, 150mA",
+      "source": "Project-defined functional terminals; package/purchasing verification required before build",
+      "note": "",
+      "alias": "DBENRR"
+    }
+  ],
+  "sources": {
+    "tube": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+    "sovtek": "https://shop.ehx.com/catalog/addimages/6h30pi-sovtek.pdf",
+    "mos": "https://www.vishay.com/docs/91059/91059.pdf",
+    "npn": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+    "ldo": "https://www.ti.com/lit/ds/symlink/lm1084.pdf",
+    "relay": "https://www.pickeringrelay.com/wp-content/uploads/pdfs/104-high-voltage-sil-reed-relays.pdf",
+    "rectifier": "https://www.hammfg.com/es/electronics/transformers/rectifier?referer=968",
+    "project": "Project-defined functional terminals; package/purchasing verification required before build"
+  }
+}

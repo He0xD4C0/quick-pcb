@@ -1,0 +1,746 @@
+{
+  "training": {
+    "n": 36,
+    "rms_relative_error": 0.02365348913836291,
+    "max_relative_error": 0.06258480176844301
+  },
+  "holdout": {
+    "n": 35,
+    "rms_relative_error": 0.024202042923020747,
+    "max_relative_error": 0.07052364099884098
+  },
+  "parameters": {
+    "MU": 14.773865232980999,
+    "EX": 1.4417327359366612,
+    "KG1": 272.8618498935506,
+    "KP": 137.54705596508003,
+    "KVB": 796.5774290792638
+  },
+  "plate_alternative_parameters": {
+    "MU": 12.683964377048559,
+    "EX": 1.180911005525516,
+    "KG1": 336.9557592005549,
+    "KP": 75.32431426845888,
+    "KVB": 1.0000000000279854
+  },
+  "cross_family_rms_relative_error": 0.4669960014561686,
+  "discrepancy_example": {
+    "vp_V": 80,
+    "vg_V": -2,
+    "plate_graph_mA": 34.27,
+    "transfer_graph_mA": 45.41
+  },
+  "source_sha256": "cbc0d812df41e114221da3664eeed3359c4143153f969b9fe43bdadeb5f56e92",
+  "source_url": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+  "qualified_for_typical_transfer_curve_estimation": true,
+  "qualified_across_both_official_curve_families": false,
+  "limitations": [
+    "Typical published curves, not measured specimens",
+    "Small signal THD sensitivity is not bounded by DC fit residual",
+    "No tube noise, microphonics, heater leakage or thermal warmup model",
+    "Positive-grid current is an uncalibrated conservative diode approximation"
+  ]
+}
+165 components, 79 nets, 10 sheets
+{
+  "nominal": {
+    "R16_high": {
+      "gain_1k": 0.3816200617122169,
+      "response_20Hz_dB": -0.26964495755073803,
+      "response_20kHz_dB": 0.00010966635337266813,
+      "max_band_deviation_dB": 0.26964495755073803,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      },
+      "gain_difference_dB": 20.064812462903948
+    },
+    "R16_low": {
+      "gain_1k": 0.037878308277403606,
+      "response_20Hz_dB": -0.2694404294767738,
+      "response_20kHz_dB": 9.529767224445793e-05,
+      "max_band_deviation_dB": 0.2694404294767738,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R18_high": {
+      "gain_1k": 0.4074916002053835,
+      "response_20Hz_dB": -0.24502948934443464,
+      "response_20kHz_dB": 9.934414114372287e-05,
+      "max_band_deviation_dB": 0.24502948934443464,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      },
+      "gain_difference_dB": 20.06481263459722
+    },
+    "R18_low": {
+      "gain_1k": 0.04044622832110842,
+      "response_20Hz_dB": -0.24482493041479292,
+      "response_20kHz_dB": 8.585903850954374e-05,
+      "max_band_deviation_dB": 0.24482493041479292,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R32_high": {
+      "gain_1k": 0.5342598220981452,
+      "response_20Hz_dB": -0.14084986092928461,
+      "response_20kHz_dB": 5.628805726773359e-05,
+      "max_band_deviation_dB": 0.14084986092928461,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R32_low": {
+      "gain_1k": 0.05302880579779993,
+      "response_20Hz_dB": -0.14064527052954812,
+      "response_20kHz_dB": 4.6764238579194515e-05,
+      "max_band_deviation_dB": 0.14064527052954812,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R300_high": {
+      "gain_1k": 0.8312871257222078,
+      "response_20Hz_dB": -0.01195860186628316,
+      "response_20kHz_dB": 4.639258916572618e-06,
+      "max_band_deviation_dB": 0.01195860186628316,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R300_low": {
+      "gain_1k": 0.08251071347312887,
+      "response_20Hz_dB": -0.011753996439341717,
+      "response_20kHz_dB": 1.8132386934319912e-06,
+      "max_band_deviation_dB": 0.011753996439341717,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R1000000000_high": {
+      "gain_1k": 0.8903936148594321,
+      "response_20Hz_dB": -0.006604122493187356,
+      "response_20kHz_dB": 2.587429296723846e-06,
+      "max_band_deviation_dB": 0.006604122493187356,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    },
+    "R1000000000_low": {
+      "gain_1k": 0.0883774207916017,
+      "response_20Hz_dB": -0.006399518995369614,
+      "response_20kHz_dB": 6.562221404821983e-07,
+      "max_band_deviation_dB": 0.006399518995369614,
+      "iq_A": 0.036510764705882354,
+      "p_upper_W": 2.7347745995659243,
+      "p_lower_W": 2.9032760587361177,
+      "op": {
+        "v(pa)": 155.259,
+        "v(gu)": 80.0,
+        "v(mid)": 82.00109,
+        "v(gl)": 3.486209e-07,
+        "v(k)": 2.482732,
+        "i(vb)": -0.0381308
+      }
+    }
+  },
+  "zout_ohm": {
+    "20": 23.232984634312277,
+    "100": 21.410031370469113,
+    "1000": 21.331430132353656,
+    "10000": 21.330644361304646,
+    "20000": 21.330643770571644
+  },
+  "distortion": {
+    "R16_6.7mV": {
+      "target_Vrms": 0.0067,
+      "input_Vrms": 0.017556728988353157,
+      "thd_percent": 0.0133096
+    },
+    "R16_12.6mV": {
+      "target_Vrms": 0.0126,
+      "input_Vrms": 0.03301713212735071,
+      "thd_percent": 0.0249016
+    },
+    "R16_50mV": {
+      "target_Vrms": 0.05,
+      "input_Vrms": 0.13102036558472507,
+      "thd_percent": 0.0988684
+    },
+    "R16_100mV": {
+      "target_Vrms": 0.1,
+      "input_Vrms": 0.26204073116945015,
+      "thd_percent": 0.199441
+    },
+    "R16_200mV": {
+      "target_Vrms": 0.2,
+      "input_Vrms": 0.5240814623389003,
+      "thd_percent": 0.413522
+    },
+    "R18_6.7mV": {
+      "target_Vrms": 0.0067,
+      "input_Vrms": 0.01644205671140969,
+      "thd_percent": 0.0111493
+    },
+    "R18_12.6mV": {
+      "target_Vrms": 0.0126,
+      "input_Vrms": 0.03092088277071076,
+      "thd_percent": 0.0208279
+    },
+    "R18_50mV": {
+      "target_Vrms": 0.05,
+      "input_Vrms": 0.12270191575678875,
+      "thd_percent": 0.0826042
+    },
+    "R18_100mV": {
+      "target_Vrms": 0.1,
+      "input_Vrms": 0.2454038315135775,
+      "thd_percent": 0.16634
+    },
+    "R18_200mV": {
+      "target_Vrms": 0.2,
+      "input_Vrms": 0.490807663027155,
+      "thd_percent": 0.34242
+    }
+  }
+}
+{
+  "random_seed": 630,
+  "mode_vs_volume": [
+    {
+      "volume_fraction": 0.1,
+      "source_ohm": 0.01,
+      "difference_dB": 20.01882893482089
+    },
+    {
+      "volume_fraction": 0.1,
+      "source_ohm": 100,
+      "difference_dB": 19.93409111863691
+    },
+    {
+      "volume_fraction": 0.1,
+      "source_ohm": 1000,
+      "difference_dB": 19.275756543621615
+    },
+    {
+      "volume_fraction": 0.5,
+      "source_ohm": 0.01,
+      "difference_dB": 20.053170146204092
+    },
+    {
+      "volume_fraction": 0.5,
+      "source_ohm": 100,
+      "difference_dB": 19.96435562489048
+    },
+    {
+      "volume_fraction": 0.5,
+      "source_ohm": 1000,
+      "difference_dB": 19.275756530984456
+    },
+    {
+      "volume_fraction": 1,
+      "source_ohm": 0.01,
+      "difference_dB": 20.167277273948216
+    },
+    {
+      "volume_fraction": 1,
+      "source_ohm": 100,
+      "difference_dB": 20.064812462903948
+    },
+    {
+      "volume_fraction": 1,
+      "source_ohm": 1000,
+      "difference_dB": 19.27575655895122
+    }
+  ],
+  "model_alternative_50mV": {
+    "16": {
+      "target_Vrms": 0.05,
+      "input_Vrms": 0.24162441007872085,
+      "thd_percent": 0.0807562
+    },
+    "18": {
+      "target_Vrms": 0.05,
+      "input_Vrms": 0.22118798943581214,
+      "thd_percent": 0.0706712
+    }
+  },
+  "noise": {
+    "16": {
+      "onoise_total": 1.141893e-07,
+      "inoise_total": 2.992287e-07
+    },
+    "18": {
+      "onoise_total": 1.210287e-07,
+      "inoise_total": 2.970145e-07
+    }
+  },
+  "psrr": {
+    "16": {
+      "50": 0.1182970020821912,
+      "100": 0.11875339497096854,
+      "200": 0.11886825669189484,
+      "1000": 0.11890509449795328
+    },
+    "18": {
+      "50": 0.1263768734817769,
+      "100": 0.12681921701786855,
+      "200": 0.12693046862012444,
+      "1000": 0.12696614239012907
+    }
+  },
+  "scope": [
+    "Random cases are sensitivities, not a statistical tube production model.",
+    "Resistor thermal noise only; tube intrinsic, microphonic, heater and LDO/zener noise omitted.",
+    "THD uses generic curve-derived models; tiny computed values near 0.003% numerical floor are not precision claims.",
+    "Short/open and switching fixtures in protection script are simplified scenarios."
+  ]
+}
+maxTHD 0.135349
+{
+  "model_scope": "Generic rectifiers, BJT and MOSFET; heater LDO behavioral. No validated loop/SOA/thermal or transformer inrush model.",
+  "hv": {
+    "0.9": {
+      "raw_Vmean": 172.5699910855002,
+      "raw_ripple_Vpp": 2.563770000000005,
+      "Bplus_Vmean": 157.44970159895087,
+      "Bplus_ripple_Vpp": 0.041129000000012184,
+      "secondary_Arms": 0.1770073989582568,
+      "pass_W_est": 1.051652599083889,
+      "bulk_ripple_Arms_est": 0.15588354763659087
+    },
+    "1": {
+      "raw_Vmean": 192.95421701505606,
+      "raw_ripple_Vpp": 2.6393170000000055,
+      "Bplus_Vmean": 158.81587831868524,
+      "Bplus_ripple_Vpp": 0.02308099999999058,
+      "secondary_Arms": 0.18299870519418115,
+      "pass_W_est": 2.5517316447024587,
+      "bulk_ripple_Arms_est": 0.16188849929374102
+    },
+    "1.1": {
+      "raw_Vmean": 213.39261799587985,
+      "raw_ripple_Vpp": 2.7077759999999955,
+      "Bplus_Vmean": 159.79182923642284,
+      "Bplus_ripple_Vpp": 0.019421999999991613,
+      "secondary_Arms": 0.18845877782056844,
+      "pass_W_est": 4.0872516125388545,
+      "bulk_ripple_Arms_est": 0.1673904270713925
+    }
+  },
+  "heater": {
+    "0.9": {
+      "raw_min_V": 9.13949859,
+      "raw_max_V": 9.93341771,
+      "output_min_V": 6.3,
+      "output_max_V": 6.3,
+      "regulator_W": 5.834353469821994,
+      "secondary_Arms": 3.3014327768416534,
+      "bulk_ripple_Arms_est": 2.760056804612024
+    },
+    "1": {
+      "raw_min_V": 10.4093849,
+      "raw_max_V": 11.2172454,
+      "output_min_V": 6.3,
+      "output_max_V": 6.3,
+      "regulator_W": 8.132305754115587,
+      "secondary_Arms": 3.3628095634309267,
+      "bulk_ripple_Arms_est": 2.8333431596798313
+    },
+    "1.1": {
+      "raw_min_V": 11.6845788,
+      "raw_max_V": 12.5047186,
+      "output_min_V": 6.3,
+      "output_max_V": 6.3,
+      "regulator_W": 10.438281548235548,
+      "secondary_Arms": 3.419760136576597,
+      "bulk_ripple_Arms_est": 2.9004687896203993
+    }
+  }
+}
+Heater worst 6.3 pad dB range 19.812742591060374 20.363815580460557
+{
+  "method": "Linear post-processing of steady generic supply waveform through audio B+ transfer function; no heater/magnetic coupling or intrinsic device noise.",
+  "cases": {
+    "198V_16ohm": {
+      "Bplus_100Hz_Vrms": 0.014328050535081824,
+      "HP_100Hz_Vrms": 0.0017015046443566294,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0017093101115569795
+    },
+    "198V_18ohm": {
+      "Bplus_100Hz_Vrms": 0.014328050535081824,
+      "HP_100Hz_Vrms": 0.001817072150251588,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0018254062698866607
+    },
+    "220V_16ohm": {
+      "Bplus_100Hz_Vrms": 0.008050728426832203,
+      "HP_100Hz_Vrms": 0.0009560513326756428,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0009600621784161627
+    },
+    "220V_18ohm": {
+      "Bplus_100Hz_Vrms": 0.008050728426832203,
+      "HP_100Hz_Vrms": 0.0010209870755143896,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0010252695696623623
+    },
+    "242V_16ohm": {
+      "Bplus_100Hz_Vrms": 0.006772184258530292,
+      "HP_100Hz_Vrms": 0.0008042198720694521,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0008076601761380536
+    },
+    "242V_18ohm": {
+      "Bplus_100Hz_Vrms": 0.006772184258530292,
+      "HP_100Hz_Vrms": 0.0008588431051675741,
+      "HP_20Hz_20kHz_ripple_Vrms": 0.0008625164156810388
+    }
+  }
+}
+{
+  "assumptions": [
+    "Warm-up ramp is a stress scenario, not a validated thermal tube model.",
+    "Relay ideal contact threshold excludes mechanical latency; therefore optimistic.",
+    "Cap-short source is 82.13 V with 25 ohm Thevenin impedance, not nonlinear tube simulation.",
+    "Fault energy has no manufacturer-approved safe threshold for these IEMs. Any large unqualified excursion blocks use."
+  ],
+  "cases": {
+    "startup": {
+      "max_abs_output_V": 0.985414031,
+      "energy_into_16ohm_J": 0.0012569260602145948,
+      "relay_on_first_s": 44.439,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "asymmetric_warmup": {
+      "max_abs_output_V": 0.987219242,
+      "energy_into_16ohm_J": 0.0012606452960613563,
+      "relay_on_first_s": 89.347,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "quick_restart": {
+      "max_abs_output_V": 0.985414007,
+      "energy_into_16ohm_J": 0.001541741450252506,
+      "relay_on_first_s": 44.439,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "power_off": {
+      "max_abs_output_V": 0.649744914,
+      "energy_into_16ohm_J": 9.710710413003938e-05,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": -1.30978428e-11,
+      "timer_end_V": 0.0186773118,
+      "dc_end_V": -1.27475479e-09,
+      "refhi_end_V": -0.000118411349,
+      "reflo_end_V": -0.000118411349,
+      "optimistic_release_after_event_s": 0.010384823999999994
+    },
+    "dc_fault_positive": {
+      "max_abs_output_V": 31.8861097,
+      "energy_into_16ohm_J": 2.4403744596241235,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 0.00526878502,
+      "timer_end_V": 5.75283334,
+      "dc_end_V": 1.30996645e-09,
+      "refhi_end_V": 6.33954157,
+      "reflo_end_V": 5.85011163,
+      "optimistic_release_after_event_s": 0.037889495499999995
+    },
+    "dc_fault_negative": {
+      "max_abs_output_V": 4.95355301,
+      "energy_into_16ohm_J": 0.03887224240382775,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 0.000644653254,
+      "timer_end_V": 5.27657032,
+      "dc_end_V": -7.9987202e-11,
+      "refhi_end_V": 5.95741584,
+      "reflo_end_V": 5.43721195,
+      "optimistic_release_after_event_s": 0.0250685796
+    },
+    "leakage": {
+      "max_abs_output_V": 0.00290649787,
+      "energy_into_16ohm_J": 2.639915112387723e-07,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846404,
+      "dc_end_V": 0.0029064976,
+      "refhi_end_V": 6.20251012,
+      "reflo_end_V": 5.70381852
+    },
+    "open_capacitor": {
+      "max_abs_output_V": 0.000910336535,
+      "energy_into_16ohm_J": 2.589726876266353e-08,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "short_output": {
+      "max_abs_output_V": 5.70037947e-06,
+      "energy_into_16ohm_J": null,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.318464,
+      "dc_end_V": 5.70037579e-06,
+      "refhi_end_V": 6.20247189,
+      "reflo_end_V": 5.70377694
+    },
+    "no_load": {
+      "max_abs_output_V": 0.478949636,
+      "energy_into_16ohm_J": null,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851173,
+      "timer_end_V": 6.31846422,
+      "dc_end_V": 0.478949636,
+      "refhi_end_V": 6.21150013,
+      "reflo_end_V": 5.71359962
+    },
+    "gain_switch": {
+      "max_abs_output_V": 0.0396124758,
+      "energy_into_16ohm_J": 1.0313714425417957e-08,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000553476496,
+      "refhi_end_V": 6.20248638,
+      "reflo_end_V": 5.7037927
+    }
+  }
+}
+{
+  "scope": "No measured heater model. Ramps vary emission in the fitted current equation; protective relay forced OPEN in these raw node tests.",
+  "cases": {
+    "both_cold": {
+      "raw_out_peak_V": 50.920082,
+      "upper_cathode_to_heater_abs_max_V": 43.8284826,
+      "lower_cathode_to_heater_abs_max_V": 36.51359487,
+      "minimum_output_cap_voltage_V": 9.216749782e-25,
+      "upper_plate_to_cathode_min_V": -9.22521537839765e-25,
+      "raw_out_at_60s_V": 0.24397681657799997
+    },
+    "lower_late": {
+      "raw_out_peak_V": 52.8982035,
+      "upper_cathode_to_heater_abs_max_V": 47.091351800000005,
+      "lower_cathode_to_heater_abs_max_V": 38.172545102477365,
+      "minimum_output_cap_voltage_V": 9.216749782e-25,
+      "upper_plate_to_cathode_min_V": -9.22521537839765e-25,
+      "raw_out_at_60s_V": -0.16245329892639998
+    },
+    "upper_late": {
+      "raw_out_peak_V": 30.9756835,
+      "upper_cathode_to_heater_abs_max_V": 43.8279618,
+      "lower_cathode_to_heater_abs_max_V": 38.1221060701,
+      "minimum_output_cap_voltage_V": 9.216749782e-25,
+      "upper_plate_to_cathode_min_V": -9.22521537839765e-25,
+      "raw_out_at_60s_V": 4.813773400849999
+    }
+  }
+}
+{
+  "0.1": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.003974431206382898,
+    "output_peak_V": 0.00581197861,
+    "upper_Imax_A": 0.0581838647,
+    "lower_Imax_A": 0.077153123,
+    "upper_grid_max_V": -0.616201198,
+    "lower_grid_max_V": -0.276989978
+  },
+  "16": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.3786772008435943,
+    "output_peak_V": 0.542547679,
+    "upper_Imax_A": 0.0492656025,
+    "lower_Imax_A": 0.0597621212,
+    "upper_grid_max_V": -1.15238855,
+    "lower_grid_max_V": -1.12387437
+  },
+  "18": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.40482244464311046,
+    "output_peak_V": 0.579393484,
+    "upper_Imax_A": 0.0486545692,
+    "lower_Imax_A": 0.0585402538,
+    "upper_grid_max_V": -1.18999086,
+    "lower_grid_max_V": -1.18619813
+  },
+  "1000000000.0": {
+    "input_Vrms": 1,
+    "output_Vrms": 0.890421365096212,
+    "output_peak_V": 1.26010756,
+    "upper_Imax_A": 0.0378420794,
+    "lower_Imax_A": 0.0368584877,
+    "upper_grid_max_V": -1.8778955,
+    "lower_grid_max_V": -2.41780432
+  }
+}
+{
+  "scope": "Full manifest generic electrical model; cold 10s and initialized warm 2s. No qualified thermal/transformer/LDO model.",
+  "long_cold_attempt": {
+    "status": "TIMEOUT",
+    "duration_requested_s": 60,
+    "wall_timeout_s": 90,
+    "attempted_max_steps_s": [
+      0.0001,
+      0.001
+    ]
+  },
+  "cases": {
+    "cold": {
+      "status": "RAN",
+      "nodes": {
+        "Bplus": {
+          "mean_V": 158.84970510150714,
+          "ripple_Vpp": 0.022501000000005433
+        },
+        "Heater": {
+          "mean_V": 6.299999999999999,
+          "ripple_Vpp": 0.0
+        },
+        "L_mid": {
+          "mean_V": 79.3887257822329,
+          "ripple_Vpp": 0.14279369999999858
+        },
+        "R_mid": {
+          "mean_V": 79.3887257822331,
+          "ripple_Vpp": 0.14279369999999858
+        },
+        "L_hp": {
+          "mean_V": 5.753392657999211e-10,
+          "ripple_Vpp": 1.021474200000002e-11
+        },
+        "R_hp": {
+          "mean_V": 6.472437312176155e-10,
+          "ripple_Vpp": 1.1491354000000023e-11
+        },
+        "Aux12": {
+          "mean_V": 12.347387529422168,
+          "ripple_Vpp": 0.002577600000000402
+        },
+        "HVraw": {
+          "mean_V": 192.16881304488197,
+          "ripple_Vpp": 2.7904020000000003
+        },
+        "HeaterRaw": {
+          "mean_V": 10.568435221786148,
+          "ripple_Vpp": 0.784611700000001
+        }
+      }
+    },
+    "warm": {
+      "status": "UNVERIFIED",
+      "error": "stereo_warm: \nNote: No compatibility mode selected!\n\n\nCircuit: full stereo wcf and three winding power supply - feasibility only\n\nDoing analysis at TEMP = 27.000000 and TNOM = 27.000000\n\nUsing SPARSE 1.3 as Direct Linear Solver\nOperating point simulation skipped by 'uic',\n  now using transient initial conditions.\n\nNo. of Data Rows : 0\nngspice-47 done\ndoAnalyses: TRAN:  Timestep too small; initial timepoint: trouble with xv1up:dgridmod-instance d.xv1up.dgrid\n\n\ntran simulation(s) aborted\nError: no such vector v(bplus)\n"
+    }
+  }
+}
+/Users/he0xd4c0/CodeBank/quick-pcb/designs/6h30pi-otl-iem/output/pdf/6H30Pi-OTL-schematic.pdf
+/Users/he0xd4c0/CodeBank/quick-pcb/designs/6h30pi-otl-iem/schematic/6H30Pi-OTL.epro2
+{
+  "static_ok": true,
+  "components": 165,
+  "nets": 79,
+  "connected_pins": 377,
+  "sheets": 10,
+  "errors": [],
+  "application_drc": "SEE_NATIVE_FULL_VALIDATION_JSON",
+  "note": "No footprints assigned, by design for schematic-only stage; a strict native PCB-conversion rule may report missing footprints. No fake footprint is used to suppress this."
+}
+{
+  "date": "2026-09-27",
+  "release_status": "NOT_ACCEPTED",
+  "physical_test_status": "NOT_PERFORMED",
+  "pcb_scope": "NOT_DESIGNED",
+  "native_complete": true,
+  "static_connectivity_passed": true,
+  "nominal_audio_targets_passed": true,
+  "native_strict_drc_passed": false,
+  "integrated_warm_simulation_passed": false,
+  "tolerance_thd_failures": 12,
+  "tolerance_cases": 32,
+  "protection_passed": false,
+  "real_headphones_permitted": false,
+  "model_globally_qualified": false
+}

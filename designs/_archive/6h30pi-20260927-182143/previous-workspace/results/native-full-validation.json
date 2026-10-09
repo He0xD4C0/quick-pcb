@@ -1,0 +1,135 @@
+{
+  "complete": true,
+  "project_name": "QuickPCB_6H30Pi_OTL_IEM_v01_reviewed",
+  "project_uuid": "f0fe15a3f91f88693b9415d290ddb6637fdf1a60470cc25084679b2f98b4e0c6",
+  "window_id": "ed093755-ffca-4e6f-937c-b9fba34e86ae",
+  "readback_connectivity_passed": true,
+  "component_count": 165,
+  "pin_count": 377,
+  "net_count": 79,
+  "pages": [
+    {
+      "name": "01_Input_and_controls",
+      "uuid": "09c893f7c9fff022",
+      "components": 10,
+      "pins": 30,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "02_WCF_L",
+      "uuid": "5420584edad8e398",
+      "components": 20,
+      "pins": 46,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "03_WCF_R",
+      "uuid": "af3c04c1748e4f3d",
+      "components": 20,
+      "pins": 46,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "04_Mains_and_rectifier",
+      "uuid": "97a38f23db670e3b",
+      "components": 16,
+      "pins": 41,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "05_HV_regulator",
+      "uuid": "7a36a96032012d6f",
+      "components": 15,
+      "pins": 32,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "06_Heater_and_aux",
+      "uuid": "3c3d799d4f8ba7b7",
+      "components": 16,
+      "pins": 33,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "06b_Auxiliary_supply",
+      "uuid": "a6e8726565142cab",
+      "components": 10,
+      "pins": 21,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "07_Delay_and_relay_driver",
+      "uuid": "07eaffaf9d1a5cff",
+      "components": 20,
+      "pins": 44,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "08_DC_monitor_L",
+      "uuid": "a1a6fa4f50ad5ff6",
+      "components": 19,
+      "pins": 42,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    },
+    {
+      "name": "09_DC_monitor_R",
+      "uuid": "4a1d197192b89b6f",
+      "components": 19,
+      "pins": 42,
+      "strict_drc": [
+        {
+          "type": "fatalError",
+          "count": 165
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "strict_drc_passed": false,
+  "reason": "Full native import, per-page save, loaded pin/wire readback and strict DRC executed. Strict DRC reports missing PCB footprints; no connection warnings observed. No PCB footprint was invented."
+}

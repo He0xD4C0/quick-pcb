@@ -1,0 +1,540 @@
+spec: board-spec/v0.2
+project:
+  name: S8050_S8550_Audio_Amplifier
+  version: "0.4"
+  drawing:
+    title: S8050 / S8550 Simple Audio Amplifier
+    number: QPCB-AMP-001
+    description: Single-page hybrid wire and NET engineering schematic
+    date: "2026-09-30"
+  description: >-
+    Simple single-supply mono class-AB audio amplifier for a 9 V supply and
+    an 8 ohm speaker. Every physical instance is locked to a verified
+    EasyEDA Pro system-library device and LCSC part number.
+
+libraries: []
+
+definitions:
+  project:KF301_2P_C474881:
+    kind: physical
+    category: connector
+    reference_prefix: J
+    description: KEFA KF301 2-pin 5.00 mm through-hole screw terminal
+    footprint: CONN-TH_P5.00_KF301-5.0-2P
+    symbol: f8af3025bd9c48c2993b504e3cae5447
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 41ddecaaf01b4c1aa92ec4bfe22149b7
+      device_name: KF301-5.0-2P
+      symbol_uuid: f8af3025bd9c48c2993b504e3cae5447
+      symbol_name: KF301-5.0-2P
+      footprint_uuid: 3bf49215139c4a13877b29c85b7e1bf7
+      supplier: LCSC
+      supplier_id: C474881
+      manufacturer: KEFA(科发)
+      manufacturer_part_number: KF301-5.0-2P
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Connector pins are passive; numbering is preserved from the EasyEDA symbol.
+
+  project:HEADER_2P_C49661:
+    kind: physical
+    category: connector
+    reference_prefix: J
+    description: BOOMELE 1x2 2.54 mm through-hole female header
+    footprint: HDR-TH_2P-P2.54-V-F
+    symbol: 454b86b735ef4c9eb58937fa59491299
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 7ae76943e7ac41e999b8d2ac980cae08
+      device_name: 2.54-1*2P母
+      symbol_uuid: 454b86b735ef4c9eb58937fa59491299
+      symbol_name: Header-Female-2.54_1x2
+      footprint_uuid: b62899a8137c4e7a995565f9824cf212
+      supplier: LCSC
+      supplier_id: C49661
+      manufacturer: BOOMELE(博穆精密)
+      manufacturer_part_number: 2.54-1*2P母
+      raw_pin_types: {"1": IN, "2": IN}
+    review: {status: project_reviewed, pin_type_authority: project_library}
+
+  project:SS8050_TO92_C50229519:
+    kind: physical
+    category: transistor
+    reference_prefix: Q
+    description: DDF SS8050 NPN, 25 V, 1.5 A, 1 W, TO-92
+    footprint: TO-92-3_L5.1-W4.1-P1.27-L-1
+    symbol: 56bd9be888374d2bb2fc132b81d93d56
+    pins:
+      - {number: "1", name: E, type: passive}
+      - {number: "2", name: B, type: input}
+      - {number: "3", name: C, type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: cb3b9ea17d8840aba0e8498f098f3ca2
+      device_name: SS8050-TO-92
+      symbol_uuid: 56bd9be888374d2bb2fc132b81d93d56
+      symbol_name: SS8050-TO-92
+      footprint_uuid: 1dcc35c0805d4e468fc236ae1d105768
+      supplier: LCSC
+      supplier_id: C50229519
+      manufacturer: DDF(鼎德丰)
+      manufacturer_part_number: SS8050-TO-92
+      raw_pin_types: {"1": IN, "2": IN, "3": IN}
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: EasyEDA symbol and selected TO-92 device both use 1=E, 2=B, 3=C.
+
+  project:SS8550_TO92_C50229517:
+    kind: physical
+    category: transistor
+    reference_prefix: Q
+    description: DDF SS8550 PNP, 25 V, 1.5 A, TO-92
+    footprint: TO-92-3_L5.1-W4.1-P1.27-L-1
+    symbol: 08d5a13e944843599dd328911e2b9c69
+    pins:
+      - {number: "1", name: E, type: passive}
+      - {number: "2", name: B, type: input}
+      - {number: "3", name: C, type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: dd8055b8cb7142c4bbbc8b6a5900bfb9
+      device_name: SS8550-TO-92
+      symbol_uuid: 08d5a13e944843599dd328911e2b9c69
+      symbol_name: SS8550-TO-92
+      footprint_uuid: 1dcc35c0805d4e468fc236ae1d105768
+      supplier: LCSC
+      supplier_id: C50229517
+      manufacturer: DDF(鼎德丰)
+      manufacturer_part_number: SS8550-TO-92
+      raw_pin_types: {"1": IN, "2": IN, "3": IN}
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: EasyEDA symbol and selected TO-92 device both use 1=E, 2=B, 3=C.
+
+  project:1N4148_DO35_C7437620:
+    kind: physical
+    category: diode
+    reference_prefix: D
+    description: XCH 1N4148 switching diode, 100 V, DO-35
+    footprint: DO-35_BD2.2-L4.0-D0.50_1N4148
+    symbol: f4373207ccba42e88703acb1b9b993ac
+    pins:
+      - {number: "1", name: A, type: passive}
+      - {number: "2", name: K, type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 43ec47cee2c541a799f3f3892cff2f4b
+      device_name: 1N4148_C7437620
+      symbol_uuid: f4373207ccba42e88703acb1b9b993ac
+      symbol_name: 1N4148_C7437620
+      footprint_uuid: b049626900b2416f961836d0d9e2dae1
+      supplier: LCSC
+      supplier_id: C7437620
+      manufacturer: XCH(旭昌辉)
+      manufacturer_part_number: 1N4148
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review:
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: EasyEDA symbol names pin 1 A and pin 2 C; C is reviewed here as cathode K.
+
+  project:R4K7_C119339:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 4.7 kohm 1% 250 mW through-hole metal-film resistor
+    footprint: RES-TH_BD2.3-L6.5-P10.50-D0.5
+    symbol: a490252db5d844878bbfc6b7b1f7613f
+    pins: &resistor_pins
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: eb660f164a1d4cd3b0d443b77641aedb
+      device_name: MF1/4W-4.7KΩ±1% T
+      symbol_uuid: a490252db5d844878bbfc6b7b1f7613f
+      symbol_name: MF1/4W-4.7KΩ±1% T52
+      footprint_uuid: d5de5a02e228424ba42d7de2c07172b8
+      supplier: LCSC
+      supplier_id: C119339
+      manufacturer: CCO(千志电子)
+      manufacturer_part_number: MF1/4W-4.7KΩ±1% T
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: &passive_review
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Two-terminal passive device; source-library identity and pin numbers are preserved.
+
+  project:R27K_C714024:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 27 kohm 1% 250 mW through-hole metal-film resistor
+    footprint: RES-TH_BD2.3-L6.5-P10.50-D0.5
+    symbol: 945901184b91419a93527ff9091bcd60
+    pins: *resistor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 1f5b9443f0b44199839ec7c25710477b
+      device_name: MF1/4W-27KΩ±1%T52
+      symbol_uuid: 945901184b91419a93527ff9091bcd60
+      symbol_name: MF1/4W-27KΩ±1%T52
+      footprint_uuid: d5de5a02e228424ba42d7de2c07172b8
+      supplier: LCSC
+      supplier_id: C714024
+      manufacturer: 华星机电
+      manufacturer_part_number: MF1/4W-27KΩ±1%T52
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+  project:R10K_C119347:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 10 kohm 1% 250 mW through-hole metal-film resistor
+    footprint: RES-TH_BD2.3-L6.5-P10.50-D0.5
+    symbol: e111692ff29f4106af118d8bc664e6a0
+    pins: *resistor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: ed5a6ea46dde4533a5117f5771c2a9c2
+      device_name: MF1/4W-10KΩ±1% T
+      symbol_uuid: e111692ff29f4106af118d8bc664e6a0
+      symbol_name: MF1/4W-10KΩ±1% T52
+      footprint_uuid: d5de5a02e228424ba42d7de2c07172b8
+      supplier: LCSC
+      supplier_id: C119347
+      manufacturer: CCO(千志电子)
+      manufacturer_part_number: MF1/4W-10KΩ±1% T
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+  project:R100_C119304:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 100 ohm 1% 250 mW through-hole metal-film resistor
+    footprint: RES-TH_BD2.3-L6.5-P10.50-D0.5
+    symbol: 3af2e1e3dfc1497c8b1e9367c9750215
+    pins: *resistor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 5ee2ad6e5df74d868d1e6e00042affee
+      device_name: MF1/4W-100Ω±1% T
+      symbol_uuid: 3af2e1e3dfc1497c8b1e9367c9750215
+      symbol_name: MF1/4W-100Ω±1% T52
+      footprint_uuid: d5de5a02e228424ba42d7de2c07172b8
+      supplier: LCSC
+      supplier_id: C119304
+      manufacturer: CCO(千志电子)
+      manufacturer_part_number: MF1/4W-100Ω±1% T
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+  project:R1K_C713997:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 1 kohm 1% 250 mW through-hole metal-film resistor
+    footprint: RES-TH_BD2.3-L6.5-P10.50-D0.5
+    symbol: 65fe4b2b479a43b6b2fe89e12ae7cce7
+    pins: *resistor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 708521c400ce4f5e83c81ca52f31788f
+      device_name: MF1/4W-1KΩ±1%T52
+      symbol_uuid: 65fe4b2b479a43b6b2fe89e12ae7cce7
+      symbol_name: MF1/4W-1KΩ±1%T52
+      footprint_uuid: d5de5a02e228424ba42d7de2c07172b8
+      supplier: LCSC
+      supplier_id: C713997
+      manufacturer: 华星机电
+      manufacturer_part_number: MF1/4W-1KΩ±1%T52
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+  project:R1_500mW_C2894479:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 1 ohm 5% 500 mW through-hole carbon-film resistor
+    footprint: RES-TH_BD3.5-L9.0-P13.00-D0.5
+    symbol: 157fd8588502432b9eeec3d52d157889
+    pins: *resistor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 41a43cd74d5544678a6d86a3a18832e5
+      device_name: CR1/2W-1Ω±5%-XT52
+      symbol_uuid: 157fd8588502432b9eeec3d52d157889
+      symbol_name: CR1/2W-1Ω±5%-XT52
+      footprint_uuid: 253dde3e31fb4c29ae3a21941898433b
+      supplier: LCSC
+      supplier_id: C2894479
+      manufacturer: VO(翔胜)
+      manufacturer_part_number: CR1/2W-1Ω±5%-XT52
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+  project:R10_500mW_C2894474:
+    kind: physical
+    category: resistor
+    reference_prefix: R
+    description: 10 ohm 5% 500 mW through-hole carbon-film resistor
+    footprint: RES-TH_BD3.5-L9.0-P13.00-D0.5
+    symbol: aea4dc4d92454ebc84a23149e83ea7d6
+    pins: *resistor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 8b27c3e75f00478f964819f441da9d34
+      device_name: CR1/2W-10Ω±5%-XT52
+      symbol_uuid: aea4dc4d92454ebc84a23149e83ea7d6
+      symbol_name: CR1/2W-10Ω±5%-XT52
+      footprint_uuid: 253dde3e31fb4c29ae3a21941898433b
+      supplier: LCSC
+      supplier_id: C2894474
+      manufacturer: VO(翔胜)
+      manufacturer_part_number: CR1/2W-10Ω±5%-XT52
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+  project:C2U2_50V_C49304957:
+    kind: physical
+    category: capacitor
+    reference_prefix: C
+    description: 2.2 uF 50 V radial aluminum electrolytic capacitor
+    footprint: CAP-TH_BD5.0-P2.00-D0.5-FD-1
+    symbol: 36b3aa2c4b4e4cdd9acf1c4d670bdde2
+    pins: &polarized_capacitor_pins
+      - {number: "1", name: "+", type: passive}
+      - {number: "2", name: "-", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 301300cdfac64369ab3a407ff14547c0
+      device_name: 2.2uF50V5x11KM
+      symbol_uuid: 36b3aa2c4b4e4cdd9acf1c4d670bdde2
+      symbol_name: 2.2UF50V5X11KM
+      footprint_uuid: 5fbfb3be514041489144d17f99c6bda7
+      supplier: LCSC
+      supplier_id: C49304957
+      manufacturer: Econd(米朗电子)
+      manufacturer_part_number: 2.2uF50V5x11KM
+      raw_pin_types: {"1": IN, "2": IN}
+    review: &polarized_capacitor_review
+      status: project_reviewed
+      pin_type_authority: project_library
+      note: Radial polarized capacitor is reviewed as pin 1 positive and pin 2 negative.
+
+  project:C470U_16V_C46867064:
+    kind: physical
+    category: capacitor
+    reference_prefix: C
+    description: 470 uF 16 V radial aluminum electrolytic capacitor
+    footprint: CAP-TH_BD6.3-P2.50-D0.5-FD
+    symbol: aeeaa2fa364d4af7adece054e42b5739
+    pins: *polarized_capacitor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 7e40079d587e437da2fc9af272648f57
+      device_name: 470UF16VE130GF
+      symbol_uuid: aeeaa2fa364d4af7adece054e42b5739
+      symbol_name: 470UF16VE130GF
+      footprint_uuid: 6805d942bbab4fdebd28864afcb4c4df
+      supplier: LCSC
+      supplier_id: C46867064
+      manufacturer: Econd(米朗电子)
+      manufacturer_part_number: 470UF16VE130GF
+      raw_pin_types: {"1": IN, "2": IN}
+    review: *polarized_capacitor_review
+
+  project:C1000U_16V_C439782:
+    kind: physical
+    category: capacitor
+    reference_prefix: C
+    description: 1000 uF 16 V radial aluminum electrolytic capacitor
+    footprint: CAP-TH_BD10.0-P5.00-D0.6-FD
+    symbol: cdb3df391fea4161aaf586338aa2d2b0
+    pins: *polarized_capacitor_pins
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: 7a0476da78b340d490dea7c3b78f72a4
+      device_name: 1000uF 16V
+      symbol_uuid: cdb3df391fea4161aaf586338aa2d2b0
+      symbol_name: 1000UF 16V_C439782
+      footprint_uuid: 00bc12d88a7845c5aba380d79ac495f1
+      supplier: LCSC
+      supplier_id: C439782
+      manufacturer: Chengx(承兴)
+      manufacturer_part_number: 1000uF 16V
+      raw_pin_types: {"1": IN, "2": IN}
+    review: *polarized_capacitor_review
+
+  project:C100N_50V_C254068:
+    kind: physical
+    category: capacitor
+    reference_prefix: C
+    description: 100 nF 50 V Y5V through-hole ceramic capacitor
+    footprint: CAP-TH_L5.0-W2.5-P5.08-D0.7
+    symbol: 81104a3b81304a0289ab480f7d4e9a3a
+    pins:
+      - {number: "1", name: "1", type: passive}
+      - {number: "2", name: "2", type: passive}
+    source:
+      provider: easyeda-pro
+      library_uuid: 0819f05c4eef4c71ace90d822a990e87
+      device_uuid: b152853858d943a79ffb1456f3723ad1
+      device_name: CC1H104ZC1PD3F5O30MF
+      symbol_uuid: 81104a3b81304a0289ab480f7d4e9a3a
+      symbol_name: CC1H104ZC1PD3F5O30MF
+      footprint_uuid: 11031d46a2d7460db24074110444ca30
+      supplier: LCSC
+      supplier_id: C254068
+      manufacturer: Dersonic(德尔创)
+      manufacturer_part_number: CC1H104ZC1PD3F5O30MF
+      raw_pin_types: {"1": Undefined, "2": Undefined}
+    review: *passive_review
+
+instances:
+  J1: {part: "project:KF301_2P_C474881", value: POWER_9V}
+  J2: {part: "project:HEADER_2P_C49661", value: LINE_IN}
+  J3: {part: "project:KF301_2P_C474881", value: SPEAKER_8R}
+
+  Q1: {part: "project:SS8050_TO92_C50229519", value: SS8050-TO-92}
+  Q2: {part: "project:SS8050_TO92_C50229519", value: SS8050-TO-92}
+  Q3: {part: "project:SS8550_TO92_C50229517", value: SS8550-TO-92}
+
+  D1: {part: "project:1N4148_DO35_C7437620", value: 1N4148}
+  D2: {part: "project:1N4148_DO35_C7437620", value: 1N4148}
+
+  R1: {part: "project:R4K7_C119339", value: 4.7k}
+  R2: {part: "project:R27K_C714024", value: 27k}
+  R3: {part: "project:R10K_C119347", value: 10k}
+  R4: {part: "project:R100_C119304", value: 100R}
+  R5: {part: "project:R1K_C713997", value: 1k}
+  R6: {part: "project:R1_500mW_C2894479", value: 1R_0.5W}
+  R7: {part: "project:R1_500mW_C2894479", value: 1R_0.5W}
+  R8: {part: "project:R10_500mW_C2894474", value: 10R_0.5W}
+
+  C1: {part: "project:C2U2_50V_C49304957", value: 2.2uF_50V}
+  C2: {part: "project:C470U_16V_C46867064", value: 470uF_16V}
+  C3: {part: "project:C1000U_16V_C439782", value: 1000uF_16V}
+  C4: {part: "project:C100N_50V_C254068", value: 100nF_50V}
+  C5: {part: "project:C470U_16V_C46867064", value: 470uF_16V}
+  C6: {part: "project:C100N_50V_C254068", value: 100nF_50V}
+
+connections:
+  - net: VCC_9V
+    kind: power
+    voltage: 9
+    endpoints: [J1.#1, Q2.#3, R5.#1, C4.#1, C5.#1]
+  - net: GND
+    kind: ground
+    endpoints: [J1.#2, J2.#2, J3.#2, Q3.#3, R3.#2, R4.#2, C2.#2, C4.#2, C5.#2, C6.#2]
+
+  - net: AUDIO_IN
+    kind: signal
+    endpoints: [J2.#1, C1.#2]
+  - connect: [C1.#1, R1.#1]
+  - connect: [R1.#2, R2.#2, R3.#1, Q1.#2]
+  - connect: [Q1.#1, R4.#1, C2.#1]
+
+  - connect: [R5.#2, D1.#1, Q2.#2]
+  - connect: [D1.#2, D2.#1]
+  - connect: [D2.#2, Q1.#3, Q3.#2]
+
+  - connect: [Q2.#1, R6.#1]
+  - connect: [Q3.#1, R7.#1]
+  - net: OUT_INT
+    kind: signal
+    endpoints: [R6.#2, R7.#2, R2.#1, C3.#1]
+  - net: SPEAKER_OUT
+    kind: signal
+    endpoints: [C3.#2, J3.#1, R8.#1]
+  - connect: [R8.#2, C6.#1]
+
+constraints:
+  - kind: electrical
+    target: VCC_9V
+    rule: regulated_or_clean_single_supply
+    value: 9V_nominal_7V_to_9V_allowed
+    severity: error
+  - kind: electrical
+    target: J3
+    rule: minimum_speaker_impedance
+    value: 8ohm
+    severity: error
+  - kind: electrical
+    target: [Q1, Q2, Q3]
+    rule: preserve_selected_library_pinout
+    value: selected_C50229519_and_C50229517_are_E_B_C_on_pins_1_2_3
+    severity: error
+  - kind: electrical
+    target: [D1, D2]
+    rule: preserve_selected_library_polarity
+    value: selected_C7437620_is_A_on_pin_1_and_K_on_pin_2
+    severity: error
+  - kind: electrical
+    target: [C1, C2, C3, C5]
+    rule: observe_electrolytic_polarity
+    value: pin_1_positive_pin_2_negative
+    severity: error
+  - kind: electrical
+    target: [D1, D2, R6, R7]
+    rule: class_AB_idle_current_must_be_measured_on_first_power_up
+    value: current_limited_supply_required
+    severity: error
+  - kind: thermal
+    target: [D1, D2, Q2, Q3]
+    rule: thermally_couple_bias_diodes_to_output_transistors_and_stop_if_idle_current_rises
+    severity: warning
+  - kind: layout
+    target: [C4, C5, Q2, Q3]
+    rule: place_supply_decoupling_close_to_output_stage
+    severity: warning
+  - kind: layout
+    target: [J1, J2, J3]
+    rule: use_star_ground_and_keep_input_ground_away_from_speaker_return
+    severity: warning
+  - kind: layout
+    target: [Q2, Q3, R6, R7, C3, J3]
+    rule: keep_output_current_paths_short_and_wide
+    severity: warning
+  - kind: other
+    target: assembly
+    rule: all_physical_parts_are_locked_to_easyeda_pro_system_library_devices
+    value: verify_current_stock_and_substitution_before_purchase
+    severity: warning
+  - kind: other
+    target: protection
+    rule: prototype_has_no_short_circuit_or_reverse_polarity_protection
+    severity: warning
+
+outputs:
+  - {type: protel2_netlist, path: generated/S8050_S8550_Audio_Amplifier.net}
+  - {type: bom_csv, path: generated/S8050_S8550_Audio_Amplifier-bom.csv}
+  - {type: mermaid, path: generated/S8050_S8550_Audio_Amplifier.mmd}

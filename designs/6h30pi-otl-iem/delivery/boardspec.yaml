@@ -1,0 +1,3267 @@
+{
+  "spec": "board-spec/v0.1",
+  "project": {
+    "name": "6H30Pi-Candidate-OneSheet",
+    "description": "Complete drawing candidate. Not electrically qualified; transformer terminals proposed, socket footprints unresolved; no real headphones."
+  },
+  "libraries": [],
+  "definitions": {
+    "project:r_100k_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Signal bias and low voltage sensing, 200V maximum",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "809882fdcb0b4721afd7ad5878891b17",
+        "symbol_uuid": "c8800736a97d45c69476523f569ef133",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F1003T5E",
+        "supplier_id": "C17900",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "c8800736a97d45c69476523f569ef133"
+    },
+    "project:d_heater_sb560": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "C",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        }
+      ],
+      "description": "Heater full-wave bridge",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "71bdd48983524a1d95327c3c8ac5741b",
+        "symbol_uuid": "06603494a1004de28b1cd8aa27e029a0",
+        "footprint_uuid": "048dfdccd2dc47fe88cc5be7f4e17910",
+        "manufacturer": "VISHAY(威世)",
+        "manufacturer_part_number": "SB560-E3/54",
+        "supplier_id": "C506560",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "048dfdccd2dc47fe88cc5be7f4e17910",
+      "symbol": "06603494a1004de28b1cd8aa27e029a0"
+    },
+    "project:mains_switch": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "poleA end1",
+          "type": "passive"
+        },
+        {
+          "number": "1a",
+          "name": "poleA end2",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "poleB end1",
+          "type": "passive"
+        },
+        {
+          "number": "2a",
+          "name": "poleB end2",
+          "type": "passive"
+        }
+      ],
+      "description": "Non-illuminated DPST. Exact manufacturer drawing contact pairs1-1a and2-2a; numbers defined by manufacturer drawing, not a claim of moulded terminal labels.",
+      "source": {
+        "provider": "datasheet-custom-candidate",
+        "manufacturer_part_number": "R5ABLKBLKFF0",
+        "raw_pin_types": {
+          "1": "Passive",
+          "1a": "Passive",
+          "2": "Passive",
+          "2a": "Passive"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      }
+    },
+    "project:gain_dpdt": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "0",
+          "name": "0",
+          "type": "passive"
+        }
+      ],
+      "description": "Stereo mechanically linked high/low input selector",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "0660933021ad4f4ca30f913cfb6f1edb",
+        "symbol_uuid": "bd48c89a5b5e4c469261fab8defd9eed",
+        "footprint_uuid": "4cf53f48e7b2495f860fbff8858be8ed",
+        "manufacturer": "E-Switch",
+        "manufacturer_part_number": "EG2208",
+        "supplier_id": "C273399",
+        "raw_pin_types": {
+          "4": "Undefined",
+          "5": "Undefined",
+          "6": "Undefined",
+          "3": "Undefined",
+          "2": "Undefined",
+          "1": "Undefined",
+          "0": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "4cf53f48e7b2495f860fbff8858be8ed",
+      "symbol": "bd48c89a5b5e4c469261fab8defd9eed"
+    },
+    "project:r_470_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Control",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "620ce69f148a4fdfaa7ec69843f4901a",
+        "symbol_uuid": "6420dfd0c35245bdb693f6c20a2e5e14",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F4700T5E",
+        "supplier_id": "C4502",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "6420dfd0c35245bdb693f6c20a2e5e14"
+    },
+    "project:c_signal_4u7film": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Input coupling and WCF feedback coupling",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "ffefbe4aba6d48a8ad247385e69056a6",
+        "symbol_uuid": "c93fbe6ae39f4d2d8148e07357b2009c",
+        "footprint_uuid": "e6419ef2dd5744dfa87db4ba51936c22",
+        "manufacturer": "PANASONIC(松下)",
+        "manufacturer_part_number": "ECW-FD2W475J",
+        "supplier_id": "C3797836",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "e6419ef2dd5744dfa87db4ba51936c22",
+      "symbol": "c93fbe6ae39f4d2d8148e07357b2009c"
+    },
+    "project:r_100k_1w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "HV resistor chains; respect 200V per body",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "d1ecf9b227054bfa83c874bd650b7d02",
+        "symbol_uuid": "9a1f51e5a2964504a32a3c2916e9289e",
+        "footprint_uuid": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "25121WF1003T4E",
+        "supplier_id": "C52842",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+      "symbol": "9a1f51e5a2964504a32a3c2916e9289e"
+    },
+    "project:transformer_contract": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "PROPOSED_TERMINAL_1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "PROPOSED_TERMINAL_2",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "PROPOSED_TERMINAL_3",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "PROPOSED_TERMINAL_4",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "PROPOSED_TERMINAL_5",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "PROPOSED_TERMINAL_6",
+          "type": "passive"
+        },
+        {
+          "number": "7",
+          "name": "PROPOSED_TERMINAL_7",
+          "type": "passive"
+        },
+        {
+          "number": "8",
+          "name": "PROPOSED_TERMINAL_8",
+          "type": "passive"
+        }
+      ],
+      "description": "Custom transformer terminal contract, unverified physical pins",
+      "source": {
+        "provider": "datasheet-custom-candidate",
+        "manufacturer_part_number": "QPCB-TX6H30-100VA-DRAFT",
+        "raw_pin_types": {
+          "1": "Passive",
+          "2": "Passive",
+          "3": "Passive",
+          "4": "Passive",
+          "5": "Passive",
+          "6": "Passive",
+          "7": "Passive",
+          "8": "Passive"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      }
+    },
+    "project:fault_opto": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive"
+        }
+      ],
+      "description": "Full-wave isolated DC fault sensing, phototransistor disables discrete relay driver",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "94b92fd4314c44a989f28fa11fba3d03",
+        "symbol_uuid": "4212562a16fc4630bc47d40c636960ff",
+        "footprint_uuid": "0565fa1ab6394613a6201b702f57bf60",
+        "manufacturer": "LITEON(光宝)",
+        "manufacturer_part_number": "LTV-817S-TA1-C",
+        "supplier_id": "C109227",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined",
+          "3": "Undefined",
+          "4": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "0565fa1ab6394613a6201b702f57bf60",
+      "symbol": "4212562a16fc4630bc47d40c636960ff"
+    },
+    "project:r_127_1w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate WCF anode sensing",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "5f792f664efa4a818c5e6465e06cdb65",
+        "symbol_uuid": "a34881d72af64018895f296ca2858665",
+        "footprint_uuid": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "25121WF1270T4E",
+        "supplier_id": "C406964",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+      "symbol": "a34881d72af64018895f296ca2858665"
+    },
+    "project:r_221k_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "B+ feedback divider",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "0faef362c1134f049ea9561517fb604b",
+        "symbol_uuid": "b185757624644f45bbbda959b2294e12",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F2213T5E",
+        "supplier_id": "C73039",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "b185757624644f45bbbda959b2294e12"
+    },
+    "project:r_10k_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Low voltage divider",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "a2507755f87a4842885451644ad145e1",
+        "symbol_uuid": "819ca03c615d48588729b152e2d0f978",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F1002T5E",
+        "supplier_id": "C17902",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "819ca03c615d48588729b152e2d0f978"
+    },
+    "project:heater_ldo": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "3",
+          "name": "IN",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "OUT",
+          "type": "power_out"
+        },
+        {
+          "number": "1",
+          "name": "ADJ",
+          "type": "input"
+        }
+      ],
+      "description": "6.3V floating heater regulator",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "714229a4a77345609f134d111cb5f8b9",
+        "symbol_uuid": "0f3f87e471ae4da090dd22424f98a784",
+        "footprint_uuid": "98be2a8fee534be798c907763165fb1d",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturer_part_number": "LM1084IT-ADJ/NOPB",
+        "supplier_id": "C9720",
+        "raw_pin_types": {
+          "3": "Power",
+          "2": "Power",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "98be2a8fee534be798c907763165fb1d",
+      "symbol": "0f3f87e471ae4da090dd22424f98a784"
+    },
+    "project:r_47k_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Bias and control",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "47a44674007e476b909f7d06ee6d1e2f",
+        "symbol_uuid": "417d5aaf81b14dec95c1a50756b49220",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F4702T5E",
+        "supplier_id": "C25833",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "417d5aaf81b14dec95c1a50756b49220"
+    },
+    "project:r_22k_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Control",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "e4bcf52c9d394506b01b8375883948ee",
+        "symbol_uuid": "e4ea114aa60e4bff96dd3d12d09f7f34",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F2202T5E",
+        "supplier_id": "C25830",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "e4ea114aa60e4bff96dd3d12d09f7f34"
+    },
+    "project:r_10_1w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Power damping",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "a8f7373ec0634744a744b4f771ecfa76",
+        "symbol_uuid": "fdd79733dbdb4c929421442f30f2e5ff",
+        "footprint_uuid": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "25121WF100JT4E",
+        "supplier_id": "C47019",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+      "symbol": "fdd79733dbdb4c929421442f30f2e5ff"
+    },
+    "project:aux_npn_bd139": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "E",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "C",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "B",
+          "type": "passive"
+        }
+      ],
+      "description": "Auxiliary regulator pass transistor",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "26457a37217f4e4890c559873bd1c247",
+        "symbol_uuid": "9fe5416c93454411a637611e6aa597f5",
+        "footprint_uuid": "3fe8309f14394522a02b390fdaa9f1b3",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "BD13910S",
+        "supplier_id": "C900816",
+        "raw_pin_types": {
+          "1": "IN",
+          "2": "IN",
+          "3": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "3fe8309f14394522a02b390fdaa9f1b3",
+      "symbol": "9fe5416c93454411a637611e6aa597f5"
+    },
+    "project:relay_hv": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "normally open contact end1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "coil terminal (positive in diode variant)",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "coil terminal",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "normally open contact end4",
+          "type": "passive"
+        }
+      ],
+      "description": "No D suffix: no internal flyback diode. Voltage,current,power limits apply simultaneously; capacitive load and fault interruption are not qualified by resistive switch voltage. Use conservative2020carry current3A, not newer3.5A to relax review.",
+      "source": {
+        "provider": "datasheet-custom-candidate",
+        "manufacturer_part_number": "67-1-A-12/1",
+        "raw_pin_types": {
+          "1": "Passive",
+          "2": "Passive",
+          "3": "Passive",
+          "4": "Passive"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      }
+    },
+    "project:r_100_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Grid stopper and current steering",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "5f0db0830ee04fa695d1b031750c544f",
+        "symbol_uuid": "b9839ea25a174cc28474ced81af6b434",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F1000T5E",
+        "supplier_id": "C17901",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "b9839ea25a174cc28474ced81af6b434"
+    },
+    "project:tube_6h30pi_eb": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "second triode plate",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "second triode grid",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "second triode cathode",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "heater",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "heater",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "first triode plate",
+          "type": "passive"
+        },
+        {
+          "number": "7",
+          "name": "first triode grid",
+          "type": "passive"
+        },
+        {
+          "number": "8",
+          "name": "first triode cathode",
+          "type": "passive"
+        },
+        {
+          "number": "9",
+          "name": "internal screen",
+          "type": "passive"
+        }
+      ],
+      "description": "Manufacturer numbered leads checked visually. Keep triodes6/7/8 and1/2/3 plus heater4/5 and screen9 as one physical bottle. No unverified socket footprint is assigned. 6H30Pi and6H30Pi-EB limits must not be combined to loosen constraints.",
+      "source": {
+        "provider": "datasheet-custom-candidate",
+        "manufacturer_part_number": "6H30Pi-EB",
+        "raw_pin_types": {
+          "1": "Passive",
+          "2": "Passive",
+          "3": "Passive",
+          "4": "Passive",
+          "5": "Passive",
+          "6": "Passive",
+          "7": "Passive",
+          "8": "Passive",
+          "9": "Passive"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      }
+    },
+    "project:hv_npn": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "B",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "C",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "E",
+          "type": "passive"
+        }
+      ],
+      "description": "Discrete high-voltage control and protection transistor",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "9ba32d5710244760b38af4356a6731ec",
+        "symbol_uuid": "7c97b52dc4074063a847478cf53ec12b",
+        "footprint_uuid": "50bdac1daec44ae392edab026332bc0f",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "MPSA42",
+        "supplier_id": "C719821",
+        "raw_pin_types": {
+          "2": "IN",
+          "3": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "50bdac1daec44ae392edab026332bc0f",
+      "symbol": "7c97b52dc4074063a847478cf53ec12b"
+    },
+    "project:r_8k2_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate input attenuator",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "7906b391da4b45219e21793e3a56fdd3",
+        "symbol_uuid": "7d167474ace74c12b1201cce8ca21af8",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F8201T5E",
+        "supplier_id": "C18027",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "7d167474ace74c12b1201cce8ca21af8"
+    },
+    "project:d_aux_1n4007": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "C",
+          "type": "passive"
+        }
+      ],
+      "description": "Auxiliary bridge and flyback",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "254d17e128924813a27ad246f16b441c",
+        "symbol_uuid": "787e4f9d7e06445ebd9fa64d2234e5fe",
+        "footprint_uuid": "058faedf0e73484fb803d4f629c76fb9",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "1N4007RLG",
+        "supplier_id": "C53568",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "058faedf0e73484fb803d4f629c76fb9",
+      "symbol": "787e4f9d7e06445ebd9fa64d2234e5fe"
+    },
+    "project:jack_trs": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Stereo line input and headphone output",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "64f977ad2709433aae9b809496aa0693",
+        "symbol_uuid": "df4ce41b8c434f8d8cea8fea7c5029f1",
+        "footprint_uuid": "8a7e2110e57847868c94003a0314f4a4",
+        "manufacturer": "XKB Connection(中国星坤)",
+        "manufacturer_part_number": "PJ-301C",
+        "supplier_id": "C692433",
+        "raw_pin_types": {
+          "3": "Undefined",
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "8a7e2110e57847868c94003a0314f4a4",
+      "symbol": "df4ce41b8c434f8d8cea8fea7c5029f1"
+    },
+    "project:z_ref_6v2": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "C",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate B+ reference",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "556f0cb9df54441f8168a0a56ce0e7b2",
+        "symbol_uuid": "0ae050f7d24e4d15b4a0f11b399645fc",
+        "footprint_uuid": "aaaf63b414ca4adb83491cbb968acf81",
+        "manufacturer": "Nexperia(安世)",
+        "manufacturer_part_number": "BZX79-B6V2,113",
+        "supplier_id": "C503457",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "aaaf63b414ca4adb83491cbb968acf81",
+      "symbol": "0ae050f7d24e4d15b4a0f11b399645fc"
+    },
+    "project:c_heater_3300u25": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Parallel heater rectifier reservoir",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "78d310f42d8245e683c2664bde913fb0",
+        "symbol_uuid": "ba12dfcb4d544565af0a69ff2e811f47",
+        "footprint_uuid": "4e9dd6a1f6e94f7c867e80a3cb1408d4",
+        "manufacturer": "PANASONIC(松下)",
+        "manufacturer_part_number": "EEUFR1E332",
+        "supplier_id": "C407892",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "4e9dd6a1f6e94f7c867e80a3cb1408d4",
+      "symbol": "ba12dfcb4d544565af0a69ff2e811f47"
+    },
+    "project:z_flyback_24v": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "C",
+          "type": "passive"
+        }
+      ],
+      "description": "Fast relay release clamp",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "51bd235c2ae94bdca925ecb7c567d583",
+        "symbol_uuid": "79ce953f14e74404bcb40a7cc9348244",
+        "footprint_uuid": "af7d402707ca4c02864399b457db237d",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "1N4749ATR",
+        "supplier_id": "C890088",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "af7d402707ca4c02864399b457db237d",
+      "symbol": "79ce953f14e74404bcb40a7cc9348244"
+    },
+    "project:c_control_470u25": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Auxiliary DC smoothing",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "4d7d029e59a5436d8336cc799e273d05",
+        "symbol_uuid": "ce3163628a1b4e6aa23b0e9e75ce51fd",
+        "footprint_uuid": "fcdfc8ed19af4db88009c2e05dc6d371",
+        "manufacturer": "PANASONIC(松下)",
+        "manufacturer_part_number": "EEUFR1E471",
+        "supplier_id": "C407944",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "fcdfc8ed19af4db88009c2e05dc6d371",
+      "symbol": "ce3163628a1b4e6aa23b0e9e75ce51fd"
+    },
+    "project:d_small_1n4148": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Signal steering and junction protection",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "d7705893cebc4fd8bcf8a9393e34ea94",
+        "symbol_uuid": "ae91102e8a2044b8840c9507032ebcb7",
+        "footprint_uuid": "aaaf63b414ca4adb83491cbb968acf81",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "1N4148TA",
+        "supplier_id": "C124481",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "aaaf63b414ca4adb83491cbb968acf81",
+      "symbol": "ae91102e8a2044b8840c9507032ebcb7"
+    },
+    "project:r_1k_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Low voltage control",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "db97f5fb13b64e0c8c225e26f6025723",
+        "symbol_uuid": "6f55e8b1557448e1b19dfec4fba6f808",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F1001T5E",
+        "supplier_id": "C52199",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "6f55e8b1557448e1b19dfec4fba6f808"
+    },
+    "project:terminal_2": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Low voltage harness connector",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "41ddecaaf01b4c1aa92ec4bfe22149b7",
+        "symbol_uuid": "f8af3025bd9c48c2993b504e3cae5447",
+        "footprint_uuid": "3bf49215139c4a13877b29c85b7e1bf7",
+        "manufacturer": "KEFA(科发)",
+        "manufacturer_part_number": "KF301-5.0-2P",
+        "supplier_id": "C474881",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "3bf49215139c4a13877b29c85b7e1bf7",
+      "symbol": "f8af3025bd9c48c2993b504e3cae5447"
+    },
+    "project:c_output_1000u250": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate output coupling capacitor; leakage qualification required",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "29b502e332984cc9bf4c2b2e1b661605",
+        "symbol_uuid": "5b2837a909c24dce9dc31b36083da3e3",
+        "footprint_uuid": "c609287e083842da8711e3dcca47164d",
+        "manufacturer": "Nichicon(尼吉康)",
+        "manufacturer_part_number": "LLS2E102MELB",
+        "supplier_id": "C433188",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "c609287e083842da8711e3dcca47164d",
+      "symbol": "5b2837a909c24dce9dc31b36083da3e3"
+    },
+    "project:c_delay_100u25": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Discrete timing and low voltage decoupling",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "92d58b8c28184c8f94049ff646f545cb",
+        "symbol_uuid": "18d9ce69d9264edab84e39b56bf5ed1d",
+        "footprint_uuid": "13b4dc4b3e1c42c482cc7906ecc2bdcd",
+        "manufacturer": "PANASONIC(松下)",
+        "manufacturer_part_number": "EEUFR1E101",
+        "supplier_id": "C264049",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "13b4dc4b3e1c42c482cc7906ecc2bdcd",
+      "symbol": "18d9ce69d9264edab84e39b56bf5ed1d"
+    },
+    "project:d_hv_uf4007": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "C",
+          "type": "passive"
+        }
+      ],
+      "description": "HV rectification",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "d1b19e102e6c41ba8cd0ee2f16ec044f",
+        "symbol_uuid": "2adda3d68ff34918bc6fc2b8ceefd6a7",
+        "footprint_uuid": "058faedf0e73484fb803d4f629c76fb9",
+        "manufacturer": "DIOTEC(德欧泰克)",
+        "manufacturer_part_number": "UF4007",
+        "supplier_id": "C212802",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "058faedf0e73484fb803d4f629c76fb9",
+      "symbol": "2adda3d68ff34918bc6fc2b8ceefd6a7"
+    },
+    "project:fuse_hv_500ma": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "HV winding fuse, 500mA time lag",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "69a000e1f85e4d5f97db7382cc2efb49",
+        "symbol_uuid": "c323695925904e449c53b01bd9e4cbde",
+        "footprint_uuid": "a5064524831b427a86e3917fd7951a5a",
+        "manufacturer": "Littelfuse(美国力特)",
+        "manufacturer_part_number": "0215.500MXP",
+        "supplier_id": "C142839",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "a5064524831b427a86e3917fd7951a5a",
+      "symbol": "c323695925904e449c53b01bd9e4cbde"
+    },
+    "project:r_487_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Heater regulator set",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "e5cc557a6b024a4d9959e2f40aceb5d5",
+        "symbol_uuid": "9776405e9a2140339d2c5d88256653cf",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F4870T5E",
+        "supplier_id": "C247245",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "9776405e9a2140339d2c5d88256653cf"
+    },
+    "project:z_aux_13v": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate auxiliary emitter-follower reference",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "10e6a59241544f3ba803e34fd5a0cae9",
+        "symbol_uuid": "6158231ae5534220acff654ad8dd8971",
+        "footprint_uuid": "8697731e01384a2b94b4d34084b92532",
+        "manufacturer": "Nexperia(安世)",
+        "manufacturer_part_number": "BZX79-B13,113",
+        "supplier_id": "C550686",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "8697731e01384a2b94b4d34084b92532",
+      "symbol": "6158231ae5534220acff654ad8dd8971"
+    },
+    "project:mains_inlet": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "L",
+          "name": "line terminal markedL",
+          "type": "passive"
+        },
+        {
+          "number": "N",
+          "name": "neutral terminal markedN",
+          "type": "passive"
+        },
+        {
+          "number": "PE",
+          "name": "protective-earth terminal markedearth",
+          "type": "passive"
+        }
+      ],
+      "description": "Use actual terminal markings, not fictional numeric pins. C14 ClassI solder-terminal option. Do not infer L/N positions from front vs rear view; final harness drawing must repeat manufacturer view.",
+      "source": {
+        "provider": "datasheet-custom-candidate",
+        "manufacturer_part_number": "6100.3100",
+        "raw_pin_types": {
+          "L": "Passive",
+          "N": "Passive",
+          "PE": "Passive"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      }
+    },
+    "project:c_cathode_2200u25": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Cathode bypass",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "abff43a0a9634c059a800ff2f7389f23",
+        "symbol_uuid": "447a20a4e0e6420bbfa6d98dc9088f1c",
+        "footprint_uuid": "09d14ec2708540d59d6cbd7768c49d80",
+        "manufacturer": "PANASONIC(松下)",
+        "manufacturer_part_number": "EEUFR1E222L",
+        "supplier_id": "C178698",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "09d14ec2708540d59d6cbd7768c49d80",
+      "symbol": "447a20a4e0e6420bbfa6d98dc9088f1c"
+    },
+    "project:fuse_mains_1a": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Mains primary fuse, 1A time lag; inrush qualification pending",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "ea23a1080a244ce99135c0c8e3379413",
+        "symbol_uuid": "d5e8f5e60c074aa09b5795112825fdb7",
+        "footprint_uuid": "a4b50fbf026d491e85e160c08d3cbb27",
+        "manufacturer": "Littelfuse(美国力特)",
+        "manufacturer_part_number": "0215001.MXEP",
+        "supplier_id": "C178837",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "a4b50fbf026d491e85e160c08d3cbb27",
+      "symbol": "d5e8f5e60c074aa09b5795112825fdb7"
+    },
+    "project:z_gate_12v": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "K",
+          "type": "passive"
+        }
+      ],
+      "description": "Junction voltage limiting",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "fc1fd9cc7a7542e3b993535b76b62c28",
+        "symbol_uuid": "25982f39fb2a48878cef1f0088665fa8",
+        "footprint_uuid": "058faedf0e73484fb803d4f629c76fb9",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "1N4742A",
+        "supplier_id": "C140853",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "058faedf0e73484fb803d4f629c76fb9",
+      "symbol": "25982f39fb2a48878cef1f0088665fa8"
+    },
+    "project:hv_nmos": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "D",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "G",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "S",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate B+ linear series pass MOSFET",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "f9844276d9594ec7b99bd5cdd33a062e",
+        "symbol_uuid": "3455e1769a344750bb410c5eac69981e",
+        "footprint_uuid": "a03affaf74254705b145200693c19ef4",
+        "manufacturer": "Littelfuse/IXYS",
+        "manufacturer_part_number": "IXTH30N50L2",
+        "supplier_id": "C2980980",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined",
+          "3": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "a03affaf74254705b145200693c19ef4",
+      "symbol": "3455e1769a344750bb410c5eac69981e"
+    },
+    "project:r_121_025w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Heater regulator set",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "2cba2375c7ab4ebc964eea3d8eaaff56",
+        "symbol_uuid": "537258e3a12f413198d89c96c43eff3e",
+        "footprint_uuid": "5a1c051c2d374964995f659053b54f02",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "1206W4F1210T5E",
+        "supplier_id": "C40089",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "5a1c051c2d374964995f659053b54f02",
+      "symbol": "537258e3a12f413198d89c96c43eff3e"
+    },
+    "project:r_68_1w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Candidate cathode bias",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "6549f8fa9dd64f8989bb2c9dc0c15e96",
+        "symbol_uuid": "bb477c80867e476a973015d3d3348457",
+        "footprint_uuid": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "25121WF680JT4E",
+        "supplier_id": "C50371",
+        "raw_pin_types": {
+          "2": "IN",
+          "1": "IN"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+      "symbol": "bb477c80867e476a973015d3d3348457"
+    },
+    "project:z_timer_5v1": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "C",
+          "type": "passive"
+        }
+      ],
+      "description": "Timing threshold",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "ea6949e100d2471ba7269881e1cdbccc",
+        "symbol_uuid": "3ebd6af8312d41d19aac2636b61e588f",
+        "footprint_uuid": "058faedf0e73484fb803d4f629c76fb9",
+        "manufacturer": "onsemi(安森美)",
+        "manufacturer_part_number": "1N4733A",
+        "supplier_id": "C140851",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "058faedf0e73484fb803d4f629c76fb9",
+      "symbol": "3ebd6af8312d41d19aac2636b61e588f"
+    },
+    "project:r_200k_1w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "HV bleeder chain",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "611a4b379ee74be1a1497a10bcea6706",
+        "symbol_uuid": "29875de94207422db2306a06751d8fda",
+        "footprint_uuid": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "25121WF2003T4E",
+        "supplier_id": "C421616",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+      "symbol": "29875de94207422db2306a06751d8fda"
+    },
+    "project:c_hv_220u400": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "HV rectifier reservoir and regulator output",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "2359bc51b51141c793924f223227e52c",
+        "symbol_uuid": "af9cf4ab91c14773810810078bcadafc",
+        "footprint_uuid": "42d005b9d1a24c319593c723663d68fa",
+        "manufacturer": "Nichicon(尼吉康)",
+        "manufacturer_part_number": "LLS2G221MELA",
+        "supplier_id": "C1582982",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "42d005b9d1a24c319593c723663d68fa",
+      "symbol": "af9cf4ab91c14773810810078bcadafc"
+    },
+    "project:fuse_heater_5a": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        }
+      ],
+      "description": "Heater winding fuse, leaded 5x20",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "c5216d44aa3d4abe8ac0dcc215923316",
+        "symbol_uuid": "90e11e85f1914a5d8f509930fed44eb5",
+        "footprint_uuid": "a0c1e80e29184e4e87bb3ad44d3c45d0",
+        "manufacturer": "Littelfuse(美国力特)",
+        "manufacturer_part_number": "0215005.MXEP",
+        "supplier_id": "C142755",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "a0c1e80e29184e4e87bb3ad44d3c45d0",
+      "symbol": "90e11e85f1914a5d8f509930fed44eb5"
+    },
+    "project:r_22_1w": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        }
+      ],
+      "description": "Power damping",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "a4b99689a1b04b1dabb7b789d5aea018",
+        "symbol_uuid": "fae15fc2e7b04c9db43e9f493d34d73f",
+        "footprint_uuid": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturer_part_number": "25121WF220JT4E",
+        "supplier_id": "C118189",
+        "raw_pin_types": {
+          "1": "Undefined",
+          "2": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "7ab38fe3a2e64d01a1bea3ef8ce9e7f3",
+      "symbol": "fae15fc2e7b04c9db43e9f493d34d73f"
+    },
+    "project:pot_dual10k_log": {
+      "kind": "physical",
+      "category": "candidate",
+      "reference_prefix": "X",
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive"
+        }
+      ],
+      "description": "Stereo 10k logarithmic volume",
+      "source": {
+        "provider": "easyeda-pro",
+        "library_uuid": "0819f05c4eef4c71ace90d822a990e87",
+        "device_uuid": "b7c0f922c0794c2fb9b7ed1da1299f23",
+        "symbol_uuid": "81dc0c08a8034ed9910b79f1904174fc",
+        "footprint_uuid": "1d4030282f24418db92751baf69c20ad",
+        "manufacturer": "ALPSALPINE(阿尔卑斯阿尔派)",
+        "manufacturer_part_number": "RK09712200HA",
+        "supplier_id": "C470545",
+        "raw_pin_types": {
+          "2": "Undefined",
+          "1": "Undefined",
+          "3": "Undefined",
+          "6": "Undefined",
+          "4": "Undefined",
+          "5": "Undefined"
+        }
+      },
+      "review": {
+        "status": "unreviewed",
+        "pin_type_authority": "project_library",
+        "note": "Analog passive terminal classification explicitly reviewed; LM1084 IN power_in, OUT power_out, ADJ input. Raw library types remain in source.raw_pin_types and native library. Physical/ratings approval is separate in parts.audit.json and exceptions."
+      },
+      "footprint": "1d4030282f24418db92751baf69c20ad",
+      "symbol": "81dc0c08a8034ed9910b79f1904174fc"
+    }
+  },
+  "instances": {
+    "J1": {
+      "part": "project:jack_trs"
+    },
+    "SW1": {
+      "part": "project:gain_dpdt",
+      "no_connects": [
+        "#0"
+      ]
+    },
+    "R1": {
+      "part": "project:r_8k2_025w"
+    },
+    "R2": {
+      "part": "project:r_1k_025w"
+    },
+    "R3": {
+      "part": "project:r_8k2_025w"
+    },
+    "R4": {
+      "part": "project:r_1k_025w"
+    },
+    "RV1": {
+      "part": "project:pot_dual10k_log"
+    },
+    "V1": {
+      "part": "project:tube_6h30pi_eb"
+    },
+    "C1": {
+      "part": "project:c_signal_4u7film"
+    },
+    "R5": {
+      "part": "project:r_100_025w"
+    },
+    "R6": {
+      "part": "project:r_100k_025w"
+    },
+    "R7": {
+      "part": "project:r_100k_025w"
+    },
+    "C2": {
+      "part": "project:c_hv_220u400"
+    },
+    "R8": {
+      "part": "project:r_100k_025w"
+    },
+    "R9": {
+      "part": "project:r_127_1w"
+    },
+    "C3": {
+      "part": "project:c_signal_4u7film"
+    },
+    "R10": {
+      "part": "project:r_100_025w"
+    },
+    "R11": {
+      "part": "project:r_100k_025w"
+    },
+    "R12": {
+      "part": "project:r_68_1w"
+    },
+    "C4": {
+      "part": "project:c_cathode_2200u25"
+    },
+    "C5": {
+      "part": "project:c_output_1000u250"
+    },
+    "R13": {
+      "part": "project:r_100k_1w"
+    },
+    "R14": {
+      "part": "project:r_100k_1w"
+    },
+    "R15": {
+      "part": "project:r_100k_1w"
+    },
+    "K1": {
+      "part": "project:relay_hv"
+    },
+    "V2": {
+      "part": "project:tube_6h30pi_eb"
+    },
+    "C6": {
+      "part": "project:c_signal_4u7film"
+    },
+    "R16": {
+      "part": "project:r_100_025w"
+    },
+    "R17": {
+      "part": "project:r_100k_025w"
+    },
+    "R18": {
+      "part": "project:r_100k_025w"
+    },
+    "C7": {
+      "part": "project:c_hv_220u400"
+    },
+    "R19": {
+      "part": "project:r_100k_025w"
+    },
+    "R20": {
+      "part": "project:r_127_1w"
+    },
+    "C8": {
+      "part": "project:c_signal_4u7film"
+    },
+    "R21": {
+      "part": "project:r_100_025w"
+    },
+    "R22": {
+      "part": "project:r_100k_025w"
+    },
+    "R23": {
+      "part": "project:r_68_1w"
+    },
+    "C9": {
+      "part": "project:c_cathode_2200u25"
+    },
+    "C10": {
+      "part": "project:c_output_1000u250"
+    },
+    "R24": {
+      "part": "project:r_100k_1w"
+    },
+    "R25": {
+      "part": "project:r_100k_1w"
+    },
+    "R26": {
+      "part": "project:r_100k_1w"
+    },
+    "K2": {
+      "part": "project:relay_hv"
+    },
+    "J2": {
+      "part": "project:jack_trs"
+    },
+    "J3": {
+      "part": "project:mains_inlet"
+    },
+    "F1": {
+      "part": "project:fuse_mains_1a"
+    },
+    "SW2": {
+      "part": "project:mains_switch"
+    },
+    "T1": {
+      "part": "project:transformer_contract"
+    },
+    "LK1": {
+      "part": "project:terminal_2"
+    },
+    "F2": {
+      "part": "project:fuse_hv_500ma"
+    },
+    "D1": {
+      "part": "project:d_hv_uf4007"
+    },
+    "D2": {
+      "part": "project:d_hv_uf4007"
+    },
+    "D3": {
+      "part": "project:d_hv_uf4007"
+    },
+    "D4": {
+      "part": "project:d_hv_uf4007"
+    },
+    "C11": {
+      "part": "project:c_hv_220u400"
+    },
+    "R27": {
+      "part": "project:r_22_1w"
+    },
+    "C12": {
+      "part": "project:c_hv_220u400"
+    },
+    "R28": {
+      "part": "project:r_100k_1w"
+    },
+    "R29": {
+      "part": "project:r_100k_1w"
+    },
+    "R30": {
+      "part": "project:r_100k_1w"
+    },
+    "R31": {
+      "part": "project:r_100k_1w"
+    },
+    "Q1": {
+      "part": "project:hv_nmos"
+    },
+    "R32": {
+      "part": "project:r_10_1w"
+    },
+    "R33": {
+      "part": "project:r_10_1w"
+    },
+    "Q2": {
+      "part": "project:hv_npn"
+    },
+    "D5": {
+      "part": "project:z_gate_12v"
+    },
+    "R34": {
+      "part": "project:r_47k_025w"
+    },
+    "R35": {
+      "part": "project:r_47k_025w"
+    },
+    "R36": {
+      "part": "project:r_47k_025w"
+    },
+    "R37": {
+      "part": "project:r_47k_025w"
+    },
+    "Q3": {
+      "part": "project:hv_npn"
+    },
+    "R38": {
+      "part": "project:r_221k_025w"
+    },
+    "R39": {
+      "part": "project:r_10k_025w"
+    },
+    "R40": {
+      "part": "project:r_22k_025w"
+    },
+    "R41": {
+      "part": "project:r_22k_025w"
+    },
+    "R42": {
+      "part": "project:r_22k_025w"
+    },
+    "R43": {
+      "part": "project:r_22k_025w"
+    },
+    "D6": {
+      "part": "project:z_ref_6v2"
+    },
+    "C13": {
+      "part": "project:c_control_470u25"
+    },
+    "C14": {
+      "part": "project:c_signal_4u7film"
+    },
+    "C15": {
+      "part": "project:c_hv_220u400"
+    },
+    "R44": {
+      "part": "project:r_100k_1w"
+    },
+    "F3": {
+      "part": "project:fuse_heater_5a"
+    },
+    "D7": {
+      "part": "project:d_heater_sb560"
+    },
+    "D8": {
+      "part": "project:d_heater_sb560"
+    },
+    "D9": {
+      "part": "project:d_heater_sb560"
+    },
+    "D10": {
+      "part": "project:d_heater_sb560"
+    },
+    "C16": {
+      "part": "project:c_heater_3300u25"
+    },
+    "C17": {
+      "part": "project:c_heater_3300u25"
+    },
+    "C18": {
+      "part": "project:c_heater_3300u25"
+    },
+    "C19": {
+      "part": "project:c_heater_3300u25"
+    },
+    "U1": {
+      "part": "project:heater_ldo"
+    },
+    "R45": {
+      "part": "project:r_121_025w"
+    },
+    "R46": {
+      "part": "project:r_487_025w"
+    },
+    "C20": {
+      "part": "project:c_control_470u25"
+    },
+    "C21": {
+      "part": "project:c_delay_100u25"
+    },
+    "D11": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D12": {
+      "part": "project:d_aux_1n4007"
+    },
+    "R47": {
+      "part": "project:r_200k_1w"
+    },
+    "R48": {
+      "part": "project:r_100k_1w"
+    },
+    "C22": {
+      "part": "project:c_hv_220u400"
+    },
+    "D13": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D14": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D15": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D16": {
+      "part": "project:d_aux_1n4007"
+    },
+    "C23": {
+      "part": "project:c_heater_3300u25"
+    },
+    "R49": {
+      "part": "project:r_470_025w"
+    },
+    "D17": {
+      "part": "project:z_aux_13v"
+    },
+    "C24": {
+      "part": "project:c_control_470u25"
+    },
+    "Q4": {
+      "part": "project:aux_npn_bd139"
+    },
+    "C25": {
+      "part": "project:c_control_470u25"
+    },
+    "R50": {
+      "part": "project:r_100k_025w"
+    },
+    "C26": {
+      "part": "project:c_control_470u25"
+    },
+    "D18": {
+      "part": "project:z_timer_5v1"
+    },
+    "R51": {
+      "part": "project:r_47k_025w"
+    },
+    "Q5": {
+      "part": "project:hv_npn"
+    },
+    "Q6": {
+      "part": "project:hv_npn"
+    },
+    "Q7": {
+      "part": "project:aux_npn_bd139"
+    },
+    "R52": {
+      "part": "project:r_100k_025w"
+    },
+    "R53": {
+      "part": "project:r_10k_025w"
+    },
+    "D19": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D20": {
+      "part": "project:z_flyback_24v"
+    },
+    "D21": {
+      "part": "project:d_small_1n4148"
+    },
+    "R54": {
+      "part": "project:r_1k_025w"
+    },
+    "R55": {
+      "part": "project:r_47k_025w"
+    },
+    "R56": {
+      "part": "project:r_47k_025w"
+    },
+    "D22": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D23": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D24": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D25": {
+      "part": "project:d_aux_1n4007"
+    },
+    "U2": {
+      "part": "project:fault_opto"
+    },
+    "R57": {
+      "part": "project:r_47k_025w"
+    },
+    "R58": {
+      "part": "project:r_47k_025w"
+    },
+    "D26": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D27": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D28": {
+      "part": "project:d_aux_1n4007"
+    },
+    "D29": {
+      "part": "project:d_aux_1n4007"
+    },
+    "U3": {
+      "part": "project:fault_opto"
+    }
+  },
+  "connections": [
+    {
+      "net": "AGND",
+      "endpoints": [
+        "J1.#1",
+        "R2.#2",
+        "R4.#2",
+        "RV1.#1",
+        "RV1.#4",
+        "V1.#9",
+        "R7.#2",
+        "C2.#2",
+        "R11.#2",
+        "R12.#2",
+        "C4.#2",
+        "R13.#2",
+        "R14.#2",
+        "R15.#2",
+        "V2.#9",
+        "R18.#2",
+        "C7.#2",
+        "R22.#2",
+        "R23.#2",
+        "C9.#2",
+        "R24.#2",
+        "R25.#2",
+        "R26.#2",
+        "J2.#1",
+        "J3.#PE",
+        "LK1.#1",
+        "LK1.#2",
+        "D3.#2",
+        "D4.#2",
+        "C11.#2",
+        "C12.#2",
+        "R29.#2",
+        "R31.#2",
+        "R39.#2",
+        "D6.#2",
+        "C13.#2",
+        "C14.#2",
+        "C15.#2",
+        "R44.#2",
+        "R48.#2",
+        "C22.#2",
+        "D15.#2",
+        "D16.#2",
+        "C23.#2",
+        "D17.#2",
+        "C24.#2",
+        "C25.#2",
+        "C26.#2",
+        "Q7.#1",
+        "R52.#2",
+        "R53.#2",
+        "R54.#2",
+        "D23.#2",
+        "D25.#1",
+        "U2.#3",
+        "D27.#2",
+        "D29.#1",
+        "U3.#3"
+      ]
+    },
+    {
+      "net": "IN_R",
+      "endpoints": [
+        "J1.#2",
+        "SW1.#4",
+        "R3.#1"
+      ]
+    },
+    {
+      "net": "IN_L",
+      "endpoints": [
+        "J1.#3",
+        "SW1.#1",
+        "R1.#1"
+      ]
+    },
+    {
+      "net": "SEL_L",
+      "endpoints": [
+        "SW1.#2",
+        "RV1.#3"
+      ]
+    },
+    {
+      "net": "LOW_L",
+      "endpoints": [
+        "SW1.#3",
+        "R1.#2",
+        "R2.#1"
+      ]
+    },
+    {
+      "net": "SEL_R",
+      "endpoints": [
+        "SW1.#5",
+        "RV1.#6"
+      ]
+    },
+    {
+      "net": "LOW_R",
+      "endpoints": [
+        "SW1.#6",
+        "R3.#2",
+        "R4.#1"
+      ]
+    },
+    {
+      "net": "WIP_L",
+      "endpoints": [
+        "RV1.#2",
+        "C1.#1"
+      ]
+    },
+    {
+      "net": "WIP_R",
+      "endpoints": [
+        "RV1.#5",
+        "C6.#1"
+      ]
+    },
+    {
+      "net": "L_MID",
+      "endpoints": [
+        "V1.#1",
+        "V1.#8",
+        "C5.#1",
+        "R13.#1"
+      ]
+    },
+    {
+      "net": "L_GL",
+      "endpoints": [
+        "V1.#2",
+        "R10.#2"
+      ]
+    },
+    {
+      "net": "L_K",
+      "endpoints": [
+        "V1.#3",
+        "R12.#1",
+        "C4.#1"
+      ]
+    },
+    {
+      "net": "HPLUS",
+      "endpoints": [
+        "V1.#4",
+        "V2.#4",
+        "U1.#2",
+        "R45.#1",
+        "C20.#1",
+        "D11.#2",
+        "D12.#1"
+      ]
+    },
+    {
+      "net": "HMINUS",
+      "endpoints": [
+        "V1.#5",
+        "V2.#5",
+        "D9.#2",
+        "D10.#2",
+        "C16.#2",
+        "C17.#2",
+        "C18.#2",
+        "C19.#2",
+        "R46.#2",
+        "C20.#2",
+        "C21.#2",
+        "R47.#2",
+        "R48.#1",
+        "C22.#1"
+      ]
+    },
+    {
+      "net": "L_PA",
+      "endpoints": [
+        "V1.#6",
+        "R9.#2",
+        "C3.#1"
+      ]
+    },
+    {
+      "net": "L_GU",
+      "endpoints": [
+        "V1.#7",
+        "R5.#2"
+      ]
+    },
+    {
+      "net": "L_GI",
+      "endpoints": [
+        "C1.#2",
+        "R5.#1",
+        "R8.#2"
+      ]
+    },
+    {
+      "net": "BPLUS",
+      "endpoints": [
+        "R6.#1",
+        "R9.#1",
+        "R17.#1",
+        "R20.#1",
+        "R32.#2",
+        "R33.#2",
+        "Q2.#1",
+        "R38.#1",
+        "C15.#1",
+        "R44.#1",
+        "R47.#1"
+      ]
+    },
+    {
+      "net": "L_BIAS",
+      "endpoints": [
+        "R6.#2",
+        "R7.#1",
+        "C2.#1",
+        "R8.#1"
+      ]
+    },
+    {
+      "net": "L_GB",
+      "endpoints": [
+        "C3.#2",
+        "R10.#1",
+        "R11.#1"
+      ]
+    },
+    {
+      "net": "L_OUT",
+      "endpoints": [
+        "C5.#2",
+        "R14.#1",
+        "R15.#1",
+        "K1.#1",
+        "R55.#1"
+      ]
+    },
+    {
+      "net": "HP_L",
+      "endpoints": [
+        "K1.#4",
+        "J2.#3"
+      ]
+    },
+    {
+      "net": "AUX12",
+      "endpoints": [
+        "K1.#2",
+        "K2.#2",
+        "Q4.#1",
+        "C25.#1",
+        "R50.#1",
+        "D20.#2",
+        "D21.#1",
+        "R54.#1"
+      ]
+    },
+    {
+      "net": "COIL_LOW",
+      "endpoints": [
+        "K1.#3",
+        "K2.#3",
+        "Q5.#3",
+        "Q6.#3",
+        "Q7.#2",
+        "D19.#2"
+      ]
+    },
+    {
+      "net": "R_MID",
+      "endpoints": [
+        "V2.#1",
+        "V2.#8",
+        "C10.#1",
+        "R24.#1"
+      ]
+    },
+    {
+      "net": "R_GL",
+      "endpoints": [
+        "V2.#2",
+        "R21.#2"
+      ]
+    },
+    {
+      "net": "R_K",
+      "endpoints": [
+        "V2.#3",
+        "R23.#1",
+        "C9.#1"
+      ]
+    },
+    {
+      "net": "R_PA",
+      "endpoints": [
+        "V2.#6",
+        "R20.#2",
+        "C8.#1"
+      ]
+    },
+    {
+      "net": "R_GU",
+      "endpoints": [
+        "V2.#7",
+        "R16.#2"
+      ]
+    },
+    {
+      "net": "R_GI",
+      "endpoints": [
+        "C6.#2",
+        "R16.#1",
+        "R19.#2"
+      ]
+    },
+    {
+      "net": "R_BIAS",
+      "endpoints": [
+        "R17.#2",
+        "R18.#1",
+        "C7.#1",
+        "R19.#1"
+      ]
+    },
+    {
+      "net": "R_GB",
+      "endpoints": [
+        "C8.#2",
+        "R21.#1",
+        "R22.#1"
+      ]
+    },
+    {
+      "net": "R_OUT",
+      "endpoints": [
+        "C10.#2",
+        "R25.#1",
+        "R26.#1",
+        "K2.#1",
+        "R57.#1"
+      ]
+    },
+    {
+      "net": "HP_R",
+      "endpoints": [
+        "K2.#4",
+        "J2.#2"
+      ]
+    },
+    {
+      "net": "MAINS_L",
+      "endpoints": [
+        "J3.#L",
+        "F1.#1"
+      ]
+    },
+    {
+      "net": "MAINS_N",
+      "endpoints": [
+        "J3.#N",
+        "SW2.#2"
+      ]
+    },
+    {
+      "net": "FUSED_L",
+      "endpoints": [
+        "F1.#2",
+        "SW2.#1"
+      ]
+    },
+    {
+      "net": "PRI_L",
+      "endpoints": [
+        "SW2.#1a",
+        "T1.#1"
+      ]
+    },
+    {
+      "net": "PRI_N",
+      "endpoints": [
+        "SW2.#2a",
+        "T1.#2"
+      ]
+    },
+    {
+      "net": "HV_A",
+      "endpoints": [
+        "T1.#3",
+        "F2.#1"
+      ]
+    },
+    {
+      "net": "HV_B",
+      "endpoints": [
+        "T1.#4",
+        "D2.#2",
+        "D4.#1"
+      ]
+    },
+    {
+      "net": "HTR_A",
+      "endpoints": [
+        "T1.#5",
+        "F3.#1"
+      ]
+    },
+    {
+      "net": "HTR_B",
+      "endpoints": [
+        "T1.#6",
+        "D8.#2",
+        "D10.#1"
+      ]
+    },
+    {
+      "net": "AUX_A",
+      "endpoints": [
+        "T1.#7",
+        "D13.#2",
+        "D15.#1"
+      ]
+    },
+    {
+      "net": "AUX_B",
+      "endpoints": [
+        "T1.#8",
+        "D14.#2",
+        "D16.#1"
+      ]
+    },
+    {
+      "net": "HV_AF",
+      "endpoints": [
+        "F2.#2",
+        "D1.#2",
+        "D3.#1"
+      ]
+    },
+    {
+      "net": "HV_RAW",
+      "endpoints": [
+        "D1.#1",
+        "D2.#1",
+        "C11.#1",
+        "R27.#1",
+        "R28.#1"
+      ]
+    },
+    {
+      "net": "HV_IN",
+      "endpoints": [
+        "R27.#2",
+        "C12.#1",
+        "R30.#1",
+        "Q1.#2",
+        "R34.#1",
+        "R40.#1"
+      ]
+    },
+    {
+      "net": "HV_RAW_BLEED",
+      "endpoints": [
+        "R28.#2",
+        "R29.#1"
+      ]
+    },
+    {
+      "net": "HV_IN_BLEED",
+      "endpoints": [
+        "R30.#2",
+        "R31.#1"
+      ]
+    },
+    {
+      "net": "HV_GATE",
+      "endpoints": [
+        "Q1.#1",
+        "Q2.#3",
+        "D5.#1",
+        "R37.#2",
+        "Q3.#3",
+        "C14.#1"
+      ]
+    },
+    {
+      "net": "HV_SOURCE",
+      "endpoints": [
+        "Q1.#3",
+        "R32.#1",
+        "R33.#1",
+        "Q2.#2",
+        "D5.#2"
+      ]
+    },
+    {
+      "net": "GF1",
+      "endpoints": [
+        "R34.#2",
+        "R35.#1"
+      ]
+    },
+    {
+      "net": "GF2",
+      "endpoints": [
+        "R35.#2",
+        "R36.#1"
+      ]
+    },
+    {
+      "net": "GF3",
+      "endpoints": [
+        "R36.#2",
+        "R37.#1"
+      ]
+    },
+    {
+      "net": "ZREF",
+      "endpoints": [
+        "Q3.#1",
+        "R43.#2",
+        "D6.#1",
+        "C13.#1"
+      ]
+    },
+    {
+      "net": "HV_FB",
+      "endpoints": [
+        "Q3.#2",
+        "R38.#2",
+        "R39.#1"
+      ]
+    },
+    {
+      "net": "ZF1",
+      "endpoints": [
+        "R40.#2",
+        "R41.#1"
+      ]
+    },
+    {
+      "net": "ZF2",
+      "endpoints": [
+        "R41.#2",
+        "R42.#1"
+      ]
+    },
+    {
+      "net": "ZF3",
+      "endpoints": [
+        "R42.#2",
+        "R43.#1"
+      ]
+    },
+    {
+      "net": "HTR_AF",
+      "endpoints": [
+        "F3.#2",
+        "D7.#2",
+        "D9.#1"
+      ]
+    },
+    {
+      "net": "HRAW",
+      "endpoints": [
+        "D7.#1",
+        "D8.#1",
+        "C16.#1",
+        "C17.#1",
+        "C18.#1",
+        "C19.#1",
+        "U1.#3",
+        "D11.#1"
+      ]
+    },
+    {
+      "net": "HADJ",
+      "endpoints": [
+        "U1.#1",
+        "R45.#2",
+        "R46.#1",
+        "C21.#1",
+        "D12.#2"
+      ]
+    },
+    {
+      "net": "AUX_RAW",
+      "endpoints": [
+        "D13.#1",
+        "D14.#1",
+        "C23.#1",
+        "R49.#1",
+        "Q4.#2"
+      ]
+    },
+    {
+      "net": "AUX_Z",
+      "endpoints": [
+        "R49.#2",
+        "D17.#1",
+        "C24.#1",
+        "Q4.#3"
+      ]
+    },
+    {
+      "net": "TIMER",
+      "endpoints": [
+        "R50.#2",
+        "C26.#1",
+        "D18.#1",
+        "D21.#2"
+      ]
+    },
+    {
+      "net": "ZT_OUT",
+      "endpoints": [
+        "D18.#2",
+        "R51.#1"
+      ]
+    },
+    {
+      "net": "D1B",
+      "endpoints": [
+        "R51.#2",
+        "Q5.#2",
+        "R52.#1",
+        "U2.#4",
+        "U3.#4"
+      ]
+    },
+    {
+      "net": "D2B",
+      "endpoints": [
+        "Q5.#1",
+        "Q6.#2"
+      ]
+    },
+    {
+      "net": "D3B",
+      "endpoints": [
+        "Q6.#1",
+        "Q7.#3",
+        "R53.#1"
+      ]
+    },
+    {
+      "net": "FLY_K",
+      "endpoints": [
+        "D19.#1",
+        "D20.#1"
+      ]
+    },
+    {
+      "net": "SEN_M_L",
+      "endpoints": [
+        "R55.#2",
+        "R56.#1"
+      ]
+    },
+    {
+      "net": "SEN_AC_L",
+      "endpoints": [
+        "R56.#2",
+        "D22.#2",
+        "D24.#1"
+      ]
+    },
+    {
+      "net": "OP_P_L",
+      "endpoints": [
+        "D22.#1",
+        "D23.#1",
+        "U2.#1"
+      ]
+    },
+    {
+      "net": "OP_N_L",
+      "endpoints": [
+        "D24.#2",
+        "D25.#2",
+        "U2.#2"
+      ]
+    },
+    {
+      "net": "SEN_M_R",
+      "endpoints": [
+        "R57.#2",
+        "R58.#1"
+      ]
+    },
+    {
+      "net": "SEN_AC_R",
+      "endpoints": [
+        "R58.#2",
+        "D26.#2",
+        "D28.#1"
+      ]
+    },
+    {
+      "net": "OP_P_R",
+      "endpoints": [
+        "D26.#1",
+        "D27.#1",
+        "U3.#1"
+      ]
+    },
+    {
+      "net": "OP_N_R",
+      "endpoints": [
+        "D28.#2",
+        "D29.#2",
+        "U3.#2"
+      ]
+    }
+  ],
+  "constraints": [],
+  "outputs": []
+}

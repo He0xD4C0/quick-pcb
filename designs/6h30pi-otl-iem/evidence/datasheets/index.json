@@ -1,0 +1,84 @@
+{
+  "6H30Pi-EB.pdf": {
+    "url": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+    "resolved_url": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+    "sha256": "cbc0d812df41e114221da3664eeed3359c4143153f969b9fe43bdadeb5f56e92",
+    "status": "downloaded"
+  },
+  "nichicon-LLS.pdf": {
+    "url": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-lls.pdf",
+    "resolved_url": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-lls.pdf",
+    "sha256": "b42b5946a7e8f416008b0e3da33ba0141af31bf0c16a6ec1b464fa09b37ac30f",
+    "status": "downloaded"
+  },
+  "PJ-301C.pdf": {
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588896494385057792",
+    "resolved_url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588896494385057792",
+    "sha256": "bd907602bc58827239815be0dc9a1903f05850cd1bffa7d1bfd29b9842f0cf05",
+    "status": "downloaded"
+  },
+  "MPSA42.pdf": {
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/mpsa42-d.pdf",
+    "status": "download_failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "LM1084.pdf": {
+    "url": "https://www.ti.com/lit/ds/symlink/lm1084.pdf",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/lm1084.pdf",
+    "sha256": "081bc80a03c56253985a585da3aad85362f41f6df1d6a6158a61d879d3d43166",
+    "status": "downloaded"
+  },
+  "IRF820.pdf": {
+    "url": "https://www.vishay.com/docs/91059/91059.pdf",
+    "resolved_url": "https://www.vishay.com/docs/91059/91059.pdf",
+    "sha256": "23d6f1ff0595f7557ed49aaa61a7cfd2a745f6116c88f2dfa18972d0ad713e3e",
+    "status": "downloaded"
+  },
+  "ALPS-RK097.pdf": {
+    "url": "https://tech.alpsalpine.com/cms.media/product_catalog_rv_01_rk097_en_d953249ce7.pdf",
+    "resolved_url": "https://tech.alpsalpine.com/cms.media/product_catalog_rv_01_rk097_en_d953249ce7.pdf",
+    "sha256": "b057560653c418b430ccf7c51b932b793e230cff8a320caeeffe7bcb086784de",
+    "status": "downloaded"
+  },
+  "MJE340.pdf": {
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/mje340-d.pdf",
+    "status": "download_failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "BU508A.pdf": {
+    "url": "https://www.st.com/resource/en/datasheet/bu508a.pdf",
+    "status": "download_failed",
+    "error": "The read operation timed out"
+  },
+  "omron-G2R.pdf": {
+    "url": "https://components.omron.com/sites/default/files/datasheet_pdf/K013-E1.pdf",
+    "status": "download_failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  "IXTH30N50L2.pdf": {
+    "url": "https://www.littelfuse.com/assetdocs/littelfuse-discrete-mosfets-ixt-30n50-datasheet?assetguid=c09539a4-39f7-4fb5-940f-2103ab4fa891",
+    "status": "download_failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "panasonic-FR.pdf": {
+    "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+    "status": "download_failed",
+    "error": "The read operation timed out"
+  },
+  "pickering-67.pdf": {
+    "url": "https://www.pickeringrelay.com/pdfs/67-68-high-voltage-reed-relays.pdf",
+    "status": "download_failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "eaton-HTC.pdf": {
+    "url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-htc-fuse-holder.pdf",
+    "status": "download_failed",
+    "error": "The read operation timed out"
+  },
+  "schurter-6100.pdf": {
+    "url": "https://catalogue.schurter.com/en/datasheet/typ_6100-3.pdf",
+    "resolved_url": "https://catalogue.schurter.com/en/datasheet/typ_6100-3.pdf",
+    "sha256": "790ed148c9759c75db31d0994850d27c75c26832a2c96cb58935ce6c5e2b74ef",
+    "status": "downloaded"
+  }
+}

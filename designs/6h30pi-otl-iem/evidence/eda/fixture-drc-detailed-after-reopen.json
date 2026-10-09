@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "format": "schematic/easyeda-v0.1",
+  "source": {
+    "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "project_name": "/6H30Pi-Rebuild",
+    "schematic_uuid": "bc3d79272293f136",
+    "schematic_name": "6H30Pi-Library-Fixture-R4",
+    "page_uuid": "f46a303398832651",
+    "page_name": "OneSheet",
+    "document_uuid": "f46a303398832651",
+    "document_type": 1,
+    "tab_id": "f46a303398832651@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "window_id": "6602c0b8-81ef-4d17-ae83-c9ad104f8431"
+  },
+  "context_revision": "sha256:1daed65f705110630e87992e35c863434027e390b2467f6e7a1cf738f26059c5",
+  "revision": "sha256:ba68dffc79487bf8d9a6661188b51bb8a0f4a84a58eb968a39f064dec64db6c6",
+  "passed": false,
+  "total_count": 4,
+  "matched_count": 4,
+  "violations": [
+    {
+      "id": "sch-drc:579a61c5dfc7f0d7",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component5"
+      ],
+      "position": null,
+      "message": "Component $1I6 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:84315d2dc9ceb172",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component4"
+      ],
+      "position": null,
+      "message": "Component $1I5 lacks of property \"Footprint\".",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:8599e0f9a3f86b2c",
+      "severity": "error",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component3"
+      ],
+      "position": null,
+      "message": "The pin of the component QPCB_6H30Pi_EB_REVIEWED_PINS_R4 does not correspond to the pad (Pin has no corresponding pad : 1\u30012\u30013\u30014\u30015\u30016\u30017\u30018\u30019): $1I4",
+      "source_id": null
+    },
+    {
+      "id": "sch-drc:aaa6922ee4cfbbb4",
+      "severity": "fatalError",
+      "type": "EDA_DRC_LOG",
+      "rule": null,
+      "net": null,
+      "page": "f46a303398832651",
+      "objects": [
+        "component3"
+      ],
+      "position": null,
+      "message": "Component $1I4 lacks of property \"Footprint\".",
+      "source_id": null
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "ok": true,
+  "code": null,
+  "applied": true,
+  "partial": false,
+  "context_revision": "sha256:d4050dd23fa2625453588fd2a65a3d9e66729bec30cd4e2898b8a147d044fd07",
+  "revision_before": "sha256:1981264f6d04670377fba0ab7cee90d7d31a1a41b272297f910f4a45e87d4457",
+  "revision_after": "sha256:aa7ca1c60caacde318f6241f1c31f3cbf8248607f0c8d85a4853713b818fdfb9",
+  "results": [
+    {
+      "ok": true,
+      "designator": "SW1",
+      "pin": "#0"
+    }
+  ],
+  "readback": {
+    "components": {
+      "created": [],
+      "modified": [
+        {
+          "id": "05776d6db585daf1",
+          "designator": "SW1",
+          "name": "EG2208",
+          "component": {
+            "libraryUuid": "",
+            "uuid": "54ae1c5157db5580",
+            "name": "EG2208"
+          },
+          "symbol": {
+            "uuid": "a290a4bc5b0121a3",
+            "libraryUuid": "",
+            "name": "EG2208"
+          },
+          "footprint": {
+            "uuid": "186403483a726f08",
+            "libraryUuid": "",
+            "name": "SW-TH_EG2208"
+          },
+          "sub_part_name": "EG2208.1",
+          "x": 6500,
+          "y": -3600,
+          "rotation": 0,
+          "mirror": false,
+          "bbox": {
+            "minX": 6235,
+            "minY": -3805,
+            "maxX": 6765,
+            "maxY": -3395
+          },
+          "pins": [
+            {
+              "id": "05776d6db585daf1-e67",
+              "number": "0",
+              "name": "0",
+              "type": "Undefined",
+              "no_connected": true,
+              "x": 6800,
+              "y": -3900,
+              "rotation": 270,
+              "sub_part_name": null
+            },
+            {
+              "id": "05776d6db585daf1-e61",
+              "number": "1",
+              "name": "1",
+              "type": "Undefined",
+              "no_connected": false,
+              "x": 6300,
+              "y": -3300,
+              "rotation": 90,
+              "sub_part_name": null
+            },
+            {
+              "id": "05776d6db585daf1-e57",
+              "number": "2",
+              "name": "2",
+              "type": "Undefined",
+              "no_connected": false,
+              "x": 6500,
+              "y": -3300,
+              "rotation": 90,
+              "sub_part_name": null
+            },
+            {
+              "id": "05776d6db585daf1-e53",
+              "number": "3",
+              "name": "3",
+              "type": "Undefined",
+              "no_connected": false,
+              "x": 6700,
+              "y": -3300,
+              "rotation": 90,
+              "sub_part_name": null
+            },
+            {
+              "id": "05776d6db585daf1-e41",
+              "number": "4",
+              "name": "4",
+              "type": "Undefined",
+              "no_connected": false,
+              "x": 6300,
+              "y": -3900,
+              "rotation": 270,
+              "sub_part_name": null
+            },
+            {
+              "id": "05776d6db585daf1-e45",
+              "number": "5",
+              "name": "5",
+              "type": "Undefined",
+              "no_connected": false,
+              "x": 6500,
+              "y": -3900,
+              "rotation": 270,
+              "sub_part_name": null
+            },
+            {
+              "id": "05776d6db585daf1-e49",
+              "number": "6",
+              "name": "6",
+              "type": "Undefined",
+              "no_connected": false,
+              "x": 6700,
+              "y": -3900,
+              "rotation": 270,
+              "sub_part_name": null
+            }
+          ]
+        }
+      ],
+      "deleted": []
+    },
+    "no_connects": {
+      "created": [
+        {
+          "designator": "SW1",
+          "pin": "#0"
+        }
+      ],
+      "modified": [],
+      "deleted": []
+    }
+  },
+  "topology": {
+    "available": false
+  },
+  "drc": {
+    "before_count": 152,
+    "new": [],
+    "resolved": [
+      "sch-drc:f1441f5ddf546390"
+    ],
+    "remaining_count": 151
+  }
+}

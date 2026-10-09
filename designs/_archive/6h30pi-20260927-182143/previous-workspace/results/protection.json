@@ -1,0 +1,123 @@
+{
+  "assumptions": [
+    "Warm-up ramp is a stress scenario, not a validated thermal tube model.",
+    "Relay ideal contact threshold excludes mechanical latency; therefore optimistic.",
+    "Cap-short source is 82.13 V with 25 ohm Thevenin impedance, not nonlinear tube simulation.",
+    "Fault energy has no manufacturer-approved safe threshold for these IEMs. Any large unqualified excursion blocks use."
+  ],
+  "cases": {
+    "startup": {
+      "max_abs_output_V": 0.985414031,
+      "energy_into_16ohm_J": 0.0012569260602145948,
+      "relay_on_first_s": 44.439,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "asymmetric_warmup": {
+      "max_abs_output_V": 0.987219242,
+      "energy_into_16ohm_J": 0.0012606452960613563,
+      "relay_on_first_s": 89.347,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "quick_restart": {
+      "max_abs_output_V": 0.985414007,
+      "energy_into_16ohm_J": 0.001541741450252506,
+      "relay_on_first_s": 44.439,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "power_off": {
+      "max_abs_output_V": 0.649744914,
+      "energy_into_16ohm_J": 9.710710413003938e-05,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": -1.30978428e-11,
+      "timer_end_V": 0.0186773118,
+      "dc_end_V": -1.27475479e-09,
+      "refhi_end_V": -0.000118411349,
+      "reflo_end_V": -0.000118411349,
+      "optimistic_release_after_event_s": 0.010384823999999994
+    },
+    "dc_fault_positive": {
+      "max_abs_output_V": 31.8861097,
+      "energy_into_16ohm_J": 2.4403744596241235,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 0.00526878502,
+      "timer_end_V": 5.75283334,
+      "dc_end_V": 1.30996645e-09,
+      "refhi_end_V": 6.33954157,
+      "reflo_end_V": 5.85011163,
+      "optimistic_release_after_event_s": 0.037889495499999995
+    },
+    "dc_fault_negative": {
+      "max_abs_output_V": 4.95355301,
+      "energy_into_16ohm_J": 0.03887224240382775,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 0.000644653254,
+      "timer_end_V": 5.27657032,
+      "dc_end_V": -7.9987202e-11,
+      "refhi_end_V": 5.95741584,
+      "reflo_end_V": 5.43721195,
+      "optimistic_release_after_event_s": 0.0250685796
+    },
+    "leakage": {
+      "max_abs_output_V": 0.00290649787,
+      "energy_into_16ohm_J": 2.639915112387723e-07,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846404,
+      "dc_end_V": 0.0029064976,
+      "refhi_end_V": 6.20251012,
+      "reflo_end_V": 5.70381852
+    },
+    "open_capacitor": {
+      "max_abs_output_V": 0.000910336535,
+      "energy_into_16ohm_J": 2.589726876266353e-08,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000910336535,
+      "refhi_end_V": 6.20248998,
+      "reflo_end_V": 5.70379661
+    },
+    "short_output": {
+      "max_abs_output_V": 5.70037947e-06,
+      "energy_into_16ohm_J": null,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.318464,
+      "dc_end_V": 5.70037579e-06,
+      "refhi_end_V": 6.20247189,
+      "reflo_end_V": 5.70377694
+    },
+    "no_load": {
+      "max_abs_output_V": 0.478949636,
+      "energy_into_16ohm_J": null,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851173,
+      "timer_end_V": 6.31846422,
+      "dc_end_V": 0.478949636,
+      "refhi_end_V": 6.21150013,
+      "reflo_end_V": 5.71359962
+    },
+    "gain_switch": {
+      "max_abs_output_V": 0.0396124758,
+      "energy_into_16ohm_J": 1.0313714425417957e-08,
+      "relay_on_first_s": 0.0,
+      "relay_at_end_V": 11.1851172,
+      "timer_end_V": 6.31846402,
+      "dc_end_V": 0.000553476496,
+      "refhi_end_V": 6.20248638,
+      "reflo_end_V": 5.7037927
+    }
+  }
+}

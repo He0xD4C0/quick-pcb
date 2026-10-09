@@ -1,0 +1,807 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "q": "BZX79-B6V2",
+      "items": [
+        {
+          "uuid": "0ae050f7d24e4d15b4a0f11b399645fc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 0,
+          "name": "BZX79-B6V2,113",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1775029004000
+        },
+        {
+          "uuid": "e69fcc123e2f40e4a70aa74d1aaeb230",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 1,
+          "name": "BZX79-B6V2,143",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1742835915000
+        },
+        {
+          "uuid": "3ac17239c58e4f2099ec1417a0d4f896",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 2,
+          "name": "BZX79-B6V2,133",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1742835915000
+        }
+      ]
+    },
+    {
+      "q": "BZX79-B13",
+      "items": [
+        {
+          "uuid": "c3399163a77645849f4215b826ae37a8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 0,
+          "name": "BZX79-B13,143",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1742835915000
+        },
+        {
+          "uuid": "c9f9d2627afe46398bdd3b39d1036000",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 1,
+          "name": "BZX79-B13,133",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1742835894000
+        },
+        {
+          "uuid": "6158231ae5534220acff654ad8dd8971",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 2,
+          "name": "BZX79-B13,113",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1742835915000
+        }
+      ]
+    },
+    {
+      "q": "IRF820PBF",
+      "items": [
+        {
+          "uuid": "27a40c43e53f444e9bf4e53212b7e443",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "3ed6a0c3307d412991c34b5970fc2d4d"
+          },
+          "ordinal": 0,
+          "name": "IRF820PBF",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1740745888000
+        },
+        {
+          "uuid": "974edeb778be4cf583a68fe1deee2402",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "3ed6a0c3307d412991c34b5970fc2d4d"
+          },
+          "ordinal": 1,
+          "name": "IRF820PBF-BE3",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1733125250000
+        },
+        {
+          "uuid": "a0da9bc273d042e78d0572b27bf1a5e7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5390eb9d3f8f4c00b2c2ef4508f449d9",
+            "secondaryClassificationUuid": "3ed6a0c3307d412991c34b5970fc2d4d"
+          },
+          "ordinal": 2,
+          "name": "IRF820PBF_C727673",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1732173305000
+        }
+      ]
+    },
+    {
+      "q": "MPSA42G",
+      "items": []
+    },
+    {
+      "q": "Jack",
+      "items": [
+        {
+          "uuid": "37a6519252814d13a5f4c12b75799fd8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "2ODJACK394B",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1673124322000
+        },
+        {
+          "uuid": "876630ff83224dd5ab1d4eb64916b70f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "DCJACK_C9900001016",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1672192818000
+        },
+        {
+          "uuid": "918d05d96da041108c781fb2214c14d9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "CM4IO_MAGJACK-A70-112-331N126COPY",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1773646815000
+        },
+        {
+          "uuid": "ca6998e6ead94a2fb6ba3e3de6f1f1d0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 3,
+          "name": "320B/PJ-0013.5JACKS",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1726259304000
+        },
+        {
+          "uuid": "ebda930a5ff549e2b129d08aea833fb3",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 4,
+          "name": "POWER-JACK",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706205731000
+        },
+        {
+          "uuid": "d9d846df3ab94826b4faaf5204a8a580",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 5,
+          "name": "D21122000012-DCJACK",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300105000
+        },
+        {
+          "uuid": "b17ac137ef6647f89ae9c1cf2843ae9d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "5cdd7b2da82b4c29ab24110f819007e4"
+          },
+          "ordinal": 6,
+          "name": "JACKPWRDIN3LS",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1721035203000
+        },
+        {
+          "uuid": "bd988c82a3ef45e8be7bf7c157fecdcf",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 7,
+          "name": "JACK-USB-C-16P",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1718129650000
+        },
+        {
+          "uuid": "ab0f225b261f4ad9b8fced914ba5a9bb",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 8,
+          "name": "6.35_JACK",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1754069824000
+        },
+        {
+          "uuid": "0182c5d293a4480e896c99a92cde22cd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 9,
+          "name": "JACK-12P-RJ45",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300689000
+        },
+        {
+          "uuid": "6ea5fcb38fb748a1b24d2e0cdb034b6d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 10,
+          "name": "CON_DC-JACK_4_7",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1726259298000
+        },
+        {
+          "uuid": "c106df5d07cb458197ff7393318d3a46",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 11,
+          "name": "EJ-2_PHONEJACK2",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1745237992000
+        },
+        {
+          "uuid": "1f77a288b3d149fdad87621f8e14ce66",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 12,
+          "name": "DCJACK",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1672193069000
+        },
+        {
+          "uuid": "083c5cd7f47a4ae69bf4b0dca8a2f58c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "cf648e28bbf942729ccaa4e152919c12"
+          },
+          "ordinal": 13,
+          "name": "DCConnector/DC-003A 3.5Jacks",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1729741203000
+        },
+        {
+          "uuid": "b6746cb1d49d42e1a7ff2b34ac93d16c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "077dc69aad604b7483dc9325aa315b54",
+            "secondaryClassificationUuid": "cf648e28bbf942729ccaa4e152919c12"
+          },
+          "ordinal": 14,
+          "name": "JACK-C-PC-10A-RA(R)",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1778055343000
+        }
+      ]
+    },
+    {
+      "q": "Potentiometer",
+      "items": [
+        {
+          "uuid": "30087c9dda7442c2a03dd242a2b9a8ce",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "3*3POTENTIOMETER-10KΩ20%",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747074367000
+        },
+        {
+          "uuid": "10d8855ec01d453fa1c7cdde7282a571",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "0932-POTENTIOMETER",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1749631510000
+        },
+        {
+          "uuid": "38c3a9499b944011a7e8510e8b294dad",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "电位器_Potentiometer",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1763368969851
+        },
+        {
+          "uuid": "cb0a06dd4be240cd835519801b8eda91",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 3,
+          "name": "Potentiometer WH160-1-104",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1706204697000
+        },
+        {
+          "uuid": "a5f52d52ef7c424ba0c13a672438b7fd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 4,
+          "name": "Precision potentiometer 3296W/50ohm",
+          "type": 2,
+          "description": "50Ω",
+          "updateTimestamp": 1706204701000
+        },
+        {
+          "uuid": "dc2e5cb79f584d71a4971febbb4185e4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "a64306a313b3418e8c33ef3912479a2d",
+            "secondaryClassificationUuid": "2b15534a002745b1bc9e59ef37fbe5f3"
+          },
+          "ordinal": 5,
+          "name": "RK16814MGA0K",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1782647218000
+        },
+        {
+          "uuid": "a9ccdcea8d4f4026918fb17ef91e2619",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "7225a4b18f6042e0bbb6f1498502f09d",
+            "secondaryClassificationUuid": "dd242ed062d74cc79fdd3f3701e7bb83"
+          },
+          "ordinal": 6,
+          "name": "MAX5456EEE+T",
+          "type": 2,
+          "description": "Stereo Audio Taper Potentiometer with Debounced Pushbutton UpDown Control Interface, Volatile, Log Taper, 32 Steps, -40 to 85 degC, 16-pin QSOP (E16+1), Pb-Free, Tape and Reel",
+          "updateTimestamp": 1736570468000
+        }
+      ]
+    },
+    {
+      "q": "DPDT",
+      "items": [
+        {
+          "uuid": "5a513a9a9b7b4b8f802516d380453f06",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "G2R-2 12V DPDT",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1778118009000
+        },
+        {
+          "uuid": "f3969f5b29fb449eb9a00a7b9806c521",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5e8986fc57664c64a5a7294196bb6587",
+            "secondaryClassificationUuid": "de12e1beccde43738be18d450a037e90"
+          },
+          "ordinal": 1,
+          "name": "HK115FD-DC5V-SG",
+          "type": 2,
+          "description": "DPDT 8A 继电器, 线圈电压 5VDC",
+          "updateTimestamp": 1701144902000
+        },
+        {
+          "uuid": "34f297d2345d4f3eb451202a46acaa06",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "5e8986fc57664c64a5a7294196bb6587",
+            "secondaryClassificationUuid": "026467bd71b74ef89e56b649e6c019b5"
+          },
+          "ordinal": 2,
+          "name": "EE2-5NU-L",
+          "type": 2,
+          "description": "Relay; DPDT; Ctrl-V 5DC; 2A; 250VAC; PCB Mount; SMD; EC2/EE2 Series",
+          "updateTimestamp": 1732100425000
+        }
+      ]
+    },
+    {
+      "q": "TestPoint",
+      "items": [
+        {
+          "uuid": "4d4696e1853d428a8b8a35c81e676452",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "TESTPOINT_23",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1774378808000
+        },
+        {
+          "uuid": "e92e7f765b6540b498fa0c9c63307ca7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "5011-TESTPOINTBLACK",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300538000
+        },
+        {
+          "uuid": "550ba91a85494c859c694ef59e7dbd8a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "5010-TESTPOINTRED",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300538000
+        },
+        {
+          "uuid": "0ef2c756326f421eab3c316c79eda910",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 3,
+          "name": "Test-Point",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1767002677485
+        },
+        {
+          "uuid": "6b097f44517a47ecaf40d87171757dd9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 4,
+          "name": "TESTPOINT_DEF-1045,DEF,DEF",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1669114509000
+        }
+      ]
+    },
+    {
+      "q": "Zener",
+      "items": [
+        {
+          "uuid": "0b56ba14de914ecb97bd9fa639aabdd4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 0,
+          "name": "D_ZENER_SOD323",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1747073289000
+        },
+        {
+          "uuid": "f2eee9e1aca04806a9b0a4a0cf7198e0",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 1,
+          "name": "DIODEZENER3.3V500MWSOD-523",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744300790000
+        },
+        {
+          "uuid": "b936764b207742b68f29f459c42a0249",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2"
+          },
+          "ordinal": 2,
+          "name": "稳压管_Zener Diode",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1763368706703
+        },
+        {
+          "uuid": "1d6d288989134c06b39a11d625bde0df",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 3,
+          "name": "ZMM3.9",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1713487870000
+        },
+        {
+          "uuid": "76ea117cb08041048097d9efdd80fdc9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 4,
+          "name": "MMSZ5245B-AQ",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1744303053000
+        },
+        {
+          "uuid": "b814ad813a6442a6bc01bbcacf1d17ab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 5,
+          "name": "1N5362B",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1743490211000
+        },
+        {
+          "uuid": "8a1c61a9cf70461ca8e4f4fc72b6bd72",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 6,
+          "name": "Z1SMA62",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1753956017000
+        },
+        {
+          "uuid": "ae353a5acc0d4989a15df8736d2e4cae",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 7,
+          "name": "1N5353BG",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1753258219000
+        },
+        {
+          "uuid": "32cb84ed13ac49dba899ff0b97106756",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 8,
+          "name": "BZD27C12PW RVG",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1735206955000
+        },
+        {
+          "uuid": "602220d0fcb34d75a887a1f4a656bf01",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 9,
+          "name": "BZX84B13VLYFHT116",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1723053757000
+        },
+        {
+          "uuid": "8ee08ccf8c6742d59be107931eed87b9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 10,
+          "name": "1N4118",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1721791570000
+        },
+        {
+          "uuid": "ac90abb3fb714cc895855ec72e862227",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 11,
+          "name": "MMSZ27VBW_C188297",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1735206647000
+        },
+        {
+          "uuid": "8f26659d59ef44dd88d145a0aad98c3e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 12,
+          "name": "MM1Z27V",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1735206351000
+        },
+        {
+          "uuid": "f35bd1b0aaf44e75a9f7e64db8bf020b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 13,
+          "name": "BZT52H-B27,115",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1681959357000
+        },
+        {
+          "uuid": "1e429ad3077a4e569e8a0a1e893a658b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "2",
+            "primaryClassificationUuid": "57c820295e01472a9a0ed569eb775fc8",
+            "secondaryClassificationUuid": "7e479ef9e8744d129462f328e8300c64"
+          },
+          "ordinal": 14,
+          "name": "1SMA4741 M2G",
+          "type": 2,
+          "description": "",
+          "updateTimestamp": 1729506360000
+        }
+      ]
+    }
+  ]
+}

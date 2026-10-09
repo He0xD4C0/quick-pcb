@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-27",
+  "release_status": "NOT_ACCEPTED",
+  "physical_test_status": "NOT_PERFORMED",
+  "pcb_scope": "NOT_DESIGNED",
+  "native_complete": true,
+  "static_connectivity_passed": true,
+  "nominal_audio_targets_passed": true,
+  "native_strict_drc_passed": false,
+  "integrated_warm_simulation_passed": false,
+  "tolerance_thd_failures": 12,
+  "tolerance_cases": 32,
+  "protection_passed": false,
+  "real_headphones_permitted": false,
+  "model_globally_qualified": false
+}

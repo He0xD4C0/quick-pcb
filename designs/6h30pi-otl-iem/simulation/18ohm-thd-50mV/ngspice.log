@@ -1,0 +1,42 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: 6h30pi candidate fresh topology / audio only
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+bplus                                      160
+in_l                                         0
+sel_l                                        0
+wip_l                                        0
+hp_l                                         0
+low_l                                        0
+xv1a.ep                                3.09291
+l_pa                                   155.259
+l_mid                                  82.0011
+l_gu                                        80
+xv1a.gx                                     80
+xv1b.ep                                3.04563
+l_k                                    2.48273
+l_gl                               3.48621e-07
+xv1b.gx                            3.55586e-07
+l_gi                                        80
+l_bias                                      80
+l_gb                               3.48273e-07
+l_out                                        0
+b.xv1b.bep#branch                            0
+b.xv1a.bep#branch                            0
+vin#branch                                   0
+vb#branch                           -0.0381308
+
+ Reference value :  3.00003e-02
+No. of Data Rows : 20001
+ngspice-47 done

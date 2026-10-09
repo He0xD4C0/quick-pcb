@@ -1,0 +1,56 @@
+{
+  "captured_at": "2026-09-27T20:43:30.208537+08:00",
+  "stage": "ONE_SHEET_CANDIDATE_DELIVERED",
+  "task_complete": false,
+  "drawing_delivered": true,
+  "full_schematic": "NATIVE_SAVED_REOPENED_EXPORTED_ONE_PAGE",
+  "physical_components": 138,
+  "net_count": 79,
+  "parts_gate": "NOT_PASSED_CUSTOM_TRANSFORMER_AND_FOOTPRINTS_UNCONFIRMED",
+  "topology_geometry_check": "PASS",
+  "native_manufacturing_netlist": "BLOCKED_BY_DRC",
+  "native_drc": {
+    "fatalError": 11,
+    "error": 1
+  },
+  "simulation_acceptance": "NOT_PASSED_AUDIO_NOMINAL_ONLY",
+  "physical_testing": "NOT_PERFORMED",
+  "delivery": "delivery/6H30Pi-Stereo-CANDIDATE.eprj2",
+  "portable_delivery": "delivery/6H30Pi-Stereo-CANDIDATE.epro2",
+  "Codex_restarted": false,
+  "remaining": [
+    "Native custom footprints: V1,V2,K1,K2,J3,SW2,T1",
+    "Transformer terminal numbers are proposed contract, not a confirmed physical drawing",
+    "Output capacitor leakage bound24/27mV exceeds2mV target",
+    "Whole power supply, faults, tolerance, noise and thermal acceptance not established",
+    "Tube model cross-curve mismatch46.70% limits THD claims"
+  ],
+  "checkpoint": {
+    "captured_at": "2026-09-27T20:39:31.970080+08:00",
+    "kind": "COMPLETE_DRAWING_CANDIDATE_NOT_QUALIFIED_HARDWARE",
+    "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "page_uuid": "13436f1562c42519",
+    "live_native_path": "/Users/he0xd4c0/Documents/LCEDA-Pro/projects/6H30Pi-Rebuild.eprj2",
+    "schematics": 1,
+    "pages": 1,
+    "physical_components": 138,
+    "drawn_component_units": 142,
+    "ports": 46,
+    "flags": 42,
+    "wire_groups": 141,
+    "no_connects": 1,
+    "saved_reopened_pin_identity_equal": true,
+    "coordinate_comparison_tolerance_mil": 1e-06,
+    "sqlite_integrity": "ok",
+    "native_drc": {
+      "fatalError": 11,
+      "error": 1
+    },
+    "native_netlist_available": false,
+    "simulation_acceptance": "NOT_PASSED",
+    "physical_test": "NOT_PERFORMED",
+    "Codex_restarted": false,
+    "connection_check": "PASS_NATIVE_GEOMETRY_AND_PIN_READBACK",
+    "manufacturing_netlist_check": "BLOCKED_NATIVE_DRC"
+  }
+}

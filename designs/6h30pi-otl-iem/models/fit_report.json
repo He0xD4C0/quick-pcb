@@ -1,0 +1,43 @@
+{
+  "training": {
+    "n": 36,
+    "rms_relative_error": 0.02365348913836291,
+    "max_relative_error": 0.06258480176844301
+  },
+  "holdout": {
+    "n": 35,
+    "rms_relative_error": 0.024202042923020747,
+    "max_relative_error": 0.07052364099884098
+  },
+  "parameters": {
+    "MU": 14.773865232980999,
+    "EX": 1.4417327359366612,
+    "KG1": 272.8618498935506,
+    "KP": 137.54705596508003,
+    "KVB": 796.5774290792638
+  },
+  "plate_alternative_parameters": {
+    "MU": 12.683964377048559,
+    "EX": 1.180911005525516,
+    "KG1": 336.9557592005549,
+    "KP": 75.32431426845888,
+    "KVB": 1.0000000000279854
+  },
+  "cross_family_rms_relative_error": 0.4669960014561686,
+  "discrepancy_example": {
+    "vp_V": 80,
+    "vg_V": -2,
+    "plate_graph_mA": 34.27,
+    "transfer_graph_mA": 45.41
+  },
+  "source_sha256": "cbc0d812df41e114221da3664eeed3359c4143153f969b9fe43bdadeb5f56e92",
+  "source_url": "https://shop.ehx.com/catalog/tubes-specs/6H30Pi-EB.pdf",
+  "qualified_for_typical_transfer_curve_estimation": true,
+  "qualified_across_both_official_curve_families": false,
+  "limitations": [
+    "Typical published curves, not measured specimens",
+    "Small signal THD sensitivity is not bounded by DC fit residual",
+    "No tube noise, microphonics, heater leakage or thermal warmup model",
+    "Positive-grid current is an uncalibrated conservative diode approximation"
+  ]
+}

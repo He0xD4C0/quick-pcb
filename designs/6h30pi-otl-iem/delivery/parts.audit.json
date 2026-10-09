@@ -1,0 +1,1217 @@
+{
+  "format": "quickpcb-parts-audit/v1",
+  "reviews": {
+    "r_100k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 100000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 158.11388300841898,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F1003T5E/18588.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 100kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "0e3808da37775c9fd9699fb04eae259e21cb74a7a9cbc71fe5da529b73d3b008",
+      "raw_electrical_types_preserved": true
+    },
+    "r_10k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 10000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 50.0,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F1002T5E/18590.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 10kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "7cb50cbf6ff30354d83c4f7a929adb45273d656bbb55189edd541c299c3adf48",
+      "raw_electrical_types_preserved": true
+    },
+    "r_8k2_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 8200.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 45.27692569068709,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 8.2kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "4f37dfc74b4efcb8de62952ecb9229a9f12e844fb702c58f2f4ecabcc84303f9",
+      "raw_electrical_types_preserved": true
+    },
+    "r_1k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 1000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 15.811388300841896,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F1001T5E/53213.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 1kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "6701e161b38fe8206dc0f1d9867cd90ed562e1088baa72e7bcfb982255f8c828",
+      "raw_electrical_types_preserved": true
+    },
+    "r_47k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 47000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 108.39741694339399,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F4702T5E/26576.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 47kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "3272bb3b14f65a4247a2969e3d0fe844b5a64b19c1e9e2ff245ded88d741346e",
+      "raw_electrical_types_preserved": true
+    },
+    "r_100_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 100.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 5.0,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F1000T5E/18589.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 100Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "3dba2050817c201e58a1498caf395678daa92bade869a88d8c277f7c71fe5735",
+      "raw_electrical_types_preserved": true
+    },
+    "r_100k_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 100000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 200,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/25121WF1003T4E/53857.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 100kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "e9de00b5cb24ca0f2c2eb6306238b6ebce0c9db9d0e46d47462a772f9bf9713e",
+      "raw_electrical_types_preserved": true
+    },
+    "r_68_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 68.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 8.246211251235321,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/25121WF680JT4E/51380.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 68Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "df0da7afcd52c06bf0a0e183542dd51331d122eac5fb235f066ac0921cac48ff",
+      "raw_electrical_types_preserved": true
+    },
+    "r_10_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 10.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 3.1622776601683795,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/25121WF100JT4E/48024.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 10Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "dfc9b8fffa62be0edd61469befa1977aca7df7c40731a53dbc13eefa9c10ce15",
+      "raw_electrical_types_preserved": true
+    },
+    "r_22_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 22.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 4.69041575982343,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 22Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "c80c6412722053dbb1470c5c8305ef28c3f3e1e11bb2bc9813a4858b490fe257",
+      "raw_electrical_types_preserved": true
+    },
+    "r_330k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 330000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 200,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F3303T5E/18617.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 330kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "1d4bb3cf010e0bf17923d131bcb82273eb6a315f4705f1eccb57a4ad75a60941",
+      "raw_electrical_types_preserved": true
+    },
+    "r_4k7_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 4700.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 34.27827300200522,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F4701T5E/18624.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 4.7kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "c639c35f99c8e88d74dc885c2a6515821d58fc12d274d67181353bf735c3228e",
+      "raw_electrical_types_preserved": true
+    },
+    "r_470_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 470.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 10.8397416943394,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F4700T5E/4909.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 470Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "2aed46c02928a55604649766a7829cc5813c14895e75642ba24ca02e78e74336",
+      "raw_electrical_types_preserved": true
+    },
+    "r_121_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 121.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 5.5,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F1210T5E/41071.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 121Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "3257ee0b6334ea5b7d842aac6a95b08d34a885e63be5b85b31453b62840aac20",
+      "raw_electrical_types_preserved": true
+    },
+    "r_487_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 487.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 11.034038245356955,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 487Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "9ddb6eb74c117490e22e286e8ee88e39f5de7e1e00011710c2b0d0b250364d8c",
+      "raw_electrical_types_preserved": true
+    },
+    "r_221k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 221000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 200,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F2213T5E/74152.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 221kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "53055bfa6abfc2f52c7298fc663fec02d9dabf635f5f3d25b6ff68b6246b1c74",
+      "raw_electrical_types_preserved": true
+    },
+    "r_220k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 220000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 200,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F2203T5E/18644.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 220kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "5d2df43db79adbd7000d1fcca50f6ab93b472b0683753f7c2eab18b28a352d2b",
+      "raw_electrical_types_preserved": true
+    },
+    "r_22k_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 22000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 74.16198487095663,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 22kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "7d212be64f6825a0deea8a41a22e8cc20dcc31dc39de08c8fbf13b2c65d4625f",
+      "raw_electrical_types_preserved": true
+    },
+    "r_2k2_025w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 2200.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 0.25,
+        "max_working_V": 200,
+        "allowable_continuous_V": 23.45207879911715,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/1206W4F2201T5E/18636.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 2.2kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "a3acbddac8e541f511e33a165f35af97a8adc1eb6b556ba20b00627c26163499",
+      "raw_electrical_types_preserved": true
+    },
+    "r_127_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 127.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 11.269427669584644,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://atta.szlcsc.com/upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 127Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "4eac3b28c7fbccdab984e10d9f312ade83a51119c6d0a628d5abaec99c5d64e9",
+      "raw_electrical_types_preserved": true
+    },
+    "r_56_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 56.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 7.483314773547883,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/25121WF560JT4E/56511.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 56Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "b14a02c20135361b33f4d505487f0579aa061a198a427e27c0ae608f269721b7",
+      "raw_electrical_types_preserved": true
+    },
+    "r_47_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 47.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 6.855654600401044,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/25121WF470JT4E/480778.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 47Ω. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "fdcfa3ce417943341f761452208451a97bfafaf263c40fcf89f6853506e6fe79",
+      "raw_electrical_types_preserved": true
+    },
+    "r_200k_1w": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar resistive terminal",
+        "2": "nonpolar resistive terminal"
+      },
+      "ratings": {
+        "resistance_ohm": 200000.0,
+        "tolerance_fraction": 0.01,
+        "power_W_at_70C": 1,
+        "max_working_V": 200,
+        "allowable_continuous_V": 200,
+        "power_derating": "100% at <=70C; linear to zero at155C"
+      },
+      "sources": [
+        "evidence/datasheets/uniroyal-resistors.pdf pp2,4-6",
+        "https://item.szlcsc.com/datasheet/25121WF2003T4E/414566.html"
+      ],
+      "notes": "Exact manufacturer code decoded, compared with real library value 200kΩ. Library IN / Undefined are retained; two-terminal passive behavior is separately documented. Voltage AND power limits apply.",
+      "remaining_application_checks": [
+        "Circuit voltage/power and local temperature require instance-level checks."
+      ],
+      "source_archive_sha256": "f129e112f11f0403439360e96e3b5c59c6cb81fe21423ed856e3599a28108177",
+      "raw_electrical_types_preserved": true
+    },
+    "pot_dual10k_log": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "R1 CCW",
+        "2": "R1 wiper",
+        "3": "R1 CW",
+        "4": "R2 CCW (manufacturer circled1)",
+        "5": "R2 wiper (manufacturer circled2)",
+        "6": "R2 CW (manufacturer circled3)"
+      },
+      "ratings": {
+        "resistance_ohm": 10000,
+        "tolerance_fraction": 0.2,
+        "taper": "15A logarithmic",
+        "power_W": 0.05,
+        "max_DC_V": 10,
+        "gang_error_dB_max": 3
+      },
+      "sources": [
+        "evidence/datasheets/ALPS-RK097.pdf pp1-2",
+        "https://tech.alpsalpine.com/e/products/detail/RK09712200HA/"
+      ],
+      "notes": "Manufacturer mounting-side drawing No2 compared with two rows of library pads (1,2,3 and4,5,6); library numbering of second gang explicitly mapped. No fixed 50% electrical output is implied by mechanical mid-travel.",
+      "remaining_application_checks": [
+        "Gang tracking at low volume needs measurement."
+      ],
+      "source_archive_sha256": "449da156917c01007fdecfa1e687c0bb2feef59cbe1851fc8684f94b647b7b62",
+      "raw_electrical_types_preserved": true
+    },
+    "jack_trs": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "sleeve",
+        "2": "ring",
+        "3": "tip"
+      },
+      "ratings": {
+        "rated_V": 30,
+        "rated_A": 0.5
+      },
+      "sources": [
+        "evidence/datasheets/PJ-301C.pdf p1",
+        "https://item.szlcsc.com/datasheet/PJ-301C/724316.html"
+      ],
+      "notes": "XKB terminal drawing: direct barrel sleeve1, intermediate ring2, far tip3; compare physical tab locations and native symbol.",
+      "remaining_application_checks": [
+        "Output-capacitor short can exceed connector rating; protection fault test required."
+      ],
+      "source_archive_sha256": "3ba14171e595999d7a2e8e9139ea69d8894a7f7432f71b08f31381ac06f4ac23",
+      "raw_electrical_types_preserved": true
+    },
+    "gain_dpdt": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "poleA throw1",
+        "2": "poleA common",
+        "3": "poleA throw2",
+        "4": "poleB throw1",
+        "5": "poleB common",
+        "6": "poleB throw2",
+        "0": "library code for two mechanical shell tabs; not a signal contact"
+      },
+      "ratings": {
+        "rated_DC_V": 30,
+        "rated_A": 0.2,
+        "poles": 2,
+        "positions": 2
+      },
+      "sources": [
+        "evidence/datasheets/EG2208.pdf p1"
+      ],
+      "notes": "Manufacturer circuit shows2/5 common and linked1-2,4-5 vs2-3,5-6. Extra pad0 is library mechanical-tab convention, absent as electrical terminal in manufacturer circuit. Preserve it and explicitly exclude from signal topology.",
+      "remaining_application_checks": [
+        "Use intentional No Connect on shell0; do not silently delete.",
+        "Switch travel is specified as travel-to-make; bounce and simultaneous contact need transient test."
+      ],
+      "source_archive_sha256": "7479f46399d7305aebc446941ade934b39988c2005925c4df6b9c00a45daa2d8",
+      "raw_electrical_types_preserved": true
+    },
+    "hv_nmos": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "gate",
+        "2": "drain",
+        "3": "source"
+      },
+      "ratings": {
+        "VDS_V": 500,
+        "VGS_abs_V": 20,
+        "Tj_max_C": 150,
+        "RthJC_C_per_W": 0.31,
+        "RthCS_C_per_W": 0.25,
+        "ID_A_at_Tc25": 30
+      },
+      "sources": [
+        "evidence/datasheets/IXTH30N50L2.pdf pp1-6",
+        "https://www.littelfuse.com/assetdocs/littelfuse-discrete-mosfets-ixt-30n50-datasheet?assetguid=c09539a4-39f7-4fb5-940f-2103ab4fa891"
+      ],
+      "notes": "IXYS DS99957B: TO247 pins1G2D3S and tab drain; source copy contains additional unrelated pages, only first6 pages authoritative for selected part. Extended DC FBSOA must be checked at actual case temperature.",
+      "remaining_application_checks": [
+        "Heatsink/tab isolation, DC SOA and regulator stability need validation."
+      ],
+      "source_archive_sha256": "9616f1ceea8ec29483292a0a7d632a93af8ec00a37bf20119e11381c0994939c",
+      "raw_electrical_types_preserved": true
+    },
+    "hv_npn": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "emitter",
+        "2": "base",
+        "3": "collector"
+      },
+      "ratings": {
+        "VCEO_V": 300,
+        "IC_A": 0.5,
+        "PD_W_at25": 0.625,
+        "Tj_max_C": 150
+      },
+      "sources": [
+        "evidence/datasheets/MPSA42.pdf pp1-2"
+      ],
+      "notes": "onsemi TO92 case29 1E2B3C agrees with symbol. Raw library marks all pins IN; this is not a correct BJT electrical classification and remains an explicit ERC limitation.",
+      "remaining_application_checks": [
+        "Check thermal derating and second-breakdown SOA."
+      ],
+      "source_archive_sha256": "14ee9bee87c5ec6fe546bfb63ba9fb350c8c6f62cb3ecbc50901a71819964e00",
+      "raw_electrical_types_preserved": true
+    },
+    "heater_ldo": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "adjust",
+        "2": "output",
+        "3": "input"
+      },
+      "ratings": {
+        "IO_A": 5,
+        "Vin_Vout_max_V": 29,
+        "dropout_max_V_at5A": 1.5
+      },
+      "sources": [
+        "evidence/datasheets/LM1084.pdf"
+      ],
+      "notes": "TI TO220 pinout1ADJ2OUT3IN; metal tab is OUT, so elevated heater heatsink requires insulation.",
+      "remaining_application_checks": [
+        "ESR stability, minimum load, thermal and startup dropout validation."
+      ],
+      "source_archive_sha256": "6f66e4eb3a6dc2eb720f40b575d90716f25ba844a4869a16bd5063b88340de60",
+      "raw_electrical_types_preserved": true
+    },
+    "c_output_1000u250": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "positive",
+        "2": "negative"
+      },
+      "ratings": {
+        "capacitance_F": 0.001,
+        "rated_V": 250,
+        "tolerance_fraction": 0.2,
+        "ripple_A_at120Hz85C": 3.56,
+        "leakage_A_max_at20C_5min": 0.0015
+      },
+      "sources": [
+        "evidence/datasheets/nichicon-LLS.pdf"
+      ],
+      "notes": "LLS2E102MELB rating table and symbol plus marker at pin1. Leakage upper limit is 3sqrt(CuF*V) uA; NOT 3*C*V.",
+      "remaining_application_checks": [
+        "Maximum permitted leakage gives24mV into16ohm/27mV into18ohm before other paths; <=2mV is NOT guaranteed.",
+        "Output-cap ESR, reverse voltage and ripple must be checked."
+      ],
+      "source_archive_sha256": "7dcb4197882890cf5d4b06cae099d70e6fd98773853223db020854774a41a8bb",
+      "raw_electrical_types_preserved": true
+    },
+    "c_hv_220u400": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "positive",
+        "2": "negative"
+      },
+      "ratings": {
+        "capacitance_F": 0.00022,
+        "rated_V": 400,
+        "tolerance_fraction": 0.2,
+        "ripple_A_at120Hz85C": 1.64,
+        "leakage_A_max_at20C_5min": 0.0008899438184514795
+      },
+      "sources": [
+        "evidence/datasheets/nichicon-LLS.pdf"
+      ],
+      "notes": "2G is400V, confirmed part table; pin1 positive sign.",
+      "remaining_application_checks": [
+        "Rectifier pulse ripple and discharge time need calculation."
+      ],
+      "source_archive_sha256": "e1d514023b2186b46b106175242fd61fc8c0e022b8811be88f439cab88f5cc6c",
+      "raw_electrical_types_preserved": true
+    },
+    "c_signal_4u7film": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "nonpolar terminal",
+        "2": "nonpolar terminal"
+      },
+      "ratings": {
+        "capacitance_F": 4.7e-06,
+        "rated_V": 450,
+        "tolerance_fraction": 0.05
+      },
+      "sources": [
+        "https://industrial.panasonic.com/ww/products/pt/film-cap-electroequip/models/ECWFD2W475J"
+      ],
+      "notes": "Manufacturer exact part specification: metallized PP 4.7uF450V5%, lead pitch22.5mm.",
+      "remaining_application_checks": [
+        "Confirm category-temperature voltage derating if hot enclosure."
+      ],
+      "source_archive_sha256": "baf0f93ed1abd08f9d293b61361ea7ec30b820e20bf96aa73c4a578c16570482",
+      "raw_electrical_types_preserved": true
+    },
+    "c_heater_3300u25": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "positive",
+        "2": "negative"
+      },
+      "ratings": {
+        "capacitance_F": 0.0033,
+        "rated_V": 25,
+        "tolerance_fraction": 0.2,
+        "ripple_A_at100kHz105C": 3.82,
+        "impedance_ohm_at100kHz": 0.014,
+        "leakage_A_max_after2min": 0.000825,
+        "ripple_factor_60Hz": 0.75,
+        "ripple_factor_120Hz": 0.8,
+        "ripple_A_100Hz_conservative": 2.8649999999999998
+      },
+      "sources": [
+        "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/EEUFR1E332",
+        "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf"
+      ],
+      "notes": "Exact Panasonic part checked against manufacturer ratings; positive symbol marker on pin1, negative sleeve identifies physical negative terminal. Manufacturer impedance at100kHz is NOT broadband ESR. FR-A datasheet01-Sep-2025 p1 frequency table visually verified. Use lower60Hz coefficient as conservative100Hz bound; waveform harmonics need RMS-weighted assessment.",
+      "remaining_application_checks": [
+        "Rectifier pulse and harmonic RMS ripple require circuit measurement/simulation.",
+        "LLS and FR leakage use different formulas; keep separate."
+      ],
+      "source_archive_sha256": "de630e27f213569a5b540a98631848d4f8dfa320d0e9e11fe439019f7a08d005",
+      "raw_electrical_types_preserved": true
+    },
+    "c_cathode_2200u25": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "positive",
+        "2": "negative"
+      },
+      "ratings": {
+        "capacitance_F": 0.0021999999999999997,
+        "rated_V": 25,
+        "tolerance_fraction": 0.2,
+        "ripple_A_at100kHz105C": 3.63,
+        "impedance_ohm_at100kHz": 0.013,
+        "leakage_A_max_after2min": 0.00055,
+        "ripple_factor_60Hz": 0.75,
+        "ripple_factor_120Hz": 0.8,
+        "ripple_A_100Hz_conservative": 2.7225
+      },
+      "sources": [
+        "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/EEUFR1E222L",
+        "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf"
+      ],
+      "notes": "Exact Panasonic part checked against manufacturer ratings; positive symbol marker on pin1, negative sleeve identifies physical negative terminal. Manufacturer impedance at100kHz is NOT broadband ESR. FR-A datasheet01-Sep-2025 p1 frequency table visually verified. Use lower60Hz coefficient as conservative100Hz bound; waveform harmonics need RMS-weighted assessment.",
+      "remaining_application_checks": [
+        "Rectifier pulse and harmonic RMS ripple require circuit measurement/simulation.",
+        "LLS and FR leakage use different formulas; keep separate."
+      ],
+      "source_archive_sha256": "a610848d11eb30eaa6bec65ff42b3a1279dca84571563a369218ba6dc2b48fa2",
+      "raw_electrical_types_preserved": true
+    },
+    "c_control_470u25": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "positive",
+        "2": "negative"
+      },
+      "ratings": {
+        "capacitance_F": 0.00047,
+        "rated_V": 25,
+        "tolerance_fraction": 0.2,
+        "ripple_A_at100kHz105C": 1.29,
+        "impedance_ohm_at100kHz": 0.043,
+        "leakage_A_max_after2min": 0.00011750000000000001,
+        "ripple_factor_60Hz": 0.65,
+        "ripple_factor_120Hz": 0.75,
+        "ripple_A_100Hz_conservative": 0.8385
+      },
+      "sources": [
+        "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/EEUFR1E471",
+        "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf"
+      ],
+      "notes": "Exact Panasonic part checked against manufacturer ratings; positive symbol marker on pin1, negative sleeve identifies physical negative terminal. Manufacturer impedance at100kHz is NOT broadband ESR. FR-A datasheet01-Sep-2025 p1 frequency table visually verified. Use lower60Hz coefficient as conservative100Hz bound; waveform harmonics need RMS-weighted assessment.",
+      "remaining_application_checks": [
+        "Rectifier pulse and harmonic RMS ripple require circuit measurement/simulation.",
+        "LLS and FR leakage use different formulas; keep separate."
+      ],
+      "source_archive_sha256": "d336b3250d51220fada914f1dc3a797270523e487163add8f7420e173eb35c74",
+      "raw_electrical_types_preserved": true
+    },
+    "c_delay_100u25": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "positive",
+        "2": "negative"
+      },
+      "ratings": {
+        "capacitance_F": 9.999999999999999e-05,
+        "rated_V": 25,
+        "tolerance_fraction": 0.2,
+        "ripple_A_at100kHz105C": 0.455,
+        "impedance_ohm_at100kHz": 0.13,
+        "leakage_A_max_after2min": 2.5e-05,
+        "ripple_factor_60Hz": 0.6,
+        "ripple_factor_120Hz": 0.7,
+        "ripple_A_100Hz_conservative": 0.273
+      },
+      "sources": [
+        "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/EEUFR1E101",
+        "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf"
+      ],
+      "notes": "Exact Panasonic part checked against manufacturer ratings; positive symbol marker on pin1, negative sleeve identifies physical negative terminal. Manufacturer impedance at100kHz is NOT broadband ESR. FR-A datasheet01-Sep-2025 p1 frequency table visually verified. Use lower60Hz coefficient as conservative100Hz bound; waveform harmonics need RMS-weighted assessment. Manufacturer product webpage labels0.13 as mOhm; PDF table and library agree0.13Ohm=130mOhm. This unit discrepancy is explicitly recorded, not silently copied.",
+      "remaining_application_checks": [
+        "Rectifier pulse and harmonic RMS ripple require circuit measurement/simulation.",
+        "LLS and FR leakage use different formulas; keep separate."
+      ],
+      "source_archive_sha256": "030c1008e649e81cd663e6ae78404d9630f05f6d615360a74ac8ee1bd82184b3",
+      "raw_electrical_types_preserved": true
+    },
+    "d_heater_sb560": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "VRRM_V": 60,
+        "IFavg_A": 5,
+        "IFSM_A_8p3ms": 220,
+        "Vf_max_V_at5A": 0.65,
+        "Tj_max_C": 150
+      },
+      "sources": [
+        "evidence/datasheets/SB560.pdf",
+        "https://www.vishay.com/docs/88721/sb520.pdf"
+      ],
+      "notes": "Vishay DO201AD cathode band maps library1C; library2A. Manufacturer SPICE subcircuit uses1ANODE2CATHODE, so SPICE order MUST reverse library pin order.",
+      "remaining_application_checks": [
+        "Derate current by lead temperature and test rectifier charging pulse dissipation."
+      ],
+      "source_archive_sha256": "dc4e241a017ebde2edba5a5c9fe08bb4a2b7b9a419cf61d23e7dd68fc358e6e2",
+      "raw_electrical_types_preserved": true
+    },
+    "d_small_1n4148": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "VR_V": 100,
+        "IFavg_A": 0.2,
+        "PD_W_at25": 0.5
+      },
+      "sources": [
+        "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
+      ],
+      "notes": "onsemi black cathode band; symbol cathode bar is on library pin1. Ammo packaging TA is documented.",
+      "remaining_application_checks": [
+        "Pulse current and diode reverse voltage require instance checking."
+      ],
+      "source_archive_sha256": "3ae6e24b9cdf9b9e0b6e187789d35e3259fb8014a29df71d649a403a953e8767",
+      "raw_electrical_types_preserved": true
+    },
+    "d_aux_1n4007": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "VRRM_V": 1000,
+        "IFavg_A": 1
+      },
+      "sources": [
+        "https://www.onsemi.com/download/data-sheet/pdf/1n4001-d.pdf",
+        "https://item.szlcsc.com/datasheet/1N4007RLG/54584.html"
+      ],
+      "notes": "Rev18 June2024 pp1,2,5: cathode band; exact RLG ordering exists. Library1C2A.",
+      "remaining_application_checks": [
+        "Check charging surge and junction temperature."
+      ],
+      "source_archive_sha256": "e1279d58234a37b050306ac91c2c1d7c8034418dd3f259d6dbd5dbeea85e9237",
+      "raw_electrical_types_preserved": true
+    },
+    "d_hv_uf4007": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "VRRM_V": 1000,
+        "IFavg_A": 1,
+        "IFSM_A_50Hz": 30,
+        "Vf_max_V_at1A": 1.7
+      },
+      "sources": [
+        "https://diotec.com/en/product/UF4007.html"
+      ],
+      "notes": "DIOTEC exact part, DO41, cathode band maps library1C2A.",
+      "remaining_application_checks": [
+        "Check high-voltage reservoir surge."
+      ],
+      "source_archive_sha256": "8eec5264ecd3b9702f08c3d5197fd68aa7b945fe7bd50497d4ec986436684f3b",
+      "raw_electrical_types_preserved": true
+    },
+    "z_ref_6v2": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "Vz_nom_V": 6.2,
+        "Vz_at5mA_min_V": 6.08,
+        "Vz_at5mA_max_V": 6.32,
+        "PD_W_conservative": 0.4
+      },
+      "sources": [
+        "https://assets.nexperia.com/documents/data-sheet/BZX79.pdf",
+        "https://www.nexperia.com/product/BZX79-B6V2"
+      ],
+      "notes": "Nexperia B tolerance table, 5mA test current;400mW conservative ambient rating rather than500mW tie-point limit. Band is cathode.",
+      "remaining_application_checks": [
+        "Zener noise, dynamic resistance and temperature drift require circuit review."
+      ],
+      "source_archive_sha256": "6fd8c407ddc04e23152e8d13e257259e55e3e62436b4f882a151b231ba17dc00",
+      "raw_electrical_types_preserved": true
+    },
+    "z_aux_13v": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "Vz_nom_V": 13,
+        "Vz_at5mA_min_V": 12.7,
+        "Vz_at5mA_max_V": 13.3,
+        "PD_W_conservative": 0.4
+      },
+      "sources": [
+        "https://assets.nexperia.com/documents/data-sheet/BZX79.pdf",
+        "https://www.nexperia.com/product/BZX79-B6V2"
+      ],
+      "notes": "Nexperia B tolerance table, 5mA test current;400mW conservative ambient rating rather than500mW tie-point limit. Band is cathode.",
+      "remaining_application_checks": [
+        "Zener noise, dynamic resistance and temperature drift require circuit review."
+      ],
+      "source_archive_sha256": "df3e0702b2a71b2af91be60072596abdf3a35d03c5a8d62a7b1e457d044f9a7f",
+      "raw_electrical_types_preserved": true
+    },
+    "z_gate_12v": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "Vz_nom_V": 12,
+        "tolerance_fraction": 0.05,
+        "test_current_A": 0.021,
+        "PD_W_lead_cooled": 1
+      },
+      "sources": [
+        "https://www.onsemi.com/download/data-sheet/pdf/1n4736at-d.pdf"
+      ],
+      "notes": "onsemi DO41 cathode band;1W is conditional on lead temperature/length, not an unconditional ambient allowance.",
+      "remaining_application_checks": [
+        "Flyback pulse energy and lead-temperature derating need verification."
+      ],
+      "source_archive_sha256": "f112735bad8c34d5178ac9113da5924e080fab6f74b2558a05a03b23aca9afa3",
+      "raw_electrical_types_preserved": true
+    },
+    "z_flyback_24v": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "Vz_nom_V": 24,
+        "tolerance_fraction": 0.05,
+        "test_current_A": 0.0105,
+        "PD_W_lead_cooled": 1
+      },
+      "sources": [
+        "https://www.onsemi.com/download/data-sheet/pdf/1n4736at-d.pdf"
+      ],
+      "notes": "onsemi DO41 cathode band;1W is conditional on lead temperature/length, not an unconditional ambient allowance.",
+      "remaining_application_checks": [
+        "Flyback pulse energy and lead-temperature derating need verification."
+      ],
+      "source_archive_sha256": "e31236dc0cc1236b70dbea53ced906241e15c9b9dc59a950099b89528cd79553",
+      "raw_electrical_types_preserved": true
+    },
+    "z_timer_5v1": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "cathode band",
+        "2": "anode"
+      },
+      "ratings": {
+        "Vz_nom_V": 5.1,
+        "tolerance_fraction": 0.05,
+        "test_current_A": 0.049,
+        "PD_W_lead_cooled": 1
+      },
+      "sources": [
+        "https://www.onsemi.com/download/data-sheet/pdf/1n4736at-d.pdf"
+      ],
+      "notes": "onsemi DO41 cathode band;1W is conditional on lead temperature/length, not an unconditional ambient allowance.",
+      "remaining_application_checks": [
+        "Flyback pulse energy and lead-temperature derating need verification."
+      ],
+      "source_archive_sha256": "271c38cef761a34e1e031460f3303bceff6face55d634071b503769d495abed4",
+      "raw_electrical_types_preserved": true
+    },
+    "fuse_heater_5a": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "axial lead at first end cap",
+        "2": "axial lead at opposite end cap"
+      },
+      "ratings": {
+        "rated_A": 5,
+        "rated_AC_V": 250,
+        "breaking_A_at250VAC": 1500,
+        "cold_R_ohm_typ": 0.0153,
+        "nominal_melting_I2t_A2s": 66.095
+      },
+      "sources": [
+        "https://www.littelfuse.com/assetdocs/fuse-215-datasheet?assetguid=990f7193-d9a2-48e4-b760-2b43514249cf"
+      ],
+      "notes": "Exact0215005.MXEP/C142755 has factory axial leads; do not fit a holder or substitute cartridge MXP. Library terminal1/2 are nonpolar physical leads.",
+      "remaining_application_checks": [
+        "Coordinate inrush/I2t, lead spacing and temperature."
+      ],
+      "source_archive_sha256": "d3548e54f73de17bf719b0a106a65d75173067a7adc57b406cf02b146fb229fc",
+      "raw_electrical_types_preserved": true
+    },
+    "fuse_holder": {
+      "pin_review": "DOCUMENT_REVIEWED",
+      "physical_pin_functions": {
+        "1": "clip at first end",
+        "2": "clip at other end"
+      },
+      "ratings": {
+        "IEC_rated_V": 250,
+        "IEC_rated_A": 6.3,
+        "IEC_accepted_fuse_W": 1.6,
+        "pin_pitch_mm": 22.6
+      },
+      "sources": [
+        "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-htc-fuse-holder.pdf"
+      ],
+      "notes": "Eaton HTC15M5x20, BK1 is1000-piece packaging. Two isolated clips; electrical connection exists only through inserted fuse.",
+      "remaining_application_checks": [
+        "Only consider for primary/HV cartridge fuses after thermal coordination. Heater now uses factory axial-leaded fuse without holder. Fuse4W at1.5In and holder1.6W acceptance are different test conditions: this comparison identifies missing coordination evidence, not proof of thermal failure at normal current."
+      ],
+      "source_archive_sha256": "0e0176c035613b8639f70744edc0031a92e42b5ca0b97e3831f719f71687d426",
+      "raw_electrical_types_preserved": true
+    },
+    "c_output_film_200u450": {
+      "pin_review": "REJECTED_LIBRARY_GEOMETRY",
+      "sources": [
+        "evidence/datasheets/MKP1848.pdf pp3,4,7"
+      ],
+      "expected_pin_count": 6,
+      "observed_symbol_pin_count": 4,
+      "observed_pad_count": 4,
+      "notes": "Exact200uF ordering row has footnote6, explicitly6 pins. Native library has only4 pins/pads. Do not silently adapt or approve; correction needs manufacturer cell connection map and new verified symbol/footprint.",
+      "raw_electrical_types_preserved": true,
+      "source_archive_sha256": "cd4cfce98b85d805bf4bbfd5909acd8a1eadf0f753679dd527a74a86b8041d46"
+    },
+    "aux_npn_bd139": {
+      "mpn": "BD13910S",
+      "physical_pin_functions": {
+        "1": "emitter",
+        "2": "collector / tab",
+        "3": "base"
+      },
+      "source": "evidence/datasheets/onsemi-bd139.pdf p1,4",
+      "source_url": "https://www.onsemi.com/download/data-sheet/pdf/bd139-d.pdf",
+      "sha256": "18d5d1b4795b415b83cc3dd8c849d03b9ed37c48380cf84278ec2b1ba4f05fa2",
+      "pin_review": "DOCUMENT_REVIEWED",
+      "ratings": {
+        "VCEO_V": 80,
+        "IC_A": 1.5,
+        "PC_W_TA25": 1.25,
+        "PC_W_TC25": 12.5
+      },
+      "application_review": "NOT_QUALIFIED",
+      "raw_electrical_types_preserved": true,
+      "remaining_application_checks": [
+        "Thermal/current and fault acceptance not established"
+      ]
+    },
+    "fault_opto": {
+      "mpn": "LTV-817S-TA1-C",
+      "physical_pin_functions": {
+        "1": "LED anode",
+        "2": "LED cathode",
+        "3": "phototransistor emitter",
+        "4": "phototransistor collector"
+      },
+      "source": "evidence/datasheets/liteon-ltv8x7.pdf printed pp2,5,9-10; manufacturer document archived from distributor mirror, Revision K2010",
+      "source_url": "https://www.dena-de.com/uploads/shop/recursos/LTV-8x7_Series.pdf",
+      "sha256": "d3ce12235039ef68278d106e06733e633f597a9b2acce6efce1386a5f51ea202",
+      "pin_review": "DOCUMENT_REVIEWED",
+      "ratings": {
+        "IF_mA": 50,
+        "VCEO_V": 35,
+        "IC_mA": 50
+      },
+      "application_review": "CTR at the low detector current and fault cutoff timing NOT_QUALIFIED",
+      "raw_electrical_types_preserved": true,
+      "remaining_application_checks": [
+        "Thermal/current and fault acceptance not established"
+      ]
+    }
+  }
+}

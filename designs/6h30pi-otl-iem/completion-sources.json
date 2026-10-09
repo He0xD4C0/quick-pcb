@@ -1,0 +1,40 @@
+{
+  "aux_npn_bd139": {
+    "mpn": "BD13910S",
+    "physical_pin_functions": {
+      "1": "emitter",
+      "2": "collector / tab",
+      "3": "base"
+    },
+    "source": "evidence/datasheets/onsemi-bd139.pdf p1,4",
+    "source_url": "https://www.onsemi.com/download/data-sheet/pdf/bd139-d.pdf",
+    "sha256": "18d5d1b4795b415b83cc3dd8c849d03b9ed37c48380cf84278ec2b1ba4f05fa2",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "ratings": {
+      "VCEO_V": 80,
+      "IC_A": 1.5,
+      "PC_W_TA25": 1.25,
+      "PC_W_TC25": 12.5
+    },
+    "application_review": "NOT_QUALIFIED"
+  },
+  "fault_opto": {
+    "mpn": "LTV-817S-TA1-C",
+    "physical_pin_functions": {
+      "1": "LED anode",
+      "2": "LED cathode",
+      "3": "phototransistor emitter",
+      "4": "phototransistor collector"
+    },
+    "source": "evidence/datasheets/liteon-ltv8x7.pdf printed pp2,5,9-10; manufacturer document archived from distributor mirror, Revision K2010",
+    "source_url": "https://www.dena-de.com/uploads/shop/recursos/LTV-8x7_Series.pdf",
+    "sha256": "d3ce12235039ef68278d106e06733e633f597a9b2acce6efce1386a5f51ea202",
+    "pin_review": "DOCUMENT_REVIEWED",
+    "ratings": {
+      "IF_mA": 50,
+      "VCEO_V": 35,
+      "IC_mA": 50
+    },
+    "application_review": "CTR at the low detector current and fault cutoff timing NOT_QUALIFIED"
+  }
+}

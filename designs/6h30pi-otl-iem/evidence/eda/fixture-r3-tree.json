@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "result": {
+    "itemType": "Project",
+    "uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+    "friendlyName": "6H30Pi-Rebuild",
+    "name": "/6H30Pi-Rebuild",
+    "teamUuid": "/Users/he0xd4c0/Documents/LCEDA-Pro/projects",
+    "description": "",
+    "data": [
+      {
+        "itemType": "Schematic",
+        "uuid": "7ee135dbeb644024aa2846585bcb3526",
+        "name": "6H30Pi-Rebuild",
+        "page": [
+          {
+            "itemType": "Schematic Page",
+            "uuid": "4adcb1231dfd4721aacd4c40e282ac85",
+            "name": "OneSheet",
+            "parentSchematicUuid": "7ee135dbeb644024aa2846585bcb3526",
+            "showTitleBlock": true,
+            "titleBlockData": {}
+          }
+        ],
+        "parentProjectUuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "parentBoardName": ""
+      },
+      {
+        "itemType": "Schematic",
+        "uuid": "ca0d7b45dbe77198",
+        "name": "6H30Pi-Library-Fixture",
+        "page": [
+          {
+            "itemType": "Schematic Page",
+            "uuid": "4f8b3ad8b08db887",
+            "name": "OneSheet",
+            "parentSchematicUuid": "ca0d7b45dbe77198",
+            "showTitleBlock": true,
+            "titleBlockData": {}
+          }
+        ],
+        "parentProjectUuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "parentBoardName": ""
+      },
+      {
+        "itemType": "Schematic",
+        "uuid": "a0fcf983b189bba3",
+        "name": "6H30Pi-Library-Fixture_1",
+        "page": [
+          {
+            "itemType": "Schematic Page",
+            "uuid": "21b1b9155caa55b7",
+            "name": "OneSheet",
+            "parentSchematicUuid": "a0fcf983b189bba3",
+            "showTitleBlock": true,
+            "titleBlockData": {}
+          }
+        ],
+        "parentProjectUuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "parentBoardName": ""
+      },
+      {
+        "itemType": "Schematic",
+        "uuid": "262f0c0f03668f80",
+        "name": "6H30Pi-Library-Fixture-R3",
+        "page": [
+          {
+            "itemType": "Schematic Page",
+            "uuid": "eb68436eb76ac70e",
+            "name": "OneSheet",
+            "parentSchematicUuid": "262f0c0f03668f80",
+            "showTitleBlock": true,
+            "titleBlockData": {}
+          }
+        ],
+        "parentProjectUuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "parentBoardName": ""
+      }
+    ]
+  }
+}

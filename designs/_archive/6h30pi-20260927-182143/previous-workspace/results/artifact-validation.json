@@ -1,0 +1,10 @@
+{
+  "static_ok": true,
+  "components": 165,
+  "nets": 79,
+  "connected_pins": 377,
+  "sheets": 10,
+  "errors": [],
+  "application_drc": "SEE_NATIVE_FULL_VALIDATION_JSON",
+  "note": "No footprints assigned, by design for schematic-only stage; a strict native PCB-conversion rule may report missing footprints. No fake footprint is used to suppress this."
+}

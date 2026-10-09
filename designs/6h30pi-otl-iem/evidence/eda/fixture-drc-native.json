@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "type": "fatalError",
+      "count": 3
+    },
+    {
+      "type": "error",
+      "count": 1
+    },
+    {
+      "type": "warn",
+      "count": 1
+    }
+  ]
+}

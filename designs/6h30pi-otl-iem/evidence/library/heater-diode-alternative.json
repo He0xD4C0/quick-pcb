@@ -1,0 +1,115 @@
+{
+  "captured_at": "2026-09-27T18:47:21.709264+08:00",
+  "window_id": "69fb62cd-2bdb-4a4f-b6cc-2bc96cb91053",
+  "rows": [
+    {
+      "query": "SB560-E3/54",
+      "items": [
+        {
+          "uuid": "71bdd48983524a1d95327c3c8ac5741b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+            "secondaryClassificationUuid": "701a3253d1444cc2ab74551630aa0312"
+          },
+          "ordinal": 0,
+          "name": "SB560-E3/54",
+          "symbolName": "SB560-E3/54",
+          "symbolUuid": "06603494a1004de28b1cd8aa27e029a0",
+          "footprintName": "DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD",
+          "footprintUuid": "048dfdccd2dc47fe88cc5be7f4e17910",
+          "model3DName": "DO-201AD_D5.3-L8.4-P13.6",
+          "model3DUuid": "f76203e12ec84be0b89e1bb5efd9c700",
+          "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230107/92EF4A3C15DBD814D9632F178E96CD91.jpg",
+          "description": "二极管配置:1个独立式;正向压降(Vf):650mV@5A;直流反向耐压(Vr):60V;整流电流:5A;",
+          "manufacturer": "VISHAY(威世)",
+          "manufacturerId": "SB560-E3/54",
+          "supplier": "LCSC",
+          "supplierId": "C506560",
+          "otherProperty": {
+            "LCSC Part Name": "电压:60V 电流:5A",
+            "Supplier Part": "C506560",
+            "Manufacturer": "VISHAY(威世)",
+            "Manufacturer Part": "SB560-E3/54",
+            "Supplier Footprint": "DO-201AD",
+            "JLCPCB Part Class": "Extended Part",
+            "Datasheet": "https://item.szlcsc.com/datasheet/SB560-E3%252F54/519725.html",
+            "Supplier": "LCSC",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "06603494a1004de28b1cd8aa27e029a0",
+            "Designator": "D?",
+            "Footprint": "048dfdccd2dc47fe88cc5be7f4e17910",
+            "3D Model": "f76203e12ec84be0b89e1bb5efd9c700",
+            "3D Model Title": "DO-201AD_D5.3-L8.4-P13.6",
+            "3D Model Transform": "582.676,208.5295,0,0,0,0,0,0,-137.795",
+            "Diode Configuration": "1个独立式",
+            "Voltage - Forward(Vf@If)": "650mV@5A",
+            "Voltage - DC Reverse(Vr)": "60V",
+            "Current - Rectified": "5A",
+            "Reverse Leakage Current (Ir)": "500uA@60V",
+            "Operating Junction Temperature Range": "-65℃~+150℃",
+            "Non-Repetitive Peak Forward Surge Current": "220A",
+            "Name": "={Manufacturer Part}"
+          }
+        }
+      ]
+    },
+    {
+      "query": "SB540-E3/54",
+      "items": [
+        {
+          "uuid": "bee0c004f9204727878776de908f63cd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "classification": {
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "libraryType": "3",
+            "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+            "secondaryClassificationUuid": "701a3253d1444cc2ab74551630aa0312"
+          },
+          "ordinal": 0,
+          "name": "SB540-E3/54",
+          "symbolName": "SB540-E3/54",
+          "symbolUuid": "bfa349c18f014ac9b51f5b9f0399c672",
+          "footprintName": "DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD",
+          "footprintUuid": "048dfdccd2dc47fe88cc5be7f4e17910",
+          "model3DName": "DO-201AD_D5.3-L8.4-P13.6",
+          "model3DUuid": "f76203e12ec84be0b89e1bb5efd9c700",
+          "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230103/E23D80AB9EFCCFE6878757E2EE4C1EEF.jpg",
+          "description": "正向压降(Vf):480mV@5A;直流反向耐压(Vr):40V;整流电流:5A;",
+          "manufacturer": "VISHAY(威世)",
+          "manufacturerId": "SB540-E3/54",
+          "supplier": "LCSC",
+          "supplierId": "C222506",
+          "otherProperty": {
+            "LCSC Part Name": "电压:40V 电流:5A",
+            "Supplier Part": "C222506",
+            "Manufacturer": "VISHAY(威世)",
+            "Manufacturer Part": "SB540-E3/54",
+            "Supplier Footprint": "DO-201AD",
+            "JLCPCB Part Class": "Extended Part",
+            "Datasheet": "https://item.szlcsc.com/datasheet/SB540-E3%252F54/222804.html",
+            "Supplier": "LCSC",
+            "Add into BOM": "yes",
+            "Convert to PCB": "yes",
+            "Symbol": "bfa349c18f014ac9b51f5b9f0399c672",
+            "Designator": "D?",
+            "Footprint": "048dfdccd2dc47fe88cc5be7f4e17910",
+            "3D Model": "f76203e12ec84be0b89e1bb5efd9c700",
+            "3D Model Title": "DO-201AD_D5.3-L8.4-P13.6",
+            "3D Model Transform": "582.676,208.5295,0,0,0,0,0,0,-137.795",
+            "Voltage - Forward(Vf@If)": "480mV@5A",
+            "Voltage - DC Reverse(Vr)": "40V",
+            "Current - Rectified": "5A",
+            "Reverse Leakage Current (Ir)": "500uA@40V",
+            "Operating Junction Temperature Range": "-65℃~+150℃",
+            "Non-Repetitive Peak Forward Surge Current": "220A",
+            "Name": "={Manufacturer Part}"
+          }
+        }
+      ]
+    }
+  ]
+}

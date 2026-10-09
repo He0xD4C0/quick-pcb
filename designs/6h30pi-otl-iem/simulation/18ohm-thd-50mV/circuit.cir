@@ -1,0 +1,36 @@
+6H30Pi candidate fresh topology / AUDIO ONLY
+.include "/Users/he0xd4c0/CodeBank/quick-pcb/designs/6h30pi-otl-iem/models/6h30pi_eb.lib"
+Vb BPLUS 0 160
+Vin IN_L 0 AC 1 SIN(0 0.16868518485533712 1000)
+Rmode IN_L SEL_L 1m
+Rpotcontact SEL_L WIP_L 1m
+Rpottrack WIP_L 0 10k
+Rload HP_L 0 18
+R1 IN_L LOW_L 8200.0
+R2 LOW_L 0 1000.0
+XV1A L_PA L_GU L_MID H30
+XV1B L_MID L_GL L_K H30
+C1 WIP_L L_GI 4.7u
+R5 L_GI L_GU 100.0
+R6 BPLUS L_BIAS 100000.0
+R7 L_BIAS 0 100000.0
+C2 L_BIAS 0 220u
+R8 L_BIAS L_GI 100000.0
+R9 BPLUS L_PA 127.0
+C3 L_PA L_GB 4.7u
+R10 L_GB L_GL 100.0
+R11 L_GB 0 100000.0
+R12 L_K 0 68.0
+C4 L_K 0 2200u
+C5 L_MID L_OUT 1000u
+R13 L_MID 0 100000.0
+R14 L_OUT 0 100000.0
+R15 L_OUT 0 100000.0
+Rcontact L_OUT HP_L .12
+.control
+set wr_singlescale
+tran 1u 50m 30m
+wrdata tran.dat v(HP_L)
+quit
+.endc
+.end

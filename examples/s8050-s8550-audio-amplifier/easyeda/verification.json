@@ -1,0 +1,399 @@
+{
+  "format": "amplifier-verification/v0.2",
+  "source": {
+    "project_uuid": "b86670ccc7f1377832ce3be0dae93ddeebe7375f9a03ddf53c5983a6aa831dca",
+    "project_name": "/S8050-S8550-Audio-Amplifier",
+    "schematic_uuid": "c5d13afd5e07149a",
+    "schematic_name": "S8050_S8550_Audio_Amplifier",
+    "page_uuid": "8a99692c56d721d3",
+    "page_name": "01_Audio_Amplifier",
+    "document_uuid": "8a99692c56d721d3",
+    "document_type": 1,
+    "tab_id": "8a99692c56d721d3@b86670ccc7f1377832ce3be0dae93ddeebe7375f9a03ddf53c5983a6aa831dca",
+    "window_id": "95e18243-21cb-449a-953a-fe8463ef575e"
+  },
+  "revision": "sha256:9478343dba3362c3379a963d1750f3ebc887495253e67f8f2f7dc74a34c6096a",
+  "core_errors": [],
+  "core_warnings": [],
+  "topology": {
+    "ok": true,
+    "missing_components": [],
+    "extra_components": [],
+    "missing": {},
+    "extra": {},
+    "changed": [],
+    "generated_net_map": {
+      "N_AUTO_1ECB3C82819F": "$1N189",
+      "N_AUTO_0835FB31AEFA": "$1N209",
+      "N_AUTO_860AE4F638A4": "$1N191",
+      "N_AUTO_9060B2F33CB4": "$1N192",
+      "N_AUTO_86852BDEE65D": "$1N193",
+      "N_AUTO_3070119DC05F": "$1N194",
+      "N_AUTO_CF99455FBBE5": "$1N195",
+      "N_AUTO_E911D3A1A5E5": "$1N208",
+      "N_AUTO_FAB28BCE7755": "$1N197"
+    },
+    "counts": {
+      "expected_components": 22,
+      "actual_components": 22,
+      "expected_nets": 14,
+      "actual_nets": 14,
+      "expected_nodes": 47,
+      "actual_nodes": 47
+    },
+    "context_revision": "sha256:3d21c7eee178ccef74857f624bc974ba3d4e50257852ce35ef8855d435368021",
+    "revision": "sha256:9478343dba3362c3379a963d1750f3ebc887495253e67f8f2f7dc74a34c6096a"
+  },
+  "strict_drc": {
+    "ok": true,
+    "format": "schematic/easyeda-v0.1",
+    "source": {
+      "project_uuid": "b86670ccc7f1377832ce3be0dae93ddeebe7375f9a03ddf53c5983a6aa831dca",
+      "project_name": "/S8050-S8550-Audio-Amplifier",
+      "schematic_uuid": "c5d13afd5e07149a",
+      "schematic_name": "S8050_S8550_Audio_Amplifier",
+      "page_uuid": "8a99692c56d721d3",
+      "page_name": "01_Audio_Amplifier",
+      "document_uuid": "8a99692c56d721d3",
+      "document_type": 1,
+      "tab_id": "8a99692c56d721d3@b86670ccc7f1377832ce3be0dae93ddeebe7375f9a03ddf53c5983a6aa831dca",
+      "window_id": "95e18243-21cb-449a-953a-fe8463ef575e"
+    },
+    "context_revision": "sha256:3d21c7eee178ccef74857f624bc974ba3d4e50257852ce35ef8855d435368021",
+    "revision": "sha256:9478343dba3362c3379a963d1750f3ebc887495253e67f8f2f7dc74a34c6096a",
+    "passed": true,
+    "total_count": 0,
+    "matched_count": 0,
+    "violations": []
+  },
+  "geometry": {
+    "ok": true,
+    "visible_endpoint_count": 47,
+    "expected_endpoint_count": 47,
+    "continuous_groups_by_net": {
+      "VCC_9V": 1,
+      "GND": 4,
+      "AUDIO_IN": 1,
+      "N_AUTO_CF99455FBBE5": 1,
+      "N_AUTO_86852BDEE65D": 1,
+      "N_AUTO_E911D3A1A5E5": 1,
+      "N_AUTO_1ECB3C82819F": 1,
+      "N_AUTO_860AE4F638A4": 1,
+      "N_AUTO_3070119DC05F": 1,
+      "N_AUTO_0835FB31AEFA": 1,
+      "N_AUTO_FAB28BCE7755": 1,
+      "OUT_INT": 2,
+      "SPEAKER_OUT": 1,
+      "N_AUTO_9060B2F33CB4": 1
+    },
+    "issues": []
+  },
+  "wire_count": 13,
+  "net_port_count": 3,
+  "ground_flag_count": 4,
+  "reopen_verified": true,
+  "value_annotations": [
+    {
+      "id": "2df137da3bcfad34",
+      "content": "2.2uF / 50V",
+      "x": 440,
+      "y": 548,
+      "font_size": 6
+    },
+    {
+      "id": "d6e46f4503a1a7e2",
+      "content": "470uF / 16V",
+      "x": 600,
+      "y": 610,
+      "font_size": 6
+    },
+    {
+      "id": "6a90e1c870211923",
+      "content": "470uF / 16V",
+      "x": 800,
+      "y": 458,
+      "font_size": 6
+    },
+    {
+      "id": "7406f031681001e1",
+      "content": "1000uF / 16V",
+      "x": 755,
+      "y": 485,
+      "font_size": 6
+    },
+    {
+      "id": "bbe575e88b1f01a3",
+      "content": "100nF / 50V",
+      "x": 475,
+      "y": 480,
+      "font_size": 6
+    },
+    {
+      "id": "89ff0648bf765bed",
+      "content": "100nF / 50V",
+      "x": 800,
+      "y": 551,
+      "font_size": 6
+    },
+    {
+      "id": "6ef0f6e2ca678095",
+      "content": "4.7k",
+      "x": 500,
+      "y": 530,
+      "font_size": 6
+    },
+    {
+      "id": "b7ec4957231e2c02",
+      "content": "27k",
+      "x": 540,
+      "y": 550,
+      "font_size": 6
+    },
+    {
+      "id": "a1169179c451c3ba",
+      "content": "10k",
+      "x": 490,
+      "y": 552,
+      "font_size": 6
+    },
+    {
+      "id": "1a1193d2f612a5c9",
+      "content": "100R",
+      "x": 554,
+      "y": 570,
+      "font_size": 6
+    },
+    {
+      "id": "a67a1138e374347b",
+      "content": "1k",
+      "x": 595,
+      "y": 400,
+      "font_size": 6
+    },
+    {
+      "id": "892204ab6f3ecfa9",
+      "content": "1R / 0.5W",
+      "x": 725,
+      "y": 468,
+      "font_size": 6
+    },
+    {
+      "id": "28ff49cdaa168396",
+      "content": "1R / 0.5W",
+      "x": 660,
+      "y": 485,
+      "font_size": 6
+    },
+    {
+      "id": "c5e234beb72b3f90",
+      "content": "10R / 0.5W",
+      "x": 800,
+      "y": 514,
+      "font_size": 6
+    }
+  ],
+  "zip_members": [
+    "IMAGE/",
+    "IMAGE/8a99692c56d721d3.webp",
+    "project2.json",
+    "S8050-S8550-Audio-Amplifier.epru"
+  ],
+  "archive_sha256": "2a1a3faf98ebe9edc42994e8bdade9b9416d0a3ff9cc57ec436ed5b0b9539bf9",
+  "zip_integrity": true,
+  "saved": true,
+  "reopen_evidence": {
+    "format": "amplifier-verification/v0.2",
+    "source": {
+      "project_uuid": "bc0e89ac9f38dcbfe86d7a9fbc6a25071ec5fb50ccaba629311675beca27bbf3",
+      "project_name": "/S8050-S8550-Audio-Amplifier-Verified-20260930",
+      "schematic_uuid": "c5d13afd5e07149a",
+      "schematic_name": "S8050_S8550_Audio_Amplifier",
+      "page_uuid": "8a99692c56d721d3",
+      "page_name": "01_Audio_Amplifier",
+      "document_uuid": "8a99692c56d721d3",
+      "document_type": 1,
+      "tab_id": "8a99692c56d721d3@bc0e89ac9f38dcbfe86d7a9fbc6a25071ec5fb50ccaba629311675beca27bbf3",
+      "window_id": "95e18243-21cb-449a-953a-fe8463ef575e"
+    },
+    "revision": "sha256:0a012be087b8b43a47a5b07633c2b951349aa407ae7a2a024298f2061755ed1e",
+    "core_errors": [],
+    "core_warnings": [],
+    "topology": {
+      "ok": true,
+      "missing_components": [],
+      "extra_components": [],
+      "missing": {},
+      "extra": {},
+      "changed": [],
+      "generated_net_map": {
+        "N_AUTO_1ECB3C82819F": "$1N189",
+        "N_AUTO_0835FB31AEFA": "$1N209",
+        "N_AUTO_860AE4F638A4": "$1N191",
+        "N_AUTO_9060B2F33CB4": "$1N192",
+        "N_AUTO_86852BDEE65D": "$1N193",
+        "N_AUTO_3070119DC05F": "$1N194",
+        "N_AUTO_CF99455FBBE5": "$1N195",
+        "N_AUTO_E911D3A1A5E5": "$1N208",
+        "N_AUTO_FAB28BCE7755": "$1N197"
+      },
+      "counts": {
+        "expected_components": 22,
+        "actual_components": 22,
+        "expected_nets": 14,
+        "actual_nets": 14,
+        "expected_nodes": 47,
+        "actual_nodes": 47
+      },
+      "context_revision": "sha256:a569a8145a453f21fbc8cc037048d13033f33800ef28d11a3784bc8e9bcb1017",
+      "revision": "sha256:0a012be087b8b43a47a5b07633c2b951349aa407ae7a2a024298f2061755ed1e"
+    },
+    "strict_drc": {
+      "ok": true,
+      "format": "schematic/easyeda-v0.1",
+      "source": {
+        "project_uuid": "bc0e89ac9f38dcbfe86d7a9fbc6a25071ec5fb50ccaba629311675beca27bbf3",
+        "project_name": "/S8050-S8550-Audio-Amplifier-Verified-20260930",
+        "schematic_uuid": "c5d13afd5e07149a",
+        "schematic_name": "S8050_S8550_Audio_Amplifier",
+        "page_uuid": "8a99692c56d721d3",
+        "page_name": "01_Audio_Amplifier",
+        "document_uuid": "8a99692c56d721d3",
+        "document_type": 1,
+        "tab_id": "8a99692c56d721d3@bc0e89ac9f38dcbfe86d7a9fbc6a25071ec5fb50ccaba629311675beca27bbf3",
+        "window_id": "95e18243-21cb-449a-953a-fe8463ef575e"
+      },
+      "context_revision": "sha256:a569a8145a453f21fbc8cc037048d13033f33800ef28d11a3784bc8e9bcb1017",
+      "revision": "sha256:0a012be087b8b43a47a5b07633c2b951349aa407ae7a2a024298f2061755ed1e",
+      "passed": true,
+      "total_count": 0,
+      "matched_count": 0,
+      "violations": []
+    },
+    "geometry": {
+      "ok": true,
+      "visible_endpoint_count": 47,
+      "expected_endpoint_count": 47,
+      "continuous_groups_by_net": {
+        "VCC_9V": 1,
+        "GND": 4,
+        "AUDIO_IN": 1,
+        "N_AUTO_CF99455FBBE5": 1,
+        "N_AUTO_86852BDEE65D": 1,
+        "N_AUTO_E911D3A1A5E5": 1,
+        "N_AUTO_1ECB3C82819F": 1,
+        "N_AUTO_860AE4F638A4": 1,
+        "N_AUTO_3070119DC05F": 1,
+        "N_AUTO_0835FB31AEFA": 1,
+        "N_AUTO_FAB28BCE7755": 1,
+        "OUT_INT": 2,
+        "SPEAKER_OUT": 1,
+        "N_AUTO_9060B2F33CB4": 1
+      },
+      "issues": []
+    },
+    "wire_count": 13,
+    "net_port_count": 3,
+    "ground_flag_count": 4,
+    "reopen_verified": true,
+    "value_annotations": [
+      {
+        "id": "2df137da3bcfad34",
+        "content": "2.2uF / 50V",
+        "x": 440,
+        "y": 548,
+        "font_size": 6
+      },
+      {
+        "id": "d6e46f4503a1a7e2",
+        "content": "470uF / 16V",
+        "x": 600,
+        "y": 610,
+        "font_size": 6
+      },
+      {
+        "id": "6a90e1c870211923",
+        "content": "470uF / 16V",
+        "x": 800,
+        "y": 458,
+        "font_size": 6
+      },
+      {
+        "id": "7406f031681001e1",
+        "content": "1000uF / 16V",
+        "x": 755,
+        "y": 485,
+        "font_size": 6
+      },
+      {
+        "id": "bbe575e88b1f01a3",
+        "content": "100nF / 50V",
+        "x": 475,
+        "y": 480,
+        "font_size": 6
+      },
+      {
+        "id": "89ff0648bf765bed",
+        "content": "100nF / 50V",
+        "x": 800,
+        "y": 551,
+        "font_size": 6
+      },
+      {
+        "id": "6ef0f6e2ca678095",
+        "content": "4.7k",
+        "x": 500,
+        "y": 530,
+        "font_size": 6
+      },
+      {
+        "id": "b7ec4957231e2c02",
+        "content": "27k",
+        "x": 540,
+        "y": 550,
+        "font_size": 6
+      },
+      {
+        "id": "a1169179c451c3ba",
+        "content": "10k",
+        "x": 490,
+        "y": 552,
+        "font_size": 6
+      },
+      {
+        "id": "1a1193d2f612a5c9",
+        "content": "100R",
+        "x": 554,
+        "y": 570,
+        "font_size": 6
+      },
+      {
+        "id": "a67a1138e374347b",
+        "content": "1k",
+        "x": 595,
+        "y": 400,
+        "font_size": 6
+      },
+      {
+        "id": "892204ab6f3ecfa9",
+        "content": "1R / 0.5W",
+        "x": 725,
+        "y": 468,
+        "font_size": 6
+      },
+      {
+        "id": "28ff49cdaa168396",
+        "content": "1R / 0.5W",
+        "x": 660,
+        "y": 485,
+        "font_size": 6
+      },
+      {
+        "id": "c5e234beb72b3f90",
+        "content": "10R / 0.5W",
+        "x": 800,
+        "y": 514,
+        "font_size": 6
+      }
+    ]
+  }
+}

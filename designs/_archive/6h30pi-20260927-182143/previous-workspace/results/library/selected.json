@@ -1,0 +1,1155 @@
+{
+  "R": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "011ff3b07f2048d8b31daa860bb90b50",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 2,
+      "name": "电阻_Resistor",
+      "type": 2,
+      "description": "",
+      "updateTimestamp": 1763369043895
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "1",
+        "type": "Passive",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "f854782db0d8f3d5"
+      },
+      {
+        "number": "2",
+        "name": "2",
+        "type": "Passive",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "f854782db0d8f3d5"
+      }
+    ]
+  },
+  "C": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "417d4461e9034721a0381da76f854e80",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 0,
+      "name": "电容_Capacitor",
+      "type": 2,
+      "description": "",
+      "updateTimestamp": 1763368932600
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "1",
+        "type": "Passive",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "bacd454d85c880b8"
+      },
+      {
+        "number": "2",
+        "name": "2",
+        "type": "Passive",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "bacd454d85c880b8"
+      }
+    ]
+  },
+  "CP": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "54258c74f21a4883aab4aef48cac6472",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 1,
+      "name": "CAPACITOR_THT:CP_RADIAL_D8.0MM_P2.50MM",
+      "type": 2,
+      "description": "",
+      "updateTimestamp": 1726259352000
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "2",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "CAPACITOR_THT:CP_RADIAL_D8.0MM_P2.50MM.1"
+      },
+      {
+        "number": "1",
+        "name": "1",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "CAPACITOR_THT:CP_RADIAL_D8.0MM_P2.50MM.1"
+      }
+    ]
+  },
+  "F": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "445fd9a658964814aae27cc2d15314f8",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 0,
+      "name": "FUSE",
+      "type": 2,
+      "description": "",
+      "updateTimestamp": 1744300688000
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "2",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "FUSE.1"
+      },
+      {
+        "number": "1",
+        "name": "1",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "FUSE.1"
+      }
+    ]
+  },
+  "NET": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "88f801fa73a24926a78b98f126429f07",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 0,
+      "name": "Netport-BI",
+      "type": 19,
+      "description": "Netport-BI",
+      "updateTimestamp": 1758699046990
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "BI",
+        "type": "BI",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "part": "pid8a0e77bacb214e"
+      }
+    ]
+  },
+  "NPN": {
+    "kind": "device",
+    "item": {
+      "uuid": "9ba32d5710244760b38af4356a6731ec",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "c6f916a2506748fb9a4066694987ec90",
+        "secondaryClassificationUuid": "e4e5c04c17b24869a08c53244aeb77d7"
+      },
+      "ordinal": 4,
+      "name": "MPSA42_C719821",
+      "symbolName": "MPSA42_C719821",
+      "symbolUuid": "7c97b52dc4074063a847478cf53ec12b",
+      "footprintName": "TO-92-3_L5.1-W4.1-P1.27-L",
+      "footprintUuid": "50bdac1daec44ae392edab026332bc0f",
+      "model3DName": "TO-92-3_L4.9-W3.7-P1.27-L",
+      "model3DUuid": "db569d051dcd4484acf2f9e50678fca3",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230104/06735DD039384688F5796033DEA1CE70.jpg",
+      "description": "晶体管类型:NPN;集电极电流(Ic):500mA;集射极击穿电压(Vceo):300V;耗散功率(Pd):625mW;直流电流增益(hFE):25;",
+      "manufacturer": "onsemi(安森美)",
+      "manufacturerId": "MPSA42",
+      "supplier": "LCSC",
+      "supplierId": "C719821",
+      "otherProperty": {
+        "LCSC Part Name": "双极小信号晶体管 NPN 电流:500mA 电压:300V",
+        "Supplier Part": "C719821",
+        "Manufacturer": "onsemi(安森美)",
+        "Manufacturer Part": "MPSA42",
+        "Supplier Footprint": "TO-92",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/MPSA42/762680.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "7c97b52dc4074063a847478cf53ec12b",
+        "Designator": "Q?",
+        "Footprint": "50bdac1daec44ae392edab026332bc0f",
+        "3D Model": "db569d051dcd4484acf2f9e50678fca3",
+        "3D Model Title": "TO-92-3_L4.9-W3.7-P1.27-L",
+        "3D Model Transform": "180.7872,141.4455,0,0,0,0,0,19.252,-196.85",
+        "type": "NPN",
+        "Current - Collector(Ic)": "500mA",
+        "Collector - Emitter Voltage VCEO": "300V",
+        "Pd - Power Dissipation": "625mW",
+        "DC Current Gain": "25",
+        "Transition frequency(fT)": "50MHz",
+        "Current - Collector Cutoff": "100nA",
+        "Vce Saturation(VCE(sat))": "500mV",
+        "Operating Temperature": "-55℃~+150℃",
+        "Emitter-Base Voltage(Vebo)": "6V",
+        "Number": "1个NPN",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "B",
+        "type": "IN",
+        "x": -10,
+        "y": 0,
+        "rotation": 0,
+        "part": "MPSA42_C719821.1"
+      },
+      {
+        "number": "3",
+        "name": "C",
+        "type": "IN",
+        "x": 10,
+        "y": -20,
+        "rotation": 270,
+        "part": "MPSA42_C719821.1"
+      },
+      {
+        "number": "1",
+        "name": "E",
+        "type": "IN",
+        "x": 10,
+        "y": 20,
+        "rotation": 90,
+        "part": "MPSA42_C719821.1"
+      }
+    ]
+  },
+  "MOS": {
+    "kind": "device",
+    "item": {
+      "uuid": "30870cab5ca6410cb3f990874815799f",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "c6f916a2506748fb9a4066694987ec90",
+        "secondaryClassificationUuid": "3ddbca48beeb46868e99c76c8f18abc0"
+      },
+      "ordinal": 0,
+      "name": "IRF820PBF",
+      "symbolName": "IRF820PBF_C727673",
+      "symbolUuid": "a0da9bc273d042e78d0572b27bf1a5e7",
+      "footprintName": "TO-220-3_L10.0-W4.5-P2.54-L",
+      "footprintUuid": "98be2a8fee534be798c907763165fb1d",
+      "model3DName": "TO-220-3_L10.0-W4.5-P2.54-L",
+      "model3DUuid": "b3c9e38e4428458f8b925050989b538f",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230104/3721659C1929DB93FD7BF9E63F9B72CA.jpg",
+      "description": "数量:1个N沟道;漏源电压(Vdss):500V;连续漏极电流(Id):1.6A;导通电阻(RDS(on)):3Ω@10V;耗散功率(Pd):50W;阈值电压(Vgs(th)):4V;",
+      "manufacturer": "VISHAY(威世)",
+      "manufacturerId": "IRF820PBF",
+      "supplier": "LCSC",
+      "supplierId": "C727673",
+      "otherProperty": {
+        "LCSC Part Name": "1个N沟道 耐压:500V 电流:1.6A",
+        "Supplier Part": "C727673",
+        "Manufacturer": "VISHAY(威世)",
+        "Manufacturer Part": "IRF820PBF",
+        "Supplier Footprint": "TO-220AB",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/IRF820PBF/774919.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "a0da9bc273d042e78d0572b27bf1a5e7",
+        "Designator": "Q?",
+        "Footprint": "98be2a8fee534be798c907763165fb1d",
+        "3D Model": "b3c9e38e4428458f8b925050989b538f",
+        "3D Model Title": "TO-220-3_L10.0-W4.5-P2.54-L",
+        "3D Model Transform": "401.574,178.58232,0,0,0,0,0,25.59,-196.85",
+        "Number": "1个N沟道",
+        "Drain to Source Voltage": "500V",
+        "Current - Continuous Drain(Id)": "1.6A",
+        "RDS(on)": "3Ω@10V",
+        "Pd - Power Dissipation": "50W",
+        "Gate Threshold Voltage (Vgs(th))": "4V",
+        "Gate Charge(Qg)": "24nC@10V",
+        "Input Capacitance(Ciss)": "360pF",
+        "Reverse Transfer Capacitance (Crss@Vds)": "37pF",
+        "Operating Temperature": "-55℃~+150℃",
+        "Configuration": "-",
+        "Type": "N沟道",
+        "Output Capacitance(Coss)": "92pF",
+        "Vgs": "±20V",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "D",
+        "type": "Undefined",
+        "x": 0,
+        "y": -20,
+        "rotation": 270,
+        "part": "IRF820PBF_C727673.1"
+      },
+      {
+        "number": "1",
+        "name": "G",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "IRF820PBF_C727673.1"
+      },
+      {
+        "number": "3",
+        "name": "S",
+        "type": "Undefined",
+        "x": 0,
+        "y": 20,
+        "rotation": 90,
+        "part": "IRF820PBF_C727673.1"
+      }
+    ]
+  },
+  "LDO": {
+    "kind": "device",
+    "item": {
+      "uuid": "714229a4a77345609f134d111cb5f8b9",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "4bfe04d256ab4d808d19df92d502e9d6",
+        "secondaryClassificationUuid": "ac1d6a215c684562b9dfb1aba1125800"
+      },
+      "ordinal": 0,
+      "name": "LM1084IT-ADJ/NOPB",
+      "symbolName": "LM1084IT-ADJ/NOPB",
+      "symbolUuid": "0f3f87e471ae4da090dd22424f98a784",
+      "footprintName": "TO-220-3_L10.0-W4.5-P2.54-L",
+      "footprintUuid": "98be2a8fee534be798c907763165fb1d",
+      "model3DName": "TO-220-3_L10.0-W4.5-P2.54-L",
+      "model3DUuid": "b3c9e38e4428458f8b925050989b538f",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20221228/1C3971D627FC96A0F28A594FE929F57F.jpg",
+      "description": "输出极性:正极;工作电压:29V;输出电压:1.2V~15V;输出电流:5A;电源纹波抑制比(PSRR):75dB@(120Hz);输出类型:可调;",
+      "manufacturer": "TI(德州仪器)",
+      "manufacturerId": "LM1084IT-ADJ/NOPB",
+      "supplier": "LCSC",
+      "supplierId": "C9720",
+      "otherProperty": {
+        "LCSC Part Name": "1.2V~15V 5A 29V",
+        "Supplier Part": "C9720",
+        "Manufacturer": "TI(德州仪器)",
+        "Manufacturer Part": "LM1084IT-ADJ/NOPB",
+        "Supplier Footprint": "TO-220",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://www.ti.com/cn/lit/ds/symlink/lm1084.pdf",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "0f3f87e471ae4da090dd22424f98a784",
+        "Designator": "U?",
+        "Footprint": "98be2a8fee534be798c907763165fb1d",
+        "3D Model": "b3c9e38e4428458f8b925050989b538f",
+        "3D Model Title": "TO-220-3_L10.0-W4.5-P2.54-L",
+        "3D Model Transform": "401.574,178.58232,0,0,0,0,0,25.59,-196.85",
+        "Output Configuration": "正极",
+        "Voltage - Supply": "29V",
+        "Output Voltage": "1.2V~15V",
+        "Output Current": "5A",
+        "Power Supply Rejection Ratio (PSRR)": "75dB@(120Hz)",
+        "Voltage Dropout": "1.5V@(5A)",
+        "standby current": "5mA",
+        "Noise": "0.003%Vout",
+        "Features": "过流保护；热关断；短路保护",
+        "Operating Temperature": "-40℃~+125℃@(Tj)",
+        "Output Type": "可调",
+        "Number of Outputs": "1",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "3",
+        "name": "IN",
+        "type": "Power",
+        "x": -50,
+        "y": -15,
+        "rotation": 0,
+        "part": "LM1084IT-ADJ/NOPB.1"
+      },
+      {
+        "number": "2",
+        "name": "OUT",
+        "type": "Power",
+        "x": 50,
+        "y": -15,
+        "rotation": 180,
+        "part": "LM1084IT-ADJ/NOPB.1"
+      },
+      {
+        "number": "1",
+        "name": "ADJ",
+        "type": "Undefined",
+        "x": 0,
+        "y": 25,
+        "rotation": 90,
+        "part": "LM1084IT-ADJ/NOPB.1"
+      }
+    ]
+  },
+  "UF4007": {
+    "kind": "device",
+    "item": {
+      "uuid": "e4c0f3a80db04701b100a10b3da1d493",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "2ffc09ed5fdd4b47976405d8b1664aad"
+      },
+      "ordinal": 0,
+      "name": "UF4007",
+      "symbolName": "UF4007",
+      "symbolUuid": "16cfbf0f4b174e6d9a43dde7869a026f",
+      "footprintName": "DO-41_BD2.4-L4.7-P8.70-D0.9-FD",
+      "footprintUuid": "4c9f7770ee3e485baf55f94dd00b4de6",
+      "model3DName": "DO-41_D2.4-L4.7-P8.70",
+      "model3DUuid": "6de1e9b71a0d4751b4e9df530304c1a3",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20251203/A3C052A99CDE6D385EA175842C1B2AD9.jpg",
+      "description": "二极管配置:-;正向压降(Vf):1.7V@1A;直流反向耐压(Vr):1kV;整流电流:1A;反向恢复时间(Trr):75ns;",
+      "manufacturer": "星海",
+      "manufacturerId": "UF4007",
+      "supplier": "LCSC",
+      "supplierId": "C84067",
+      "otherProperty": {
+        "LCSC Part Name": "耐压:1kV 电流:1A 反向恢复时间：75ns",
+        "Supplier Part": "C84067",
+        "Manufacturer": "星海",
+        "Manufacturer Part": "UF4007",
+        "Supplier Footprint": "DO-41",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/UF4007/85235.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "16cfbf0f4b174e6d9a43dde7869a026f",
+        "Designator": "D?",
+        "Footprint": "4c9f7770ee3e485baf55f94dd00b4de6",
+        "3D Model": "6de1e9b71a0d4751b4e9df530304c1a3",
+        "3D Model Title": "DO-41_D2.4-L4.7-P8.70",
+        "3D Model Transform": "374.015,94.428,0,180,0,0,0,0,-137.795",
+        "Diode Configuration": "-",
+        "Voltage - Forward(Vf@If)": "1.7V@1A",
+        "Voltage - DC Reverse(Vr)": "1kV",
+        "Current - Rectified": "1A",
+        "Reverse Leakage Current (Ir)": "5uA@1kV",
+        "Reverse Recovery Time (trr)": "75ns",
+        "Operating Junction Temperature Range": "-55℃~+150℃",
+        "Pd - Power Dissipation": "-",
+        "Non-Repetitive Peak Forward Surge Current": "30A",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "C",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "UF4007_C84067.1"
+      },
+      {
+        "number": "1",
+        "name": "A",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "UF4007_C84067.1"
+      }
+    ]
+  },
+  "MBR1045": {
+    "kind": "device",
+    "item": {
+      "uuid": "c224e330f8b6418498b8cdba71f058cb",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "701a3253d1444cc2ab74551630aa0312"
+      },
+      "ordinal": 0,
+      "name": "MBR1045",
+      "symbolName": "MBR1045",
+      "symbolUuid": "03261e5d190d48d9be111b27b783ac3c",
+      "footprintName": "TO-220AC_L10.0-W4.5-P5.08-T",
+      "footprintUuid": "34318a4919d94b959d12c426031eb0cf",
+      "model3DName": "TO-220AC_L10.0-W4.5-H14.9-P5.08",
+      "model3DUuid": "34aebfd3b8ce43d1aaa2c30d8011f073",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230109/319ECE29F93DDEF8694694B67CA552FD.jpg",
+      "description": "二极管配置:1个独立式;正向压降(Vf):650mV@10A;直流反向耐压(Vr):45V;整流电流:10A;",
+      "manufacturer": "SMC(桑德斯)",
+      "manufacturerId": "MBR1045",
+      "supplier": "LCSC",
+      "supplierId": "C260253",
+      "otherProperty": {
+        "LCSC Part Name": "电压:45V 电流:10A",
+        "Supplier Part": "C260253",
+        "Manufacturer": "SMC(桑德斯)",
+        "Manufacturer Part": "MBR1045",
+        "Supplier Footprint": "TO-220AC-2",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/MBR1045/252386.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "03261e5d190d48d9be111b27b783ac3c",
+        "Designator": "D?",
+        "Footprint": "34318a4919d94b959d12c426031eb0cf",
+        "3D Model": "34aebfd3b8ce43d1aaa2c30d8011f073",
+        "3D Model Title": "TO-220AC_L10.0-W4.5-H14.9-P5.08",
+        "3D Model Transform": "397.637,177.165,0,90,0,0,19.685,0,-137.795",
+        "Diode Configuration": "1个独立式",
+        "Voltage - Forward(Vf@If)": "650mV@10A",
+        "Voltage - DC Reverse(Vr)": "45V",
+        "Current - Rectified": "10A",
+        "Reverse Leakage Current (Ir)": "1mA@45V",
+        "Operating Junction Temperature Range": "-55℃~+150℃",
+        "Non-Repetitive Peak Forward Surge Current": "150A",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "A",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "MBR1045.1"
+      },
+      {
+        "number": "1",
+        "name": "C",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "MBR1045.1"
+      }
+    ]
+  },
+  "1N4148": {
+    "kind": "device",
+    "item": {
+      "uuid": "d7705893cebc4fd8bcf8a9393e34ea94",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "1a1c81626ffb4a44bd2ca252573bbc0e"
+      },
+      "ordinal": 0,
+      "name": "1N4148TA",
+      "symbolName": "1N4148TA",
+      "symbolUuid": "ae91102e8a2044b8840c9507032ebcb7",
+      "footprintName": "DO-35_BD2.0-L4.2-P8.20-D0.5-RD",
+      "footprintUuid": "aaaf63b414ca4adb83491cbb968acf81",
+      "model3DName": "DO-35_D1.9-L3.9-P8.2",
+      "model3DUuid": "6e6fa891745c42b796728c269d94cdcf",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230101/84D30898E8335518C848BAD62690C146.jpg",
+      "description": "二极管配置:1个独立式;整流电流:200mA;直流反向耐压(Vr):100V;正向压降(Vf):1V@10mA;反向恢复时间(Trr):4ns;",
+      "manufacturer": "onsemi(安森美)",
+      "manufacturerId": "1N4148TA",
+      "supplier": "LCSC",
+      "supplierId": "C124481",
+      "otherProperty": {
+        "LCSC Part Name": "100V 200mA",
+        "Supplier Part": "C124481",
+        "Manufacturer": "onsemi(安森美)",
+        "Manufacturer Part": "1N4148TA",
+        "Supplier Footprint": "DO-35",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/1N4148TA/125756.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "ae91102e8a2044b8840c9507032ebcb7",
+        "Designator": "D?",
+        "Footprint": "aaaf63b414ca4adb83491cbb968acf81",
+        "3D Model": "6e6fa891745c42b796728c269d94cdcf",
+        "3D Model Title": "DO-35_D1.9-L3.9-P8.2",
+        "3D Model Transform": "342.519,74.82103,0,0,0,0,-0.197,1.181,-137.795",
+        "Diode Configuration": "1个独立式",
+        "Pd - Power Dissipation": "500mW",
+        "Current - Rectified": "200mA",
+        "Voltage - DC Reverse(Vr)": "100V",
+        "Voltage - Forward(Vf@If)": "1V@10mA",
+        "Non-Repetitive Peak Forward Surge Current": "4A",
+        "Reverse Leakage Current (Ir)": "5uA@75V",
+        "Reverse Recovery Time (trr)": "4ns",
+        "Operating Junction Temperature Range": "-55℃~+175℃@(Tj)",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "2",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "1N4148TA.1"
+      },
+      {
+        "number": "1",
+        "name": "1",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "1N4148TA.1"
+      }
+    ]
+  },
+  "1N4007": {
+    "kind": "device",
+    "item": {
+      "uuid": "71a33da633df4021a32de228aaeed3ef",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3"
+      },
+      "ordinal": 1,
+      "name": "1N4007",
+      "symbolName": "1N4007_C9900004759",
+      "symbolUuid": "45be57463ce64b328f73abd26a1e4afc",
+      "footprintName": "SMA_L4.3-W2.6-LS5.1-RD",
+      "footprintUuid": "dffaa38b54bb4363be4bbcfdde212f07",
+      "model3DName": "SMA_L4.3-W2.6-LS5.1-RD",
+      "model3DUuid": "1d20a911e9694ba6aaf6e9207164e4da",
+      "description": "",
+      "manufacturer": "",
+      "manufacturerId": "1N4007",
+      "supplier": "LCSC",
+      "supplierId": "C9900004759",
+      "otherProperty": {
+        "LCSC Part Name": "1N4007",
+        "Supplier Part": "C9900004759",
+        "Manufacturer": "",
+        "Manufacturer Part": "1N4007",
+        "Supplier Footprint": "SMA_L4.3-W2.6-LS5.1-RD",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "45be57463ce64b328f73abd26a1e4afc",
+        "Designator": "D?",
+        "Footprint": "dffaa38b54bb4363be4bbcfdde212f07",
+        "3D Model": "1d20a911e9694ba6aaf6e9207164e4da",
+        "3D Model Title": "SMA_L4.3-W2.6-LS5.1-RD",
+        "3D Model Transform": "196.4563,102.362,0,0,0,0,0.001,-0.001,0",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "K",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "1N4007_C9900004759.1"
+      },
+      {
+        "number": "2",
+        "name": "A",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "1N4007_C9900004759.1"
+      }
+    ]
+  },
+  "1N5404": {
+    "kind": "device",
+    "item": {
+      "uuid": "ed9e34556a514a8aa324129fcc90990b",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "413952e394f0499eaab284ae3e96b54d"
+      },
+      "ordinal": 1,
+      "name": "1N5404_C212752",
+      "symbolName": "1N5404_C212752",
+      "symbolUuid": "f62d19657ec04efda89b54fb9c7bdfc3",
+      "footprintName": "DO-201_BD5.3-L9.5-P13.50-D1.4-RD",
+      "footprintUuid": "9bcea0d3032948b0bd2618ff8e9e972c",
+      "model3DName": "DO-201AD_D5.3-L8.4-P13.6",
+      "model3DUuid": "f76203e12ec84be0b89e1bb5efd9c700",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230108/7417C98074347287DD6142E0BBCD598B.jpg",
+      "description": "二极管配置:-;正向压降(Vf):1.2V@3A;直流反向耐压(Vr):400V;整流电流:3A;",
+      "manufacturer": "DIOTEC(德欧泰克)",
+      "manufacturerId": "1N5404",
+      "supplier": "LCSC",
+      "supplierId": "C212752",
+      "otherProperty": {
+        "LCSC Part Name": "1N5404",
+        "Supplier Part": "C212752",
+        "Manufacturer": "DIOTEC(德欧泰克)",
+        "Manufacturer Part": "1N5404",
+        "Supplier Footprint": "DO-201",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/1N5404/213710.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "f62d19657ec04efda89b54fb9c7bdfc3",
+        "Designator": "D?",
+        "Footprint": "9bcea0d3032948b0bd2618ff8e9e972c",
+        "3D Model": "f76203e12ec84be0b89e1bb5efd9c700",
+        "3D Model Title": "DO-201AD_D5.3-L8.4-P13.6",
+        "3D Model Transform": "582.676,208.5295,0,0,0,0,0,0,-137.795",
+        "Diode Configuration": "-",
+        "Voltage - Forward(Vf@If)": "1.2V@3A",
+        "Voltage - DC Reverse(Vr)": "400V",
+        "Current - Rectified": "3A",
+        "Reverse Leakage Current (Ir)": "5uA@400V",
+        "Non-Repetitive Peak Forward Surge Current": "200A",
+        "Operating Junction Temperature Range": "-50℃~+175℃",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "K",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "1N5404_C212752.1"
+      },
+      {
+        "number": "2",
+        "name": "A",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "1N5404_C212752.1"
+      }
+    ]
+  },
+  "12V zener": {
+    "kind": "device",
+    "item": {
+      "uuid": "5d74d1ec4c3944f48b533d9583830d75",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "4b35aeede046414da0d325e80704a4a0"
+      },
+      "ordinal": 0,
+      "name": "1N4742A",
+      "symbolName": "1N4742A_C211608",
+      "symbolUuid": "9a8351fa32ac4f1fab6f1835090c18d7",
+      "footprintName": "DO-41_BD2.4-L4.7-P8.70-D0.9-RD",
+      "footprintUuid": "058faedf0e73484fb803d4f629c76fb9",
+      "model3DName": "DO-41_D2.4-L4.7-P8.70",
+      "model3DUuid": "6de1e9b71a0d4751b4e9df530304c1a3",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230108/CB07E711DBD1778CA63D45ADB46D92A7.jpg",
+      "description": "二极管配置:1个独立式;稳压值(标称值):12V;稳压值(范围值):-;耗散功率(Pd):1W;",
+      "manufacturer": "YANGJIE(扬杰)",
+      "manufacturerId": "1N4742A",
+      "supplier": "LCSC",
+      "supplierId": "C211608",
+      "otherProperty": {
+        "LCSC Part Name": "独立式 耐压:12V 电流:5uA@9.1V",
+        "Supplier Part": "C211608",
+        "Manufacturer": "YANGJIE(扬杰)",
+        "Manufacturer Part": "1N4742A",
+        "Supplier Footprint": "DO-41",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/1N4742A/212707.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "9a8351fa32ac4f1fab6f1835090c18d7",
+        "Designator": "D?",
+        "Footprint": "058faedf0e73484fb803d4f629c76fb9",
+        "3D Model": "6de1e9b71a0d4751b4e9df530304c1a3",
+        "3D Model Title": "DO-41_D2.4-L4.7-P8.70",
+        "3D Model Transform": "374.016,94.488,0,0,0,0,0,0,-137.795",
+        "Diode Configuration": "1个独立式",
+        "Zener Voltage(Nom)": "12V",
+        "Reverse Leakage Current (Ir)": "5uA@9.1V",
+        "Zener Voltage(Range)": "-",
+        "Pd - Power Dissipation": "1W",
+        "Impedance(Zzt)": "9Ω",
+        "Impedance(Zzk)": "700Ω",
+        "Operating Junction Temperature Range": "-",
+        "Tolerance": "±5%",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "A",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "1N4742A_C211608.1"
+      },
+      {
+        "number": "1",
+        "name": "K",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "1N4742A_C211608.1"
+      }
+    ]
+  },
+  "24V zener": {
+    "kind": "device",
+    "item": {
+      "uuid": "e646e5f5d7294a70b54777522b08aab7",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "4b35aeede046414da0d325e80704a4a0"
+      },
+      "ordinal": 1,
+      "name": "1N4749A_C7466310",
+      "symbolName": "1N4749A_C7466310",
+      "symbolUuid": "2e432d6be8ec4e6a92f347812c679fa6",
+      "footprintName": "DO-41_BD2.4-L4.7-P8.70-D0.8-RD",
+      "footprintUuid": "e0db5ed9d3d0464d80787621ad87fc0d",
+      "model3DName": "DO-41_D2.4-L4.7-P8.70",
+      "model3DUuid": "6de1e9b71a0d4751b4e9df530304c1a3",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20231006/C2B5F6529BF71F3AF26CFD1458A5A55D.jpg",
+      "description": "二极管配置:1个独立式;稳压值(标称值):24V;稳压值(范围):22.8V~25.2V;耗散功率(Pd):1W;",
+      "manufacturer": "AM(安美)",
+      "manufacturerId": "1N4749A",
+      "supplier": "LCSC",
+      "supplierId": "C7466310",
+      "otherProperty": {
+        "LCSC Part Name": "独立式 耐压:24V 电流:5uA@10V",
+        "Supplier Part": "C7466310",
+        "Manufacturer": "AM(安美)",
+        "Manufacturer Part": "1N4749A",
+        "Supplier Footprint": "DO-41",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/1N4749A/8509656.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "2e432d6be8ec4e6a92f347812c679fa6",
+        "Designator": "U?",
+        "Footprint": "e0db5ed9d3d0464d80787621ad87fc0d",
+        "3D Model": "6de1e9b71a0d4751b4e9df530304c1a3",
+        "3D Model Title": "DO-41_D2.4-L4.7-P8.70",
+        "3D Model Transform": "374.015,94.428,0,0,0,0,0,0,-137.795",
+        "Diode Configuration": "1个独立式",
+        "Zener Voltage(Nom)": "24V",
+        "Reverse Leakage Current (Ir)": "5uA@10V",
+        "Zener Voltage(Range)": "22.8V~25.2V",
+        "Pd - Power Dissipation": "1W",
+        "Impedance(Zzt)": "25Ω",
+        "Impedance(Zzk)": "750Ω",
+        "Operating Junction Temperature Range": "-",
+        "Tolerance": "-",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "K",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "1N4749A_C7466310.1"
+      },
+      {
+        "number": "2",
+        "name": "A",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "1N4749A_C7466310.1"
+      }
+    ]
+  },
+  "5.1V zener": {
+    "kind": "device",
+    "item": {
+      "uuid": "66e3c0879b8e4c8ea4e36bacad684009",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "4b35aeede046414da0d325e80704a4a0"
+      },
+      "ordinal": 0,
+      "name": "BZX55C5V1",
+      "symbolName": "BZX55C5V1",
+      "symbolUuid": "234e2eb9bdfe4830913aecaee74a2080",
+      "footprintName": "DO-35_BD2.0-L4.0-P8.00-D0.5-FD",
+      "footprintUuid": "c39fdc4e8c364f7aba6d8b46cc42a8cf",
+      "model3DName": "DO-35_BD2.0-L4.0-P8.00-D0.5-FD",
+      "model3DUuid": "38aeaa29cf4d4964a66ceecaa75b83b9",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20250319/80D81FAF103A1BED56AEBAD1CB7C354E.jpg",
+      "description": "二极管配置:1个独立式;稳压值(标称值):5.1V;稳压值(范围值):4.8V~5.4V;耗散功率(Pd):500mW;",
+      "manufacturer": "ST(先科)",
+      "manufacturerId": "BZX55C5V1",
+      "supplier": "LCSC",
+      "supplierId": "C2512",
+      "otherProperty": {
+        "LCSC Part Name": "硅平面齐纳二极管 停产",
+        "Supplier Part": "C2512",
+        "Manufacturer": "ST(先科)",
+        "Manufacturer Part": "BZX55C5V1",
+        "Supplier Footprint": "DO-35",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/BZX55C5V1/2889.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "234e2eb9bdfe4830913aecaee74a2080",
+        "Designator": "ZD?",
+        "Footprint": "c39fdc4e8c364f7aba6d8b46cc42a8cf",
+        "3D Model": "38aeaa29cf4d4964a66ceecaa75b83b9",
+        "3D Model Title": "DO-35_BD2.0-L4.0-P8.00-D0.5-FD",
+        "3D Model Transform": "393.826,83.081,0,180,0,0,0,0,-137.795",
+        "Diode Configuration": "1个独立式",
+        "Zener Voltage(Nom)": "5.1V",
+        "Reverse Leakage Current (Ir)": "100nA",
+        "Zener Voltage(Range)": "4.8V~5.4V",
+        "Pd - Power Dissipation": "500mW",
+        "Impedance(Zzt)": "35Ω",
+        "Impedance(Zzk)": "550Ω",
+        "Operating Junction Temperature Range": "-",
+        "Tolerance": "-",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "A",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "BZX55C5V1.1"
+      },
+      {
+        "number": "2",
+        "name": "K",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "BZX55C5V1.1"
+      }
+    ]
+  },
+  "6.2V zener": {
+    "kind": "device",
+    "item": {
+      "uuid": "556f0cb9df54441f8168a0a56ce0e7b2",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "3",
+        "primaryClassificationUuid": "cce28ba52229420d9e00003175273472",
+        "secondaryClassificationUuid": "4b35aeede046414da0d325e80704a4a0"
+      },
+      "ordinal": 1,
+      "name": "BZX79-B6V2,113",
+      "symbolName": "BZX79-B6V2,113",
+      "symbolUuid": "0ae050f7d24e4d15b4a0f11b399645fc",
+      "footprintName": "DO-35_BD2.0-L4.2-P8.20-D0.5-RD",
+      "footprintUuid": "aaaf63b414ca4adb83491cbb968acf81",
+      "model3DName": "DO-35_D1.9-L3.9-P8.2",
+      "model3DUuid": "6e6fa891745c42b796728c269d94cdcf",
+      "imageUuid": "https://alimg.szlcsc.com/upload/public/product/middle/20230105/D8D4A086A9AE1C319C7D9D5BB638A51A.jpg",
+      "description": "二极管配置:1个独立式;稳压值(标称值):6.2V;稳压值(范围):6.08V~6.32V;耗散功率(Pd):500mW;",
+      "manufacturer": "Nexperia(安世)",
+      "manufacturerId": "BZX79-B6V2,113",
+      "supplier": "LCSC",
+      "supplierId": "C503457",
+      "otherProperty": {
+        "LCSC Part Name": "稳压二极管",
+        "Supplier Part": "C503457",
+        "Manufacturer": "Nexperia(安世)",
+        "Manufacturer Part": "BZX79-B6V2,113",
+        "Supplier Footprint": "SOD27(DO-35)",
+        "JLCPCB Part Class": "Extended Part",
+        "Datasheet": "https://item.szlcsc.com/datasheet/BZX79-B6V2%252C113/516153.html",
+        "Supplier": "LCSC",
+        "Add into BOM": "yes",
+        "Convert to PCB": "yes",
+        "Symbol": "0ae050f7d24e4d15b4a0f11b399645fc",
+        "Designator": "U?",
+        "Footprint": "aaaf63b414ca4adb83491cbb968acf81",
+        "3D Model": "6e6fa891745c42b796728c269d94cdcf",
+        "3D Model Title": "DO-35_D1.9-L3.9-P8.2",
+        "3D Model Transform": "342.519,74.82103,0,0,0,0,-0.197,1.181,-137.795",
+        "Diode Configuration": "1个独立式",
+        "Zener Voltage(Nom)": "6.2V",
+        "Reverse Leakage Current (Ir)": "3uA@4V",
+        "Zener Voltage(Range)": "6.08V~6.32V",
+        "Pd - Power Dissipation": "500mW",
+        "Impedance(Zzt)": "10Ω",
+        "Operating Junction Temperature Range": "-65℃~+200℃",
+        "Name": "={Manufacturer Part}"
+      }
+    },
+    "pins": [
+      {
+        "number": "2",
+        "name": "A",
+        "type": "Undefined",
+        "x": 20,
+        "y": 0,
+        "rotation": 180,
+        "part": "BZX79-B6V2,113.1"
+      },
+      {
+        "number": "1",
+        "name": "C",
+        "type": "Undefined",
+        "x": -20,
+        "y": 0,
+        "rotation": 0,
+        "part": "BZX79-B6V2,113.1"
+      }
+    ]
+  },
+  "Z": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "b936764b207742b68f29f459c42a0249",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 2,
+      "name": "稳压管_Zener Diode",
+      "type": 2,
+      "description": "",
+      "updateTimestamp": 1763368706703
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "1",
+        "type": "Passive",
+        "x": -24,
+        "y": 0,
+        "rotation": 0,
+        "part": "8dd0a4345fd2deb9"
+      },
+      {
+        "number": "2",
+        "name": "2",
+        "type": "Passive",
+        "x": 24,
+        "y": 0,
+        "rotation": 180,
+        "part": "8dd0a4345fd2deb9"
+      }
+    ]
+  },
+  "TP": {
+    "kind": "symbol",
+    "item": {
+      "uuid": "0ef2c756326f421eab3c316c79eda910",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "classification": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "libraryType": "2"
+      },
+      "ordinal": 3,
+      "name": "Test-Point",
+      "type": 2,
+      "description": "",
+      "updateTimestamp": 1767002677485
+    },
+    "pins": [
+      {
+        "number": "1",
+        "name": "1",
+        "type": "IN",
+        "x": 0,
+        "y": 0,
+        "rotation": 90,
+        "part": "Test-Point.1"
+      }
+    ]
+  }
+}

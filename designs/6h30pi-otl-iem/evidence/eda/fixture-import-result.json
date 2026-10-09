@@ -1,0 +1,58 @@
+{
+  "before": {
+    "source": {
+      "project_uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "project_name": "/6H30Pi-Rebuild",
+      "schematic_uuid": "7ee135dbeb644024aa2846585bcb3526",
+      "schematic_name": "6H30Pi-Rebuild",
+      "page_uuid": "4adcb1231dfd4721aacd4c40e282ac85",
+      "page_name": "OneSheet",
+      "document_uuid": "4adcb1231dfd4721aacd4c40e282ac85",
+      "document_type": 1,
+      "tab_id": "4adcb1231dfd4721aacd4c40e282ac85@7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+      "window_id": "03f9f58c-0ba1-45f1-863e-90fb14e9d9b3"
+    },
+    "components": [],
+    "wires": [],
+    "labels": [],
+    "ports": [],
+    "flags": [],
+    "no_connects": [],
+    "nets": [],
+    "netlist": "PROTEL NETLIST 2.0\r\n",
+    "format": "schematic/easyeda-v0.1",
+    "unit": "mil",
+    "context_revision": "sha256:fa80760674bff02d33f4c85e024b6d83c1e509592a57e399a47cfe83e2618d59",
+    "revision": "sha256:0f3b59f19d139f03586804666820863f4f4493833f546be0b4dde64d8307d2c7"
+  },
+  "result": {
+    "ok": true,
+    "code": null,
+    "applied": true,
+    "partial": false,
+    "context_revision": "sha256:fa80760674bff02d33f4c85e024b6d83c1e509592a57e399a47cfe83e2618d59",
+    "revision_before": "sha256:0f3b59f19d139f03586804666820863f4f4493833f546be0b4dde64d8307d2c7",
+    "revision_after": "sha256:0f3b59f19d139f03586804666820863f4f4493833f546be0b4dde64d8307d2c7",
+    "results": [
+      {
+        "itemType": "Project",
+        "uuid": "7d97ffb2c360e04d46022ccf3f71a672eaf146094459f74aed083c5ed86ef406",
+        "friendlyName": "6H30Pi-Rebuild",
+        "teamUuid": "4bc4bd5c3d544604b75c140f26423fa5"
+      }
+    ],
+    "readback": {},
+    "topology": {
+      "available": true,
+      "components": 0,
+      "nets": 0,
+      "nodes": 0
+    },
+    "drc": {
+      "before_count": 0,
+      "new": [],
+      "resolved": [],
+      "remaining_count": 0
+    }
+  }
+}
